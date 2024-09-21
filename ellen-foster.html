@@ -1,1231 +1,710 @@
 <h1>Ellen Foster</h1>
 
-		
-	</div>
-
-    <div class="ui-widget-footer">
-		  
-	</div>
-</div>
-<script type="text/javascript">
-$(document).ready(function (){
-$(".tag-list li a").keypress(function(e) { if(e.which == 13) { $(this).click();   }});
-});
-function LoadGroupedData(container, MIID, PMI, groupYear, groupMonth, groupBy, tag) {
-  //ViewToUse looks at the hidden Sidebar List View defined in the Builder View.
-  var viewToUse = "";
-    if($('#hid-'+MIID+'-SidebarListView').length > 0){
-      viewToUse = $("#hid-" + MIID + "-SidebarListView").val();
-    };
-  GetContent('https://www.manvilleschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=1794&PageID=5900&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&RenderLoc=0&FromRenderLoc=0&GroupYear=' + groupYear + '&GroupMonth=' + groupMonth + '&GroupByField=' + groupBy + '&EnableQuirksMode=0&ViewID=' + viewToUse + '&Tag=' + tag, container, 2, 'chkSidebar();');
-}
-function LoadData(container, MIID, PMI, flexDataID, groupYear, groupMonth, groupBy, targetView, tag) {
-  if(targetView !== undefined || targetView.Length() == 0){
-  //targetView looks at the hidden Detail View defined in the Builder View.
-      targetView = $('#hid-'+MIID+'-DetailView').val();
-   }
-  GetContent('https://www.manvilleschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=1794&PageID=5900&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&FlexDataID=' + flexDataID + '&GroupYear=' + groupYear + '&GroupMonth=' + groupMonth + '&GroupByField=' + groupBy + '&RenderLoc=0&FromRenderLoc=0&EnableQuirksMode=0&Tag=' + tag + '&ViewID=' + targetView, container, 2, 'chkSidebar();');
-}
-function LoadTaggedData(container, MIID, PMI, tag) {
-  //ViewToUse looks at the hidden Sidebar List View defined in the Builder View.
-  var viewToUse = "";
-    if($('#hid-'+MIID+'-SidebarListView').length > 0){
-      viewToUse = $("#hid-" + MIID + "-SidebarListView").val();
-    };
-  GetContent('https://www.manvilleschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=1794&PageID=5900&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&RenderLoc=0&FromRenderLoc=0&Tag=' + tag + '&EnableQuirksMode=0&ViewID='+viewToUse, container, 2, 'chkSidebar();');
-  setTimeout(function(){ $("#module-content-"+ MIID +"").find('[tabindex]:first').focus(); }, 200);
-}
-</script>
-</div>
-
-</div></div>
-<div id='pmi-6757'>
-
-
-
-<div id='sw-module-71350'>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            var DomainID = '1794';
-            var PageID = '5900';
-            var RenderLoc = '0';
-            var MIID = '7135';
-
-            //added to check to make sure moderated content doesn't bleed through the dialog
-            if ($('#dialog-overlay-WindowLargeModal-body.moderateContent').length > 0) {
-                $("#module-content-" + MIID).find(".ui-widget-detail").find(".ui-article").append("<p>&nbsp;</p>");
-            }
-        });
-    </script>
-
-    <script type="text/javascript">$(document).ready(function() {CheckScript('ModuleView');CheckScript('Mustache');
- });</script>
-    
-    <div id="module-content-7135" >
-<div class="ui-widget app flexpage">
-	<div class="ui-widget-header ui-helper-hidden">
-		
-	</div>
-	
-	<div class="ui-widget-detail">
-		<ul class="ui-articles">
-<li>
-	<div class="ui-article">
-		<div class="ui-article-description">
-        	<span><span ><div class="header-container">
-<div id="header" class="content">
 <div id="intro" style="top: 2px; left: 55px;">
-<p><strong><span style="color: #ff6600;"><em><span style="font-size: xx-large;">Ellen Foster </span></em></span></strong><br /><strong><span style="color: #ff6600; font-size: xx-large;">by Kaye Gibbons</span></strong></p>
+    <p><strong><span style="color: #ff6600;"><em><span style="font-size: xx-large;">Ellen Foster
+                    </span></em></span></strong><br /><strong><span style="color: #ff6600; font-size: xx-large;">by Kaye
+                Gibbons</span></strong></p>
 </div>
 </div>
 </div>
 <div id="wrapper">
-<div id="contents" class="content">
-<div class="body-content">
-<p><strong><span style="background-color: #ffffff; color: #ff0000; font-size: xx-large;">About the Author-Kaye Gibbons</span></strong><br /><br /><span style="background-color: #ffffff; color: #ff0000; font-size: large;">The story of<em> Ellen Foster</em> is semiautobiographical story about&nbsp;Kaye Gibbons.<br /><br /><strong><span style="text-decoration: underline;">Similarities between the author Kaye Gibbons and the character of Ellen Foster</span></strong></span><br /><br /><span style="background-color: #ffffff; color: #ff0000; font-size: large;">Grew up in the Southern United States</span><br /><span style="background-color: #ffffff; color: #ff0000; font-size: large;">Experienced Discrimination and Prejudice</span><br /><span style="background-color: #ffffff; color: #ff0000; font-size: large;">Orphans</span><br /><span style="background-color: #ffffff; color: #ff0000; font-size: large;">Mothers committed suicide</span><br /><span style="background-color: #ffffff; color: #ff0000; font-size: large;">Alcoholic Abusive Fathers</span><br /><span style="background-color: #ffffff; color: #ff0000; font-size: large;">Passed around to relatives</span><br /><span style="background-color: #ffffff; color: #ff0000; font-size: large;">Foster care system</span><br /><br /><span style="background-color: #ffffff; text-decoration: underline; color: #ff0000;"><strong><span style="font-size: medium; text-decoration: underline;">Some Interesting Facts about Kaye Gibbons</span></strong></span><br /><br /><span style="background-color: #ffffff; color: #ff0000; font-size: large;">Kaye Gibbons has been diagnosed with a mential illness, bi-polar disorder.</span><br /><br /><span style="background-color: #ffffff; color: #ff0000; font-size: large;">Kaye Gibbons has been married and divorced two times.</span><br /><br /><span style="background-color: #ffffff; color: #ff0000; font-size: large;">She has 3 adult children</span><br /><br /><span style="background-color: #ff0000;"><span style="background-color: #ffffff;"><span style="color: #ff0000;"><span style="font-size: large;">She has been arrested for abusing prescription drugs and stealing prescription drug order forms to </span><span style="font-size: large;">o</span></span><span style="color: #000000; font-size: large;"><span style="color: #ff0000;">btain pain killers.</span><br /><br /><span style="font-family: impact,chicago; text-decoration: underline; color: #0000ff;"><em><span style="font-size: xx-large; text-decoration: underline;">Ellen&nbsp; Foster A&nbsp; Modern&nbsp; Day Cinderella Story</span></em></span><br /><br /><span style="color: #0000ff;"><span style="font-size: x-large;"><strong>Cinderella</strong></span>-young orphan girl who must take care of herself</span><br /><span style="color: #0000ff;"><span style="font-size: x-large;"><strong>Ellen</strong></span>-also a young orphan girl who must take car of herself</span><br /><br /><span style="color: #0000ff;"><span style="font-size: x-large;"><strong>Cinderella</strong></span>-Must depend on mean, bitter relatives who resent her&nbsp;(stepmother and step-sisters)</span><br /><span style="color: #0000ff;"><span style="font-size: x-large;"><strong>Ellen</strong></span>-Must depend on mean, bitter relatives who resent her (mama's mama and her aunts)</span><br /><br /><span style="color: #0000ff;"><span style="font-size: x-large;"><strong>Cinderella</strong></span>-has a Wicked Step-mother</span><br /><span style="color: #0000ff;"><span style="font-size: x-large;"><strong>Ellen</strong></span>-has Wicked Grandmother</span><br /><br /><span style="color: #0000ff;"><span style="font-size: x-large;"><strong>Cinderella</strong></span>-is a servant in her own house</span><br /><span style="color: #0000ff;"><span style="font-size: x-large;"><strong>Ellen</strong></span>-a slave worker in the fields of her grandmother's farm</span><br /><br /><span style="color: #0000ff;"><span style="font-size: x-large;"><strong>Cinderella</strong></span>-step-sisters constantly fight</span><br /><span style="color: #0000ff;"><span style="font-size: x-large;"><strong>Ellen</strong></span>-aunts are constantly fighting</span><br /><br /><span style="color: #0000ff;"><span style="font-size: x-large;"><strong>Cinderella</strong></span>-Stepsisters mock and destroy her ballgown</span><br /><span style="color: #0000ff;"><span style="font-size: x-large;"><strong>Ellen</strong></span>-Aunt and cousin Dora mock Ellen's handmade Christmas gift (painting of cats)<br /><br /><span style="font-size: x-large;"><strong>Cinderella</strong></span>-a beautiful ballgown transforms Cinderella and she meets her prince who saves her and she lives "happily ever after"<br /><span style="font-size: x-large;"><strong>Ellen</strong></span>-a beautiful blue dress with a lace collar transforms Ellen and she meets her foster mother who saves Ellen and she "lives happily ever after</span></span></span></span></p>
-<p>&nbsp;</p>
-<p><span style="color: #000000; font-size: xx-large;"><strong>Comparing <em>To Kill a Mockingbird </em>to<em> Ellen Foster</em></strong></span></p>
-<p><span style="color: #000000; font-size: large;"><strong><em>&nbsp;</em></strong></span></p>
-<p class="title1"><span style="color: #000000; font-size: large;"><strong><span style="text-decoration: underline;">Major Difference in the Stories</span></strong></span></p>
-<p><span style="color: #000000; font-size: large;"><strong>&nbsp;</strong></span></p>
-<ul>
-<li><span style="color: #000000; font-size: large;"><strong>Scout Finch, the narrator of <em>To Kill a Mockingbird, </em>comes from a loving home. Her father, Atticus Finch, is one of the most beloved and respected characters in literature. </strong></span></li>
-</ul>
-<p><span style="color: #000000; font-size: large;"><strong>&nbsp;</strong></span></p>
-<ul>
-<li><span style="color: #000000; font-size: large;"><strong>Scout does not experience any type of abuse in <em>To Kill a Mockingbird</em></strong></span></li>
-</ul>
-<p><span style="color: #000000; font-size: large;"><strong><em>&nbsp;</em></strong></span></p>
-<ul>
-<li><span style="color: #000000; font-size: large;"><strong>Scout has a loving and supportive relationship with a sibling, her brother, Jem.</strong></span></li>
-</ul>
-<p><span style="color: #000000; font-size: large;"><strong>&nbsp;</strong></span></p>
-<p class="title1"><span style="color: #000000; font-size: large;"><strong><span style="text-decoration: underline;">Similarities</span></strong></span></p>
-<p class="title1"><span style="color: #000000; font-size: large;"><strong>&nbsp;</strong></span></p>
-<ul>
-<li><span style="color: #000000; font-size: large;"><strong>Both books are semi-autobiographical</strong></span></li>
-<li><span style="color: #000000; font-size: large;"><strong>Both stories are set in the South</strong></span></li>
-<li><span style="color: #000000; font-size: large;"><strong>Both stories deal with discrimination</strong></span></li>
-<li><span style="color: #000000; font-size: large;"><strong>Narrators, Ellen and Scout, are young girls</strong></span></li>
-<li><span style="color: #000000; font-size: large;"><strong>Narrators are precocious-wise beyond their years</strong></span></li>
-<li><span style="color: #000000; font-size: large;"><strong>Narrators are intelligent love to read and write</strong></span></li>
-<li><span style="color: #000000; font-size: large;"><strong>Narrators experience the death of their mothers</strong></span></li>
-<li><span style="color: #000000; font-size: large;"><strong>Both stories have a mean, cruel, hateful older woman </strong></span></li>
-</ul>
-<p><span style="color: #000000; font-size: large;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mama&rsquo;s mama in <em>Ellen Foster</em> </strong></span></p>
-<p><span style="color: #000000; font-size: large;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mrs. DuBoise in <em>To Kill a Mockingbird</em></strong></span></p>
-<ul>
-<li><span style="color: #000000; font-size: large;"><strong>Both stories have a kind mother figure </strong></span></li>
-</ul>
-<p><span style="color: #000000; font-size: large;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;New Mama and Julia, the art teacher in <em>Ellen Foster</em></strong></span></p>
-<p><span style="color: #000000; font-size: large;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Calpurnia and Miss Maudie Atkinson in <em>To Kill a Mockingbird</em></strong></span></p>
-<ul>
-<li><span style="color: #000000; font-size: large;"><strong>Both stories have a mean Aunt</strong></span></li>
-</ul>
-<p><span style="color: #000000; font-size: large;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aunt Betsey and Aunt Nadine in <em>Ellen Foster</em></strong></span></p>
-<p><span style="color: #000000; font-size: large;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aunt Alexandra in <em>To Kill a Mockingbird</em></strong></span></p>
-<ul>
-<li><span style="color: #000000; font-size: large;"><strong>Both stories have a child character that experiences extreme poverty and prejudice</strong></span></li>
-</ul>
-<p><span style="color: #000000; font-size: large;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Starletta in <em>Ellen Foster</em></strong></span></p>
-<p><span style="color: #000000; font-size: large;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Walter Cunningham in <em>To Kill a Mockingbird</em></strong></span></p>
-<p class="title1"><span style="color: #000000; font-size: large;"><strong>&nbsp;</strong></span></p>
-<p><span style="color: #000000; font-size: large;"><strong>Kaye Gibbons and Harper Lee</strong></span></p>
-<ul>
-<li><span style="color: #000000; font-size: large;"><strong>both grew up in the Southern United States</strong></span></li>
-<li><span style="color: #000000; font-size: large;"><strong>both experienced prejudice, discrimination against Black Americans</strong></span></li>
-<li><span style="color: #000000; font-size: large;"><strong>both authors grew up without a mother</strong></span></li>
-</ul>
-<p class="title1"><span style="color: #000000; font-size: large;"><strong>&nbsp;</strong></span></p>
-<p><strong>&nbsp;</strong></p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p><span style="background-color: #ff0000;"><span style="background-color: #ffffff;"><span style="color: #000000; font-size: large;"><span style="color: #0000ff;"><span style="color: #339966;"><br /></span></span></span><span style="color: #ff6600; font-size: large;"><span style="font-size: medium;"><strong><span style="font-size: xx-large;">Prologue</span>-an introduction to a play or story, often the prologue will tell the reader the end of the story. We read the play or story to understand the ending.<br /><br /><span style="text-decoration: underline;">In the prologue to&nbsp;<em>Ellen Foster</em>&nbsp; the readers learn that: </span></strong><br /><br /><strong>&nbsp;&nbsp;&nbsp;Ellen wanted to kill her father</strong><br /></span></span><span style="font-size: large;"><span style="color: #ff6600;"><strong>&nbsp;&nbsp;&nbsp;Her parents are both dead</strong><br /><strong>&nbsp;&nbsp;&nbsp;Ellen lives in a foster home</strong><br /></span><br /><span style="text-decoration: underline; color: #ff6600;"><span style="text-decoration: underline;"><strong>We read the&nbsp; book to find out</strong></span></span><br /><br /><span style="color: #ff6600;"><strong>&nbsp;&nbsp;&nbsp;why Ellen wanted to kill her father</strong></span><br /><span style="color: #ff6600;"><strong>&nbsp;&nbsp;&nbsp;How her parents died</strong></span><br /><span style="color: #0000ff;"><strong><span style="color: #ff6600;">&nbsp;&nbsp;&nbsp;Why she is happy to be living in a foster home</span><br /><br /><span style="color: #000000; font-size: xx-large;">Notes <br /></span></strong></span></span></span><span style="color: #0000ff;"><strong><span style="color: #000000; font-size: xx-large;"><span style="background-color: #ffffff; font-size: large;">Dedication-The book is dedicated to Kaye Gibbons' family</span><br /><br /><span style="background-color: #ffffff; font-size: large;">Theme-Self-Reliance, Even as a young girl Ellen can depend on only herself for food, shelter and love.&nbsp;</span><br /><br /><span style="background-color: #ffffff; color: #ff0000; font-size: large; text-decoration: underline;">Chapter 1</span><br /><span style="background-color: #ffffff; font-size: large;">inner dialogue, the story shifts&nbsp;back and forth from the present to the past</span><br /><span style="background-color: #ffffff; font-size: large;">Ellen's homelife</span><br /><span style="background-color: #ffffff; font-size: large;">abusive, alcoholic, lying father</span><br /><span style="background-color: #ffffff; font-size: large;">mother ill and home from the hospital</span><br /><span style="background-color: #ffffff; font-size: large;">Ellen living in a foster home that is neat, clean, she gets fed and is proud to go to school&nbsp;</span><br /><br /><span style="background-color: #ffffff; color: #ff0000; font-size: large; text-decoration: underline;">Chapter 2</span><br /><span style="background-color: #ffffff; font-size: large;">Ellen's mother has overdosed on heart meds</span><br /><span style="background-color: #ffffff; font-size: large;">Ellen lays down with her mother in bed until she stops breathing</span><br /><span style="background-color: #ffffff; font-size: large;">Murdered?</span><br /><span style="background-color: #ffffff; font-size: large;">Suicide?</span><br /><span style="background-color: #ffffff; font-size: large;">Whose fault is it that mother is dead?</span><br /><br /><span style="background-color: #ffffff; font-size: large;">Ellen loves to read classic books</span><br /><br /><span style="background-color: #ffffff; font-size: large;">Ellen is getting ready for her mother's funeral</span><br /><span style="background-color: #ffffff; font-size: large;">Ellen despises her father, she thinks he is a phony</span><br /><br /><span style="background-color: #ffffff; font-size: large;"><span style="color: #ff0000; text-decoration: underline;">Chapter 3<br /></span>Present Day-Ellen gets up early to be the first one to ride the pony</span></span></strong></span></span></p>
-<p><span style="background-color: #ff0000;"><span style="color: #0000ff;"><strong><span style="color: #000000; font-size: xx-large;"><br /><span style="background-color: #ffffff; font-size: large;">Flashback to Funeral Day</span><br /><span style="background-color: #ffffff; font-size: large;">Ellen wears hand-me-down clothes</span><br /><span style="background-color: #ffffff; font-size: large;">Ellen's father worries that she will tell somone how the mother died</span><br /><span style="background-color: #ffffff; font-size: large;">A funeral director is paid to care</span><br /><span style="background-color: #ffffff; font-size: large;">Aunt Nadine-Ellen hates her, a phony, sells food slicers from home</span><br /><span style="background-color: #ffffff; font-size: large;">Cousin Dora-same age as Ellen/wets her pants 2x a day, spoiled</span><br /><br /><span style="background-color: #ffffff; font-size: large;"><span style="color: #ff0000; text-decoration: underline;">Chapter 4<br /></span>Flashback<br />Funeral-Ellen doesn't look or watch her mom in the coffin</span><br /><span style="background-color: #ffffff; font-size: large;">Ellen's grandmother (Mama's mama) hates the father,&nbsp;calls him "trash" and "nigger"</span><br /><span style="background-color: #ffffff; font-size: large;">Grandmother is not kind, slightly crazy and violent</span><br /><br /><span style="background-color: #ffffff; color: #ff0000; font-size: large; text-decoration: underline;">Chapter 5</span><br /><span style="background-color: #ffffff; font-size: large;">Flashback-After the funeral</span><br /><span style="background-color: #ffffff; font-size: large;">Ellen's father disappears for 2 days , drinking</span><br /><br /><span style="background-color: #ffffff; font-size: large;">Ellen is home alone, eats food from the funeralm wears her mother's clotes under her own</span><br /><br /><span style="background-color: #ffffff; font-size: large;">Back to School</span><br /><span style="background-color: #ffffff; font-size: large;">Teacher (another phony) wants to know how her mother died because she is nosey. Ellen refuses to talk. Teacher was kind in the past.</span><br /><br /><span style="background-color: #ffffff; font-size: large;">Father&nbsp;</span><br /><span style="background-color: #ffffff; font-size: large;">&nbsp;&nbsp;&nbsp;is negligent, doesn't pay the bills or feed Ellen</span><br /><span style="background-color: #ffffff; font-size: large;">&nbsp;&nbsp;&nbsp;his brothers get the father to sign over the farm to them</span><br /><span style="background-color: #ffffff; font-size: large;">&nbsp;&nbsp;&nbsp;leave $ in the mailbox </span><br /><span style="background-color: #ffffff; font-size: large;">Ellen-self reliant</span><br /><span style="background-color: #ffffff; font-size: large;">&nbsp;&nbsp;&nbsp;uses the $ to pay the bills</span><br /><span style="background-color: #ffffff; font-size: large;">&nbsp;&nbsp;&nbsp;lives off of frozen TV dinners</span><br /><span style="background-color: #ffffff; font-size: large;">&nbsp;&nbsp;&nbsp;buys fish and cooks for herself</span><br /><span style="font-size: large;"><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;plays make believe with a family she has cut-out from a catalogl</span><br /><br /><span style="background-color: #ffffff; color: #ff0000; text-decoration: underline;">Chapter 6</span><br /><span style="background-color: #ffffff;">Flashback-Christmas Day</span><br /><span style="background-color: #ffffff;">Ellen visits Starletta's family, very kind and generous people</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;Dirt Poor-1 room house, filthy and smelly</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;Parents are pickers/illiterate but live their daughter</span><br /><span style="background-color: #ffffff;">Ellen shows discrimination/prejudice</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;won't eat "colored food" and is worried about "colored germs"</span><br /><br /><span style="background-color: #ffffff;">Father is gone on Christmas Day</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;Ellen home alone watching TV</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;Mama's mama removes all of her mother's c lothes--donates them to "real niggers"</span><br /><br /><span style="background-color: #ffffff;">Ellen very intelligent--advanced for her age</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;loves to read</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;bookmobile</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;even reads the encyclopedia</span><br /><br /><span style="background-color: #ffffff;">Present Day-Foster Home</span><br /><span style="background-color: #ffffff;">5 foster children live there</span><br /><span style="background-color: #ffffff;">Evidence foster mom is good</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;projects</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;terrarium</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;aquarium</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;washes Ellen's hair</span><br /><br /><span style="background-color: #ffffff;">Flashback-New Years's Eve</span><br /><span style="background-color: #ffffff;">Father comes home with a group of black men</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;eat all of Ellen's food</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;get drunk</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;pass out</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;Ellen assaulted by her father, sexual, calls Ellen by her mother's name</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;Runs away to Starletta's</span><br /><br /><span style="background-color: #ffffff; color: #ff0000; text-decoration: underline;">Chapter 7</span><br /><span style="background-color: #ffffff;">Flashback</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;Spends New Year's Eve at Starletta's house, offers to pay them $</span><br /><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;Ellen goes home, packs possessions and calls her Aunt Betsey "Can I stay with you?"</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;aunt has no children/no husband (selfish)</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ellen gets to stay 1 weekend and then sent back home</span><br /><br /><span style="background-color: #ffffff;">Ellen survives the summer</span><br /><span style="background-color: #ffffff;">Father continues to abuse Ellen</span><br /><br /><span style="background-color: #ffffff;">School starts--Teachers notice bruises</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;Ellen will be taken from her home</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;No family to go to</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;Only friends are Starletta's family (colored family) not acceptable in the South</span><br /><br /><span style="background-color: #ffffff;">Present Day-Foster Home</span><br /><span style="background-color: #ffffff;">Ellen talks about grocery shopping (a necessity)&nbsp;</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;sounds GLAMOROUS&nbsp;&nbsp;&nbsp;</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;Foster mom never has to put food back</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;always has money</span><br /><br /><br /><span style="background-color: #ffffff; text-decoration: underline;"><span style="color: #ff0000; text-decoration: underline;">Chapter 8</span></span><br /><span style="background-color: #ffffff;">Flashback</span><br /><span style="background-color: #ffffff;">Ellen lives the art teacher and her husband</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;kooky/artsy Hippies who want to save the World from people like Ellen's father</span><br /><br /><span style="background-color: #ffffff;">MEMORY of mama</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;Ellen remembers a day picking beans with her mother</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;Realizes she had "only one good season" with her mother</span><br /><br /><span style="background-color: #ffffff;">Ellen's Birthday</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;Party-one guest-Starletta</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;have cake, go to the movies, present-art supplies</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;Starletta-very slow? dumb? possibly handicapped?</span><br /><br /><span style="background-color: #ffffff; text-decoration: underline;"><span style="color: #ff0000; text-decoration: underline;">Chapter 9</span></span><br /><span style="background-color: #ffffff;">Flashback</span><br /><span style="background-color: #ffffff;">Ellen's father comes to the school</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;makes a scene and brings $</span><br /><br /><span style="background-color: #ffffff;">Family Court</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;Judge gives Ellen back to "her family"&nbsp;</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;"What do you do when the judge talks about the family society's cornerstone but you know yours was never a Roman pillar but is and always has been a crumbly old brick?"&nbsp;(Page 56)&nbsp;</span><br /><br /><span style="background-color: #ffffff;">Present Day-Foster Home-On Sundays</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;family goes to Church</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;Eat a big meal together</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;Prepare meals for the whole week</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;Foster kids must be good in church--get donations/$ from the church</span><br /><br /><span style="background-color: #ffffff; color: #ff0000; text-decoration: underline;">Chapter 10</span><br /><span style="background-color: #ffffff;">Flashback-Summer spent at Grandmother's house</span><br /><span style="background-color: #ffffff;">Grandmother is WEALTHY, large house with servants</span><br /><span style="background-color: #ffffff;">Ellen sleeps in her mother's old room</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;canopy bed and a firplace</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;Ellen has nightmares</span><br /><span style="background-color: #ffffff;">Grandmother-Mama's mama</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;mean, crazy angry--all 3</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;verbally abusive</span><br /><br /><span style="background-color: #ffffff;">Ellen's father dies</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;She does not attend funeral</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;Uncle come to Grandmother's house to give her flag (Ellen's father&nbsp;served&nbsp;his country in the military)</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;Fight with grandmother</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;Grandmother holds the deeds to everyone's farms (control)</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;Burns the funeral flag</span><br /><br /><span style="background-color: #ffffff;">Grandmother fires all the servants</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;gets sick and is bedridden</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;Ellen (age 11) takes care of sick grandmother</span><br /><br /><span style="background-color: #ffffff;"><span style="color: #ff0000; text-decoration: underline;">Chapter 11<br /></span><span style="color: #ff0000;"><span style="color: #000000;">Ellen tries to figure out why her grandmother is so mean<br />&nbsp;&nbsp;&nbsp;Revenge against her father for marrying the mother<br /><br />Grandmother pays Ellen's uncle Rudolph to spy on Ellen's&nbsp;father<br />&nbsp;&nbsp;&nbsp;he leaves money from the grandmother in the mailbox<br />&nbsp;&nbsp;&nbsp;when Ellen runs away, Grandmothe sends less&nbsp;<br />&nbsp;&nbsp;&nbsp;trying to starve Ellen's&nbsp;father to death?<br />&nbsp;&nbsp;&nbsp;Father dies of a brain anuerysm<br /><br />Grandmother now blames Ellen for&nbsp;her mother's death (age 10)<br />&nbsp;&nbsp;&nbsp;plans to make father and Ellen pay for it<br /><br />Grandmother dies from the flu<br /><br /><span style="text-decoration: underline;"><span style="color: #ff0000; text-decoration: underline;">Chapter 12<br /></span></span>Present Day-Foster Home<br />Ellen is happy/grateful<br />&nbsp;&nbsp;&nbsp;Life is&nbsp;perfect, like the&nbsp;pictures on&nbsp;a cereal box<br /><br />Baby Roger--biological mother is Stella, foster sister, only a 7th grader<br />&nbsp;&nbsp;&nbsp;Stella dyes her hair and flirts with boys on the bus<br /></span></span></span><br /><span style="background-color: #ffffff;">Starletta</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;Ellen sees her at school</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;Misses her only "friend"</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;regrets feeling superior to Starletta because she is white</span><br /><br /><span style="background-color: #ffffff;">Ellen's perspective on Blacks is changing</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;used to be afraid that "Blacks" could kill her&nbsp;</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;realizes it was actually her own white family that was lethal</span><br /><br /><span style="background-color: #ffffff;">Tuesdays meets with social worker/psychologist</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;Ellen hates it</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;gets a "good hug" from her new mom on Tuesdays</span><br /><br /><span style="background-color: #ffffff;">Foster-Last name<br />&nbsp;&nbsp;&nbsp;comes from living with her "FOSTER FAMILY"<br />&nbsp;&nbsp;&nbsp;new identity<br />&nbsp;&nbsp;&nbsp;starting a new life<br />&nbsp;&nbsp;&nbsp;Ellen wants a new name, her old name is "worn out"<br /><br /><span style="text-decoration: underline;"><span style="color: #ff0000; text-decoration: underline;">Chapter 13</span></span><br />Flashback<br />Grandmother dies<br />&nbsp;&nbsp;&nbsp;Ellen calls funeral home and her aunts who fight<br /><br />&nbsp;&nbsp;&nbsp;Ellen's&nbsp;project-decorate mama's mama body with flowers<br />&nbsp;&nbsp;&nbsp;Ellen bargains with&nbsp;God--she did right by the grandmother, please let her mother into Heaven<br />&nbsp;&nbsp;&nbsp;Refuses to go to the funeral<br /><br />Ellen goes to live with Aunt Nadine and Dora<br />&nbsp;&nbsp;&nbsp;She does not paln to stay<br />&nbsp;&nbsp;&nbsp;Wants to live with the nice lady from church called "The Foster Family"<br />&nbsp;&nbsp;&nbsp;Ellen keeps to herself, stays in her room, only eats&nbsp;meals with the family<br />&nbsp;&nbsp;&nbsp;Uncle is dead from a stroke<br /><br />Ellen gets to go shopping<br />&nbsp;&nbsp;&nbsp;buys clothes that are a size larger, so they will last<br />&nbsp;&nbsp;&nbsp;all the clothes match<br />&nbsp;&nbsp;&nbsp;Ellen buys a special dress&nbsp;for church to get noticed by "Mrs. Foster"<br /><br />Present Day<br />Ellen plans a sleep-over for Starletta at the foster home<br />&nbsp;&nbsp;&nbsp;of course foster mom says yes and makes it special<br /><br /><span style="text-decoration: underline;"><span style="color: #ff0000; text-decoration: underline;">Chapter 14</span></span></span></span></span></strong></span></span></p>
-</div>
-</div>
-</div></span></span>
-        </div>
-		<div class="clear"></div>
-	</div>
-</li>
-</ul>
-</div>
-	<div class="ui-widget-footer">
-		
-			
-		
-		<div class="clear"></div>
-	</div>
-</div>
-<script type="text/javascript">
-$(document).ready(function (){
-$(".tag-list li a").keypress(function(e) { if(e.which == 13) { $(this).click();   }});
-});
-function LoadGroupedData(container, MIID, PMI, groupYear, groupMonth, groupBy, tag) {
-  //ViewToUse looks at the hidden Sidebar List View defined in the Builder View.
-  var viewToUse = "";
-    if($('#hid-'+MIID+'-SidebarListView').length > 0){
-      viewToUse = $("#hid-" + MIID + "-SidebarListView").val();
-    };
-  GetContent('https://www.manvilleschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=1794&PageID=5900&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&RenderLoc=0&FromRenderLoc=0&GroupYear=' + groupYear + '&GroupMonth=' + groupMonth + '&GroupByField=' + groupBy + '&EnableQuirksMode=0&ViewID=' + viewToUse + '&Tag=' + tag, container, 2, 'chkSidebar();');
-}
-function LoadData(container, MIID, PMI, flexDataID, groupYear, groupMonth, groupBy, targetView, tag) {
-  if(targetView !== undefined || targetView.Length() == 0){
-  //targetView looks at the hidden Detail View defined in the Builder View.
-      targetView = $('#hid-'+MIID+'-DetailView').val();
-   }
-  GetContent('https://www.manvilleschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=1794&PageID=5900&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&FlexDataID=' + flexDataID + '&GroupYear=' + groupYear + '&GroupMonth=' + groupMonth + '&GroupByField=' + groupBy + '&RenderLoc=0&FromRenderLoc=0&EnableQuirksMode=0&Tag=' + tag + '&ViewID=' + targetView, container, 2, 'chkSidebar();');
-}
-function LoadTaggedData(container, MIID, PMI, tag) {
-  //ViewToUse looks at the hidden Sidebar List View defined in the Builder View.
-  var viewToUse = "";
-    if($('#hid-'+MIID+'-SidebarListView').length > 0){
-      viewToUse = $("#hid-" + MIID + "-SidebarListView").val();
-    };
-  GetContent('https://www.manvilleschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=1794&PageID=5900&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&RenderLoc=0&FromRenderLoc=0&Tag=' + tag + '&EnableQuirksMode=0&ViewID='+viewToUse, container, 2, 'chkSidebar();');
-  setTimeout(function(){ $("#module-content-"+ MIID +"").find('[tabindex]:first').focus(); }, 200);
-}
-</script>
-</div>
-
-</div></div>
-</div><div class="clear"></div></div></div><!-- End Centricity Content Area -->
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="noprint">
-        <section id="gb-footer-links-outer" class="gb-section-parent gb-section-pad" data-footer-links-color="White" data-footer-links-hover="White">
-        	<div id="gb-footer-links" class="gb-section"></div>
-        </section>
-        <section id="gb-footer-outer" class="gb-section-parent gb-section-pad" data-footer-text-color="White">
-            <div id="gb-footer" class="gb-section ui-clear displayFlexRow">
-                <h2></h2>
-                <div id="gb-address">
-                    <span class="gb-address one">1100 Brooks Blvd.</span><span class="gb-address spacer">, </span><span class="gb-address two">Manville, NJ 08835</span>
-                </div>
-                <div id="gb-contact">
-                	<span class="gb-contact phone" x-ms-format-detection="none">Phone: (908) 231-8500</span>
-                    <span class="gb-contact fax" x-ms-format-detection="none">Fax: </span>
-                </div>
-                <div id="gb-extra-links" class="displayFlexRow">
-                	<a class="footer-extra-link directions" href="//www.google.com/maps/place/1100 Brooks Blvd. Manville NJ 08835" target="_blank" data-show-directions-link="true">
-                    	<span>Get Directions</span>
-                    </a>
-                    <a class="footer-extra-link email" href="mailto:webadmin@manvillesd.org" data-show-email-link="false">
-                    	<span>Email Us</span>
-                    </a>
-                    <a class="footer-extra-link accessibility" href="#" target="_self">
-                    	<span>Web Accessibility</span>
-                    </a>
-                    <a class="footer-extra-link sitemap" href='/site/Default.aspx?PageType=15&SiteID=4&SectionMax=15&DirectoryType=6'>
-                        <span>Site Map</span>
-                    </a>
-                    <button class="cs-btn-reset footer-extra-link footer-scroll-btn" aria-label="Scroll To The Top Of The Page" tabindex="-1" aria-hidden="true"></button>
-                </div>
-            </div>
-        </section>
-        <section id="gb-social-media-outer" class="gb-section-parent gb-section-pad">
-        	<div id="gb-social-media" class="gb-section displayFlexRow">
-            	<h2>Stay Connected</h2>
-        		<div id="gb-social-media-icons" class="hidden"></div>
-            </div>
-        </section>
-        <section id="gb-schoolwires-footer-outer" class="gb-section-parent gb-section-pad">
-            <div id="gb-schoolwires-footer" class="gb-section border-box">
-                <div class="gb-schoolwires-footer top">
-                    <div id="gb-footer-disclaimer" data-show-disclaimer="false">
-                        <span>This is the disclaimer text. You can use this area for legal statements, copyright information, a mission statement, etc. If you don’t use it, the Bb footer will slide up.</span>
-                    </div>
-                </div>
-                <div class="gb-schoolwires-footer bottom" data-show-disclaimer="false">
-                    <div class="gb-schoolwires-footer logo"></div>
-                    <div id="gb-schoolwires-footer-links-copyright">
-                        <div class="gb-schoolwires-footer links"></div>
-                        <div class="gb-schoolwires-footer copyright"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </footer>
-</div><!-- BEGIN - STANDARD FOOTER -->
-<div id='sw-footer-outer'>
-<div id='sw-footer-inner'>
-<div id='sw-footer-left'></div>
-<div id='sw-footer-right'>
-<div id='sw-footer-links'>
-<ul>
-<li><a title='Click to email the primary contact' href='mailto:webadmin@manvillesd.org'>Questions or Feedback?</a> | </li>
-<li><a href='https://www.finalsite.com/privacy-policy' target="_blank">Web Community Manager Privacy Policy (Updated)</a> | </li>
-<li><a class='sw-footer-terms-link' aria-hidden='true' tabindex='-1' href=''></a></li>
-</ul>
-</div>
-<div id='sw-footer-copyright'>Copyright &copy; 2024 Finalsite - all rights reserved.</div>
-<div id='sw-footer-logo'><a href='http://www.finalsite.com' title="Finalsite - all rights reserved">
-<img src='https://www.manvilleschools.org/Static//GlobalAssets/Images/Navbar/WCM_logo.svg'
-class='sw-footer-logo-img' alt="Web Community Manager."/>
-</a></div>
-</div>
-</div>
-</div>
-<!-- END - STANDARD FOOTER -->
-<script type="text/javascript">
-   $(document).ready(function(){
-  var data = JSON.stringify({
-    "SiteID": "4",
-    "ChannelID": "1236",
-    "SectionID": "1794",
-    "PageID": "5900",
-    "Browser": "Firefox 130.0",
-    "OS": "WinNT",
-    "IPAddress": "10.61.84.66"
-  });
-  $.ajax({
-    url: "../Site/SiteController.aspx/InsertAnalyticsData",
-    method: "POST",
-    contentType: "application/json",
-    data: data,
-    success: function(response) {
-    },
-    error: function(xhr, status, error) {
-    }
-  });
-   });
-</script>
-
-    <input type="hidden" id="hid-pageid" value="5900" />
-
-    
-
-    <div id='dialog-overlay-WindowMedium-base' class='ui-dialog-overlay-base' ><div id='WindowMedium' role='dialog' tabindex='-1'  class='ui-dialog-overlay medium' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowMedium-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowMedium-body' ></div><button class='ui-dialog-overlay-close' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowMedium");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowMedium-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowMedium-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    <div id='dialog-overlay-WindowSmall-base' class='ui-dialog-overlay-base' ><div id='WindowSmall' role='dialog' tabindex='-1'  class='ui-dialog-overlay small' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowSmall-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowSmall-body' ></div><button class='ui-dialog-overlay-close' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowSmall");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowSmall-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowSmall-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    <div id='dialog-overlay-WindowLarge-base' class='ui-dialog-overlay-base' ><div id='WindowLarge' role='dialog' tabindex='-1'  class='ui-dialog-overlay large' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowLarge-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowLarge-body' ></div><button class='ui-dialog-overlay-close' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowLarge");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowLarge-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowLarge-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-
-    <div id='dialog-overlay-WindowMediumModal-base' class='ui-dialog-overlay-base-modal' ><div id='WindowMediumModal' role='dialog' tabindex='-1'  class='ui-dialog-overlay medium' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowMediumModal-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowMediumModal-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowMediumModal");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowMediumModal-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowMediumModal-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    <div id='dialog-overlay-WindowSmallModal-base' class='ui-dialog-overlay-base-modal' ><div id='WindowSmallModal' role='dialog' tabindex='-1'  class='ui-dialog-overlay small' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowSmallModal-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowSmallModal-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowSmallModal");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowSmallModal-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowSmallModal-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    <div id='dialog-overlay-WindowLargeModal-base' class='ui-dialog-overlay-base-modal' ><div id='WindowLargeModal' role='dialog' tabindex='-1'  class='ui-dialog-overlay large' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowLargeModal-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowLargeModal-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowLargeModal");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowLargeModal-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowLargeModal-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    <div id='dialog-overlay-WindowXLargeModal-base' class='ui-dialog-overlay-base-modal' ><div id='WindowXLargeModal' role='dialog' tabindex='-1'  class='ui-dialog-overlay xlarge' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowXLargeModal-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowXLargeModal-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowXLargeModal");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowXLargeModal-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowXLargeModal-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-
-    <div id='dialog-overlay-MyAccountSubscriptionOverlay-base' class='ui-dialog-overlay-base-modal' ><div id='MyAccountSubscriptionOverlay' role='dialog' tabindex='-1'  class='ui-dialog-overlay medium' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-MyAccountSubscriptionOverlay-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-MyAccountSubscriptionOverlay-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("MyAccountSubscriptionOverlay");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-MyAccountSubscriptionOverlay-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-MyAccountSubscriptionOverlay-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-
-    <div id='dialog-overlay-InsertOverlay-base' class='ui-dialog-overlay-base-modal' ><div id='InsertOverlay' role='dialog' tabindex='-1'  class='ui-dialog-overlay large' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-InsertOverlay-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-InsertOverlay-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("InsertOverlay");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-InsertOverlay-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-InsertOverlay-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    <div id='dialog-overlay-InsertOverlay2-base' class='ui-dialog-overlay-base-modal' ><div id='InsertOverlay2' role='dialog' tabindex='-1'  class='ui-dialog-overlay large' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-InsertOverlay2-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-InsertOverlay2-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("InsertOverlay2");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-InsertOverlay2-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-InsertOverlay2-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    
-    <div id="videowrapper" class="ui-helper-hidden">
-        <div id="videodialog" role="application">
-            <a id="videodialog-close" role="button" href="javascript:;" aria-label="Close Overlay" class="close-btn" onclick="closeVideoDialog();">CLOSE</a>
-            <div id="videodialog-video" ></div>
-            <div id="videodialog-foot" tabindex="0"></div>
+    <div id="contents" class="content">
+        <div class="body-content">
+            <p><strong><span style="background-color: #ffffff; color: #ff0000; font-size: xx-large;">About
+                        the Author-Kaye
+                        Gibbons</span></strong><br /><br /><span
+                    style="background-color: #ffffff; color: #ff0000; font-size: large;">The
+                    story of<em> Ellen Foster</em> is semiautobiographical
+                    story about&nbsp;Kaye Gibbons.<br /><br /><strong><span
+                            style="text-decoration: underline;">Similarities
+                            between the author Kaye Gibbons and the
+                            character of Ellen
+                            Foster</span></strong></span><br /><br /><span
+                    style="background-color: #ffffff; color: #ff0000; font-size: large;">Grew
+                    up in the Southern United States</span><br /><span
+                    style="background-color: #ffffff; color: #ff0000; font-size: large;">Experienced
+                    Discrimination and Prejudice</span><br /><span
+                    style="background-color: #ffffff; color: #ff0000; font-size: large;">Orphans</span><br /><span
+                    style="background-color: #ffffff; color: #ff0000; font-size: large;">Mothers
+                    committed suicide</span><br /><span
+                    style="background-color: #ffffff; color: #ff0000; font-size: large;">Alcoholic
+                    Abusive Fathers</span><br /><span
+                    style="background-color: #ffffff; color: #ff0000; font-size: large;">Passed
+                    around to relatives</span><br /><span
+                    style="background-color: #ffffff; color: #ff0000; font-size: large;">Foster
+                    care system</span><br /><br /><span
+                    style="background-color: #ffffff; text-decoration: underline; color: #ff0000;"><strong><span
+                            style="font-size: medium; text-decoration: underline;">Some
+                            Interesting Facts about Kaye
+                            Gibbons</span></strong></span><br /><br /><span
+                    style="background-color: #ffffff; color: #ff0000; font-size: large;">Kaye
+                    Gibbons has been diagnosed with a mential illness,
+                    bi-polar disorder.</span><br /><br /><span
+                    style="background-color: #ffffff; color: #ff0000; font-size: large;">Kaye
+                    Gibbons has been married and divorced two
+                    times.</span><br /><br /><span
+                    style="background-color: #ffffff; color: #ff0000; font-size: large;">She
+                    has 3 adult children</span><br /><br /><span style="background-color: #ff0000;"><span
+                        style="background-color: #ffffff;"><span style="color: #ff0000;"><span
+                                style="font-size: large;">She has been
+                                arrested for abusing prescription drugs and
+                                stealing prescription drug order forms to
+                            </span><span style="font-size: large;">o</span></span><span
+                            style="color: #000000; font-size: large;"><span style="color: #ff0000;">btain pain
+                                killers.</span><br /><br /><span
+                                style="font-family: impact,chicago; text-decoration: underline; color: #0000ff;"><em><span
+                                        style="font-size: xx-large; text-decoration: underline;">Ellen&nbsp;
+                                        Foster A&nbsp; Modern&nbsp; Day
+                                        Cinderella
+                                        Story</span></em></span><br /><br /><span style="color: #0000ff;"><span
+                                    style="font-size: x-large;"><strong>Cinderella</strong></span>-young
+                                orphan girl who must take care of
+                                herself</span><br /><span style="color: #0000ff;"><span
+                                    style="font-size: x-large;"><strong>Ellen</strong></span>-also
+                                a young orphan girl who must take car of
+                                herself</span><br /><br /><span style="color: #0000ff;"><span
+                                    style="font-size: x-large;"><strong>Cinderella</strong></span>-Must
+                                depend on mean, bitter relatives who resent
+                                her&nbsp;(stepmother and
+                                step-sisters)</span><br /><span style="color: #0000ff;"><span
+                                    style="font-size: x-large;"><strong>Ellen</strong></span>-Must
+                                depend on mean, bitter relatives who resent
+                                her (mama's mama and her
+                                aunts)</span><br /><br /><span style="color: #0000ff;"><span
+                                    style="font-size: x-large;"><strong>Cinderella</strong></span>-has
+                                a Wicked Step-mother</span><br /><span style="color: #0000ff;"><span
+                                    style="font-size: x-large;"><strong>Ellen</strong></span>-has
+                                Wicked Grandmother</span><br /><br /><span style="color: #0000ff;"><span
+                                    style="font-size: x-large;"><strong>Cinderella</strong></span>-is
+                                a servant in her own house</span><br /><span style="color: #0000ff;"><span
+                                    style="font-size: x-large;"><strong>Ellen</strong></span>-a
+                                slave worker in the fields of her
+                                grandmother's farm</span><br /><br /><span style="color: #0000ff;"><span
+                                    style="font-size: x-large;"><strong>Cinderella</strong></span>-step-sisters
+                                constantly fight</span><br /><span style="color: #0000ff;"><span
+                                    style="font-size: x-large;"><strong>Ellen</strong></span>-aunts
+                                are constantly
+                                fighting</span><br /><br /><span style="color: #0000ff;"><span
+                                    style="font-size: x-large;"><strong>Cinderella</strong></span>-Stepsisters
+                                mock and destroy her
+                                ballgown</span><br /><span style="color: #0000ff;"><span
+                                    style="font-size: x-large;"><strong>Ellen</strong></span>-Aunt
+                                and cousin Dora mock Ellen's handmade
+                                Christmas gift (painting of
+                                cats)<br /><br /><span style="font-size: x-large;"><strong>Cinderella</strong></span>-a
+                                beautiful ballgown transforms Cinderella and
+                                she meets her prince who saves her and she
+                                lives "happily ever after"<br /><span
+                                    style="font-size: x-large;"><strong>Ellen</strong></span>-a
+                                beautiful blue dress with a lace collar
+                                transforms Ellen and she meets her foster
+                                mother who saves Ellen and she "lives
+                                happily ever
+                                after</span></span></span></span></p>
+            <p>&nbsp;</p>
+            <p><span style="color: #000000; font-size: xx-large;"><strong>Comparing
+                        <em>To Kill a Mockingbird </em>to<em> Ellen
+                            Foster</em></strong></span></p>
+            <p><span style="color: #000000; font-size: large;"><strong><em>&nbsp;</em></strong></span>
+            </p>
+            <p class="title1"><span style="color: #000000; font-size: large;"><strong><span
+                            style="text-decoration: underline;">Major
+                            Difference in the Stories</span></strong></span>
+            </p>
+            <p><span style="color: #000000; font-size: large;"><strong>&nbsp;</strong></span>
+            </p>
+            <ul>
+                <li><span style="color: #000000; font-size: large;"><strong>Scout
+                            Finch, the narrator of <em>To Kill a
+                                Mockingbird, </em>comes from a loving home.
+                            Her father, Atticus Finch, is one of the most
+                            beloved and respected characters in literature.
+                        </strong></span></li>
+            </ul>
+            <p><span style="color: #000000; font-size: large;"><strong>&nbsp;</strong></span>
+            </p>
+            <ul>
+                <li><span style="color: #000000; font-size: large;"><strong>Scout
+                            does not experience any type of abuse in <em>To
+                                Kill a Mockingbird</em></strong></span></li>
+            </ul>
+            <p><span style="color: #000000; font-size: large;"><strong><em>&nbsp;</em></strong></span>
+            </p>
+            <ul>
+                <li><span style="color: #000000; font-size: large;"><strong>Scout
+                            has a loving and supportive relationship with a
+                            sibling, her brother, Jem.</strong></span></li>
+            </ul>
+            <p><span style="color: #000000; font-size: large;"><strong>&nbsp;</strong></span>
+            </p>
+            <p class="title1"><span style="color: #000000; font-size: large;"><strong><span
+                            style="text-decoration: underline;">Similarities</span></strong></span>
+            </p>
+            <p class="title1"><span style="color: #000000; font-size: large;"><strong>&nbsp;</strong></span>
+            </p>
+            <ul>
+                <li><span style="color: #000000; font-size: large;"><strong>Both
+                            books are semi-autobiographical</strong></span>
+                </li>
+                <li><span style="color: #000000; font-size: large;"><strong>Both
+                            stories are set in the South</strong></span>
+                </li>
+                <li><span style="color: #000000; font-size: large;"><strong>Both
+                            stories deal with discrimination</strong></span>
+                </li>
+                <li><span style="color: #000000; font-size: large;"><strong>Narrators,
+                            Ellen and Scout, are young girls</strong></span>
+                </li>
+                <li><span style="color: #000000; font-size: large;"><strong>Narrators
+                            are precocious-wise beyond their
+                            years</strong></span></li>
+                <li><span style="color: #000000; font-size: large;"><strong>Narrators
+                            are intelligent love to read and
+                            write</strong></span></li>
+                <li><span style="color: #000000; font-size: large;"><strong>Narrators
+                            experience the death of their
+                            mothers</strong></span></li>
+                <li><span style="color: #000000; font-size: large;"><strong>Both
+                            stories have a mean, cruel, hateful older woman
+                        </strong></span></li>
+            </ul>
+            <p><span style="color: #000000; font-size: large;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mama&rsquo;s
+                        mama in <em>Ellen Foster</em> </strong></span></p>
+            <p><span style="color: #000000; font-size: large;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mrs.
+                        DuBoise in <em>To Kill a
+                            Mockingbird</em></strong></span></p>
+            <ul>
+                <li><span style="color: #000000; font-size: large;"><strong>Both
+                            stories have a kind mother figure
+                        </strong></span></li>
+            </ul>
+            <p><span style="color: #000000; font-size: large;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;New
+                        Mama and Julia, the art teacher in <em>Ellen
+                            Foster</em></strong></span></p>
+            <p><span style="color: #000000; font-size: large;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Calpurnia
+                        and Miss Maudie Atkinson in <em>To Kill a
+                            Mockingbird</em></strong></span></p>
+            <ul>
+                <li><span style="color: #000000; font-size: large;"><strong>Both
+                            stories have a mean Aunt</strong></span></li>
+            </ul>
+            <p><span style="color: #000000; font-size: large;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aunt
+                        Betsey and Aunt Nadine in <em>Ellen
+                            Foster</em></strong></span></p>
+            <p><span style="color: #000000; font-size: large;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aunt
+                        Alexandra in <em>To Kill a
+                            Mockingbird</em></strong></span></p>
+            <ul>
+                <li><span style="color: #000000; font-size: large;"><strong>Both
+                            stories have a child character that experiences
+                            extreme poverty and prejudice</strong></span>
+                </li>
+            </ul>
+            <p><span style="color: #000000; font-size: large;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Starletta
+                        in <em>Ellen Foster</em></strong></span></p>
+            <p><span style="color: #000000; font-size: large;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Walter
+                        Cunningham in <em>To Kill a
+                            Mockingbird</em></strong></span></p>
+            <p class="title1"><span style="color: #000000; font-size: large;"><strong>&nbsp;</strong></span>
+            </p>
+            <p><span style="color: #000000; font-size: large;"><strong>Kaye
+                        Gibbons and Harper Lee</strong></span></p>
+            <ul>
+                <li><span style="color: #000000; font-size: large;"><strong>both
+                            grew up in the Southern United
+                            States</strong></span></li>
+                <li><span style="color: #000000; font-size: large;"><strong>both
+                            experienced prejudice, discrimination against
+                            Black Americans</strong></span></li>
+                <li><span style="color: #000000; font-size: large;"><strong>both
+                            authors grew up without a mother</strong></span>
+                </li>
+            </ul>
+            <p class="title1"><span style="color: #000000; font-size: large;"><strong>&nbsp;</strong></span>
+            </p>
+            <p><strong>&nbsp;</strong></p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p><span style="background-color: #ff0000;"><span style="background-color: #ffffff;"><span
+                            style="color: #000000; font-size: large;"><span style="color: #0000ff;"><span
+                                    style="color: #339966;"><br /></span></span></span><span
+                            style="color: #ff6600; font-size: large;"><span style="font-size: medium;"><strong><span
+                                        style="font-size: xx-large;">Prologue</span>-an
+                                    introduction to a play or story, often
+                                    the prologue will tell the reader the
+                                    end of the story. We read the play or
+                                    story to understand the
+                                    ending.<br /><br /><span style="text-decoration: underline;">In
+                                        the prologue to&nbsp;<em>Ellen
+                                            Foster</em>&nbsp; the readers
+                                        learn that:
+                                    </span></strong><br /><br /><strong>&nbsp;&nbsp;&nbsp;Ellen
+                                    wanted to kill her
+                                    father</strong><br /></span></span><span style="font-size: large;"><span
+                                style="color: #ff6600;"><strong>&nbsp;&nbsp;&nbsp;Her
+                                    parents are both
+                                    dead</strong><br /><strong>&nbsp;&nbsp;&nbsp;Ellen
+                                    lives in a foster
+                                    home</strong><br /></span><br /><span
+                                style="text-decoration: underline; color: #ff6600;"><span
+                                    style="text-decoration: underline;"><strong>We
+                                        read the&nbsp; book to find
+                                        out</strong></span></span><br /><br /><span
+                                style="color: #ff6600;"><strong>&nbsp;&nbsp;&nbsp;why
+                                    Ellen wanted to kill her
+                                    father</strong></span><br /><span
+                                style="color: #ff6600;"><strong>&nbsp;&nbsp;&nbsp;How
+                                    her parents
+                                    died</strong></span><br /><span style="color: #0000ff;"><strong><span
+                                        style="color: #ff6600;">&nbsp;&nbsp;&nbsp;Why
+                                        she is happy to be living in a
+                                        foster home</span><br /><br /><span
+                                        style="color: #000000; font-size: xx-large;">Notes
+                                        <br /></span></strong></span></span></span><span
+                        style="color: #0000ff;"><strong><span style="color: #000000; font-size: xx-large;"><span
+                                    style="background-color: #ffffff; font-size: large;">Dedication-The
+                                    book is dedicated to Kaye Gibbons'
+                                    family</span><br /><br /><span
+                                    style="background-color: #ffffff; font-size: large;">Theme-Self-Reliance,
+                                    Even as a young girl Ellen can depend on
+                                    only herself for food, shelter and
+                                    love.&nbsp;</span><br /><br /><span
+                                    style="background-color: #ffffff; color: #ff0000; font-size: large; text-decoration: underline;">Chapter
+                                    1</span><br /><span style="background-color: #ffffff; font-size: large;">inner
+                                    dialogue, the story shifts&nbsp;back and
+                                    forth from the present to the
+                                    past</span><br /><span style="background-color: #ffffff; font-size: large;">Ellen's
+                                    homelife</span><br /><span
+                                    style="background-color: #ffffff; font-size: large;">abusive,
+                                    alcoholic, lying
+                                    father</span><br /><span style="background-color: #ffffff; font-size: large;">mother
+                                    ill and home from the
+                                    hospital</span><br /><span
+                                    style="background-color: #ffffff; font-size: large;">Ellen
+                                    living in a foster home that is neat,
+                                    clean, she gets fed and is proud to go
+                                    to school&nbsp;</span><br /><br /><span
+                                    style="background-color: #ffffff; color: #ff0000; font-size: large; text-decoration: underline;">Chapter
+                                    2</span><br /><span style="background-color: #ffffff; font-size: large;">Ellen's
+                                    mother has overdosed on heart
+                                    meds</span><br /><span style="background-color: #ffffff; font-size: large;">Ellen
+                                    lays down with her mother in bed until
+                                    she stops breathing</span><br /><span
+                                    style="background-color: #ffffff; font-size: large;">Murdered?</span><br /><span
+                                    style="background-color: #ffffff; font-size: large;">Suicide?</span><br /><span
+                                    style="background-color: #ffffff; font-size: large;">Whose
+                                    fault is it that mother is
+                                    dead?</span><br /><br /><span
+                                    style="background-color: #ffffff; font-size: large;">Ellen
+                                    loves to read classic
+                                    books</span><br /><br /><span
+                                    style="background-color: #ffffff; font-size: large;">Ellen
+                                    is getting ready for her mother's
+                                    funeral</span><br /><span style="background-color: #ffffff; font-size: large;">Ellen
+                                    despises her father, she thinks he is a
+                                    phony</span><br /><br /><span
+                                    style="background-color: #ffffff; font-size: large;"><span
+                                        style="color: #ff0000; text-decoration: underline;">Chapter
+                                        3<br /></span>Present Day-Ellen gets
+                                    up early to be the first one to ride the
+                                    pony</span></span></strong></span></span>
+            </p>
+            <p><span style="background-color: #ff0000;"><span style="color: #0000ff;"><strong><span
+                                style="color: #000000; font-size: xx-large;"><br /><span
+                                    style="background-color: #ffffff; font-size: large;">Flashback
+                                    to Funeral Day</span><br /><span
+                                    style="background-color: #ffffff; font-size: large;">Ellen
+                                    wears hand-me-down
+                                    clothes</span><br /><span
+                                    style="background-color: #ffffff; font-size: large;">Ellen's
+                                    father worries that she will tell somone
+                                    how the mother died</span><br /><span
+                                    style="background-color: #ffffff; font-size: large;">A
+                                    funeral director is paid to
+                                    care</span><br /><span style="background-color: #ffffff; font-size: large;">Aunt
+                                    Nadine-Ellen hates her, a phony, sells
+                                    food slicers from home</span><br /><span
+                                    style="background-color: #ffffff; font-size: large;">Cousin
+                                    Dora-same age as Ellen/wets her pants 2x
+                                    a day, spoiled</span><br /><br /><span
+                                    style="background-color: #ffffff; font-size: large;"><span
+                                        style="color: #ff0000; text-decoration: underline;">Chapter
+                                        4<br /></span>Flashback<br />Funeral-Ellen
+                                    doesn't look or watch her mom in the
+                                    coffin</span><br /><span
+                                    style="background-color: #ffffff; font-size: large;">Ellen's
+                                    grandmother (Mama's mama) hates the
+                                    father,&nbsp;calls him "trash" and
+                                    "nigger"</span><br /><span
+                                    style="background-color: #ffffff; font-size: large;">Grandmother
+                                    is not kind, slightly crazy and
+                                    violent</span><br /><br /><span
+                                    style="background-color: #ffffff; color: #ff0000; font-size: large; text-decoration: underline;">Chapter
+                                    5</span><br /><span
+                                    style="background-color: #ffffff; font-size: large;">Flashback-After
+                                    the funeral</span><br /><span
+                                    style="background-color: #ffffff; font-size: large;">Ellen's
+                                    father disappears for 2 days ,
+                                    drinking</span><br /><br /><span
+                                    style="background-color: #ffffff; font-size: large;">Ellen
+                                    is home alone, eats food from the
+                                    funeralm wears her mother's clotes under
+                                    her own</span><br /><br /><span
+                                    style="background-color: #ffffff; font-size: large;">Back
+                                    to School</span><br /><span
+                                    style="background-color: #ffffff; font-size: large;">Teacher
+                                    (another phony) wants to know how her
+                                    mother died because she is nosey. Ellen
+                                    refuses to talk. Teacher was kind in the
+                                    past.</span><br /><br /><span
+                                    style="background-color: #ffffff; font-size: large;">Father&nbsp;</span><br /><span
+                                    style="background-color: #ffffff; font-size: large;">&nbsp;&nbsp;&nbsp;is
+                                    negligent, doesn't pay the bills or feed
+                                    Ellen</span><br /><span
+                                    style="background-color: #ffffff; font-size: large;">&nbsp;&nbsp;&nbsp;his
+                                    brothers get the father to sign over the
+                                    farm to them</span><br /><span
+                                    style="background-color: #ffffff; font-size: large;">&nbsp;&nbsp;&nbsp;leave
+                                    $ in the mailbox </span><br /><span
+                                    style="background-color: #ffffff; font-size: large;">Ellen-self
+                                    reliant</span><br /><span
+                                    style="background-color: #ffffff; font-size: large;">&nbsp;&nbsp;&nbsp;uses
+                                    the $ to pay the bills</span><br /><span
+                                    style="background-color: #ffffff; font-size: large;">&nbsp;&nbsp;&nbsp;lives
+                                    off of frozen TV
+                                    dinners</span><br /><span
+                                    style="background-color: #ffffff; font-size: large;">&nbsp;&nbsp;&nbsp;buys
+                                    fish and cooks for
+                                    herself</span><br /><span style="font-size: large;"><span
+                                        style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;plays
+                                        make believe with a family she has
+                                        cut-out from a
+                                        catalogl</span><br /><br /><span
+                                        style="background-color: #ffffff; color: #ff0000; text-decoration: underline;">Chapter
+                                        6</span><br /><span style="background-color: #ffffff;">Flashback-Christmas
+                                        Day</span><br /><span style="background-color: #ffffff;">Ellen
+                                        visits Starletta's family, very kind
+                                        and generous
+                                        people</span><br /><span
+                                        style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;Dirt
+                                        Poor-1 room house, filthy and
+                                        smelly</span><br /><span
+                                        style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;Parents
+                                        are pickers/illiterate but live
+                                        their daughter</span><br /><span style="background-color: #ffffff;">Ellen
+                                        shows
+                                        discrimination/prejudice</span><br /><span
+                                        style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;won't
+                                        eat "colored food" and is worried
+                                        about "colored
+                                        germs"</span><br /><br /><span style="background-color: #ffffff;">Father
+                                        is gone on Christmas
+                                        Day</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;Ellen
+                                        home alone watching
+                                        TV</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;Mama's
+                                        mama removes all of her mother's c
+                                        lothes--donates them to "real
+                                        niggers"</span><br /><br /><span style="background-color: #ffffff;">Ellen
+                                        very intelligent--advanced for her
+                                        age</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;loves
+                                        to read</span><br /><span
+                                        style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;bookmobile</span><br /><span
+                                        style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;even
+                                        reads the
+                                        encyclopedia</span><br /><br /><span style="background-color: #ffffff;">Present
+                                        Day-Foster Home</span><br /><span style="background-color: #ffffff;">5
+                                        foster children live
+                                        there</span><br /><span style="background-color: #ffffff;">Evidence
+                                        foster mom is good</span><br /><span
+                                        style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;projects</span><br /><span
+                                        style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;terrarium</span><br /><span
+                                        style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;aquarium</span><br /><span
+                                        style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;washes
+                                        Ellen's hair</span><br /><br /><span
+                                        style="background-color: #ffffff;">Flashback-New
+                                        Years's Eve</span><br /><span style="background-color: #ffffff;">Father
+                                        comes home with a group of black
+                                        men</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;eat
+                                        all of Ellen's
+                                        food</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;get
+                                        drunk</span><br /><span
+                                        style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;pass
+                                        out</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;Ellen
+                                        assaulted by her father, sexual,
+                                        calls Ellen by her mother's
+                                        name</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;Runs
+                                        away to
+                                        Starletta's</span><br /><br /><span
+                                        style="background-color: #ffffff; color: #ff0000; text-decoration: underline;">Chapter
+                                        7</span><br /><span
+                                        style="background-color: #ffffff;">Flashback</span><br /><span
+                                        style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;Spends
+                                        New Year's Eve at Starletta's house,
+                                        offers to pay them
+                                        $</span><br /><br /><span
+                                        style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;Ellen
+                                        goes home, packs possessions and
+                                        calls her Aunt Betsey "Can I stay
+                                        with you?"</span><br /><span
+                                        style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;aunt
+                                        has no children/no husband
+                                        (selfish)</span><br /><span
+                                        style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ellen
+                                        gets to stay 1 weekend and then sent
+                                        back home</span><br /><br /><span style="background-color: #ffffff;">Ellen
+                                        survives the
+                                        summer</span><br /><span style="background-color: #ffffff;">Father
+                                        continues to abuse
+                                        Ellen</span><br /><br /><span style="background-color: #ffffff;">School
+                                        starts--Teachers notice
+                                        bruises</span><br /><span
+                                        style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;Ellen
+                                        will be taken from her
+                                        home</span><br /><span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;No
+                                        family to go to</span><br /><span
+                                        style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;Only
+                                        friends are Starletta's family
+                                        (colored family) not acceptable in
+                                        the South</span><br /><br /><span style="background-color: #ffffff;">Present
+                                        Day-Foster Home</span><br /><span style="background-color: #ffffff;">Ellen
+                                        talks about grocery shopping (a
+                                        necessity)&nbsp;</span><br /><span
+                                        style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;sounds
+                                        GLAMOROUS&nbsp;&nbsp;&nbsp;</span><br /><span
+                                        style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;Foster
+                                        mom never has to put food
+                                        back</span><br /><span
+                                        style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;always
+                                        has
+                                        money</span><br /><br /><br /><span
+                                        style="background-color: #ffffff; text-decoration: underline;"><span
+                                            style="color: #ff0000; text-decoration: underline;">Chapter
+                                            8</span></span><br /><span
+                                        style="background-color: #ffffff;">Flashback</span><br /><span
+                                        style="background-color: #ffffff;">Ellen
+                                        lives the art teacher and her
+                                        husband</span><br /><span
+                                        style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;kooky/artsy
+                                        Hippies who want to save the World
+                                        from people like Ellen's
+                                        father</span><br /><br /><span style="background-color: #ffffff;">MEMORY
+                                        of mama</span><br /><span
+                                        style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;Ellen
+                                        remembers a day picking beans with
+                                        her mother</span><br /><span
+                                        style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;Realizes
+                                        she had "only one good season" with
+                                        her mother</span><br /><br /><span style="background-color: #ffffff;">Ellen's
+                                        Birthday</span><br /><span
+                                        style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;Party-one
+                                        guest-Starletta</span><br /><span
+                                        style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;have
+                                        cake, go to the movies, present-art
+                                        supplies</span><br /><span
+                                        style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;Starletta-very
+                                        slow? dumb? possibly
+                                        handicapped?</span><br /><br /><span
+                                        style="background-color: #ffffff; text-decoration: underline;"><span
+                                            style="color: #ff0000; text-decoration: underline;">Chapter
+                                            9</span></span><br /><span
+                                        style="background-color: #ffffff;">Flashback</span><br /><span
+                                        style="background-color: #ffffff;">Ellen's
+                                        father comes to the
+                                        school</span><br /><span
+                                        style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;makes
+                                        a scene and brings
+                                        $</span><br /><br /><span style="background-color: #ffffff;">Family
+                                        Court</span><br /><span
+                                        style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;Judge
+                                        gives Ellen back to "her
+                                        family"&nbsp;</span><br /><span
+                                        style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;"What
+                                        do you do when the judge talks about
+                                        the family society's cornerstone but
+                                        you know yours was never a Roman
+                                        pillar but is and always has been a
+                                        crumbly old brick?"&nbsp;(Page
+                                        56)&nbsp;</span><br /><br /><span style="background-color: #ffffff;">Present
+                                        Day-Foster Home-On
+                                        Sundays</span><br /><span
+                                        style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;family
+                                        goes to Church</span><br /><span
+                                        style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;Eat
+                                        a big meal
+                                        together</span><br /><span
+                                        style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;Prepare
+                                        meals for the whole
+                                        week</span><br /><span
+                                        style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;Foster
+                                        kids must be good in church--get
+                                        donations/$ from the
+                                        church</span><br /><br /><span
+                                        style="background-color: #ffffff; color: #ff0000; text-decoration: underline;">Chapter
+                                        10</span><br /><span style="background-color: #ffffff;">Flashback-Summer
+                                        spent at Grandmother's
+                                        house</span><br /><span style="background-color: #ffffff;">Grandmother
+                                        is WEALTHY, large house with
+                                        servants</span><br /><span style="background-color: #ffffff;">Ellen
+                                        sleeps in her mother's old
+                                        room</span><br /><span
+                                        style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;canopy
+                                        bed and a firplace</span><br /><span
+                                        style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;Ellen
+                                        has nightmares</span><br /><span
+                                        style="background-color: #ffffff;">Grandmother-Mama's
+                                        mama</span><br /><span
+                                        style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;mean,
+                                        crazy angry--all 3</span><br /><span
+                                        style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;verbally
+                                        abusive</span><br /><br /><span style="background-color: #ffffff;">Ellen's
+                                        father dies</span><br /><span
+                                        style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;She
+                                        does not attend
+                                        funeral</span><br /><span
+                                        style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;Uncle
+                                        come to Grandmother's house to give
+                                        her flag (Ellen's
+                                        father&nbsp;served&nbsp;his country
+                                        in the military)</span><br /><span
+                                        style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;Fight
+                                        with grandmother</span><br /><span
+                                        style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;Grandmother
+                                        holds the deeds to everyone's farms
+                                        (control)</span><br /><span
+                                        style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;Burns
+                                        the funeral
+                                        flag</span><br /><br /><span style="background-color: #ffffff;">Grandmother
+                                        fires all the
+                                        servants</span><br /><span
+                                        style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;gets
+                                        sick and is
+                                        bedridden</span><br /><span
+                                        style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;Ellen
+                                        (age 11) takes care of sick
+                                        grandmother</span><br /><br /><span style="background-color: #ffffff;"><span
+                                            style="color: #ff0000; text-decoration: underline;">Chapter
+                                            11<br /></span><span style="color: #ff0000;"><span
+                                                style="color: #000000;">Ellen
+                                                tries to figure out why her
+                                                grandmother is so
+                                                mean<br />&nbsp;&nbsp;&nbsp;Revenge
+                                                against her father for
+                                                marrying the
+                                                mother<br /><br />Grandmother
+                                                pays Ellen's uncle Rudolph
+                                                to spy on
+                                                Ellen's&nbsp;father<br />&nbsp;&nbsp;&nbsp;he
+                                                leaves money from the
+                                                grandmother in the
+                                                mailbox<br />&nbsp;&nbsp;&nbsp;when
+                                                Ellen runs away, Grandmothe
+                                                sends
+                                                less&nbsp;<br />&nbsp;&nbsp;&nbsp;trying
+                                                to starve
+                                                Ellen's&nbsp;father to
+                                                death?<br />&nbsp;&nbsp;&nbsp;Father
+                                                dies of a brain
+                                                anuerysm<br /><br />Grandmother
+                                                now blames Ellen
+                                                for&nbsp;her mother's death
+                                                (age
+                                                10)<br />&nbsp;&nbsp;&nbsp;plans
+                                                to make father and Ellen pay
+                                                for
+                                                it<br /><br />Grandmother
+                                                dies from the
+                                                flu<br /><br /><span style="text-decoration: underline;"><span
+                                                        style="color: #ff0000; text-decoration: underline;">Chapter
+                                                        12<br /></span></span>Present
+                                                Day-Foster Home<br />Ellen
+                                                is
+                                                happy/grateful<br />&nbsp;&nbsp;&nbsp;Life
+                                                is&nbsp;perfect, like
+                                                the&nbsp;pictures on&nbsp;a
+                                                cereal box<br /><br />Baby
+                                                Roger--biological mother is
+                                                Stella, foster sister, only
+                                                a 7th
+                                                grader<br />&nbsp;&nbsp;&nbsp;Stella
+                                                dyes her hair and flirts
+                                                with boys on the
+                                                bus<br /></span></span></span><br /><span
+                                        style="background-color: #ffffff;">Starletta</span><br /><span
+                                        style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;Ellen
+                                        sees her at school</span><br /><span
+                                        style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;Misses
+                                        her only "friend"</span><br /><span
+                                        style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;regrets
+                                        feeling superior to Starletta
+                                        because she is
+                                        white</span><br /><br /><span style="background-color: #ffffff;">Ellen's
+                                        perspective on Blacks is
+                                        changing</span><br /><span
+                                        style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;used
+                                        to be afraid that "Blacks" could
+                                        kill her&nbsp;</span><br /><span
+                                        style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;realizes
+                                        it was actually her own white family
+                                        that was
+                                        lethal</span><br /><br /><span style="background-color: #ffffff;">Tuesdays
+                                        meets with social
+                                        worker/psychologist</span><br /><span
+                                        style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;Ellen
+                                        hates it</span><br /><span
+                                        style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;gets
+                                        a "good hug" from her new mom on
+                                        Tuesdays</span><br /><br /><span style="background-color: #ffffff;">Foster-Last
+                                        name<br />&nbsp;&nbsp;&nbsp;comes
+                                        from living with her "FOSTER
+                                        FAMILY"<br />&nbsp;&nbsp;&nbsp;new
+                                        identity<br />&nbsp;&nbsp;&nbsp;starting
+                                        a new
+                                        life<br />&nbsp;&nbsp;&nbsp;Ellen
+                                        wants a new name, her old name is
+                                        "worn out"<br /><br /><span style="text-decoration: underline;"><span
+                                                style="color: #ff0000; text-decoration: underline;">Chapter
+                                                13</span></span><br />Flashback<br />Grandmother
+                                        dies<br />&nbsp;&nbsp;&nbsp;Ellen
+                                        calls funeral home and her aunts who
+                                        fight<br /><br />&nbsp;&nbsp;&nbsp;Ellen's&nbsp;project-decorate
+                                        mama's mama body with
+                                        flowers<br />&nbsp;&nbsp;&nbsp;Ellen
+                                        bargains with&nbsp;God--she did
+                                        right by the grandmother, please let
+                                        her mother into
+                                        Heaven<br />&nbsp;&nbsp;&nbsp;Refuses
+                                        to go to the
+                                        funeral<br /><br />Ellen goes to
+                                        live with Aunt Nadine and
+                                        Dora<br />&nbsp;&nbsp;&nbsp;She does
+                                        not paln to
+                                        stay<br />&nbsp;&nbsp;&nbsp;Wants to
+                                        live with the nice lady from church
+                                        called "The Foster
+                                        Family"<br />&nbsp;&nbsp;&nbsp;Ellen
+                                        keeps to herself, stays in her room,
+                                        only eats&nbsp;meals with the
+                                        family<br />&nbsp;&nbsp;&nbsp;Uncle
+                                        is dead from a
+                                        stroke<br /><br />Ellen gets to go
+                                        shopping<br />&nbsp;&nbsp;&nbsp;buys
+                                        clothes that are a size larger, so
+                                        they will
+                                        last<br />&nbsp;&nbsp;&nbsp;all the
+                                        clothes
+                                        match<br />&nbsp;&nbsp;&nbsp;Ellen
+                                        buys a special dress&nbsp;for church
+                                        to get noticed by "Mrs.
+                                        Foster"<br /><br />Present
+                                        Day<br />Ellen plans a sleep-over
+                                        for Starletta at the foster
+                                        home<br />&nbsp;&nbsp;&nbsp;of
+                                        course foster mom says yes and makes
+                                        it special<br /><br /><span style="text-decoration: underline;"><span
+                                                style="color: #ff0000; text-decoration: underline;">Chapter
+                                                14</span></span></span></span></span></strong></span></span>
+            </p>
         </div>
     </div>
-    <div id="attachmentwrapper" class="ui-helper-hidden">
-        <div id="attachmentdialog" role="application">
-            <a id="attachmentdialog-close" role="button" href="javascript:;" aria-label="Close Overlay" class="close-btn" onclick="closeAttachmentDialog();">CLOSE</a>
-            <div id="attachmentdialog-container"></div>
-        </div>
-    </div>
-    <script type="text/javascript">
-
-        $(document).ready(function () { 
-
-            removeBrokenImages();
-            checkSidebar();
-            RemoveCookie();
-
-            
-            //$('div.bullet').attr('tabindex', '');
-
-            
-
-            $('.navigation li.collapsible').each(function () {
-                if ($(this).find('ul').length == 0) {
-                    $(this).removeClass('collapsible');
-                }
-            });
-
-            // find page nav state cookie and add open chevron
-            var arrValues = GetCookie('SWPageNavState').split('~');
-
-            $.each(arrValues, function () {
-                if (this != '') {
-                   //$('#' + this).addClass('collapsible').prepend("<div class='bullet collapsible' aria-label='Close Page Submenu'/>");
-                    $('#' + this).addClass('collapsible').prepend("<div class='bullet collapsible' aria-haspopup='true' aria-expanded='true' />");
-                }
-            });
-
-            // find remaining sub menus and add closed chevron and close menu
-            $('.navigation li > ul').each(function () {
-                var list = $(this);
-
-                if (list.parent().hasClass('active') && !list.parent().hasClass('collapsible')) {
-                    // open sub for currently selected page                    
-                    //list.parent().addClass('collapsible').prepend("<div class='bullet collapsible'aria-label='Close Page Submenu' />");
-                    list.parent().addClass('collapsible').prepend("<div class='bullet collapsible' aria-haspopup='true' aria-expanded='true' />");
-                } else {
-                    if (list.parent().hasClass('collapsible') && !list.siblings('div').hasClass('collapsible')) {
-                        // open sub for page with auto expand
-                        list.siblings('div.expandable').remove();
-                        //list.parent().prepend("<div class='bullet collapsible' aria-label='Close Page Submenu' />");
-                        list.parent().prepend("<div class='bullet collapsible' aria-haspopup='true' aria-expanded='true' />");
-                    }
-                }
-
-                if (!list.siblings('div').hasClass('collapsible')) {
-                    // keep all closed that aren't already set to open
-                    //list.parent().addClass('expandable').prepend("<div class='bullet expandable' aria-label='Open Page Submenu' />");
-                    list.parent().addClass('expandable').prepend("<div class='bullet expandable' aria-haspopup='true' aria-expanded='false' />");
-                    ClosePageSubMenu(list.parent());
-                } else {
-                   OpenPageSubMenu(list.parent());
-                }
-            });
-
-            $(".navigation .bullet.collapsible, .navigation .bullet.expandable, .navigation a").each(function () {
-                if ($(this).closest("ul").attr("aria-hidden") == "true"){
-                    $(this).attr("tabindex", "-1");
-                } else {
-                    $(this).attr("tabindex", "0");
-                }
-            })
-
-            // remove bullet from hierarchy if no-bullet set
-            $('.navigation li.collapsible').each(function () {
-                if ($(this).hasClass('no-bullet')) {
-                    if (!$(this).hasClass('navigationgroup')) { $(this).removeClass('collapsible'); }
-                    $(this).children('div.collapsible').remove();
-                }
-            });
-
-            $('.navigation li.expandable').each(function () {
-                if ($(this).hasClass('no-bullet')) {
-                    if (!$(this).hasClass('navigationgroup')) { $(this).removeClass('expandable'); }
-                    $(this).children('div.expandable').remove();
-                }
-            });
-
-            $('.navigation li:not(.collapsible,.expandable,.no-bullet)').each(function () {
-                $(this).prepend("<div class='bullet'/>");
-            });
-
-            $('.navigation li.active').parents('ul').each(function () {
-                if (!$(this).hasClass('page-navigation')) {
-                    OpenPageSubMenu($(this).parent());
-                }
-            });
-
-            // Set aria ttributes
-            /*$('li.collapsible').each(function () {
-               $(this).attr("aria-expanded", "true");
-               $(this).find('div:first').attr('aria-pressed', 'true');
-            });*/
-
-            $('li.expandable').each(function () {
-                ///$(this).attr("aria-expanded", "false");
-                //$(this).find('div:first').attr('aria-pressed', 'false');
-                $(this).find("ul :focusable").attr("tabindex","-1");
-            });
-
-            /*$('div.bullet').each(function () {
-                $(this).attr("aria-hidden", "true");
-            });*/
-
-            // set click event for chevron
-            $(document).on('click', '.navigation div.collapsible', function () {
-                ClosePageSubMenu($(this).parent());
-            });
-
-            $(document).on('click', '.navigation div.expandable', function () {
-                OpenPageSubMenu($(this).parent());
-            });
-
-            // set navigation grouping links
-            $(document).on('click', '.navigationgroup.collapsible > a', function () {
-                ClosePageSubMenu($(this).parent());
-            });
-
-            $(document).on('click', '.navigationgroup.expandable > a', function () {
-                OpenPageSubMenu($(this).parent());
-            });
-
-            //SW MYSTART DROPDOWNS
-            $(document).on('click', '.sw-mystart-dropdown', function () {
-                $(this).children(".sw-dropdown").css("display", "block");
-            });
-
-            $(".sw-mystart-dropdown").hover(function () { }, function () {
-                $(this).children(".sw-dropdown").hide();
-                $(this).blur();
-            });
-
-            //SW ACCOUNT DROPDOWN
-            $(document).on('click', '#sw-mystart-account', function () {
-                $(this).children("#sw-myaccount-list").show();
-                $(this).addClass("clicked-state");
-            });
-
-            $("#sw-mystart-account, #sw-myaccount-list").hover(function () { }, function () {
-                $(this).children("#sw-myaccount-list").hide();
-                $(this).removeClass("clicked-state");
-                $("#sw-myaccount").blur();
-            });
-
-            // set hover class for page and section navigation
-            $('.ui-widget.app.pagenavigation, .ui-widget.app.sectionnavigation').find('li > a').hover(function () {
-                $(this).addClass('hover');
-            }, function () {
-                $(this).removeClass('hover');
-            });
-
-            //set aria-label for home
-            $('#navc-HP > a').attr('aria-label', 'Home');
-
-            // set active class on channel and section
-            var activeChannelNavType = $('input#hidActiveChannelNavType').val();
-            if (activeChannelNavType == -1) {
-                // homepage is active
-                $('#navc-HP').addClass('active');
-            } else if (activeChannelNavType == 1) {
-                // calendar page is active
-                $('#navc-CA').addClass('active');
-            } else {
-                // channel is active - set the active class on the channel
-                var activeSelectorID = $('input#hidActiveChannel').val();
-                $('#navc-' + activeSelectorID).addClass('active');
-
-                // set the breadcrumb channel href to the channel nav href
-                $('li[data-bccID=' + activeSelectorID + '] a').attr('href', $('#navc-' + activeSelectorID + ' a').attr('href'));
-                $('li[data-bccID=' + activeSelectorID + '] a span').text($('#navc-' + activeSelectorID + ' a span').first().text());
-
-                // set the active class on the section
-                activeSelectorID = $('input#hidActiveSection').val();
-                $('#navs-' + activeSelectorID).addClass('active');
-
-                // set the breadcrumb section href to the channel nav href
-                $('li[data-bcsID=' + activeSelectorID + '] a').attr('href', $('#navs-' + activeSelectorID + ' a').attr('href'));
-                if ($('#navs-' + activeSelectorID + ' a').attr('target') !== undefined) {
-                    $('li[data-bcsID=' + activeSelectorID + '] a').attr('target', $('#navs-' + activeSelectorID + ' a').attr('target'));
-                }
-                $('li[data-bcsID=' + activeSelectorID + '] span').text($('#navs-' + activeSelectorID + ' a span').text());
-
-                if ($('.sw-directory-columns').length > 0) {
-                    $('ul.ui-breadcrumbs li:last-child').remove();
-                    $('ul.ui-breadcrumbs li:last-child a').replaceWith(function() { return $('span', this); });
-                    $('ul.ui-breadcrumbs li:last-child span').append(' Directory');
-                }
-            }
-        }); // end document ready
-
-        function OpenPageSubMenu(li) {
-            if (li.prop('tagName').toLowerCase() == "li") {
-                if (li.hasClass('expandable')) {
-                    li.removeClass('expandable').addClass('collapsible');
-                }
-                if (li.find('div:first').hasClass('expandable')) {
-                    let linkText = li.find("> a").text();
-                    //li.find('div:first').removeClass('expandable').addClass('collapsible').attr('aria-pressed', 'true').attr('aria-label', 'Close Page Submenu');
-                    li.find('div:first').removeClass('expandable').addClass('collapsible').attr({
-                        "aria-expanded": "true",
-                        "aria-label": "Collapse "+linkText+" nested links"
-                    });
-                }
-                li.find('ul:first').attr('aria-hidden', 'false').show();
-                li.find("ul:first > li > .bullet.expandable, ul:first > li > .bullet.collapsible, ul:first > li > a").attr("tabindex", "0");
-                //li.find("li.expandable ul :focusable").attr("tabindex","-1");
-
-                //li.attr("aria-expanded", "true");
-
-                PageNavigationStateCookie();
-            }
-        }
-
-        function ClosePageSubMenu(li) {
-            if (li.prop('tagName').toLowerCase() == "li") {
-                let linkText = li.find("> a").text();
-                li.removeClass('collapsible').addClass('expandable');
-                //li.find('div:first').removeClass('collapsible').addClass('expandable').attr('aria-pressed', 'false').attr('aria-label', 'Open Page Submenu');
-                li.find('div:first').removeClass('collapsible').addClass('expandable').attr({
-                    "aria-expanded": "false",
-                    "aria-label": "Expand "+linkText+" nested links"
-                });
-                li.find('ul:first').attr('aria-hidden', 'true').hide();
-                li.find("ul:first .bullet.expandable, ul:first .bullet.collapsible, ul:first a").attr("tabindex","-1");
-
-                //li.attr("aria-expanded", "false");
-
-                PageNavigationStateCookie();
-            }
-        }
-
-        function PageNavigationStateCookie() {
-            var strCookie = "";
-
-            $('.pagenavigation li > ul').each(function () {
-                var item = $(this).parent('li');
-                if (item.hasClass('collapsible') && !item.hasClass('no-bullet')) {
-                    strCookie += $(this).parent().attr('id') + '~';
-                }
-            });
-
-            SetCookie('SWPageNavState', strCookie);
-        }
-
-        function checkSidebar() {
-            $(".ui-widget-sidebar").each(function () {
-                if ($.trim($(this).html()) != "") {
-                    $(this).show();
-                    $(this).siblings(".ui-widget-detail").addClass("with-sidebar");
-                }
-            });
-        }
-
-        function removeBrokenImages() {
-            //REMOVES ANY BROKEN IMAGES
-            $("span.img img").each(function () {
-                if ($(this).attr("src") !== undefined && $(this).attr("src") != '../../') {
-                    $(this).parent().parent().show();
-                    $(this).parent().parent().siblings().addClass("has-thumb");
-                }
-            });
-        }
-
-        function LoadEventDetailUE(moduleInstanceID, eventDateID, userRegID, isEdit) {
-            (userRegID === undefined ? userRegID = 0 : '');
-            (isEdit === undefined ? isEdit = false : '');
-            OpenDialogOverlay("WindowMediumModal", { LoadType: "U", LoadURL: "https://www.manvilleschools.org//site/UserControls/Calendar/EventDetailWrapper.aspx?ModuleInstanceID=" + moduleInstanceID + "&EventDateID=" + eventDateID + "&UserRegID=" + userRegID + "&IsEdit=" + isEdit });
-        }
-
-        function RemoveCookie() {
-            // There are no sub page            
-            if ($('.pagenavigation li li').length == 0) {
-                //return false;
-                PageNavigationStateCookie();
-            }
-        }
-    </script>
-
-    <script type="text/javascript">
-
-        function AddOffCanvasMenuHeightForSiteNav() {
-            var sitenavulHeight = 0;
-
-            if ($('#sw-pg-sitenav-ul').length > 0) {
-                sitenavulHeight = parseInt($("#sw-pg-sitenav-ul").height());
-            }
-
-            var swinnerwrapHeight = 0;
-
-            if ($('#sw-inner-wrap').length > 0) {
-                swinnerwrapHeight = parseInt($("#sw-inner-wrap").height());
-            }
-
-            // 360px is abount 5 li height
-            if (sitenavulHeight + 360 >= swinnerwrapHeight) {
-                $("#sw-inner-wrap").height(sitenavulHeight + 360);
-            }
-        }
-
-        function AddOffCanvasMenuHeightForSelectSchool() {
-            var selectschoolulHeight = 0;
-
-            if ($('#sw-pg-selectschool-ul').length > 0) {
-                selectschoolulHeight = parseInt($("#sw-pg-selectschool-ul").height());
-            }
-
-            var swinnerwrapHeight = 0;
-
-            if ($('#sw-inner-wrap').length > 0) {
-                swinnerwrapHeight = parseInt($("#sw-inner-wrap").height());
-            }
-
-            // 360px is abount 5 li height
-            if (selectschoolulHeight + 360 >= swinnerwrapHeight) {
-                $("#sw-inner-wrap").height(selectschoolulHeight + 360);
-            }
-        }
-
-        $(document).ready(function () {
-            if ($("#sw-pg-sitenav-a").length > 0) {
-                $(document).on('click', '#sw-pg-sitenav-a', function () {
-                    if ($("#sw-pg-sitenav-ul").hasClass('sw-pgmenu-closed')) {
-                        AddOffCanvasMenuHeightForSiteNav();
-
-                        $("ul.sw-pgmenu-toplevel").removeClass('sw-pgmenu-open').addClass('sw-pgmenu-closed');
-                        $("#sw-pg-sitenav-ul").removeClass('sw-pgmenu-closed');
-                        $("#sw-pg-sitenav-ul").addClass('sw-pgmenu-open');
-                    } else {
-                        $("#sw-pg-sitenav-ul").removeClass('sw-pgmenu-open');
-                        $("#sw-pg-sitenav-ul").addClass('sw-pgmenu-closed');
-                    }
-                });
-
-                $(document).on('click', '#sw-pg-selectschool-a', function () {
-                    if ($("#sw-pg-selectschool-ul").hasClass('sw-pgmenu-closed')) {
-                        AddOffCanvasMenuHeightForSelectSchool();
-
-                        $("ul.sw-pgmenu-toplevel").removeClass('sw-pgmenu-open').addClass('sw-pgmenu-closed');
-                        $("#sw-pg-selectschool-ul").removeClass('sw-pgmenu-closed');
-                        $("#sw-pg-selectschool-ul").addClass('sw-pgmenu-open');
-                    } else {
-                        $("#sw-pg-selectschool-ul").removeClass('sw-pgmenu-open');
-                        $("#sw-pg-selectschool-ul").addClass('sw-pgmenu-closed');
-                    }
-                });
-
-                $(document).on('click', '#sw-pg-myaccount-a', function () {
-                    if ($("#sw-pg-myaccount-ul").hasClass('sw-pgmenu-closed')) {
-                        $("ul.sw-pgmenu-toplevel").removeClass('sw-pgmenu-open').addClass('sw-pgmenu-closed');
-                        $("#sw-pg-myaccount-ul").removeClass('sw-pgmenu-closed');
-                        $("#sw-pg-myaccount-ul").addClass('sw-pgmenu-open');
-                    } else {
-                        $("#sw-pg-myaccount-ul").removeClass('sw-pgmenu-open');
-                        $("#sw-pg-myaccount-ul").addClass('sw-pgmenu-closed');
-                    }
-                });
-
-                $(document).on('click', '.pg-list-bullet', function () {
-                    $(this).prev().toggle();
-
-                    if ($(this).hasClass('closed')) {
-                        AddOffCanvasMenuHeightForSiteNav();
-
-                        $(this).removeClass('closed');
-                        $(this).addClass('open');
-                    } else {
-                        $(this).removeClass('open');
-                        $(this).addClass('closed');
-                    }
-                });
-
-                $(document).on('mouseover', '#sw-pg-selectschool', function () {
-                    $("#sw-pg-selectschool-firstli").removeClass('sw-pg-selectschool-firstli-mouseout').addClass('sw-pg-selectschool-firstli-mouseover');
-                    $("#sw-pg-selectschool-firstli a").addClass('sw-pg-selectschool-firstli-a-mouseover').removeClass('sw-pg-selectschool-firstli-a-mouseout');
-                });
-
-                $(document).on('mouseout', '#sw-pg-selectschool', function () {
-                    $("#sw-pg-selectschool-firstli").removeClass('sw-pg-selectschool-firstli-mouseover').addClass('sw-pg-selectschool-firstli-mouseout');
-                    $("#sw-pg-selectschool-firstli a").addClass('sw-pg-selectschool-firstli-a-mouseout').removeClass('sw-pg-selectschool-firstli-a-mouseover');
-                });
-
-                $(document).on('mouseover', '#sw-pg-myaccount', function () {
-                    $("#sw-pg-myaccount-firstli").removeClass('sw-pg-myaccount-firstli-mouseout').addClass('sw-pg-myaccount-firstli-mouseover');
-                    $("#sw-pg-myaccount-firstli a").addClass('sw-pg-myaccount-firstli-a-mouseover').removeClass('sw-pg-myaccount-firstli-a-mouseout');
-                });
-
-                $(document).on('mouseout', '#sw-pg-myaccount', function () {
-                    $("#sw-pg-myaccount-firstli").removeClass('sw-pg-myaccount-firstli-mouseover').addClass('sw-pg-myaccount-firstli-mouseout');
-                    $("#sw-pg-myaccount-firstli a").addClass('sw-pg-myaccount-firstli-a-mouseout').removeClass('sw-pg-myaccount-firstli-a-mouseover');
-                });
-
-                $(document).on('mouseover', '#sw-pg-sitenav', function () {
-                    $("#sw-pg-sitenav-firstli").removeClass('sw-pg-sitenav-firstli-mouseout').addClass('sw-pg-sitenav-firstli-mouseover');
-                    $("#sw-pg-sitenav-firstli a").addClass('sw-pg-sitenav-firstli-a-mouseover').removeClass('sw-pg-sitenav-firstli-a-mouseout');
-                });
-
-                $(document).on('mouseout', '#sw-pg-sitenav', function () {
-                    $("#sw-pg-sitenav-firstli").removeClass('sw-pg-sitenav-firstli-mouseover').addClass('sw-pg-sitenav-firstli-mouseout');
-                    $("#sw-pg-sitenav-firstli a").addClass('sw-pg-sitenav-firstli-a-mouseout').removeClass('sw-pg-sitenav-firstli-a-mouseover');
-                });
-
-                $(document).on('mouseover', '#sw-pg-district', function () {
-                    $("#sw-pg-district-firstli").removeClass('sw-pg-district-firstli-mouseout').addClass('sw-pg-district-firstli-mouseover');
-                    $("#sw-pg-district-firstli a").addClass('sw-pg-district-firstli-a-mouseover').removeClass('sw-pg-district-firstli-a-mouseout');
-                });
-
-                $(document).on('mouseout', '#sw-pg-district', function () {
-                    $("#sw-pg-district-firstli").removeClass('sw-pg-district-firstli-mouseover').addClass('sw-pg-district-firstli-mouseout');
-                    $("#sw-pg-district-firstli a").addClass('sw-pg-district-firstli-a-mouseout').removeClass('sw-pg-district-firstli-a-mouseover');
-                });
-            }
-        });
-
-
-    </script>
-    <script src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/min/SW-UI_2680.min.js" type='text/javascript'></script>
-    <script language="javascript" type='text/javascript' src="https://www.manvilleschools.org/Static/GlobalAssets/jQueryUI.min.js"></script>
-    <script src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/jquery.sectionlayer.js" type='text/javascript'></script>
-    <script src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/Initialize_2560.js" type='text/javascript'></script>
-    <script src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/min/swfobject.min.js" type="text/javascript"></script>
-    <script src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/min/jquery.ajaxupload_2440.min.js" type="text/javascript"></script>
-
-    <!-- Begin swuc.CheckScript -->
-  <script type="text/javascript" src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/ThirdParty/json2.js"></script>
-  <script type="text/javascript" src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/CheckScript_2780.js"></script>
-<!-- End swuc.CheckScript -->
-
-
-    <!-- Server Load Time (03): 0.0467799 Seconds -->
-
-    
-
-    <!-- off-canvas menu enabled-->
-    
-
-    <!-- Ally Alternative Formats Configure START   -->
-    
-<script>
-    AFExtensions = ".pdf,.doc,.docx,.ppt,.pptx,.odt,.odp";
-    AllyClientID = "13314";
-	    // Wait for the API to load     
-	    ally.ready(function() {
-		    // Configure an API instance
-            const ui = ally.ui({
-			    'client': {
-				    'baseUrl': 'https://prod.ally.ac',
-				    'clientId': 13314
-			    },
-			    'courseId': '1794',
-			    'locale': $('html').attr('lang'),
-			    'platformName': 'Wcm',  
-			    'role': 'anonymous'
-		    });
-	        // Apply the API to the page body   
-            ui.autoUpdate({'domWatch': 250});
-    });
-
-</script>
-    <!-- Ally Alternative Formats Configure END     -->
-
-</body>
-</html>
+</div>
