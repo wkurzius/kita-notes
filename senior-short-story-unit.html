@@ -1,97 +1,31 @@
 <h1>Senior Short Story Unit</h1>
 
-		
-	</div>
-
-    <div class="ui-widget-footer">
-		  
-	</div>
-</div>
-<script type="text/javascript">
-$(document).ready(function (){
-$(".tag-list li a").keypress(function(e) { if(e.which == 13) { $(this).click();   }});
-});
-function LoadGroupedData(container, MIID, PMI, groupYear, groupMonth, groupBy, tag) {
-  //ViewToUse looks at the hidden Sidebar List View defined in the Builder View.
-  var viewToUse = "";
-    if($('#hid-'+MIID+'-SidebarListView').length > 0){
-      viewToUse = $("#hid-" + MIID + "-SidebarListView").val();
-    };
-  GetContent('https://www.manvilleschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=1794&PageID=8530&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&RenderLoc=0&FromRenderLoc=0&GroupYear=' + groupYear + '&GroupMonth=' + groupMonth + '&GroupByField=' + groupBy + '&EnableQuirksMode=0&ViewID=' + viewToUse + '&Tag=' + tag, container, 2, 'chkSidebar();');
-}
-function LoadData(container, MIID, PMI, flexDataID, groupYear, groupMonth, groupBy, targetView, tag) {
-  if(targetView !== undefined || targetView.Length() == 0){
-  //targetView looks at the hidden Detail View defined in the Builder View.
-      targetView = $('#hid-'+MIID+'-DetailView').val();
-   }
-  GetContent('https://www.manvilleschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=1794&PageID=8530&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&FlexDataID=' + flexDataID + '&GroupYear=' + groupYear + '&GroupMonth=' + groupMonth + '&GroupByField=' + groupBy + '&RenderLoc=0&FromRenderLoc=0&EnableQuirksMode=0&Tag=' + tag + '&ViewID=' + targetView, container, 2, 'chkSidebar();');
-}
-function LoadTaggedData(container, MIID, PMI, tag) {
-  //ViewToUse looks at the hidden Sidebar List View defined in the Builder View.
-  var viewToUse = "";
-    if($('#hid-'+MIID+'-SidebarListView').length > 0){
-      viewToUse = $("#hid-" + MIID + "-SidebarListView").val();
-    };
-  GetContent('https://www.manvilleschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=1794&PageID=8530&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&RenderLoc=0&FromRenderLoc=0&Tag=' + tag + '&EnableQuirksMode=0&ViewID='+viewToUse, container, 2, 'chkSidebar();');
-  setTimeout(function(){ $("#module-content-"+ MIID +"").find('[tabindex]:first').focus(); }, 200);
-}
-</script>
-</div>
-
-</div></div>
-<div id='pmi-11308'>
-
-
-
-<div id='sw-module-116220'>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            var DomainID = '1794';
-            var PageID = '8530';
-            var RenderLoc = '0';
-            var MIID = '11622';
-
-            //added to check to make sure moderated content doesn't bleed through the dialog
-            if ($('#dialog-overlay-WindowLargeModal-body.moderateContent').length > 0) {
-                $("#module-content-" + MIID).find(".ui-widget-detail").find(".ui-article").append("<p>&nbsp;</p>");
-            }
-        });
-    </script>
-
-    <script type="text/javascript">$(document).ready(function() {CheckScript('ModuleView');CheckScript('Mustache');
- });</script>
-    
-    <div id="module-content-11622" >
-<div class="ui-widget app flexpage">
-	<div class="ui-widget-header ui-helper-hidden">
-		
-	</div>
-	
-	<div class="ui-widget-detail">
-		<ul class="ui-articles">
-<li>
-	<div class="ui-article">
-		<div class="ui-article-description">
-        	<span><span ><h1><span style="text-decoration: underline;"><span style="color: crimson;"><strong>Demonman by Julialicia Case</strong></span></span></h1>
+<h1><span style="text-decoration: underline;"><span style="color: crimson;"><strong>Demonman by Julialicia
+                Case</strong></span></span></h1>
 <h1><strong>Protagonist:</strong></h1>
-<p><strong>Amelia, an 11 year old, whose sister has been traumatized</strong></p>
+<p><strong>Amelia, an 11 year old, whose sister has been
+        traumatized</strong></p>
 <p><strong>First person narrative</strong></p>
 <h1><strong>Crisis/Conflicts:</strong></h1>
 <p><strong>Sister, Laura, a victim of rape</strong></p>
 <p><strong>6 teenage girls have been raped in town</strong></p>
-<p><strong>Father is absent from the family (cheating/technology)</strong></p>
+<p><strong>Father is absent from the family (cheating/technology)</strong>
+</p>
 <p><strong>Mother avoids crisis through cooking/crafts</strong></p>
 <h1><strong>Main Conflict:</strong></h1>
 <p><strong>Laura (victim) and her family traumatized by a rape.</strong></p>
 <p><strong>Laura refuses to communicate (selective mutism)</strong></p>
 <h1><strong>Metamorphosis/Change:</strong></h1>
 <p><strong>Ameila, a fire girl, thinks she can save her.</strong></p>
-<p><strong>investigates rape and communicates with sister through emojis, finds Laura's sneakers</strong></p>
-<p><strong>Amelia CHANGES. She realizes that she cannot save Laura until Laura wants to get better.</strong></p>
+<p><strong>investigates rape and communicates with sister through emojis,
+        finds Laura's sneakers</strong></p>
+<p><strong>Amelia CHANGES. She realizes that she cannot save Laura until
+        Laura wants to get better.</strong></p>
 <p><strong>"if she wants us to hurry, she could speak"</strong></p>
 <h1><strong>Resolution:</strong></h1>
 <p><strong>Unreseolved</strong></p>
-<p><strong>Laura has improved slightly, running again, goes to chorus and counseling.</strong></p>
+<p><strong>Laura has improved slightly, running again, goes to chorus and
+        counseling.</strong></p>
 <p><strong>Laura is NOT speaking yet.</strong></p>
 <p><strong>Family continues to struggle with the trauma.</strong></p>
 <h1><strong>Tone: (author's words)</strong></h1>
@@ -100,19 +34,25 @@ function LoadTaggedData(container, MIID, PMI, tag) {
 <p><strong>Resigned/Accpetance</strong></p>
 <h1><strong>Mood: (reader's feelings)</strong></h1>
 <p><strong>stressed/angry-Laura has been attacked</strong></p>
-<p><strong>scared/anxious-Amelia keeps returning to the woods, scene of the crime</strong></p>
-<p><strong>frustrated-Laura has not recovered and the rapist was never caught</strong></p>
+<p><strong>scared/anxious-Amelia keeps returning to the woods, scene of the
+        crime</strong></p>
+<p><strong>frustrated-Laura has not recovered and the rapist was never
+        caught</strong></p>
 <h1><strong>Central Meaning:&nbsp;</strong></h1>
 <p><strong>Working through a trauma&nbsp;</strong></p>
-<p><strong>The trauma affects the victim and anyone those that love her.</strong></p>
+<p><strong>The trauma affects the victim and anyone those that love
+        her.</strong></p>
 <p><strong>There are many ways to deal with trauma and healing.</strong></p>
-<p><strong>The victim must take some responsibility to move on before they can heal.&nbsp;</strong></p>
+<p><strong>The victim must take some responsibility to move on before they
+        can heal.&nbsp;</strong></p>
 <h1><strong>Symbols:</strong></h1>
-<p><strong>sneakers-Laura's strength and power become her lost innocence</strong></p>
+<p><strong>sneakers-Laura's strength and power become her lost
+        innocence</strong></p>
 <p><strong>bike-Amelia's freedom f</strong></p>
 <p><strong>phone-communication through emojis</strong></p>
 <p><strong>signature-loss/anger</strong></p>
-<p><strong>hanging bottles-1 bottle for each victim, voices are trapped inside the bottles</strong></p>
+<p><strong>hanging bottles-1 bottle for each victim, voices are trapped
+        inside the bottles</strong></p>
 <p><strong>leaves-the pst, memories</strong></p>
 <p><strong>poison ivy-trauma and pain</strong></p>
 <h1><strong>Motifs: (recurring images or words)</strong></h1>
@@ -124,1277 +64,316 @@ function LoadTaggedData(container, MIID, PMI, tag) {
 <p><strong>rape anger</strong></p>
 <p><strong>redemption</strong></p>
 <h1><strong>Themes:</strong></h1>
-<p><strong>Loss of Innocene-Laura and Amelia have lost their childhood innocence and trust of the world because of the rape</strong></p>
-<p><strong>Moral Struggle-The victim and family struggle to cope with the aftermath of a rape and create a new normal life after the trauma</strong></p>
-<p><strong>Communication-People can communicate in many ways besides words (emojis, support, feed victim, offer physical comfort, record good events, take to counseling)</strong></p>
-<h1><span style="text-decoration: underline;"><span style="color: crimson;"><strong>Likes by Sarah Shun-lien Bynum</strong></span></span></h1>
+<p><strong>Loss of Innocene-Laura and Amelia have lost their childhood
+        innocence and trust of the world because of the rape</strong></p>
+<p><strong>Moral Struggle-The victim and family struggle to cope with the
+        aftermath of a rape and create a new normal life after the
+        trauma</strong></p>
+<p><strong>Communication-People can communicate in many ways besides words
+        (emojis, support, feed victim, offer physical comfort, record good
+        events, take to counseling)</strong></p>
+<h1><span style="text-decoration: underline;"><span style="color: crimson;"><strong>Likes by Sarah Shun-lien
+                Bynum</strong></span></span></h1>
 <h1><span style="color: black;"><strong>Protagonist:</strong></span></h1>
-<p><span style="color: black;"><strong>Dave, the father of an 11 year old daughter</strong></span></p>
-<p><span style="color: black;"><strong>Third person narative</strong></span></p>
-<h1><span style="color: black;"><strong>Crisis/Conflict:</strong></span></h1>
-<p><span style="color: black;"><strong>Ivy's emotional outbursts</strong></span></p>
-<p><span style="color: black;"><strong>Ivy's injury, needs to go to PT</strong></span></p>
-<p><span style="color: black;"><strong>Ivy talks to her couselor</strong></span></p>
+<p><span style="color: black;"><strong>Dave, the father of an 11 year old
+            daughter</strong></span></p>
+<p><span style="color: black;"><strong>Third person narative</strong></span>
+</p>
+<h1><span style="color: black;"><strong>Crisis/Conflict:</strong></span>
+</h1>
+<p><span style="color: black;"><strong>Ivy's emotional
+            outbursts</strong></span></p>
+<p><span style="color: black;"><strong>Ivy's injury, needs to go to
+            PT</strong></span></p>
+<p><span style="color: black;"><strong>Ivy talks to her
+            couselor</strong></span></p>
 <p><span style="color: black;"><strong>Dance try-outs</strong></span></p>
-<p><span style="color: black;"><strong>Presidential Election 2016, Trump wins</strong></span></p>
+<p><span style="color: black;"><strong>Presidential Election 2016, Trump
+            wins</strong></span></p>
 <h1><span style="color: black;"><strong>Main Conflict:</strong></span></h1>
-<p><span style="color: black;"><strong>Dave, a father, feels like he is losing his daughter.</strong></span></p>
-<p><span style="color: black;"><strong>Dave feels like an outsider or an observer of his child's life.</strong></span></p>
-<h1><span style="color: black;"><strong>Metamorphosis/change:</strong></span></h1>
-<p><span style="color: black;"><strong>Ivy is coming of age, chnaging from a child to a teenager and being more independent</strong></span></p>
-<p><span style="color: black;"><strong>Dave realizes that his daughter is growing up and does not need him.</strong></span></p>
+<p><span style="color: black;"><strong>Dave, a father, feels like he is
+            losing his daughter.</strong></span></p>
+<p><span style="color: black;"><strong>Dave feels like an outsider or an
+            observer of his child's life.</strong></span></p>
+<h1><span style="color: black;"><strong>Metamorphosis/change:</strong></span>
+</h1>
+<p><span style="color: black;"><strong>Ivy is coming of age, chnaging from a
+            child to a teenager and being more independent</strong></span>
+</p>
+<p><span style="color: black;"><strong>Dave realizes that his daughter is
+            growing up and does not need him.</strong></span></p>
 <h1><span style="color: black;"><strong>Resolution:</strong></span></h1>
 <p><span style="color: black;"><strong>YES!</strong></span></p>
-<p><span style="color: black;"><strong>When Dave and Ivy create a literal Instgram picture using the window.</strong></span></p>
-<p><span style="color: black;"><strong>Still connected yet separated by the glass.</strong></span></p>
-<h1><span style="color: black;"><strong>Tone: (author's words)</strong></span></h1>
-<p><span style="color: black;"><strong>Hopeless, worried, bewildered</strong></span></p>
+<p><span style="color: black;"><strong>When Dave and Ivy create a literal
+            Instgram picture using the window.</strong></span></p>
+<p><span style="color: black;"><strong>Still connected yet separated by the
+            glass.</strong></span></p>
+<h1><span style="color: black;"><strong>Tone: (author's
+            words)</strong></span></h1>
+<p><span style="color: black;"><strong>Hopeless, worried,
+            bewildered</strong></span></p>
 <h1><span style="color: black;"><strong>Mood:</strong></span></h1>
-<p><span style="color: black;"><strong>Annoyed: Dave's whinning</strong></span></p>
-<p><span style="color: black;"><strong>Concerned: Dave's mental health. Is he going crazy?</strong></span></p>
-<p><span style="color: black;"><strong>Anxious-Where is this story going?</strong></span></p>
-<h1><span style="color: black;"><strong>Central Meaning of the Story:</strong></span></h1>
-<p><span style="color: black;"><strong>Relationships evolve and change over time.&nbsp;</strong></span></p>
-<p><span style="color: black;"><strong>This change is normal and natural.</strong></span></p>
-<p><span style="color: black;"><strong>Trust your loved ones and don't control them.</strong></span></p>
+<p><span style="color: black;"><strong>Annoyed: Dave's
+            whinning</strong></span></p>
+<p><span style="color: black;"><strong>Concerned: Dave's mental health. Is
+            he going crazy?</strong></span></p>
+<p><span style="color: black;"><strong>Anxious-Where is this story
+            going?</strong></span></p>
+<h1><span style="color: black;"><strong>Central Meaning of the
+            Story:</strong></span></h1>
+<p><span style="color: black;"><strong>Relationships evolve and change over
+            time.&nbsp;</strong></span></p>
+<p><span style="color: black;"><strong>This change is normal and
+            natural.</strong></span></p>
+<p><span style="color: black;"><strong>Trust your loved ones and don't
+            control them.</strong></span></p>
 <h1><span style="color: black;"><strong>Symbols:</strong></span></h1>
-<p><span style="color: black;"><strong>Instagram pictures: Ivy's independent life and thoughts</strong></span></p>
-<p><span style="color: black;"><strong>Window: connection and separation</strong></span></p>
-<p><span style="color: black;"><strong>Happiness Planner: birght, positive future</strong></span></p>
-<p><span style="color: black;"><strong>Inspirational Quote: there is hope for the future</strong></span></p>
-<p><span style="color: black;"><strong>PT exercises: health and happiness</strong></span></p>
-<p><span style="color: black;"><strong>Voting Sticker: Community connection</strong></span></p>
-<p><span style="color: black;"><strong>Newspapers: knowledge</strong></span></p>
+<p><span style="color: black;"><strong>Instagram pictures: Ivy's independent
+            life and thoughts</strong></span></p>
+<p><span style="color: black;"><strong>Window: connection and
+            separation</strong></span></p>
+<p><span style="color: black;"><strong>Happiness Planner: birght, positive
+            future</strong></span></p>
+<p><span style="color: black;"><strong>Inspirational Quote: there is hope
+            for the future</strong></span></p>
+<p><span style="color: black;"><strong>PT exercises: health and
+            happiness</strong></span></p>
+<p><span style="color: black;"><strong>Voting Sticker: Community
+            connection</strong></span></p>
+<p><span style="color: black;"><strong>Newspapers: knowledge</strong></span>
+</p>
 <h1><span style="color: black;"><strong>Motifs:</strong></span></h1>
 <p><span style="color: black;"><strong>silence</strong></span></p>
-<p><span style="color: black;"><strong>social media: outside influences on Ivy's life and thoughts</strong></span></p>
+<p><span style="color: black;"><strong>social media: outside influences on
+            Ivy's life and thoughts</strong></span></p>
 <p><span style="color: black;"><strong>therapy</strong></span></p>
 <p><span style="color: black;"><strong>dance class</strong></span></p>
-<p><span style="color: black;"><strong>driving: Dad is in the "driver's seat" he is in control of Ivy</strong></span></p>
-<p><span style="color: black;"><strong>Car Accident: Dad has lost control of Ivy's every thought and activity</strong></span></p>
+<p><span style="color: black;"><strong>driving: Dad is in the "driver's
+            seat" he is in control of Ivy</strong></span></p>
+<p><span style="color: black;"><strong>Car Accident: Dad has lost control of
+            Ivy's every thought and activity</strong></span></p>
 <h1><span style="color: black;"><strong>Theme:</strong></span></h1>
-<p><span style="color: black;"><strong>Coming of Age: Ivy, aga 12 becomes a teen, is more independent, has her own friends, ideas, activities</strong></span></p>
-<p><span style="color: black;"><strong>Moral Struggle: Dave struggles to accept some new realities in his life. Ivy doesn't need him and there is a new political landscape (Trump 2016)</strong></span></p>
-<p><span style="color: black;"><strong>The Optimism of Youth</strong></span></p>
-<p><span style="color: black;"><strong>Search for identity</strong></span></p>
+<p><span style="color: black;"><strong>Coming of Age: Ivy, aga 12 becomes a
+            teen, is more independent, has her own friends, ideas,
+            activities</strong></span></p>
+<p><span style="color: black;"><strong>Moral Struggle: Dave struggles to
+            accept some new realities in his life. Ivy doesn't need him and
+            there is a new political landscape (Trump 2016)</strong></span>
+</p>
+<p><span style="color: black;"><strong>The Optimism of Youth</strong></span>
+</p>
+<p><span style="color: black;"><strong>Search for identity</strong></span>
+</p>
 <p><span style="color: black;"><strong>Individualism</strong></span></p>
-<p><span style="color: black;"><strong>Postive vs Negative&nbsp;</strong></span></p>
+<p><span style="color: black;"><strong>Postive vs
+            Negative&nbsp;</strong></span></p>
 <p><span style="color: black;"><strong>Old vs. Young</strong></span></p>
 <p><span style="color: black;"><strong>Male vs. Female</strong></span></p>
-<p><span style="color: black;"><strong>POV: Point of View</strong></span></p>
-<p><span style="color: black;"><strong>Ivy views life through a different lens than her father Dave</strong></span></p>
-<p><span style="color: black;"><strong>Privacy vs. Public Exposure</strong></span></p>
+<p><span style="color: black;"><strong>POV: Point of View</strong></span>
+</p>
+<p><span style="color: black;"><strong>Ivy views life through a different
+            lens than her father Dave</strong></span></p>
+<p><span style="color: black;"><strong>Privacy vs. Public
+            Exposure</strong></span></p>
 <p>&nbsp;</p>
-<h1><span style="text-decoration: underline;"><span style="color: crimson;">Mika Model by Paola Bacigalupi</span></span></h1>
+<h1><span style="text-decoration: underline;"><span style="color: crimson;">Mika Model by Paola
+            Bacigalupi</span></span></h1>
 <h1><span style="color: black;">Protagonist:</span></h1>
-<p><span style="color: black;"><strong>Detective Rivera, a police officer investigating a murder</strong></span><span style="text-decoration: underline; color: black;"><br /></span></p>
-<h1><span style="color: black;"><strong>Crisis/Conflicts:</strong></span></h1>
-<p><span style="color: black;"><strong>A Mika Model kills her owner</strong></span></p>
-<p><span style="color: black;"><strong>Mika wants a lawyer</strong></span></p>
-<p><span style="color: black;"><strong>Should she be charged with a crime</strong></span></p>
-<p><span style="color: black;"><strong>Holly from Executive Pleasures "shuts down Mika Models's CPU"</strong></span></p>
+<p><span style="color: black;"><strong>Detective Rivera, a police officer
+            investigating a murder</strong></span><span style="text-decoration: underline; color: black;"><br /></span>
+</p>
+<h1><span style="color: black;"><strong>Crisis/Conflicts:</strong></span>
+</h1>
+<p><span style="color: black;"><strong>A Mika Model kills her
+            owner</strong></span></p>
+<p><span style="color: black;"><strong>Mika wants a lawyer</strong></span>
+</p>
+<p><span style="color: black;"><strong>Should she be charged with a
+            crime</strong></span></p>
+<p><span style="color: black;"><strong>Holly from Executive Pleasures "shuts
+            down Mika Models's CPU"</strong></span></p>
 <h1><span style="color: black;"><strong>Main conflict:</strong></span></h1>
-<p><span style="color: black;"><strong>Is the Mika Model entitled to the same legal rights as any human because Mika can "think" and "expresses emotions"</strong></span></p>
-<h1><span style="color: black;"><strong>Metamorphisis/Change:</strong></span></h1>
+<p><span style="color: black;"><strong>Is the Mika Model entitled to the
+            same legal rights as any human because Mika can "think" and
+            "expresses emotions"</strong></span></p>
+<h1><span style="color: black;"><strong>Metamorphisis/Change:</strong></span>
+</h1>
 <p><span style="color: black;"><strong>None.</strong></span></p>
-<p><span style="color: black;"><strong>Detective Rivera sees the Mika Model as "a girl" more than a bot throughout the story.</strong></span></p>
-<p><span style="color: black;"><strong>Detective Rivera sees the Mika Model's humanity</strong></span></p>
+<p><span style="color: black;"><strong>Detective Rivera sees the Mika Model
+            as "a girl" more than a bot throughout the
+            story.</strong></span></p>
+<p><span style="color: black;"><strong>Detective Rivera sees the Mika
+            Model's humanity</strong></span></p>
 <h1><span style="color: black;"><strong>Resolution:</strong></span></h1>
-<p><span style="color: black;"><strong>At the end of the story Mika is an object, a bot, her CPU (central processing unit) is shut off.</strong></span></p>
-<p><span style="color: black;"><strong>The model's CPU will be updated.</strong></span></p>
-<h1><span style="color: black;"><strong>Tone: author's perspective</strong></span></h1>
-<p><span style="color: black;"><strong>Male (Detective Rivera) is emotional and sexual. The male sees the Mika models humanity.</strong></span></p>
-<p><span style="color: black;"><strong>Condescending: the male, Detective Rivera, is suseptible to Mika's sexuality and flirting.</strong></span></p>
+<p><span style="color: black;"><strong>At the end of the story Mika is an
+            object, a bot, her CPU (central processing unit) is shut
+            off.</strong></span></p>
+<p><span style="color: black;"><strong>The model's CPU will be
+            updated.</strong></span></p>
+<h1><span style="color: black;"><strong>Tone: author's
+            perspective</strong></span></h1>
+<p><span style="color: black;"><strong>Male (Detective Rivera) is emotional
+            and sexual. The male sees the Mika models
+            humanity.</strong></span></p>
+<p><span style="color: black;"><strong>Condescending: the male, Detective
+            Rivera, is suseptible to Mika's sexuality and
+            flirting.</strong></span></p>
 <p><strong>Females are portrayed as dispassionate and logical</strong></p>
 <h1><strong>Mood: how the reader feels</strong></h1>
-<p><strong>Introspective: the story makes the reader think about what separates humans from robots with AI</strong></p>
-<p><strong>Horrified: by the violent murder, by the advanced technology, by the outcome (Mika is shut off/kill switch)</strong></p>
+<p><strong>Introspective: the story makes the reader think about what
+        separates humans from robots with AI</strong></p>
+<p><strong>Horrified: by the violent murder, by the advanced technology, by
+        the outcome (Mika is shut off/kill switch)</strong></p>
 <h1><strong>Central meaning of the story:</strong></h1>
-<p><strong>Society's laws cannot keep up with the rapidly evolving advances of technology.</strong></p>
+<p><strong>Society's laws cannot keep up with the rapidly evolving advances
+        of technology.</strong></p>
 <p><strong>What separates humans from AI?</strong></p>
-<p><strong>The religious concept of a soul separates humans from animals and robots.&nbsp;</strong></p>
+<p><strong>The religious concept of a soul separates humans from animals and
+        robots.&nbsp;</strong></p>
 <h1><strong>Symbols:</strong></h1>
 <p><strong>Screwdriver: death, a kill switch for Mika</strong></p>
-<p><strong>severed head of victim: a human has been separated from his brain or (CPU)</strong></p>
-<p><strong>Nordstrom shopping bag: are humans only consumers of goods</strong></p>
+<p><strong>severed head of victim: a human has been separated from his brain
+        or (CPU)</strong></p>
+<p><strong>Nordstrom shopping bag: are humans only consumers of
+        goods</strong></p>
 <p><strong>torture dungeon:</strong></p>
-<p><strong>handcuffed in the front: Mika, a robot or piece of technology, is treated compassionatley and humanely</strong></p>
-<p><strong>CPU: is like a brain but made of plastic and metal, capacity is defined and limited</strong></p>
-<p><strong>Brain: organic can "see" colors and "depth". Has infinite capacity.</strong></p>
+<p><strong>handcuffed in the front: Mika, a robot or piece of technology, is
+        treated compassionatley and humanely</strong></p>
+<p><strong>CPU: is like a brain but made of plastic and metal, capacity is
+        defined and limited</strong></p>
+<p><strong>Brain: organic can "see" colors and "depth". Has infinite
+        capacity.</strong></p>
 <h1><strong>Motifs:</strong></h1>
 <p><strong>sexual innuendos</strong></p>
 <p><strong>flirting</strong></p>
 <p><strong>violence</strong></p>
 <p><strong>the law/legalities</strong></p>
 <h1><strong>Themes:</strong></h1>
-<p><strong>Search for Identity: Is Mika a robot or a sentinent being because of her AI (artificial intelligence)</strong></p>
-<p><strong>Rebellion vs Conformity: Detective Rivera fights against the traditional concepts who has rights. Is Mika entitled to human rights because she has AI?&nbsp;</strong></p>
+<p><strong>Search for Identity: Is Mika a robot or a sentinent being because
+        of her AI (artificial intelligence)</strong></p>
+<p><strong>Rebellion vs Conformity: Detective Rivera fights against the
+        traditional concepts who has rights. Is Mika entitled to human
+        rights because she has AI?&nbsp;</strong></p>
 <p><strong>I think therefore I am. ~Descartes</strong></p>
 <p>&nbsp;</p>
-<h1><span style="text-decoration: underline;"><span style="color: crimson;"><strong>The Relive Box by T. Coraghessan Boyle</strong></span></span></h1>
+<h1><span style="text-decoration: underline;"><span style="color: crimson;"><strong>The Relive Box by T. Coraghessan
+                Boyle</strong></span></span></h1>
 <h1><strong>Protagaonist:</strong></h1>
 <p><strong>Wes, a single father. </strong></p>
-<p><strong>Wes' wife, Christine has abandoned her husband and daughter, Katie, and moved to Asia.&nbsp;</strong></p>
+<p><strong>Wes' wife, Christine has abandoned her husband and daughter,
+        Katie, and moved to Asia.&nbsp;</strong></p>
 <p><strong>First person narrative</strong></p>
 <h1><strong>Crisis/Conflict:</strong></h1>
 <p>&nbsp;</p>
 <p><strong>Wes has stayed up all night playing the Relive Box. </strong></p>
-<p><strong>Wes and his daughter, Katie,&nbsp; fight about who can/should use the Relive Box</strong></p>
+<p><strong>Wes and his daughter, Katie,&nbsp; fight about who can/should use
+        the Relive Box</strong></p>
 <h1><strong>Main conflict:&nbsp;</strong></h1>
-<p><strong>Wes, a father to a Katie, teenage girl,&nbsp; becomes addicted to the Relive Box. He neglects his present life and responsibilities.</strong></p>
+<p><strong>Wes, a father to a Katie, teenage girl,&nbsp; becomes addicted to
+        the Relive Box. He neglects his present life and
+        responsibilities.</strong></p>
 <h1><strong>Metamorphis/Change:&nbsp;</strong></h1>
 <p><strong>None/Negative</strong></p>
-<p><strong>Wes is addicted to the Box. When his daughter goes on a winter vacation Wes stops living his life and falls deeper into his addiction to the box. Wes isolates himself from society and his family.</strong></p>
+<p><strong>Wes is addicted to the Box. When his daughter goes on a winter
+        vacation Wes stops living his life and falls deeper into his
+        addiction to the box. Wes isolates himself from society and his
+        family.</strong></p>
 <h1><strong>Resolution:</strong></h1>
 <p><strong>None.&nbsp;</strong></p>
-<p><strong>At the end of the story, the reader does not know Wes' fate. Has he lost his entire present and future life to the box?</strong></p>
+<p><strong>At the end of the story, the reader does not know Wes' fate. Has
+        he lost his entire present and future life to the box?</strong></p>
 <p><strong>Katie says, "Dad are you there?"</strong></p>
 <p><strong>Wes replies, "I'm not here."&nbsp;</strong></p>
-<h1><strong>Tone: the author's attitude towards the subject. Author's word choice and details.</strong></h1>
-<p><strong>Cautionary tale, a warning about the benefits of new technologies.</strong></p>
+<h1><strong>Tone: the author's attitude towards the subject. Author's word
+        choice and details.</strong></h1>
+<p><strong>Cautionary tale, a warning about the benefits of new
+        technologies.</strong></p>
 <p><strong>skeptical</strong></p>
 <p><strong>cynical</strong></p>
 <p><strong>hopeless&nbsp;</strong></p>
-<h1><strong>Mood: the reader's reaction or emotions to the story</strong></h1>
+<h1><strong>Mood: the reader's reaction or emotions to the story</strong>
+</h1>
 <p><strong>Dark, depressing</strong></p>
 <p><strong>revolting, gross</strong></p>
 <p><strong>anxious</strong></p>
 <h1><strong>Central meaning of the Story:</strong></h1>
 <p>&nbsp;Does technology always improve our lives?</p>
-<p>Are you LIVING in the present or have you lost your life to technology?</p>
+<p>Are you LIVING in the present or have you lost your life to technology?
+</p>
 <h1><strong>Symbols:</strong></h1>
 <p><strong>Relive Box-addiction and remorse for past actiions</strong></p>
 <p><strong>The Christmas Wreath-family has given up traditions</strong></p>
-<p><strong>Re-living Room-Tech has replaced family time (the living room)</strong></p>
-<h1><strong>Motifs: a recurring word, image or phrase in a story</strong></h1>
+<p><strong>Re-living Room-Tech has replaced family time (the living
+        room)</strong></p>
+<h1><strong>Motifs: a recurring word, image or phrase in a story</strong>
+</h1>
 <p><strong>"Stop-Reset"</strong></p>
 <p><strong>Time/Date</strong></p>
 <p><strong>Restarting the relive box</strong></p>
-<p><strong>All motifs show an obsession with the past, memories and loss. Avoiding his present life and future.&nbsp;</strong></p>
+<p><strong>All motifs show an obsession with the past, memories and loss.
+        Avoiding his present life and future.&nbsp;</strong></p>
 <h1><strong>Themes:</strong></h1>
-<p><strong>1. Obsession with loss. You cannot change the past. The past is immutable.</strong></p>
-<p><strong>2. You cannot change the past but you can change your reaction to your past, your memories and your regrets.&nbsp;</strong></p>
-<h1><span style="text-decoration: underline;"><span style="color: crimson; text-decoration: underline;">There Will Come Soft Rains by Ray Bradbury</span></span></h1>
+<p><strong>1. Obsession with loss. You cannot change the past. The past is
+        immutable.</strong></p>
+<p><strong>2. You cannot change the past but you can change your reaction to
+        your past, your memories and your regrets.&nbsp;</strong></p>
+<h1><span style="text-decoration: underline;"><span style="color: crimson; text-decoration: underline;">There Will
+            Come Soft Rains by Ray Bradbury</span></span></h1>
 <h1><span style="color: black;">Protagonist:</span></h1>
-<p><strong><span style="color: black;">the voice of a "smart" house</span></strong></p>
-<h1><strong><span style="color: black;">Crisis/Conflict:</span></strong></h1>
+<p><strong><span style="color: black;">the voice of a "smart"
+            house</span></strong></p>
+<h1><strong><span style="color: black;">Crisis/Conflict:</span></strong>
+</h1>
 <p><strong><span style="color: black;">nucler blast</span></strong></p>
-<p><strong><span style="color: black;">owners of the house have died</span></strong></p>
-<p><strong><span style="color: black;">falling tree branch causes a fire</span></strong></p>
-<p><strong><span style="color: black;">food uneaten/floor gets dirty mechanical mice clean up</span></strong></p>
+<p><strong><span style="color: black;">owners of the house have
+            died</span></strong></p>
+<p><strong><span style="color: black;">falling tree branch causes a
+            fire</span></strong></p>
+<p><strong><span style="color: black;">food uneaten/floor gets dirty
+            mechanical mice clean up</span></strong></p>
 <h1><strong><span style="color: black;">Main Conflict:</span></strong></h1>
-<p><strong><span style="color: black;">Humans through their superior intelligence (minds) have created&nbsp;</span></strong></p>
+<p><strong><span style="color: black;">Humans through their superior
+            intelligence (minds) have created&nbsp;</span></strong></p>
 <h1><strong><span style="color: black;">Metamorphosis:</span></strong></h1>
-<p><strong><span style="color: black;">None. The voice of the house continues, "today is August 5th"</span></strong></p>
+<p><strong><span style="color: black;">None. The voice of the house
+            continues, "today is August 5th"</span></strong></p>
 <h1><strong><span style="color: black;">Resolution:</span></strong></h1>
-<p><strong><span style="color: black;">The house is burned to the ground when a falling branch causes a fire in the kitchen. The voice continues</span></strong></p>
-<h1><strong><span style="color: black;">Tone: author's words</span></strong></h1>
+<p><strong><span style="color: black;">The house is burned to the ground
+            when a falling branch causes a fire in the kitchen. The voice
+            continues</span></strong></p>
+<h1><strong><span style="color: black;">Tone: author's words</span></strong>
+</h1>
 <p><strong><span style="color: black;">spooky-empty</span></strong></p>
-<p><strong><span style="color: black;">a warning/cautinary tale</span></strong></p>
-<p><strong><span style="color: black;">a futuristic fairy tale</span></strong></p>
-<h1><strong><span style="color: black;">Mood: how the reader feels</span></strong></h1>
+<p><strong><span style="color: black;">a warning/cautinary
+            tale</span></strong></p>
+<p><strong><span style="color: black;">a futuristic fairy
+            tale</span></strong></p>
+<h1><strong><span style="color: black;">Mood: how the reader
+            feels</span></strong></h1>
 <p><strong><span style="color: black;">contemplative</span></strong></p>
 <p><strong><span style="color: black;">anxious/nervous</span></strong></p>
 <p><strong><span style="color: black;">lonely/isolated</span></strong></p>
-<h1><strong><span style="color: black;">Central Meaning of the Story:</span></strong></h1>
-<p><strong><span style="color: black;">The earth/nature will still be here even after all "life" ceases to exist and the earth will be better off without us!</span></strong></p>
+<h1><strong><span style="color: black;">Central Meaning of the
+            Story:</span></strong></h1>
+<p><strong><span style="color: black;">The earth/nature will still be here
+            even after all "life" ceases to exist and the earth will be
+            better off without us!</span></strong></p>
 <h1><strong><span style="color: black;">Symbols:</span></strong></h1>
 <p><strong><span style="color: black;">Silhouettes</span></strong></p>
-<p><strong><span style="color: black;">Sara Teasdale poem</span></strong></p>
+<p><strong><span style="color: black;">Sara Teasdale poem</span></strong>
+</p>
 <p><strong><span style="color: black;">The nursey</span></strong></p>
 <p><strong><span style="color: black;">the dog</span></strong></p>
 <h1><strong><span style="color: black;">Motifs:</span></strong></h1>
 <p><strong><span style="color: black;">the spoken time</span></strong></p>
 <p><strong><span style="color: black;">the food</span></strong></p>
 <p><strong><span style="color: black;">cleaning mice</span></strong></p>
-<p><strong><span style="color: black;">the glow/light (fire, radioactive, lit cigar)</span></strong></p>
+<p><strong><span style="color: black;">the glow/light (fire, radioactive,
+            lit cigar)</span></strong></p>
 <h1><strong><span style="color: black;">Themes:</span></strong></h1>
-<p><strong><span style="color: black;">The senselessness of war.</span></strong></p>
-<p><strong><span style="color: black;">The end of humanity will come at the hand of humanity</span></strong></p>
-<p><strong><span style="color: black;">The fragility of life/peace/the planet.-</span></strong></p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p></span></span>
-        </div>
-		<div class="clear"></div>
-	</div>
-</li>
-</ul>
-</div>
-	<div class="ui-widget-footer">
-		
-			
-		
-		<div class="clear"></div>
-	</div>
-</div>
-<script type="text/javascript">
-$(document).ready(function (){
-$(".tag-list li a").keypress(function(e) { if(e.which == 13) { $(this).click();   }});
-});
-function LoadGroupedData(container, MIID, PMI, groupYear, groupMonth, groupBy, tag) {
-  //ViewToUse looks at the hidden Sidebar List View defined in the Builder View.
-  var viewToUse = "";
-    if($('#hid-'+MIID+'-SidebarListView').length > 0){
-      viewToUse = $("#hid-" + MIID + "-SidebarListView").val();
-    };
-  GetContent('https://www.manvilleschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=1794&PageID=8530&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&RenderLoc=0&FromRenderLoc=0&GroupYear=' + groupYear + '&GroupMonth=' + groupMonth + '&GroupByField=' + groupBy + '&EnableQuirksMode=0&ViewID=' + viewToUse + '&Tag=' + tag, container, 2, 'chkSidebar();');
-}
-function LoadData(container, MIID, PMI, flexDataID, groupYear, groupMonth, groupBy, targetView, tag) {
-  if(targetView !== undefined || targetView.Length() == 0){
-  //targetView looks at the hidden Detail View defined in the Builder View.
-      targetView = $('#hid-'+MIID+'-DetailView').val();
-   }
-  GetContent('https://www.manvilleschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=1794&PageID=8530&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&FlexDataID=' + flexDataID + '&GroupYear=' + groupYear + '&GroupMonth=' + groupMonth + '&GroupByField=' + groupBy + '&RenderLoc=0&FromRenderLoc=0&EnableQuirksMode=0&Tag=' + tag + '&ViewID=' + targetView, container, 2, 'chkSidebar();');
-}
-function LoadTaggedData(container, MIID, PMI, tag) {
-  //ViewToUse looks at the hidden Sidebar List View defined in the Builder View.
-  var viewToUse = "";
-    if($('#hid-'+MIID+'-SidebarListView').length > 0){
-      viewToUse = $("#hid-" + MIID + "-SidebarListView").val();
-    };
-  GetContent('https://www.manvilleschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=1794&PageID=8530&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&RenderLoc=0&FromRenderLoc=0&Tag=' + tag + '&EnableQuirksMode=0&ViewID='+viewToUse, container, 2, 'chkSidebar();');
-  setTimeout(function(){ $("#module-content-"+ MIID +"").find('[tabindex]:first').focus(); }, 200);
-}
-</script>
-</div>
-
-</div></div>
-</div><div class="clear"></div></div></div><!-- End Centricity Content Area -->
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="noprint">
-        <section id="gb-footer-links-outer" class="gb-section-parent gb-section-pad" data-footer-links-color="White" data-footer-links-hover="White">
-        	<div id="gb-footer-links" class="gb-section"></div>
-        </section>
-        <section id="gb-footer-outer" class="gb-section-parent gb-section-pad" data-footer-text-color="White">
-            <div id="gb-footer" class="gb-section ui-clear displayFlexRow">
-                <h2></h2>
-                <div id="gb-address">
-                    <span class="gb-address one">1100 Brooks Blvd.</span><span class="gb-address spacer">, </span><span class="gb-address two">Manville, NJ 08835</span>
-                </div>
-                <div id="gb-contact">
-                	<span class="gb-contact phone" x-ms-format-detection="none">Phone: (908) 231-8500</span>
-                    <span class="gb-contact fax" x-ms-format-detection="none">Fax: </span>
-                </div>
-                <div id="gb-extra-links" class="displayFlexRow">
-                	<a class="footer-extra-link directions" href="//www.google.com/maps/place/1100 Brooks Blvd. Manville NJ 08835" target="_blank" data-show-directions-link="true">
-                    	<span>Get Directions</span>
-                    </a>
-                    <a class="footer-extra-link email" href="mailto:webadmin@manvillesd.org" data-show-email-link="false">
-                    	<span>Email Us</span>
-                    </a>
-                    <a class="footer-extra-link accessibility" href="#" target="_self">
-                    	<span>Web Accessibility</span>
-                    </a>
-                    <a class="footer-extra-link sitemap" href='/site/Default.aspx?PageType=15&SiteID=4&SectionMax=15&DirectoryType=6'>
-                        <span>Site Map</span>
-                    </a>
-                    <button class="cs-btn-reset footer-extra-link footer-scroll-btn" aria-label="Scroll To The Top Of The Page" tabindex="-1" aria-hidden="true"></button>
-                </div>
-            </div>
-        </section>
-        <section id="gb-social-media-outer" class="gb-section-parent gb-section-pad">
-        	<div id="gb-social-media" class="gb-section displayFlexRow">
-            	<h2>Stay Connected</h2>
-        		<div id="gb-social-media-icons" class="hidden"></div>
-            </div>
-        </section>
-        <section id="gb-schoolwires-footer-outer" class="gb-section-parent gb-section-pad">
-            <div id="gb-schoolwires-footer" class="gb-section border-box">
-                <div class="gb-schoolwires-footer top">
-                    <div id="gb-footer-disclaimer" data-show-disclaimer="false">
-                        <span>This is the disclaimer text. You can use this area for legal statements, copyright information, a mission statement, etc. If you don’t use it, the Bb footer will slide up.</span>
-                    </div>
-                </div>
-                <div class="gb-schoolwires-footer bottom" data-show-disclaimer="false">
-                    <div class="gb-schoolwires-footer logo"></div>
-                    <div id="gb-schoolwires-footer-links-copyright">
-                        <div class="gb-schoolwires-footer links"></div>
-                        <div class="gb-schoolwires-footer copyright"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </footer>
-</div><!-- BEGIN - STANDARD FOOTER -->
-<div id='sw-footer-outer'>
-<div id='sw-footer-inner'>
-<div id='sw-footer-left'></div>
-<div id='sw-footer-right'>
-<div id='sw-footer-links'>
-<ul>
-<li><a title='Click to email the primary contact' href='mailto:webadmin@manvillesd.org'>Questions or Feedback?</a> | </li>
-<li><a href='https://www.finalsite.com/privacy-policy' target="_blank">Web Community Manager Privacy Policy (Updated)</a> | </li>
-<li><a class='sw-footer-terms-link' aria-hidden='true' tabindex='-1' href=''></a></li>
-</ul>
-</div>
-<div id='sw-footer-copyright'>Copyright &copy; 2024 Finalsite - all rights reserved.</div>
-<div id='sw-footer-logo'><a href='http://www.finalsite.com' title="Finalsite - all rights reserved">
-<img src='https://www.manvilleschools.org/Static//GlobalAssets/Images/Navbar/WCM_logo.svg'
-class='sw-footer-logo-img' alt="Web Community Manager."/>
-</a></div>
-</div>
-</div>
-</div>
-<!-- END - STANDARD FOOTER -->
-<script type="text/javascript">
-   $(document).ready(function(){
-  var data = JSON.stringify({
-    "SiteID": "4",
-    "ChannelID": "1236",
-    "SectionID": "1794",
-    "PageID": "8530",
-    "Browser": "Firefox 130.0",
-    "OS": "WinNT",
-    "IPAddress": "10.61.15.224"
-  });
-  $.ajax({
-    url: "../Site/SiteController.aspx/InsertAnalyticsData",
-    method: "POST",
-    contentType: "application/json",
-    data: data,
-    success: function(response) {
-    },
-    error: function(xhr, status, error) {
-    }
-  });
-   });
-</script>
-
-    <input type="hidden" id="hid-pageid" value="8530" />
-
-    
-
-    <div id='dialog-overlay-WindowMedium-base' class='ui-dialog-overlay-base' ><div id='WindowMedium' role='dialog' tabindex='-1'  class='ui-dialog-overlay medium' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowMedium-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowMedium-body' ></div><button class='ui-dialog-overlay-close' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowMedium");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowMedium-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowMedium-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    <div id='dialog-overlay-WindowSmall-base' class='ui-dialog-overlay-base' ><div id='WindowSmall' role='dialog' tabindex='-1'  class='ui-dialog-overlay small' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowSmall-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowSmall-body' ></div><button class='ui-dialog-overlay-close' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowSmall");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowSmall-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowSmall-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    <div id='dialog-overlay-WindowLarge-base' class='ui-dialog-overlay-base' ><div id='WindowLarge' role='dialog' tabindex='-1'  class='ui-dialog-overlay large' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowLarge-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowLarge-body' ></div><button class='ui-dialog-overlay-close' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowLarge");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowLarge-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowLarge-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-
-    <div id='dialog-overlay-WindowMediumModal-base' class='ui-dialog-overlay-base-modal' ><div id='WindowMediumModal' role='dialog' tabindex='-1'  class='ui-dialog-overlay medium' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowMediumModal-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowMediumModal-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowMediumModal");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowMediumModal-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowMediumModal-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    <div id='dialog-overlay-WindowSmallModal-base' class='ui-dialog-overlay-base-modal' ><div id='WindowSmallModal' role='dialog' tabindex='-1'  class='ui-dialog-overlay small' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowSmallModal-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowSmallModal-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowSmallModal");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowSmallModal-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowSmallModal-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    <div id='dialog-overlay-WindowLargeModal-base' class='ui-dialog-overlay-base-modal' ><div id='WindowLargeModal' role='dialog' tabindex='-1'  class='ui-dialog-overlay large' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowLargeModal-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowLargeModal-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowLargeModal");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowLargeModal-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowLargeModal-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    <div id='dialog-overlay-WindowXLargeModal-base' class='ui-dialog-overlay-base-modal' ><div id='WindowXLargeModal' role='dialog' tabindex='-1'  class='ui-dialog-overlay xlarge' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowXLargeModal-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowXLargeModal-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowXLargeModal");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowXLargeModal-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowXLargeModal-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-
-    <div id='dialog-overlay-MyAccountSubscriptionOverlay-base' class='ui-dialog-overlay-base-modal' ><div id='MyAccountSubscriptionOverlay' role='dialog' tabindex='-1'  class='ui-dialog-overlay medium' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-MyAccountSubscriptionOverlay-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-MyAccountSubscriptionOverlay-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("MyAccountSubscriptionOverlay");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-MyAccountSubscriptionOverlay-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-MyAccountSubscriptionOverlay-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-
-    <div id='dialog-overlay-InsertOverlay-base' class='ui-dialog-overlay-base-modal' ><div id='InsertOverlay' role='dialog' tabindex='-1'  class='ui-dialog-overlay large' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-InsertOverlay-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-InsertOverlay-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("InsertOverlay");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-InsertOverlay-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-InsertOverlay-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    <div id='dialog-overlay-InsertOverlay2-base' class='ui-dialog-overlay-base-modal' ><div id='InsertOverlay2' role='dialog' tabindex='-1'  class='ui-dialog-overlay large' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-InsertOverlay2-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-InsertOverlay2-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("InsertOverlay2");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-InsertOverlay2-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-InsertOverlay2-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    
-    <div id="videowrapper" class="ui-helper-hidden">
-        <div id="videodialog" role="application">
-            <a id="videodialog-close" role="button" href="javascript:;" aria-label="Close Overlay" class="close-btn" onclick="closeVideoDialog();">CLOSE</a>
-            <div id="videodialog-video" ></div>
-            <div id="videodialog-foot" tabindex="0"></div>
-        </div>
-    </div>
-    <div id="attachmentwrapper" class="ui-helper-hidden">
-        <div id="attachmentdialog" role="application">
-            <a id="attachmentdialog-close" role="button" href="javascript:;" aria-label="Close Overlay" class="close-btn" onclick="closeAttachmentDialog();">CLOSE</a>
-            <div id="attachmentdialog-container"></div>
-        </div>
-    </div>
-    <script type="text/javascript">
-
-        $(document).ready(function () { 
-
-            removeBrokenImages();
-            checkSidebar();
-            RemoveCookie();
-
-            
-            //$('div.bullet').attr('tabindex', '');
-
-            
-
-            $('.navigation li.collapsible').each(function () {
-                if ($(this).find('ul').length == 0) {
-                    $(this).removeClass('collapsible');
-                }
-            });
-
-            // find page nav state cookie and add open chevron
-            var arrValues = GetCookie('SWPageNavState').split('~');
-
-            $.each(arrValues, function () {
-                if (this != '') {
-                   //$('#' + this).addClass('collapsible').prepend("<div class='bullet collapsible' aria-label='Close Page Submenu'/>");
-                    $('#' + this).addClass('collapsible').prepend("<div class='bullet collapsible' aria-haspopup='true' aria-expanded='true' />");
-                }
-            });
-
-            // find remaining sub menus and add closed chevron and close menu
-            $('.navigation li > ul').each(function () {
-                var list = $(this);
-
-                if (list.parent().hasClass('active') && !list.parent().hasClass('collapsible')) {
-                    // open sub for currently selected page                    
-                    //list.parent().addClass('collapsible').prepend("<div class='bullet collapsible'aria-label='Close Page Submenu' />");
-                    list.parent().addClass('collapsible').prepend("<div class='bullet collapsible' aria-haspopup='true' aria-expanded='true' />");
-                } else {
-                    if (list.parent().hasClass('collapsible') && !list.siblings('div').hasClass('collapsible')) {
-                        // open sub for page with auto expand
-                        list.siblings('div.expandable').remove();
-                        //list.parent().prepend("<div class='bullet collapsible' aria-label='Close Page Submenu' />");
-                        list.parent().prepend("<div class='bullet collapsible' aria-haspopup='true' aria-expanded='true' />");
-                    }
-                }
-
-                if (!list.siblings('div').hasClass('collapsible')) {
-                    // keep all closed that aren't already set to open
-                    //list.parent().addClass('expandable').prepend("<div class='bullet expandable' aria-label='Open Page Submenu' />");
-                    list.parent().addClass('expandable').prepend("<div class='bullet expandable' aria-haspopup='true' aria-expanded='false' />");
-                    ClosePageSubMenu(list.parent());
-                } else {
-                   OpenPageSubMenu(list.parent());
-                }
-            });
-
-            $(".navigation .bullet.collapsible, .navigation .bullet.expandable, .navigation a").each(function () {
-                if ($(this).closest("ul").attr("aria-hidden") == "true"){
-                    $(this).attr("tabindex", "-1");
-                } else {
-                    $(this).attr("tabindex", "0");
-                }
-            })
-
-            // remove bullet from hierarchy if no-bullet set
-            $('.navigation li.collapsible').each(function () {
-                if ($(this).hasClass('no-bullet')) {
-                    if (!$(this).hasClass('navigationgroup')) { $(this).removeClass('collapsible'); }
-                    $(this).children('div.collapsible').remove();
-                }
-            });
-
-            $('.navigation li.expandable').each(function () {
-                if ($(this).hasClass('no-bullet')) {
-                    if (!$(this).hasClass('navigationgroup')) { $(this).removeClass('expandable'); }
-                    $(this).children('div.expandable').remove();
-                }
-            });
-
-            $('.navigation li:not(.collapsible,.expandable,.no-bullet)').each(function () {
-                $(this).prepend("<div class='bullet'/>");
-            });
-
-            $('.navigation li.active').parents('ul').each(function () {
-                if (!$(this).hasClass('page-navigation')) {
-                    OpenPageSubMenu($(this).parent());
-                }
-            });
-
-            // Set aria ttributes
-            /*$('li.collapsible').each(function () {
-               $(this).attr("aria-expanded", "true");
-               $(this).find('div:first').attr('aria-pressed', 'true');
-            });*/
-
-            $('li.expandable').each(function () {
-                ///$(this).attr("aria-expanded", "false");
-                //$(this).find('div:first').attr('aria-pressed', 'false');
-                $(this).find("ul :focusable").attr("tabindex","-1");
-            });
-
-            /*$('div.bullet').each(function () {
-                $(this).attr("aria-hidden", "true");
-            });*/
-
-            // set click event for chevron
-            $(document).on('click', '.navigation div.collapsible', function () {
-                ClosePageSubMenu($(this).parent());
-            });
-
-            $(document).on('click', '.navigation div.expandable', function () {
-                OpenPageSubMenu($(this).parent());
-            });
-
-            // set navigation grouping links
-            $(document).on('click', '.navigationgroup.collapsible > a', function () {
-                ClosePageSubMenu($(this).parent());
-            });
-
-            $(document).on('click', '.navigationgroup.expandable > a', function () {
-                OpenPageSubMenu($(this).parent());
-            });
-
-            //SW MYSTART DROPDOWNS
-            $(document).on('click', '.sw-mystart-dropdown', function () {
-                $(this).children(".sw-dropdown").css("display", "block");
-            });
-
-            $(".sw-mystart-dropdown").hover(function () { }, function () {
-                $(this).children(".sw-dropdown").hide();
-                $(this).blur();
-            });
-
-            //SW ACCOUNT DROPDOWN
-            $(document).on('click', '#sw-mystart-account', function () {
-                $(this).children("#sw-myaccount-list").show();
-                $(this).addClass("clicked-state");
-            });
-
-            $("#sw-mystart-account, #sw-myaccount-list").hover(function () { }, function () {
-                $(this).children("#sw-myaccount-list").hide();
-                $(this).removeClass("clicked-state");
-                $("#sw-myaccount").blur();
-            });
-
-            // set hover class for page and section navigation
-            $('.ui-widget.app.pagenavigation, .ui-widget.app.sectionnavigation').find('li > a').hover(function () {
-                $(this).addClass('hover');
-            }, function () {
-                $(this).removeClass('hover');
-            });
-
-            //set aria-label for home
-            $('#navc-HP > a').attr('aria-label', 'Home');
-
-            // set active class on channel and section
-            var activeChannelNavType = $('input#hidActiveChannelNavType').val();
-            if (activeChannelNavType == -1) {
-                // homepage is active
-                $('#navc-HP').addClass('active');
-            } else if (activeChannelNavType == 1) {
-                // calendar page is active
-                $('#navc-CA').addClass('active');
-            } else {
-                // channel is active - set the active class on the channel
-                var activeSelectorID = $('input#hidActiveChannel').val();
-                $('#navc-' + activeSelectorID).addClass('active');
-
-                // set the breadcrumb channel href to the channel nav href
-                $('li[data-bccID=' + activeSelectorID + '] a').attr('href', $('#navc-' + activeSelectorID + ' a').attr('href'));
-                $('li[data-bccID=' + activeSelectorID + '] a span').text($('#navc-' + activeSelectorID + ' a span').first().text());
-
-                // set the active class on the section
-                activeSelectorID = $('input#hidActiveSection').val();
-                $('#navs-' + activeSelectorID).addClass('active');
-
-                // set the breadcrumb section href to the channel nav href
-                $('li[data-bcsID=' + activeSelectorID + '] a').attr('href', $('#navs-' + activeSelectorID + ' a').attr('href'));
-                if ($('#navs-' + activeSelectorID + ' a').attr('target') !== undefined) {
-                    $('li[data-bcsID=' + activeSelectorID + '] a').attr('target', $('#navs-' + activeSelectorID + ' a').attr('target'));
-                }
-                $('li[data-bcsID=' + activeSelectorID + '] span').text($('#navs-' + activeSelectorID + ' a span').text());
-
-                if ($('.sw-directory-columns').length > 0) {
-                    $('ul.ui-breadcrumbs li:last-child').remove();
-                    $('ul.ui-breadcrumbs li:last-child a').replaceWith(function() { return $('span', this); });
-                    $('ul.ui-breadcrumbs li:last-child span').append(' Directory');
-                }
-            }
-        }); // end document ready
-
-        function OpenPageSubMenu(li) {
-            if (li.prop('tagName').toLowerCase() == "li") {
-                if (li.hasClass('expandable')) {
-                    li.removeClass('expandable').addClass('collapsible');
-                }
-                if (li.find('div:first').hasClass('expandable')) {
-                    let linkText = li.find("> a").text();
-                    //li.find('div:first').removeClass('expandable').addClass('collapsible').attr('aria-pressed', 'true').attr('aria-label', 'Close Page Submenu');
-                    li.find('div:first').removeClass('expandable').addClass('collapsible').attr({
-                        "aria-expanded": "true",
-                        "aria-label": "Collapse "+linkText+" nested links"
-                    });
-                }
-                li.find('ul:first').attr('aria-hidden', 'false').show();
-                li.find("ul:first > li > .bullet.expandable, ul:first > li > .bullet.collapsible, ul:first > li > a").attr("tabindex", "0");
-                //li.find("li.expandable ul :focusable").attr("tabindex","-1");
-
-                //li.attr("aria-expanded", "true");
-
-                PageNavigationStateCookie();
-            }
-        }
-
-        function ClosePageSubMenu(li) {
-            if (li.prop('tagName').toLowerCase() == "li") {
-                let linkText = li.find("> a").text();
-                li.removeClass('collapsible').addClass('expandable');
-                //li.find('div:first').removeClass('collapsible').addClass('expandable').attr('aria-pressed', 'false').attr('aria-label', 'Open Page Submenu');
-                li.find('div:first').removeClass('collapsible').addClass('expandable').attr({
-                    "aria-expanded": "false",
-                    "aria-label": "Expand "+linkText+" nested links"
-                });
-                li.find('ul:first').attr('aria-hidden', 'true').hide();
-                li.find("ul:first .bullet.expandable, ul:first .bullet.collapsible, ul:first a").attr("tabindex","-1");
-
-                //li.attr("aria-expanded", "false");
-
-                PageNavigationStateCookie();
-            }
-        }
-
-        function PageNavigationStateCookie() {
-            var strCookie = "";
-
-            $('.pagenavigation li > ul').each(function () {
-                var item = $(this).parent('li');
-                if (item.hasClass('collapsible') && !item.hasClass('no-bullet')) {
-                    strCookie += $(this).parent().attr('id') + '~';
-                }
-            });
-
-            SetCookie('SWPageNavState', strCookie);
-        }
-
-        function checkSidebar() {
-            $(".ui-widget-sidebar").each(function () {
-                if ($.trim($(this).html()) != "") {
-                    $(this).show();
-                    $(this).siblings(".ui-widget-detail").addClass("with-sidebar");
-                }
-            });
-        }
-
-        function removeBrokenImages() {
-            //REMOVES ANY BROKEN IMAGES
-            $("span.img img").each(function () {
-                if ($(this).attr("src") !== undefined && $(this).attr("src") != '../../') {
-                    $(this).parent().parent().show();
-                    $(this).parent().parent().siblings().addClass("has-thumb");
-                }
-            });
-        }
-
-        function LoadEventDetailUE(moduleInstanceID, eventDateID, userRegID, isEdit) {
-            (userRegID === undefined ? userRegID = 0 : '');
-            (isEdit === undefined ? isEdit = false : '');
-            OpenDialogOverlay("WindowMediumModal", { LoadType: "U", LoadURL: "https://www.manvilleschools.org//site/UserControls/Calendar/EventDetailWrapper.aspx?ModuleInstanceID=" + moduleInstanceID + "&EventDateID=" + eventDateID + "&UserRegID=" + userRegID + "&IsEdit=" + isEdit });
-        }
-
-        function RemoveCookie() {
-            // There are no sub page            
-            if ($('.pagenavigation li li').length == 0) {
-                //return false;
-                PageNavigationStateCookie();
-            }
-        }
-    </script>
-
-    <script type="text/javascript">
-
-        function AddOffCanvasMenuHeightForSiteNav() {
-            var sitenavulHeight = 0;
-
-            if ($('#sw-pg-sitenav-ul').length > 0) {
-                sitenavulHeight = parseInt($("#sw-pg-sitenav-ul").height());
-            }
-
-            var swinnerwrapHeight = 0;
-
-            if ($('#sw-inner-wrap').length > 0) {
-                swinnerwrapHeight = parseInt($("#sw-inner-wrap").height());
-            }
-
-            // 360px is abount 5 li height
-            if (sitenavulHeight + 360 >= swinnerwrapHeight) {
-                $("#sw-inner-wrap").height(sitenavulHeight + 360);
-            }
-        }
-
-        function AddOffCanvasMenuHeightForSelectSchool() {
-            var selectschoolulHeight = 0;
-
-            if ($('#sw-pg-selectschool-ul').length > 0) {
-                selectschoolulHeight = parseInt($("#sw-pg-selectschool-ul").height());
-            }
-
-            var swinnerwrapHeight = 0;
-
-            if ($('#sw-inner-wrap').length > 0) {
-                swinnerwrapHeight = parseInt($("#sw-inner-wrap").height());
-            }
-
-            // 360px is abount 5 li height
-            if (selectschoolulHeight + 360 >= swinnerwrapHeight) {
-                $("#sw-inner-wrap").height(selectschoolulHeight + 360);
-            }
-        }
-
-        $(document).ready(function () {
-            if ($("#sw-pg-sitenav-a").length > 0) {
-                $(document).on('click', '#sw-pg-sitenav-a', function () {
-                    if ($("#sw-pg-sitenav-ul").hasClass('sw-pgmenu-closed')) {
-                        AddOffCanvasMenuHeightForSiteNav();
-
-                        $("ul.sw-pgmenu-toplevel").removeClass('sw-pgmenu-open').addClass('sw-pgmenu-closed');
-                        $("#sw-pg-sitenav-ul").removeClass('sw-pgmenu-closed');
-                        $("#sw-pg-sitenav-ul").addClass('sw-pgmenu-open');
-                    } else {
-                        $("#sw-pg-sitenav-ul").removeClass('sw-pgmenu-open');
-                        $("#sw-pg-sitenav-ul").addClass('sw-pgmenu-closed');
-                    }
-                });
-
-                $(document).on('click', '#sw-pg-selectschool-a', function () {
-                    if ($("#sw-pg-selectschool-ul").hasClass('sw-pgmenu-closed')) {
-                        AddOffCanvasMenuHeightForSelectSchool();
-
-                        $("ul.sw-pgmenu-toplevel").removeClass('sw-pgmenu-open').addClass('sw-pgmenu-closed');
-                        $("#sw-pg-selectschool-ul").removeClass('sw-pgmenu-closed');
-                        $("#sw-pg-selectschool-ul").addClass('sw-pgmenu-open');
-                    } else {
-                        $("#sw-pg-selectschool-ul").removeClass('sw-pgmenu-open');
-                        $("#sw-pg-selectschool-ul").addClass('sw-pgmenu-closed');
-                    }
-                });
-
-                $(document).on('click', '#sw-pg-myaccount-a', function () {
-                    if ($("#sw-pg-myaccount-ul").hasClass('sw-pgmenu-closed')) {
-                        $("ul.sw-pgmenu-toplevel").removeClass('sw-pgmenu-open').addClass('sw-pgmenu-closed');
-                        $("#sw-pg-myaccount-ul").removeClass('sw-pgmenu-closed');
-                        $("#sw-pg-myaccount-ul").addClass('sw-pgmenu-open');
-                    } else {
-                        $("#sw-pg-myaccount-ul").removeClass('sw-pgmenu-open');
-                        $("#sw-pg-myaccount-ul").addClass('sw-pgmenu-closed');
-                    }
-                });
-
-                $(document).on('click', '.pg-list-bullet', function () {
-                    $(this).prev().toggle();
-
-                    if ($(this).hasClass('closed')) {
-                        AddOffCanvasMenuHeightForSiteNav();
-
-                        $(this).removeClass('closed');
-                        $(this).addClass('open');
-                    } else {
-                        $(this).removeClass('open');
-                        $(this).addClass('closed');
-                    }
-                });
-
-                $(document).on('mouseover', '#sw-pg-selectschool', function () {
-                    $("#sw-pg-selectschool-firstli").removeClass('sw-pg-selectschool-firstli-mouseout').addClass('sw-pg-selectschool-firstli-mouseover');
-                    $("#sw-pg-selectschool-firstli a").addClass('sw-pg-selectschool-firstli-a-mouseover').removeClass('sw-pg-selectschool-firstli-a-mouseout');
-                });
-
-                $(document).on('mouseout', '#sw-pg-selectschool', function () {
-                    $("#sw-pg-selectschool-firstli").removeClass('sw-pg-selectschool-firstli-mouseover').addClass('sw-pg-selectschool-firstli-mouseout');
-                    $("#sw-pg-selectschool-firstli a").addClass('sw-pg-selectschool-firstli-a-mouseout').removeClass('sw-pg-selectschool-firstli-a-mouseover');
-                });
-
-                $(document).on('mouseover', '#sw-pg-myaccount', function () {
-                    $("#sw-pg-myaccount-firstli").removeClass('sw-pg-myaccount-firstli-mouseout').addClass('sw-pg-myaccount-firstli-mouseover');
-                    $("#sw-pg-myaccount-firstli a").addClass('sw-pg-myaccount-firstli-a-mouseover').removeClass('sw-pg-myaccount-firstli-a-mouseout');
-                });
-
-                $(document).on('mouseout', '#sw-pg-myaccount', function () {
-                    $("#sw-pg-myaccount-firstli").removeClass('sw-pg-myaccount-firstli-mouseover').addClass('sw-pg-myaccount-firstli-mouseout');
-                    $("#sw-pg-myaccount-firstli a").addClass('sw-pg-myaccount-firstli-a-mouseout').removeClass('sw-pg-myaccount-firstli-a-mouseover');
-                });
-
-                $(document).on('mouseover', '#sw-pg-sitenav', function () {
-                    $("#sw-pg-sitenav-firstli").removeClass('sw-pg-sitenav-firstli-mouseout').addClass('sw-pg-sitenav-firstli-mouseover');
-                    $("#sw-pg-sitenav-firstli a").addClass('sw-pg-sitenav-firstli-a-mouseover').removeClass('sw-pg-sitenav-firstli-a-mouseout');
-                });
-
-                $(document).on('mouseout', '#sw-pg-sitenav', function () {
-                    $("#sw-pg-sitenav-firstli").removeClass('sw-pg-sitenav-firstli-mouseover').addClass('sw-pg-sitenav-firstli-mouseout');
-                    $("#sw-pg-sitenav-firstli a").addClass('sw-pg-sitenav-firstli-a-mouseout').removeClass('sw-pg-sitenav-firstli-a-mouseover');
-                });
-
-                $(document).on('mouseover', '#sw-pg-district', function () {
-                    $("#sw-pg-district-firstli").removeClass('sw-pg-district-firstli-mouseout').addClass('sw-pg-district-firstli-mouseover');
-                    $("#sw-pg-district-firstli a").addClass('sw-pg-district-firstli-a-mouseover').removeClass('sw-pg-district-firstli-a-mouseout');
-                });
-
-                $(document).on('mouseout', '#sw-pg-district', function () {
-                    $("#sw-pg-district-firstli").removeClass('sw-pg-district-firstli-mouseover').addClass('sw-pg-district-firstli-mouseout');
-                    $("#sw-pg-district-firstli a").addClass('sw-pg-district-firstli-a-mouseout').removeClass('sw-pg-district-firstli-a-mouseover');
-                });
-            }
-        });
-
-
-    </script>
-    <script src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/min/SW-UI_2680.min.js" type='text/javascript'></script>
-    <script language="javascript" type='text/javascript' src="https://www.manvilleschools.org/Static/GlobalAssets/jQueryUI.min.js"></script>
-    <script src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/jquery.sectionlayer.js" type='text/javascript'></script>
-    <script src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/Initialize_2560.js" type='text/javascript'></script>
-    <script src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/min/swfobject.min.js" type="text/javascript"></script>
-    <script src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/min/jquery.ajaxupload_2440.min.js" type="text/javascript"></script>
-
-    <!-- Begin swuc.CheckScript -->
-  <script type="text/javascript" src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/ThirdParty/json2.js"></script>
-  <script type="text/javascript" src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/CheckScript_2780.js"></script>
-<!-- End swuc.CheckScript -->
-
-
-    <!-- Server Load Time (03): 0.1558132 Seconds -->
-
-    
-
-    <!-- off-canvas menu enabled-->
-    
-
-    <!-- Ally Alternative Formats Configure START   -->
-    
-<script>
-    AFExtensions = ".pdf,.doc,.docx,.ppt,.pptx,.odt,.odp";
-    AllyClientID = "13314";
-	    // Wait for the API to load     
-	    ally.ready(function() {
-		    // Configure an API instance
-            const ui = ally.ui({
-			    'client': {
-				    'baseUrl': 'https://prod.ally.ac',
-				    'clientId': 13314
-			    },
-			    'courseId': '1794',
-			    'locale': $('html').attr('lang'),
-			    'platformName': 'Wcm',  
-			    'role': 'anonymous'
-		    });
-	        // Apply the API to the page body   
-            ui.autoUpdate({'domWatch': 250});
-    });
-
-</script>
-    <!-- Ally Alternative Formats Configure END     -->
-
-</body>
-</html>
+<p><strong><span style="color: black;">The senselessness of
+            war.</span></strong></p>
+<p><strong><span style="color: black;">The end of humanity will come at the
+            hand of humanity</span></strong></p>
+<p><strong><span style="color: black;">The fragility of life/peace/the
+            planet.-</span></strong></p>

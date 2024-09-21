@@ -1,1604 +1,788 @@
 <h1>Romeo and Juliet</h1>
 
-		
-	</div>
-
-    <div class="ui-widget-footer">
-		  
-	</div>
-</div>
-<script type="text/javascript">
-$(document).ready(function (){
-$(".tag-list li a").keypress(function(e) { if(e.which == 13) { $(this).click();   }});
-});
-function LoadGroupedData(container, MIID, PMI, groupYear, groupMonth, groupBy, tag) {
-  //ViewToUse looks at the hidden Sidebar List View defined in the Builder View.
-  var viewToUse = "";
-    if($('#hid-'+MIID+'-SidebarListView').length > 0){
-      viewToUse = $("#hid-" + MIID + "-SidebarListView").val();
-    };
-  GetContent('https://www.manvilleschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=1794&PageID=5563&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&RenderLoc=0&FromRenderLoc=0&GroupYear=' + groupYear + '&GroupMonth=' + groupMonth + '&GroupByField=' + groupBy + '&EnableQuirksMode=0&ViewID=' + viewToUse + '&Tag=' + tag, container, 2, 'chkSidebar();');
-}
-function LoadData(container, MIID, PMI, flexDataID, groupYear, groupMonth, groupBy, targetView, tag) {
-  if(targetView !== undefined || targetView.Length() == 0){
-  //targetView looks at the hidden Detail View defined in the Builder View.
-      targetView = $('#hid-'+MIID+'-DetailView').val();
-   }
-  GetContent('https://www.manvilleschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=1794&PageID=5563&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&FlexDataID=' + flexDataID + '&GroupYear=' + groupYear + '&GroupMonth=' + groupMonth + '&GroupByField=' + groupBy + '&RenderLoc=0&FromRenderLoc=0&EnableQuirksMode=0&Tag=' + tag + '&ViewID=' + targetView, container, 2, 'chkSidebar();');
-}
-function LoadTaggedData(container, MIID, PMI, tag) {
-  //ViewToUse looks at the hidden Sidebar List View defined in the Builder View.
-  var viewToUse = "";
-    if($('#hid-'+MIID+'-SidebarListView').length > 0){
-      viewToUse = $("#hid-" + MIID + "-SidebarListView").val();
-    };
-  GetContent('https://www.manvilleschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=1794&PageID=5563&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&RenderLoc=0&FromRenderLoc=0&Tag=' + tag + '&EnableQuirksMode=0&ViewID='+viewToUse, container, 2, 'chkSidebar();');
-  setTimeout(function(){ $("#module-content-"+ MIID +"").find('[tabindex]:first').focus(); }, 200);
-}
-</script>
-</div>
-
-</div></div>
-<div id='pmi-6224'>
-
-
-
-<div id='sw-module-66050'>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            var DomainID = '1794';
-            var PageID = '5563';
-            var RenderLoc = '0';
-            var MIID = '6605';
-
-            //added to check to make sure moderated content doesn't bleed through the dialog
-            if ($('#dialog-overlay-WindowLargeModal-body.moderateContent').length > 0) {
-                $("#module-content-" + MIID).find(".ui-widget-detail").find(".ui-article").append("<p>&nbsp;</p>");
-            }
-        });
-    </script>
-
-    <script type="text/javascript">$(document).ready(function() {CheckScript('ModuleView');CheckScript('Mustache');
- });</script>
-    
-    <div id="module-content-6605" >
-<div class="ui-widget app flexpage">
-	<div class="ui-widget-header ui-helper-hidden">
-		
-	</div>
-	
-	<div class="ui-widget-detail">
-		<ul class="ui-articles">
-<li>
-	<div class="ui-article">
-		<div class="ui-article-description">
-        	<span><span ><p>Romeo and Juliet - Powered By OnCourse Systems For Education</p>
+<p>Romeo and Juliet - Powered By OnCourse Systems For Education</p>
 <div class="master-container">
-<div id="container">
-<div id="wrapper">
-<div id="contents" class="content">
-<div class="body-content">
-<h1><strong>William Shakespeare-Why do we study William Shakespeare?</strong></h1>
-<p><strong>&nbsp;</strong></p>
-<p><strong>Nicknames-The Bard, The Bard of Avon and The Swan of Avon</strong></p>
-<p><strong>&nbsp;</strong></p>
-<p><strong>His works has been translated into every major language</strong></p>
-<p><strong>The most quoted writer in the English language and World history</strong></p>
-<p><strong>Wrote 38 plays-11 Tragedies, 17 Comedies and 10 Historical </strong></p>
-<p><strong>Wrote 154 Sonnets (special form of poetry)</strong></p>
-<h1><strong>&nbsp;</strong></h1>
-<h1><span style="font-size: medium;"><strong>The House of the Montagues</strong></span></h1>
-<p><strong>&nbsp;</strong></p>
-<p><strong>Romeo</strong></p>
-<p><strong>Lord and Lady Montague</strong></p>
-<p><strong>Benvolio</strong></p>
-<p><strong>Mercutio</strong></p>
-<p><strong>Balthasar</strong></p>
-<p><strong>Abram</strong></p>
-<p><strong>&nbsp;</strong></p>
-<h1><span style="font-size: medium;"><strong>The House of the Capulets</strong></span></h1>
-<p><strong><span style="text-decoration: underline;">&nbsp;</span></strong></p>
-<p><strong>Juliet</strong></p>
-<p><strong>Lord and Lady Capulet</strong></p>
-<p><strong>The Nurse </strong></p>
-<p><strong>Tybalt (cousin)</strong></p>
-<p><strong>Sampson and Gregory (servants)</strong></p>
-<p><strong>&nbsp;</strong></p>
-<h1><span style="font-size: medium;"><strong>The House of Verona</strong></span></h1>
-<p><strong><span style="text-decoration: underline;">&nbsp;</span></strong></p>
-<p><strong>Prince Escalus</strong></p>
-<p><strong>Paris</strong></p>
-<p><strong>Mercutio</strong></p>
-<p><strong>&nbsp;</strong></p>
-<h1><span style="font-size: medium;"><strong>The Church</strong></span></h1>
-<p><strong><span style="text-decoration: underline;">&nbsp;</span></strong></p>
-<p><strong>Friar Lawrence</strong></p>
-<p><strong>Friar John</strong></p>
-<p><strong>&nbsp;</strong></p>
-<h1><span style="font-size: medium;"><strong>Other Characters</strong></span></h1>
-<p><strong>&nbsp;</strong></p>
-<p><strong>Rosaline</strong></p>
-<p><strong>The Apothecary</strong></p>
-<p><strong>The Chorus</strong></p>
-<p><strong>&nbsp;</strong></p>
-<h1><span style="color: #ff0000;"><strong>Character Descriptions</strong></span></h1>
-<p>&nbsp;</p>
-<p><span style="text-decoration: underline; color: #ff0000;"><strong><img src="http://www.joycedidonato.com/wp-content/uploads/2012/09/draft_lens17978777module150387874photo_1306217151romeo-and-juliet.jpeg" alt="" /></strong></span></p>
-<h1><span style="text-decoration: underline; color: #ff0000;"><strong>Romeo</strong></span></h1>
-<p><strong>His name means &ldquo;a lover&rdquo;</strong></p>
-<p><strong>Young, intelligent and handsome</strong></p>
-<p><strong>Reckless, Passionate, Intense and lacks moderation</strong></p>
-<p><strong>Best friends are Benvolio and Mercutio</strong></p>
-<p><strong>Friar Lawrence is his advisor</strong></p>
-<p><strong>&nbsp;</strong></p>
-<p><strong><img src="http://vignette2.wikia.nocookie.net/p__/images/e/ea/Juliet_Capulet_wearing_a_headband.jpg/revision/latest?cb=20140323231819&amp;path-prefix=protagonist" alt="" width="241" height="322" />&nbsp;</strong></p>
-<h1><span style="text-decoration: underline; color: #ff0000;"><strong>Juliet</strong></span></h1>
-<p><strong>Beautiful, 13 years old</strong></p>
-<p><strong>Na&iuml;ve</strong></p>
-<p><strong>Expected to marry soon</strong></p>
-<p><strong>The Nurse is her confidant</strong></p>
-<p><strong>Grows up quickly when she falls in love with Romeo</strong></p>
-<p><strong>More cautious and level-headed than Romeo</strong></p>
-<p>&nbsp;</p>
-<p><span style="text-decoration: underline; color: #ff0000;"><strong><img src="http://vignette4.wikia.nocookie.net/shakespeare/images/7/79/Zeff-Lord_Montague.jpg/revision/latest?cb=20150613042039" alt="" width="348" height="232" /></strong></span></p>
-<h1><span style="text-decoration: underline; color: #ff0000;"><strong>Lord Montague</strong></span></h1>
-<p><strong>Romeo&rsquo;s father </strong></p>
-<p><strong>Bitter enemy of the Capulets</strong></p>
-<p><strong>&nbsp;<img src="http://thewallmachine.com/files/1321305768.jpg" alt="" width="303" height="303" /></strong></p>
-<h1><span style="text-decoration: underline; color: #ff0000;"><strong>Capulet</strong></span></h1>
-<p><strong>Juliet&rsquo;s father</strong></p>
-<p><strong>Enemy of the Montagues</strong></p>
-<p><strong>Loves his daughter (his only child)</strong></p>
-<p><strong>Demands respect</strong></p>
-<p><strong>Flies into a rage when angry</strong></p>
-<p>&nbsp;</p>
-<p><strong>&nbsp;<img src="http://images6.fanpop.com/image/photos/32500000/1968-Romeo-Juliet-The-Capulet-Montague-Parents-1968-romeo-and-juliet-by-franco-zeffirelli-32570784-262-423.gif" alt="" width="219" height="354" /></strong></p>
-<p>&nbsp;</p>
-<h1><span style="text-decoration: underline; color: #ff0000;"><strong>Lady Montague</strong></span></h1>
-<p><strong>Romeo&rsquo;s mother</strong></p>
-<p><strong>Dies of grief when Romeo is exiled from Verona</strong></p>
-<p><strong>&nbsp;</strong></p>
-<p><strong><img src="http://b1969d.medialib.glogster.com/media/5bc40f16ca1b4d234d68c738131e78cee25698ff1cd7b07ee9ad1c9f0734e559/lady-capulet.jpg" alt="" width="218" height="317" /></strong></p>
-<h1><span style="text-decoration: underline; color: #ff0000;"><strong>Lady Capulet</strong></span></h1>
-<p><strong>Married Young, gave birth to Juliet when she was about 14</strong></p>
-<p><strong>Eager to see Juliet marry Paris</strong></p>
-<p><strong>Ineffectual mother, relies on Nurse to raise Juliet</strong></p>
-<p><strong>&nbsp;</strong></p>
-<p><strong><img src="http://images5.fanpop.com/image/photos/28100000/Nurse-R-J-1968-Film-1968-romeo-and-juliet-by-franco-zeffirelli-28125790-640-480.jpg" alt="" width="315" height="236" /></strong></p>
-<h1><span style="text-decoration: underline; color: #ff0000;"><strong>The Nurse</strong></span></h1>
-<p><strong>Juliet&rsquo;s nurse her entire life</strong></p>
-<p><strong>Actually breast Juliet as an infant</strong></p>
-<p><strong>Confidant, extremely LOYAL</strong></p>
-<p><strong>Wants Juliet to have a husband</strong></p>
-<p><strong>Comic Relief throughout the play</strong></p>
-<p><strong>&nbsp;<img src="http://images5.fanpop.com/image/photos/28100000/Tybalt-R-J-1968-Film-1968-romeo-and-juliet-by-franco-zeffirelli-28126638-320-240.jpg" alt="" /></strong></p>
-<h1><span style="text-decoration: underline; color: #ff0000;"><strong>Tybalt</strong></span></h1>
-<p><strong>Juliet&rsquo;s cousin</strong></p>
-<p><strong>Deeply hates and loathes the Montagues</strong></p>
-<p><strong>Aggressive, Violent, </strong></p>
-<p><strong>Quick to draw his sword, excellent with this weapon</strong></p>
-<p><strong>Kills Mercutio and is then killed by Romeo</strong></p>
-<p>&nbsp;</p>
-<p><strong>&nbsp;<img src="http://images5.fanpop.com/image/photos/28100000/Benvolio-of-the-1968-Romeo-Juliet-Film-1968-romeo-and-juliet-by-franco-zeffirelli-28120549-270-177.jpg" alt="" width="316" height="207" /></strong></p>
-<h1><span style="text-decoration: underline; color: #ff0000;"><strong>Benvolio</strong></span></h1>
-<p><strong>Romeo&rsquo;s cousin and thoughtful friend</strong></p>
-<p><strong>&nbsp;</strong></p>
-<p><strong><img src="https://s-media-cache-ak0.pinimg.com/736x/dd/0f/bc/dd0fbce75bb50676757bc3f18ce3e5a3.jpg" alt="" width="342" height="256" /></strong></p>
-<h1><span style="text-decoration: underline; color: #ff0000;"><strong>Mercutio</strong></span></h1>
-<p><strong>A kinsman to the Prince of Verona</strong></p>
-<p><strong>Romeo&rsquo;s close friend</strong></p>
-<p><strong>Hotheaded</strong></p>
-<p><strong>Loves word play, especially about sex</strong></p>
-<p><strong>Gives Romeo advice about love and women</strong></p>
-<p><strong>Tries to convince Romeo &ldquo;there are many fish in the sea&rdquo;</strong></p>
-<p><strong>Killed in a swordfight with Tybalt</strong></p>
-<p><strong>Curses the Montagues and Capulets</strong></p>
-<p><span style="text-decoration: underline; color: #ff0000;"><strong>&nbsp;</strong></span></p>
-<p><span style="text-decoration: underline; color: #ff0000;"><strong><img src="https://s-media-cache-ak0.pinimg.com/736x/bb/f4/53/bbf453000c3e61a4cd5c7ea7f184c368.jpg" alt="" width="376" height="250" /></strong></span></p>
-<h1><span style="text-decoration: underline; color: #ff0000;"><strong>Prince Escalus</strong></span></h1>
-<p><strong>The prince of Verona, the law, judge and jury of Verona</strong></p>
-<p><strong>Kinsmen of Mercutio and Paris</strong></p>
-<p><strong>Has threatened the Capulets and Montagues to end the feud with death/execution </strong></p>
-<p><strong>Banishes Romeo from Verona to Mantua (merciful) </strong></p>
-<p><strong>&nbsp;</strong></p>
-<h1><span style="text-decoration: underline; color: #ff0000;"><strong>Rosaline</strong></span></h1>
-<p><strong>Romeo is infatuated with her at the start of the play</strong></p>
-<p><strong>Beautiful</strong></p>
-<p><strong>Sworn to a life of chastity (most likely is becoming a nun)</strong></p>
-<p><strong>Never seen on stage</strong></p>
-<p><strong>&nbsp;</strong></p>
-<p><strong>&nbsp;<img src="http://e08595.medialib.glogster.com/media/51/513d1e7f7fec170633c7668f8a6647de7ffcd62ad89cc36d7d0cc618b9e11c0d/friar-laurence.jpg" alt="" /></strong></p>
-<h1><span style="font-size: medium; text-decoration: underline; color: #ff0000;"><strong>Friar Lawrence</strong></span></h1>
-<p><strong>A Franciscan Friar (part of the Roman Catholic Church)</strong></p>
-<p><strong>Expert in potions, medicines, poisons, plants and herbs</strong></p>
-<p><strong>Advisor to Romeo</strong></p>
-<p><strong>Friend to Romeo and Juliet</strong></p>
-<p><strong>Secretly marries Romeo and Juliet</strong></p>
-<p><strong>Hopes the Marriage will bring Peace to Verona</strong></p>
-<p><strong>Ambitious, wants to be popular and influential in Verona</strong></p>
-<p><strong>&nbsp;</strong></p>
-<h1><span style="text-decoration: underline; color: #ff0000;"><strong>Friar John</strong></span></h1>
-<p><strong>Works with Friar Lawrence</strong></p>
-<p><strong>Supposed to take a message of Juliet&rsquo;s FAKE death to Romeo</strong></p>
-<p><strong>Gets stuck in a quarantined house and the message never reaches Romeo</strong></p>
-<p><strong>&nbsp;</strong></p>
-<p><strong><img src="https://38.media.tumblr.com/tumblr_m3qj3uTeWg1r0soi6.jpg" alt="" width="287" height="294" /></strong></p>
-<h1><span style="text-decoration: underline; color: #ff0000;"><strong>Paris</strong></span></h1>
-<p class="title1"><strong>A kinsman of the Prince</strong></p>
-<p><strong>Asks to marry Juliet and liked by her parents</strong></p>
-<p><strong>&nbsp;</strong></p>
-<h1><span style="text-decoration: underline; color: #ff0000;"><strong>The Apothecary</strong></span></h1>
-<p class="title1"><strong>A druggist</strong></p>
-<p><strong>Takes a bribe to sell poison to Romeo</strong></p>
-<p><span style="text-decoration: underline; color: #ff0000;"><strong>&nbsp;</strong></span></p>
-<h1><span style="text-decoration: underline; color: #ff0000;"><strong>The Chorus</strong></span></h1>
-<p class="title1"><strong>The Narrator of the Play, presents the prologue to each act</strong></p>
-<p><strong>&nbsp;</strong></p>
-<h1><span style="text-decoration: underline; color: #ff0000;"><strong>Sampson and Gregory</strong></span></h1>
-<p><strong>Capulet servants--hate the Montagues</strong></p>
-<p><strong>First Scene of the play fight with Montagues</strong></p>
-<p><strong>Demonstrate the feud that leads to the threat by Prince Escalus</strong></p>
-<h1><span style="font-size: medium; text-decoration: underline; color: #ff0000;"><strong>Balthasar</strong></span></h1>
-<p class="title1"><strong>Romeo&rsquo;s servant, brings Romeo the news of Juliet&rsquo;s death</strong></p>
-<p><strong>&nbsp;</strong><span style="font-size: medium; text-decoration: underline; color: #ff0000;"><strong>Abram</strong></span></p>
-<p><strong>Montague servant, fights with Capulet servants in the first scene</strong></p>
-<p><strong>&nbsp;</strong></p>
-<h1><span style="font-size: medium;"><strong>PROLOGUE</strong></span></h1>
-<p><strong>2 families from Verona, Italy are feuding (fighting)</strong></p>
-<p><strong>One child from each family has fallen in love</strong></p>
-<p><strong>The lovers are &ldquo;star-crossed&rdquo; and cannot be together, they commit suicide</strong></p>
-<p><strong>Their deaths end the family feud</strong></p>
-<p><span style="font-size: medium;"><strong>&nbsp;</strong></span></p>
-<h1><span style="font-size: medium;"><strong>ACT 1:1&mdash;<em>Fighting in the Streets</em></strong></span></h1>
-<h1><strong><em>Streets of Verona</em></strong></h1>
-<ul>
-<li><strong>Servants from the Montague and Capulet families fight</strong></li>
-<li><strong>Benvolio tries to stop the fight</strong></li>
-<li><strong>Prince Escalus of Verona comes and stops the fight</strong></li>
-<li><strong>Prince promises to execute anyone who fights in the future</strong></li>
-<li><strong>Romeo is introduced, he is sad and depressed because the woman he loves (Rosaline) does not love him</strong></li>
-</ul>
-<p><span style="font-size: medium; text-decoration: underline;"><strong>&nbsp;</strong></span></p>
-<h1><strong>ACT 1:2&mdash;<em>Juliet gets a proposal</em></strong></h1>
-<h1><strong><em>Capulet House</em></strong></h1>
-<ul>
-<li><strong>Paris asks Lord Capulet to marry his daughter Juliet</strong></li>
-<li><strong>Lord Capulet say she is too young to marry, he wants her to wait 2 more summers</strong></li>
-<li><strong>Lord Capulet wants his only child, Juliet, to be happy</strong></li>
-<li><strong>The Capulets plan a party</strong></li>
-</ul>
-<p><strong>&nbsp;</strong></p>
-<ul>
-<li><strong>Romeo and Benvolio find out about the party from a servant</strong></li>
-<li><strong>Romeo finds out Rosaline will be at the party</strong></li>
-<li><strong>Benvolio wants Romeo to go to the party to look for a new love</strong></li>
-</ul>
-<p><span style="font-size: medium; text-decoration: underline;"><strong>&nbsp;</strong></span></p>
-<p><strong>ACT 1:3&mdash;<em>Juliet gets the sex talk from Mom</em></strong></p>
-<p><strong><em>Capulet house, before the party</em></strong></p>
-<ul>
-<li><strong>The Nurse, Lady Capulet and Juliet talk about Juliet marrying Paris</strong></li>
-<li><strong>The Nurse and Lady Capulet think Juliet is old enough to marry</strong></li>
-</ul>
-<h3>ACT 1:4&mdash;<em>There are more fish in the sea</em></h3>
-<h3><em>Streets of Verona</em></h3>
-<ul>
-<li><strong>Romeo and his friends Benvolio and Mercutio are on their way to the Capulet Ball</strong></li>
-<li><strong>Romeo sad and depressed</strong></li>
-<li><strong>Romeo is worried about a dream he had last night</strong></li>
-<li><strong>Mercutio teases Romeo about his dream (QUEEN MAB)</strong></li>
-<li><strong>Romeo has a bad feeling about the party, afraid of death (FATE)</strong></li>
-<li><strong>Romeo puts his fate/future in God&rsquo;s hands</strong></li>
-</ul>
-<p><strong>&nbsp;</strong></p>
-<h3>ACT 1:5-<em>Love at first sight and kissing</em></h3>
-<h3><em>The Capulet Ball</em></h3>
-<h2>Lord Capulet makes a speech</h2>
-<p><strong>Romeo walks in a sees <em><span style="text-decoration: underline;">the most beautiful girl in the world!</span></em></strong></p>
-<p><strong>&nbsp;</strong></p>
-<h2>Tybalt (A Capulet and Juliet&rsquo;s cousin) finds out Romeo is at the party, he&rsquo;s furious</h2>
-<p><strong>Tybalt tells his uncle, Lord Capulet, wants to fight Romeo at the Ball</strong></p>
-<p><strong>Lord Capulet forbids the fight</strong></p>
-<p><strong>&nbsp;</strong></p>
-<p><strong>Juliet and Romeo meet and fall in love at first sight, they KISS</strong></p>
-<p><strong>Romeo finds out the love of his life is a Capulet</strong></p>
-<p><strong>Juliet discovers that the love of her life is a Montague</strong></p>
-<p><strong>&nbsp;</strong></p>
-<h3>Act 2:1-<em>Where in the world did Romeo go?</em></h3>
-<h3><em>Capulet Garden</em></h3>
-<ul>
-<li><strong>Romeo is in the Capulet&rsquo;s garden and orchard</strong></li>
-<li><strong>Mercutio and Benvolio are looking for Romeo</strong></li>
-<li><strong>They can&rsquo;t find Romeo and they leave</strong></li>
-</ul>
-<p><strong>&nbsp;</strong></p>
-<h3>ACT 2:2 <em>THE MOST FAMOUS SCENE IN THE PLAY</em></h3>
-<h2>Romeo is in the garden hoping to see Juliet on the balcony</h2>
-<ul>
-<li><strong>Juliet comes out on the balcony and is talking to herself</strong></li>
-<li><strong>Romeo learns that Juliet loves him, but is afraid because he is a Montague</strong></li>
-<li><strong>Romeo and Juliet talk and admit they love each other</strong></li>
-<li><strong>They are willing to give up their families and their names</strong></li>
-<li><strong>They plan to marry</strong></li>
-</ul>
-<p><strong>&nbsp;</strong></p>
-<h3>ACT 2:3&mdash;<em>You&rsquo;ve got to help us</em></h3>
-<h3><em>The next morning</em></h3>
-<h2>Romeo goes to see his priest, Friar Lawrence</h2>
-<ul>
-<li><strong>Romeo says he has forgotten all about Rosaline</strong></li>
-<li><strong>He is in love with Juliet now</strong></li>
-<li><strong>He asks Friar Lawrence to marry them</strong></li>
-<li><strong>Friar Lawrence agrees to marry them in secret and hopes it will end the feud</strong></li>
-<li><strong>&nbsp;</strong></li>
-</ul>
-<h3>ACT 2: 4&mdash;<em>A secret wedding is planned</em></h3>
-<h3><em>In the afternoon</em></h3>
-<ul>
-<li><strong>Mercutio and Benvolio are looking for Romeo</strong></li>
-<li><strong>They are afraid Tybalt wants to fight Romeo</strong></li>
-<li><strong>They find Romeo and The Nurse arrives with a message for Romeo</strong></li>
-<li><strong>Romeo and The Nurse plan the secret wedding</strong></li>
-<li><strong>Romeo and Juliet will meet with Friar Lawrence to marry in a secret ceremony</strong></li>
-</ul>
-<p><span style="font-size: medium;"><strong>&nbsp;</strong></span></p>
-<h3>ACT 2: 5&mdash;<em>Juliet sneaks away</em></h3>
-<h3><em>Capulet House</em></h3>
-<ul>
-<li><strong>The Nurse teases Juliet and makes her wait for news from Romeo</strong></li>
-<li><strong>Juliet tells her parents she is going to Church to go to confession, instead she will marry Romeo</strong></li>
-</ul>
-<p><strong>&nbsp;</strong></p>
-<h3>ACT 2:6&mdash;<em>Going to the Chapel of Love</em></h3>
-<h3><em>At the Church</em></h3>
-<ul>
-<li><strong>Romeo and Juliet meet to get married</strong></li>
-<li><strong>They are so in love they are not worried about the future</strong></li>
-<li><strong>Friar Lawrence hopes to be the man that saves Verona form the feud</strong></li>
-<li><strong>He marries Romeo and Juliet</strong></li>
-<li><strong>&nbsp;</strong></li>
-</ul>
-<h3>ACT 3:1&mdash;<em>Sword fights, dead bodies and Romeo is banished</em></h3>
-<h3><em>Streets of Verona-the same day</em></h3>
-<ul>
-<li><strong>Benvolio and Mercutio are walking around Verona</strong></li>
-<li><strong>Mercutio is looking for a fight</strong></li>
-<li><strong>They meet Tybalt (Juliet&rsquo;s cousin) and argue</strong></li>
-<li><strong>Mercutio and Tybalt have a sword fight</strong></li>
-<li><strong>Romeo tries to stop the fight, he steps in between them and Mercutio is stabbed</strong></li>
-<li><strong>As Mercutio is dying her curses both families, &ldquo;<em>A plague on both your houses&rdquo;</em></strong></li>
-</ul>
-<p><strong><em>&nbsp;</em></strong></p>
-<h2>Tybalt fights with Romeo</h2>
-<ul>
-<li><strong>Romeo kills Tybalt and runs away</strong></li>
-<li><strong>&nbsp;</strong></li>
-<li><strong>The Capulets, The Montagues and the Prince come to the scene</strong></li>
-<li><strong>&nbsp;</strong></li>
-<li><strong>The Capulets are angry&mdash;Tybalt is dead</strong></li>
-<li><strong>The Prince is angry&mdash;Mercutio, his cousin, is dead</strong></li>
-<li><strong>&nbsp;</strong></li>
-<li><strong>The Prince declares that Romeo must be punished</strong></li>
-<li><strong>Romeo is exiled from Verona to Mantua forever</strong></li>
-</ul>
-<p><strong>&nbsp;</strong></p>
-<h3>ACT 3:2&mdash;<em>The bad news</em></h3>
-<h3><em>Juliet&rsquo;s bedroom</em></h3>
-<ul>
-<li><span style="font-size: 11px;">The Nurse tells Juliet about the news about Tybalt and Romeo</span></li>
-<li><span style="font-size: 11px;">Juliet is upset her cousin is dead, but devastated that Romeo has been banished</span></li>
-<li><strong style="font-size: 11px;">Juliet upset that she will not have a wedding night and &ldquo;will die a maidenwidow&rdquo; (virgin)</strong></li>
-<li><strong style="font-size: 11px;">The Nurse promises to arrange &ldquo;a wedding night&rdquo; meeting for the lovers</strong></li>
-</ul>
-<p><strong>&nbsp;</strong></p>
-<p><strong><span style="text-decoration: underline;">ACT 3:3&mdash;<em>The plan for the wedding night</em></span></strong></p>
-<p><strong><em>Friar Lawrence&rsquo;s Cell</em></strong></p>
-<ul>
-<li><span style="font-size: 11px;">Romeo is worried about his punishment for Tybalt&rsquo;s death</span></li>
-<li><strong style="font-size: 11px;">Friar tells Romeo he is lucky to be alive and only exiled from Verona</strong></li>
-<li><strong style="font-size: 11px;">The Nurse arrives and they make plans for the wedding night</strong></li>
-<li><strong style="font-size: 11px;">Romeo will leave Verona in the morning</strong></li>
-<li><strong style="font-size: 11px;">The Nurse gives Romeo and ring from Juliet as a sign of her love</strong></li>
-</ul>
-<p><strong>&nbsp;</strong></p>
-<p><strong><span style="text-decoration: underline;">ACT 3:4&mdash;<em>Juliet will marry Paris</em></span></strong></p>
-<p><strong><em>The Capulet House </em></strong></p>
-<ul>
-<li><span style="font-size: 11px;">The Capulets meet with Paris</span></li>
-<li><strong style="font-size: 11px;">They decide that Juliet will marry Paris on Thursday, because Wednesday is too soon?!?</strong></li>
-</ul>
-<p><strong>&nbsp;</strong></p>
-<h3>ACT 3:5&mdash;<em>Romeo and Juliet and some nooky-nooky</em></h3>
-<h3><em>Juliet&rsquo;s bedroom, the next morning</em></h3>
-<ul>
-<li><span style="font-size: 11px;">Romeo and Juliet have consummated their marriage</span></li>
-<li><strong style="font-size: 11px;">Saying good-bye, do not want the night to end and morning to arrive</strong></li>
-<li><strong style="font-size: 11px;">They notice they &ldquo;look pale like death&rdquo;</strong></li>
-<li><strong style="font-size: 11px;">The Nurse enters and warns Juliet her mother is coming</strong></li>
-<li><strong style="font-size: 11px;">Romeo leaves</strong></li>
-<li><strong style="font-size: 11px;">Lady Capulet enters and tells Juliet she will marry Paris on Thursday</strong></li>
-<li><strong style="font-size: 11px;">Juliet is upset and refuses to marry Paris</strong></li>
-<li><strong style="font-size: 11px;">Lord Capulet is enraged, fights with Juliet and her parents leave</strong></li>
-</ul>
-<p><strong>&nbsp;</strong></p>
-<ul>
-<li><strong>Juliet asks The Nurse for advice</strong></li>
-<li><strong>Nurse tells Juliet to marry Paris and forget Romeo, because he is as good as dead</strong></li>
-<li><strong>Juliet pretends to take the Nurses&rsquo; advice</strong></li>
-<li><strong>Juliet plans to go see Friar Lawrence for advice</strong></li>
-<li><strong>Juliet says if Friar Lawrence can&rsquo;t help her she can always kill herself</strong></li>
-</ul>
-<p><strong>&nbsp;</strong></p>
-<p><strong><span style="text-decoration: underline;">ACT 4:1&mdash;<em>A short scene but a fateful plan is hatched!</em></span></strong></p>
-<h4>At the Church</h4>
-<h2>Paris goes to see the Friar to plan his wedding to Juliet</h2>
-<ul>
-<li><strong>Paris explains the wedding will make Juliet happy</strong></li>
-<li><strong>Juliet arrives and talks to Paris lovingly</strong></li>
-<li><strong>To get Paris to leave, Juliet asks for confession</strong></li>
-<li><strong>&nbsp;</strong></li>
-<li><strong>Juliet threatens to kill herself is she has to marry Paris</strong></li>
-<li><strong>Friar Lawrence comes with a plan</strong></li>
-</ul>
-<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Juliet will agree to marry Paris</strong></p>
-<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Before the wedding she will drink a &ldquo;sleeping potion&rdquo;</strong></p>
-<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Her family will think she is dead</strong></p>
-<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; She will be put in the family vault</strong></p>
-<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The Friar will send a message to Romeo, telling him about the plan</strong></p>
-<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Romeo will sneak back to Verona to get Juliet</strong></p>
-<ul>
-<li><strong>Juliet agrees to the plan</strong></li>
-</ul>
-<p><strong><span style="text-decoration: underline;">ACT 4:2&mdash;<em>Juliet deceives her parents</em></span></strong></p>
-<h4>The Capulet House</h4>
-<ul>
-<li><span style="font-size: 11px;">Juliet tells her parents she will marry Paris</span></li>
-<li><strong style="font-size: 11px;">Parents are happy</strong></li>
-<li><strong style="font-size: 11px;">Juliet goes to her room to prepare for the wedding</strong></li>
-</ul>
-<p><strong>&nbsp;</strong></p>
-<p><strong><span style="text-decoration: underline;">ACT 4:3<em>&mdash;Juliet makes a big decision</em></span></strong></p>
-<h4>Juliet&rsquo;s bedroom</h4>
-<ul>
-<li><span style="font-size: 11px;">She convinces her mother and the Nurse to leave her alone</span></li>
-<li><strong style="font-size: 11px;">She worries about drinking the potion</strong></li>
-<li><strong style="font-size: 11px;">Juliet drinks the sleeping potion</strong><strong style="font-size: 11px;">&nbsp;</strong></li>
-</ul>
-<p><strong><span style="text-decoration: underline;">ACT 4:4&mdash;<em>Is Juliet asleep or dead?</em></span></strong></p>
-<h4>Juliet&rsquo;s bedroom</h4>
-<ul>
-<li><span style="font-size: 11px;">The nurse finds Juliet dead</span></li>
-<li><strong style="font-size: 11px;">Lord and Lady Capulet come in, the three are very upset</strong></li>
-<li><strong style="font-size: 11px;">Friar Lawrence and Paris arrive</strong></li>
-<li><strong style="font-size: 11px;">The Friar tells the family to prepare for the funeral</strong></li>
-</ul>
-<p><strong><span style="text-decoration: underline;">ACT 5:1&mdash;<em>I want a new drug</em></span></strong></p>
-<h2>While Juliet body is lying in the family vault</h2>
-<ul>
-<li><span style="font-size: 11px;">In Mantua</span></li>
-<li><span style="font-size: 11px;">Romeo remembers a beautiful dream about Juliet</span></li>
-<li><strong style="font-size: 11px;">Romeo&rsquo;s servant Balthasar arrives to tell Romeo that Juliet is dead</strong></li>
-<li><strong style="font-size: 11px;">Romeo is distraught &ldquo;I defy you stars&rdquo;</strong></li>
-<li><strong style="font-size: 11px;">Romeo looks for an apothecary (druggist) to buy poison to kill himself</strong></li>
-<li><strong style="font-size: 11px;">He plans to go to the tomb &ldquo;to lie with&rdquo; his Juliet</strong></li>
-</ul>
-<p><strong>&nbsp;</strong></p>
-<p><strong><span style="text-decoration: underline;">ACT 5:2&mdash;<em>Friar Lawrence comes up with another plan!</em></span></strong></p>
-<ul>
-<li><span style="font-size: 11px;">The Friar realizes Romeo never received the message about Juliet&rsquo;s fake death</span></li>
-<li><strong style="font-size: 11px;">The messenger (Friar John) never got to Mantua, he got stuck in a quarantined house</strong></li>
-<li><strong style="font-size: 11px;">Friar Lawrence decides to go get Juliet out of the tomb and hide her at the church</strong></li>
-</ul>
-<p><strong>&nbsp;</strong></p>
-<p><strong><span style="text-decoration: underline;">ACT 5:3&mdash;<em>Hey, let&rsquo;s all hang out at the tomb tonight, More people are going to die</em></span></strong></p>
-<p><strong><em><span style="text-decoration: underline;">Capulet Family Tomb</span></em></strong></p>
-<h2>Paris goes to the tomb to leave flowers</h2>
-<ul>
-<li><strong>Romeo goes to the tomb with a crowbar to break in</strong></li>
-<li><strong>Paris thinks that Romeo, a Montague, is planning to damage the Capulets</strong></li>
-<li><strong>They argue, sword fight, Paris is dead!</strong></li>
-<li><strong>Romeo drags Paris&rsquo; body into the tomb</strong></li>
-<li><strong>&nbsp;</strong></li>
-<li><strong>Romeo sees Juliet&rsquo;s &ldquo;dead&rdquo; body, drinks the poison and commits suicide</strong></li>
-<li><strong>Friar Lawrence finds Paris and Romeo dead</strong></li>
-<li><strong>TIME FOR ANOTHER NEW PLAN</strong></li>
-<li><strong>Juliet wakes up, Friar Lawrence tries to convince her to leave. She refuses and the Friar takes off</strong></li>
-<li><strong>Juliet sees the vial of poison and realizes Romeo is dead</strong></li>
-<li><strong>She tries to take the poison by kissing Romeo&rsquo;s lips, then she takes a knife and kills herself</strong></li>
-<li><strong>&nbsp;</strong></li>
-<li><strong>The Prince, The Capulets and the Montagues arrive at the tomb</strong></li>
-</ul>
-<h2>Friar Lawrence is forced to tell them all the truth</h2>
-<ul>
-<li><strong>The Prince blames the Capulets and Montague Feud for all the deaths</strong></li>
-<li><strong>The families end the feud and decide to build a memorial statue to the lovers</strong></li>
-<li><strong>The play ends as the Prince declares, &ldquo;Never was there a story of more woe, Than that of Juliet and her Romeo</strong></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div></span></span>
-        </div>
-		<div class="clear"></div>
-	</div>
-</li>
-</ul>
-</div>
-	<div class="ui-widget-footer">
-		
-			
-		
-		<div class="clear"></div>
-	</div>
-</div>
-<script type="text/javascript">
-$(document).ready(function (){
-$(".tag-list li a").keypress(function(e) { if(e.which == 13) { $(this).click();   }});
-});
-function LoadGroupedData(container, MIID, PMI, groupYear, groupMonth, groupBy, tag) {
-  //ViewToUse looks at the hidden Sidebar List View defined in the Builder View.
-  var viewToUse = "";
-    if($('#hid-'+MIID+'-SidebarListView').length > 0){
-      viewToUse = $("#hid-" + MIID + "-SidebarListView").val();
-    };
-  GetContent('https://www.manvilleschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=1794&PageID=5563&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&RenderLoc=0&FromRenderLoc=0&GroupYear=' + groupYear + '&GroupMonth=' + groupMonth + '&GroupByField=' + groupBy + '&EnableQuirksMode=0&ViewID=' + viewToUse + '&Tag=' + tag, container, 2, 'chkSidebar();');
-}
-function LoadData(container, MIID, PMI, flexDataID, groupYear, groupMonth, groupBy, targetView, tag) {
-  if(targetView !== undefined || targetView.Length() == 0){
-  //targetView looks at the hidden Detail View defined in the Builder View.
-      targetView = $('#hid-'+MIID+'-DetailView').val();
-   }
-  GetContent('https://www.manvilleschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=1794&PageID=5563&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&FlexDataID=' + flexDataID + '&GroupYear=' + groupYear + '&GroupMonth=' + groupMonth + '&GroupByField=' + groupBy + '&RenderLoc=0&FromRenderLoc=0&EnableQuirksMode=0&Tag=' + tag + '&ViewID=' + targetView, container, 2, 'chkSidebar();');
-}
-function LoadTaggedData(container, MIID, PMI, tag) {
-  //ViewToUse looks at the hidden Sidebar List View defined in the Builder View.
-  var viewToUse = "";
-    if($('#hid-'+MIID+'-SidebarListView').length > 0){
-      viewToUse = $("#hid-" + MIID + "-SidebarListView").val();
-    };
-  GetContent('https://www.manvilleschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=1794&PageID=5563&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&RenderLoc=0&FromRenderLoc=0&Tag=' + tag + '&EnableQuirksMode=0&ViewID='+viewToUse, container, 2, 'chkSidebar();');
-  setTimeout(function(){ $("#module-content-"+ MIID +"").find('[tabindex]:first').focus(); }, 200);
-}
-</script>
-</div>
-
-</div></div>
-</div><div class="clear"></div></div></div><!-- End Centricity Content Area -->
+    <div id="container">
+        <div id="wrapper">
+            <div id="contents" class="content">
+                <div class="body-content">
+                    <h1><strong>William Shakespeare-Why do we study William
+                            Shakespeare?</strong></h1>
+                    <p><strong>&nbsp;</strong></p>
+                    <p><strong>Nicknames-The Bard, The Bard of Avon and The
+                            Swan of Avon</strong></p>
+                    <p><strong>&nbsp;</strong></p>
+                    <p><strong>His works has been translated into every
+                            major language</strong></p>
+                    <p><strong>The most quoted writer in the English
+                            language and World history</strong></p>
+                    <p><strong>Wrote 38 plays-11 Tragedies, 17 Comedies and
+                            10 Historical </strong></p>
+                    <p><strong>Wrote 154 Sonnets (special form of
+                            poetry)</strong></p>
+                    <h1><strong>&nbsp;</strong></h1>
+                    <h1><span style="font-size: medium;"><strong>The House
+                                of the Montagues</strong></span></h1>
+                    <p><strong>&nbsp;</strong></p>
+                    <p><strong>Romeo</strong></p>
+                    <p><strong>Lord and Lady Montague</strong></p>
+                    <p><strong>Benvolio</strong></p>
+                    <p><strong>Mercutio</strong></p>
+                    <p><strong>Balthasar</strong></p>
+                    <p><strong>Abram</strong></p>
+                    <p><strong>&nbsp;</strong></p>
+                    <h1><span style="font-size: medium;"><strong>The House
+                                of the Capulets</strong></span></h1>
+                    <p><strong><span style="text-decoration: underline;">&nbsp;</span></strong>
+                    </p>
+                    <p><strong>Juliet</strong></p>
+                    <p><strong>Lord and Lady Capulet</strong></p>
+                    <p><strong>The Nurse </strong></p>
+                    <p><strong>Tybalt (cousin)</strong></p>
+                    <p><strong>Sampson and Gregory (servants)</strong></p>
+                    <p><strong>&nbsp;</strong></p>
+                    <h1><span style="font-size: medium;"><strong>The House
+                                of Verona</strong></span></h1>
+                    <p><strong><span style="text-decoration: underline;">&nbsp;</span></strong>
+                    </p>
+                    <p><strong>Prince Escalus</strong></p>
+                    <p><strong>Paris</strong></p>
+                    <p><strong>Mercutio</strong></p>
+                    <p><strong>&nbsp;</strong></p>
+                    <h1><span style="font-size: medium;"><strong>The
+                                Church</strong></span></h1>
+                    <p><strong><span style="text-decoration: underline;">&nbsp;</span></strong>
+                    </p>
+                    <p><strong>Friar Lawrence</strong></p>
+                    <p><strong>Friar John</strong></p>
+                    <p><strong>&nbsp;</strong></p>
+                    <h1><span style="font-size: medium;"><strong>Other
+                                Characters</strong></span></h1>
+                    <p><strong>&nbsp;</strong></p>
+                    <p><strong>Rosaline</strong></p>
+                    <p><strong>The Apothecary</strong></p>
+                    <p><strong>The Chorus</strong></p>
+                    <p><strong>&nbsp;</strong></p>
+                    <h1><span style="color: #ff0000;"><strong>Character
+                                Descriptions</strong></span></h1>
+                    <p>&nbsp;</p>
+                    <p><span style="text-decoration: underline; color: #ff0000;"><strong><img
+                                    src="http://www.joycedidonato.com/wp-content/uploads/2012/09/draft_lens17978777module150387874photo_1306217151romeo-and-juliet.jpeg"
+                                    alt="" /></strong></span></p>
+                    <h1><span style="text-decoration: underline; color: #ff0000;"><strong>Romeo</strong></span>
+                    </h1>
+                    <p><strong>His name means &ldquo;a lover&rdquo;</strong>
+                    </p>
+                    <p><strong>Young, intelligent and handsome</strong></p>
+                    <p><strong>Reckless, Passionate, Intense and lacks
+                            moderation</strong></p>
+                    <p><strong>Best friends are Benvolio and
+                            Mercutio</strong></p>
+                    <p><strong>Friar Lawrence is his advisor</strong></p>
+                    <p><strong>&nbsp;</strong></p>
+                    <p><strong><img
+                                src="http://vignette2.wikia.nocookie.net/p__/images/e/ea/Juliet_Capulet_wearing_a_headband.jpg/revision/latest?cb=20140323231819&amp;path-prefix=protagonist"
+                                alt="" width="241" height="322" />&nbsp;</strong></p>
+                    <h1><span style="text-decoration: underline; color: #ff0000;"><strong>Juliet</strong></span>
+                    </h1>
+                    <p><strong>Beautiful, 13 years old</strong></p>
+                    <p><strong>Na&iuml;ve</strong></p>
+                    <p><strong>Expected to marry soon</strong></p>
+                    <p><strong>The Nurse is her confidant</strong></p>
+                    <p><strong>Grows up quickly when she falls in love with
+                            Romeo</strong></p>
+                    <p><strong>More cautious and level-headed than
+                            Romeo</strong></p>
+                    <p>&nbsp;</p>
+                    <p><span style="text-decoration: underline; color: #ff0000;"><strong><img
+                                    src="http://vignette4.wikia.nocookie.net/shakespeare/images/7/79/Zeff-Lord_Montague.jpg/revision/latest?cb=20150613042039"
+                                    alt="" width="348" height="232" /></strong></span></p>
+                    <h1><span style="text-decoration: underline; color: #ff0000;"><strong>Lord
+                                Montague</strong></span></h1>
+                    <p><strong>Romeo&rsquo;s father </strong></p>
+                    <p><strong>Bitter enemy of the Capulets</strong></p>
+                    <p><strong>&nbsp;<img src="http://thewallmachine.com/files/1321305768.jpg" alt="" width="303"
+                                height="303" /></strong>
+                    </p>
+                    <h1><span style="text-decoration: underline; color: #ff0000;"><strong>Capulet</strong></span>
+                    </h1>
+                    <p><strong>Juliet&rsquo;s father</strong></p>
+                    <p><strong>Enemy of the Montagues</strong></p>
+                    <p><strong>Loves his daughter (his only child)</strong>
+                    </p>
+                    <p><strong>Demands respect</strong></p>
+                    <p><strong>Flies into a rage when angry</strong></p>
+                    <p>&nbsp;</p>
+                    <p><strong>&nbsp;<img
+                                src="http://images6.fanpop.com/image/photos/32500000/1968-Romeo-Juliet-The-Capulet-Montague-Parents-1968-romeo-and-juliet-by-franco-zeffirelli-32570784-262-423.gif"
+                                alt="" width="219" height="354" /></strong>
+                    </p>
+                    <p>&nbsp;</p>
+                    <h1><span style="text-decoration: underline; color: #ff0000;"><strong>Lady
+                                Montague</strong></span></h1>
+                    <p><strong>Romeo&rsquo;s mother</strong></p>
+                    <p><strong>Dies of grief when Romeo is exiled from
+                            Verona</strong></p>
+                    <p><strong>&nbsp;</strong></p>
+                    <p><strong><img
+                                src="http://b1969d.medialib.glogster.com/media/5bc40f16ca1b4d234d68c738131e78cee25698ff1cd7b07ee9ad1c9f0734e559/lady-capulet.jpg"
+                                alt="" width="218" height="317" /></strong>
+                    </p>
+                    <h1><span style="text-decoration: underline; color: #ff0000;"><strong>Lady
+                                Capulet</strong></span></h1>
+                    <p><strong>Married Young, gave birth to Juliet when she
+                            was about 14</strong></p>
+                    <p><strong>Eager to see Juliet marry Paris</strong></p>
+                    <p><strong>Ineffectual mother, relies on Nurse to raise
+                            Juliet</strong></p>
+                    <p><strong>&nbsp;</strong></p>
+                    <p><strong><img
+                                src="http://images5.fanpop.com/image/photos/28100000/Nurse-R-J-1968-Film-1968-romeo-and-juliet-by-franco-zeffirelli-28125790-640-480.jpg"
+                                alt="" width="315" height="236" /></strong>
+                    </p>
+                    <h1><span style="text-decoration: underline; color: #ff0000;"><strong>The
+                                Nurse</strong></span></h1>
+                    <p><strong>Juliet&rsquo;s nurse her entire life</strong>
+                    </p>
+                    <p><strong>Actually breast Juliet as an infant</strong>
+                    </p>
+                    <p><strong>Confidant, extremely LOYAL</strong></p>
+                    <p><strong>Wants Juliet to have a husband</strong></p>
+                    <p><strong>Comic Relief throughout the play</strong></p>
+                    <p><strong>&nbsp;<img
+                                src="http://images5.fanpop.com/image/photos/28100000/Tybalt-R-J-1968-Film-1968-romeo-and-juliet-by-franco-zeffirelli-28126638-320-240.jpg"
+                                alt="" /></strong></p>
+                    <h1><span style="text-decoration: underline; color: #ff0000;"><strong>Tybalt</strong></span>
+                    </h1>
+                    <p><strong>Juliet&rsquo;s cousin</strong></p>
+                    <p><strong>Deeply hates and loathes the
+                            Montagues</strong></p>
+                    <p><strong>Aggressive, Violent, </strong></p>
+                    <p><strong>Quick to draw his sword, excellent with this
+                            weapon</strong></p>
+                    <p><strong>Kills Mercutio and is then killed by
+                            Romeo</strong></p>
+                    <p>&nbsp;</p>
+                    <p><strong>&nbsp;<img
+                                src="http://images5.fanpop.com/image/photos/28100000/Benvolio-of-the-1968-Romeo-Juliet-Film-1968-romeo-and-juliet-by-franco-zeffirelli-28120549-270-177.jpg"
+                                alt="" width="316" height="207" /></strong>
+                    </p>
+                    <h1><span style="text-decoration: underline; color: #ff0000;"><strong>Benvolio</strong></span>
+                    </h1>
+                    <p><strong>Romeo&rsquo;s cousin and thoughtful
+                            friend</strong></p>
+                    <p><strong>&nbsp;</strong></p>
+                    <p><strong><img
+                                src="https://s-media-cache-ak0.pinimg.com/736x/dd/0f/bc/dd0fbce75bb50676757bc3f18ce3e5a3.jpg"
+                                alt="" width="342" height="256" /></strong>
+                    </p>
+                    <h1><span style="text-decoration: underline; color: #ff0000;"><strong>Mercutio</strong></span>
+                    </h1>
+                    <p><strong>A kinsman to the Prince of Verona</strong>
+                    </p>
+                    <p><strong>Romeo&rsquo;s close friend</strong></p>
+                    <p><strong>Hotheaded</strong></p>
+                    <p><strong>Loves word play, especially about
+                            sex</strong></p>
+                    <p><strong>Gives Romeo advice about love and
+                            women</strong></p>
+                    <p><strong>Tries to convince Romeo &ldquo;there are many
+                            fish in the sea&rdquo;</strong></p>
+                    <p><strong>Killed in a swordfight with Tybalt</strong>
+                    </p>
+                    <p><strong>Curses the Montagues and Capulets</strong>
+                    </p>
+                    <p><span style="text-decoration: underline; color: #ff0000;"><strong>&nbsp;</strong></span>
+                    </p>
+                    <p><span style="text-decoration: underline; color: #ff0000;"><strong><img
+                                    src="https://s-media-cache-ak0.pinimg.com/736x/bb/f4/53/bbf453000c3e61a4cd5c7ea7f184c368.jpg"
+                                    alt="" width="376" height="250" /></strong></span></p>
+                    <h1><span style="text-decoration: underline; color: #ff0000;"><strong>Prince
+                                Escalus</strong></span></h1>
+                    <p><strong>The prince of Verona, the law, judge and jury
+                            of Verona</strong></p>
+                    <p><strong>Kinsmen of Mercutio and Paris</strong></p>
+                    <p><strong>Has threatened the Capulets and Montagues to
+                            end the feud with death/execution </strong></p>
+                    <p><strong>Banishes Romeo from Verona to Mantua
+                            (merciful) </strong></p>
+                    <p><strong>&nbsp;</strong></p>
+                    <h1><span style="text-decoration: underline; color: #ff0000;"><strong>Rosaline</strong></span>
+                    </h1>
+                    <p><strong>Romeo is infatuated with her at the start of
+                            the play</strong></p>
+                    <p><strong>Beautiful</strong></p>
+                    <p><strong>Sworn to a life of chastity (most likely is
+                            becoming a nun)</strong></p>
+                    <p><strong>Never seen on stage</strong></p>
+                    <p><strong>&nbsp;</strong></p>
+                    <p><strong>&nbsp;<img
+                                src="http://e08595.medialib.glogster.com/media/51/513d1e7f7fec170633c7668f8a6647de7ffcd62ad89cc36d7d0cc618b9e11c0d/friar-laurence.jpg"
+                                alt="" /></strong></p>
+                    <h1><span style="font-size: medium; text-decoration: underline; color: #ff0000;"><strong>Friar
+                                Lawrence</strong></span></h1>
+                    <p><strong>A Franciscan Friar (part of the Roman
+                            Catholic Church)</strong></p>
+                    <p><strong>Expert in potions, medicines, poisons, plants
+                            and herbs</strong></p>
+                    <p><strong>Advisor to Romeo</strong></p>
+                    <p><strong>Friend to Romeo and Juliet</strong></p>
+                    <p><strong>Secretly marries Romeo and Juliet</strong>
+                    </p>
+                    <p><strong>Hopes the Marriage will bring Peace to
+                            Verona</strong></p>
+                    <p><strong>Ambitious, wants to be popular and
+                            influential in Verona</strong></p>
+                    <p><strong>&nbsp;</strong></p>
+                    <h1><span style="text-decoration: underline; color: #ff0000;"><strong>Friar
+                                John</strong></span></h1>
+                    <p><strong>Works with Friar Lawrence</strong></p>
+                    <p><strong>Supposed to take a message of Juliet&rsquo;s
+                            FAKE death to Romeo</strong></p>
+                    <p><strong>Gets stuck in a quarantined house and the
+                            message never reaches Romeo</strong></p>
+                    <p><strong>&nbsp;</strong></p>
+                    <p><strong><img src="https://38.media.tumblr.com/tumblr_m3qj3uTeWg1r0soi6.jpg" alt="" width="287"
+                                height="294" /></strong>
+                    </p>
+                    <h1><span style="text-decoration: underline; color: #ff0000;"><strong>Paris</strong></span>
+                    </h1>
+                    <p class="title1"><strong>A kinsman of the
+                            Prince</strong></p>
+                    <p><strong>Asks to marry Juliet and liked by her
+                            parents</strong></p>
+                    <p><strong>&nbsp;</strong></p>
+                    <h1><span style="text-decoration: underline; color: #ff0000;"><strong>The
+                                Apothecary</strong></span></h1>
+                    <p class="title1"><strong>A druggist</strong></p>
+                    <p><strong>Takes a bribe to sell poison to
+                            Romeo</strong></p>
+                    <p><span style="text-decoration: underline; color: #ff0000;"><strong>&nbsp;</strong></span>
+                    </p>
+                    <h1><span style="text-decoration: underline; color: #ff0000;"><strong>The
+                                Chorus</strong></span></h1>
+                    <p class="title1"><strong>The Narrator of the Play,
+                            presents the prologue to each act</strong></p>
+                    <p><strong>&nbsp;</strong></p>
+                    <h1><span style="text-decoration: underline; color: #ff0000;"><strong>Sampson
+                                and Gregory</strong></span></h1>
+                    <p><strong>Capulet servants--hate the Montagues</strong>
+                    </p>
+                    <p><strong>First Scene of the play fight with
+                            Montagues</strong></p>
+                    <p><strong>Demonstrate the feud that leads to the threat
+                            by Prince Escalus</strong></p>
+                    <h1><span
+                            style="font-size: medium; text-decoration: underline; color: #ff0000;"><strong>Balthasar</strong></span>
+                    </h1>
+                    <p class="title1"><strong>Romeo&rsquo;s servant, brings
+                            Romeo the news of Juliet&rsquo;s death</strong>
+                    </p>
+                    <p><strong>&nbsp;</strong><span
+                            style="font-size: medium; text-decoration: underline; color: #ff0000;"><strong>Abram</strong></span>
+                    </p>
+                    <p><strong>Montague servant, fights with Capulet
+                            servants in the first scene</strong></p>
+                    <p><strong>&nbsp;</strong></p>
+                    <h1><span style="font-size: medium;"><strong>PROLOGUE</strong></span>
+                    </h1>
+                    <p><strong>2 families from Verona, Italy are feuding
+                            (fighting)</strong></p>
+                    <p><strong>One child from each family has fallen in
+                            love</strong></p>
+                    <p><strong>The lovers are &ldquo;star-crossed&rdquo; and
+                            cannot be together, they commit suicide</strong>
+                    </p>
+                    <p><strong>Their deaths end the family feud</strong></p>
+                    <p><span style="font-size: medium;"><strong>&nbsp;</strong></span>
+                    </p>
+                    <h1><span style="font-size: medium;"><strong>ACT
+                                1:1&mdash;<em>Fighting in the
+                                    Streets</em></strong></span></h1>
+                    <h1><strong><em>Streets of Verona</em></strong></h1>
+                    <ul>
+                        <li><strong>Servants from the Montague and Capulet
+                                families fight</strong></li>
+                        <li><strong>Benvolio tries to stop the
+                                fight</strong></li>
+                        <li><strong>Prince Escalus of Verona comes and stops
+                                the fight</strong></li>
+                        <li><strong>Prince promises to execute anyone who
+                                fights in the future</strong></li>
+                        <li><strong>Romeo is introduced, he is sad and
+                                depressed because the woman he loves
+                                (Rosaline) does not love him</strong></li>
+                    </ul>
+                    <p><span style="font-size: medium; text-decoration: underline;"><strong>&nbsp;</strong></span>
+                    </p>
+                    <h1><strong>ACT 1:2&mdash;<em>Juliet gets a
+                                proposal</em></strong></h1>
+                    <h1><strong><em>Capulet House</em></strong></h1>
+                    <ul>
+                        <li><strong>Paris asks Lord Capulet to marry his
+                                daughter Juliet</strong></li>
+                        <li><strong>Lord Capulet say she is too young to
+                                marry, he wants her to wait 2 more
+                                summers</strong></li>
+                        <li><strong>Lord Capulet wants his only child,
+                                Juliet, to be happy</strong></li>
+                        <li><strong>The Capulets plan a party</strong></li>
+                    </ul>
+                    <p><strong>&nbsp;</strong></p>
+                    <ul>
+                        <li><strong>Romeo and Benvolio find out about the
+                                party from a servant</strong></li>
+                        <li><strong>Romeo finds out Rosaline will be at the
+                                party</strong></li>
+                        <li><strong>Benvolio wants Romeo to go to the party
+                                to look for a new love</strong></li>
+                    </ul>
+                    <p><span style="font-size: medium; text-decoration: underline;"><strong>&nbsp;</strong></span>
+                    </p>
+                    <p><strong>ACT 1:3&mdash;<em>Juliet gets the sex talk
+                                from Mom</em></strong></p>
+                    <p><strong><em>Capulet house, before the
+                                party</em></strong></p>
+                    <ul>
+                        <li><strong>The Nurse, Lady Capulet and Juliet talk
+                                about Juliet marrying Paris</strong></li>
+                        <li><strong>The Nurse and Lady Capulet think Juliet
+                                is old enough to marry</strong></li>
+                    </ul>
+                    <h3>ACT 1:4&mdash;<em>There are more fish in the
+                            sea</em></h3>
+                    <h3><em>Streets of Verona</em></h3>
+                    <ul>
+                        <li><strong>Romeo and his friends Benvolio and
+                                Mercutio are on their way to the Capulet
+                                Ball</strong></li>
+                        <li><strong>Romeo sad and depressed</strong></li>
+                        <li><strong>Romeo is worried about a dream he had
+                                last night</strong></li>
+                        <li><strong>Mercutio teases Romeo about his dream
+                                (QUEEN MAB)</strong></li>
+                        <li><strong>Romeo has a bad feeling about the party,
+                                afraid of death (FATE)</strong></li>
+                        <li><strong>Romeo puts his fate/future in
+                                God&rsquo;s hands</strong></li>
+                    </ul>
+                    <p><strong>&nbsp;</strong></p>
+                    <h3>ACT 1:5-<em>Love at first sight and kissing</em>
+                    </h3>
+                    <h3><em>The Capulet Ball</em></h3>
+                    <h2>Lord Capulet makes a speech</h2>
+                    <p><strong>Romeo walks in a sees <em><span style="text-decoration: underline;">the
+                                    most beautiful girl in the
+                                    world!</span></em></strong></p>
+                    <p><strong>&nbsp;</strong></p>
+                    <h2>Tybalt (A Capulet and Juliet&rsquo;s cousin) finds
+                        out Romeo is at the party, he&rsquo;s furious</h2>
+                    <p><strong>Tybalt tells his uncle, Lord Capulet, wants
+                            to fight Romeo at the Ball</strong></p>
+                    <p><strong>Lord Capulet forbids the fight</strong></p>
+                    <p><strong>&nbsp;</strong></p>
+                    <p><strong>Juliet and Romeo meet and fall in love at
+                            first sight, they KISS</strong></p>
+                    <p><strong>Romeo finds out the love of his life is a
+                            Capulet</strong></p>
+                    <p><strong>Juliet discovers that the love of her life is
+                            a Montague</strong></p>
+                    <p><strong>&nbsp;</strong></p>
+                    <h3>Act 2:1-<em>Where in the world did Romeo go?</em>
+                    </h3>
+                    <h3><em>Capulet Garden</em></h3>
+                    <ul>
+                        <li><strong>Romeo is in the Capulet&rsquo;s garden
+                                and orchard</strong></li>
+                        <li><strong>Mercutio and Benvolio are looking for
+                                Romeo</strong></li>
+                        <li><strong>They can&rsquo;t find Romeo and they
+                                leave</strong></li>
+                    </ul>
+                    <p><strong>&nbsp;</strong></p>
+                    <h3>ACT 2:2 <em>THE MOST FAMOUS SCENE IN THE PLAY</em>
+                    </h3>
+                    <h2>Romeo is in the garden hoping to see Juliet on the
+                        balcony</h2>
+                    <ul>
+                        <li><strong>Juliet comes out on the balcony and is
+                                talking to herself</strong></li>
+                        <li><strong>Romeo learns that Juliet loves him, but
+                                is afraid because he is a Montague</strong>
+                        </li>
+                        <li><strong>Romeo and Juliet talk and admit they
+                                love each other</strong></li>
+                        <li><strong>They are willing to give up their
+                                families and their names</strong></li>
+                        <li><strong>They plan to marry</strong></li>
+                    </ul>
+                    <p><strong>&nbsp;</strong></p>
+                    <h3>ACT 2:3&mdash;<em>You&rsquo;ve got to help us</em>
+                    </h3>
+                    <h3><em>The next morning</em></h3>
+                    <h2>Romeo goes to see his priest, Friar Lawrence</h2>
+                    <ul>
+                        <li><strong>Romeo says he has forgotten all about
+                                Rosaline</strong></li>
+                        <li><strong>He is in love with Juliet now</strong>
+                        </li>
+                        <li><strong>He asks Friar Lawrence to marry
+                                them</strong></li>
+                        <li><strong>Friar Lawrence agrees to marry them in
+                                secret and hopes it will end the
+                                feud</strong></li>
+                        <li><strong>&nbsp;</strong></li>
+                    </ul>
+                    <h3>ACT 2: 4&mdash;<em>A secret wedding is planned</em>
+                    </h3>
+                    <h3><em>In the afternoon</em></h3>
+                    <ul>
+                        <li><strong>Mercutio and Benvolio are looking for
+                                Romeo</strong></li>
+                        <li><strong>They are afraid Tybalt wants to fight
+                                Romeo</strong></li>
+                        <li><strong>They find Romeo and The Nurse arrives
+                                with a message for Romeo</strong></li>
+                        <li><strong>Romeo and The Nurse plan the secret
+                                wedding</strong></li>
+                        <li><strong>Romeo and Juliet will meet with Friar
+                                Lawrence to marry in a secret
+                                ceremony</strong></li>
+                    </ul>
+                    <p><span style="font-size: medium;"><strong>&nbsp;</strong></span>
+                    </p>
+                    <h3>ACT 2: 5&mdash;<em>Juliet sneaks away</em></h3>
+                    <h3><em>Capulet House</em></h3>
+                    <ul>
+                        <li><strong>The Nurse teases Juliet and makes her
+                                wait for news from Romeo</strong></li>
+                        <li><strong>Juliet tells her parents she is going to
+                                Church to go to confession, instead she will
+                                marry Romeo</strong></li>
+                    </ul>
+                    <p><strong>&nbsp;</strong></p>
+                    <h3>ACT 2:6&mdash;<em>Going to the Chapel of Love</em>
+                    </h3>
+                    <h3><em>At the Church</em></h3>
+                    <ul>
+                        <li><strong>Romeo and Juliet meet to get
+                                married</strong></li>
+                        <li><strong>They are so in love they are not worried
+                                about the future</strong></li>
+                        <li><strong>Friar Lawrence hopes to be the man that
+                                saves Verona form the feud</strong></li>
+                        <li><strong>He marries Romeo and Juliet</strong>
+                        </li>
+                        <li><strong>&nbsp;</strong></li>
+                    </ul>
+                    <h3>ACT 3:1&mdash;<em>Sword fights, dead bodies and
+                            Romeo is banished</em></h3>
+                    <h3><em>Streets of Verona-the same day</em></h3>
+                    <ul>
+                        <li><strong>Benvolio and Mercutio are walking around
+                                Verona</strong></li>
+                        <li><strong>Mercutio is looking for a fight</strong>
+                        </li>
+                        <li><strong>They meet Tybalt (Juliet&rsquo;s cousin)
+                                and argue</strong></li>
+                        <li><strong>Mercutio and Tybalt have a sword
+                                fight</strong></li>
+                        <li><strong>Romeo tries to stop the fight, he steps
+                                in between them and Mercutio is
+                                stabbed</strong></li>
+                        <li><strong>As Mercutio is dying her curses both
+                                families, &ldquo;<em>A plague on both your
+                                    houses&rdquo;</em></strong></li>
+                    </ul>
+                    <p><strong><em>&nbsp;</em></strong></p>
+                    <h2>Tybalt fights with Romeo</h2>
+                    <ul>
+                        <li><strong>Romeo kills Tybalt and runs
+                                away</strong></li>
+                        <li><strong>&nbsp;</strong></li>
+                        <li><strong>The Capulets, The Montagues and the
+                                Prince come to the scene</strong></li>
+                        <li><strong>&nbsp;</strong></li>
+                        <li><strong>The Capulets are angry&mdash;Tybalt is
+                                dead</strong></li>
+                        <li><strong>The Prince is angry&mdash;Mercutio, his
+                                cousin, is dead</strong></li>
+                        <li><strong>&nbsp;</strong></li>
+                        <li><strong>The Prince declares that Romeo must be
+                                punished</strong></li>
+                        <li><strong>Romeo is exiled from Verona to Mantua
+                                forever</strong></li>
+                    </ul>
+                    <p><strong>&nbsp;</strong></p>
+                    <h3>ACT 3:2&mdash;<em>The bad news</em></h3>
+                    <h3><em>Juliet&rsquo;s bedroom</em></h3>
+                    <ul>
+                        <li><span style="font-size: 11px;">The Nurse tells
+                                Juliet about the news about Tybalt and
+                                Romeo</span></li>
+                        <li><span style="font-size: 11px;">Juliet is upset
+                                her cousin is dead, but devastated that
+                                Romeo has been banished</span></li>
+                        <li><strong style="font-size: 11px;">Juliet upset
+                                that she will not have a wedding night and
+                                &ldquo;will die a maidenwidow&rdquo;
+                                (virgin)</strong></li>
+                        <li><strong style="font-size: 11px;">The Nurse
+                                promises to arrange &ldquo;a wedding
+                                night&rdquo; meeting for the lovers</strong>
+                        </li>
+                    </ul>
+                    <p><strong>&nbsp;</strong></p>
+                    <p><strong><span style="text-decoration: underline;">ACT
+                                3:3&mdash;<em>The plan for the wedding
+                                    night</em></span></strong></p>
+                    <p><strong><em>Friar Lawrence&rsquo;s Cell</em></strong>
+                    </p>
+                    <ul>
+                        <li><span style="font-size: 11px;">Romeo is worried
+                                about his punishment for Tybalt&rsquo;s
+                                death</span></li>
+                        <li><strong style="font-size: 11px;">Friar tells
+                                Romeo he is lucky to be alive and only
+                                exiled from Verona</strong></li>
+                        <li><strong style="font-size: 11px;">The Nurse
+                                arrives and they make plans for the wedding
+                                night</strong></li>
+                        <li><strong style="font-size: 11px;">Romeo will
+                                leave Verona in the morning</strong></li>
+                        <li><strong style="font-size: 11px;">The Nurse gives
+                                Romeo and ring from Juliet as a sign of her
+                                love</strong></li>
+                    </ul>
+                    <p><strong>&nbsp;</strong></p>
+                    <p><strong><span style="text-decoration: underline;">ACT
+                                3:4&mdash;<em>Juliet will marry
+                                    Paris</em></span></strong></p>
+                    <p><strong><em>The Capulet House </em></strong></p>
+                    <ul>
+                        <li><span style="font-size: 11px;">The Capulets meet
+                                with Paris</span></li>
+                        <li><strong style="font-size: 11px;">They decide
+                                that Juliet will marry Paris on Thursday,
+                                because Wednesday is too soon?!?</strong>
+                        </li>
+                    </ul>
+                    <p><strong>&nbsp;</strong></p>
+                    <h3>ACT 3:5&mdash;<em>Romeo and Juliet and some
+                            nooky-nooky</em></h3>
+                    <h3><em>Juliet&rsquo;s bedroom, the next morning</em>
+                    </h3>
+                    <ul>
+                        <li><span style="font-size: 11px;">Romeo and Juliet
+                                have consummated their marriage</span></li>
+                        <li><strong style="font-size: 11px;">Saying
+                                good-bye, do not want the night to end and
+                                morning to arrive</strong></li>
+                        <li><strong style="font-size: 11px;">They notice
+                                they &ldquo;look pale like
+                                death&rdquo;</strong></li>
+                        <li><strong style="font-size: 11px;">The Nurse
+                                enters and warns Juliet her mother is
+                                coming</strong></li>
+                        <li><strong style="font-size: 11px;">Romeo
+                                leaves</strong></li>
+                        <li><strong style="font-size: 11px;">Lady Capulet
+                                enters and tells Juliet she will marry Paris
+                                on Thursday</strong></li>
+                        <li><strong style="font-size: 11px;">Juliet is upset
+                                and refuses to marry Paris</strong></li>
+                        <li><strong style="font-size: 11px;">Lord Capulet is
+                                enraged, fights with Juliet and her parents
+                                leave</strong></li>
+                    </ul>
+                    <p><strong>&nbsp;</strong></p>
+                    <ul>
+                        <li><strong>Juliet asks The Nurse for
+                                advice</strong></li>
+                        <li><strong>Nurse tells Juliet to marry Paris and
+                                forget Romeo, because he is as good as
+                                dead</strong></li>
+                        <li><strong>Juliet pretends to take the
+                                Nurses&rsquo; advice</strong></li>
+                        <li><strong>Juliet plans to go see Friar Lawrence
+                                for advice</strong></li>
+                        <li><strong>Juliet says if Friar Lawrence
+                                can&rsquo;t help her she can always kill
+                                herself</strong></li>
+                    </ul>
+                    <p><strong>&nbsp;</strong></p>
+                    <p><strong><span style="text-decoration: underline;">ACT
+                                4:1&mdash;<em>A short scene but a fateful
+                                    plan is hatched!</em></span></strong>
+                    </p>
+                    <h4>At the Church</h4>
+                    <h2>Paris goes to see the Friar to plan his wedding to
+                        Juliet</h2>
+                    <ul>
+                        <li><strong>Paris explains the wedding will make
+                                Juliet happy</strong></li>
+                        <li><strong>Juliet arrives and talks to Paris
+                                lovingly</strong></li>
+                        <li><strong>To get Paris to leave, Juliet asks for
+                                confession</strong></li>
+                        <li><strong>&nbsp;</strong></li>
+                        <li><strong>Juliet threatens to kill herself is she
+                                has to marry Paris</strong></li>
+                        <li><strong>Friar Lawrence comes with a
+                                plan</strong></li>
+                    </ul>
+                    <p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            Juliet will agree to marry Paris</strong></p>
+                    <p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            Before the wedding she will drink a
+                            &ldquo;sleeping potion&rdquo;</strong></p>
+                    <p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            Her family will think she is dead</strong></p>
+                    <p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            She will be put in the family vault</strong></p>
+                    <p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            The Friar will send a message to Romeo, telling
+                            him about the plan</strong></p>
+                    <p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            Romeo will sneak back to Verona to get
+                            Juliet</strong></p>
+                    <ul>
+                        <li><strong>Juliet agrees to the plan</strong></li>
+                    </ul>
+                    <p><strong><span style="text-decoration: underline;">ACT
+                                4:2&mdash;<em>Juliet deceives her
+                                    parents</em></span></strong></p>
+                    <h4>The Capulet House</h4>
+                    <ul>
+                        <li><span style="font-size: 11px;">Juliet tells her
+                                parents she will marry Paris</span></li>
+                        <li><strong style="font-size: 11px;">Parents are
+                                happy</strong></li>
+                        <li><strong style="font-size: 11px;">Juliet goes to
+                                her room to prepare for the wedding</strong>
+                        </li>
+                    </ul>
+                    <p><strong>&nbsp;</strong></p>
+                    <p><strong><span style="text-decoration: underline;">ACT
+                                4:3<em>&mdash;Juliet makes a big
+                                    decision</em></span></strong></p>
+                    <h4>Juliet&rsquo;s bedroom</h4>
+                    <ul>
+                        <li><span style="font-size: 11px;">She convinces her
+                                mother and the Nurse to leave her
+                                alone</span></li>
+                        <li><strong style="font-size: 11px;">She worries
+                                about drinking the potion</strong></li>
+                        <li><strong style="font-size: 11px;">Juliet drinks
+                                the sleeping potion</strong><strong style="font-size: 11px;">&nbsp;</strong>
+                        </li>
+                    </ul>
+                    <p><strong><span style="text-decoration: underline;">ACT
+                                4:4&mdash;<em>Is Juliet asleep or
+                                    dead?</em></span></strong></p>
+                    <h4>Juliet&rsquo;s bedroom</h4>
+                    <ul>
+                        <li><span style="font-size: 11px;">The nurse finds
+                                Juliet dead</span></li>
+                        <li><strong style="font-size: 11px;">Lord and Lady
+                                Capulet come in, the three are very
+                                upset</strong></li>
+                        <li><strong style="font-size: 11px;">Friar Lawrence
+                                and Paris arrive</strong></li>
+                        <li><strong style="font-size: 11px;">The Friar tells
+                                the family to prepare for the
+                                funeral</strong></li>
+                    </ul>
+                    <p><strong><span style="text-decoration: underline;">ACT
+                                5:1&mdash;<em>I want a new
+                                    drug</em></span></strong></p>
+                    <h2>While Juliet body is lying in the family vault</h2>
+                    <ul>
+                        <li><span style="font-size: 11px;">In Mantua</span>
+                        </li>
+                        <li><span style="font-size: 11px;">Romeo remembers a
+                                beautiful dream about Juliet</span></li>
+                        <li><strong style="font-size: 11px;">Romeo&rsquo;s
+                                servant Balthasar arrives to tell Romeo that
+                                Juliet is dead</strong></li>
+                        <li><strong style="font-size: 11px;">Romeo is
+                                distraught &ldquo;I defy you
+                                stars&rdquo;</strong></li>
+                        <li><strong style="font-size: 11px;">Romeo looks for
+                                an apothecary (druggist) to buy poison to
+                                kill himself</strong></li>
+                        <li><strong style="font-size: 11px;">He plans to go
+                                to the tomb &ldquo;to lie with&rdquo; his
+                                Juliet</strong></li>
+                    </ul>
+                    <p><strong>&nbsp;</strong></p>
+                    <p><strong><span style="text-decoration: underline;">ACT
+                                5:2&mdash;<em>Friar Lawrence comes up with
+                                    another plan!</em></span></strong></p>
+                    <ul>
+                        <li><span style="font-size: 11px;">The Friar
+                                realizes Romeo never received the message
+                                about Juliet&rsquo;s fake death</span></li>
+                        <li><strong style="font-size: 11px;">The messenger
+                                (Friar John) never got to Mantua, he got
+                                stuck in a quarantined house</strong></li>
+                        <li><strong style="font-size: 11px;">Friar Lawrence
+                                decides to go get Juliet out of the tomb and
+                                hide her at the church</strong></li>
+                    </ul>
+                    <p><strong>&nbsp;</strong></p>
+                    <p><strong><span style="text-decoration: underline;">ACT
+                                5:3&mdash;<em>Hey, let&rsquo;s all hang out
+                                    at the tomb tonight, More people are
+                                    going to die</em></span></strong></p>
+                    <p><strong><em><span style="text-decoration: underline;">Capulet
+                                    Family Tomb</span></em></strong></p>
+                    <h2>Paris goes to the tomb to leave flowers</h2>
+                    <ul>
+                        <li><strong>Romeo goes to the tomb with a crowbar to
+                                break in</strong></li>
+                        <li><strong>Paris thinks that Romeo, a Montague, is
+                                planning to damage the Capulets</strong>
+                        </li>
+                        <li><strong>They argue, sword fight, Paris is
+                                dead!</strong></li>
+                        <li><strong>Romeo drags Paris&rsquo; body into the
+                                tomb</strong></li>
+                        <li><strong>&nbsp;</strong></li>
+                        <li><strong>Romeo sees Juliet&rsquo;s
+                                &ldquo;dead&rdquo; body, drinks the poison
+                                and commits suicide</strong></li>
+                        <li><strong>Friar Lawrence finds Paris and Romeo
+                                dead</strong></li>
+                        <li><strong>TIME FOR ANOTHER NEW PLAN</strong></li>
+                        <li><strong>Juliet wakes up, Friar Lawrence tries to
+                                convince her to leave. She refuses and the
+                                Friar takes off</strong></li>
+                        <li><strong>Juliet sees the vial of poison and
+                                realizes Romeo is dead</strong></li>
+                        <li><strong>She tries to take the poison by kissing
+                                Romeo&rsquo;s lips, then she takes a knife
+                                and kills herself</strong></li>
+                        <li><strong>&nbsp;</strong></li>
+                        <li><strong>The Prince, The Capulets and the
+                                Montagues arrive at the tomb</strong></li>
+                    </ul>
+                    <h2>Friar Lawrence is forced to tell them all the truth
+                    </h2>
+                    <ul>
+                        <li><strong>The Prince blames the Capulets and
+                                Montague Feud for all the deaths</strong>
+                        </li>
+                        <li><strong>The families end the feud and decide to
+                                build a memorial statue to the
+                                lovers</strong></li>
+                        <li><strong>The play ends as the Prince declares,
+                                &ldquo;Never was there a story of more woe,
+                                Than that of Juliet and her Romeo</strong>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </section>
-    </main>
-    <footer class="noprint">
-        <section id="gb-footer-links-outer" class="gb-section-parent gb-section-pad" data-footer-links-color="White" data-footer-links-hover="White">
-        	<div id="gb-footer-links" class="gb-section"></div>
-        </section>
-        <section id="gb-footer-outer" class="gb-section-parent gb-section-pad" data-footer-text-color="White">
-            <div id="gb-footer" class="gb-section ui-clear displayFlexRow">
-                <h2></h2>
-                <div id="gb-address">
-                    <span class="gb-address one">1100 Brooks Blvd.</span><span class="gb-address spacer">, </span><span class="gb-address two">Manville, NJ 08835</span>
-                </div>
-                <div id="gb-contact">
-                	<span class="gb-contact phone" x-ms-format-detection="none">Phone: (908) 231-8500</span>
-                    <span class="gb-contact fax" x-ms-format-detection="none">Fax: </span>
-                </div>
-                <div id="gb-extra-links" class="displayFlexRow">
-                	<a class="footer-extra-link directions" href="//www.google.com/maps/place/1100 Brooks Blvd. Manville NJ 08835" target="_blank" data-show-directions-link="true">
-                    	<span>Get Directions</span>
-                    </a>
-                    <a class="footer-extra-link email" href="mailto:webadmin@manvillesd.org" data-show-email-link="false">
-                    	<span>Email Us</span>
-                    </a>
-                    <a class="footer-extra-link accessibility" href="#" target="_self">
-                    	<span>Web Accessibility</span>
-                    </a>
-                    <a class="footer-extra-link sitemap" href='/site/Default.aspx?PageType=15&SiteID=4&SectionMax=15&DirectoryType=6'>
-                        <span>Site Map</span>
-                    </a>
-                    <button class="cs-btn-reset footer-extra-link footer-scroll-btn" aria-label="Scroll To The Top Of The Page" tabindex="-1" aria-hidden="true"></button>
-                </div>
-            </div>
-        </section>
-        <section id="gb-social-media-outer" class="gb-section-parent gb-section-pad">
-        	<div id="gb-social-media" class="gb-section displayFlexRow">
-            	<h2>Stay Connected</h2>
-        		<div id="gb-social-media-icons" class="hidden"></div>
-            </div>
-        </section>
-        <section id="gb-schoolwires-footer-outer" class="gb-section-parent gb-section-pad">
-            <div id="gb-schoolwires-footer" class="gb-section border-box">
-                <div class="gb-schoolwires-footer top">
-                    <div id="gb-footer-disclaimer" data-show-disclaimer="false">
-                        <span>This is the disclaimer text. You can use this area for legal statements, copyright information, a mission statement, etc. If you don’t use it, the Bb footer will slide up.</span>
-                    </div>
-                </div>
-                <div class="gb-schoolwires-footer bottom" data-show-disclaimer="false">
-                    <div class="gb-schoolwires-footer logo"></div>
-                    <div id="gb-schoolwires-footer-links-copyright">
-                        <div class="gb-schoolwires-footer links"></div>
-                        <div class="gb-schoolwires-footer copyright"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </footer>
-</div><!-- BEGIN - STANDARD FOOTER -->
-<div id='sw-footer-outer'>
-<div id='sw-footer-inner'>
-<div id='sw-footer-left'></div>
-<div id='sw-footer-right'>
-<div id='sw-footer-links'>
-<ul>
-<li><a title='Click to email the primary contact' href='mailto:webadmin@manvillesd.org'>Questions or Feedback?</a> | </li>
-<li><a href='https://www.finalsite.com/privacy-policy' target="_blank">Web Community Manager Privacy Policy (Updated)</a> | </li>
-<li><a class='sw-footer-terms-link' aria-hidden='true' tabindex='-1' href=''></a></li>
-</ul>
-</div>
-<div id='sw-footer-copyright'>Copyright &copy; 2024 Finalsite - all rights reserved.</div>
-<div id='sw-footer-logo'><a href='http://www.finalsite.com' title="Finalsite - all rights reserved">
-<img src='https://www.manvilleschools.org/Static//GlobalAssets/Images/Navbar/WCM_logo.svg'
-class='sw-footer-logo-img' alt="Web Community Manager."/>
-</a></div>
-</div>
-</div>
-</div>
-<!-- END - STANDARD FOOTER -->
-<script type="text/javascript">
-   $(document).ready(function(){
-  var data = JSON.stringify({
-    "SiteID": "4",
-    "ChannelID": "1236",
-    "SectionID": "1794",
-    "PageID": "5563",
-    "Browser": "Firefox 130.0",
-    "OS": "WinNT",
-    "IPAddress": "10.61.84.66"
-  });
-  $.ajax({
-    url: "../Site/SiteController.aspx/InsertAnalyticsData",
-    method: "POST",
-    contentType: "application/json",
-    data: data,
-    success: function(response) {
-    },
-    error: function(xhr, status, error) {
-    }
-  });
-   });
-</script>
-
-    <input type="hidden" id="hid-pageid" value="5563" />
-
-    
-
-    <div id='dialog-overlay-WindowMedium-base' class='ui-dialog-overlay-base' ><div id='WindowMedium' role='dialog' tabindex='-1'  class='ui-dialog-overlay medium' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowMedium-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowMedium-body' ></div><button class='ui-dialog-overlay-close' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowMedium");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowMedium-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowMedium-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    <div id='dialog-overlay-WindowSmall-base' class='ui-dialog-overlay-base' ><div id='WindowSmall' role='dialog' tabindex='-1'  class='ui-dialog-overlay small' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowSmall-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowSmall-body' ></div><button class='ui-dialog-overlay-close' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowSmall");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowSmall-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowSmall-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    <div id='dialog-overlay-WindowLarge-base' class='ui-dialog-overlay-base' ><div id='WindowLarge' role='dialog' tabindex='-1'  class='ui-dialog-overlay large' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowLarge-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowLarge-body' ></div><button class='ui-dialog-overlay-close' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowLarge");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowLarge-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowLarge-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-
-    <div id='dialog-overlay-WindowMediumModal-base' class='ui-dialog-overlay-base-modal' ><div id='WindowMediumModal' role='dialog' tabindex='-1'  class='ui-dialog-overlay medium' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowMediumModal-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowMediumModal-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowMediumModal");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowMediumModal-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowMediumModal-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    <div id='dialog-overlay-WindowSmallModal-base' class='ui-dialog-overlay-base-modal' ><div id='WindowSmallModal' role='dialog' tabindex='-1'  class='ui-dialog-overlay small' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowSmallModal-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowSmallModal-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowSmallModal");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowSmallModal-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowSmallModal-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    <div id='dialog-overlay-WindowLargeModal-base' class='ui-dialog-overlay-base-modal' ><div id='WindowLargeModal' role='dialog' tabindex='-1'  class='ui-dialog-overlay large' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowLargeModal-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowLargeModal-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowLargeModal");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowLargeModal-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowLargeModal-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    <div id='dialog-overlay-WindowXLargeModal-base' class='ui-dialog-overlay-base-modal' ><div id='WindowXLargeModal' role='dialog' tabindex='-1'  class='ui-dialog-overlay xlarge' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowXLargeModal-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowXLargeModal-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowXLargeModal");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowXLargeModal-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowXLargeModal-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-
-    <div id='dialog-overlay-MyAccountSubscriptionOverlay-base' class='ui-dialog-overlay-base-modal' ><div id='MyAccountSubscriptionOverlay' role='dialog' tabindex='-1'  class='ui-dialog-overlay medium' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-MyAccountSubscriptionOverlay-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-MyAccountSubscriptionOverlay-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("MyAccountSubscriptionOverlay");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-MyAccountSubscriptionOverlay-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-MyAccountSubscriptionOverlay-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-
-    <div id='dialog-overlay-InsertOverlay-base' class='ui-dialog-overlay-base-modal' ><div id='InsertOverlay' role='dialog' tabindex='-1'  class='ui-dialog-overlay large' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-InsertOverlay-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-InsertOverlay-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("InsertOverlay");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-InsertOverlay-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-InsertOverlay-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    <div id='dialog-overlay-InsertOverlay2-base' class='ui-dialog-overlay-base-modal' ><div id='InsertOverlay2' role='dialog' tabindex='-1'  class='ui-dialog-overlay large' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-InsertOverlay2-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-InsertOverlay2-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("InsertOverlay2");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-InsertOverlay2-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-InsertOverlay2-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    
-    <div id="videowrapper" class="ui-helper-hidden">
-        <div id="videodialog" role="application">
-            <a id="videodialog-close" role="button" href="javascript:;" aria-label="Close Overlay" class="close-btn" onclick="closeVideoDialog();">CLOSE</a>
-            <div id="videodialog-video" ></div>
-            <div id="videodialog-foot" tabindex="0"></div>
         </div>
     </div>
-    <div id="attachmentwrapper" class="ui-helper-hidden">
-        <div id="attachmentdialog" role="application">
-            <a id="attachmentdialog-close" role="button" href="javascript:;" aria-label="Close Overlay" class="close-btn" onclick="closeAttachmentDialog();">CLOSE</a>
-            <div id="attachmentdialog-container"></div>
-        </div>
-    </div>
-    <script type="text/javascript">
-
-        $(document).ready(function () { 
-
-            removeBrokenImages();
-            checkSidebar();
-            RemoveCookie();
-
-            
-            //$('div.bullet').attr('tabindex', '');
-
-            
-
-            $('.navigation li.collapsible').each(function () {
-                if ($(this).find('ul').length == 0) {
-                    $(this).removeClass('collapsible');
-                }
-            });
-
-            // find page nav state cookie and add open chevron
-            var arrValues = GetCookie('SWPageNavState').split('~');
-
-            $.each(arrValues, function () {
-                if (this != '') {
-                   //$('#' + this).addClass('collapsible').prepend("<div class='bullet collapsible' aria-label='Close Page Submenu'/>");
-                    $('#' + this).addClass('collapsible').prepend("<div class='bullet collapsible' aria-haspopup='true' aria-expanded='true' />");
-                }
-            });
-
-            // find remaining sub menus and add closed chevron and close menu
-            $('.navigation li > ul').each(function () {
-                var list = $(this);
-
-                if (list.parent().hasClass('active') && !list.parent().hasClass('collapsible')) {
-                    // open sub for currently selected page                    
-                    //list.parent().addClass('collapsible').prepend("<div class='bullet collapsible'aria-label='Close Page Submenu' />");
-                    list.parent().addClass('collapsible').prepend("<div class='bullet collapsible' aria-haspopup='true' aria-expanded='true' />");
-                } else {
-                    if (list.parent().hasClass('collapsible') && !list.siblings('div').hasClass('collapsible')) {
-                        // open sub for page with auto expand
-                        list.siblings('div.expandable').remove();
-                        //list.parent().prepend("<div class='bullet collapsible' aria-label='Close Page Submenu' />");
-                        list.parent().prepend("<div class='bullet collapsible' aria-haspopup='true' aria-expanded='true' />");
-                    }
-                }
-
-                if (!list.siblings('div').hasClass('collapsible')) {
-                    // keep all closed that aren't already set to open
-                    //list.parent().addClass('expandable').prepend("<div class='bullet expandable' aria-label='Open Page Submenu' />");
-                    list.parent().addClass('expandable').prepend("<div class='bullet expandable' aria-haspopup='true' aria-expanded='false' />");
-                    ClosePageSubMenu(list.parent());
-                } else {
-                   OpenPageSubMenu(list.parent());
-                }
-            });
-
-            $(".navigation .bullet.collapsible, .navigation .bullet.expandable, .navigation a").each(function () {
-                if ($(this).closest("ul").attr("aria-hidden") == "true"){
-                    $(this).attr("tabindex", "-1");
-                } else {
-                    $(this).attr("tabindex", "0");
-                }
-            })
-
-            // remove bullet from hierarchy if no-bullet set
-            $('.navigation li.collapsible').each(function () {
-                if ($(this).hasClass('no-bullet')) {
-                    if (!$(this).hasClass('navigationgroup')) { $(this).removeClass('collapsible'); }
-                    $(this).children('div.collapsible').remove();
-                }
-            });
-
-            $('.navigation li.expandable').each(function () {
-                if ($(this).hasClass('no-bullet')) {
-                    if (!$(this).hasClass('navigationgroup')) { $(this).removeClass('expandable'); }
-                    $(this).children('div.expandable').remove();
-                }
-            });
-
-            $('.navigation li:not(.collapsible,.expandable,.no-bullet)').each(function () {
-                $(this).prepend("<div class='bullet'/>");
-            });
-
-            $('.navigation li.active').parents('ul').each(function () {
-                if (!$(this).hasClass('page-navigation')) {
-                    OpenPageSubMenu($(this).parent());
-                }
-            });
-
-            // Set aria ttributes
-            /*$('li.collapsible').each(function () {
-               $(this).attr("aria-expanded", "true");
-               $(this).find('div:first').attr('aria-pressed', 'true');
-            });*/
-
-            $('li.expandable').each(function () {
-                ///$(this).attr("aria-expanded", "false");
-                //$(this).find('div:first').attr('aria-pressed', 'false');
-                $(this).find("ul :focusable").attr("tabindex","-1");
-            });
-
-            /*$('div.bullet').each(function () {
-                $(this).attr("aria-hidden", "true");
-            });*/
-
-            // set click event for chevron
-            $(document).on('click', '.navigation div.collapsible', function () {
-                ClosePageSubMenu($(this).parent());
-            });
-
-            $(document).on('click', '.navigation div.expandable', function () {
-                OpenPageSubMenu($(this).parent());
-            });
-
-            // set navigation grouping links
-            $(document).on('click', '.navigationgroup.collapsible > a', function () {
-                ClosePageSubMenu($(this).parent());
-            });
-
-            $(document).on('click', '.navigationgroup.expandable > a', function () {
-                OpenPageSubMenu($(this).parent());
-            });
-
-            //SW MYSTART DROPDOWNS
-            $(document).on('click', '.sw-mystart-dropdown', function () {
-                $(this).children(".sw-dropdown").css("display", "block");
-            });
-
-            $(".sw-mystart-dropdown").hover(function () { }, function () {
-                $(this).children(".sw-dropdown").hide();
-                $(this).blur();
-            });
-
-            //SW ACCOUNT DROPDOWN
-            $(document).on('click', '#sw-mystart-account', function () {
-                $(this).children("#sw-myaccount-list").show();
-                $(this).addClass("clicked-state");
-            });
-
-            $("#sw-mystart-account, #sw-myaccount-list").hover(function () { }, function () {
-                $(this).children("#sw-myaccount-list").hide();
-                $(this).removeClass("clicked-state");
-                $("#sw-myaccount").blur();
-            });
-
-            // set hover class for page and section navigation
-            $('.ui-widget.app.pagenavigation, .ui-widget.app.sectionnavigation').find('li > a').hover(function () {
-                $(this).addClass('hover');
-            }, function () {
-                $(this).removeClass('hover');
-            });
-
-            //set aria-label for home
-            $('#navc-HP > a').attr('aria-label', 'Home');
-
-            // set active class on channel and section
-            var activeChannelNavType = $('input#hidActiveChannelNavType').val();
-            if (activeChannelNavType == -1) {
-                // homepage is active
-                $('#navc-HP').addClass('active');
-            } else if (activeChannelNavType == 1) {
-                // calendar page is active
-                $('#navc-CA').addClass('active');
-            } else {
-                // channel is active - set the active class on the channel
-                var activeSelectorID = $('input#hidActiveChannel').val();
-                $('#navc-' + activeSelectorID).addClass('active');
-
-                // set the breadcrumb channel href to the channel nav href
-                $('li[data-bccID=' + activeSelectorID + '] a').attr('href', $('#navc-' + activeSelectorID + ' a').attr('href'));
-                $('li[data-bccID=' + activeSelectorID + '] a span').text($('#navc-' + activeSelectorID + ' a span').first().text());
-
-                // set the active class on the section
-                activeSelectorID = $('input#hidActiveSection').val();
-                $('#navs-' + activeSelectorID).addClass('active');
-
-                // set the breadcrumb section href to the channel nav href
-                $('li[data-bcsID=' + activeSelectorID + '] a').attr('href', $('#navs-' + activeSelectorID + ' a').attr('href'));
-                if ($('#navs-' + activeSelectorID + ' a').attr('target') !== undefined) {
-                    $('li[data-bcsID=' + activeSelectorID + '] a').attr('target', $('#navs-' + activeSelectorID + ' a').attr('target'));
-                }
-                $('li[data-bcsID=' + activeSelectorID + '] span').text($('#navs-' + activeSelectorID + ' a span').text());
-
-                if ($('.sw-directory-columns').length > 0) {
-                    $('ul.ui-breadcrumbs li:last-child').remove();
-                    $('ul.ui-breadcrumbs li:last-child a').replaceWith(function() { return $('span', this); });
-                    $('ul.ui-breadcrumbs li:last-child span').append(' Directory');
-                }
-            }
-        }); // end document ready
-
-        function OpenPageSubMenu(li) {
-            if (li.prop('tagName').toLowerCase() == "li") {
-                if (li.hasClass('expandable')) {
-                    li.removeClass('expandable').addClass('collapsible');
-                }
-                if (li.find('div:first').hasClass('expandable')) {
-                    let linkText = li.find("> a").text();
-                    //li.find('div:first').removeClass('expandable').addClass('collapsible').attr('aria-pressed', 'true').attr('aria-label', 'Close Page Submenu');
-                    li.find('div:first').removeClass('expandable').addClass('collapsible').attr({
-                        "aria-expanded": "true",
-                        "aria-label": "Collapse "+linkText+" nested links"
-                    });
-                }
-                li.find('ul:first').attr('aria-hidden', 'false').show();
-                li.find("ul:first > li > .bullet.expandable, ul:first > li > .bullet.collapsible, ul:first > li > a").attr("tabindex", "0");
-                //li.find("li.expandable ul :focusable").attr("tabindex","-1");
-
-                //li.attr("aria-expanded", "true");
-
-                PageNavigationStateCookie();
-            }
-        }
-
-        function ClosePageSubMenu(li) {
-            if (li.prop('tagName').toLowerCase() == "li") {
-                let linkText = li.find("> a").text();
-                li.removeClass('collapsible').addClass('expandable');
-                //li.find('div:first').removeClass('collapsible').addClass('expandable').attr('aria-pressed', 'false').attr('aria-label', 'Open Page Submenu');
-                li.find('div:first').removeClass('collapsible').addClass('expandable').attr({
-                    "aria-expanded": "false",
-                    "aria-label": "Expand "+linkText+" nested links"
-                });
-                li.find('ul:first').attr('aria-hidden', 'true').hide();
-                li.find("ul:first .bullet.expandable, ul:first .bullet.collapsible, ul:first a").attr("tabindex","-1");
-
-                //li.attr("aria-expanded", "false");
-
-                PageNavigationStateCookie();
-            }
-        }
-
-        function PageNavigationStateCookie() {
-            var strCookie = "";
-
-            $('.pagenavigation li > ul').each(function () {
-                var item = $(this).parent('li');
-                if (item.hasClass('collapsible') && !item.hasClass('no-bullet')) {
-                    strCookie += $(this).parent().attr('id') + '~';
-                }
-            });
-
-            SetCookie('SWPageNavState', strCookie);
-        }
-
-        function checkSidebar() {
-            $(".ui-widget-sidebar").each(function () {
-                if ($.trim($(this).html()) != "") {
-                    $(this).show();
-                    $(this).siblings(".ui-widget-detail").addClass("with-sidebar");
-                }
-            });
-        }
-
-        function removeBrokenImages() {
-            //REMOVES ANY BROKEN IMAGES
-            $("span.img img").each(function () {
-                if ($(this).attr("src") !== undefined && $(this).attr("src") != '../../') {
-                    $(this).parent().parent().show();
-                    $(this).parent().parent().siblings().addClass("has-thumb");
-                }
-            });
-        }
-
-        function LoadEventDetailUE(moduleInstanceID, eventDateID, userRegID, isEdit) {
-            (userRegID === undefined ? userRegID = 0 : '');
-            (isEdit === undefined ? isEdit = false : '');
-            OpenDialogOverlay("WindowMediumModal", { LoadType: "U", LoadURL: "https://www.manvilleschools.org//site/UserControls/Calendar/EventDetailWrapper.aspx?ModuleInstanceID=" + moduleInstanceID + "&EventDateID=" + eventDateID + "&UserRegID=" + userRegID + "&IsEdit=" + isEdit });
-        }
-
-        function RemoveCookie() {
-            // There are no sub page            
-            if ($('.pagenavigation li li').length == 0) {
-                //return false;
-                PageNavigationStateCookie();
-            }
-        }
-    </script>
-
-    <script type="text/javascript">
-
-        function AddOffCanvasMenuHeightForSiteNav() {
-            var sitenavulHeight = 0;
-
-            if ($('#sw-pg-sitenav-ul').length > 0) {
-                sitenavulHeight = parseInt($("#sw-pg-sitenav-ul").height());
-            }
-
-            var swinnerwrapHeight = 0;
-
-            if ($('#sw-inner-wrap').length > 0) {
-                swinnerwrapHeight = parseInt($("#sw-inner-wrap").height());
-            }
-
-            // 360px is abount 5 li height
-            if (sitenavulHeight + 360 >= swinnerwrapHeight) {
-                $("#sw-inner-wrap").height(sitenavulHeight + 360);
-            }
-        }
-
-        function AddOffCanvasMenuHeightForSelectSchool() {
-            var selectschoolulHeight = 0;
-
-            if ($('#sw-pg-selectschool-ul').length > 0) {
-                selectschoolulHeight = parseInt($("#sw-pg-selectschool-ul").height());
-            }
-
-            var swinnerwrapHeight = 0;
-
-            if ($('#sw-inner-wrap').length > 0) {
-                swinnerwrapHeight = parseInt($("#sw-inner-wrap").height());
-            }
-
-            // 360px is abount 5 li height
-            if (selectschoolulHeight + 360 >= swinnerwrapHeight) {
-                $("#sw-inner-wrap").height(selectschoolulHeight + 360);
-            }
-        }
-
-        $(document).ready(function () {
-            if ($("#sw-pg-sitenav-a").length > 0) {
-                $(document).on('click', '#sw-pg-sitenav-a', function () {
-                    if ($("#sw-pg-sitenav-ul").hasClass('sw-pgmenu-closed')) {
-                        AddOffCanvasMenuHeightForSiteNav();
-
-                        $("ul.sw-pgmenu-toplevel").removeClass('sw-pgmenu-open').addClass('sw-pgmenu-closed');
-                        $("#sw-pg-sitenav-ul").removeClass('sw-pgmenu-closed');
-                        $("#sw-pg-sitenav-ul").addClass('sw-pgmenu-open');
-                    } else {
-                        $("#sw-pg-sitenav-ul").removeClass('sw-pgmenu-open');
-                        $("#sw-pg-sitenav-ul").addClass('sw-pgmenu-closed');
-                    }
-                });
-
-                $(document).on('click', '#sw-pg-selectschool-a', function () {
-                    if ($("#sw-pg-selectschool-ul").hasClass('sw-pgmenu-closed')) {
-                        AddOffCanvasMenuHeightForSelectSchool();
-
-                        $("ul.sw-pgmenu-toplevel").removeClass('sw-pgmenu-open').addClass('sw-pgmenu-closed');
-                        $("#sw-pg-selectschool-ul").removeClass('sw-pgmenu-closed');
-                        $("#sw-pg-selectschool-ul").addClass('sw-pgmenu-open');
-                    } else {
-                        $("#sw-pg-selectschool-ul").removeClass('sw-pgmenu-open');
-                        $("#sw-pg-selectschool-ul").addClass('sw-pgmenu-closed');
-                    }
-                });
-
-                $(document).on('click', '#sw-pg-myaccount-a', function () {
-                    if ($("#sw-pg-myaccount-ul").hasClass('sw-pgmenu-closed')) {
-                        $("ul.sw-pgmenu-toplevel").removeClass('sw-pgmenu-open').addClass('sw-pgmenu-closed');
-                        $("#sw-pg-myaccount-ul").removeClass('sw-pgmenu-closed');
-                        $("#sw-pg-myaccount-ul").addClass('sw-pgmenu-open');
-                    } else {
-                        $("#sw-pg-myaccount-ul").removeClass('sw-pgmenu-open');
-                        $("#sw-pg-myaccount-ul").addClass('sw-pgmenu-closed');
-                    }
-                });
-
-                $(document).on('click', '.pg-list-bullet', function () {
-                    $(this).prev().toggle();
-
-                    if ($(this).hasClass('closed')) {
-                        AddOffCanvasMenuHeightForSiteNav();
-
-                        $(this).removeClass('closed');
-                        $(this).addClass('open');
-                    } else {
-                        $(this).removeClass('open');
-                        $(this).addClass('closed');
-                    }
-                });
-
-                $(document).on('mouseover', '#sw-pg-selectschool', function () {
-                    $("#sw-pg-selectschool-firstli").removeClass('sw-pg-selectschool-firstli-mouseout').addClass('sw-pg-selectschool-firstli-mouseover');
-                    $("#sw-pg-selectschool-firstli a").addClass('sw-pg-selectschool-firstli-a-mouseover').removeClass('sw-pg-selectschool-firstli-a-mouseout');
-                });
-
-                $(document).on('mouseout', '#sw-pg-selectschool', function () {
-                    $("#sw-pg-selectschool-firstli").removeClass('sw-pg-selectschool-firstli-mouseover').addClass('sw-pg-selectschool-firstli-mouseout');
-                    $("#sw-pg-selectschool-firstli a").addClass('sw-pg-selectschool-firstli-a-mouseout').removeClass('sw-pg-selectschool-firstli-a-mouseover');
-                });
-
-                $(document).on('mouseover', '#sw-pg-myaccount', function () {
-                    $("#sw-pg-myaccount-firstli").removeClass('sw-pg-myaccount-firstli-mouseout').addClass('sw-pg-myaccount-firstli-mouseover');
-                    $("#sw-pg-myaccount-firstli a").addClass('sw-pg-myaccount-firstli-a-mouseover').removeClass('sw-pg-myaccount-firstli-a-mouseout');
-                });
-
-                $(document).on('mouseout', '#sw-pg-myaccount', function () {
-                    $("#sw-pg-myaccount-firstli").removeClass('sw-pg-myaccount-firstli-mouseover').addClass('sw-pg-myaccount-firstli-mouseout');
-                    $("#sw-pg-myaccount-firstli a").addClass('sw-pg-myaccount-firstli-a-mouseout').removeClass('sw-pg-myaccount-firstli-a-mouseover');
-                });
-
-                $(document).on('mouseover', '#sw-pg-sitenav', function () {
-                    $("#sw-pg-sitenav-firstli").removeClass('sw-pg-sitenav-firstli-mouseout').addClass('sw-pg-sitenav-firstli-mouseover');
-                    $("#sw-pg-sitenav-firstli a").addClass('sw-pg-sitenav-firstli-a-mouseover').removeClass('sw-pg-sitenav-firstli-a-mouseout');
-                });
-
-                $(document).on('mouseout', '#sw-pg-sitenav', function () {
-                    $("#sw-pg-sitenav-firstli").removeClass('sw-pg-sitenav-firstli-mouseover').addClass('sw-pg-sitenav-firstli-mouseout');
-                    $("#sw-pg-sitenav-firstli a").addClass('sw-pg-sitenav-firstli-a-mouseout').removeClass('sw-pg-sitenav-firstli-a-mouseover');
-                });
-
-                $(document).on('mouseover', '#sw-pg-district', function () {
-                    $("#sw-pg-district-firstli").removeClass('sw-pg-district-firstli-mouseout').addClass('sw-pg-district-firstli-mouseover');
-                    $("#sw-pg-district-firstli a").addClass('sw-pg-district-firstli-a-mouseover').removeClass('sw-pg-district-firstli-a-mouseout');
-                });
-
-                $(document).on('mouseout', '#sw-pg-district', function () {
-                    $("#sw-pg-district-firstli").removeClass('sw-pg-district-firstli-mouseover').addClass('sw-pg-district-firstli-mouseout');
-                    $("#sw-pg-district-firstli a").addClass('sw-pg-district-firstli-a-mouseout').removeClass('sw-pg-district-firstli-a-mouseover');
-                });
-            }
-        });
-
-
-    </script>
-    <script src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/min/SW-UI_2680.min.js" type='text/javascript'></script>
-    <script language="javascript" type='text/javascript' src="https://www.manvilleschools.org/Static/GlobalAssets/jQueryUI.min.js"></script>
-    <script src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/jquery.sectionlayer.js" type='text/javascript'></script>
-    <script src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/Initialize_2560.js" type='text/javascript'></script>
-    <script src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/min/swfobject.min.js" type="text/javascript"></script>
-    <script src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/min/jquery.ajaxupload_2440.min.js" type="text/javascript"></script>
-
-    <!-- Begin swuc.CheckScript -->
-  <script type="text/javascript" src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/ThirdParty/json2.js"></script>
-  <script type="text/javascript" src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/CheckScript_2780.js"></script>
-<!-- End swuc.CheckScript -->
-
-
-    <!-- Server Load Time (03): 0.0614142 Seconds -->
-
-    
-
-    <!-- off-canvas menu enabled-->
-    
-
-    <!-- Ally Alternative Formats Configure START   -->
-    
-<script>
-    AFExtensions = ".pdf,.doc,.docx,.ppt,.pptx,.odt,.odp";
-    AllyClientID = "13314";
-	    // Wait for the API to load     
-	    ally.ready(function() {
-		    // Configure an API instance
-            const ui = ally.ui({
-			    'client': {
-				    'baseUrl': 'https://prod.ally.ac',
-				    'clientId': 13314
-			    },
-			    'courseId': '1794',
-			    'locale': $('html').attr('lang'),
-			    'platformName': 'Wcm',  
-			    'role': 'anonymous'
-		    });
-	        // Apply the API to the page body   
-            ui.autoUpdate({'domWatch': 250});
-    });
-
-</script>
-    <!-- Ally Alternative Formats Configure END     -->
-
-</body>
-</html>
+</div>

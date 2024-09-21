@@ -1,85 +1,15 @@
 <h1>Long Way Gone: Study Guide</h1>
 
-		
-	</div>
-
-    <div class="ui-widget-footer">
-		  
-	</div>
-</div>
-<script type="text/javascript">
-$(document).ready(function (){
-$(".tag-list li a").keypress(function(e) { if(e.which == 13) { $(this).click();   }});
-});
-function LoadGroupedData(container, MIID, PMI, groupYear, groupMonth, groupBy, tag) {
-  //ViewToUse looks at the hidden Sidebar List View defined in the Builder View.
-  var viewToUse = "";
-    if($('#hid-'+MIID+'-SidebarListView').length > 0){
-      viewToUse = $("#hid-" + MIID + "-SidebarListView").val();
-    };
-  GetContent('https://www.manvilleschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=1794&PageID=5895&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&RenderLoc=0&FromRenderLoc=0&GroupYear=' + groupYear + '&GroupMonth=' + groupMonth + '&GroupByField=' + groupBy + '&EnableQuirksMode=0&ViewID=' + viewToUse + '&Tag=' + tag, container, 2, 'chkSidebar();');
-}
-function LoadData(container, MIID, PMI, flexDataID, groupYear, groupMonth, groupBy, targetView, tag) {
-  if(targetView !== undefined || targetView.Length() == 0){
-  //targetView looks at the hidden Detail View defined in the Builder View.
-      targetView = $('#hid-'+MIID+'-DetailView').val();
-   }
-  GetContent('https://www.manvilleschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=1794&PageID=5895&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&FlexDataID=' + flexDataID + '&GroupYear=' + groupYear + '&GroupMonth=' + groupMonth + '&GroupByField=' + groupBy + '&RenderLoc=0&FromRenderLoc=0&EnableQuirksMode=0&Tag=' + tag + '&ViewID=' + targetView, container, 2, 'chkSidebar();');
-}
-function LoadTaggedData(container, MIID, PMI, tag) {
-  //ViewToUse looks at the hidden Sidebar List View defined in the Builder View.
-  var viewToUse = "";
-    if($('#hid-'+MIID+'-SidebarListView').length > 0){
-      viewToUse = $("#hid-" + MIID + "-SidebarListView").val();
-    };
-  GetContent('https://www.manvilleschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=1794&PageID=5895&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&RenderLoc=0&FromRenderLoc=0&Tag=' + tag + '&EnableQuirksMode=0&ViewID='+viewToUse, container, 2, 'chkSidebar();');
-  setTimeout(function(){ $("#module-content-"+ MIID +"").find('[tabindex]:first').focus(); }, 200);
-}
-</script>
-</div>
-
-</div></div>
-<div id='pmi-6749'>
-
-
-
-<div id='sw-module-71270'>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            var DomainID = '1794';
-            var PageID = '5895';
-            var RenderLoc = '0';
-            var MIID = '7127';
-
-            //added to check to make sure moderated content doesn't bleed through the dialog
-            if ($('#dialog-overlay-WindowLargeModal-body.moderateContent').length > 0) {
-                $("#module-content-" + MIID).find(".ui-widget-detail").find(".ui-article").append("<p>&nbsp;</p>");
-            }
-        });
-    </script>
-
-    <script type="text/javascript">$(document).ready(function() {CheckScript('ModuleView');CheckScript('Mustache');
- });</script>
-    
-    <div id="module-content-7127" >
-<div class="ui-widget app flexpage">
-	<div class="ui-widget-header ui-helper-hidden">
-		
-	</div>
-	
-	<div class="ui-widget-detail">
-		<ul class="ui-articles">
-<li>
-	<div class="ui-article">
-		<div class="ui-article-description">
-        	<span><span ><p><span style="text-decoration: underline; color: #ff0000; font-size: medium;"><strong>Characters</strong></span></p>
+<p><span style="text-decoration: underline; color: #ff0000; font-size: medium;"><strong>Characters</strong></span>
+</p>
 <p>&nbsp;</p>
 <p><strong>the Lieutenant</strong></p>
 <p>Ishmael's leader in the Army. Very charismatic.</p>
 <p>Ishmael feels a special connection to this man.</p>
 <p>Both of them have read Shakespeare.</p>
 <p>Ishmael is willing to do anything the Lieutenant asks him to do.</p>
-<p>The Lieutenant in able to convince Ishamael and the boys to become soldiers to avenge the deaths of their families.</p>
+<p>The Lieutenant in able to convince Ishamael and the boys to become
+    soldiers to avenge the deaths of their families.</p>
 <p>The Lieutenant used drugs to control these boy soldiers.</p>
 <p>&nbsp;</p>
 <p><strong>Esther</strong></p>
@@ -89,7 +19,8 @@ function LoadTaggedData(container, MIID, PMI, tag) {
 <p>Esther never gives up on Ishmael's health and rehabilitation.</p>
 <p>&nbsp;</p>
 <p><strong>Laura Simms</strong></p>
-<p><strong><br /></strong>Becomes Ishmael "foster mother" when he leaves Sierra Leone and moves to NYC</p>
+<p><strong><br /></strong>Becomes Ishmael "foster mother" when he leaves
+    Sierra Leone and moves to NYC</p>
 <p>Ishmael met Laura at the UN Conference about children</p>
 <p>Laura is a"story-teller",</p>
 <p>Laura helps Ishamel to tell his story about being a boy soldier</p>
@@ -98,1137 +29,185 @@ function LoadTaggedData(container, MIID, PMI, tag) {
 <p><strong>Gasemu</strong></p>
 <p><strong>&nbsp;<br /></strong>A man Ishmael knows from his hometown.</p>
 <p>Ishmael meets Gasemu again after many months of being a boy-soldier</p>
-<p>Ishmael is searching for his family and Gasemu detains Ishmael. Ishmael helps Gasemu pick bananas and bring the to the town.</p>
-<p>Ishmael MISSES the chance to see his family again, because he was helping Gasemu.</p>
+<p>Ishmael is searching for his family and Gasemu detains Ishmael. Ishmael
+    helps Gasemu pick bananas and bring the to the town.</p>
+<p>Ishmael MISSES the chance to see his family again, because he was helping
+    Gasemu.</p>
 <p>His family is killed, Ishamel blames Gasemu and beats him.</p>
-<p>Gasemu dies shortly after this when Ishmael, Gasemu and some boys are running&nbsp; and fighting rebel soldiers.</p>
+<p>Gasemu dies shortly after this when Ishmael, Gasemu and some boys are
+    running&nbsp; and fighting rebel soldiers.</p>
 <p>Gasemu is shot and killed.</p>
 <p>&nbsp;</p>
-<p><span style="text-decoration: underline; color: #ff0000; font-size: medium;"><strong>Figurative Language</strong></span></p>
+<p><span style="text-decoration: underline; color: #ff0000; font-size: medium;"><strong>Figurative
+            Language</strong></span></p>
 <p>&nbsp;</p>
 <p><strong>Simile</strong></p>
-<p><strong><br /></strong>A comparison between 2 unlike things, using like or as</p>
+<p><strong><br /></strong>A comparison between 2 unlike things, using like
+    or as</p>
 <p>&nbsp;</p>
 <p><strong>Metaphor </strong></p>
-<p><strong><br /></strong>A comparison between 2 unlike things, gives added meaning </p>
+<p><strong><br /></strong>A comparison between 2 unlike things, gives added
+    meaning </p>
 <p>&nbsp;</p>
 <p><strong>Personification</strong></p>
-<p><strong><br /></strong>A figure of speech. An animal, object, idea or force of nature is given a personality of described as if if were human.</p>
+<p><strong><br /></strong>A figure of speech. An animal, object, idea or
+    force of nature is given a personality of described as if if were human.
+</p>
 <p><br /><strong>Alliteration</strong></p>
-<p><strong><br /></strong>The repetition of similar sounds, usually consonant sounds</p>
+<p><strong><br /></strong>The repetition of similar sounds, usually
+    consonant sounds</p>
 <p>&nbsp;</p>
-<p><span style="text-decoration: underline; color: #ff0000; font-size: medium;"><strong>Central Issues</strong></span></p>
-<p><strong><br />On page 16, how does Ishmael describe the moon? How does he compare it to human behavior?</strong></p>
-<p>&nbsp;<span style="color: #0000ff;">"We must strive to be like the moon...the adage served to remind people to always be on their best behavior and to be good to others...People complain when there is too much sun and it gets unbearbly hot, and also when it rains too much or when it is cold. But no one grumbles when the moon shines. Everyone becomes happy and appreciates the moon in their own special way. Children watch their shadows and play in its light, people gather at the square to tell stories and dance through the night. A lot of happy things happen when the moon shines. These are some of the reasons why we should want to be like the moon." (17)</span></p>
-<p><span style="color: #0000ff;"><span style="color: #000000;">Ismael describes the moon as something people always like in their own way because the moon gives light to a dark night, children play in the moon's shadow and tell stories by the moon light. Ismael notices that people complain about the weather, the sun, the heat and the cold all the time. People do not complain about the moon. Ishmael thinks people should be more like the moon and be happier.</span><br /></span></p>
+<p><span style="text-decoration: underline; color: #ff0000; font-size: medium;"><strong>Central
+            Issues</strong></span></p>
+<p><strong><br />On page 16, how does Ishmael describe the moon? How does he
+        compare it to human behavior?</strong></p>
+<p>&nbsp;<span style="color: #0000ff;">"We must strive to be like the
+        moon...the adage served to remind people to always be on their best
+        behavior and to be good to others...People complain when there is
+        too much sun and it gets unbearbly hot, and also when it rains too
+        much or when it is cold. But no one grumbles when the moon shines.
+        Everyone becomes happy and appreciates the moon in their own special
+        way. Children watch their shadows and play in its light, people
+        gather at the square to tell stories and dance through the night. A
+        lot of happy things happen when the moon shines. These are some of
+        the reasons why we should want to be like the moon." (17)</span></p>
+<p><span style="color: #0000ff;"><span style="color: #000000;">Ismael
+            describes the moon as something people always like in their own
+            way because the moon gives light to a dark night, children play
+            in the moon's shadow and tell stories by the moon light. Ismael
+            notices that people complain about the weather, the sun, the
+            heat and the cold all the time. People do not complain about the
+            moon. Ishmael thinks people should be more like the moon and be
+            happier.</span><br /></span></p>
 <p><span style="color: #0000ff;"><span style="color: #000000;">&nbsp;</span></span></p>
-<p><span style="color: #0000ff;"><span style="color: #000000;"><strong>Why are child soldiers being recruited? What are the advantages?</strong><br /></span></span></p>
-<p><span style="color: #0000ff;"><span style="color: #000000;"><strong><br /></strong>Boy soldiers are being recruited for the Sierra Leone Army and the Rebel Army because there are so many young boys who are homeless and without a family. The boys are <span style="text-decoration: underline;">looking </span>for a "new family". These boys want to belong to someone or something. There are several advantages to having boy soldiers. They are young and do not questions authority and they follow directions without asking questions. They are homeless and have no family and are desperate to "belong" and have someone take care of them. Also, the boys are angry that they have lost their homes and family and are fierce fighters. Children want to please adults, they are people pleasers and this is a great advantage for the military leaders.<br /></span></span></p>
+<p><span style="color: #0000ff;"><span style="color: #000000;"><strong>Why
+                are child soldiers being recruited? What are the
+                advantages?</strong><br /></span></span></p>
+<p><span style="color: #0000ff;"><span style="color: #000000;"><strong><br /></strong>Boy soldiers are
+            being recruited for the Sierra Leone Army and the Rebel Army
+            because there are so many young boys who are homeless and
+            without a family. The boys are <span style="text-decoration: underline;">looking </span>for a
+            "new family". These boys want to belong to someone or something.
+            There are several advantages to having boy soldiers. They are
+            young and do not questions authority and they follow directions
+            without asking questions. They are homeless and have no family
+            and are desperate to "belong" and have someone take care of
+            them. Also, the boys are angry that they have lost their homes
+            and family and are fierce fighters. Children want to please
+            adults, they are people pleasers and this is a great advantage
+            for the military leaders.<br /></span></span></p>
 <p><span style="color: #0000ff;"><span style="color: #000000;">&nbsp;</span></span></p>
-<p><span style="color: #0000ff;"><span style="color: #000000;"><strong>How does the rehabilitation center help Ishmael? What steps are taken to get him back on track?</strong><br /></span></span></p>
-<p><span style="color: #0000ff;"><span style="color: #000000;"><strong><br /></strong>The rehab center's purpose is to assimilate (fit in)&nbsp; Ishmael back into society. The center gives Ishmael a roof over his head and 3 meals a day, so that his basic needs are met. He is given medical care, counseling and schooling. The center tries to reunite Ishmael with someone in his family (his uncle), as well.&nbsp;</span></span></p>
-<p><span style="color: #0000ff;">"They know now that it is possible for boys to be rehabilitated" (169).<br /></span></p>
-<p><span style="color: #0000ff;"><span style="color: #000000;"><span style="color: #1c0ef0;"><span style="color: #000000;"><span style="color: #0000ff;">"I would always tell people that I believe children have the resilience to outlive their suffering, if given the chance" (169).</span></span></span></span></span></p>
-<p><span style="color: #0000ff;"><span style="color: #000000;"><span style="color: #1c0ef0;"><span style="color: #000000;"><span style="color: #0000ff;">&nbsp;</span></span></span></span></span></p>
-<p><span style="color: #0000ff;"><span style="color: #000000;"><strong>How does Ishmael view himself as a soldier? How did he earn the rank of "junior lieutenant"?<br /></strong></span></span></p>
-<p><span style="color: #0000ff;"><span style="color: #000000;"><strong>&nbsp;</strong>Ishmael feels he was a good soldier. He followed orders and was good at what he did. He made the Army is family and was very loyal and dedicated to the Lieutenant. Ishmael thought he was honoring his family, his real family and his adopted military family, by being a soldier. </span></span><span style="color: #1c0ef0;"><span style="color: #000000;">While in the hospital, Ishmael remembers his time in the army as a "Junior Lieutenant". He tells the reader about a raid on a village he was in charge of. They killed all of the villagers, but captured enough food, drugs and ammunition for several months. <br /></span></span></p>
+<p><span style="color: #0000ff;"><span style="color: #000000;"><strong>How
+                does the rehabilitation center help Ishmael? What steps are
+                taken to get him back on track?</strong><br /></span></span>
+</p>
+<p><span style="color: #0000ff;"><span style="color: #000000;"><strong><br /></strong>The rehab
+            center's purpose is to assimilate (fit in)&nbsp; Ishmael back
+            into society. The center gives Ishmael a roof over his head and
+            3 meals a day, so that his basic needs are met. He is given
+            medical care, counseling and schooling. The center tries to
+            reunite Ishmael with someone in his family (his uncle), as
+            well.&nbsp;</span></span></p>
+<p><span style="color: #0000ff;">"They know now that it is possible for boys
+        to be rehabilitated" (169).<br /></span></p>
+<p><span style="color: #0000ff;"><span style="color: #000000;"><span style="color: #1c0ef0;"><span
+                    style="color: #000000;"><span style="color: #0000ff;">"I would always tell people
+                        that I believe children have the resilience to
+                        outlive their suffering, if given the chance"
+                        (169).</span></span></span></span></span></p>
+<p><span style="color: #0000ff;"><span style="color: #000000;"><span style="color: #1c0ef0;"><span
+                    style="color: #000000;"><span style="color: #0000ff;">&nbsp;</span></span></span></span></span>
+</p>
+<p><span style="color: #0000ff;"><span style="color: #000000;"><strong>How
+                does Ishmael view himself as a soldier? How did he earn the
+                rank of "junior lieutenant"?<br /></strong></span></span>
+</p>
+<p><span style="color: #0000ff;"><span style="color: #000000;"><strong>&nbsp;</strong>Ishmael feels he
+            was a good soldier. He followed orders and was good at what he
+            did. He made the Army is family and was very loyal and dedicated
+            to the Lieutenant. Ishmael thought he was honoring his family,
+            his real family and his adopted military family, by being a
+            soldier. </span></span><span style="color: #1c0ef0;"><span style="color: #000000;">While in the hospital,
+            Ishmael remembers
+            his time in the army as a "Junior Lieutenant". He tells the
+            reader about a raid on a village he was in charge of. They
+            killed all of the villagers, but captured enough food, drugs and
+            ammunition for several months. <br /></span></span></p>
 <p>&nbsp;</p>
-<p><span style="color: #1c0ef0;"><span style="color: #000000;">Ishmael and Alhaji were very good soldiers and acquired nicknames they were very proud of.<span style="text-decoration: underline;"><strong><br /></strong></span></span></span></p>
-<p><span style="color: #0000ff;"><span style="color: #000000;"><span style="color: #1c0ef0;"><span style="color: #000000;"><span style="color: #0000ff;">"Alhaji acquired the name "Little Rambo" and he did all he could in other raids to live up to that name...My nickname was "Green Snake," because I would situate myself in the most advantageous and sneaky position and would take out a whole village from under the tiniest shrub without being noticied" (144).</span></span></span><br /></span></span></p>
-<p><span style="color: #0000ff;"><span style="color: #000000;"><span style="color: #1c0ef0;"><span style="color: #000000;"><span style="color: #0000ff;">&nbsp;</span></span></span></span></span></p>
-<p><span style="color: #0000ff;"><span style="color: #000000;"><span style="text-decoration: underline;"><span style="color: #ff0000;"><strong><span style="font-size: medium;">Vocabulary</span></strong></span></span><strong><br /></strong></span></span></p>
-<p><strong><span style="color: #0000ff;"><span style="color: #000000;">pulsating-</span></span></strong><span style="color: #0000ff;">to vibrate and beat rhythmically-<span style="color: #ff0000;">Ishmael could feel his pulsating heart as he ran in fear for his life through the jungle. </span></span><span style="color: #0000ff;"><span style="color: #000000;"><span style="text-decoration: underline;"><span style="color: #ff0000; text-decoration: underline;"><span style="font-size: medium;"><br /></span></span></span></span></span></p>
-<p><strong>vehemently-</strong><span style="color: #0000ff;">passionate, very emotional, usually with anger- <span style="color: #ff0000;">Ishmael answered Esther's questions vehemently when he first arrived at the Benin Home.&nbsp;</span></span></p>
-<p><strong>adjoining-</strong><span style="color: #0000ff;">located next to each other-<span style="color: #ff0000;">Ishmael and his cousins shared adjoining bedrooms at his uncle's house.&nbsp;</span></span></p>
-<p><strong>interrogate</strong>-t<span style="color: #0000ff;">o ask questions-<span style="color: #ff0000;">The villagers interrogated Ishmael and the boys because they thought the boys were Rebel soldiers. </span></span></p>
-<p><span style="color: #000000;"><strong>console-</strong></span><span style="color: #0000ff;">to give someone comfort, make them feel better-<span style="color: #ff0000;">Esther consoled Ishmael&nbsp; when he was at the Benin Home</span></span><span style="color: #ff0000;">.</span></p>
-<p><strong>embedded-</strong><span style="color: #0000ff;">to become part of a surrounding area-<span style="color: #ff0000;">When Ishmael was hiding from the rebel soldiers, he embedded himself into the bushes.&nbsp;</span></span></p>
-<p><strong>malnourishment-</strong><span style="color: #0000ff;">lack of food, starving, poor nutrition-<span style="color: #ff0000;">The boy soldiers could not find food for days and were suffering from malnourishment.&nbsp;</span></span></p>
-<p><strong>mesmerized</strong>-<span style="color: #0000ff;">fascinate, hypnotize-<span style="color: #ff0000;">Ishmael and the other boys were mesmerized by the Lieutenant's speech and became good soldiers.</span></span></p>
-<p><strong>translucent-</strong><span style="color: #0000ff;">permits light to pass through, but is not clear-<span style="color: #ff0000;">Ishmael looked through the translucent window and could see shapes that looked like people, but he could not clearly see who was hiding in the room.</span> <br /></span></p>
-<p><strong>profusely-</strong><span style="color: #0000ff;">excessive and great amount-<span style="color: #ff0000;">It was so hot in the jungle that Ishmael was sweating profusely and blinded by the sweat pouring into his eyes.&nbsp;</span></span></p>
-<p><strong>deviate-</strong><span style="color: #0000ff;">to depart or swerve away-</span><span style="color: #ff0000;">Ishmael was walking along the pathed to the village and heard rebel soldiers up ahead. For his safety Ishmael deviated from the path into the jungle.&nbsp;</span></p>
-<p><strong>morale-</strong><span style="color: #0000ff;">emotional condition during hardship-<span style="color: #ff0000;">The boy soldier's morale was very low when they first arrived at the Benin Home because they felt abandoned by the Lieutenant and the Army, who they had come to see as their "family". </span></span></p></span></span>
-        </div>
-		<div class="clear"></div>
-	</div>
-</li>
-</ul>
+<p><span style="color: #1c0ef0;"><span style="color: #000000;">Ishmael and
+            Alhaji were very good soldiers and acquired nicknames they were
+            very proud of.<span style="text-decoration: underline;"><strong><br /></strong></span></span></span>
+</p>
+<p><span style="color: #0000ff;"><span style="color: #000000;"><span style="color: #1c0ef0;"><span
+                    style="color: #000000;"><span style="color: #0000ff;">"Alhaji acquired the name
+                        "Little Rambo" and he did all he could in other
+                        raids to live up to that name...My nickname was
+                        "Green Snake," because I would situate myself in the
+                        most advantageous and sneaky position and would take
+                        out a whole village from under the tiniest shrub
+                        without being noticied"
+                        (144).</span></span></span><br /></span></span></p>
+<p><span style="color: #0000ff;"><span style="color: #000000;"><span style="color: #1c0ef0;"><span
+                    style="color: #000000;"><span style="color: #0000ff;">&nbsp;</span></span></span></span></span>
+</p>
+<p><span style="color: #0000ff;"><span style="color: #000000;"><span style="text-decoration: underline;"><span
+                    style="color: #ff0000;"><strong><span
+                            style="font-size: medium;">Vocabulary</span></strong></span></span><strong><br /></strong></span></span>
+</p>
+<p><strong><span style="color: #0000ff;"><span style="color: #000000;">pulsating-</span></span></strong><span
+        style="color: #0000ff;">to vibrate and beat rhythmically-<span style="color: #ff0000;">Ishmael could feel his
+            pulsating heart
+            as he ran in fear for his life through the jungle.
+        </span></span><span style="color: #0000ff;"><span style="color: #000000;"><span
+                style="text-decoration: underline;"><span style="color: #ff0000; text-decoration: underline;"><span
+                        style="font-size: medium;"><br /></span></span></span></span></span>
+</p>
+<p><strong>vehemently-</strong><span style="color: #0000ff;">passionate,
+        very emotional, usually with anger- <span style="color: #ff0000;">Ishmael answered Esther's questions
+            vehemently when he first arrived at the Benin
+            Home.&nbsp;</span></span></p>
+<p><strong>adjoining-</strong><span style="color: #0000ff;">located next to
+        each other-<span style="color: #ff0000;">Ishmael and his cousins
+            shared adjoining bedrooms at his uncle's
+            house.&nbsp;</span></span></p>
+<p><strong>interrogate</strong>-t<span style="color: #0000ff;">o ask
+        questions-<span style="color: #ff0000;">The villagers interrogated
+            Ishmael and the boys because they thought the boys were Rebel
+            soldiers. </span></span></p>
+<p><span style="color: #000000;"><strong>console-</strong></span><span style="color: #0000ff;">to give someone comfort,
+        make them feel
+        better-<span style="color: #ff0000;">Esther consoled Ishmael&nbsp;
+            when he was at the Benin Home</span></span><span style="color: #ff0000;">.</span></p>
+<p><strong>embedded-</strong><span style="color: #0000ff;">to become part of
+        a surrounding area-<span style="color: #ff0000;">When Ishmael was
+            hiding from the rebel soldiers, he embedded himself into the
+            bushes.&nbsp;</span></span></p>
+<p><strong>malnourishment-</strong><span style="color: #0000ff;">lack of
+        food, starving, poor nutrition-<span style="color: #ff0000;">The boy
+            soldiers could not find food for days and were suffering from
+            malnourishment.&nbsp;</span></span></p>
+<p><strong>mesmerized</strong>-<span style="color: #0000ff;">fascinate,
+        hypnotize-<span style="color: #ff0000;">Ishmael and the other boys
+            were mesmerized by the Lieutenant's speech and became good
+            soldiers.</span></span></p>
+<p><strong>translucent-</strong><span style="color: #0000ff;">permits light
+        to pass through, but is not clear-<span style="color: #ff0000;">Ishmael looked through the translucent
+            window and could see shapes that looked like people, but he
+            could not clearly see who was hiding in the room.</span>
+        <br /></span></p>
+<p><strong>profusely-</strong><span style="color: #0000ff;">excessive and
+        great amount-<span style="color: #ff0000;">It was so hot in the
+            jungle that Ishmael was sweating profusely and blinded by the
+            sweat pouring into his eyes.&nbsp;</span></span></p>
+<p><strong>deviate-</strong><span style="color: #0000ff;">to depart or
+        swerve away-</span><span style="color: #ff0000;">Ishmael was walking
+        along the pathed to the village and heard rebel soldiers up ahead.
+        For his safety Ishmael deviated from the path into the
+        jungle.&nbsp;</span></p>
+<p><strong>morale-</strong><span style="color: #0000ff;">emotional condition
+        during hardship-<span style="color: #ff0000;">The boy soldier's
+            morale was very low when they first arrived at the Benin Home
+            because they felt abandoned by the Lieutenant and the Army, who
+            they had come to see as their "family". </span></span></p>
+</span></span>
 </div>
-	<div class="ui-widget-footer">
-		
-			
-		
-		<div class="clear"></div>
-	</div>
-</div>
-<script type="text/javascript">
-$(document).ready(function (){
-$(".tag-list li a").keypress(function(e) { if(e.which == 13) { $(this).click();   }});
-});
-function LoadGroupedData(container, MIID, PMI, groupYear, groupMonth, groupBy, tag) {
-  //ViewToUse looks at the hidden Sidebar List View defined in the Builder View.
-  var viewToUse = "";
-    if($('#hid-'+MIID+'-SidebarListView').length > 0){
-      viewToUse = $("#hid-" + MIID + "-SidebarListView").val();
-    };
-  GetContent('https://www.manvilleschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=1794&PageID=5895&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&RenderLoc=0&FromRenderLoc=0&GroupYear=' + groupYear + '&GroupMonth=' + groupMonth + '&GroupByField=' + groupBy + '&EnableQuirksMode=0&ViewID=' + viewToUse + '&Tag=' + tag, container, 2, 'chkSidebar();');
-}
-function LoadData(container, MIID, PMI, flexDataID, groupYear, groupMonth, groupBy, targetView, tag) {
-  if(targetView !== undefined || targetView.Length() == 0){
-  //targetView looks at the hidden Detail View defined in the Builder View.
-      targetView = $('#hid-'+MIID+'-DetailView').val();
-   }
-  GetContent('https://www.manvilleschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=1794&PageID=5895&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&FlexDataID=' + flexDataID + '&GroupYear=' + groupYear + '&GroupMonth=' + groupMonth + '&GroupByField=' + groupBy + '&RenderLoc=0&FromRenderLoc=0&EnableQuirksMode=0&Tag=' + tag + '&ViewID=' + targetView, container, 2, 'chkSidebar();');
-}
-function LoadTaggedData(container, MIID, PMI, tag) {
-  //ViewToUse looks at the hidden Sidebar List View defined in the Builder View.
-  var viewToUse = "";
-    if($('#hid-'+MIID+'-SidebarListView').length > 0){
-      viewToUse = $("#hid-" + MIID + "-SidebarListView").val();
-    };
-  GetContent('https://www.manvilleschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=1794&PageID=5895&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&RenderLoc=0&FromRenderLoc=0&Tag=' + tag + '&EnableQuirksMode=0&ViewID='+viewToUse, container, 2, 'chkSidebar();');
-  setTimeout(function(){ $("#module-content-"+ MIID +"").find('[tabindex]:first').focus(); }, 200);
-}
-</script>
-</div>
-
-</div></div>
-</div><div class="clear"></div></div></div><!-- End Centricity Content Area -->
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="noprint">
-        <section id="gb-footer-links-outer" class="gb-section-parent gb-section-pad" data-footer-links-color="White" data-footer-links-hover="White">
-        	<div id="gb-footer-links" class="gb-section"></div>
-        </section>
-        <section id="gb-footer-outer" class="gb-section-parent gb-section-pad" data-footer-text-color="White">
-            <div id="gb-footer" class="gb-section ui-clear displayFlexRow">
-                <h2></h2>
-                <div id="gb-address">
-                    <span class="gb-address one">1100 Brooks Blvd.</span><span class="gb-address spacer">, </span><span class="gb-address two">Manville, NJ 08835</span>
-                </div>
-                <div id="gb-contact">
-                	<span class="gb-contact phone" x-ms-format-detection="none">Phone: (908) 231-8500</span>
-                    <span class="gb-contact fax" x-ms-format-detection="none">Fax: </span>
-                </div>
-                <div id="gb-extra-links" class="displayFlexRow">
-                	<a class="footer-extra-link directions" href="//www.google.com/maps/place/1100 Brooks Blvd. Manville NJ 08835" target="_blank" data-show-directions-link="true">
-                    	<span>Get Directions</span>
-                    </a>
-                    <a class="footer-extra-link email" href="mailto:webadmin@manvillesd.org" data-show-email-link="false">
-                    	<span>Email Us</span>
-                    </a>
-                    <a class="footer-extra-link accessibility" href="#" target="_self">
-                    	<span>Web Accessibility</span>
-                    </a>
-                    <a class="footer-extra-link sitemap" href='/site/Default.aspx?PageType=15&SiteID=4&SectionMax=15&DirectoryType=6'>
-                        <span>Site Map</span>
-                    </a>
-                    <button class="cs-btn-reset footer-extra-link footer-scroll-btn" aria-label="Scroll To The Top Of The Page" tabindex="-1" aria-hidden="true"></button>
-                </div>
-            </div>
-        </section>
-        <section id="gb-social-media-outer" class="gb-section-parent gb-section-pad">
-        	<div id="gb-social-media" class="gb-section displayFlexRow">
-            	<h2>Stay Connected</h2>
-        		<div id="gb-social-media-icons" class="hidden"></div>
-            </div>
-        </section>
-        <section id="gb-schoolwires-footer-outer" class="gb-section-parent gb-section-pad">
-            <div id="gb-schoolwires-footer" class="gb-section border-box">
-                <div class="gb-schoolwires-footer top">
-                    <div id="gb-footer-disclaimer" data-show-disclaimer="false">
-                        <span>This is the disclaimer text. You can use this area for legal statements, copyright information, a mission statement, etc. If you don’t use it, the Bb footer will slide up.</span>
-                    </div>
-                </div>
-                <div class="gb-schoolwires-footer bottom" data-show-disclaimer="false">
-                    <div class="gb-schoolwires-footer logo"></div>
-                    <div id="gb-schoolwires-footer-links-copyright">
-                        <div class="gb-schoolwires-footer links"></div>
-                        <div class="gb-schoolwires-footer copyright"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </footer>
-</div><!-- BEGIN - STANDARD FOOTER -->
-<div id='sw-footer-outer'>
-<div id='sw-footer-inner'>
-<div id='sw-footer-left'></div>
-<div id='sw-footer-right'>
-<div id='sw-footer-links'>
-<ul>
-<li><a title='Click to email the primary contact' href='mailto:webadmin@manvillesd.org'>Questions or Feedback?</a> | </li>
-<li><a href='https://www.finalsite.com/privacy-policy' target="_blank">Web Community Manager Privacy Policy (Updated)</a> | </li>
-<li><a class='sw-footer-terms-link' aria-hidden='true' tabindex='-1' href=''></a></li>
-</ul>
-</div>
-<div id='sw-footer-copyright'>Copyright &copy; 2024 Finalsite - all rights reserved.</div>
-<div id='sw-footer-logo'><a href='http://www.finalsite.com' title="Finalsite - all rights reserved">
-<img src='https://www.manvilleschools.org/Static//GlobalAssets/Images/Navbar/WCM_logo.svg'
-class='sw-footer-logo-img' alt="Web Community Manager."/>
-</a></div>
-</div>
-</div>
-</div>
-<!-- END - STANDARD FOOTER -->
-<script type="text/javascript">
-   $(document).ready(function(){
-  var data = JSON.stringify({
-    "SiteID": "4",
-    "ChannelID": "1236",
-    "SectionID": "1794",
-    "PageID": "5895",
-    "Browser": "Firefox 130.0",
-    "OS": "WinNT",
-    "IPAddress": "10.61.84.66"
-  });
-  $.ajax({
-    url: "../Site/SiteController.aspx/InsertAnalyticsData",
-    method: "POST",
-    contentType: "application/json",
-    data: data,
-    success: function(response) {
-    },
-    error: function(xhr, status, error) {
-    }
-  });
-   });
-</script>
-
-    <input type="hidden" id="hid-pageid" value="5895" />
-
-    
-
-    <div id='dialog-overlay-WindowMedium-base' class='ui-dialog-overlay-base' ><div id='WindowMedium' role='dialog' tabindex='-1'  class='ui-dialog-overlay medium' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowMedium-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowMedium-body' ></div><button class='ui-dialog-overlay-close' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowMedium");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowMedium-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowMedium-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    <div id='dialog-overlay-WindowSmall-base' class='ui-dialog-overlay-base' ><div id='WindowSmall' role='dialog' tabindex='-1'  class='ui-dialog-overlay small' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowSmall-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowSmall-body' ></div><button class='ui-dialog-overlay-close' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowSmall");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowSmall-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowSmall-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    <div id='dialog-overlay-WindowLarge-base' class='ui-dialog-overlay-base' ><div id='WindowLarge' role='dialog' tabindex='-1'  class='ui-dialog-overlay large' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowLarge-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowLarge-body' ></div><button class='ui-dialog-overlay-close' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowLarge");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowLarge-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowLarge-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-
-    <div id='dialog-overlay-WindowMediumModal-base' class='ui-dialog-overlay-base-modal' ><div id='WindowMediumModal' role='dialog' tabindex='-1'  class='ui-dialog-overlay medium' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowMediumModal-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowMediumModal-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowMediumModal");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowMediumModal-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowMediumModal-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    <div id='dialog-overlay-WindowSmallModal-base' class='ui-dialog-overlay-base-modal' ><div id='WindowSmallModal' role='dialog' tabindex='-1'  class='ui-dialog-overlay small' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowSmallModal-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowSmallModal-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowSmallModal");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowSmallModal-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowSmallModal-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    <div id='dialog-overlay-WindowLargeModal-base' class='ui-dialog-overlay-base-modal' ><div id='WindowLargeModal' role='dialog' tabindex='-1'  class='ui-dialog-overlay large' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowLargeModal-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowLargeModal-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowLargeModal");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowLargeModal-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowLargeModal-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    <div id='dialog-overlay-WindowXLargeModal-base' class='ui-dialog-overlay-base-modal' ><div id='WindowXLargeModal' role='dialog' tabindex='-1'  class='ui-dialog-overlay xlarge' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowXLargeModal-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowXLargeModal-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowXLargeModal");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowXLargeModal-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowXLargeModal-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-
-    <div id='dialog-overlay-MyAccountSubscriptionOverlay-base' class='ui-dialog-overlay-base-modal' ><div id='MyAccountSubscriptionOverlay' role='dialog' tabindex='-1'  class='ui-dialog-overlay medium' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-MyAccountSubscriptionOverlay-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-MyAccountSubscriptionOverlay-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("MyAccountSubscriptionOverlay");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-MyAccountSubscriptionOverlay-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-MyAccountSubscriptionOverlay-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-
-    <div id='dialog-overlay-InsertOverlay-base' class='ui-dialog-overlay-base-modal' ><div id='InsertOverlay' role='dialog' tabindex='-1'  class='ui-dialog-overlay large' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-InsertOverlay-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-InsertOverlay-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("InsertOverlay");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-InsertOverlay-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-InsertOverlay-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    <div id='dialog-overlay-InsertOverlay2-base' class='ui-dialog-overlay-base-modal' ><div id='InsertOverlay2' role='dialog' tabindex='-1'  class='ui-dialog-overlay large' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-InsertOverlay2-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-InsertOverlay2-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("InsertOverlay2");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-InsertOverlay2-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-InsertOverlay2-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    
-    <div id="videowrapper" class="ui-helper-hidden">
-        <div id="videodialog" role="application">
-            <a id="videodialog-close" role="button" href="javascript:;" aria-label="Close Overlay" class="close-btn" onclick="closeVideoDialog();">CLOSE</a>
-            <div id="videodialog-video" ></div>
-            <div id="videodialog-foot" tabindex="0"></div>
-        </div>
-    </div>
-    <div id="attachmentwrapper" class="ui-helper-hidden">
-        <div id="attachmentdialog" role="application">
-            <a id="attachmentdialog-close" role="button" href="javascript:;" aria-label="Close Overlay" class="close-btn" onclick="closeAttachmentDialog();">CLOSE</a>
-            <div id="attachmentdialog-container"></div>
-        </div>
-    </div>
-    <script type="text/javascript">
-
-        $(document).ready(function () { 
-
-            removeBrokenImages();
-            checkSidebar();
-            RemoveCookie();
-
-            
-            //$('div.bullet').attr('tabindex', '');
-
-            
-
-            $('.navigation li.collapsible').each(function () {
-                if ($(this).find('ul').length == 0) {
-                    $(this).removeClass('collapsible');
-                }
-            });
-
-            // find page nav state cookie and add open chevron
-            var arrValues = GetCookie('SWPageNavState').split('~');
-
-            $.each(arrValues, function () {
-                if (this != '') {
-                   //$('#' + this).addClass('collapsible').prepend("<div class='bullet collapsible' aria-label='Close Page Submenu'/>");
-                    $('#' + this).addClass('collapsible').prepend("<div class='bullet collapsible' aria-haspopup='true' aria-expanded='true' />");
-                }
-            });
-
-            // find remaining sub menus and add closed chevron and close menu
-            $('.navigation li > ul').each(function () {
-                var list = $(this);
-
-                if (list.parent().hasClass('active') && !list.parent().hasClass('collapsible')) {
-                    // open sub for currently selected page                    
-                    //list.parent().addClass('collapsible').prepend("<div class='bullet collapsible'aria-label='Close Page Submenu' />");
-                    list.parent().addClass('collapsible').prepend("<div class='bullet collapsible' aria-haspopup='true' aria-expanded='true' />");
-                } else {
-                    if (list.parent().hasClass('collapsible') && !list.siblings('div').hasClass('collapsible')) {
-                        // open sub for page with auto expand
-                        list.siblings('div.expandable').remove();
-                        //list.parent().prepend("<div class='bullet collapsible' aria-label='Close Page Submenu' />");
-                        list.parent().prepend("<div class='bullet collapsible' aria-haspopup='true' aria-expanded='true' />");
-                    }
-                }
-
-                if (!list.siblings('div').hasClass('collapsible')) {
-                    // keep all closed that aren't already set to open
-                    //list.parent().addClass('expandable').prepend("<div class='bullet expandable' aria-label='Open Page Submenu' />");
-                    list.parent().addClass('expandable').prepend("<div class='bullet expandable' aria-haspopup='true' aria-expanded='false' />");
-                    ClosePageSubMenu(list.parent());
-                } else {
-                   OpenPageSubMenu(list.parent());
-                }
-            });
-
-            $(".navigation .bullet.collapsible, .navigation .bullet.expandable, .navigation a").each(function () {
-                if ($(this).closest("ul").attr("aria-hidden") == "true"){
-                    $(this).attr("tabindex", "-1");
-                } else {
-                    $(this).attr("tabindex", "0");
-                }
-            })
-
-            // remove bullet from hierarchy if no-bullet set
-            $('.navigation li.collapsible').each(function () {
-                if ($(this).hasClass('no-bullet')) {
-                    if (!$(this).hasClass('navigationgroup')) { $(this).removeClass('collapsible'); }
-                    $(this).children('div.collapsible').remove();
-                }
-            });
-
-            $('.navigation li.expandable').each(function () {
-                if ($(this).hasClass('no-bullet')) {
-                    if (!$(this).hasClass('navigationgroup')) { $(this).removeClass('expandable'); }
-                    $(this).children('div.expandable').remove();
-                }
-            });
-
-            $('.navigation li:not(.collapsible,.expandable,.no-bullet)').each(function () {
-                $(this).prepend("<div class='bullet'/>");
-            });
-
-            $('.navigation li.active').parents('ul').each(function () {
-                if (!$(this).hasClass('page-navigation')) {
-                    OpenPageSubMenu($(this).parent());
-                }
-            });
-
-            // Set aria ttributes
-            /*$('li.collapsible').each(function () {
-               $(this).attr("aria-expanded", "true");
-               $(this).find('div:first').attr('aria-pressed', 'true');
-            });*/
-
-            $('li.expandable').each(function () {
-                ///$(this).attr("aria-expanded", "false");
-                //$(this).find('div:first').attr('aria-pressed', 'false');
-                $(this).find("ul :focusable").attr("tabindex","-1");
-            });
-
-            /*$('div.bullet').each(function () {
-                $(this).attr("aria-hidden", "true");
-            });*/
-
-            // set click event for chevron
-            $(document).on('click', '.navigation div.collapsible', function () {
-                ClosePageSubMenu($(this).parent());
-            });
-
-            $(document).on('click', '.navigation div.expandable', function () {
-                OpenPageSubMenu($(this).parent());
-            });
-
-            // set navigation grouping links
-            $(document).on('click', '.navigationgroup.collapsible > a', function () {
-                ClosePageSubMenu($(this).parent());
-            });
-
-            $(document).on('click', '.navigationgroup.expandable > a', function () {
-                OpenPageSubMenu($(this).parent());
-            });
-
-            //SW MYSTART DROPDOWNS
-            $(document).on('click', '.sw-mystart-dropdown', function () {
-                $(this).children(".sw-dropdown").css("display", "block");
-            });
-
-            $(".sw-mystart-dropdown").hover(function () { }, function () {
-                $(this).children(".sw-dropdown").hide();
-                $(this).blur();
-            });
-
-            //SW ACCOUNT DROPDOWN
-            $(document).on('click', '#sw-mystart-account', function () {
-                $(this).children("#sw-myaccount-list").show();
-                $(this).addClass("clicked-state");
-            });
-
-            $("#sw-mystart-account, #sw-myaccount-list").hover(function () { }, function () {
-                $(this).children("#sw-myaccount-list").hide();
-                $(this).removeClass("clicked-state");
-                $("#sw-myaccount").blur();
-            });
-
-            // set hover class for page and section navigation
-            $('.ui-widget.app.pagenavigation, .ui-widget.app.sectionnavigation').find('li > a').hover(function () {
-                $(this).addClass('hover');
-            }, function () {
-                $(this).removeClass('hover');
-            });
-
-            //set aria-label for home
-            $('#navc-HP > a').attr('aria-label', 'Home');
-
-            // set active class on channel and section
-            var activeChannelNavType = $('input#hidActiveChannelNavType').val();
-            if (activeChannelNavType == -1) {
-                // homepage is active
-                $('#navc-HP').addClass('active');
-            } else if (activeChannelNavType == 1) {
-                // calendar page is active
-                $('#navc-CA').addClass('active');
-            } else {
-                // channel is active - set the active class on the channel
-                var activeSelectorID = $('input#hidActiveChannel').val();
-                $('#navc-' + activeSelectorID).addClass('active');
-
-                // set the breadcrumb channel href to the channel nav href
-                $('li[data-bccID=' + activeSelectorID + '] a').attr('href', $('#navc-' + activeSelectorID + ' a').attr('href'));
-                $('li[data-bccID=' + activeSelectorID + '] a span').text($('#navc-' + activeSelectorID + ' a span').first().text());
-
-                // set the active class on the section
-                activeSelectorID = $('input#hidActiveSection').val();
-                $('#navs-' + activeSelectorID).addClass('active');
-
-                // set the breadcrumb section href to the channel nav href
-                $('li[data-bcsID=' + activeSelectorID + '] a').attr('href', $('#navs-' + activeSelectorID + ' a').attr('href'));
-                if ($('#navs-' + activeSelectorID + ' a').attr('target') !== undefined) {
-                    $('li[data-bcsID=' + activeSelectorID + '] a').attr('target', $('#navs-' + activeSelectorID + ' a').attr('target'));
-                }
-                $('li[data-bcsID=' + activeSelectorID + '] span').text($('#navs-' + activeSelectorID + ' a span').text());
-
-                if ($('.sw-directory-columns').length > 0) {
-                    $('ul.ui-breadcrumbs li:last-child').remove();
-                    $('ul.ui-breadcrumbs li:last-child a').replaceWith(function() { return $('span', this); });
-                    $('ul.ui-breadcrumbs li:last-child span').append(' Directory');
-                }
-            }
-        }); // end document ready
-
-        function OpenPageSubMenu(li) {
-            if (li.prop('tagName').toLowerCase() == "li") {
-                if (li.hasClass('expandable')) {
-                    li.removeClass('expandable').addClass('collapsible');
-                }
-                if (li.find('div:first').hasClass('expandable')) {
-                    let linkText = li.find("> a").text();
-                    //li.find('div:first').removeClass('expandable').addClass('collapsible').attr('aria-pressed', 'true').attr('aria-label', 'Close Page Submenu');
-                    li.find('div:first').removeClass('expandable').addClass('collapsible').attr({
-                        "aria-expanded": "true",
-                        "aria-label": "Collapse "+linkText+" nested links"
-                    });
-                }
-                li.find('ul:first').attr('aria-hidden', 'false').show();
-                li.find("ul:first > li > .bullet.expandable, ul:first > li > .bullet.collapsible, ul:first > li > a").attr("tabindex", "0");
-                //li.find("li.expandable ul :focusable").attr("tabindex","-1");
-
-                //li.attr("aria-expanded", "true");
-
-                PageNavigationStateCookie();
-            }
-        }
-
-        function ClosePageSubMenu(li) {
-            if (li.prop('tagName').toLowerCase() == "li") {
-                let linkText = li.find("> a").text();
-                li.removeClass('collapsible').addClass('expandable');
-                //li.find('div:first').removeClass('collapsible').addClass('expandable').attr('aria-pressed', 'false').attr('aria-label', 'Open Page Submenu');
-                li.find('div:first').removeClass('collapsible').addClass('expandable').attr({
-                    "aria-expanded": "false",
-                    "aria-label": "Expand "+linkText+" nested links"
-                });
-                li.find('ul:first').attr('aria-hidden', 'true').hide();
-                li.find("ul:first .bullet.expandable, ul:first .bullet.collapsible, ul:first a").attr("tabindex","-1");
-
-                //li.attr("aria-expanded", "false");
-
-                PageNavigationStateCookie();
-            }
-        }
-
-        function PageNavigationStateCookie() {
-            var strCookie = "";
-
-            $('.pagenavigation li > ul').each(function () {
-                var item = $(this).parent('li');
-                if (item.hasClass('collapsible') && !item.hasClass('no-bullet')) {
-                    strCookie += $(this).parent().attr('id') + '~';
-                }
-            });
-
-            SetCookie('SWPageNavState', strCookie);
-        }
-
-        function checkSidebar() {
-            $(".ui-widget-sidebar").each(function () {
-                if ($.trim($(this).html()) != "") {
-                    $(this).show();
-                    $(this).siblings(".ui-widget-detail").addClass("with-sidebar");
-                }
-            });
-        }
-
-        function removeBrokenImages() {
-            //REMOVES ANY BROKEN IMAGES
-            $("span.img img").each(function () {
-                if ($(this).attr("src") !== undefined && $(this).attr("src") != '../../') {
-                    $(this).parent().parent().show();
-                    $(this).parent().parent().siblings().addClass("has-thumb");
-                }
-            });
-        }
-
-        function LoadEventDetailUE(moduleInstanceID, eventDateID, userRegID, isEdit) {
-            (userRegID === undefined ? userRegID = 0 : '');
-            (isEdit === undefined ? isEdit = false : '');
-            OpenDialogOverlay("WindowMediumModal", { LoadType: "U", LoadURL: "https://www.manvilleschools.org//site/UserControls/Calendar/EventDetailWrapper.aspx?ModuleInstanceID=" + moduleInstanceID + "&EventDateID=" + eventDateID + "&UserRegID=" + userRegID + "&IsEdit=" + isEdit });
-        }
-
-        function RemoveCookie() {
-            // There are no sub page            
-            if ($('.pagenavigation li li').length == 0) {
-                //return false;
-                PageNavigationStateCookie();
-            }
-        }
-    </script>
-
-    <script type="text/javascript">
-
-        function AddOffCanvasMenuHeightForSiteNav() {
-            var sitenavulHeight = 0;
-
-            if ($('#sw-pg-sitenav-ul').length > 0) {
-                sitenavulHeight = parseInt($("#sw-pg-sitenav-ul").height());
-            }
-
-            var swinnerwrapHeight = 0;
-
-            if ($('#sw-inner-wrap').length > 0) {
-                swinnerwrapHeight = parseInt($("#sw-inner-wrap").height());
-            }
-
-            // 360px is abount 5 li height
-            if (sitenavulHeight + 360 >= swinnerwrapHeight) {
-                $("#sw-inner-wrap").height(sitenavulHeight + 360);
-            }
-        }
-
-        function AddOffCanvasMenuHeightForSelectSchool() {
-            var selectschoolulHeight = 0;
-
-            if ($('#sw-pg-selectschool-ul').length > 0) {
-                selectschoolulHeight = parseInt($("#sw-pg-selectschool-ul").height());
-            }
-
-            var swinnerwrapHeight = 0;
-
-            if ($('#sw-inner-wrap').length > 0) {
-                swinnerwrapHeight = parseInt($("#sw-inner-wrap").height());
-            }
-
-            // 360px is abount 5 li height
-            if (selectschoolulHeight + 360 >= swinnerwrapHeight) {
-                $("#sw-inner-wrap").height(selectschoolulHeight + 360);
-            }
-        }
-
-        $(document).ready(function () {
-            if ($("#sw-pg-sitenav-a").length > 0) {
-                $(document).on('click', '#sw-pg-sitenav-a', function () {
-                    if ($("#sw-pg-sitenav-ul").hasClass('sw-pgmenu-closed')) {
-                        AddOffCanvasMenuHeightForSiteNav();
-
-                        $("ul.sw-pgmenu-toplevel").removeClass('sw-pgmenu-open').addClass('sw-pgmenu-closed');
-                        $("#sw-pg-sitenav-ul").removeClass('sw-pgmenu-closed');
-                        $("#sw-pg-sitenav-ul").addClass('sw-pgmenu-open');
-                    } else {
-                        $("#sw-pg-sitenav-ul").removeClass('sw-pgmenu-open');
-                        $("#sw-pg-sitenav-ul").addClass('sw-pgmenu-closed');
-                    }
-                });
-
-                $(document).on('click', '#sw-pg-selectschool-a', function () {
-                    if ($("#sw-pg-selectschool-ul").hasClass('sw-pgmenu-closed')) {
-                        AddOffCanvasMenuHeightForSelectSchool();
-
-                        $("ul.sw-pgmenu-toplevel").removeClass('sw-pgmenu-open').addClass('sw-pgmenu-closed');
-                        $("#sw-pg-selectschool-ul").removeClass('sw-pgmenu-closed');
-                        $("#sw-pg-selectschool-ul").addClass('sw-pgmenu-open');
-                    } else {
-                        $("#sw-pg-selectschool-ul").removeClass('sw-pgmenu-open');
-                        $("#sw-pg-selectschool-ul").addClass('sw-pgmenu-closed');
-                    }
-                });
-
-                $(document).on('click', '#sw-pg-myaccount-a', function () {
-                    if ($("#sw-pg-myaccount-ul").hasClass('sw-pgmenu-closed')) {
-                        $("ul.sw-pgmenu-toplevel").removeClass('sw-pgmenu-open').addClass('sw-pgmenu-closed');
-                        $("#sw-pg-myaccount-ul").removeClass('sw-pgmenu-closed');
-                        $("#sw-pg-myaccount-ul").addClass('sw-pgmenu-open');
-                    } else {
-                        $("#sw-pg-myaccount-ul").removeClass('sw-pgmenu-open');
-                        $("#sw-pg-myaccount-ul").addClass('sw-pgmenu-closed');
-                    }
-                });
-
-                $(document).on('click', '.pg-list-bullet', function () {
-                    $(this).prev().toggle();
-
-                    if ($(this).hasClass('closed')) {
-                        AddOffCanvasMenuHeightForSiteNav();
-
-                        $(this).removeClass('closed');
-                        $(this).addClass('open');
-                    } else {
-                        $(this).removeClass('open');
-                        $(this).addClass('closed');
-                    }
-                });
-
-                $(document).on('mouseover', '#sw-pg-selectschool', function () {
-                    $("#sw-pg-selectschool-firstli").removeClass('sw-pg-selectschool-firstli-mouseout').addClass('sw-pg-selectschool-firstli-mouseover');
-                    $("#sw-pg-selectschool-firstli a").addClass('sw-pg-selectschool-firstli-a-mouseover').removeClass('sw-pg-selectschool-firstli-a-mouseout');
-                });
-
-                $(document).on('mouseout', '#sw-pg-selectschool', function () {
-                    $("#sw-pg-selectschool-firstli").removeClass('sw-pg-selectschool-firstli-mouseover').addClass('sw-pg-selectschool-firstli-mouseout');
-                    $("#sw-pg-selectschool-firstli a").addClass('sw-pg-selectschool-firstli-a-mouseout').removeClass('sw-pg-selectschool-firstli-a-mouseover');
-                });
-
-                $(document).on('mouseover', '#sw-pg-myaccount', function () {
-                    $("#sw-pg-myaccount-firstli").removeClass('sw-pg-myaccount-firstli-mouseout').addClass('sw-pg-myaccount-firstli-mouseover');
-                    $("#sw-pg-myaccount-firstli a").addClass('sw-pg-myaccount-firstli-a-mouseover').removeClass('sw-pg-myaccount-firstli-a-mouseout');
-                });
-
-                $(document).on('mouseout', '#sw-pg-myaccount', function () {
-                    $("#sw-pg-myaccount-firstli").removeClass('sw-pg-myaccount-firstli-mouseover').addClass('sw-pg-myaccount-firstli-mouseout');
-                    $("#sw-pg-myaccount-firstli a").addClass('sw-pg-myaccount-firstli-a-mouseout').removeClass('sw-pg-myaccount-firstli-a-mouseover');
-                });
-
-                $(document).on('mouseover', '#sw-pg-sitenav', function () {
-                    $("#sw-pg-sitenav-firstli").removeClass('sw-pg-sitenav-firstli-mouseout').addClass('sw-pg-sitenav-firstli-mouseover');
-                    $("#sw-pg-sitenav-firstli a").addClass('sw-pg-sitenav-firstli-a-mouseover').removeClass('sw-pg-sitenav-firstli-a-mouseout');
-                });
-
-                $(document).on('mouseout', '#sw-pg-sitenav', function () {
-                    $("#sw-pg-sitenav-firstli").removeClass('sw-pg-sitenav-firstli-mouseover').addClass('sw-pg-sitenav-firstli-mouseout');
-                    $("#sw-pg-sitenav-firstli a").addClass('sw-pg-sitenav-firstli-a-mouseout').removeClass('sw-pg-sitenav-firstli-a-mouseover');
-                });
-
-                $(document).on('mouseover', '#sw-pg-district', function () {
-                    $("#sw-pg-district-firstli").removeClass('sw-pg-district-firstli-mouseout').addClass('sw-pg-district-firstli-mouseover');
-                    $("#sw-pg-district-firstli a").addClass('sw-pg-district-firstli-a-mouseover').removeClass('sw-pg-district-firstli-a-mouseout');
-                });
-
-                $(document).on('mouseout', '#sw-pg-district', function () {
-                    $("#sw-pg-district-firstli").removeClass('sw-pg-district-firstli-mouseover').addClass('sw-pg-district-firstli-mouseout');
-                    $("#sw-pg-district-firstli a").addClass('sw-pg-district-firstli-a-mouseout').removeClass('sw-pg-district-firstli-a-mouseover');
-                });
-            }
-        });
-
-
-    </script>
-    <script src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/min/SW-UI_2680.min.js" type='text/javascript'></script>
-    <script language="javascript" type='text/javascript' src="https://www.manvilleschools.org/Static/GlobalAssets/jQueryUI.min.js"></script>
-    <script src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/jquery.sectionlayer.js" type='text/javascript'></script>
-    <script src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/Initialize_2560.js" type='text/javascript'></script>
-    <script src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/min/swfobject.min.js" type="text/javascript"></script>
-    <script src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/min/jquery.ajaxupload_2440.min.js" type="text/javascript"></script>
-
-    <!-- Begin swuc.CheckScript -->
-  <script type="text/javascript" src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/ThirdParty/json2.js"></script>
-  <script type="text/javascript" src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/CheckScript_2780.js"></script>
-<!-- End swuc.CheckScript -->
-
-
-    <!-- Server Load Time (03): 0.0632718 Seconds -->
-
-    
-
-    <!-- off-canvas menu enabled-->
-    
-
-    <!-- Ally Alternative Formats Configure START   -->
-    
-<script>
-    AFExtensions = ".pdf,.doc,.docx,.ppt,.pptx,.odt,.odp";
-    AllyClientID = "13314";
-	    // Wait for the API to load     
-	    ally.ready(function() {
-		    // Configure an API instance
-            const ui = ally.ui({
-			    'client': {
-				    'baseUrl': 'https://prod.ally.ac',
-				    'clientId': 13314
-			    },
-			    'courseId': '1794',
-			    'locale': $('html').attr('lang'),
-			    'platformName': 'Wcm',  
-			    'role': 'anonymous'
-		    });
-	        // Apply the API to the page body   
-            ui.autoUpdate({'domWatch': 250});
-    });
-
-</script>
-    <!-- Ally Alternative Formats Configure END     -->
-
-</body>
-</html>

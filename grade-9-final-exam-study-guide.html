@@ -1,84 +1,14 @@
 <h1>Grade 9 English Final Exam Study Guide</h1>
 
-		
-	</div>
-
-    <div class="ui-widget-footer">
-		  
-	</div>
-</div>
-<script type="text/javascript">
-$(document).ready(function (){
-$(".tag-list li a").keypress(function(e) { if(e.which == 13) { $(this).click();   }});
-});
-function LoadGroupedData(container, MIID, PMI, groupYear, groupMonth, groupBy, tag) {
-  //ViewToUse looks at the hidden Sidebar List View defined in the Builder View.
-  var viewToUse = "";
-    if($('#hid-'+MIID+'-SidebarListView').length > 0){
-      viewToUse = $("#hid-" + MIID + "-SidebarListView").val();
-    };
-  GetContent('https://www.manvilleschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=1794&PageID=5905&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&RenderLoc=0&FromRenderLoc=0&GroupYear=' + groupYear + '&GroupMonth=' + groupMonth + '&GroupByField=' + groupBy + '&EnableQuirksMode=0&ViewID=' + viewToUse + '&Tag=' + tag, container, 2, 'chkSidebar();');
-}
-function LoadData(container, MIID, PMI, flexDataID, groupYear, groupMonth, groupBy, targetView, tag) {
-  if(targetView !== undefined || targetView.Length() == 0){
-  //targetView looks at the hidden Detail View defined in the Builder View.
-      targetView = $('#hid-'+MIID+'-DetailView').val();
-   }
-  GetContent('https://www.manvilleschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=1794&PageID=5905&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&FlexDataID=' + flexDataID + '&GroupYear=' + groupYear + '&GroupMonth=' + groupMonth + '&GroupByField=' + groupBy + '&RenderLoc=0&FromRenderLoc=0&EnableQuirksMode=0&Tag=' + tag + '&ViewID=' + targetView, container, 2, 'chkSidebar();');
-}
-function LoadTaggedData(container, MIID, PMI, tag) {
-  //ViewToUse looks at the hidden Sidebar List View defined in the Builder View.
-  var viewToUse = "";
-    if($('#hid-'+MIID+'-SidebarListView').length > 0){
-      viewToUse = $("#hid-" + MIID + "-SidebarListView").val();
-    };
-  GetContent('https://www.manvilleschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=1794&PageID=5905&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&RenderLoc=0&FromRenderLoc=0&Tag=' + tag + '&EnableQuirksMode=0&ViewID='+viewToUse, container, 2, 'chkSidebar();');
-  setTimeout(function(){ $("#module-content-"+ MIID +"").find('[tabindex]:first').focus(); }, 200);
-}
-</script>
-</div>
-
-</div></div>
-<div id='pmi-6767'>
-
-
-
-<div id='sw-module-71450'>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            var DomainID = '1794';
-            var PageID = '5905';
-            var RenderLoc = '0';
-            var MIID = '7145';
-
-            //added to check to make sure moderated content doesn't bleed through the dialog
-            if ($('#dialog-overlay-WindowLargeModal-body.moderateContent').length > 0) {
-                $("#module-content-" + MIID).find(".ui-widget-detail").find(".ui-article").append("<p>&nbsp;</p>");
-            }
-        });
-    </script>
-
-    <script type="text/javascript">$(document).ready(function() {CheckScript('ModuleView');CheckScript('Mustache');
- });</script>
-    
-    <div id="module-content-7145" >
-<div class="ui-widget app flexpage">
-	<div class="ui-widget-header ui-helper-hidden">
-		
-	</div>
-	
-	<div class="ui-widget-detail">
-		<ul class="ui-articles">
-<li>
-	<div class="ui-article">
-		<div class="ui-article-description">
-        	<span><span ><p class="normal" align="right">&nbsp;</p>
 <p class="normal">Name_______________________________</p>
 <p class="normal">&nbsp;</p>
-<p class="normal"><strong><span style="text-decoration: underline;">Part 1: <em>American Born Chinese</em></span></strong></p>
+<p class="normal"><strong><span style="text-decoration: underline;">Part 1:
+            <em>American Born Chinese</em></span></strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal"><span style="text-decoration: underline;">Multiple Choice--10 questions (1 point each)</span></p>
-<p class="normal">1.What is the name of the character who is the &ldquo;American Born Chinese&rdquo;?</p>
+<p class="normal"><span style="text-decoration: underline;">Multiple
+        Choice--10 questions (1 point each)</span></p>
+<p class="normal">1.What is the name of the character who is the
+    &ldquo;American Born Chinese&rdquo;?</p>
 <p class="normal"><strong>Jin Wang</strong></p>
 <p class="normal">&nbsp;</p>
 <p class="normal">2.What genre is <em>American Born Chinese</em>?</p>
@@ -88,65 +18,102 @@ function LoadTaggedData(container, MIID, PMI, tag) {
 <p class="normal"><strong>Search for Identity</strong></p>
 <p class="normal">&nbsp;</p>
 <p class="normal">4. What is a parallel story line?</p>
-<p class="normal"><strong>Two or more story line in a book that come together at the end of the novel.</strong></p>
+<p class="normal"><strong>Two or more story line in a book that come
+        together at the end of the novel.</strong></p>
 <p class="normal">&nbsp;</p>
 <p class="normal">5. Where is the Monkey King&rsquo;s story set?</p>
-<p class="normal"><strong>Mythological, Flower Fruit Mountain, ancient times</strong></p>
+<p class="normal"><strong>Mythological, Flower Fruit Mountain, ancient
+        times</strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">6. What happens to the Monkey King when he goes to the dinner party of the gods?</p>
+<p class="normal">6. What happens to the Monkey King when he goes to the
+    dinner party of the gods?</p>
 <p class="normal"><strong>Disrespected by the gods</strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">7.What happens to the Monkey King when he refuses to accept his heritage?</p>
+<p class="normal">7.What happens to the Monkey King when he refuses to
+    accept his heritage?</p>
 <p class="normal"><strong>He is trapped under a pile of rocks</strong></p>
 <p class="normal">&nbsp;</p>
 <p class="normal">8.Where is Jin Wang&rsquo;s story set?</p>
 <p class="normal"><strong>Modern day, California city</strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">9. Jin Wang hates being Chinese, so he transforms himself into what?</p>
+<p class="normal">9. Jin Wang hates being Chinese, so he transforms himself
+    into what?</p>
 <p class="normal"><strong>An American boy, Danny</strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">10. At the end of the novel, the reader discovers that Chin-Kee is which character?</p>
+<p class="normal">10. At the end of the novel, the reader discovers that
+    Chin-Kee is which character?</p>
 <p class="normal"><strong>The Monkey King</strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal"><span style="text-decoration: underline;">Short Answer--10 points (2 questions, 5 points each)</span></p>
-<p class="normal">1.Define hyperbole and give an example of hyperbole from <em>ABC</em>.</p>
+<p class="normal"><span style="text-decoration: underline;">Short Answer--10
+        points (2 questions, 5 points each)</span></p>
+<p class="normal">1.Define hyperbole and give an example of hyperbole from
+    <em>ABC</em>.
+</p>
 <p class="normal"><strong>exaggeration</strong></p>
-<p class="normal"><strong>Chin-Kee was an exaggerated version of Chinese </strong></p>
+<p class="normal"><strong>Chin-Kee was an exaggerated version of Chinese
+    </strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">2. Define allusion and provide an example of allusion in <em>ABC</em>.</p>
-<p class="normal"><strong>A reference to something famous in literature, history or the media</strong></p>
+<p class="normal">2. Define allusion and provide an example of allusion in
+    <em>ABC</em>.
+</p>
+<p class="normal"><strong>A reference to something famous in literature,
+        history or the media</strong></p>
 <p class="normal"><strong>Birth of Jesus</strong></p>
 <p class="normal"><strong>Mayflower Elementary School </strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal"><span style="text-decoration: underline;">Vocabulary--10 questions (1 point each)</span></p>
+<p class="normal"><span style="text-decoration: underline;">Vocabulary--10
+        questions (1 point each)</span></p>
 <p class="normal">&nbsp;</p>
 <p class="normal">Know the definitions of the following words:</p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; assimilate- <strong>to fit in</strong></p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    assimilate- <strong>to fit in</strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; deity- <strong>a god or goddess</strong></p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    deity- <strong>a god or goddess</strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; haggling-<strong> fighting, bargaining</strong></p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    haggling-<strong> fighting, bargaining</strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; parable- a simple story teaches a lesson about a sophisticated idea</p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    parable- a simple story teaches a lesson about a sophisticated idea</p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; tangible- <strong>real or actual, can be touched</strong></p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    tangible- <strong>real or actual, can be touched</strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cudgel-a weapon, like a club</p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    cudgel-a weapon, like a club</p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; forfeit- <strong>give up</strong></p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    forfeit- <strong>give up</strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ignorance- <strong>unaware, do not understand</strong></p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    ignorance- <strong>unaware, do not understand</strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; prerequisite- <strong>required before hand</strong></p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    prerequisite- <strong>required before hand</strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; vagrant- <strong>a person who wanders from place to place</strong></p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    vagrant- <strong>a person who wanders from place to place</strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal"><strong><span style="text-decoration: underline;">Part 2: <em>The Five People You Meet in Heaven</em></span></strong></p>
+<p class="normal"><strong><span style="text-decoration: underline;">Part 2:
+            <em>The Five People You Meet in Heaven</em></span></strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal"><span style="text-decoration: underline;">Multiple Choice--10 questions (1 point each)</span></p>
+<p class="normal"><span style="text-decoration: underline;">Multiple
+        Choice--10 questions (1 point each)</span></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">1.What is the genre of <em>The Five People You Meet in Heaven</em>?</p>
+<p class="normal">1.What is the genre of <em>The Five People You Meet in
+        Heaven</em>?</p>
 <p class="normal"><strong>Fiction</strong></p>
 <p class="normal">&nbsp;</p>
 <p class="normal">2. What is/are the theme(s) of <em>Five People</em>?</p>
@@ -155,167 +122,217 @@ function LoadTaggedData(container, MIID, PMI, tag) {
 <p class="normal">3.Where is the setting of <em>Five People</em>?</p>
 <p class="normal"><strong>Heaven, Ruby Pier, The Philipines/War</strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">4. How would you best describe the main character, Eddie?</p>
-<p class="normal"><strong>A man who was unsatisfied with his life, felt like a loser</strong></p>
+<p class="normal">4. How would you best describe the main character, Eddie?
+</p>
+<p class="normal"><strong>A man who was unsatisfied with his life, felt like
+        a loser</strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">5. What is the author&rsquo;s purpose in writing <em>Five People</em>?</p>
-<p class="normal"><strong>To show that every person&rsquo;s life/job is meaningful</strong></p>
+<p class="normal">5. What is the author&rsquo;s purpose in writing <em>Five
+        People</em>?</p>
+<p class="normal"><strong>To show that every person&rsquo;s life/job is
+        meaningful</strong></p>
 <p class="normal">&nbsp;</p>
 <p class="normal">6.What events occur on Eddie&rsquo;s 83rd birthday?</p>
-<p class="normal"><strong>Eddie dies trying to save a little girl from a crashing ride, Freddie&rsquo;s Free Fall</strong></p>
+<p class="normal"><strong>Eddie dies trying to save a little girl from a
+        crashing ride, Freddie&rsquo;s Free Fall</strong></p>
 <p class="normal">&nbsp;</p>
 <p class="normal">7. What caused Eddie&rsquo;s death?</p>
 <p class="normal"><strong>Killed by a falling ride cart</strong></p>
 <p class="normal">&nbsp;</p>
 <p class="normal">8.How does Eddie feel when he first gets to Heaven?</p>
-<p class="normal"><strong>He feels like a young boy, physically wonderful</strong></p>
+<p class="normal"><strong>He feels like a young boy, physically
+        wonderful</strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">9.&nbsp; Why is Eddie unable to speak when he gets to Heaven?</p>
+<p class="normal">9.&nbsp; Why is Eddie unable to speak when he gets to
+    Heaven?</p>
 <p class="normal"><strong>He must first listen and learn</strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">10. Eddie&rsquo;s past birthdays are an example of what literary device?</p>
+<p class="normal">10. Eddie&rsquo;s past birthdays are an example of what
+    literary device?</p>
 <p class="normal"><strong>Flashbacks</strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal"><span style="text-decoration: underline;">Symbolism and Lessons--15 points (pick 3 of 5 questions, 5 points each)</span></p>
+<p class="normal"><span style="text-decoration: underline;">Symbolism and
+        Lessons--15 points (pick 3 of 5 questions, 5 points each)</span></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">Know each person Eddie meets in Heaven, the lesson each character teaches Eddie, what Ruby Pier symbolizes to that character, and what Heaven is for that character.</p>
+<p class="normal">Know each person Eddie meets in Heaven, the lesson each
+    character teaches Eddie, what Ruby Pier symbolizes to that character,
+    and what Heaven is for that character.</p>
 <table style="width: 672px;" border="1" cellspacing="0" cellpadding="0">
-<tbody>
-<tr>
-<td valign="top" width="168">
-<p class="normal">&nbsp;</p>
-</td>
-<td valign="top" width="168">
-<p class="normal">Lesson</p>
-</td>
-<td valign="top" width="168">
-<p class="normal">Pier Symbolizes</p>
-</td>
-<td valign="top" width="168">
-<p class="normal">Character&rsquo;s Heaven</p>
-</td>
-</tr>
-<tr>
-<td valign="top" width="168">
-<p class="normal">Blue Man</p>
-<p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;</p>
-</td>
-<td valign="top" width="168">
-<p class="normal">We are all connected, strangers are family you don&rsquo;t know yet</p>
-</td>
-<td valign="top" width="168">
-<p class="normal"><strong>Acceptance</strong></p>
-</td>
-<td valign="top" width="168">
-<p class="normal">Ruby Pier</p>
-</td>
-</tr>
-<tr>
-<td valign="top" width="168">
-<p class="normal">Captain</p>
-<p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;</p>
-</td>
-<td valign="top" width="168">
-<p class="normal">Sacrifice is something to aspire to</p>
-</td>
-<td valign="top" width="168">
-<p class="normal"><strong>Keeping a Promise</strong></p>
-</td>
-<td valign="top" width="168">
-<p class="normal"><strong>World without war</strong></p>
-</td>
-</tr>
-<tr>
-<td valign="top" width="168">
-<p class="normal">Ruby</p>
-<p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;</p>
-</td>
-<td valign="top" width="168">
-<p class="normal"><strong>Forgiveness, hatred hurts you more than the person you hate</strong></p>
-</td>
-<td valign="top" width="168">
-<p class="normal"><strong>Loss</strong></p>
-</td>
-<td valign="top" width="168">
-<p class="normal"><strong>A diner in the snowy mountains</strong></p>
-<p class="normal"><strong>(opposite of Ruby Pier)</strong></p>
-</td>
-</tr>
-<tr>
-<td valign="top" width="168">
-<p class="normal">Marguerite</p>
-<p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;</p>
-</td>
-<td valign="top" width="168">
-<p class="normal"><strong>Love never dies</strong></p>
-<p class="normal"><strong>&nbsp;</strong></p>
-</td>
-<td valign="top" width="168">
-<p class="normal"><strong>Home</strong></p>
-</td>
-<td valign="top" width="168">
-<p class="normal"><strong>Weddings, where anything is possible b/c of love</strong></p>
-</td>
-</tr>
-<tr>
-<td valign="top" width="168">
-<p class="normal">Tala</p>
-<p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;</p>
-</td>
-<td valign="top" width="168">
-<p class="normal"><strong>Everyone is important</strong></p>
-</td>
-<td valign="top" width="168">
-<p class="normal"><strong>Redemption</strong></p>
-</td>
-<td valign="top" width="168">
-<p class="normal"><strong>A river with children playing</strong></p>
-</td>
-</tr>
-</tbody>
+    <tbody>
+        <tr>
+            <td valign="top" width="168">
+                <p class="normal">&nbsp;</p>
+            </td>
+            <td valign="top" width="168">
+                <p class="normal">Lesson</p>
+            </td>
+            <td valign="top" width="168">
+                <p class="normal">Pier Symbolizes</p>
+            </td>
+            <td valign="top" width="168">
+                <p class="normal">Character&rsquo;s Heaven</p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="168">
+                <p class="normal">Blue Man</p>
+                <p class="normal">&nbsp;</p>
+                <p class="normal">&nbsp;</p>
+                <p class="normal">&nbsp;</p>
+                <p class="normal">&nbsp;</p>
+            </td>
+            <td valign="top" width="168">
+                <p class="normal">We are all connected, strangers are family
+                    you don&rsquo;t know yet</p>
+            </td>
+            <td valign="top" width="168">
+                <p class="normal"><strong>Acceptance</strong></p>
+            </td>
+            <td valign="top" width="168">
+                <p class="normal">Ruby Pier</p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="168">
+                <p class="normal">Captain</p>
+                <p class="normal">&nbsp;</p>
+                <p class="normal">&nbsp;</p>
+                <p class="normal">&nbsp;</p>
+                <p class="normal">&nbsp;</p>
+            </td>
+            <td valign="top" width="168">
+                <p class="normal">Sacrifice is something to aspire to</p>
+            </td>
+            <td valign="top" width="168">
+                <p class="normal"><strong>Keeping a Promise</strong></p>
+            </td>
+            <td valign="top" width="168">
+                <p class="normal"><strong>World without war</strong></p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="168">
+                <p class="normal">Ruby</p>
+                <p class="normal">&nbsp;</p>
+                <p class="normal">&nbsp;</p>
+                <p class="normal">&nbsp;</p>
+                <p class="normal">&nbsp;</p>
+            </td>
+            <td valign="top" width="168">
+                <p class="normal"><strong>Forgiveness, hatred hurts you more
+                        than the person you hate</strong></p>
+            </td>
+            <td valign="top" width="168">
+                <p class="normal"><strong>Loss</strong></p>
+            </td>
+            <td valign="top" width="168">
+                <p class="normal"><strong>A diner in the snowy
+                        mountains</strong></p>
+                <p class="normal"><strong>(opposite of Ruby Pier)</strong>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="168">
+                <p class="normal">Marguerite</p>
+                <p class="normal">&nbsp;</p>
+                <p class="normal">&nbsp;</p>
+                <p class="normal">&nbsp;</p>
+                <p class="normal">&nbsp;</p>
+            </td>
+            <td valign="top" width="168">
+                <p class="normal"><strong>Love never dies</strong></p>
+                <p class="normal"><strong>&nbsp;</strong></p>
+            </td>
+            <td valign="top" width="168">
+                <p class="normal"><strong>Home</strong></p>
+            </td>
+            <td valign="top" width="168">
+                <p class="normal"><strong>Weddings, where anything is
+                        possible b/c of love</strong></p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="168">
+                <p class="normal">Tala</p>
+                <p class="normal">&nbsp;</p>
+                <p class="normal">&nbsp;</p>
+                <p class="normal">&nbsp;</p>
+                <p class="normal">&nbsp;</p>
+            </td>
+            <td valign="top" width="168">
+                <p class="normal"><strong>Everyone is important</strong></p>
+            </td>
+            <td valign="top" width="168">
+                <p class="normal"><strong>Redemption</strong></p>
+            </td>
+            <td valign="top" width="168">
+                <p class="normal"><strong>A river with children
+                        playing</strong></p>
+            </td>
+        </tr>
+    </tbody>
 </table>
-<p class="normal"><span style="text-decoration: underline;">Vocabulary--10 questions (1 point each)</span></p>
+<p class="normal"><span style="text-decoration: underline;">Vocabulary--10
+        questions (1 point each)</span></p>
 <p class="normal">&nbsp;</p>
 <p class="normal">Know the definitions of the following words:</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; acceptance-<strong><span style="text-decoration: underline;">a feeling of love and belonging</span></strong></p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    acceptance-<strong><span style="text-decoration: underline;">a feeling
+            of love and belonging</span></strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; bile-<strong><span style="text-decoration: underline;">green liquid from the liver used in digestion</span></strong></p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    bile-<strong><span style="text-decoration: underline;">green liquid from
+            the liver used in digestion</span></strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; classified-<strong><span style="text-decoration: underline;">top secret</span></strong></p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    classified-<strong><span style="text-decoration: underline;">top
+            secret</span></strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; combustion-<strong><span style="text-decoration: underline;">to catch on fire or explode</span></strong></p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    combustion-<strong><span style="text-decoration: underline;">to catch on
+            fire or explode</span></strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; commodity-<strong><span style="text-decoration: underline;">something that can be bought or sold</span></strong></p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    commodity-<strong><span style="text-decoration: underline;">something
+            that can be bought or sold</span></strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; conscious-<strong><span style="text-decoration: underline;">awake and aware</span></strong></p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    conscious-<strong><span style="text-decoration: underline;">awake and
+            aware</span></strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; enlist-<strong><span style="text-decoration: underline;">volunteer for military service</span></strong></p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    enlist-<strong><span style="text-decoration: underline;">volunteer for
+            military service</span></strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; extinguish-<strong><span style="text-decoration: underline;">to put out a fire or light</span></strong></p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    extinguish-<strong><span style="text-decoration: underline;">to put out
+            a fire or light</span></strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; fatigues-<strong><span style="text-decoration: underline;">a military uniform</span></strong></p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    fatigues-<strong><span style="text-decoration: underline;">a military
+            uniform</span></strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; unconscious-<strong><span style="text-decoration: underline;">unaware</span></strong></p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    unconscious-<strong><span style="text-decoration: underline;">unaware</span></strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal"><strong><span style="text-decoration: underline;">Part 3: <em>Anthem</em></span></strong></p>
+<p class="normal"><strong><span style="text-decoration: underline;">Part 3:
+            <em>Anthem</em></span></strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal"><span style="text-decoration: underline;">Multiple Choice--5 questions (1 point each)</span></p>
+<p class="normal"><span style="text-decoration: underline;">Multiple
+        Choice--5 questions (1 point each)</span></p>
 <p class="normal">&nbsp;</p>
 <p class="normal">1.What genre is <em>Anthem</em>?</p>
 <p class="normal"><strong>Fiction, dystopian novel</strong></p>
@@ -323,55 +340,75 @@ function LoadTaggedData(container, MIID, PMI, tag) {
 <p class="normal">2. What is the theme of <em>Anthem</em>?</p>
 <p class="normal"><strong>Individualism</strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">3. Where does MOST of the setting of <em>Anthem </em>take place?</p>
+<p class="normal">3. Where does MOST of the setting of <em>Anthem </em>take
+    place?</p>
 <p class="normal"><strong>&ldquo;The City&rdquo;</strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">4. How would you best describe the main character Equality?</p>
-<p class="normal"><strong>Intelligent, a strong individual, curious</strong></p>
+<p class="normal">4. How would you best describe the main character
+    Equality?</p>
+<p class="normal"><strong>Intelligent, a strong individual, curious</strong>
+</p>
 <p class="normal">&nbsp;</p>
-<p class="normal">5. What are Equality and Liberty&rsquo;s assigned jobs in the Anthem society?</p>
+<p class="normal">5. What are Equality and Liberty&rsquo;s assigned jobs in
+    the Anthem society?</p>
 <p class="normal"><strong>Equality-street sweeper</strong></p>
 <p class="normal"><strong>Liberty-farmer/peasant</strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal"><span style="text-decoration: underline;">Short Answer--15 questions (1 point each)</span></p>
+<p class="normal"><span style="text-decoration: underline;">Short Answer--15
+        questions (1 point each)</span></p>
 <p class="normal">&nbsp;</p>
 <p class="normal">1.Define manuscript in terms of <em>Anthem.</em></p>
-<p class="normal"><strong>A book from the Unmentionable Times, not allowed</strong></p>
+<p class="normal"><strong>A book from the Unmentionable Times, not
+        allowed</strong></p>
 <p class="normal">&nbsp;</p>
 <p class="normal">2. What nickname does Equality give Liberty?</p>
 <p class="normal"><strong>The Golden One</strong></p>
 <p class="normal">&nbsp;</p>
 <p class="normal">3. What is the purpose for the Time of Mating?</p>
-<p class="normal"><strong>To increase the population, make more workers</strong></p>
+<p class="normal"><strong>To increase the population, make more
+        workers</strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">4. What is Equality happy to find out that Liberty is only 17?</p>
-<p class="normal"><strong>He loves her, she is still a virgin, has not been to the time of mating</strong></p>
+<p class="normal">4. What is Equality happy to find out that Liberty is only
+    17?</p>
+<p class="normal"><strong>He loves her, she is still a virgin, has not been
+        to the time of mating</strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">5. How was the &ldquo;Transgressor&rdquo; punished for his crime?</p>
+<p class="normal">5. How was the &ldquo;Transgressor&rdquo; punished for his
+    crime?</p>
 <p class="normal"><strong>He was executed, burned at the stake</strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">6. Why does Liberty call Equality &ldquo;Unconquered&rdquo;?</p>
-<p class="normal"><strong>He has not given up his individuality; he is undefeated by society&rsquo;s rules</strong></p>
+<p class="normal">6. Why does Liberty call Equality
+    &ldquo;Unconquered&rdquo;?</p>
+<p class="normal"><strong>He has not given up his individuality; he is
+        undefeated by society&rsquo;s rules</strong></p>
 <p class="normal">&nbsp;</p>
 <p class="normal">7. What does Equality invent and build?</p>
 <p class="normal"><strong>A lightbox (light blub)</strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">8. How is Equality punished for coming home late from the tunnel?</p>
+<p class="normal">8. How is Equality punished for coming home late from the
+    tunnel?</p>
 <p class="normal"><strong>Sent to jail and whipped</strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">9. What does the World Council want to do with Equality&rsquo;s invention?</p>
+<p class="normal">9. What does the World Council want to do with
+    Equality&rsquo;s invention?</p>
 <p class="normal"><strong>Destroy it</strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">10. Where does Equality run and hide after he escapes from the World Council of Scholars?</p>
+<p class="normal">10. Where does Equality run and hide after he escapes from
+    the World Council of Scholars?</p>
 <p class="normal"><strong>The uncharted forest</strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">11. How does Equality act his first morning in the Uncharted Forest?</p>
-<p class="normal"><strong>Childlike, running and jumping and playing, carefree</strong></p>
+<p class="normal">11. How does Equality act his first morning in the
+    Uncharted Forest?</p>
+<p class="normal"><strong>Childlike, running and jumping and playing,
+        carefree</strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">12. What amazing discovery does Equality make in the forest stream?</p>
-<p class="normal"><strong>His own reflection, 1<sup>st</sup> time he sees his own face</strong></p>
+<p class="normal">12. What amazing discovery does Equality make in the
+    forest stream?</p>
+<p class="normal"><strong>His own reflection, 1<sup>st</sup> time he sees
+        his own face</strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">13. What 3 unbelievable things Equality and Golden One find in a house in the forest. Why are these items important?</p>
+<p class="normal">13. What 3 unbelievable things Equality and Golden One
+    find in a house in the forest. Why are these items important?</p>
 <p class="normal"><strong>Items from the Unmentionable Times</strong></p>
 <p class="normal"><strong>Colorful clothes</strong></p>
 <p class="normal"><strong>Mirrors</strong></p>
@@ -379,52 +416,88 @@ function LoadTaggedData(container, MIID, PMI, tag) {
 <p class="normal"><strong>lightbulbs</strong></p>
 <p class="normal">&nbsp;</p>
 <p class="normal">&nbsp;</p>
-<p class="normal">14. What new names do Equality and the Golden One give each other? What literary device is used here?</p>
-<p class="normal"><strong>Prometheus-stole fire (light) from the gods</strong></p>
-<p class="normal"><strong>Gaea-mythology, means mother of the Earth</strong></p>
+<p class="normal">14. What new names do Equality and the Golden One give
+    each other? What literary device is used here?</p>
+<p class="normal"><strong>Prometheus-stole fire (light) from the
+        gods</strong></p>
+<p class="normal"><strong>Gaea-mythology, means mother of the Earth</strong>
+</p>
 <p class="normal"><strong>ALLUSION</strong></p>
 <p class="normal">15. Why do their new names fit?</p>
-<p class="normal"><span style="text-decoration: underline;">Vocabulary--10 questions (1 point each)</span></p>
+<p class="normal"><span style="text-decoration: underline;">Vocabulary--10
+        questions (1 point each)</span></p>
 <p class="normal">&nbsp;</p>
 <p class="normal">Know the definitions of the following words:</p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; anthem-<strong> a patriotic song or book</strong></p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    anthem-<strong> a patriotic song or book</strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; apocalypse-a disaster, end of the world</p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    apocalypse-a disaster, end of the world</p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; post-apocalyptic-<strong> the time after a disaster</strong></p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    post-apocalyptic-<strong> the time after a disaster</strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; council-a group of people who make decisions</p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    council-a group of people who make decisions</p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; dystopia- &ldquo;Not a good place&rdquo;</p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    dystopia- &ldquo;Not a good place&rdquo;</p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; eugenics-<strong> breeding, genetics, sterilization</strong></p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    eugenics-<strong> breeding, genetics, sterilization</strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; individualism- only one, singular</p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    individualism- only one, singular</p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pledge- <strong>an oath or promise</strong></p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    pledge- <strong>an oath or promise</strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; preference- <strong>to like someone or something</strong></p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    preference- <strong>to like someone or something</strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; scholars- experts, study 1 thing</p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    scholars- experts, study 1 thing</p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; transgression- a sin or crime</p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    transgression- a sin or crime</p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; uncharted- unexplored</p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    uncharted- unexplored</p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; utopian- a perfect place</p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    utopian- a perfect place</p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; vocation- <strong>job or occupations</strong></p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    vocation- <strong>job or occupations</strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; manuscript- books</p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    manuscript- books</p>
 <p class="normal">&nbsp;</p>
 <p class="normal">&nbsp;</p>
-<p class="normal"><strong><span style="text-decoration: underline;">Part 4: <em>The Hunger Games</em></span></strong></p>
+<p class="normal"><strong><span style="text-decoration: underline;">Part 4:
+            <em>The Hunger Games</em></span></strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal"><span style="text-decoration: underline;">Sentence Complete--10 fill-in-the-blanks (1 point each)</span></p>
+<p class="normal"><span style="text-decoration: underline;">Sentence
+        Complete--10 fill-in-the-blanks (1 point each)</span></p>
 <p class="normal">&nbsp;</p>
 <ol>
-<li>When is <em>The Hunger Games</em> set?</li>
+    <li>When is <em>The Hunger Games</em> set?</li>
 </ol>
 <p class="normal"><strong>Post-apocalyptic world in the future</strong></p>
 <p class="normal">&nbsp;</p>
@@ -438,13 +511,16 @@ function LoadTaggedData(container, MIID, PMI, tag) {
 <p class="normal">5. What do the districts surround?</p>
 <p class="normal"><strong>The Capitol</strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">6. The Capitol is surrounded by what former mountain range?</p>
+<p class="normal">6. The Capitol is surrounded by what former mountain
+    range?</p>
 <p class="normal"><strong>Rocky Mountains</strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">7. What former mountain range encompasses Katniss&rsquo;s district?</p>
+<p class="normal">7. What former mountain range encompasses Katniss&rsquo;s
+    district?</p>
 <p class="normal"><strong>Appalachian Mountains (West Virginia)</strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">8. What is the primary product of Katniss&rsquo;s district?</p>
+<p class="normal">8. What is the primary product of Katniss&rsquo;s
+    district?</p>
 <p class="normal"><strong>Coal</strong></p>
 <p class="normal">&nbsp;</p>
 <p class="normal">9. What is the name of Katniss&rsquo;s neighborhood?</p>
@@ -453,71 +529,141 @@ function LoadTaggedData(container, MIID, PMI, tag) {
 <p class="normal">10. Where does Katniss sell and exchange goods?</p>
 <p class="normal"><strong>The Hob</strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal"><span style="text-decoration: underline;">Poetic Devices--10 questions (1 point each)</span></p>
+<p class="normal"><span style="text-decoration: underline;">Poetic
+        Devices--10 questions (1 point each)</span></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">Review your poetic devices packet from <em>The Hunger Games</em>. Know how to identify the following literary devices when given an example:</p>
+<p class="normal">Review your poetic devices packet from <em>The Hunger
+        Games</em>. Know how to identify the following literary devices when
+    given an example:</p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Alliteration-<strong>repetition of consonant sounds</strong></p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Allusion-reference to something famous</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hyperbole-exaggeration</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Imagery-appeals to the 5 senses</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Irony-unexpected</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Metaphor-compare to unlike things</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Simile-compare to things using words like, as, than</p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Alliteration-<strong>repetition of consonant sounds</strong></p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Allusion-reference to something famous</p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Hyperbole-exaggeration</p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Imagery-appeals to the 5 senses</p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Irony-unexpected</p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Metaphor-compare to unlike things</p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Simile-compare to things using words like, as, than</p>
 <p class="normal">&nbsp;</p>
-<p class="normal"><span style="text-decoration: underline;">Short Answer--10 points (5 points each)</span></p>
+<p class="normal"><span style="text-decoration: underline;">Short Answer--10
+        points (5 points each)</span></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">Compare and contrast life in the Capitol to life in the Districts.</p>
+<p class="normal">Compare and contrast life in the Capitol to life in the
+    Districts.</p>
 <p class="normal">&nbsp;</p>
-<p class="normal"><strong>The Capitol-the audience for the Games</strong></p>
-<p class="normal"><strong>rich, shallow, spoiled, no concerns, fashion important</strong></p>
+<p class="normal"><strong>The Capitol-the audience for the Games</strong>
+</p>
+<p class="normal"><strong>rich, shallow, spoiled, no concerns, fashion
+        important</strong></p>
 <p class="normal"><strong>&nbsp;</strong></p>
 <p class="normal"><strong>Districts- the tributes</strong></p>
 <p class="normal"><strong>poor, starving, struggle to survive</strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">Choose one theme from <em>The Hunger Games</em>. Explain how that theme is illustrated through characters and plot.</p>
+<p class="normal">Choose one theme from <em>The Hunger Games</em>. Explain
+    how that theme is illustrated through characters and plot.</p>
 <p class="normal">&nbsp;</p>
 <p class="normal">&nbsp;</p>
-<p class="normal"><span style="text-decoration: underline;">Vocabulary--10 questions (1 point each)</span></p>
+<p class="normal"><span style="text-decoration: underline;">Vocabulary--10
+        questions (1 point each)</span></p>
 <p class="normal">&nbsp;</p>
 <p class="normal">Know the definitions of the following words:</p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; adversaries-<strong><span style="text-decoration: underline;">opponents in a fight or contest</span></strong></p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    adversaries-<strong><span style="text-decoration: underline;">opponents
+            in a fight or contest</span></strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; apothecary-<strong><span style="text-decoration: underline;">a druggist or healer who uses plants</span></strong></p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    apothecary-<strong><span style="text-decoration: underline;">a druggist
+            or healer who uses plants</span></strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cornucopia-<strong><span style="text-decoration: underline;">a horn shaped filled with food/supplies</span></strong></p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    cornucopia-<strong><span style="text-decoration: underline;">a horn
+            shaped filled with food/supplies</span></strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; despondency-<strong><span style="text-decoration: underline;">depressed</span></strong></p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    despondency-<strong><span style="text-decoration: underline;">depressed</span></strong>
+</p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; emaciated-<strong><span style="text-decoration: underline;">thin due to starvation</span></strong></p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    emaciated-<strong><span style="text-decoration: underline;">thin due to
+            starvation</span></strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ominous-<strong><span style="text-decoration: underline;">evil or threatening</span></strong></p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    ominous-<strong><span style="text-decoration: underline;">evil or
+            threatening</span></strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pariah-<strong><span style="text-decoration: underline;">an outcast</span></strong></p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    pariah-<strong><span style="text-decoration: underline;">an
+            outcast</span></strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; reaping-<strong><span style="text-decoration: underline;">gather and harvest</span></strong></p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    reaping-<strong><span style="text-decoration: underline;">gather and
+            harvest</span></strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; repentance-<strong><span style="text-decoration: underline;">deep sorrow</span></strong></p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    repentance-<strong><span style="text-decoration: underline;">deep
+            sorrow</span></strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; revolution-<strong><span style="text-decoration: underline;">overthrow the government</span></strong></p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    revolution-<strong><span style="text-decoration: underline;">overthrow
+            the government</span></strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; tessera-<strong><span style="text-decoration: underline;">an allowance of food</span></strong></p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    tessera-<strong><span style="text-decoration: underline;">an allowance
+            of food</span></strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; totalitarian government-<strong><span style="text-decoration: underline;">a dictatorship</span></strong>, <strong><span style="text-decoration: underline;">a government that does not allow different opinions,</span></strong></p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    totalitarian government-<strong><span style="text-decoration: underline;">a
+            dictatorship</span></strong>, <strong><span style="text-decoration: underline;">a government that does not
+            allow different opinions,</span></strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; treason-<strong><span style="text-decoration: underline;">to betray the government</span></strong></p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    treason-<strong><span style="text-decoration: underline;">to betray the
+            government</span></strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; tributes-<strong><span style="text-decoration: underline;">contestants in Hunger Games (payment from each district)</span></strong></p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    tributes-<strong><span style="text-decoration: underline;">contestants
+            in Hunger Games (payment from each district)</span></strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal"><strong><span style="text-decoration: underline;">Part 5: <em>The Odyssey</em></span></strong></p>
+<p class="normal"><strong><span style="text-decoration: underline;">Part 5:
+            <em>The Odyssey</em></span></strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal"><span style="text-decoration: underline;">Multiple Choice--5 questions (1 point each)</span></p>
+<p class="normal"><span style="text-decoration: underline;">Multiple
+        Choice--5 questions (1 point each)</span></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">1. Who wrote <em>The Odyssey</em> and <em>The Iliad</em>?&nbsp;&nbsp;&nbsp;</p>
+<p class="normal">1. Who wrote <em>The Odyssey</em> and <em>The
+        Iliad</em>?&nbsp;&nbsp;&nbsp;</p>
 <p class="normal">Homer</p>
 <p class="normal">&nbsp;</p>
-<p class="normal">2. When were <em>The Odyssey</em> and <em>The Iliad </em>written?&nbsp;&nbsp;</p>
+<p class="normal">2. When were <em>The Odyssey</em> and <em>The Iliad
+    </em>written?&nbsp;&nbsp;</p>
 <p class="normal">Thousands of years ago, BC</p>
 <p class="normal">&nbsp;</p>
 <p class="normal">3. What genre is <em>The Odyssey</em>?</p>
@@ -526,47 +672,82 @@ function LoadTaggedData(container, MIID, PMI, tag) {
 <p class="normal">4. Why was the Trojan War fought?</p>
 <p class="normal">Over money, trades routes in the Med. Sea</p>
 <p class="normal">&nbsp;</p>
-<p class="normal">5. What happens when Odysseus is at war and trying to return home from his journey?</p>
+<p class="normal">5. What happens when Odysseus is at war and trying to
+    return home from his journey?</p>
 <p class="normal">&nbsp;</p>
-<p class="normal"><strong>Odysseus angers the gods. He is punished and it takes him 20 years to get&nbsp; home.</strong></p>
+<p class="normal"><strong>Odysseus angers the gods. He is punished and it
+        takes him 20 years to get&nbsp; home.</strong></p>
 <p class="normal"><strong>10 years war&mdash;10 year journey</strong></p>
-<p class="normal"><span style="text-decoration: underline;">Literary Devices--know the definition or examples of each--10 points (1 point each)</span></p>
+<p class="normal"><span style="text-decoration: underline;">Literary
+        Devices--know the definition or examples of each--10 points (1 point
+        each)</span></p>
 <p class="normal">&nbsp;</p>
 <p class="normal">allusion- reference to something famous</p>
 <p class="normal">&nbsp;</p>
 <p class="normal">characteristics of Odysseus-</p>
 <p class="normal">&nbsp;</p>
-<p class="normal">noble birth male&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; intelligent&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; brave&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; actions effect his people</p>
-<p class="normal">Curious &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Big Ego&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; reckless</p>
+<p class="normal">noble birth
+    male&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    intelligent&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    brave&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; actions
+    effect his people</p>
+<p class="normal">Curious
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Big
+    Ego&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    reckless</p>
 <p class="normal">&nbsp;</p>
 <p class="normal">epic hero-</p>
-<p class="normal"><strong>well-known&nbsp;&nbsp;&nbsp; legendary&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; goals&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; virtues&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; one nation</strong></p>
+<p class="normal"><strong>well-known&nbsp;&nbsp;&nbsp;
+        legendary&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        goals&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        virtues&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        one nation</strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">epic simile- <strong>a long comparison found in an epic story</strong></p>
+<p class="normal">epic simile- <strong>a long comparison found in an epic
+        story</strong></p>
 <p class="normal">&nbsp;</p>
 <p class="normal">epic story- <strong>long story about a hero</strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">epithet- <strong>a description of a character &nbsp;&nbsp; Odysseus, son of Laertes, victor of Cyclops</strong></p>
+<p class="normal">epithet- <strong>a description of a character &nbsp;&nbsp;
+        Odysseus, son of Laertes, victor of Cyclops</strong></p>
 <p class="normal">&nbsp;</p>
 <p class="normal">fate- life is predetermined by the gods or the stars</p>
 <p class="normal">&nbsp;</p>
 <p class="normal">in media res- starts in the middle of the story</p>
 <p class="normal">&nbsp;</p>
-<p class="normal">muses- goddesses, inspiration, Athena inspires Odysseus</p>
+<p class="normal">muses- goddesses, inspiration, Athena inspires Odysseus
+</p>
 <p class="normal">&nbsp;</p>
 <p class="normal">universal themes in <em>The Odyssey</em>-</p>
 <p class="normal"><strong>Overcoming Obstacles</strong></p>
 <p class="normal"><strong>An adventure story</strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal"><span style="text-decoration: underline;">Figurative Language--10 questions (1 point each)</span></p>
-<p class="normal">Identify literary devices being used when given a passage from <em>The Odyssey.</em>&nbsp; Literary devices used include:</p>
+<p class="normal"><span style="text-decoration: underline;">Figurative
+        Language--10 questions (1 point each)</span></p>
+<p class="normal">Identify literary devices being used when given a passage
+    from <em>The Odyssey.</em>&nbsp; Literary devices used include:</p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Allusion-<strong>sirens in the Odyssey and Pirates of the Caribbean</strong></p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Allusion-<strong>sirens in the Odyssey and Pirates of the
+        Caribbean</strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; epic simile <strong>long, long, long comparison-driving the tree trunk into Cyclops&rsquo; eye</strong></p>
-<p class="normal"><em><strong>&ldquo;I drove my weight on it from above and bored it home like a shipwright bores his beam with a shipwright's drill that men below, whipping the strap back and forth, whirl and the drill keeps twisting, never stopping --So we seized our stake with it fiery tip and bored it round and round in the giant's eye."</strong></em></p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; epic
+    simile <strong>long, long, long comparison-driving the tree trunk into
+        Cyclops&rsquo; eye</strong></p>
+<p class="normal"><em><strong>&ldquo;I drove my weight on it from above and
+            bored it home like a shipwright bores his beam with a
+            shipwright's drill that men below, whipping the strap back and
+            forth, whirl and the drill keeps twisting, never stopping --So
+            we seized our stake with it fiery tip and bored it round and
+            round in the giant's eye."</strong></em></p>
 <p class="normal"><strong>&nbsp;</strong></p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Epithet-<strong>a nickname or despcription used with the character&rsquo;s name</strong></p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Epithet-<strong>a nickname or despcription used with the
+        character&rsquo;s name</strong></p>
 <p class="normal">Aeolus, king of the wind,&hellip;</p>
 <p class="normal">Polyphemus, the one-eyed giant,</p>
 <p class="normal">Polyphemus, son of Poseidon,</p>
@@ -575,60 +756,107 @@ function LoadTaggedData(container, MIID, PMI, tag) {
 <p class="normal">Charybdis, the whirlpool,</p>
 <p class="normal">Odysseus, son of Laertes</p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Imagery-</p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Imagery-</p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; metaphor-<strong>comparison between 2 unlike things</strong></p>
-<p class="normal"><strong>&ldquo;For nine years we wove a web of disaster&rdquo; </strong></p>
-<p class="normal"><strong>(comparing the 9 unsuccesful years of battle to a spider&rsquo;s web</strong>)</p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    metaphor-<strong>comparison between 2 unlike things</strong></p>
+<p class="normal"><strong>&ldquo;For nine years we wove a web of
+        disaster&rdquo; </strong></p>
+<p class="normal"><strong>(comparing the 9 unsuccesful years of battle to a
+        spider&rsquo;s web</strong>)</p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; personification-giving humans qualities to an object, especially in nature</p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    personification-giving humans qualities to an object, especially in
+    nature</p>
 <p class="normal"><strong>&nbsp;</strong></p>
-<p class="normal"><strong>&ldquo;When Dawn came and with her crimson streamers lit the sky&rdquo; </strong></p>
-<p class="normal"><strong>(dawn is when the sun comes up, we can tell it is personified b/c it is also capitalized like a person&rsquo;s name)</strong></p>
+<p class="normal"><strong>&ldquo;When Dawn came and with her crimson
+        streamers lit the sky&rdquo; </strong></p>
+<p class="normal"><strong>(dawn is when the sun comes up, we can tell it is
+        personified b/c it is also capitalized like a person&rsquo;s
+        name)</strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal"><span style="text-decoration: underline;">Open-ended Question (10 points)</span></p>
+<p class="normal"><span style="text-decoration: underline;">Open-ended
+        Question (10 points)</span></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">Explain how the theme that &ldquo;People must overcome obstacles and challenges in their journey through life to reach their goals, happiness, and success&rdquo; is illustrated in <em>The Odyssey</em>.</p>
+<p class="normal">Explain how the theme that &ldquo;People must overcome
+    obstacles and challenges in their journey through life to reach their
+    goals, happiness, and success&rdquo; is illustrated in <em>The
+        Odyssey</em>.</p>
 <p class="normal"><strong>&nbsp;</strong></p>
 <p class="normal"><strong>Odysseus has angered the god Poseidon</strong></p>
 <p class="normal"><strong>Poseidon curses his journey home</strong></p>
 <p class="normal"><strong>Takes 10 years</strong></p>
 <p class="normal"><strong>Encounters many obstacles</strong></p>
-<p class="normal"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The sirens</strong></p>
-<p class="normal"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cyclops</strong></p>
-<p class="normal"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Scylla and Charybdis</strong></p>
-<p class="normal"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The Lotus Eaters</strong></p>
-<p class="normal"><strong>Each time Odysseus uses him BRAIN to figure out a way around the obstacle</strong></p>
-<p class="normal"><strong>Finally gets home to his wife, Penelope, and son Telemachus</strong></p>
+<p class="normal">
+    <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        The sirens</strong>
+</p>
+<p class="normal">
+    <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Cyclops</strong>
+</p>
+<p class="normal">
+    <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Scylla and Charybdis</strong>
+</p>
+<p class="normal">
+    <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        The Lotus Eaters</strong>
+</p>
+<p class="normal"><strong>Each time Odysseus uses him BRAIN to figure out a
+        way around the obstacle</strong></p>
+<p class="normal"><strong>Finally gets home to his wife, Penelope, and son
+        Telemachus</strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal"><span style="text-decoration: underline;">Part 6: Romeo and Juliet</span></p>
+<p class="normal"><span style="text-decoration: underline;">Part 6: Romeo
+        and Juliet</span></p>
 <p class="normal">&nbsp;</p>
-<p class="normal"><span style="text-decoration: underline;">True or False--5 questions (5 points)</span></p>
+<p class="normal"><span style="text-decoration: underline;">True or False--5
+        questions (5 points)</span></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">1.What is the literary genre of <em>Romeo and Juliet</em>?&nbsp;&nbsp;&nbsp;&nbsp; <strong>Drama/Play a TRAGEDY</strong></p>
+<p class="normal">1.What is the literary genre of <em>Romeo and
+        Juliet</em>?&nbsp;&nbsp;&nbsp;&nbsp; <strong>Drama/Play a
+        TRAGEDY</strong></p>
 <p class="normal">&nbsp;</p>
 <ol>
-<li>What is the setting of Baz Lurhmann&rsquo;s film, <em>Romeo and Juliet</em>?</li>
+    <li>What is the setting of Baz Lurhmann&rsquo;s film, <em>Romeo and
+            Juliet</em>?</li>
 </ol>
-<p class="normal"><strong>Modern day, Verona Beach in California</strong></p>
+<p class="normal"><strong>Modern day, Verona Beach in California</strong>
+</p>
 <p class="normal"><strong>&nbsp;</strong></p>
 <p class="normal">&nbsp;</p>
 <p class="normal">3. What is the definition of &ldquo;feud&rdquo;?</p>
-<p class="normal"><strong>A long, long, never-ending fight between 2 families</strong></p>
+<p class="normal"><strong>A long, long, never-ending fight between 2
+        families</strong></p>
 <p class="normal">4. What is the definition of &ldquo;prologue&rdquo;?</p>
-<p class="normal"><strong>Beginning of a story, tells the audience the ending!</strong></p>
-<p class="normal"><strong>Must read the story to find out the HOWS and WHYs</strong></p>
+<p class="normal"><strong>Beginning of a story, tells the audience the
+        ending!</strong></p>
+<p class="normal"><strong>Must read the story to find out the HOWS and
+        WHYs</strong></p>
 <p class="normal">5. What is William Shakespeare most known for?</p>
-<p class="normal"><strong>Greatest author of the English language</strong></p>
+<p class="normal"><strong>Greatest author of the English language</strong>
+</p>
 <p class="normal"><strong>Wrote many plays</strong></p>
 <p class="normal"><strong>Wrote hundreds of poem</strong></p>
-<p class="normal"><strong>Created/invented hundreds of words and sayings in the English language.</strong></p>
+<p class="normal"><strong>Created/invented hundreds of words and sayings in
+        the English language.</strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal"><span style="text-decoration: underline;">Quote Identification--15 points (Pick 3 of 5 to answer, 5 points each)</span></p>
+<p class="normal"><span style="text-decoration: underline;">Quote
+        Identification--15 points (Pick 3 of 5 to answer, 5 points
+        each)</span></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">Identify which character said each quote, the time in the film quote was said, and what the quote means.</p>
+<p class="normal">Identify which character said each quote, the time in the
+    film quote was said, and what the quote means.</p>
 <p class="normal">&nbsp;</p>
-<p class="normal">1.&rdquo;O Romeo, Romeo! Wherefore art thou Romeo?&nbsp; <strong><span style="text-decoration: underline;">Juliet on the balcony</span></strong></p>
+<p class="normal">1.&rdquo;O Romeo, Romeo! Wherefore art thou Romeo?&nbsp;
+    <strong><span style="text-decoration: underline;">Juliet on the
+            balcony</span></strong>
+</p>
 <p class="normal">Deny thy father and refuse thy name:</p>
 <p class="normal">Or if thou wilt not, be but sworn my love</p>
 <p class="normal">And I&rsquo;ll no longer be a Capulet.&rdquo;</p>
@@ -636,71 +864,149 @@ function LoadTaggedData(container, MIID, PMI, tag) {
 <p class="normal">&nbsp;</p>
 <p class="normal">&nbsp;</p>
 <p class="normal">&nbsp;</p>
-<p class="normal">2. &ldquo;That this alliance may so happy prove&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong><span style="text-decoration: underline;">Father Lawrence</span></strong></p>
-<p class="normal">To turn your households&rsquo; rancour to pure love.&rdquo;</p>
+<p class="normal">2. &ldquo;That this alliance may so happy
+    prove&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <strong><span style="text-decoration: underline;">Father
+            Lawrence</span></strong>
+</p>
+<p class="normal">To turn your households&rsquo; rancour to pure
+    love.&rdquo;</p>
 <p class="normal">&nbsp;</p>
 <p class="normal">&nbsp;</p>
 <p class="normal">&nbsp;</p>
 <p class="normal">&nbsp;</p>
 <p class="normal">&nbsp;</p>
-<p class="normal">3. &ldquo;A plague on both your houses!&rdquo;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong><span style="text-decoration: underline;">Mercutio</span></strong></p>
+<p class="normal">3. &ldquo;A plague on both your
+    houses!&rdquo;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <strong><span style="text-decoration: underline;">Mercutio</span></strong>
+</p>
 <p class="normal">&nbsp;</p>
 <p class="normal">&nbsp;</p>
 <p class="normal">&nbsp;</p>
 <p class="normal">&nbsp;</p>
-<p class="normal">4. &ldquo;O, I am fortune&rsquo;s fool!&rdquo;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong><span style="text-decoration: underline;">Romeo</span></strong></p>
+<p class="normal">4. &ldquo;O, I am fortune&rsquo;s
+    fool!&rdquo;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <strong><span style="text-decoration: underline;">Romeo</span></strong>
+</p>
 <p class="normal">&nbsp;</p>
 <p class="normal">&nbsp;</p>
 <p class="normal">&nbsp;</p>
-<p class="normal">5. &ldquo;Peace? I hate the word as I hate hell and all Montagues.&rdquo;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong><span style="text-decoration: underline;">Tybalt</span></strong></p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-<p class="normal"><span style="text-decoration: underline;">Open-ended Question (10 points)</span></p>
+<p class="normal">5. &ldquo;Peace? I hate the word as I hate hell and all
+    Montagues.&rdquo;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <strong><span style="text-decoration: underline;">Tybalt</span></strong>
+</p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p class="normal"><span style="text-decoration: underline;">Open-ended
+        Question (10 points)</span></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">Explain how one of the devices below is illustrated in Baz Lurhmann&rsquo;s <em>Romeo and Juliet</em>.</p>
+<p class="normal">Explain how one of the devices below is illustrated in Baz
+    Lurhmann&rsquo;s <em>Romeo and Juliet</em>.</p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -religious symbolism</p>
-<p class="normal"><strong><span style="text-decoration: underline;">Shots of the setting of Verona show religious statues and crosses</span></strong></p>
-<p class="normal"><strong><span style="text-decoration: underline;">Juliet&rsquo;s death, lined with crosses</span></strong></p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -water motif</p>
-<p class="normal"><strong><span style="text-decoration: underline;">Romeo and Juliet see each other for the first time through an aquarium-ROMANTIC</span></strong></p>
-<p class="normal"><strong><span style="text-decoration: underline;">They fall into the pool drowning in their love</span></strong></p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -foil characters</p>
-<p class="normal"><strong><span style="text-decoration: underline;">Tybalt (aggressive, looking for a fight) Romeo (a romantic, looking for love)</span></strong></p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -theme of impetuous (impulsive) love&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-<p class="normal"><strong><span style="text-decoration: underline;">Romeo is devastated when Rosaline breaks up with him</span></strong></p>
-<p class="normal"><strong><span style="text-decoration: underline;">Romeo falls in love with Juliet at first sight</span></strong></p>
-<p class="normal"><strong><span style="text-decoration: underline;">Romeo and Juliet secretly marry even though they know their families are enemies</span></strong></p>
-<p class="normal"><strong><span style="text-decoration: underline;">Romeo and Juliet commit suicide b/c they cannot be together</span></strong></p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    -religious symbolism</p>
+<p class="normal"><strong><span style="text-decoration: underline;">Shots of
+            the setting of Verona show religious statues and
+            crosses</span></strong></p>
+<p class="normal"><strong><span style="text-decoration: underline;">Juliet&rsquo;s death, lined
+            with crosses</span></strong></p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    -water motif</p>
+<p class="normal"><strong><span style="text-decoration: underline;">Romeo
+            and Juliet see each other for the first time through an
+            aquarium-ROMANTIC</span></strong></p>
+<p class="normal"><strong><span style="text-decoration: underline;">They
+            fall into the pool drowning in their love</span></strong></p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -foil
+    characters</p>
+<p class="normal"><strong><span style="text-decoration: underline;">Tybalt
+            (aggressive, looking for a fight) Romeo (a romantic, looking for
+            love)</span></strong></p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    -theme of impetuous (impulsive)
+    love&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<p class="normal"><strong><span style="text-decoration: underline;">Romeo is
+            devastated when Rosaline breaks up with him</span></strong></p>
+<p class="normal"><strong><span style="text-decoration: underline;">Romeo
+            falls in love with Juliet at first sight</span></strong></p>
+<p class="normal"><strong><span style="text-decoration: underline;">Romeo
+            and Juliet secretly marry even though they know their families
+            are enemies</span></strong></p>
+<p class="normal"><strong><span style="text-decoration: underline;">Romeo
+            and Juliet commit suicide b/c they cannot be
+            together</span></strong></p>
 <p class="normal">&nbsp;</p>
 <p class="normal">&nbsp;</p>
 <p class="normal">&nbsp;</p>
-<p class="normal"><strong><span style="text-decoration: underline;">Part 7: <em>Looking for Alaska</em></span></strong></p>
+<p class="normal"><strong><span style="text-decoration: underline;">Part 7:
+            <em>Looking for Alaska</em></span></strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal"><span style="text-decoration: underline;">Vocabulary--10 points (1 point each)</span></p>
+<p class="normal"><span style="text-decoration: underline;">Vocabulary--10
+        points (1 point each)</span></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Adonis-<strong><span style="text-decoration: underline;">from Greek mythology, a perfect man</span></strong></p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Adonis-<strong><span style="text-decoration: underline;">from Greek
+            mythology, a perfect man</span></strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; almanac-<strong><span style="text-decoration: underline;">a book printed every year of facts, the weather</span></strong></p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    almanac-<strong><span style="text-decoration: underline;">a book printed
+            every year of facts, the weather</span></strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; contraband-<strong><span style="text-decoration: underline;">illegal substances (drugs, alcohol, cigarettes, pornography)</span></strong></p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    contraband-<strong><span style="text-decoration: underline;">illegal
+            substances (drugs, alcohol, cigarettes,
+            pornography)</span></strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; denial-<strong><span style="text-decoration: underline;">refuse to accept the truth (first stage of grief in death and dying)</span></strong></p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    denial-<strong><span style="text-decoration: underline;">refuse to
+            accept the truth (first stage of grief in death and
+            dying)</span></strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; generic-<strong><span style="text-decoration: underline;">a no name product, no trademark </span></strong></p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    generic-<strong><span style="text-decoration: underline;">a no name
+            product, no trademark </span></strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; gratuitous-<strong><span style="text-decoration: underline;">unnecessary, not needed</span></strong></p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    gratuitous-<strong><span style="text-decoration: underline;">unnecessary, not
+            needed</span></strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; hazing-<strong><span style="text-decoration: underline;">harass or embarrass new members</span></strong></p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    hazing-<strong><span style="text-decoration: underline;">harass or
+            embarrass new members</span></strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; impulsive-<strong><span style="text-decoration: underline;">acting before you think</span></strong></p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    impulsive-<strong><span style="text-decoration: underline;">acting
+            before you think</span></strong></p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; intoxicated-<strong><span style="text-decoration: underline;">lose control of mind and body due to alcohol or drugs</span></strong></p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    intoxicated-<strong><span style="text-decoration: underline;">lose
+            control of mind and body due to alcohol or drugs</span></strong>
+</p>
 <p class="normal">&nbsp;</p>
-<p class="normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mortician-<strong><span style="text-decoration: underline;">funeral director, undertaker</span></strong></p>
+<p class="normal">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    mortician-<strong><span style="text-decoration: underline;">funeral
+            director, undertaker</span></strong></p>
 <p class="normal">&nbsp;</p>
 <p class="normal">&nbsp;</p>
-<p class="normal"><span style="text-decoration: underline;">Open-ended Question--10 points</span></p>
-<p class="normal">Explain how Alaska acquired her unusual and unique first name.</p>
+<p class="normal"><span style="text-decoration: underline;">Open-ended
+        Question--10 points</span></p>
+<p class="normal">Explain how Alaska acquired her unusual and unique first
+    name.</p>
 <p class="normal"><strong>Ordinary name</strong></p>
 <p class="normal"><strong>Mary Frances Young</strong></p>
 <p class="normal"><strong>Her parents, hippies</strong></p>
@@ -708,1087 +1014,7 @@ function LoadTaggedData(container, MIID, PMI, tag) {
 <p class="normal"><strong>Choose her own name</strong></p>
 <p class="normal"><strong>Globe, chose Alaska</strong></p>
 <p class="normal"><strong>Big and far away</strong></p>
-<p class="normal"><strong>Alaska. Alyeska, literally means &ldquo;that which the sea breaks against&rdquo;<br /> She loved that</strong></p></span></span>
-        </div>
-		<div class="clear"></div>
-	</div>
-</li>
-</ul>
+<p class="normal"><strong>Alaska. Alyeska, literally means &ldquo;that which
+        the sea breaks against&rdquo;<br /> She loved that</strong></p>
+</span></span>
 </div>
-	<div class="ui-widget-footer">
-		
-			
-		
-		<div class="clear"></div>
-	</div>
-</div>
-<script type="text/javascript">
-$(document).ready(function (){
-$(".tag-list li a").keypress(function(e) { if(e.which == 13) { $(this).click();   }});
-});
-function LoadGroupedData(container, MIID, PMI, groupYear, groupMonth, groupBy, tag) {
-  //ViewToUse looks at the hidden Sidebar List View defined in the Builder View.
-  var viewToUse = "";
-    if($('#hid-'+MIID+'-SidebarListView').length > 0){
-      viewToUse = $("#hid-" + MIID + "-SidebarListView").val();
-    };
-  GetContent('https://www.manvilleschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=1794&PageID=5905&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&RenderLoc=0&FromRenderLoc=0&GroupYear=' + groupYear + '&GroupMonth=' + groupMonth + '&GroupByField=' + groupBy + '&EnableQuirksMode=0&ViewID=' + viewToUse + '&Tag=' + tag, container, 2, 'chkSidebar();');
-}
-function LoadData(container, MIID, PMI, flexDataID, groupYear, groupMonth, groupBy, targetView, tag) {
-  if(targetView !== undefined || targetView.Length() == 0){
-  //targetView looks at the hidden Detail View defined in the Builder View.
-      targetView = $('#hid-'+MIID+'-DetailView').val();
-   }
-  GetContent('https://www.manvilleschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=1794&PageID=5905&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&FlexDataID=' + flexDataID + '&GroupYear=' + groupYear + '&GroupMonth=' + groupMonth + '&GroupByField=' + groupBy + '&RenderLoc=0&FromRenderLoc=0&EnableQuirksMode=0&Tag=' + tag + '&ViewID=' + targetView, container, 2, 'chkSidebar();');
-}
-function LoadTaggedData(container, MIID, PMI, tag) {
-  //ViewToUse looks at the hidden Sidebar List View defined in the Builder View.
-  var viewToUse = "";
-    if($('#hid-'+MIID+'-SidebarListView').length > 0){
-      viewToUse = $("#hid-" + MIID + "-SidebarListView").val();
-    };
-  GetContent('https://www.manvilleschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=1794&PageID=5905&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&RenderLoc=0&FromRenderLoc=0&Tag=' + tag + '&EnableQuirksMode=0&ViewID='+viewToUse, container, 2, 'chkSidebar();');
-  setTimeout(function(){ $("#module-content-"+ MIID +"").find('[tabindex]:first').focus(); }, 200);
-}
-</script>
-</div>
-
-</div></div>
-</div><div class="clear"></div></div></div><!-- End Centricity Content Area -->
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="noprint">
-        <section id="gb-footer-links-outer" class="gb-section-parent gb-section-pad" data-footer-links-color="White" data-footer-links-hover="White">
-        	<div id="gb-footer-links" class="gb-section"></div>
-        </section>
-        <section id="gb-footer-outer" class="gb-section-parent gb-section-pad" data-footer-text-color="White">
-            <div id="gb-footer" class="gb-section ui-clear displayFlexRow">
-                <h2></h2>
-                <div id="gb-address">
-                    <span class="gb-address one">1100 Brooks Blvd.</span><span class="gb-address spacer">, </span><span class="gb-address two">Manville, NJ 08835</span>
-                </div>
-                <div id="gb-contact">
-                	<span class="gb-contact phone" x-ms-format-detection="none">Phone: (908) 231-8500</span>
-                    <span class="gb-contact fax" x-ms-format-detection="none">Fax: </span>
-                </div>
-                <div id="gb-extra-links" class="displayFlexRow">
-                	<a class="footer-extra-link directions" href="//www.google.com/maps/place/1100 Brooks Blvd. Manville NJ 08835" target="_blank" data-show-directions-link="true">
-                    	<span>Get Directions</span>
-                    </a>
-                    <a class="footer-extra-link email" href="mailto:webadmin@manvillesd.org" data-show-email-link="false">
-                    	<span>Email Us</span>
-                    </a>
-                    <a class="footer-extra-link accessibility" href="#" target="_self">
-                    	<span>Web Accessibility</span>
-                    </a>
-                    <a class="footer-extra-link sitemap" href='/site/Default.aspx?PageType=15&SiteID=4&SectionMax=15&DirectoryType=6'>
-                        <span>Site Map</span>
-                    </a>
-                    <button class="cs-btn-reset footer-extra-link footer-scroll-btn" aria-label="Scroll To The Top Of The Page" tabindex="-1" aria-hidden="true"></button>
-                </div>
-            </div>
-        </section>
-        <section id="gb-social-media-outer" class="gb-section-parent gb-section-pad">
-        	<div id="gb-social-media" class="gb-section displayFlexRow">
-            	<h2>Stay Connected</h2>
-        		<div id="gb-social-media-icons" class="hidden"></div>
-            </div>
-        </section>
-        <section id="gb-schoolwires-footer-outer" class="gb-section-parent gb-section-pad">
-            <div id="gb-schoolwires-footer" class="gb-section border-box">
-                <div class="gb-schoolwires-footer top">
-                    <div id="gb-footer-disclaimer" data-show-disclaimer="false">
-                        <span>This is the disclaimer text. You can use this area for legal statements, copyright information, a mission statement, etc. If you don’t use it, the Bb footer will slide up.</span>
-                    </div>
-                </div>
-                <div class="gb-schoolwires-footer bottom" data-show-disclaimer="false">
-                    <div class="gb-schoolwires-footer logo"></div>
-                    <div id="gb-schoolwires-footer-links-copyright">
-                        <div class="gb-schoolwires-footer links"></div>
-                        <div class="gb-schoolwires-footer copyright"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </footer>
-</div><!-- BEGIN - STANDARD FOOTER -->
-<div id='sw-footer-outer'>
-<div id='sw-footer-inner'>
-<div id='sw-footer-left'></div>
-<div id='sw-footer-right'>
-<div id='sw-footer-links'>
-<ul>
-<li><a title='Click to email the primary contact' href='mailto:webadmin@manvillesd.org'>Questions or Feedback?</a> | </li>
-<li><a href='https://www.finalsite.com/privacy-policy' target="_blank">Web Community Manager Privacy Policy (Updated)</a> | </li>
-<li><a class='sw-footer-terms-link' aria-hidden='true' tabindex='-1' href=''></a></li>
-</ul>
-</div>
-<div id='sw-footer-copyright'>Copyright &copy; 2024 Finalsite - all rights reserved.</div>
-<div id='sw-footer-logo'><a href='http://www.finalsite.com' title="Finalsite - all rights reserved">
-<img src='https://www.manvilleschools.org/Static//GlobalAssets/Images/Navbar/WCM_logo.svg'
-class='sw-footer-logo-img' alt="Web Community Manager."/>
-</a></div>
-</div>
-</div>
-</div>
-<!-- END - STANDARD FOOTER -->
-<script type="text/javascript">
-   $(document).ready(function(){
-  var data = JSON.stringify({
-    "SiteID": "4",
-    "ChannelID": "1236",
-    "SectionID": "1794",
-    "PageID": "5905",
-    "Browser": "Firefox 130.0",
-    "OS": "WinNT",
-    "IPAddress": "10.61.15.224"
-  });
-  $.ajax({
-    url: "../Site/SiteController.aspx/InsertAnalyticsData",
-    method: "POST",
-    contentType: "application/json",
-    data: data,
-    success: function(response) {
-    },
-    error: function(xhr, status, error) {
-    }
-  });
-   });
-</script>
-
-    <input type="hidden" id="hid-pageid" value="5905" />
-
-    
-
-    <div id='dialog-overlay-WindowMedium-base' class='ui-dialog-overlay-base' ><div id='WindowMedium' role='dialog' tabindex='-1'  class='ui-dialog-overlay medium' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowMedium-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowMedium-body' ></div><button class='ui-dialog-overlay-close' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowMedium");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowMedium-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowMedium-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    <div id='dialog-overlay-WindowSmall-base' class='ui-dialog-overlay-base' ><div id='WindowSmall' role='dialog' tabindex='-1'  class='ui-dialog-overlay small' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowSmall-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowSmall-body' ></div><button class='ui-dialog-overlay-close' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowSmall");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowSmall-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowSmall-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    <div id='dialog-overlay-WindowLarge-base' class='ui-dialog-overlay-base' ><div id='WindowLarge' role='dialog' tabindex='-1'  class='ui-dialog-overlay large' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowLarge-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowLarge-body' ></div><button class='ui-dialog-overlay-close' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowLarge");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowLarge-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowLarge-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-
-    <div id='dialog-overlay-WindowMediumModal-base' class='ui-dialog-overlay-base-modal' ><div id='WindowMediumModal' role='dialog' tabindex='-1'  class='ui-dialog-overlay medium' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowMediumModal-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowMediumModal-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowMediumModal");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowMediumModal-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowMediumModal-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    <div id='dialog-overlay-WindowSmallModal-base' class='ui-dialog-overlay-base-modal' ><div id='WindowSmallModal' role='dialog' tabindex='-1'  class='ui-dialog-overlay small' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowSmallModal-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowSmallModal-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowSmallModal");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowSmallModal-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowSmallModal-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    <div id='dialog-overlay-WindowLargeModal-base' class='ui-dialog-overlay-base-modal' ><div id='WindowLargeModal' role='dialog' tabindex='-1'  class='ui-dialog-overlay large' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowLargeModal-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowLargeModal-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowLargeModal");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowLargeModal-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowLargeModal-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    <div id='dialog-overlay-WindowXLargeModal-base' class='ui-dialog-overlay-base-modal' ><div id='WindowXLargeModal' role='dialog' tabindex='-1'  class='ui-dialog-overlay xlarge' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowXLargeModal-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowXLargeModal-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowXLargeModal");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowXLargeModal-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowXLargeModal-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-
-    <div id='dialog-overlay-MyAccountSubscriptionOverlay-base' class='ui-dialog-overlay-base-modal' ><div id='MyAccountSubscriptionOverlay' role='dialog' tabindex='-1'  class='ui-dialog-overlay medium' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-MyAccountSubscriptionOverlay-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-MyAccountSubscriptionOverlay-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("MyAccountSubscriptionOverlay");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-MyAccountSubscriptionOverlay-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-MyAccountSubscriptionOverlay-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-
-    <div id='dialog-overlay-InsertOverlay-base' class='ui-dialog-overlay-base-modal' ><div id='InsertOverlay' role='dialog' tabindex='-1'  class='ui-dialog-overlay large' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-InsertOverlay-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-InsertOverlay-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("InsertOverlay");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-InsertOverlay-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-InsertOverlay-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    <div id='dialog-overlay-InsertOverlay2-base' class='ui-dialog-overlay-base-modal' ><div id='InsertOverlay2' role='dialog' tabindex='-1'  class='ui-dialog-overlay large' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-InsertOverlay2-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-InsertOverlay2-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("InsertOverlay2");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-InsertOverlay2-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-InsertOverlay2-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    
-    <div id="videowrapper" class="ui-helper-hidden">
-        <div id="videodialog" role="application">
-            <a id="videodialog-close" role="button" href="javascript:;" aria-label="Close Overlay" class="close-btn" onclick="closeVideoDialog();">CLOSE</a>
-            <div id="videodialog-video" ></div>
-            <div id="videodialog-foot" tabindex="0"></div>
-        </div>
-    </div>
-    <div id="attachmentwrapper" class="ui-helper-hidden">
-        <div id="attachmentdialog" role="application">
-            <a id="attachmentdialog-close" role="button" href="javascript:;" aria-label="Close Overlay" class="close-btn" onclick="closeAttachmentDialog();">CLOSE</a>
-            <div id="attachmentdialog-container"></div>
-        </div>
-    </div>
-    <script type="text/javascript">
-
-        $(document).ready(function () { 
-
-            removeBrokenImages();
-            checkSidebar();
-            RemoveCookie();
-
-            
-            //$('div.bullet').attr('tabindex', '');
-
-            
-
-            $('.navigation li.collapsible').each(function () {
-                if ($(this).find('ul').length == 0) {
-                    $(this).removeClass('collapsible');
-                }
-            });
-
-            // find page nav state cookie and add open chevron
-            var arrValues = GetCookie('SWPageNavState').split('~');
-
-            $.each(arrValues, function () {
-                if (this != '') {
-                   //$('#' + this).addClass('collapsible').prepend("<div class='bullet collapsible' aria-label='Close Page Submenu'/>");
-                    $('#' + this).addClass('collapsible').prepend("<div class='bullet collapsible' aria-haspopup='true' aria-expanded='true' />");
-                }
-            });
-
-            // find remaining sub menus and add closed chevron and close menu
-            $('.navigation li > ul').each(function () {
-                var list = $(this);
-
-                if (list.parent().hasClass('active') && !list.parent().hasClass('collapsible')) {
-                    // open sub for currently selected page                    
-                    //list.parent().addClass('collapsible').prepend("<div class='bullet collapsible'aria-label='Close Page Submenu' />");
-                    list.parent().addClass('collapsible').prepend("<div class='bullet collapsible' aria-haspopup='true' aria-expanded='true' />");
-                } else {
-                    if (list.parent().hasClass('collapsible') && !list.siblings('div').hasClass('collapsible')) {
-                        // open sub for page with auto expand
-                        list.siblings('div.expandable').remove();
-                        //list.parent().prepend("<div class='bullet collapsible' aria-label='Close Page Submenu' />");
-                        list.parent().prepend("<div class='bullet collapsible' aria-haspopup='true' aria-expanded='true' />");
-                    }
-                }
-
-                if (!list.siblings('div').hasClass('collapsible')) {
-                    // keep all closed that aren't already set to open
-                    //list.parent().addClass('expandable').prepend("<div class='bullet expandable' aria-label='Open Page Submenu' />");
-                    list.parent().addClass('expandable').prepend("<div class='bullet expandable' aria-haspopup='true' aria-expanded='false' />");
-                    ClosePageSubMenu(list.parent());
-                } else {
-                   OpenPageSubMenu(list.parent());
-                }
-            });
-
-            $(".navigation .bullet.collapsible, .navigation .bullet.expandable, .navigation a").each(function () {
-                if ($(this).closest("ul").attr("aria-hidden") == "true"){
-                    $(this).attr("tabindex", "-1");
-                } else {
-                    $(this).attr("tabindex", "0");
-                }
-            })
-
-            // remove bullet from hierarchy if no-bullet set
-            $('.navigation li.collapsible').each(function () {
-                if ($(this).hasClass('no-bullet')) {
-                    if (!$(this).hasClass('navigationgroup')) { $(this).removeClass('collapsible'); }
-                    $(this).children('div.collapsible').remove();
-                }
-            });
-
-            $('.navigation li.expandable').each(function () {
-                if ($(this).hasClass('no-bullet')) {
-                    if (!$(this).hasClass('navigationgroup')) { $(this).removeClass('expandable'); }
-                    $(this).children('div.expandable').remove();
-                }
-            });
-
-            $('.navigation li:not(.collapsible,.expandable,.no-bullet)').each(function () {
-                $(this).prepend("<div class='bullet'/>");
-            });
-
-            $('.navigation li.active').parents('ul').each(function () {
-                if (!$(this).hasClass('page-navigation')) {
-                    OpenPageSubMenu($(this).parent());
-                }
-            });
-
-            // Set aria ttributes
-            /*$('li.collapsible').each(function () {
-               $(this).attr("aria-expanded", "true");
-               $(this).find('div:first').attr('aria-pressed', 'true');
-            });*/
-
-            $('li.expandable').each(function () {
-                ///$(this).attr("aria-expanded", "false");
-                //$(this).find('div:first').attr('aria-pressed', 'false');
-                $(this).find("ul :focusable").attr("tabindex","-1");
-            });
-
-            /*$('div.bullet').each(function () {
-                $(this).attr("aria-hidden", "true");
-            });*/
-
-            // set click event for chevron
-            $(document).on('click', '.navigation div.collapsible', function () {
-                ClosePageSubMenu($(this).parent());
-            });
-
-            $(document).on('click', '.navigation div.expandable', function () {
-                OpenPageSubMenu($(this).parent());
-            });
-
-            // set navigation grouping links
-            $(document).on('click', '.navigationgroup.collapsible > a', function () {
-                ClosePageSubMenu($(this).parent());
-            });
-
-            $(document).on('click', '.navigationgroup.expandable > a', function () {
-                OpenPageSubMenu($(this).parent());
-            });
-
-            //SW MYSTART DROPDOWNS
-            $(document).on('click', '.sw-mystart-dropdown', function () {
-                $(this).children(".sw-dropdown").css("display", "block");
-            });
-
-            $(".sw-mystart-dropdown").hover(function () { }, function () {
-                $(this).children(".sw-dropdown").hide();
-                $(this).blur();
-            });
-
-            //SW ACCOUNT DROPDOWN
-            $(document).on('click', '#sw-mystart-account', function () {
-                $(this).children("#sw-myaccount-list").show();
-                $(this).addClass("clicked-state");
-            });
-
-            $("#sw-mystart-account, #sw-myaccount-list").hover(function () { }, function () {
-                $(this).children("#sw-myaccount-list").hide();
-                $(this).removeClass("clicked-state");
-                $("#sw-myaccount").blur();
-            });
-
-            // set hover class for page and section navigation
-            $('.ui-widget.app.pagenavigation, .ui-widget.app.sectionnavigation').find('li > a').hover(function () {
-                $(this).addClass('hover');
-            }, function () {
-                $(this).removeClass('hover');
-            });
-
-            //set aria-label for home
-            $('#navc-HP > a').attr('aria-label', 'Home');
-
-            // set active class on channel and section
-            var activeChannelNavType = $('input#hidActiveChannelNavType').val();
-            if (activeChannelNavType == -1) {
-                // homepage is active
-                $('#navc-HP').addClass('active');
-            } else if (activeChannelNavType == 1) {
-                // calendar page is active
-                $('#navc-CA').addClass('active');
-            } else {
-                // channel is active - set the active class on the channel
-                var activeSelectorID = $('input#hidActiveChannel').val();
-                $('#navc-' + activeSelectorID).addClass('active');
-
-                // set the breadcrumb channel href to the channel nav href
-                $('li[data-bccID=' + activeSelectorID + '] a').attr('href', $('#navc-' + activeSelectorID + ' a').attr('href'));
-                $('li[data-bccID=' + activeSelectorID + '] a span').text($('#navc-' + activeSelectorID + ' a span').first().text());
-
-                // set the active class on the section
-                activeSelectorID = $('input#hidActiveSection').val();
-                $('#navs-' + activeSelectorID).addClass('active');
-
-                // set the breadcrumb section href to the channel nav href
-                $('li[data-bcsID=' + activeSelectorID + '] a').attr('href', $('#navs-' + activeSelectorID + ' a').attr('href'));
-                if ($('#navs-' + activeSelectorID + ' a').attr('target') !== undefined) {
-                    $('li[data-bcsID=' + activeSelectorID + '] a').attr('target', $('#navs-' + activeSelectorID + ' a').attr('target'));
-                }
-                $('li[data-bcsID=' + activeSelectorID + '] span').text($('#navs-' + activeSelectorID + ' a span').text());
-
-                if ($('.sw-directory-columns').length > 0) {
-                    $('ul.ui-breadcrumbs li:last-child').remove();
-                    $('ul.ui-breadcrumbs li:last-child a').replaceWith(function() { return $('span', this); });
-                    $('ul.ui-breadcrumbs li:last-child span').append(' Directory');
-                }
-            }
-        }); // end document ready
-
-        function OpenPageSubMenu(li) {
-            if (li.prop('tagName').toLowerCase() == "li") {
-                if (li.hasClass('expandable')) {
-                    li.removeClass('expandable').addClass('collapsible');
-                }
-                if (li.find('div:first').hasClass('expandable')) {
-                    let linkText = li.find("> a").text();
-                    //li.find('div:first').removeClass('expandable').addClass('collapsible').attr('aria-pressed', 'true').attr('aria-label', 'Close Page Submenu');
-                    li.find('div:first').removeClass('expandable').addClass('collapsible').attr({
-                        "aria-expanded": "true",
-                        "aria-label": "Collapse "+linkText+" nested links"
-                    });
-                }
-                li.find('ul:first').attr('aria-hidden', 'false').show();
-                li.find("ul:first > li > .bullet.expandable, ul:first > li > .bullet.collapsible, ul:first > li > a").attr("tabindex", "0");
-                //li.find("li.expandable ul :focusable").attr("tabindex","-1");
-
-                //li.attr("aria-expanded", "true");
-
-                PageNavigationStateCookie();
-            }
-        }
-
-        function ClosePageSubMenu(li) {
-            if (li.prop('tagName').toLowerCase() == "li") {
-                let linkText = li.find("> a").text();
-                li.removeClass('collapsible').addClass('expandable');
-                //li.find('div:first').removeClass('collapsible').addClass('expandable').attr('aria-pressed', 'false').attr('aria-label', 'Open Page Submenu');
-                li.find('div:first').removeClass('collapsible').addClass('expandable').attr({
-                    "aria-expanded": "false",
-                    "aria-label": "Expand "+linkText+" nested links"
-                });
-                li.find('ul:first').attr('aria-hidden', 'true').hide();
-                li.find("ul:first .bullet.expandable, ul:first .bullet.collapsible, ul:first a").attr("tabindex","-1");
-
-                //li.attr("aria-expanded", "false");
-
-                PageNavigationStateCookie();
-            }
-        }
-
-        function PageNavigationStateCookie() {
-            var strCookie = "";
-
-            $('.pagenavigation li > ul').each(function () {
-                var item = $(this).parent('li');
-                if (item.hasClass('collapsible') && !item.hasClass('no-bullet')) {
-                    strCookie += $(this).parent().attr('id') + '~';
-                }
-            });
-
-            SetCookie('SWPageNavState', strCookie);
-        }
-
-        function checkSidebar() {
-            $(".ui-widget-sidebar").each(function () {
-                if ($.trim($(this).html()) != "") {
-                    $(this).show();
-                    $(this).siblings(".ui-widget-detail").addClass("with-sidebar");
-                }
-            });
-        }
-
-        function removeBrokenImages() {
-            //REMOVES ANY BROKEN IMAGES
-            $("span.img img").each(function () {
-                if ($(this).attr("src") !== undefined && $(this).attr("src") != '../../') {
-                    $(this).parent().parent().show();
-                    $(this).parent().parent().siblings().addClass("has-thumb");
-                }
-            });
-        }
-
-        function LoadEventDetailUE(moduleInstanceID, eventDateID, userRegID, isEdit) {
-            (userRegID === undefined ? userRegID = 0 : '');
-            (isEdit === undefined ? isEdit = false : '');
-            OpenDialogOverlay("WindowMediumModal", { LoadType: "U", LoadURL: "https://www.manvilleschools.org//site/UserControls/Calendar/EventDetailWrapper.aspx?ModuleInstanceID=" + moduleInstanceID + "&EventDateID=" + eventDateID + "&UserRegID=" + userRegID + "&IsEdit=" + isEdit });
-        }
-
-        function RemoveCookie() {
-            // There are no sub page            
-            if ($('.pagenavigation li li').length == 0) {
-                //return false;
-                PageNavigationStateCookie();
-            }
-        }
-    </script>
-
-    <script type="text/javascript">
-
-        function AddOffCanvasMenuHeightForSiteNav() {
-            var sitenavulHeight = 0;
-
-            if ($('#sw-pg-sitenav-ul').length > 0) {
-                sitenavulHeight = parseInt($("#sw-pg-sitenav-ul").height());
-            }
-
-            var swinnerwrapHeight = 0;
-
-            if ($('#sw-inner-wrap').length > 0) {
-                swinnerwrapHeight = parseInt($("#sw-inner-wrap").height());
-            }
-
-            // 360px is abount 5 li height
-            if (sitenavulHeight + 360 >= swinnerwrapHeight) {
-                $("#sw-inner-wrap").height(sitenavulHeight + 360);
-            }
-        }
-
-        function AddOffCanvasMenuHeightForSelectSchool() {
-            var selectschoolulHeight = 0;
-
-            if ($('#sw-pg-selectschool-ul').length > 0) {
-                selectschoolulHeight = parseInt($("#sw-pg-selectschool-ul").height());
-            }
-
-            var swinnerwrapHeight = 0;
-
-            if ($('#sw-inner-wrap').length > 0) {
-                swinnerwrapHeight = parseInt($("#sw-inner-wrap").height());
-            }
-
-            // 360px is abount 5 li height
-            if (selectschoolulHeight + 360 >= swinnerwrapHeight) {
-                $("#sw-inner-wrap").height(selectschoolulHeight + 360);
-            }
-        }
-
-        $(document).ready(function () {
-            if ($("#sw-pg-sitenav-a").length > 0) {
-                $(document).on('click', '#sw-pg-sitenav-a', function () {
-                    if ($("#sw-pg-sitenav-ul").hasClass('sw-pgmenu-closed')) {
-                        AddOffCanvasMenuHeightForSiteNav();
-
-                        $("ul.sw-pgmenu-toplevel").removeClass('sw-pgmenu-open').addClass('sw-pgmenu-closed');
-                        $("#sw-pg-sitenav-ul").removeClass('sw-pgmenu-closed');
-                        $("#sw-pg-sitenav-ul").addClass('sw-pgmenu-open');
-                    } else {
-                        $("#sw-pg-sitenav-ul").removeClass('sw-pgmenu-open');
-                        $("#sw-pg-sitenav-ul").addClass('sw-pgmenu-closed');
-                    }
-                });
-
-                $(document).on('click', '#sw-pg-selectschool-a', function () {
-                    if ($("#sw-pg-selectschool-ul").hasClass('sw-pgmenu-closed')) {
-                        AddOffCanvasMenuHeightForSelectSchool();
-
-                        $("ul.sw-pgmenu-toplevel").removeClass('sw-pgmenu-open').addClass('sw-pgmenu-closed');
-                        $("#sw-pg-selectschool-ul").removeClass('sw-pgmenu-closed');
-                        $("#sw-pg-selectschool-ul").addClass('sw-pgmenu-open');
-                    } else {
-                        $("#sw-pg-selectschool-ul").removeClass('sw-pgmenu-open');
-                        $("#sw-pg-selectschool-ul").addClass('sw-pgmenu-closed');
-                    }
-                });
-
-                $(document).on('click', '#sw-pg-myaccount-a', function () {
-                    if ($("#sw-pg-myaccount-ul").hasClass('sw-pgmenu-closed')) {
-                        $("ul.sw-pgmenu-toplevel").removeClass('sw-pgmenu-open').addClass('sw-pgmenu-closed');
-                        $("#sw-pg-myaccount-ul").removeClass('sw-pgmenu-closed');
-                        $("#sw-pg-myaccount-ul").addClass('sw-pgmenu-open');
-                    } else {
-                        $("#sw-pg-myaccount-ul").removeClass('sw-pgmenu-open');
-                        $("#sw-pg-myaccount-ul").addClass('sw-pgmenu-closed');
-                    }
-                });
-
-                $(document).on('click', '.pg-list-bullet', function () {
-                    $(this).prev().toggle();
-
-                    if ($(this).hasClass('closed')) {
-                        AddOffCanvasMenuHeightForSiteNav();
-
-                        $(this).removeClass('closed');
-                        $(this).addClass('open');
-                    } else {
-                        $(this).removeClass('open');
-                        $(this).addClass('closed');
-                    }
-                });
-
-                $(document).on('mouseover', '#sw-pg-selectschool', function () {
-                    $("#sw-pg-selectschool-firstli").removeClass('sw-pg-selectschool-firstli-mouseout').addClass('sw-pg-selectschool-firstli-mouseover');
-                    $("#sw-pg-selectschool-firstli a").addClass('sw-pg-selectschool-firstli-a-mouseover').removeClass('sw-pg-selectschool-firstli-a-mouseout');
-                });
-
-                $(document).on('mouseout', '#sw-pg-selectschool', function () {
-                    $("#sw-pg-selectschool-firstli").removeClass('sw-pg-selectschool-firstli-mouseover').addClass('sw-pg-selectschool-firstli-mouseout');
-                    $("#sw-pg-selectschool-firstli a").addClass('sw-pg-selectschool-firstli-a-mouseout').removeClass('sw-pg-selectschool-firstli-a-mouseover');
-                });
-
-                $(document).on('mouseover', '#sw-pg-myaccount', function () {
-                    $("#sw-pg-myaccount-firstli").removeClass('sw-pg-myaccount-firstli-mouseout').addClass('sw-pg-myaccount-firstli-mouseover');
-                    $("#sw-pg-myaccount-firstli a").addClass('sw-pg-myaccount-firstli-a-mouseover').removeClass('sw-pg-myaccount-firstli-a-mouseout');
-                });
-
-                $(document).on('mouseout', '#sw-pg-myaccount', function () {
-                    $("#sw-pg-myaccount-firstli").removeClass('sw-pg-myaccount-firstli-mouseover').addClass('sw-pg-myaccount-firstli-mouseout');
-                    $("#sw-pg-myaccount-firstli a").addClass('sw-pg-myaccount-firstli-a-mouseout').removeClass('sw-pg-myaccount-firstli-a-mouseover');
-                });
-
-                $(document).on('mouseover', '#sw-pg-sitenav', function () {
-                    $("#sw-pg-sitenav-firstli").removeClass('sw-pg-sitenav-firstli-mouseout').addClass('sw-pg-sitenav-firstli-mouseover');
-                    $("#sw-pg-sitenav-firstli a").addClass('sw-pg-sitenav-firstli-a-mouseover').removeClass('sw-pg-sitenav-firstli-a-mouseout');
-                });
-
-                $(document).on('mouseout', '#sw-pg-sitenav', function () {
-                    $("#sw-pg-sitenav-firstli").removeClass('sw-pg-sitenav-firstli-mouseover').addClass('sw-pg-sitenav-firstli-mouseout');
-                    $("#sw-pg-sitenav-firstli a").addClass('sw-pg-sitenav-firstli-a-mouseout').removeClass('sw-pg-sitenav-firstli-a-mouseover');
-                });
-
-                $(document).on('mouseover', '#sw-pg-district', function () {
-                    $("#sw-pg-district-firstli").removeClass('sw-pg-district-firstli-mouseout').addClass('sw-pg-district-firstli-mouseover');
-                    $("#sw-pg-district-firstli a").addClass('sw-pg-district-firstli-a-mouseover').removeClass('sw-pg-district-firstli-a-mouseout');
-                });
-
-                $(document).on('mouseout', '#sw-pg-district', function () {
-                    $("#sw-pg-district-firstli").removeClass('sw-pg-district-firstli-mouseover').addClass('sw-pg-district-firstli-mouseout');
-                    $("#sw-pg-district-firstli a").addClass('sw-pg-district-firstli-a-mouseout').removeClass('sw-pg-district-firstli-a-mouseover');
-                });
-            }
-        });
-
-
-    </script>
-    <script src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/min/SW-UI_2680.min.js" type='text/javascript'></script>
-    <script language="javascript" type='text/javascript' src="https://www.manvilleschools.org/Static/GlobalAssets/jQueryUI.min.js"></script>
-    <script src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/jquery.sectionlayer.js" type='text/javascript'></script>
-    <script src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/Initialize_2560.js" type='text/javascript'></script>
-    <script src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/min/swfobject.min.js" type="text/javascript"></script>
-    <script src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/min/jquery.ajaxupload_2440.min.js" type="text/javascript"></script>
-
-    <!-- Begin swuc.CheckScript -->
-  <script type="text/javascript" src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/ThirdParty/json2.js"></script>
-  <script type="text/javascript" src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/CheckScript_2780.js"></script>
-<!-- End swuc.CheckScript -->
-
-
-    <!-- Server Load Time (02): 0.0624956 Seconds -->
-
-    
-
-    <!-- off-canvas menu enabled-->
-    
-
-    <!-- Ally Alternative Formats Configure START   -->
-    
-<script>
-    AFExtensions = ".pdf,.doc,.docx,.ppt,.pptx,.odt,.odp";
-    AllyClientID = "13314";
-	    // Wait for the API to load     
-	    ally.ready(function() {
-		    // Configure an API instance
-            const ui = ally.ui({
-			    'client': {
-				    'baseUrl': 'https://prod.ally.ac',
-				    'clientId': 13314
-			    },
-			    'courseId': '1794',
-			    'locale': $('html').attr('lang'),
-			    'platformName': 'Wcm',  
-			    'role': 'anonymous'
-		    });
-	        // Apply the API to the page body   
-            ui.autoUpdate({'domWatch': 250});
-    });
-
-</script>
-    <!-- Ally Alternative Formats Configure END     -->
-
-</body>
-</html>

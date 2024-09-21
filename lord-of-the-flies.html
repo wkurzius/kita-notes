@@ -1,125 +1,77 @@
 <h1>Lord of the Flies</h1>
 
-		
-	</div>
-
-    <div class="ui-widget-footer">
-		  
-	</div>
-</div>
-<script type="text/javascript">
-$(document).ready(function (){
-$(".tag-list li a").keypress(function(e) { if(e.which == 13) { $(this).click();   }});
-});
-function LoadGroupedData(container, MIID, PMI, groupYear, groupMonth, groupBy, tag) {
-  //ViewToUse looks at the hidden Sidebar List View defined in the Builder View.
-  var viewToUse = "";
-    if($('#hid-'+MIID+'-SidebarListView').length > 0){
-      viewToUse = $("#hid-" + MIID + "-SidebarListView").val();
-    };
-  GetContent('https://www.manvilleschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=1794&PageID=5860&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&RenderLoc=0&FromRenderLoc=0&GroupYear=' + groupYear + '&GroupMonth=' + groupMonth + '&GroupByField=' + groupBy + '&EnableQuirksMode=0&ViewID=' + viewToUse + '&Tag=' + tag, container, 2, 'chkSidebar();');
-}
-function LoadData(container, MIID, PMI, flexDataID, groupYear, groupMonth, groupBy, targetView, tag) {
-  if(targetView !== undefined || targetView.Length() == 0){
-  //targetView looks at the hidden Detail View defined in the Builder View.
-      targetView = $('#hid-'+MIID+'-DetailView').val();
-   }
-  GetContent('https://www.manvilleschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=1794&PageID=5860&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&FlexDataID=' + flexDataID + '&GroupYear=' + groupYear + '&GroupMonth=' + groupMonth + '&GroupByField=' + groupBy + '&RenderLoc=0&FromRenderLoc=0&EnableQuirksMode=0&Tag=' + tag + '&ViewID=' + targetView, container, 2, 'chkSidebar();');
-}
-function LoadTaggedData(container, MIID, PMI, tag) {
-  //ViewToUse looks at the hidden Sidebar List View defined in the Builder View.
-  var viewToUse = "";
-    if($('#hid-'+MIID+'-SidebarListView').length > 0){
-      viewToUse = $("#hid-" + MIID + "-SidebarListView").val();
-    };
-  GetContent('https://www.manvilleschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=1794&PageID=5860&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&RenderLoc=0&FromRenderLoc=0&Tag=' + tag + '&EnableQuirksMode=0&ViewID='+viewToUse, container, 2, 'chkSidebar();');
-  setTimeout(function(){ $("#module-content-"+ MIID +"").find('[tabindex]:first').focus(); }, 200);
-}
-</script>
-</div>
-
-</div></div>
-<div id='pmi-6705'>
-
-
-
-<div id='sw-module-70830'>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            var DomainID = '1794';
-            var PageID = '5860';
-            var RenderLoc = '0';
-            var MIID = '7083';
-
-            //added to check to make sure moderated content doesn't bleed through the dialog
-            if ($('#dialog-overlay-WindowLargeModal-body.moderateContent').length > 0) {
-                $("#module-content-" + MIID).find(".ui-widget-detail").find(".ui-article").append("<p>&nbsp;</p>");
-            }
-        });
-    </script>
-
-    <script type="text/javascript">$(document).ready(function() {CheckScript('ModuleView');CheckScript('Mustache');
- });</script>
-    
-    <div id="module-content-7083" >
-<div class="ui-widget app flexpage">
-	<div class="ui-widget-header ui-helper-hidden">
-		
-	</div>
-	
-	<div class="ui-widget-detail">
-		<ul class="ui-articles">
-<li>
-	<div class="ui-article">
-		<div class="ui-article-description">
-        	<span><span ><p>&nbsp;</p>
-<p><strong>&nbsp;</strong></p>
-<p><strong>Some of the information on my website about <em>Lord of the Flies </em>was taken from the below website. <br /></strong></p>
-<p><strong><a href="http://wdb.sad17.k12.me.us/teachers/bburns/com/documents/literature/lof/analysis.html">http://wdb.sad17.k12.me.us/teachers/bburns/com/documents/literature/lof/analysis.html</a></strong></p>
+<p><strong>Some of the information on my website about <em>Lord of the Flies
+        </em>was taken from the below website. <br /></strong></p>
+<p><strong><a
+            href="http://wdb.sad17.k12.me.us/teachers/bburns/com/documents/literature/lof/analysis.html">http://wdb.sad17.k12.me.us/teachers/bburns/com/documents/literature/lof/analysis.html</a></strong>
+</p>
 <p>&nbsp;</p>
 <p><em>Lord of the Flies </em>by William Golding-Published 1954</p>
-<p>The first and most successful novel written by William Golding. The novel was rejected 21 times before it was accepted by a publisher.</p>
+<p>The first and most successful novel written by William Golding. The novel
+    was rejected 21 times before it was accepted by a publisher.</p>
 <p>&nbsp;</p>
-<p>Golding received the Nobel Prize in Literature in 1983 and was Knighted by the Queen of England in 1988.</p>
+<p>Golding received the Nobel Prize in Literature in 1983 and was Knighted
+    by the Queen of England in 1988.</p>
 <p>&nbsp;</p>
-<p><em>Lord of the Flies </em>has sold over 7 million copies in the United States alone<em>.</em></p>
+<p><em>Lord of the Flies </em>has sold over 7 million copies in the United
+    States alone<em>.</em></p>
 <p><em>&nbsp;</em></p>
 <p>It is considered a "classic" novel.<em> <br /></em></p>
 <p>&nbsp;</p>
-<p><strong>Dystopian Novel</strong>- the society is defined by misery, oppression and disease, society does NOT function well</p>
+<p><strong>Dystopian Novel</strong>- the society is defined by misery,
+    oppression and disease, society does NOT function well</p>
 <p>&nbsp;</p>
-<p><strong>Post-War or Post Apocalyptic</strong>-a society after a great war or devasting event like a nuclear bomb or famine</p>
+<p><strong>Post-War or Post Apocalyptic</strong>-a society after a great war
+    or devasting event like a nuclear bomb or famine</p>
 <p>&nbsp;</p>
 <p><strong>Main Characters</strong></p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <table border="0" cellspacing="3" cellpadding="2">
-<tbody>
-<tr>
-<td valign="top" width="134">
-<p><img src="http://wdb.sad17.k12.me.us/teachers/bburns/com/documents/literature/lof/media/ralph.gif" alt="" width="134" height="124" align="bottom" /></p>
-</td>
-<td valign="top" width="248">
-<p>Ralph is twelve years old with blond hair, and is the most charismatic of the group. He is described as being built "like a boxer," and is initially chosen as leader due to his many positive qualities. He maintains a conflict with Jack throughout the entire novel, attempting to keep order whereas Jack isn't concerned with it. Ralph and Piggy together represent the struggle for order and democracy.</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-</td>
-</tr>
-</tbody>
+    <tbody>
+        <tr>
+            <td valign="top" width="134">
+                <p><img src="http://wdb.sad17.k12.me.us/teachers/bburns/com/documents/literature/lof/media/ralph.gif"
+                        alt="" width="134" height="124" align="bottom" />
+                </p>
+            </td>
+            <td valign="top" width="248">
+                <p>Ralph is twelve years old with blond hair, and is the
+                    most charismatic of the group. He is described as being
+                    built "like a boxer," and is initially chosen as leader
+                    due to his many positive qualities. He maintains a
+                    conflict with Jack throughout the entire novel,
+                    attempting to keep order whereas Jack isn't concerned
+                    with it. Ralph and Piggy together represent the struggle
+                    for order and democracy.</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+            </td>
+        </tr>
+    </tbody>
 </table>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <table border="0" cellspacing="3" cellpadding="2">
-<tbody>
-<tr>
-<td valign="top" width="134">
-<p><img src="http://wdb.sad17.k12.me.us/teachers/bburns/com/documents/literature/lof/media/jack.gif" alt="" width="134" height="125" align="bottom" /></p>
-</td>
-<td valign="top" width="248">
-<p>Jack is about Ralph's age, with a skinnier build and red hair. His freckled face is described as being "ugly without silliness." From the very beginning, he seems to harbor emotions of anger and savagery. At first, he is the leader of his choir group, who become hunters as the book progresses. Finally, his savage personality and ability to tell people wha they want to hear allows him to overtake Ralph as chief.</p>
-</td>
-</tr>
-</tbody>
+    <tbody>
+        <tr>
+            <td valign="top" width="134">
+                <p><img src="http://wdb.sad17.k12.me.us/teachers/bburns/com/documents/literature/lof/media/jack.gif"
+                        alt="" width="134" height="125" align="bottom" />
+                </p>
+            </td>
+            <td valign="top" width="248">
+                <p>Jack is about Ralph's age, with a skinnier build and red
+                    hair. His freckled face is described as being "ugly
+                    without silliness." From the very beginning, he seems to
+                    harbor emotions of anger and savagery. At first, he is
+                    the leader of his choir group, who become hunters as the
+                    book progresses. Finally, his savage personality and
+                    ability to tell people wha they want to hear allows him
+                    to overtake Ralph as chief.</p>
+            </td>
+        </tr>
+    </tbody>
 </table>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
@@ -133,317 +85,518 @@ function LoadTaggedData(container, MIID, PMI, tag) {
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <table border="0" cellspacing="3" cellpadding="2">
-<tbody>
-<tr>
-<td colspan="2" valign="top" bgcolor="#003300" width="382">
-<p><strong><a name="Anchor-4132"></a></strong></p>
-</td>
-</tr>
-<tr>
-<td valign="top" width="134">
-<p><img src="http://wdb.sad17.k12.me.us/teachers/bburns/com/documents/literature/lof/media/piggy.gif" alt="" width="134" height="127" align="bottom" /></p>
-</td>
-<td valign="top" width="248">
-<p>Piggy is a short and overweight boy who wears glasses and represents order and democracy. He is afflicted with asmtha and doesn't care to do strenuous work on the island. He tries very hard to cling to civilization, and tries his best to keep peace. While probably the smartest boy on the island, he lacks any social skills whatsoever, and has trouble communicating or fitting in with the others. His glasses are a very important part of the book, as they are used over and over to start fires. Piggy's constant polishing of them shows his desire for clear-sightedness and civilization.</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-</td>
-</tr>
-</tbody>
-</table>
-<p><strong>&nbsp;</strong></p>
-<p>&nbsp;</p>
-<table border="0" cellspacing="3" cellpadding="2">
-<tbody>
-<tr>
-<td colspan="2" valign="top" bgcolor="#003300" width="382">
-<p><strong><a name="Anchor-35534"></a></strong></p>
-</td>
-</tr>
-<tr>
-<td valign="top" width="134">
-<p><img src="http://wdb.sad17.k12.me.us/teachers/bburns/com/documents/literature/lof/media/simon.gif" alt="" width="134" height="128" align="bottom" /></p>
-</td>
-<td valign="top" width="248">
-<p>Simon is younger than the three boys above, but older than other littluns. He is very good and pure, and has the most positive outlook. He insist multiple times that they will get rescued, even when Ralph is strongly doubting the possibility. Simon often travels into his tranquil spot in the jungle, but also tries to help out when it is needed. He meets up with a pig's head skewered on a stick, which becomes known as the Lord of the Flies. Simon is killed soon afterward by all of the other boys who were caught up in a savage dance.</p>
-</td>
-</tr>
-</tbody>
-</table>
-<p><strong>&nbsp;</strong></p>
-<p>&nbsp;</p>
-<table border="0" cellspacing="3" cellpadding="2">
-<tbody>
-<tr>
-<td valign="top" width="134">
-<p><img src="http://wdb.sad17.k12.me.us/teachers/bburns/com/documents/literature/lof/media/roger.gif" alt="" width="134" height="123" align="bottom" /></p>
-</td>
-<td valign="top" width="248">
-<p>A small boy with dirty and shaggy black hair, Roger represents pure evil and wrongness, moreso even than Jack. He has no mercy, and is the first one to intentionally kill another boy on the island when he smashed Piggy with a boulder. He gets sadistic pleasure from torturing a pig and other boys on the island. Roger is one of Jack's most loyal helpers, and gladly carries out his orders.</p>
-</td>
-</tr>
-</tbody>
+    <tbody>
+        <tr>
+            <td colspan="2" valign="top" bgcolor="#003300" width="382">
+                <p><strong><a name="Anchor-4132"></a></strong></p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="134">
+                <p><img src="http://wdb.sad17.k12.me.us/teachers/bburns/com/documents/literature/lof/media/piggy.gif"
+                        alt="" width="134" height="127" align="bottom" />
+                </p>
+            </td>
+            <td valign="top" width="248">
+                <p>Piggy is a short and overweight boy who wears glasses and
+                    represents order and democracy. He is afflicted with
+                    asmtha and doesn't care to do strenuous work on the
+                    island. He tries very hard to cling to civilization, and
+                    tries his best to keep peace. While probably the
+                    smartest boy on the island, he lacks any social skills
+                    whatsoever, and has trouble communicating or fitting in
+                    with the others. His glasses are a very important part
+                    of the book, as they are used over and over to start
+                    fires. Piggy's constant polishing of them shows his
+                    desire for clear-sightedness and civilization.</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+            </td>
+        </tr>
+    </tbody>
 </table>
 <p><strong>&nbsp;</strong></p>
 <p>&nbsp;</p>
 <table border="0" cellspacing="3" cellpadding="2">
-<tbody>
-<tr>
-<td colspan="2" valign="top" bgcolor="#003300" width="382">
-<p><strong><a name="Anchor-59335"></a></strong></p>
-</td>
-</tr>
-<tr>
-<td valign="top" width="134">
-<p><img src="http://wdb.sad17.k12.me.us/teachers/bburns/com/documents/literature/lof/media/samneric.gif" alt="" width="134" height="121" align="bottom" /></p>
-</td>
-<td valign="top" width="248">
-<p>Sam and Eric are two young twins who always travel and do everything together. Without each other, they are incapable of very much. They represent reliance and unity, and because of this become like one person referred to as Samneric. While seemingly loyal to Ralph, they eventually give in to Jack's threats and join his tribe. While Ralph hoped otherwise, the twins in the end disclose Ralph's hiding spot to Jack. The loss of civilization led them to lose any real sense of loyalty to others.</p>
-</td>
-</tr>
-</tbody>
+    <tbody>
+        <tr>
+            <td colspan="2" valign="top" bgcolor="#003300" width="382">
+                <p><strong><a name="Anchor-35534"></a></strong></p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="134">
+                <p><img src="http://wdb.sad17.k12.me.us/teachers/bburns/com/documents/literature/lof/media/simon.gif"
+                        alt="" width="134" height="128" align="bottom" />
+                </p>
+            </td>
+            <td valign="top" width="248">
+                <p>Simon is younger than the three boys above, but older
+                    than other littluns. He is very good and pure, and has
+                    the most positive outlook. He insist multiple times that
+                    they will get rescued, even when Ralph is strongly
+                    doubting the possibility. Simon often travels into his
+                    tranquil spot in the jungle, but also tries to help out
+                    when it is needed. He meets up with a pig's head
+                    skewered on a stick, which becomes known as the Lord of
+                    the Flies. Simon is killed soon afterward by all of the
+                    other boys who were caught up in a savage dance.</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p><strong>&nbsp;</strong></p>
+<p>&nbsp;</p>
+<table border="0" cellspacing="3" cellpadding="2">
+    <tbody>
+        <tr>
+            <td valign="top" width="134">
+                <p><img src="http://wdb.sad17.k12.me.us/teachers/bburns/com/documents/literature/lof/media/roger.gif"
+                        alt="" width="134" height="123" align="bottom" />
+                </p>
+            </td>
+            <td valign="top" width="248">
+                <p>A small boy with dirty and shaggy black hair, Roger
+                    represents pure evil and wrongness, moreso even than
+                    Jack. He has no mercy, and is the first one to
+                    intentionally kill another boy on the island when he
+                    smashed Piggy with a boulder. He gets sadistic pleasure
+                    from torturing a pig and other boys on the island. Roger
+                    is one of Jack's most loyal helpers, and gladly carries
+                    out his orders.</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p><strong>&nbsp;</strong></p>
+<p>&nbsp;</p>
+<table border="0" cellspacing="3" cellpadding="2">
+    <tbody>
+        <tr>
+            <td colspan="2" valign="top" bgcolor="#003300" width="382">
+                <p><strong><a name="Anchor-59335"></a></strong></p>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="134">
+                <p><img src="http://wdb.sad17.k12.me.us/teachers/bburns/com/documents/literature/lof/media/samneric.gif"
+                        alt="" width="134" height="121" align="bottom" />
+                </p>
+            </td>
+            <td valign="top" width="248">
+                <p>Sam and Eric are two young twins who always travel and do
+                    everything together. Without each other, they are
+                    incapable of very much. They represent reliance and
+                    unity, and because of this become like one person
+                    referred to as Samneric. While seemingly loyal to Ralph,
+                    they eventually give in to Jack's threats and join his
+                    tribe. While Ralph hoped otherwise, the twins in the end
+                    disclose Ralph's hiding spot to Jack. The loss of
+                    civilization led them to lose any real sense of loyalty
+                    to others.</p>
+            </td>
+        </tr>
+    </tbody>
 </table>
 <p><strong>&nbsp;</strong></p>
 <p><strong>Summary</strong></p>
-<p>A group of school boys have been marooned on an island after their plane has crashed. There was a bomb attack.</p>
-<p>The boys (innocent children) attempt to make a new society. The assumption is that innocent children will create a better society than adults. However, in the book the author William Golding proves that even innocent children on an island paradise will create a society that rewards power and violence.</p>
+<p>A group of school boys have been marooned on an island after their plane
+    has crashed. There was a bomb attack.</p>
+<p>The boys (innocent children) attempt to make a new society. The
+    assumption is that innocent children will create a better society than
+    adults. However, in the book the author William Golding proves that even
+    innocent children on an island paradise will create a society that
+    rewards power and violence.</p>
 <p>&nbsp;</p>
 <p><strong>The Author's Purpose</strong></p>
-<p>Golding wanted to write a book that revealed that humans STRUGGLE to be civilized, obey rules, act lawfully and behave morally.</p>
-<p>Humans must constantly fight their SAVAGE INSTINCT to seek power, act selfishly, disobey rules and are basically violent.</p>
-<p>Golding had a very dark view of human nature after being a soldier during WWII.</p>
+<p>Golding wanted to write a book that revealed that humans STRUGGLE to be
+    civilized, obey rules, act lawfully and behave morally.</p>
+<p>Humans must constantly fight their SAVAGE INSTINCT to seek power, act
+    selfishly, disobey rules and are basically violent.</p>
+<p>Golding had a very dark view of human nature after being a soldier during
+    WWII.</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p><strong>Symbolism In <em>Lord of the Flies</em></strong></p>
 <p>&nbsp;</p>
-<p>Symbolism played an important part in the development of story. This narrative technique is used to give a significance to certain people or objects, which represent some other figure. The following table lists many of the examples of symbolism used throughout Golding's book.</p>
+<p>Symbolism played an important part in the development of story. This
+    narrative technique is used to give a significance to certain people or
+    objects, which represent some other figure. The following table lists
+    many of the examples of symbolism used throughout Golding's book.</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <table border="0" cellpadding="2">
-<tbody>
-<tr>
-<td bgcolor="#000066">
-<p><strong>Object/Character</strong></p>
-</td>
-<td bgcolor="#003300">
-<p><strong>Represents</strong></p>
-</td>
-</tr>
-<tr>
-<td bgcolor="#9999CC">
-<p>Piggy (and Glasses)</p>
-</td>
-<td bgcolor="#99CC99">
-<p>Clear-sightedness, intelligence. Their state represents the status of social order.</p>
-</td>
-</tr>
-<tr>
-<td bgcolor="#9999CC">
-<p>Ralph, The Conch</p>
-</td>
-<td bgcolor="#99CC99">
-<p>Democracy, Order</p>
-</td>
-</tr>
-<tr>
-<td bgcolor="#9999CC">
-<p>Simon</p>
-</td>
-<td bgcolor="#99CC99">
-<p>Pure Goodness, "Christ Figure"</p>
-</td>
-</tr>
-<tr>
-<td bgcolor="#9999CC">
-<p>Roger</p>
-</td>
-<td bgcolor="#99CC99">
-<p>Evil, Satan</p>
-</td>
-</tr>
-<tr>
-<td bgcolor="#9999CC">
-<p>Jack</p>
-</td>
-<td bgcolor="#99CC99">
-<p>Savagery, Anarchy</p>
-</td>
-</tr>
-<tr>
-<td bgcolor="#9999CC">
-<p>The Island</p>
-</td>
-<td bgcolor="#99CC99">
-<p>A microcosm representing the world</p>
-</td>
-</tr>
-<tr>
-<td bgcolor="#9999CC">
-<p>The "Scar"</p>
-</td>
-<td bgcolor="#99CC99">
-<p>Man's destruction, destructive forces</p>
-</td>
-</tr>
-<tr>
-<td bgcolor="#9999CC">
-<p>The Beast</p>
-</td>
-<td bgcolor="#99CC99">
-<p>The evil residing within everyone, the dark side of human nature.</p>
-</td>
-</tr>
-<tr>
-<td bgcolor="#9999CC">
-<p>Lord of the Flies</p>
-</td>
-<td bgcolor="#99CC99">
-<p>The Devil, great danger or evil</p>
-</td>
-</tr>
-</tbody>
+    <tbody>
+        <tr>
+            <td bgcolor="#000066">
+                <p><strong>Object/Character</strong></p>
+            </td>
+            <td bgcolor="#003300">
+                <p><strong>Represents</strong></p>
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#9999CC">
+                <p>Piggy (and Glasses)</p>
+            </td>
+            <td bgcolor="#99CC99">
+                <p>Clear-sightedness, intelligence. Their state represents
+                    the status of social order.</p>
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#9999CC">
+                <p>Ralph, The Conch</p>
+            </td>
+            <td bgcolor="#99CC99">
+                <p>Democracy, Order</p>
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#9999CC">
+                <p>Simon</p>
+            </td>
+            <td bgcolor="#99CC99">
+                <p>Pure Goodness, "Christ Figure"</p>
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#9999CC">
+                <p>Roger</p>
+            </td>
+            <td bgcolor="#99CC99">
+                <p>Evil, Satan</p>
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#9999CC">
+                <p>Jack</p>
+            </td>
+            <td bgcolor="#99CC99">
+                <p>Savagery, Anarchy</p>
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#9999CC">
+                <p>The Island</p>
+            </td>
+            <td bgcolor="#99CC99">
+                <p>A microcosm representing the world</p>
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#9999CC">
+                <p>The "Scar"</p>
+            </td>
+            <td bgcolor="#99CC99">
+                <p>Man's destruction, destructive forces</p>
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#9999CC">
+                <p>The Beast</p>
+            </td>
+            <td bgcolor="#99CC99">
+                <p>The evil residing within everyone, the dark side of human
+                    nature.</p>
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#9999CC">
+                <p>Lord of the Flies</p>
+            </td>
+            <td bgcolor="#99CC99">
+                <p>The Devil, great danger or evil</p>
+            </td>
+        </tr>
+    </tbody>
 </table>
 <p>&nbsp;</p>
-<p>&nbsp;There are many other aspects in the story that may be considered symbolism, but the several above are probably the most significant. Another good example of symbolism, brought to my attention by a site visitor, is the shape of the island. The boat shape of the island is an ancient symbol of civilization. The water current around the island seems to be "flowing backwards," giving the subtle impression that civilization may be going backwards for the island or its inhabitants. Additionally, another reader pointed out that Jack could also represent Communism or Fascism. Golding was influenced by events during the time period that the book was written, which was around World War II.</p>
+<p>&nbsp;There are many other aspects in the story that may be considered
+    symbolism, but the several above are probably the most significant.
+    Another good example of symbolism, brought to my attention by a site
+    visitor, is the shape of the island. The boat shape of the island is an
+    ancient symbol of civilization. The water current around the island
+    seems to be "flowing backwards," giving the subtle impression that
+    civilization may be going backwards for the island or its inhabitants.
+    Additionally, another reader pointed out that Jack could also represent
+    Communism or Fascism. Golding was influenced by events during the time
+    period that the book was written, which was around World War II.</p>
 <p>&nbsp;</p>
 <p><strong>The Setting</strong></p>
 <p>&nbsp;</p>
-<p>&nbsp;<img class="decoded" src="http://wdb.sad17.k12.me.us/teachers/bburns/com/documents/literature/lof/media/islandbig.jpg" alt="http://wdb.sad17.k12.me.us/teachers/bburns/com/documents/literature/lof/media/islandbig.jpg" /></p>
+<p>&nbsp;<img class="decoded"
+        src="http://wdb.sad17.k12.me.us/teachers/bburns/com/documents/literature/lof/media/islandbig.jpg"
+        alt="http://wdb.sad17.k12.me.us/teachers/bburns/com/documents/literature/lof/media/islandbig.jpg" />
+</p>
 <p>&nbsp;</p>
 <p><strong>Chapter 1-"The Sound of the Shell"-Pages 1-23<br /></strong></p>
 <p>The setting of the book:</p>
-<p>A remote island with no people. The island has a blue lagoon, surrounded by a coral reef, pink rocks, a jungle and mountain. The island has fruit and vegetables to eat. There are wild pigs on the island.</p>
+<p>A remote island with no people. The island has a blue lagoon, surrounded
+    by a coral reef, pink rocks, a jungle and mountain. The island has fruit
+    and vegetables to eat. There are wild pigs on the island.</p>
 <p>&nbsp;</p>
 <p>Situation of the characters</p>
-<p>A group of school boys was flying on an airplane. There was a nuclear explosion/bomb. The plane crashed in the jungle or a deserted island. The pilot died in the crash. There are no adults on the island. The boys must survive on their own. The boys create their own society while they are waiting to be rescued.</p>
+<p>A group of school boys was flying on an airplane. There was a nuclear
+    explosion/bomb. The plane crashed in the jungle or a deserted island.
+    The pilot died in the crash. There are no adults on the island. The boys
+    must survive on their own. The boys create their own society while they
+    are waiting to be rescued.</p>
 <p>&nbsp;</p>
 <p>Introduces the major character of the book</p>
-<p><br />Ralph-is athletic and charismatic. He is 12 years old. He finds a conch shell and calls all the boys to meeting. Ralph is "good" he believes in the rules of society and working hard, but Ralph follows the rules because he enjoys the rewards of good behavior and wants to avoid the consequences of breaking the rules.</p>
+<p><br />Ralph-is athletic and charismatic. He is 12 years old. He finds a
+    conch shell and calls all the boys to meeting. Ralph is "good" he
+    believes in the rules of society and working hard, but Ralph follows the
+    rules because he enjoys the rewards of good behavior and wants to avoid
+    the consequences of breaking the rules.</p>
 <p>&nbsp;</p>
-<p>Jack-is the leader of the choirboys. Jack is also attractive and athletic. He loses the election for group leader in chapter 1 to Ralph, which upsets him greatly. Jack is the opposite of Ralph. He is interested in power and violence. Jack offers to lead the hunters when he loses the election. Jack has a knife.</p>
+<p>Jack-is the leader of the choirboys. Jack is also attractive and
+    athletic. He loses the election for group leader in chapter 1 to Ralph,
+    which upsets him greatly. Jack is the opposite of Ralph. He is
+    interested in power and violence. Jack offers to lead the hunters when
+    he loses the election. Jack has a knife.</p>
 <p>&nbsp;</p>
-<p>Simon-is naturally good. He is younger than Ralph and Jack, but older than the "littleuns". He truly believes in being good and that people are good. He follows the rules because he believes in the rules and he believes in the best of people.</p>
+<p>Simon-is naturally good. He is younger than Ralph and Jack, but older
+    than the "littleuns". He truly believes in being good and that people
+    are good. He follows the rules because he believes in the rules and he
+    believes in the best of people.</p>
 <p>&nbsp;</p>
-<p>Piggy-is short and overweight. He wears glasses and has asthma. Piggy is probably the most intelligent boy, but he has poor social skills. Piggy is upset that the boys tease him. He tries to avoid hard work but thinks it is very important to have rules and follow the rules. Piggy's glasses are used by the boys to start fires.</p>
+<p>Piggy-is short and overweight. He wears glasses and has asthma. Piggy is
+    probably the most intelligent boy, but he has poor social skills. Piggy
+    is upset that the boys tease him. He tries to avoid hard work but thinks
+    it is very important to have rules and follow the rules. Piggy's glasses
+    are used by the boys to start fires.</p>
 <p>&nbsp;</p>
-<p>Roger-is a small boy with dirty shaggy black hair. He represent pure evil.</p>
+<p>Roger-is a small boy with dirty shaggy black hair. He represent pure
+    evil.</p>
 <p>&nbsp;</p>
-<p>Sam and Eric-Young identical twins who are always together. They do everything together and are actually incapable of doing anything alone. It is hard to tell them apart and because they are always together they are called Samneric.</p>
+<p>Sam and Eric-Young identical twins who are always together. They do
+    everything together and are actually incapable of doing anything alone.
+    It is hard to tell them apart and because they are always together they
+    are called Samneric.</p>
 <p>&nbsp;</p>
 <p><strong>Chapter 2-"Fire on the Mountain"-Pages 24-38</strong></p>
 <p><strong><br /></strong>In chapter 2 the boys begin to make up rules.</p>
-<p>"And another thing. We can't have everybody talking at once. We'll have to have to 'Hands Up' like at school...Then I'll give him the conch...I'll give the conch to the next person to speak. He can hold it when he's speaking...And he won't be interrupted. Except by me" (25).</p>
-<p>"The conch doesn't count on top of the mountain, said Jack, so you shut up" (33).</p>
+<p>"And another thing. We can't have everybody talking at once. We'll have
+    to have to 'Hands Up' like at school...Then I'll give him the
+    conch...I'll give the conch to the next person to speak. He can hold it
+    when he's speaking...And he won't be interrupted. Except by me" (25).
+</p>
+<p>"The conch doesn't count on top of the mountain, said Jack, so you shut
+    up" (33).</p>
 <p>&nbsp;</p>
-<p>The boys try to get organized, make rules, decide who will be in charge of the fire, being a look-out, hunters, gathering wood, etc.</p>
-<p>The boys build a signal fire, but it burns out of control and starts a fire in the jungle.</p>
+<p>The boys try to get organized, make rules, decide who will be in charge
+    of the fire, being a look-out, hunters, gathering wood, etc.</p>
+<p>The boys build a signal fire, but it burns out of control and starts a
+    fire in the jungle.</p>
 <p>The boys realize one of the "littleuns" may be missing.</p>
 <p>The boys are already beginning to argue and fight.</p>
 <p>&nbsp;</p>
 <p><strong>Chapter 3-"Huts on the Beach"-Pages 39-47</strong></p>
-<p>Jack and Simon have been building huts on the beach. Jack has been focused on hunting. Conflict is beginning to build between them.</p>
-<p>Jack is only concerned with hunting, and cannot see the necessity of other things that can keep them alive.</p>
-<p>"We want meat...I went on..I had to go on...The madness came into his eyes again. I thought I might kill" (42).</p>
-<p>Ralph is concerned with building the huts and providing a home for the boys.</p>
+<p>Jack and Simon have been building huts on the beach. Jack has been
+    focused on hunting. Conflict is beginning to build between them.</p>
+<p>Jack is only concerned with hunting, and cannot see the necessity of
+    other things that can keep them alive.</p>
+<p>"We want meat...I went on..I had to go on...The madness came into his
+    eyes again. I thought I might kill" (42).</p>
+<p>Ralph is concerned with building the huts and providing a home for the
+    boys.</p>
 <p>"We need shleters as sort of--a home" (43).</p>
-<p>Ralph is annoyed that most of the boys and especially the littluns keep running off to play.</p>
-<p>"They keep running off. You remember the meeting? How everyone was going to work hard unti the shelters were finished...They're off bathing, or eating, or playing" (41).</p>
-<p>Jack is becoming paranoid when he is hunting. He feels as if he is also being hunted.</p>
-<p>"If you're hunting somnetimes you catch yourself feeling as if--There's nothing in it of course. Just a feeling. But you can feel as if you're not hunting, but --being hunted, as if something's behind you all the time in the jungle" (43).</p>
-<p>Ralph and Jack are really beginning to fight in this chapter, and it foreshadows much more future conflicts down the line.</p>
-<p>"They walked along, tow continents of experience and feeling, unable to communicate. 'If I could only get a pig!' 'I'll come back and go on with the shleter.' They looked at each other, baffled, in love and hate" (46).</p>
-<p>Simon has been helping the littuns pick fruit. He has helped Ralph build th shelters. Simon goes off into the jungle he enjoys the tranquility of this spot, where he can be in touch with nature.</p>
-<p>Simon's actions present him as a very good, peaceful and helpful character, in contrast with many others.</p>
+<p>Ralph is annoyed that most of the boys and especially the littluns keep
+    running off to play.</p>
+<p>"They keep running off. You remember the meeting? How everyone was going
+    to work hard unti the shelters were finished...They're off bathing, or
+    eating, or playing" (41).</p>
+<p>Jack is becoming paranoid when he is hunting. He feels as if he is also
+    being hunted.</p>
+<p>"If you're hunting somnetimes you catch yourself feeling as if--There's
+    nothing in it of course. Just a feeling. But you can feel as if you're
+    not hunting, but --being hunted, as if something's behind you all the
+    time in the jungle" (43).</p>
+<p>Ralph and Jack are really beginning to fight in this chapter, and it
+    foreshadows much more future conflicts down the line.</p>
+<p>"They walked along, tow continents of experience and feeling, unable to
+    communicate. 'If I could only get a pig!' 'I'll come back and go on with
+    the shleter.' They looked at each other, baffled, in love and hate"
+    (46).</p>
+<p>Simon has been helping the littuns pick fruit. He has helped Ralph build
+    th shelters. Simon goes off into the jungle he enjoys the tranquility of
+    this spot, where he can be in touch with nature.</p>
+<p>Simon's actions present him as a very good, peaceful and helpful
+    character, in contrast with many others.</p>
 <p>&nbsp;</p>
 <p><strong>Chapter 4 "Painted Faces and Long Hair" Pages 48-64</strong></p>
-<p>At the beginning of Chapter 4 Roger is knocking down sand castles that the "littluns" have built and throwing stones near the young children, but he is NOT hitting them with stones.</p>
-<p>"Roger stooped, picked up a stone, aimed aimed and threw it at Henry--threw it to miss...Here, invisible yet strong, ws the taboo of the old life" (53).</p>
-<p>These actions show that Roger has an evil and mean side to his personality.</p>
+<p>At the beginning of Chapter 4 Roger is knocking down sand castles that
+    the "littluns" have built and throwing stones near the young children,
+    but he is NOT hitting them with stones.</p>
+<p>"Roger stooped, picked up a stone, aimed aimed and threw it at
+    Henry--threw it to miss...Here, invisible yet strong, ws the taboo of
+    the old life" (53).</p>
+<p>These actions show that Roger has an evil and mean side to his
+    personality.</p>
 <p>&nbsp;</p>
-<p>Jack is obsessed with killing a pig and asks Roger to help him camoflauge his face. Jack compares the face paint to war paint.</p>
-<p>This is the beginning of an evil collaboration between Jack and Roger.</p>
-<p>The face paint represents a mask that Jack can hide behind when he is evil and violent.</p>
+<p>Jack is obsessed with killing a pig and asks Roger to help him camoflauge
+    his face. Jack compares the face paint to war paint.</p>
+<p>This is the beginning of an evil collaboration between Jack and Roger.
+</p>
+<p>The face paint represents a mask that Jack can hide behind when he is
+    evil and violent.</p>
 <p>&nbsp;</p>
-<p>On the beach, Ralph and the other boys are swimming when they spot smoke from a passing ship on the horizon.</p>
-<p>The boys realize their signal fire was not being watched and the fire has gone out. They rush to the mountain to try to start the fire again.</p>
-<p>"Ralph reached inside himslef for the worst word he knew. They let the bloody fire go out...Ralph clenched his fist and went very red. The intentness of his gaze, the bitterness of his voice" (57).</p>
+<p>On the beach, Ralph and the other boys are swimming when they spot smoke
+    from a passing ship on the horizon.</p>
+<p>The boys realize their signal fire was not being watched and the fire has
+    gone out. They rush to the mountain to try to start the fire again.</p>
+<p>"Ralph reached inside himslef for the worst word he knew. They let the
+    bloody fire go out...Ralph clenched his fist and went very red. The
+    intentness of his gaze, the bitterness of his voice" (57).</p>
 <p>&nbsp;</p>
-<p>Jack, Roger and other boys from the choir group proudly march back to the mountain yelling, chanting and carrying the first pig they have killed. They are excited and want to celebrate.</p>
+<p>Jack, Roger and other boys from the choir group proudly march back to the
+    mountain yelling, chanting and carrying the first pig they have killed.
+    They are excited and want to celebrate.</p>
 <p>"Kill the pig. Cut her throat. Spill her blood" (58).</p>
 <p>&nbsp;</p>
-<p>Ralph is angry because the boys let the fire go out and they have missed perhaps their only chance of being rescued.</p>
-<p>Ralph and Jack fight. Ralph thinks that "keeping the fire going" is the most important job, while Jack thinks hunting for meat is more important.</p>
-<p>During the fight Jack punches Piggy and his glasses are knocked to the ground. One of the lenses is broken.</p>
+<p>Ralph is angry because the boys let the fire go out and they have missed
+    perhaps their only chance of being rescued.</p>
+<p>Ralph and Jack fight. Ralph thinks that "keeping the fire going" is the
+    most important job, while Jack thinks hunting for meat is more
+    important.</p>
+<p>During the fight Jack punches Piggy and his glasses are knocked to the
+    ground. One of the lenses is broken.</p>
 <p>&nbsp;</p>
 <p>Eventually, the fire is re-lit, the pig is roasted and the boys eat.</p>
-<p>Jack and the hunters dance and celebrate their first kill. This dance will be performed many times during the novel.</p>
-<p>&nbsp;"Maurice pretended to be the pig and ran squealing in to the center, and the hunters, circling still, pretended to beat him. As they danced, they sang. 'Kill the pig. Cut her throat. Bash her in'" (63).</p>
+<p>Jack and the hunters dance and celebrate their first kill. This dance
+    will be performed many times during the novel.</p>
+<p>&nbsp;"Maurice pretended to be the pig and ran squealing in to the
+    center, and the hunters, circling still, pretended to beat him. As they
+    danced, they sang. 'Kill the pig. Cut her throat. Bash her in'" (63).
+</p>
 <p>&nbsp;</p>
 <p><strong>Chapter 5 "Beast from the Water"&nbsp; Pages 65-82</strong></p>
-<p>Ralph is very upset and angry that the fire was allowed to go out and the boys missed a chance to be saved. He calls another meeting to convince they boys to follow the rules and work.</p>
-<p>"We have lots of assemblies. Everybody enjoys speaking and being together. We decide things. But they don't get done" (68).</p>
+<p>Ralph is very upset and angry that the fire was allowed to go out and the
+    boys missed a chance to be saved. He calls another meeting to convince
+    they boys to follow the rules and work.</p>
+<p>"We have lots of assemblies. Everybody enjoys speaking and being
+    together. We decide things. But they don't get done" (68).</p>
 <p>&nbsp;</p>
-<p>Most of the boys would rather just eat, sleep, swim and play. They are not being responsible. Truthfully, the littluns are too young to be much help.</p>
+<p>Most of the boys would rather just eat, sleep, swim and play. They are
+    not being responsible. Truthfully, the littluns are too young to be much
+    help.</p>
 <p>&nbsp;</p>
-<p>At the meeting, Ralph takes the conch shell, refuses to give it to any other boy so that he can speak.</p>
-<p>Ralph is trying to get everyone to be civilized, follow the rules and share the work.</p>
+<p>At the meeting, Ralph takes the conch shell, refuses to give it to any
+    other boy so that he can speak.</p>
+<p>Ralph is trying to get everyone to be civilized, follow the rules and
+    share the work.</p>
 <p>&nbsp;</p>
 <p>No one is filling the coconuts with water.</p>
-<p>"We were going to have water brought from the steam and left in those coconut shells under fresh leaves. So it was, for a few days. Now there's no water. The shells are dry. Peole drinkd for the river" (68).</p>
+<p>"We were going to have water brought from the steam and left in those
+    coconut shells under fresh leaves. So it was, for a few days. Now
+    there's no water. The shells are dry. Peole drinkd for the river" (68).
+</p>
 <p>&nbsp;</p>
-<p>the huts are not stable and although everyone sleep in the huts, they did not help build them.</p>
-<p>"Who built the shelters?...Clamor rose at once. Everyone had built the shelters...'Wait a minute! I mean who built all three? We all built the first one, four of us the second one, and me'n simon built the last one over there. that's why it's so tottery...That shelter might fall down if the rain comes back. We'll need those shelters then" (68).</p>
+<p>the huts are not stable and although everyone sleep in the huts, they did
+    not help build them.</p>
+<p>"Who built the shelters?...Clamor rose at once. Everyone had built the
+    shelters...'Wait a minute! I mean who built all three? We all built the
+    first one, four of us the second one, and me'n simon built the last one
+    over there. that's why it's so tottery...That shelter might fall down if
+    the rain comes back. We'll need those shelters then" (68).</p>
 <p>&nbsp;</p>
 <p>No one is using the designated bathroom area.</p>
-<p>"There's another thing. We choose those rocks right along beyond the bathing pool as a lavatory. that was sensible, too. The tide cleans the place up...Now people seem to use anywher. Even near the shelters and platform...That's really dirty...We've all got to use the rocks again. This place is getting dirty" (69).</p>
+<p>"There's another thing. We choose those rocks right along beyond the
+    bathing pool as a lavatory. that was sensible, too. The tide cleans the
+    place up...Now people seem to use anywher. Even near the shelters and
+    platform...That's really dirty...We've all got to use the rocks again.
+    This place is getting dirty" (69).</p>
 <p>&nbsp;</p>
 <p>The fire was allowed to go out.</p>
-<p>"The fire is the most important thing on the island...Can't you see we ought to--ought to die before we let the fire out...You hunters. You can laugh! But I tell you the smoke is more important that the pig, however ofther you kill one...We've got to make smoke up there--or die" (69).</p>
+<p>"The fire is the most important thing on the island...Can't you see we
+    ought to--ought to die before we let the fire out...You hunters. You can
+    laugh! But I tell you the smoke is more important that the pig, however
+    ofther you kill one...We've got to make smoke up there--or die" (69).
+</p>
 <p>&nbsp;</p>
 <p>Ralph makes a new rule about making fires.</p>
-<p>"We nearly set the whole island on fire. And we waste time, rolling rocks, and making little cooking fires. Now I say this and make it a rule, because I'm chief. We won't have fire anywhere but on the mountain. Ever...if you want a fire to cook fish or crab, you can jolly well go up the mountain" (70).</p>
+<p>"We nearly set the whole island on fire. And we waste time, rolling
+    rocks, and making little cooking fires. Now I say this and make it a
+    rule, because I'm chief. We won't have fire anywhere but on the
+    mountain. Ever...if you want a fire to cook fish or crab, you can jolly
+    well go up the mountain" (70).</p>
 <p>&nbsp;</p>
 <p>The boys discuss a growing problem on the island FEAR.</p>
-<p>The littluns are having nightmares and talking about a BEASTIE, THE SNAKE, and A BEAST FROM THE SEA and GHOSTS.</p>
+<p>The littluns are having nightmares and talking about a BEASTIE, THE
+    SNAKE, and A BEAST FROM THE SEA and GHOSTS.</p>
 <p>&nbsp;</p>
-<p>One thing that convinces most of the boys that a beast exist is the disappearance of the young boy with a birthmark the first day on the island. They all saw the young boy with the birthmark, but he has not been seen since the day they built the first fire that got out of control. The boy most likely died in the fire, but the boys still think "the beast" got him.</p>
+<p>One thing that convinces most of the boys that a beast exist is the
+    disappearance of the young boy with a birthmark the first day on the
+    island. They all saw the young boy with the birthmark, but he has not
+    been seen since the day they built the first fire that got out of
+    control. The boy most likely died in the fire, but the boys still think
+    "the beast" got him.</p>
 <p>&nbsp;</p>
-<p>The older boys try to convince the littluns that there are no monsters, just pigs on the island.</p>
-<p>Piggy tries to use science to convince everyone the island is too small to have beasts.</p>
-<p>Simon admits that he sometimes walks in the jungle at night and that is what the boys hear in the jungle.</p>
+<p>The older boys try to convince the littluns that there are no monsters,
+    just pigs on the island.</p>
+<p>Piggy tries to use science to convince everyone the island is too small
+    to have beasts.</p>
+<p>Simon admits that he sometimes walks in the jungle at night and that is
+    what the boys hear in the jungle.</p>
 <p>&nbsp;</p>
-<p>Jack and Ralph continue to fight and disagree. Jack doesn't care about a "lawful world" or "the rules".</p>
-<p>"The rules! shouted Ralph. 'You're breaking the rules!' 'Who cares?' Ralph summoned his wits. 'Because the rules are the only thing we've got!' But Jack was shouting aginst him. 'bollocks to the rules! We're strong--we hunt! If there's a beast, we'll hunt it down! We'll clost in and beat and beat and beat! He gave a wild whoop and leapt down to the pale sand. At once theplatform was full of noise and excitement, scramblings, screams and laughter" (79-80).</p>
+<p>Jack and Ralph continue to fight and disagree. Jack doesn't care about a
+    "lawful world" or "the rules".</p>
+<p>"The rules! shouted Ralph. 'You're breaking the rules!' 'Who cares?'
+    Ralph summoned his wits. 'Because the rules are the only thing we've
+    got!' But Jack was shouting aginst him. 'bollocks to the rules! We're
+    strong--we hunt! If there's a beast, we'll hunt it down! We'll clost in
+    and beat and beat and beat! He gave a wild whoop and leapt down to the
+    pale sand. At once theplatform was full of noise and excitement,
+    scramblings, screams and laughter" (79-80).</p>
 <p>&nbsp;</p>
-<p>Ralph no longers wants to be the chief. He wants to quit. Simon and Piggy convince he must be the chief or Jack will take over.</p>
+<p>Ralph no longers wants to be the chief. He wants to quit. Simon and Piggy
+    convince he must be the chief or Jack will take over.</p>
 <p>&nbsp;</p>
 <p>The boys are becoming more and more savage.</p>
 <p>"What are we? Humans? Or animals? Or savages? (79).</p>
 <p>&nbsp;</p>
-<p><strong>Simon is the only one to realize that there really isn't any "beast," but just a force of evil or savagery inside all of the boys. The evil is different in each boy.</strong></p>
-<p><strong><br /></strong>"[Simon saw] the picture of a human at once heroic and sick".</p>
+<p><strong>Simon is the only one to realize that there really isn't any
+        "beast," but just a force of evil or savagery inside all of the
+        boys. The evil is different in each boy.</strong></p>
+<p><strong><br /></strong>"[Simon saw] the picture of a human at once heroic
+    and sick".</p>
 <p><strong>&nbsp;</strong></p>
 <p><strong>Chapter 6 "Beast From Air" Pages 83-95<br /></strong></p>
 <p><strong>&nbsp;</strong></p>
-<p>During the night while all the boys are asleep, a dead fighter pilot parachutes down from the sky to the island. None of the boys see this.<strong><br /></strong></p>
-<p>This fighter pilot symbolizes the war that is going on in the real world outside the island.</p>
+<p>During the night while all the boys are asleep, a dead fighter pilot
+    parachutes down from the sky to the island. None of the boys see
+    this.<strong><br /></strong></p>
+<p>This fighter pilot symbolizes the war that is going on in the real world
+    outside the island.</p>
 <p>&nbsp;</p>
-<p>The fighter pilot and his parachute land near the fire on the mountain.</p>
-<p>Sam and Eric who were supposed to stay up all night and guard the fire wake up while it is still dark and see a BEAST FROM THE AIR.</p>
-<p>They run down from the mountain and report to all the boys they have seen the BEAST.</p>
+<p>The fighter pilot and his parachute land near the fire on the mountain.
+</p>
+<p>Sam and Eric who were supposed to stay up all night and guard the fire
+    wake up while it is still dark and see a BEAST FROM THE AIR.</p>
+<p>They run down from the mountain and report to all the boys they have seen
+    the BEAST.</p>
 <p>&nbsp;</p>
 <p>The bigger boys decide they wil go hunt the BEAST.</p>
 <p>Piggy stays back at the shelter with the littluns.</p>
 <p>&nbsp;</p>
-<p>The boys go to the Castle Rock to search for the BEAST because this is the one area of the island they have not explored and assume this must be where the BEAST lives.</p>
-<p>They do not find the BEAST, but discover an area that Jack believes would be a great fort.</p>
-<p>Later in the story Jack will separate from the Ralph's group and use this area as his fort.</p>
+<p>The boys go to the Castle Rock to search for the BEAST because this is
+    the one area of the island they have not explored and assume this must
+    be where the BEAST lives.</p>
+<p>They do not find the BEAST, but discover an area that Jack believes would
+    be a great fort.</p>
+<p>Later in the story Jack will separate from the Ralph's group and use this
+    area as his fort.</p>
 <p>&nbsp;</p>
-<p>Ralph decides they must head to the mountain to look for the BEAST and relight the fire.</p>
-<p>"'I'm chief. We've got to make certain [that there is no beast]....There's no signal showing [on the mountain]. There may be a ship out there'" (95)</p>
+<p>Ralph decides they must head to the mountain to look for the BEAST and
+    relight the fire.</p>
+<p>"'I'm chief. We've got to make certain [that there is no
+    beast]....There's no signal showing [on the mountain]. There may be a
+    ship out there'" (95)</p>
 <p>&nbsp;</p>
 <p><strong>Chapter 7 "Shadows and Tall Trees" Pages 96-109</strong></p>
-<p>As the boys make their way to the mountain, Ralph dreams about taking a shower, getting a haircut and being clean.<strong><br /></strong></p>
+<p>As the boys make their way to the mountain, Ralph dreams about taking a
+    shower, getting a haircut and being clean.<strong><br /></strong></p>
 <p>As Ralph stares out to sea, Simon reassures him they will get home.</p>
 <p>&ldquo;You'll get back to where you came from" (98)</p>
 <p>&nbsp;</p>
@@ -452,1254 +605,353 @@ function LoadTaggedData(container, MIID, PMI, tag) {
 <p>The boys begin a tribal dance.</p>
 <p>A boy named Robert "plays" the part of the pig.</p>
 <p>The dance becomes violent, the boys hit Robert and injure him.</p>
-<p>"All at once, Robert was screaming and struggling with the strength of frenzy. Jack had him by the hair and was brandishing his knife. Behind him was Roger, fighting to get close. The chant rose ritually, as at the last moment of a dance or a hunt" (101).</p>
+<p>"All at once, Robert was screaming and struggling with the strength of
+    frenzy. Jack had him by the hair and was brandishing his knife. Behind
+    him was Roger, fighting to get close. The chant rose ritually, as at the
+    last moment of a dance or a hunt" (101).</p>
 <p>This time Ralph takes part in the tribal dance and the violence.</p>
-<p>"Ralph too was fighting to get near, to get a handful of that brown, vulnerable flesh. The desire to squeeze and hurt was over-mastering" (101).</p>
+<p>"Ralph too was fighting to get near, to get a handful of that brown,
+    vulnerable flesh. The desire to squeeze and hurt was over-mastering"
+    (101).</p>
 <p>&nbsp;</p>
-<p>As the boys once again hike towards the mountain, Simon volunteers to cut the the jungle to tell Piggy they will return after dark.</p>
+<p>As the boys once again hike towards the mountain, Simon volunteers to cut
+    the the jungle to tell Piggy they will return after dark.</p>
 <p>&nbsp;</p>
-<p>As it it getting dark, Jack climbs the mountain first and reports he saw something move.</p>
-<p>Several of the boys climb the mountain and their fear and imagination causes them to see the BEAST (actually the dead fighter pilot).</p>
+<p>As it it getting dark, Jack climbs the mountain first and reports he saw
+    something move.</p>
+<p>Several of the boys climb the mountain and their fear and imagination
+    causes them to see the BEAST (actually the dead fighter pilot).</p>
 <p>&nbsp;</p>
 <p>The boys quickly retreat from the mountain.</p>
 <p>&nbsp;</p>
 <p><strong>Chapter 8 "Gift for the Darkness" Pages 110-128</strong></p>
-<p>The boys have run back to the beach and tell Piggy that there is a BEAST up on the mountain and they will have to abandon the signal fire.</p>
+<p>The boys have run back to the beach and tell Piggy that there is a BEAST
+    up on the mountain and they will have to abandon the signal fire.</p>
 <p>&nbsp;</p>
-<p>Jack uses the conch to call an assembly. Jack wants to hunt the beast and he challenges Ralph as chief.</p>
-<p>"Ralph thinks you're cowards...He's like Piggy. He says things like Piggy. He isn't a proper chief...He's not a nunter.He'd never have got us meat. He isn't a prefect...He just gives orders and expects people to obey for nothing. All this talk...Who thinks Ralph oughtn't to be chief" (112-113).</p>
+<p>Jack uses the conch to call an assembly. Jack wants to hunt the beast and
+    he challenges Ralph as chief.</p>
+<p>"Ralph thinks you're cowards...He's like Piggy. He says things like
+    Piggy. He isn't a proper chief...He's not a nunter.He'd never have got
+    us meat. He isn't a prefect...He just gives orders and expects people to
+    obey for nothing. All this talk...Who thinks Ralph oughtn't to be chief"
+    (112-113).</p>
 <p>Jack runs off with tears in his eyes.</p>
-<p>"I'm not going to be part of Ralph's lot...I'm going off by myself. He can catch his own pigs. Anyone who wants to hunt when I do can come too" (113).</p>
+<p>"I'm not going to be part of Ralph's lot...I'm going off by myself. He
+    can catch his own pigs. Anyone who wants to hunt when I do can come too"
+    (113).</p>
 <p>&nbsp;</p>
-<p>While Ralph is worried that Jack has left and wants to his own tribe, Piggy is relieved and thinks they can do without Jack.</p>
-<p>Piggy has a sensible idea to build a signal fire on the beach. As Ralph, Piggy, Simon, Sam and Eric build a new fire they realize all of the other older boys have left to join Jack.</p>
-<p>"Piggy lifted the conch as though to add power to his next words. 'We've got no fire on the mountain. But what's wrong with a fore down here? A fire built on them rocks. On the sand, even. We'd make smoke just the same.'...The greatest ideas are the simplest. Now there was something to be done they worked with passion. Piggy was so full of delight and expanding liberty in Jack's departure, so full of pride in his contribution to the good of society, that he helped to fetch wood" (115).</p>
+<p>While Ralph is worried that Jack has left and wants to his own tribe,
+    Piggy is relieved and thinks they can do without Jack.</p>
+<p>Piggy has a sensible idea to build a signal fire on the beach. As Ralph,
+    Piggy, Simon, Sam and Eric build a new fire they realize all of the
+    other older boys have left to join Jack.</p>
+<p>"Piggy lifted the conch as though to add power to his next words. 'We've
+    got no fire on the mountain. But what's wrong with a fore down here? A
+    fire built on them rocks. On the sand, even. We'd make smoke just the
+    same.'...The greatest ideas are the simplest. Now there was something to
+    be done they worked with passion. Piggy was so full of delight and
+    expanding liberty in Jack's departure, so full of pride in his
+    contribution to the good of society, that he helped to fetch wood"
+    (115).</p>
 <p>&nbsp;</p>
-<p>Jack's tribe is out hunting. They find a sow with piglets and kill her. This shows they are NOT thinking about food anymore, just hunting, killing and violence. The boys should have allowed the sow (mother pig) to live and raise her babies. This would have provided them with more food in the future.</p>
+<p>Jack's tribe is out hunting. They find a sow with piglets and kill her.
+    This shows they are NOT thinking about food anymore, just hunting,
+    killing and violence. The boys should have allowed the sow (mother pig)
+    to live and raise her babies. This would have provided them with more
+    food in the future.</p>
 <p>The hunt becomes violent. It can be compared to a rape scene.</p>
-<p>"Roger ran around the heap, prodding with his spear whenever pigflesh appeared. Jack was one top of the sow, stabbing downward with his knife. Roger found a lodgment for his point and began to push till he was leaning with his whole weight. The spear moved forward inch by inch and the terrified squealing became a high-pitched scream. Then Jack found the throat and the hot blood spouted over his hands. At last the immediacy of the kill subsided. The boys drew back, and Jack stood up, holding out his hands...He giggled and flecked them while the boys laughed at his reeking palms. Then Jack grabbed Maurice and rubbed the stuff [blood] over his cheeks. Roger began to withdraw his spear, and boys noticed it for the first time. Robert stabilized the thing in a phrase which was received uproariously. 'Right up her ass'" (120-121).</p>
+<p>"Roger ran around the heap, prodding with his spear whenever pigflesh
+    appeared. Jack was one top of the sow, stabbing downward with his knife.
+    Roger found a lodgment for his point and began to push till he was
+    leaning with his whole weight. The spear moved forward inch by inch and
+    the terrified squealing became a high-pitched scream. Then Jack found
+    the throat and the hot blood spouted over his hands. At last the
+    immediacy of the kill subsided. The boys drew back, and Jack stood up,
+    holding out his hands...He giggled and flecked them while the boys
+    laughed at his reeking palms. Then Jack grabbed Maurice and rubbed the
+    stuff [blood] over his cheeks. Roger began to withdraw his spear, and
+    boys noticed it for the first time. Robert stabilized the thing in a
+    phrase which was received uproariously. 'Right up her ass'" (120-121).
+</p>
 <p>&nbsp;</p>
-<p>They cut off the sow's head and impale the head on a stick as a gift to the BEAST.&nbsp; The sow's head becomes covered with flies. THE LORD OF THE FLIES.</p>
-<p>"Jack held up the head and jammed the soft throat down on the pointed end of the stick which pierced through into the mouth. He stood back and the head hung there, a little blood dribbling down the stick. 'The head is for the beast. It's a gift'. The silence accepted the gift and awed them. The head remained there, dim-eyed, grinning faintly, blood blackening between the teeth" (122).</p>
+<p>They cut off the sow's head and impale the head on a stick as a gift to
+    the BEAST.&nbsp; The sow's head becomes covered with flies. THE LORD OF
+    THE FLIES.</p>
+<p>"Jack held up the head and jammed the soft throat down on the pointed end
+    of the stick which pierced through into the mouth. He stood back and the
+    head hung there, a little blood dribbling down the stick. 'The head is
+    for the beast. It's a gift'. The silence accepted the gift and awed
+    them. The head remained there, dim-eyed, grinning faintly, blood
+    blackening between the teeth" (122).</p>
 <p>&nbsp;</p>
-<p>Jack realizes his tribe needs fire to cook the pig and decides to steal fire from Ralph's group, but he invites them to a feast to eat meat.</p>
-<p>Ralph tells Jack that the fire is more important than eating meat, but he cannot remember why and Piggy has to remind him that the fire means rescue.</p>
+<p>Jack realizes his tribe needs fire to cook the pig and decides to steal
+    fire from Ralph's group, but he invites them to a feast to eat meat.</p>
+<p>Ralph tells Jack that the fire is more important than eating meat, but he
+    cannot remember why and Piggy has to remind him that the fire means
+    rescue.</p>
 <p>&nbsp;</p>
-<p>Simon sneaks off into the jungle. Simon thinks THE BEAST is something he can hunt and kill. Simon believes if he can kill the beast, goodness can return to the island community.</p>
+<p>Simon sneaks off into the jungle. Simon thinks THE BEAST is something he
+    can hunt and kill. Simon believes if he can kill the beast, goodness can
+    return to the island community.</p>
 <p>&nbsp;</p>
 <p>Simon finds the cow head on the stick, THE LORD OF THE FLIES.</p>
 <p>Simon imagines a conversation with the THE LORD.</p>
-<p>Simon faints and collapses from fear and exhaustion, when he realizes the beast is NOT a thing.</p>
-<p>The BEAST is inside every human and it is EVIL. The BEAST is the SAVAGE inside every person.</p>
-<p>"Well then,' said the Lord of the Flies, 'Aren't you just a silly little boy. There isn't anyone to help you. Only me. And I'm the Beast. Fancy thinking the Beast was something you could hunt and kill...You knew, didn't you? I'm part of you? Close, close, close! I'm the reason why it's no go? Why things are what they are?...This has gone quite far enough. My poor, misguided child, do you think you know better than I do?...I'm warning you. I'm going to get angry. D'you see? You're not wanted. Understand? We are going to have fun on this island! ...Do you. See?'" (128).</p>
+<p>Simon faints and collapses from fear and exhaustion, when he realizes the
+    beast is NOT a thing.</p>
+<p>The BEAST is inside every human and it is EVIL. The BEAST is the SAVAGE
+    inside every person.</p>
+<p>"Well then,' said the Lord of the Flies, 'Aren't you just a silly little
+    boy. There isn't anyone to help you. Only me. And I'm the Beast. Fancy
+    thinking the Beast was something you could hunt and kill...You knew,
+    didn't you? I'm part of you? Close, close, close! I'm the reason why
+    it's no go? Why things are what they are?...This has gone quite far
+    enough. My poor, misguided child, do you think you know better than I
+    do?...I'm warning you. I'm going to get angry. D'you see? You're not
+    wanted. Understand? We are going to have fun on this island! ...Do you.
+    See?'" (128).</p>
 <p>&nbsp;</p>
 <p>&nbsp;<strong>Chapter 9 "A View to a Death" Pages 129-137</strong></p>
-<p><strong><br /></strong>A violent storm is raging on the island (foreshadowing a disaster).</p>
+<p><strong><br /></strong>A violent storm is raging on the island
+    (foreshadowing a disaster).</p>
 <p>&nbsp;</p>
-<p>Simon wakes up and decides he must go find the other boys and tell them about his ordeal with The Lord of the Flies and explain to them about this evil, savage inside of each of them.</p>
-<p>On his way he sees THE BEAST on the mountain and realizes it is a dead man, a fighter pilot caught in his parachute.</p>
+<p>Simon wakes up and decides he must go find the other boys and tell them
+    about his ordeal with The Lord of the Flies and explain to them about
+    this evil, savage inside of each of them.</p>
+<p>On his way he sees THE BEAST on the mountain and realizes it is a dead
+    man, a fighter pilot caught in his parachute.</p>
 <p>Simon releases the ropes.</p>
 <p>&nbsp;</p>
-<p>Ralph and Piggy decide to visit Jack's tribe to get some meat. Jack demands everyone's loyalty. He wants to be the new chief of everyone.</p>
-<p>Ralph tries to reason with the boys and get them to see the value of the fire and the shelters.</p>
+<p>Ralph and Piggy decide to visit Jack's tribe to get some meat. Jack
+    demands everyone's loyalty. He wants to be the new chief of everyone.
+</p>
+<p>Ralph tries to reason with the boys and get them to see the value of the
+    fire and the shelters.</p>
 <p>&nbsp;</p>
 <p>Jack orders the boys to dance, this time Roger plays the pig.</p>
-<p>Ralph, Piggy, Sam and Eric are drawn into the dance. The want to be part of the crowd. The dance again becomes violent.</p>
+<p>Ralph, Piggy, Sam and Eric are drawn into the dance. The want to be part
+    of the crowd. The dance again becomes violent.</p>
 <p>&nbsp;</p>
-<p>Simon comes out of the jungle to tell the boys that THE BEAST on the mountain was really a dead fighter pilot.</p>
-<p>Simon stumbles into the circle and is attacked the boys who think they are killing the beast, they have become savages.</p>
+<p>Simon comes out of the jungle to tell the boys that THE BEAST on the
+    mountain was really a dead fighter pilot.</p>
+<p>Simon stumbles into the circle and is attacked the boys who think they
+    are killing the beast, they have become savages.</p>
 <p>Simon is killed and his body is left on the beach.</p>
-<p>"The dark sky was shattered by a blue-white scar. An instant later the noise was on them like the blow of a gigantic whip. The chant rose, a tone in agony. <em>"Kill the beast! Cut his throat! Spill his blood!</em>...the crowd surged after it, poured down the rock, leapt on to the beast, screamed, struck, bit, tore. There were no words, and no movements but the tearing of teeth and claws...Presently the heap broke up and figures staggered away. Only the beast lay still, a few yards from the sea. Even in the rain they could see how small a best it was; and already its blood was staining the sand" (136).</p>
+<p>"The dark sky was shattered by a blue-white scar. An instant later the
+    noise was on them like the blow of a gigantic whip. The chant rose, a
+    tone in agony. <em>"Kill the beast! Cut his throat! Spill his
+        blood!</em>...the crowd surged after it, poured down the rock, leapt
+    on to the beast, screamed, struck, bit, tore. There were no words, and
+    no movements but the tearing of teeth and claws...Presently the heap
+    broke up and figures staggered away. Only the beast lay still, a few
+    yards from the sea. Even in the rain they could see how small a best it
+    was; and already its blood was staining the sand" (136).</p>
 <p>&nbsp;</p>
-<p>During the night, the storm and wind carries the pilot's body out to the ocean.</p>
-<p>&nbsp;"Now a great wind blew the rain sideways, cascading the water from the forest trees. On the mountain-top the parachute filled and moved; the figure slid, rose to its feet, spun, swayed down through a vastness of wet air and trod with ungailyu feet the tops of the high trees; falling, still falling, it sank toward the beach and the boys rushed screaming through the darkness. The parachute took the figure forward, furrowing the lagoon, and bumped it over the reef and out to sea" (137).</p>
+<p>During the night, the storm and wind carries the pilot's body out to the
+    ocean.</p>
+<p>&nbsp;"Now a great wind blew the rain sideways, cascading the water from
+    the forest trees. On the mountain-top the parachute filled and moved;
+    the figure slid, rose to its feet, spun, swayed down through a vastness
+    of wet air and trod with ungailyu feet the tops of the high trees;
+    falling, still falling, it sank toward the beach and the boys rushed
+    screaming through the darkness. The parachute took the figure forward,
+    furrowing the lagoon, and bumped it over the reef and out to sea" (137).
+</p>
 <p>&nbsp;</p>
 <p>Simon's body is carried away to the ocean by waves on the beach.</p>
-<p>"The tide swelled in over the rain-pitted sand...it touched the first of the stains that seeped from the broken body...The body lifted a fraction of an inch from the sand and a bubble of air escaped from the mouth with a wet plop. Then it turned gently in the water. Somewhere over the darkened curve of the world the sun and moon were pulling...The great wave of the tide moved farther along the island and the water lifted...Simon's dead body moved out toward the open sea" (137).</p>
-<p><br /><strong>Chapter 10 "The Shell and the Glasses" Pages 138-151<br /></strong></p>
-<p><strong><br /></strong>Sam and Eric are still loyal to Ralph they are out collecting firewood.</p>
+<p>"The tide swelled in over the rain-pitted sand...it touched the first of
+    the stains that seeped from the broken body...The body lifted a fraction
+    of an inch from the sand and a bubble of air escaped from the mouth with
+    a wet plop. Then it turned gently in the water. Somewhere over the
+    darkened curve of the world the sun and moon were pulling...The great
+    wave of the tide moved farther along the island and the water
+    lifted...Simon's dead body moved out toward the open sea" (137).</p>
+<p><br /><strong>Chapter 10 "The Shell and the Glasses" Pages
+        138-151<br /></strong></p>
+<p><strong><br /></strong>Sam and Eric are still loyal to Ralph they are out
+    collecting firewood.</p>
 <p>&nbsp;</p>
-<p>Ralph and Piggy discuss Simon's death. Ralph knows it was murder, but Piggy keeps insisting it was a mistake, and accident.</p>
+<p>Ralph and Piggy discuss Simon's death. Ralph knows it was murder, but
+    Piggy keeps insisting it was a mistake, and accident.</p>
 <p>"Ralph says, 'Simon...That was murder.'</p>
-<p>'You stop it!' said Piggy, shrilly. 'What good're you doing talking like that?' He jumped to his feet and stood over Ralph. 'It was dark. There was that--that bloody dance. There was lightning and thunder and rain. We was scared!'</p>
+<p>'You stop it!' said Piggy, shrilly. 'What good're you doing talking like
+    that?' He jumped to his feet and stood over Ralph. 'It was dark. There
+    was that--that bloody dance. There was lightning and thunder and rain.
+    We was scared!'</p>
 <p>&nbsp;</p>
-<p>'I wasn't scared,' said Ralph slowly, 'I was--I don't know what I was.'</p>
+<p>'I wasn't scared,' said Ralph slowly, 'I was--I don't know what I was.'
+</p>
 <p>&nbsp;</p>
-<p>'We was scared,' said Piggy excitedly. 'Anything might have happened. It wasn't --what you said (murder).'</p>
+<p>'We was scared,' said Piggy excitedly. 'Anything might have happened. It
+    wasn't --what you said (murder).'</p>
 <p>&nbsp;</p>
-<p>Ralph says, 'You were outside. Outside the circle. You never really came in. Didn't you see what we--what they did?'</p>
+<p>Ralph says, 'You were outside. Outside the circle. You never really came
+    in. Didn't you see what we--what they did?'</p>
 <p>&nbsp;</p>
-<p>'It was an accident,' siad Piggy suddenly, 'that's what it was. An accident. Coming in the dark--he hadn't no business crawling like that out of the dark. He was batty. He asked for it...It was an accident...Look Ralph. We got to forget this. We can't do no good thinking about it, see?...It was an accident,' said Piggy stubbornly 'and that's that...And look, Ralph'--Piggy glanced around quickly, then leaned close--'don't let on we was i that dance. Not to Samneric."</p>
+<p>'It was an accident,' siad Piggy suddenly, 'that's what it was. An
+    accident. Coming in the dark--he hadn't no business crawling like that
+    out of the dark. He was batty. He asked for it...It was an
+    accident...Look Ralph. We got to forget this. We can't do no good
+    thinking about it, see?...It was an accident,' said Piggy stubbornly
+    'and that's that...And look, Ralph'--Piggy glanced around quickly, then
+    leaned close--'don't let on we was i that dance. Not to Samneric."</p>
 <p>&nbsp;</p>
 <p>'But we were! All of us!' (replies Ralph) (140).</p>
 <p>&nbsp;</p>
-<p>Ralph, Piggy, Sam and Eric all pretend they were not involved in Simon's death. They all claim they left the feast early and convince themselves that they were "outside" the circle and did not actually kill Simon.</p>
-<p>"We got lost last night...You got lost after the --...After the feast, said Simon. 'We left early,' said Piggy quickly, 'because we were tired.' 'So did we' " (141)</p>
+<p>Ralph, Piggy, Sam and Eric all pretend they were not involved in Simon's
+    death. They all claim they left the feast early and convince themselves
+    that they were "outside" the circle and did not actually kill Simon.</p>
+<p>"We got lost last night...You got lost after the --...After the feast,
+    said Simon. 'We left early,' said Piggy quickly, 'because we were
+    tired.' 'So did we' " (141)</p>
 <p>&nbsp;</p>
 <p>On Castle Rock, Jack is in charge. His face is always painted.</p>
-<p>Roger is guarding the Castle Rock, ready to release a boulder onto anyone who tried to invade it.</p>
-<p>Jack has tied up a boy and has him beaten just to show everyone he is in charge.</p>
+<p>Roger is guarding the Castle Rock, ready to release a boulder onto anyone
+    who tried to invade it.</p>
+<p>Jack has tied up a boy and has him beaten just to show everyone he is in
+    charge.</p>
 <p>&nbsp;</p>
-<p>Ralph is still worried about the signal fire, but finds it hard to remember why the fire is important.</p>
-<p>Ralph must constantly reassure the twins that Jack is wrong and it is important to keep the fire burning, follow the rules and they are doing the "right thing".</p>
+<p>Ralph is still worried about the signal fire, but finds it hard to
+    remember why the fire is important.</p>
+<p>Ralph must constantly reassure the twins that Jack is wrong and it is
+    important to keep the fire burning, follow the rules and they are doing
+    the "right thing".</p>
 <p>&nbsp;</p>
 <p>Ralph, Piggy and the twins finally go to sleep in the shelter.</p>
 <p>During the night, Jack and some boys raid the shelter for fire.</p>
 <p>Jack steals Piggy's glasses, leaving Piggy sightless.</p>
-<p>"Far off along the bowstave of beach, three figures trotted toward the Castle Rock. ..the sang softly...turned cartwheels...The chief led then, trotting steadily, exulting in his achievment. He was chief now in truth; and he mae stabbing motions with his spear. From his left had dangled Piggy's broken glasses" (151).</p>
+<p>"Far off along the bowstave of beach, three figures trotted toward the
+    Castle Rock. ..the sang softly...turned cartwheels...The chief led then,
+    trotting steadily, exulting in his achievment. He was chief now in
+    truth; and he mae stabbing motions with his spear. From his left had
+    dangled Piggy's broken glasses" (151).</p>
 <p>&nbsp;</p>
-<p>Stealing the glasses is SYMBOLIC&nbsp; of the disappearance of law and order and clear-thinking on the island.</p>
+<p>Stealing the glasses is SYMBOLIC&nbsp; of the disappearance of law and
+    order and clear-thinking on the island.</p>
 <p>&nbsp;</p>
 <p>&nbsp;<strong>Chapter 11 "Castle Rock" Pages 152-164</strong></p>
-<p><strong><br /></strong>Ralph and Piggy convince Sam and Eric they must go to Castle Rock and get Piggy's glasses.</p>
-<p>Ralph and Piggy are fairly certain they will have a fight, but believe they will be safe because they are not "savages" and they will be able to convince Jack's tribe to return Piggy's glasses which are needed because the fire is important.</p>
-<p>The 4 boys set off for Castle Rock with a few spears and the conch shell.</p>
+<p><strong><br /></strong>Ralph and Piggy convince Sam and Eric they must go
+    to Castle Rock and get Piggy's glasses.</p>
+<p>Ralph and Piggy are fairly certain they will have a fight, but believe
+    they will be safe because they are not "savages" and they will be able
+    to convince Jack's tribe to return Piggy's glasses which are needed
+    because the fire is important.</p>
+<p>The 4 boys set off for Castle Rock with a few spears and the conch shell.
+</p>
 <p>&nbsp;</p>
 <p>At Castle Rock...</p>
 <p>Roger orders the 4 boys to halt.</p>
-<p>Ralph blows the conch, trying to call an assembly. He asks for Jack to return Piggy's glasses.</p>
+<p>Ralph blows the conch, trying to call an assembly. He asks for Jack to
+    return Piggy's glasses.</p>
 <p>Jack laughs at the request.</p>
 <p>&nbsp;</p>
 <p>A fight breaks out.</p>
 <p>&nbsp;</p>
-<p>Piggy, holding the conch, speaks up and tries to convince everyone to be civilized.</p>
-<p>Piggy is speaking out, this shows that he has gained greater courage and confidence since the beginning of the novel.&nbsp;</p>
-<p>"Let me speak...I got the conch...I got this to say. You're acting like a crowd of kids...</p>
-<p>Which is better--to be a pack of painted Indians like you are, or to be sensible like Ralph is?...</p>
+<p>Piggy, holding the conch, speaks up and tries to convince everyone to be
+    civilized.</p>
+<p>Piggy is speaking out, this shows that he has gained greater courage and
+    confidence since the beginning of the novel.&nbsp;</p>
+<p>"Let me speak...I got the conch...I got this to say. You're acting like a
+    crowd of kids...</p>
+<p>Which is better--to be a pack of painted Indians like you are, or to be
+    sensible like Ralph is?...</p>
 <p>Which is better--to have rules and agree, or to hunt and kill?...</p>
-<p>Which is better, law and rescue, or hunting and breaking things up? (162).</p>
+<p>Which is better, law and rescue, or hunting and breaking things up?
+    (162).</p>
 <p>&nbsp;</p>
 <p>Roger suddenly releases a boulder.</p>
 <p>Ralph is able to get out of the way.</p>
 <p>Piggy without his glasses cannot see the boulder and is hit.</p>
-<p>His body is flung from Castle Rock down to the rocks 40 feet below. Piggy is killed and the conch shell is smashed to dust.</p>
-<p>His tragic death and the shattering of the conch represents the disappearance of the last remnants of democracy.</p>
-<p>"Ralph heard the great rock before he saw it...The rock struck Piggy a glancing blow from chin to knee; the conch exploded into a thousand white fragments and ceased to exist. Piggy, saying nothing, with no time for even a grunt, traveled through the air sideways from the rock, turning over as he went...Piggy fell forty feet and landed on his back across the square red rock in the sea. His head opened and stuff came out and turned red. Piggy's arms and legs twitched a bit, like a pig's after it has been killed. Then the sea breathed again in a long slow sigh, the water boiled white and pink over the rock; and when it went, sucking back again, the body of Piggy was gone" (163).</p>
+<p>His body is flung from Castle Rock down to the rocks 40 feet below. Piggy
+    is killed and the conch shell is smashed to dust.</p>
+<p>His tragic death and the shattering of the conch represents the
+    disappearance of the last remnants of democracy.</p>
+<p>"Ralph heard the great rock before he saw it...The rock struck Piggy a
+    glancing blow from chin to knee; the conch exploded into a thousand
+    white fragments and ceased to exist. Piggy, saying nothing, with no time
+    for even a grunt, traveled through the air sideways from the rock,
+    turning over as he went...Piggy fell forty feet and landed on his back
+    across the square red rock in the sea. His head opened and stuff came
+    out and turned red. Piggy's arms and legs twitched a bit, like a pig's
+    after it has been killed. Then the sea breathed again in a long slow
+    sigh, the water boiled white and pink over the rock; and when it went,
+    sucking back again, the body of Piggy was gone" (163).</p>
 <p>&nbsp;</p>
 <p>Sam and Eric are captured by Jack's tribe.</p>
 <p>Ralph is forced to run away and hide.</p>
 <p>&nbsp;</p>
 <p><strong>Chapter 12 " Cry of the Hunters" Pages 165-182</strong></p>
-<p><strong><br /></strong>Ralph is alone and afraid as it is getting dark on the island.</p>
+<p><strong><br /></strong>Ralph is alone and afraid as it is getting dark on
+    the island.</p>
 <p>He stays near Castle Rock because he is afraid to be alone.</p>
-<p>Ralph realizes Sam and Eric are guarding the Rock and he approaches them.</p>
-<p>Sam and Eric warn Ralph that the next day the tribe is going to hunt for Ralph and "they have a stick sharpened at both ends".</p>
-<p>Ralph does not realize a sharpened stick at both ends means the hunters will kill him and impale his body on the stick for meat.</p>
+<p>Ralph realizes Sam and Eric are guarding the Rock and he approaches them.
+</p>
+<p>Sam and Eric warn Ralph that the next day the tribe is going to hunt for
+    Ralph and "they have a stick sharpened at both ends".</p>
+<p>Ralph does not realize a sharpened stick at both ends means the hunters
+    will kill him and impale his body on the stick for meat.</p>
 <p>&nbsp;</p>
-<p>Ralph tells Sam and Eric he plans on hiding close to Castle Rock because he does not think Jack will look for him so close the Rock.</p>
+<p>Ralph tells Sam and Eric he plans on hiding close to Castle Rock because
+    he does not think Jack will look for him so close the Rock.</p>
 <p>Ralph still trusts Sam and Eric.</p>
 <p>&nbsp;</p>
-<p>Sam and Eric are so scared of Jack. The next morning they tell Jack where Ralph is hiding.</p>
+<p>Sam and Eric are so scared of Jack. The next morning they tell Jack where
+    Ralph is hiding.</p>
 <p>The hunters roll a boulder into Ralph's hiding spot.</p>
 <p>All attempts to get to Ralph are unsuccessful.</p>
-<p>The tribe gets desperate and set the entire area of the island on fire to flush Ralph out of hiding.</p>
-<p>Burning the whole island shows just how savage and immature the tribe has become. The fire will burn all of their food and resources and they could starve in the future.</p>
+<p>The tribe gets desperate and set the entire area of the island on fire to
+    flush Ralph out of hiding.</p>
+<p>Burning the whole island shows just how savage and immature the tribe has
+    become. The fire will burn all of their food and resources and they
+    could starve in the future.</p>
 <p>&nbsp;</p>
 <p>Ralph runs from the fire</p>
-<p>"Ralph was running with the siftness of fear through the undergrowth" (176).</p>
-<p>He hides for a short time in Simon's resting spot. Ralph feels like a pig being hunted.</p>
+<p>"Ralph was running with the siftness of fear through the undergrowth"
+    (176).</p>
+<p>He hides for a short time in Simon's resting spot. Ralph feels like a pig
+    being hunted.</p>
 <p>"They had smoked him out and set the island on fire" (177).</p>
 <p>Roger finds Ralph there.</p>
 <p>Ralph charges Roger and is able to escape.</p>
 <p>&nbsp;</p>
-<p>Ralph runs blindly towards the beach, right into a British Naval officer.</p>
-<p>"He forgot his wounds, his hunger and thirst, and became fear; hopeless fear on flying feet, rushing through the forest toward the open beach" (180).</p>
+<p>Ralph runs blindly towards the beach, right into a British Naval officer.
+</p>
+<p>"He forgot his wounds, his hunger and thirst, and became fear; hopeless
+    fear on flying feet, rushing through the forest toward the open beach"
+    (180).</p>
 <p>The Naval officer was attracted to the island by the fire and smoke.</p>
 <p>&nbsp;</p>
-<p>Ironically, the evil fire that Jack started so he could destroy Ralph, saves the boys. A fire that Ralph wanted all along is seen by the Navy.</p>
+<p>Ironically, the evil fire that Jack started so he could destroy Ralph,
+    saves the boys. A fire that Ralph wanted all along is seen by the Navy.
+</p>
 <p>&nbsp;</p>
-<p>The Naval officer assumes these nice British boys had a great adventure on the island and it was all fun and games.</p>
-<p>The officer is shocked to find the boys in face paint with spears and to learn that 2 boys have died.</p>
-<p>"A naval officer stood on the sand, looking down at Ralph is wary astonsihment...'We saw your smoke. What have you been doing? Having a war or something? Nobody killed, I hope?Any dead bodies?...I should have though that a pack of British boys--you're all British, aren't you?--would have been able to put up a better show" (181).</p>
+<p>The Naval officer assumes these nice British boys had a great adventure
+    on the island and it was all fun and games.</p>
+<p>The officer is shocked to find the boys in face paint with spears and to
+    learn that 2 boys have died.</p>
+<p>"A naval officer stood on the sand, looking down at Ralph is wary
+    astonsihment...'We saw your smoke. What have you been doing? Having a
+    war or something? Nobody killed, I hope?Any dead bodies?...I should have
+    though that a pack of British boys--you're all British, aren't
+    you?--would have been able to put up a better show" (181).</p>
 <p>&nbsp;</p>
 <p>Ralph and all the boys are confused, they begin crying.</p>
-<p>"Ralph looked up at him dumbly. For a moment he had a fleeting picture of the strange glamour that had one invested the beaches. But the island was scorched up like dead wood--Simon was dead--and Jack had--The tears began to flow and sobs shook him. He gave himself up to thme now for the first time on the island; great shuddering spasmsof grief that seemed to wrench his whole body" (182).</p>
+<p>"Ralph looked up at him dumbly. For a moment he had a fleeting picture of
+    the strange glamour that had one invested the beaches. But the island
+    was scorched up like dead wood--Simon was dead--and Jack had--The tears
+    began to flow and sobs shook him. He gave himself up to thme now for the
+    first time on the island; great shuddering spasmsof grief that seemed to
+    wrench his whole body" (182).</p>
 <p>&nbsp;</p>
-<p>"And in the middle of them, with filthy body, matted hair, and unwiped nose, Ralph wept for the end of innocence, the darkness of man's heart, and the fall through the air of the true, wise friend called Piggy" (182).</p>
+<p>"And in the middle of them, with filthy body, matted hair, and unwiped
+    nose, Ralph wept for the end of innocence, the darkness of man's heart,
+    and the fall through the air of the true, wise friend called Piggy"
+    (182).</p>
 <p>&nbsp;</p>
 <p>The Naval officer rescues the boys and brings them to the ship.</p>
-<p>&nbsp;Ironically, while the boys are being saved from their own personal war on the island, they are being brought back to a larger world at war, WWII.</p>
-<p>"The officer...waited, allowinghis eyes to rest on the trim cruiser in the distance" (182).</p></span></span>
-        </div>
-		<div class="clear"></div>
-	</div>
-</li>
-</ul>
+<p>&nbsp;Ironically, while the boys are being saved from their own personal
+    war on the island, they are being brought back to a larger world at war,
+    WWII.</p>
+<p>"The officer...waited, allowinghis eyes to rest on the trim cruiser in
+    the distance" (182).</p>
+</span></span>
 </div>
-	<div class="ui-widget-footer">
-		
-			
-		
-		<div class="clear"></div>
-	</div>
-</div>
-<script type="text/javascript">
-$(document).ready(function (){
-$(".tag-list li a").keypress(function(e) { if(e.which == 13) { $(this).click();   }});
-});
-function LoadGroupedData(container, MIID, PMI, groupYear, groupMonth, groupBy, tag) {
-  //ViewToUse looks at the hidden Sidebar List View defined in the Builder View.
-  var viewToUse = "";
-    if($('#hid-'+MIID+'-SidebarListView').length > 0){
-      viewToUse = $("#hid-" + MIID + "-SidebarListView").val();
-    };
-  GetContent('https://www.manvilleschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=1794&PageID=5860&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&RenderLoc=0&FromRenderLoc=0&GroupYear=' + groupYear + '&GroupMonth=' + groupMonth + '&GroupByField=' + groupBy + '&EnableQuirksMode=0&ViewID=' + viewToUse + '&Tag=' + tag, container, 2, 'chkSidebar();');
-}
-function LoadData(container, MIID, PMI, flexDataID, groupYear, groupMonth, groupBy, targetView, tag) {
-  if(targetView !== undefined || targetView.Length() == 0){
-  //targetView looks at the hidden Detail View defined in the Builder View.
-      targetView = $('#hid-'+MIID+'-DetailView').val();
-   }
-  GetContent('https://www.manvilleschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=1794&PageID=5860&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&FlexDataID=' + flexDataID + '&GroupYear=' + groupYear + '&GroupMonth=' + groupMonth + '&GroupByField=' + groupBy + '&RenderLoc=0&FromRenderLoc=0&EnableQuirksMode=0&Tag=' + tag + '&ViewID=' + targetView, container, 2, 'chkSidebar();');
-}
-function LoadTaggedData(container, MIID, PMI, tag) {
-  //ViewToUse looks at the hidden Sidebar List View defined in the Builder View.
-  var viewToUse = "";
-    if($('#hid-'+MIID+'-SidebarListView').length > 0){
-      viewToUse = $("#hid-" + MIID + "-SidebarListView").val();
-    };
-  GetContent('https://www.manvilleschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=1794&PageID=5860&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&RenderLoc=0&FromRenderLoc=0&Tag=' + tag + '&EnableQuirksMode=0&ViewID='+viewToUse, container, 2, 'chkSidebar();');
-  setTimeout(function(){ $("#module-content-"+ MIID +"").find('[tabindex]:first').focus(); }, 200);
-}
-</script>
-</div>
-
-</div></div>
-</div><div class="clear"></div></div></div><!-- End Centricity Content Area -->
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="noprint">
-        <section id="gb-footer-links-outer" class="gb-section-parent gb-section-pad" data-footer-links-color="White" data-footer-links-hover="White">
-        	<div id="gb-footer-links" class="gb-section"></div>
-        </section>
-        <section id="gb-footer-outer" class="gb-section-parent gb-section-pad" data-footer-text-color="White">
-            <div id="gb-footer" class="gb-section ui-clear displayFlexRow">
-                <h2></h2>
-                <div id="gb-address">
-                    <span class="gb-address one">1100 Brooks Blvd.</span><span class="gb-address spacer">, </span><span class="gb-address two">Manville, NJ 08835</span>
-                </div>
-                <div id="gb-contact">
-                	<span class="gb-contact phone" x-ms-format-detection="none">Phone: (908) 231-8500</span>
-                    <span class="gb-contact fax" x-ms-format-detection="none">Fax: </span>
-                </div>
-                <div id="gb-extra-links" class="displayFlexRow">
-                	<a class="footer-extra-link directions" href="//www.google.com/maps/place/1100 Brooks Blvd. Manville NJ 08835" target="_blank" data-show-directions-link="true">
-                    	<span>Get Directions</span>
-                    </a>
-                    <a class="footer-extra-link email" href="mailto:webadmin@manvillesd.org" data-show-email-link="false">
-                    	<span>Email Us</span>
-                    </a>
-                    <a class="footer-extra-link accessibility" href="#" target="_self">
-                    	<span>Web Accessibility</span>
-                    </a>
-                    <a class="footer-extra-link sitemap" href='/site/Default.aspx?PageType=15&SiteID=4&SectionMax=15&DirectoryType=6'>
-                        <span>Site Map</span>
-                    </a>
-                    <button class="cs-btn-reset footer-extra-link footer-scroll-btn" aria-label="Scroll To The Top Of The Page" tabindex="-1" aria-hidden="true"></button>
-                </div>
-            </div>
-        </section>
-        <section id="gb-social-media-outer" class="gb-section-parent gb-section-pad">
-        	<div id="gb-social-media" class="gb-section displayFlexRow">
-            	<h2>Stay Connected</h2>
-        		<div id="gb-social-media-icons" class="hidden"></div>
-            </div>
-        </section>
-        <section id="gb-schoolwires-footer-outer" class="gb-section-parent gb-section-pad">
-            <div id="gb-schoolwires-footer" class="gb-section border-box">
-                <div class="gb-schoolwires-footer top">
-                    <div id="gb-footer-disclaimer" data-show-disclaimer="false">
-                        <span>This is the disclaimer text. You can use this area for legal statements, copyright information, a mission statement, etc. If you don’t use it, the Bb footer will slide up.</span>
-                    </div>
-                </div>
-                <div class="gb-schoolwires-footer bottom" data-show-disclaimer="false">
-                    <div class="gb-schoolwires-footer logo"></div>
-                    <div id="gb-schoolwires-footer-links-copyright">
-                        <div class="gb-schoolwires-footer links"></div>
-                        <div class="gb-schoolwires-footer copyright"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </footer>
-</div><!-- BEGIN - STANDARD FOOTER -->
-<div id='sw-footer-outer'>
-<div id='sw-footer-inner'>
-<div id='sw-footer-left'></div>
-<div id='sw-footer-right'>
-<div id='sw-footer-links'>
-<ul>
-<li><a title='Click to email the primary contact' href='mailto:webadmin@manvillesd.org'>Questions or Feedback?</a> | </li>
-<li><a href='https://www.finalsite.com/privacy-policy' target="_blank">Web Community Manager Privacy Policy (Updated)</a> | </li>
-<li><a class='sw-footer-terms-link' aria-hidden='true' tabindex='-1' href=''></a></li>
-</ul>
-</div>
-<div id='sw-footer-copyright'>Copyright &copy; 2024 Finalsite - all rights reserved.</div>
-<div id='sw-footer-logo'><a href='http://www.finalsite.com' title="Finalsite - all rights reserved">
-<img src='https://www.manvilleschools.org/Static//GlobalAssets/Images/Navbar/WCM_logo.svg'
-class='sw-footer-logo-img' alt="Web Community Manager."/>
-</a></div>
-</div>
-</div>
-</div>
-<!-- END - STANDARD FOOTER -->
-<script type="text/javascript">
-   $(document).ready(function(){
-  var data = JSON.stringify({
-    "SiteID": "4",
-    "ChannelID": "1236",
-    "SectionID": "1794",
-    "PageID": "5860",
-    "Browser": "Firefox 130.0",
-    "OS": "WinNT",
-    "IPAddress": "10.61.15.224"
-  });
-  $.ajax({
-    url: "../Site/SiteController.aspx/InsertAnalyticsData",
-    method: "POST",
-    contentType: "application/json",
-    data: data,
-    success: function(response) {
-    },
-    error: function(xhr, status, error) {
-    }
-  });
-   });
-</script>
-
-    <input type="hidden" id="hid-pageid" value="5860" />
-
-    
-
-    <div id='dialog-overlay-WindowMedium-base' class='ui-dialog-overlay-base' ><div id='WindowMedium' role='dialog' tabindex='-1'  class='ui-dialog-overlay medium' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowMedium-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowMedium-body' ></div><button class='ui-dialog-overlay-close' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowMedium");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowMedium-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowMedium-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    <div id='dialog-overlay-WindowSmall-base' class='ui-dialog-overlay-base' ><div id='WindowSmall' role='dialog' tabindex='-1'  class='ui-dialog-overlay small' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowSmall-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowSmall-body' ></div><button class='ui-dialog-overlay-close' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowSmall");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowSmall-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowSmall-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    <div id='dialog-overlay-WindowLarge-base' class='ui-dialog-overlay-base' ><div id='WindowLarge' role='dialog' tabindex='-1'  class='ui-dialog-overlay large' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowLarge-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowLarge-body' ></div><button class='ui-dialog-overlay-close' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowLarge");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowLarge-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowLarge-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-
-    <div id='dialog-overlay-WindowMediumModal-base' class='ui-dialog-overlay-base-modal' ><div id='WindowMediumModal' role='dialog' tabindex='-1'  class='ui-dialog-overlay medium' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowMediumModal-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowMediumModal-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowMediumModal");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowMediumModal-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowMediumModal-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    <div id='dialog-overlay-WindowSmallModal-base' class='ui-dialog-overlay-base-modal' ><div id='WindowSmallModal' role='dialog' tabindex='-1'  class='ui-dialog-overlay small' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowSmallModal-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowSmallModal-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowSmallModal");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowSmallModal-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowSmallModal-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    <div id='dialog-overlay-WindowLargeModal-base' class='ui-dialog-overlay-base-modal' ><div id='WindowLargeModal' role='dialog' tabindex='-1'  class='ui-dialog-overlay large' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowLargeModal-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowLargeModal-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowLargeModal");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowLargeModal-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowLargeModal-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    <div id='dialog-overlay-WindowXLargeModal-base' class='ui-dialog-overlay-base-modal' ><div id='WindowXLargeModal' role='dialog' tabindex='-1'  class='ui-dialog-overlay xlarge' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowXLargeModal-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowXLargeModal-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowXLargeModal");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowXLargeModal-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowXLargeModal-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-
-    <div id='dialog-overlay-MyAccountSubscriptionOverlay-base' class='ui-dialog-overlay-base-modal' ><div id='MyAccountSubscriptionOverlay' role='dialog' tabindex='-1'  class='ui-dialog-overlay medium' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-MyAccountSubscriptionOverlay-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-MyAccountSubscriptionOverlay-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("MyAccountSubscriptionOverlay");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-MyAccountSubscriptionOverlay-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-MyAccountSubscriptionOverlay-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-
-    <div id='dialog-overlay-InsertOverlay-base' class='ui-dialog-overlay-base-modal' ><div id='InsertOverlay' role='dialog' tabindex='-1'  class='ui-dialog-overlay large' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-InsertOverlay-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-InsertOverlay-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("InsertOverlay");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-InsertOverlay-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-InsertOverlay-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    <div id='dialog-overlay-InsertOverlay2-base' class='ui-dialog-overlay-base-modal' ><div id='InsertOverlay2' role='dialog' tabindex='-1'  class='ui-dialog-overlay large' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-InsertOverlay2-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-InsertOverlay2-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("InsertOverlay2");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-InsertOverlay2-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-InsertOverlay2-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    
-    <div id="videowrapper" class="ui-helper-hidden">
-        <div id="videodialog" role="application">
-            <a id="videodialog-close" role="button" href="javascript:;" aria-label="Close Overlay" class="close-btn" onclick="closeVideoDialog();">CLOSE</a>
-            <div id="videodialog-video" ></div>
-            <div id="videodialog-foot" tabindex="0"></div>
-        </div>
-    </div>
-    <div id="attachmentwrapper" class="ui-helper-hidden">
-        <div id="attachmentdialog" role="application">
-            <a id="attachmentdialog-close" role="button" href="javascript:;" aria-label="Close Overlay" class="close-btn" onclick="closeAttachmentDialog();">CLOSE</a>
-            <div id="attachmentdialog-container"></div>
-        </div>
-    </div>
-    <script type="text/javascript">
-
-        $(document).ready(function () { 
-
-            removeBrokenImages();
-            checkSidebar();
-            RemoveCookie();
-
-            
-            //$('div.bullet').attr('tabindex', '');
-
-            
-
-            $('.navigation li.collapsible').each(function () {
-                if ($(this).find('ul').length == 0) {
-                    $(this).removeClass('collapsible');
-                }
-            });
-
-            // find page nav state cookie and add open chevron
-            var arrValues = GetCookie('SWPageNavState').split('~');
-
-            $.each(arrValues, function () {
-                if (this != '') {
-                   //$('#' + this).addClass('collapsible').prepend("<div class='bullet collapsible' aria-label='Close Page Submenu'/>");
-                    $('#' + this).addClass('collapsible').prepend("<div class='bullet collapsible' aria-haspopup='true' aria-expanded='true' />");
-                }
-            });
-
-            // find remaining sub menus and add closed chevron and close menu
-            $('.navigation li > ul').each(function () {
-                var list = $(this);
-
-                if (list.parent().hasClass('active') && !list.parent().hasClass('collapsible')) {
-                    // open sub for currently selected page                    
-                    //list.parent().addClass('collapsible').prepend("<div class='bullet collapsible'aria-label='Close Page Submenu' />");
-                    list.parent().addClass('collapsible').prepend("<div class='bullet collapsible' aria-haspopup='true' aria-expanded='true' />");
-                } else {
-                    if (list.parent().hasClass('collapsible') && !list.siblings('div').hasClass('collapsible')) {
-                        // open sub for page with auto expand
-                        list.siblings('div.expandable').remove();
-                        //list.parent().prepend("<div class='bullet collapsible' aria-label='Close Page Submenu' />");
-                        list.parent().prepend("<div class='bullet collapsible' aria-haspopup='true' aria-expanded='true' />");
-                    }
-                }
-
-                if (!list.siblings('div').hasClass('collapsible')) {
-                    // keep all closed that aren't already set to open
-                    //list.parent().addClass('expandable').prepend("<div class='bullet expandable' aria-label='Open Page Submenu' />");
-                    list.parent().addClass('expandable').prepend("<div class='bullet expandable' aria-haspopup='true' aria-expanded='false' />");
-                    ClosePageSubMenu(list.parent());
-                } else {
-                   OpenPageSubMenu(list.parent());
-                }
-            });
-
-            $(".navigation .bullet.collapsible, .navigation .bullet.expandable, .navigation a").each(function () {
-                if ($(this).closest("ul").attr("aria-hidden") == "true"){
-                    $(this).attr("tabindex", "-1");
-                } else {
-                    $(this).attr("tabindex", "0");
-                }
-            })
-
-            // remove bullet from hierarchy if no-bullet set
-            $('.navigation li.collapsible').each(function () {
-                if ($(this).hasClass('no-bullet')) {
-                    if (!$(this).hasClass('navigationgroup')) { $(this).removeClass('collapsible'); }
-                    $(this).children('div.collapsible').remove();
-                }
-            });
-
-            $('.navigation li.expandable').each(function () {
-                if ($(this).hasClass('no-bullet')) {
-                    if (!$(this).hasClass('navigationgroup')) { $(this).removeClass('expandable'); }
-                    $(this).children('div.expandable').remove();
-                }
-            });
-
-            $('.navigation li:not(.collapsible,.expandable,.no-bullet)').each(function () {
-                $(this).prepend("<div class='bullet'/>");
-            });
-
-            $('.navigation li.active').parents('ul').each(function () {
-                if (!$(this).hasClass('page-navigation')) {
-                    OpenPageSubMenu($(this).parent());
-                }
-            });
-
-            // Set aria ttributes
-            /*$('li.collapsible').each(function () {
-               $(this).attr("aria-expanded", "true");
-               $(this).find('div:first').attr('aria-pressed', 'true');
-            });*/
-
-            $('li.expandable').each(function () {
-                ///$(this).attr("aria-expanded", "false");
-                //$(this).find('div:first').attr('aria-pressed', 'false');
-                $(this).find("ul :focusable").attr("tabindex","-1");
-            });
-
-            /*$('div.bullet').each(function () {
-                $(this).attr("aria-hidden", "true");
-            });*/
-
-            // set click event for chevron
-            $(document).on('click', '.navigation div.collapsible', function () {
-                ClosePageSubMenu($(this).parent());
-            });
-
-            $(document).on('click', '.navigation div.expandable', function () {
-                OpenPageSubMenu($(this).parent());
-            });
-
-            // set navigation grouping links
-            $(document).on('click', '.navigationgroup.collapsible > a', function () {
-                ClosePageSubMenu($(this).parent());
-            });
-
-            $(document).on('click', '.navigationgroup.expandable > a', function () {
-                OpenPageSubMenu($(this).parent());
-            });
-
-            //SW MYSTART DROPDOWNS
-            $(document).on('click', '.sw-mystart-dropdown', function () {
-                $(this).children(".sw-dropdown").css("display", "block");
-            });
-
-            $(".sw-mystart-dropdown").hover(function () { }, function () {
-                $(this).children(".sw-dropdown").hide();
-                $(this).blur();
-            });
-
-            //SW ACCOUNT DROPDOWN
-            $(document).on('click', '#sw-mystart-account', function () {
-                $(this).children("#sw-myaccount-list").show();
-                $(this).addClass("clicked-state");
-            });
-
-            $("#sw-mystart-account, #sw-myaccount-list").hover(function () { }, function () {
-                $(this).children("#sw-myaccount-list").hide();
-                $(this).removeClass("clicked-state");
-                $("#sw-myaccount").blur();
-            });
-
-            // set hover class for page and section navigation
-            $('.ui-widget.app.pagenavigation, .ui-widget.app.sectionnavigation').find('li > a').hover(function () {
-                $(this).addClass('hover');
-            }, function () {
-                $(this).removeClass('hover');
-            });
-
-            //set aria-label for home
-            $('#navc-HP > a').attr('aria-label', 'Home');
-
-            // set active class on channel and section
-            var activeChannelNavType = $('input#hidActiveChannelNavType').val();
-            if (activeChannelNavType == -1) {
-                // homepage is active
-                $('#navc-HP').addClass('active');
-            } else if (activeChannelNavType == 1) {
-                // calendar page is active
-                $('#navc-CA').addClass('active');
-            } else {
-                // channel is active - set the active class on the channel
-                var activeSelectorID = $('input#hidActiveChannel').val();
-                $('#navc-' + activeSelectorID).addClass('active');
-
-                // set the breadcrumb channel href to the channel nav href
-                $('li[data-bccID=' + activeSelectorID + '] a').attr('href', $('#navc-' + activeSelectorID + ' a').attr('href'));
-                $('li[data-bccID=' + activeSelectorID + '] a span').text($('#navc-' + activeSelectorID + ' a span').first().text());
-
-                // set the active class on the section
-                activeSelectorID = $('input#hidActiveSection').val();
-                $('#navs-' + activeSelectorID).addClass('active');
-
-                // set the breadcrumb section href to the channel nav href
-                $('li[data-bcsID=' + activeSelectorID + '] a').attr('href', $('#navs-' + activeSelectorID + ' a').attr('href'));
-                if ($('#navs-' + activeSelectorID + ' a').attr('target') !== undefined) {
-                    $('li[data-bcsID=' + activeSelectorID + '] a').attr('target', $('#navs-' + activeSelectorID + ' a').attr('target'));
-                }
-                $('li[data-bcsID=' + activeSelectorID + '] span').text($('#navs-' + activeSelectorID + ' a span').text());
-
-                if ($('.sw-directory-columns').length > 0) {
-                    $('ul.ui-breadcrumbs li:last-child').remove();
-                    $('ul.ui-breadcrumbs li:last-child a').replaceWith(function() { return $('span', this); });
-                    $('ul.ui-breadcrumbs li:last-child span').append(' Directory');
-                }
-            }
-        }); // end document ready
-
-        function OpenPageSubMenu(li) {
-            if (li.prop('tagName').toLowerCase() == "li") {
-                if (li.hasClass('expandable')) {
-                    li.removeClass('expandable').addClass('collapsible');
-                }
-                if (li.find('div:first').hasClass('expandable')) {
-                    let linkText = li.find("> a").text();
-                    //li.find('div:first').removeClass('expandable').addClass('collapsible').attr('aria-pressed', 'true').attr('aria-label', 'Close Page Submenu');
-                    li.find('div:first').removeClass('expandable').addClass('collapsible').attr({
-                        "aria-expanded": "true",
-                        "aria-label": "Collapse "+linkText+" nested links"
-                    });
-                }
-                li.find('ul:first').attr('aria-hidden', 'false').show();
-                li.find("ul:first > li > .bullet.expandable, ul:first > li > .bullet.collapsible, ul:first > li > a").attr("tabindex", "0");
-                //li.find("li.expandable ul :focusable").attr("tabindex","-1");
-
-                //li.attr("aria-expanded", "true");
-
-                PageNavigationStateCookie();
-            }
-        }
-
-        function ClosePageSubMenu(li) {
-            if (li.prop('tagName').toLowerCase() == "li") {
-                let linkText = li.find("> a").text();
-                li.removeClass('collapsible').addClass('expandable');
-                //li.find('div:first').removeClass('collapsible').addClass('expandable').attr('aria-pressed', 'false').attr('aria-label', 'Open Page Submenu');
-                li.find('div:first').removeClass('collapsible').addClass('expandable').attr({
-                    "aria-expanded": "false",
-                    "aria-label": "Expand "+linkText+" nested links"
-                });
-                li.find('ul:first').attr('aria-hidden', 'true').hide();
-                li.find("ul:first .bullet.expandable, ul:first .bullet.collapsible, ul:first a").attr("tabindex","-1");
-
-                //li.attr("aria-expanded", "false");
-
-                PageNavigationStateCookie();
-            }
-        }
-
-        function PageNavigationStateCookie() {
-            var strCookie = "";
-
-            $('.pagenavigation li > ul').each(function () {
-                var item = $(this).parent('li');
-                if (item.hasClass('collapsible') && !item.hasClass('no-bullet')) {
-                    strCookie += $(this).parent().attr('id') + '~';
-                }
-            });
-
-            SetCookie('SWPageNavState', strCookie);
-        }
-
-        function checkSidebar() {
-            $(".ui-widget-sidebar").each(function () {
-                if ($.trim($(this).html()) != "") {
-                    $(this).show();
-                    $(this).siblings(".ui-widget-detail").addClass("with-sidebar");
-                }
-            });
-        }
-
-        function removeBrokenImages() {
-            //REMOVES ANY BROKEN IMAGES
-            $("span.img img").each(function () {
-                if ($(this).attr("src") !== undefined && $(this).attr("src") != '../../') {
-                    $(this).parent().parent().show();
-                    $(this).parent().parent().siblings().addClass("has-thumb");
-                }
-            });
-        }
-
-        function LoadEventDetailUE(moduleInstanceID, eventDateID, userRegID, isEdit) {
-            (userRegID === undefined ? userRegID = 0 : '');
-            (isEdit === undefined ? isEdit = false : '');
-            OpenDialogOverlay("WindowMediumModal", { LoadType: "U", LoadURL: "https://www.manvilleschools.org//site/UserControls/Calendar/EventDetailWrapper.aspx?ModuleInstanceID=" + moduleInstanceID + "&EventDateID=" + eventDateID + "&UserRegID=" + userRegID + "&IsEdit=" + isEdit });
-        }
-
-        function RemoveCookie() {
-            // There are no sub page            
-            if ($('.pagenavigation li li').length == 0) {
-                //return false;
-                PageNavigationStateCookie();
-            }
-        }
-    </script>
-
-    <script type="text/javascript">
-
-        function AddOffCanvasMenuHeightForSiteNav() {
-            var sitenavulHeight = 0;
-
-            if ($('#sw-pg-sitenav-ul').length > 0) {
-                sitenavulHeight = parseInt($("#sw-pg-sitenav-ul").height());
-            }
-
-            var swinnerwrapHeight = 0;
-
-            if ($('#sw-inner-wrap').length > 0) {
-                swinnerwrapHeight = parseInt($("#sw-inner-wrap").height());
-            }
-
-            // 360px is abount 5 li height
-            if (sitenavulHeight + 360 >= swinnerwrapHeight) {
-                $("#sw-inner-wrap").height(sitenavulHeight + 360);
-            }
-        }
-
-        function AddOffCanvasMenuHeightForSelectSchool() {
-            var selectschoolulHeight = 0;
-
-            if ($('#sw-pg-selectschool-ul').length > 0) {
-                selectschoolulHeight = parseInt($("#sw-pg-selectschool-ul").height());
-            }
-
-            var swinnerwrapHeight = 0;
-
-            if ($('#sw-inner-wrap').length > 0) {
-                swinnerwrapHeight = parseInt($("#sw-inner-wrap").height());
-            }
-
-            // 360px is abount 5 li height
-            if (selectschoolulHeight + 360 >= swinnerwrapHeight) {
-                $("#sw-inner-wrap").height(selectschoolulHeight + 360);
-            }
-        }
-
-        $(document).ready(function () {
-            if ($("#sw-pg-sitenav-a").length > 0) {
-                $(document).on('click', '#sw-pg-sitenav-a', function () {
-                    if ($("#sw-pg-sitenav-ul").hasClass('sw-pgmenu-closed')) {
-                        AddOffCanvasMenuHeightForSiteNav();
-
-                        $("ul.sw-pgmenu-toplevel").removeClass('sw-pgmenu-open').addClass('sw-pgmenu-closed');
-                        $("#sw-pg-sitenav-ul").removeClass('sw-pgmenu-closed');
-                        $("#sw-pg-sitenav-ul").addClass('sw-pgmenu-open');
-                    } else {
-                        $("#sw-pg-sitenav-ul").removeClass('sw-pgmenu-open');
-                        $("#sw-pg-sitenav-ul").addClass('sw-pgmenu-closed');
-                    }
-                });
-
-                $(document).on('click', '#sw-pg-selectschool-a', function () {
-                    if ($("#sw-pg-selectschool-ul").hasClass('sw-pgmenu-closed')) {
-                        AddOffCanvasMenuHeightForSelectSchool();
-
-                        $("ul.sw-pgmenu-toplevel").removeClass('sw-pgmenu-open').addClass('sw-pgmenu-closed');
-                        $("#sw-pg-selectschool-ul").removeClass('sw-pgmenu-closed');
-                        $("#sw-pg-selectschool-ul").addClass('sw-pgmenu-open');
-                    } else {
-                        $("#sw-pg-selectschool-ul").removeClass('sw-pgmenu-open');
-                        $("#sw-pg-selectschool-ul").addClass('sw-pgmenu-closed');
-                    }
-                });
-
-                $(document).on('click', '#sw-pg-myaccount-a', function () {
-                    if ($("#sw-pg-myaccount-ul").hasClass('sw-pgmenu-closed')) {
-                        $("ul.sw-pgmenu-toplevel").removeClass('sw-pgmenu-open').addClass('sw-pgmenu-closed');
-                        $("#sw-pg-myaccount-ul").removeClass('sw-pgmenu-closed');
-                        $("#sw-pg-myaccount-ul").addClass('sw-pgmenu-open');
-                    } else {
-                        $("#sw-pg-myaccount-ul").removeClass('sw-pgmenu-open');
-                        $("#sw-pg-myaccount-ul").addClass('sw-pgmenu-closed');
-                    }
-                });
-
-                $(document).on('click', '.pg-list-bullet', function () {
-                    $(this).prev().toggle();
-
-                    if ($(this).hasClass('closed')) {
-                        AddOffCanvasMenuHeightForSiteNav();
-
-                        $(this).removeClass('closed');
-                        $(this).addClass('open');
-                    } else {
-                        $(this).removeClass('open');
-                        $(this).addClass('closed');
-                    }
-                });
-
-                $(document).on('mouseover', '#sw-pg-selectschool', function () {
-                    $("#sw-pg-selectschool-firstli").removeClass('sw-pg-selectschool-firstli-mouseout').addClass('sw-pg-selectschool-firstli-mouseover');
-                    $("#sw-pg-selectschool-firstli a").addClass('sw-pg-selectschool-firstli-a-mouseover').removeClass('sw-pg-selectschool-firstli-a-mouseout');
-                });
-
-                $(document).on('mouseout', '#sw-pg-selectschool', function () {
-                    $("#sw-pg-selectschool-firstli").removeClass('sw-pg-selectschool-firstli-mouseover').addClass('sw-pg-selectschool-firstli-mouseout');
-                    $("#sw-pg-selectschool-firstli a").addClass('sw-pg-selectschool-firstli-a-mouseout').removeClass('sw-pg-selectschool-firstli-a-mouseover');
-                });
-
-                $(document).on('mouseover', '#sw-pg-myaccount', function () {
-                    $("#sw-pg-myaccount-firstli").removeClass('sw-pg-myaccount-firstli-mouseout').addClass('sw-pg-myaccount-firstli-mouseover');
-                    $("#sw-pg-myaccount-firstli a").addClass('sw-pg-myaccount-firstli-a-mouseover').removeClass('sw-pg-myaccount-firstli-a-mouseout');
-                });
-
-                $(document).on('mouseout', '#sw-pg-myaccount', function () {
-                    $("#sw-pg-myaccount-firstli").removeClass('sw-pg-myaccount-firstli-mouseover').addClass('sw-pg-myaccount-firstli-mouseout');
-                    $("#sw-pg-myaccount-firstli a").addClass('sw-pg-myaccount-firstli-a-mouseout').removeClass('sw-pg-myaccount-firstli-a-mouseover');
-                });
-
-                $(document).on('mouseover', '#sw-pg-sitenav', function () {
-                    $("#sw-pg-sitenav-firstli").removeClass('sw-pg-sitenav-firstli-mouseout').addClass('sw-pg-sitenav-firstli-mouseover');
-                    $("#sw-pg-sitenav-firstli a").addClass('sw-pg-sitenav-firstli-a-mouseover').removeClass('sw-pg-sitenav-firstli-a-mouseout');
-                });
-
-                $(document).on('mouseout', '#sw-pg-sitenav', function () {
-                    $("#sw-pg-sitenav-firstli").removeClass('sw-pg-sitenav-firstli-mouseover').addClass('sw-pg-sitenav-firstli-mouseout');
-                    $("#sw-pg-sitenav-firstli a").addClass('sw-pg-sitenav-firstli-a-mouseout').removeClass('sw-pg-sitenav-firstli-a-mouseover');
-                });
-
-                $(document).on('mouseover', '#sw-pg-district', function () {
-                    $("#sw-pg-district-firstli").removeClass('sw-pg-district-firstli-mouseout').addClass('sw-pg-district-firstli-mouseover');
-                    $("#sw-pg-district-firstli a").addClass('sw-pg-district-firstli-a-mouseover').removeClass('sw-pg-district-firstli-a-mouseout');
-                });
-
-                $(document).on('mouseout', '#sw-pg-district', function () {
-                    $("#sw-pg-district-firstli").removeClass('sw-pg-district-firstli-mouseover').addClass('sw-pg-district-firstli-mouseout');
-                    $("#sw-pg-district-firstli a").addClass('sw-pg-district-firstli-a-mouseout').removeClass('sw-pg-district-firstli-a-mouseover');
-                });
-            }
-        });
-
-
-    </script>
-    <script src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/min/SW-UI_2680.min.js" type='text/javascript'></script>
-    <script language="javascript" type='text/javascript' src="https://www.manvilleschools.org/Static/GlobalAssets/jQueryUI.min.js"></script>
-    <script src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/jquery.sectionlayer.js" type='text/javascript'></script>
-    <script src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/Initialize_2560.js" type='text/javascript'></script>
-    <script src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/min/swfobject.min.js" type="text/javascript"></script>
-    <script src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/min/jquery.ajaxupload_2440.min.js" type="text/javascript"></script>
-
-    <!-- Begin swuc.CheckScript -->
-  <script type="text/javascript" src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/ThirdParty/json2.js"></script>
-  <script type="text/javascript" src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/CheckScript_2780.js"></script>
-<!-- End swuc.CheckScript -->
-
-
-    <!-- Server Load Time (01): 0.0936708 Seconds -->
-
-    
-
-    <!-- off-canvas menu enabled-->
-    
-
-    <!-- Ally Alternative Formats Configure START   -->
-    
-<script>
-    AFExtensions = ".pdf,.doc,.docx,.ppt,.pptx,.odt,.odp";
-    AllyClientID = "13314";
-	    // Wait for the API to load     
-	    ally.ready(function() {
-		    // Configure an API instance
-            const ui = ally.ui({
-			    'client': {
-				    'baseUrl': 'https://prod.ally.ac',
-				    'clientId': 13314
-			    },
-			    'courseId': '1794',
-			    'locale': $('html').attr('lang'),
-			    'platformName': 'Wcm',  
-			    'role': 'anonymous'
-		    });
-	        // Apply the API to the page body   
-            ui.autoUpdate({'domWatch': 250});
-    });
-
-</script>
-    <!-- Ally Alternative Formats Configure END     -->
-
-</body>
-</html>

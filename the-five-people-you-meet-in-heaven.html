@@ -1,1306 +1,523 @@
 <h1>The Five People You Meet in Heaven</h1>
 
-		
-	</div>
-
-    <div class="ui-widget-footer">
-		  
-	</div>
-</div>
-<script type="text/javascript">
-$(document).ready(function (){
-$(".tag-list li a").keypress(function(e) { if(e.which == 13) { $(this).click();   }});
-});
-function LoadGroupedData(container, MIID, PMI, groupYear, groupMonth, groupBy, tag) {
-  //ViewToUse looks at the hidden Sidebar List View defined in the Builder View.
-  var viewToUse = "";
-    if($('#hid-'+MIID+'-SidebarListView').length > 0){
-      viewToUse = $("#hid-" + MIID + "-SidebarListView").val();
-    };
-  GetContent('https://www.manvilleschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=1794&PageID=5846&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&RenderLoc=0&FromRenderLoc=0&GroupYear=' + groupYear + '&GroupMonth=' + groupMonth + '&GroupByField=' + groupBy + '&EnableQuirksMode=0&ViewID=' + viewToUse + '&Tag=' + tag, container, 2, 'chkSidebar();');
-}
-function LoadData(container, MIID, PMI, flexDataID, groupYear, groupMonth, groupBy, targetView, tag) {
-  if(targetView !== undefined || targetView.Length() == 0){
-  //targetView looks at the hidden Detail View defined in the Builder View.
-      targetView = $('#hid-'+MIID+'-DetailView').val();
-   }
-  GetContent('https://www.manvilleschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=1794&PageID=5846&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&FlexDataID=' + flexDataID + '&GroupYear=' + groupYear + '&GroupMonth=' + groupMonth + '&GroupByField=' + groupBy + '&RenderLoc=0&FromRenderLoc=0&EnableQuirksMode=0&Tag=' + tag + '&ViewID=' + targetView, container, 2, 'chkSidebar();');
-}
-function LoadTaggedData(container, MIID, PMI, tag) {
-  //ViewToUse looks at the hidden Sidebar List View defined in the Builder View.
-  var viewToUse = "";
-    if($('#hid-'+MIID+'-SidebarListView').length > 0){
-      viewToUse = $("#hid-" + MIID + "-SidebarListView").val();
-    };
-  GetContent('https://www.manvilleschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=1794&PageID=5846&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&RenderLoc=0&FromRenderLoc=0&Tag=' + tag + '&EnableQuirksMode=0&ViewID='+viewToUse, container, 2, 'chkSidebar();');
-  setTimeout(function(){ $("#module-content-"+ MIID +"").find('[tabindex]:first').focus(); }, 200);
-}
-</script>
-</div>
-
-</div></div>
-<div id='pmi-6684'>
-
-
-
-<div id='sw-module-70620'>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            var DomainID = '1794';
-            var PageID = '5846';
-            var RenderLoc = '0';
-            var MIID = '7062';
-
-            //added to check to make sure moderated content doesn't bleed through the dialog
-            if ($('#dialog-overlay-WindowLargeModal-body.moderateContent').length > 0) {
-                $("#module-content-" + MIID).find(".ui-widget-detail").find(".ui-article").append("<p>&nbsp;</p>");
-            }
-        });
-    </script>
-
-    <script type="text/javascript">$(document).ready(function() {CheckScript('ModuleView');CheckScript('Mustache');
- });</script>
-    
-    <div id="module-content-7062" >
-<div class="ui-widget app flexpage">
-	<div class="ui-widget-header ui-helper-hidden">
-		
-	</div>
-	
-	<div class="ui-widget-detail">
-		<ul class="ui-articles">
-<li>
-	<div class="ui-article">
-		<div class="ui-article-description">
-        	<span><span ><h1><span style="font-size: x-large;"><span style="color: #000000;"><strong>THE AUTHOR</strong></span></span><span style="color: #000000; font-size: medium;"><strong><span style="font-size: x-large;"> MITCH ALBOM</span> <br /></strong></span></h1>
-<h1><span style="color: #000000; font-size: medium;"><strong>is an internationally renowned and best-selling author, journalist, screenwriter, playwright, radio and television broadcaster and musician. His books have collectively sold over 28 million copies worldwide; have been published in forty-one territories and in forty-two languages around the world; and have been made into Emmy Award-winning and critically-acclaimed television movies.</strong></span></h1>
-<p><span style="color: #000000; font-size: medium;"><strong>&nbsp;</strong></span></p>
-<p><span style="color: #000000; font-size: medium;"><strong>Mitch was born on May 23, 1958 in Passaic, New Jersey, the middle of three children to Rhoda and Ira Albom. The family moved to the Buffalo, N.Y. area briefly before settling in Oaklyn, New Jersey, not far from Philadelphia.</strong></span></p>
-<p><span style="color: #000000; font-size: medium;"><strong>&nbsp;</strong></span></p>
-<p><span style="color: #000000; font-size: medium;"><strong>In 1995, he married Janine Sabino. That same year he re-encountered Morrie Schwartz, a former college professor who was dying of ALS, also known as Lou Gehrig&rsquo;s disease. His visits with Schwartz would lead to the book <em>Tuesdays with Morrie</em>, which moved Mitch away from sports and began his career as an internationally recognized author.</strong></span></p>
-<p><span style="color: #000000; font-size: medium;"><strong>&nbsp;</strong></span></p>
-<p><span style="color: #000000; font-size: medium;"><strong>His first novel, <em>The Five People You Meet in Heaven</em>, is the most successful US hardcover first adult novel ever.</strong></span></p>
-<p><span style="color: #000000; font-size: medium;"><strong>&nbsp;</strong></span></p>
-<p><span style="color: #000000; font-size: medium;"><strong>All three of Albom&rsquo;s best sellers have been turned into successful TV movies. </strong></span></p>
-<p><span style="color: #000000; font-size: medium;"><strong>&nbsp;</strong></span></p>
-<p><span style="color: #000000; font-size: medium;"><strong>Oprah Winfrey produced the film version of <em>Tuesdays With Morrie</em> in December 1999, starring Jack Lemmon and Hank Azaria. The film garnered four Emmy awards, including best TV film, director, actor and supporting actor. </strong></span></p>
-<p><span style="color: #000000; font-size: medium;"><strong>&nbsp;</strong></span></p>
-<p><span style="color: #000000; font-size: medium;"><strong>The critically acclaimed <em>Five People You Meet in Heaven</em> aired on ABC in winter, 2004. Directed by Lloyd Kramer, the film was the most watched TV movie of the year, with 19 million viewers. </strong></span></p>
-<p><span style="color: #000000; font-size: medium;"><strong>&nbsp;</strong></span></p>
-<h1><span style="color: #000000; font-size: medium;"><strong>Most recently, <em>Oprah Winfrey Presents Mitch Albom&rsquo;s For One More Day</em> aired on ABC in December 2007 and earned Ellen Burstyn a Screen Actors Guild nomination.</strong></span></h1>
-<p><span style="color: #000000; font-size: medium;"><strong>&nbsp;</strong></span></p>
-<p><span style="color: #0000ff; font-size: x-large;"><strong>THEME: </strong></span></p>
-<p><span style="color: #0000ff; font-size: x-large;"><strong>Search for Identity </strong></span></p>
-<p><span style="color: #0000ff; font-size: x-large;"><strong>American Dream or the American Nightmare<br /></strong></span></p>
+<h1><span style="font-size: x-large;"><span style="color: #000000;"><strong>THE
+                AUTHOR</strong></span></span><span style="color: #000000; font-size: medium;"><strong><span
+                style="font-size: x-large;"> MITCH ALBOM</span>
+            <br /></strong></span></h1>
+<h1><span style="color: #000000; font-size: medium;"><strong>is an
+            internationally renowned and best-selling author, journalist,
+            screenwriter, playwright, radio and television broadcaster and
+            musician. His books have collectively sold over 28 million
+            copies worldwide; have been published in forty-one territories
+            and in forty-two languages around the world; and have been made
+            into Emmy Award-winning and critically-acclaimed television
+            movies.</strong></span></h1>
+<p><span style="color: #000000; font-size: medium;"><strong>&nbsp;</strong></span>
+</p>
+<p><span style="color: #000000; font-size: medium;"><strong>Mitch was born
+            on May 23, 1958 in Passaic, New Jersey, the middle of three
+            children to Rhoda and Ira Albom. The family moved to the
+            Buffalo, N.Y. area briefly before settling in Oaklyn, New
+            Jersey, not far from Philadelphia.</strong></span></p>
+<p><span style="color: #000000; font-size: medium;"><strong>&nbsp;</strong></span>
+</p>
+<p><span style="color: #000000; font-size: medium;"><strong>In 1995, he
+            married Janine Sabino. That same year he re-encountered Morrie
+            Schwartz, a former college professor who was dying of ALS, also
+            known as Lou Gehrig&rsquo;s disease. His visits with Schwartz
+            would lead to the book <em>Tuesdays with Morrie</em>, which
+            moved Mitch away from sports and began his career as an
+            internationally recognized author.</strong></span></p>
+<p><span style="color: #000000; font-size: medium;"><strong>&nbsp;</strong></span>
+</p>
+<p><span style="color: #000000; font-size: medium;"><strong>His first novel,
+            <em>The Five People You Meet in Heaven</em>, is the most
+            successful US hardcover first adult novel ever.</strong></span>
+</p>
+<p><span style="color: #000000; font-size: medium;"><strong>&nbsp;</strong></span>
+</p>
+<p><span style="color: #000000; font-size: medium;"><strong>All three of
+            Albom&rsquo;s best sellers have been turned into successful TV
+            movies. </strong></span></p>
+<p><span style="color: #000000; font-size: medium;"><strong>&nbsp;</strong></span>
+</p>
+<p><span style="color: #000000; font-size: medium;"><strong>Oprah Winfrey
+            produced the film version of <em>Tuesdays With Morrie</em> in
+            December 1999, starring Jack Lemmon and Hank Azaria. The film
+            garnered four Emmy awards, including best TV film, director,
+            actor and supporting actor. </strong></span></p>
+<p><span style="color: #000000; font-size: medium;"><strong>&nbsp;</strong></span>
+</p>
+<p><span style="color: #000000; font-size: medium;"><strong>The critically
+            acclaimed <em>Five People You Meet in Heaven</em> aired on ABC
+            in winter, 2004. Directed by Lloyd Kramer, the film was the most
+            watched TV movie of the year, with 19 million viewers.
+        </strong></span></p>
+<p><span style="color: #000000; font-size: medium;"><strong>&nbsp;</strong></span>
+</p>
+<h1><span style="color: #000000; font-size: medium;"><strong>Most recently,
+            <em>Oprah Winfrey Presents Mitch Albom&rsquo;s For One More
+                Day</em> aired on ABC in December 2007 and earned Ellen
+            Burstyn a Screen Actors Guild nomination.</strong></span></h1>
+<p><span style="color: #000000; font-size: medium;"><strong>&nbsp;</strong></span>
+</p>
+<p><span style="color: #0000ff; font-size: x-large;"><strong>THEME:
+        </strong></span></p>
+<p><span style="color: #0000ff; font-size: x-large;"><strong>Search for
+            Identity </strong></span></p>
+<p><span style="color: #0000ff; font-size: x-large;"><strong>American Dream
+            or the American Nightmare<br /></strong></span></p>
 <p>&nbsp;</p>
-<p><span style="color: #0000ff; font-size: x-large;"><strong>GENRE: Fiction<br /></strong></span></p>
-<p><span style="color: #000000; font-size: medium;"><strong><span style="color: #0000ff; font-size: x-large;">SETTING: Heaven and Ruby Pier from the 1920's through the 2000's</span> <br /></strong></span></p>
+<p><span style="color: #0000ff; font-size: x-large;"><strong>GENRE:
+            Fiction<br /></strong></span></p>
+<p><span style="color: #000000; font-size: medium;"><strong><span style="color: #0000ff; font-size: x-large;">SETTING:
+                Heaven
+                and Ruby Pier from the 1920's through the 2000's</span>
+            <br /></strong></span></p>
 <p><br /><br /></p>
-<h1><span style="color: #ff0000; font-size: x-large;">MAIN CHARACTER&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Eddie</span></h1>
-<h1><span style="font-size: medium;">Eddie is a maintenance man at Ruby Pier, an amusement park near the ocean</span></h1>
-<h1><span style="font-size: medium;">Eddie dies on his 83<sup>rd</sup> birthday while working at Ruby Pier. He dies trying to save the life of a little girl named &ldquo;Amy&rdquo; or &ldquo;Annie&rdquo; from a falling carnival ride</span>&nbsp;</h1>
-<h1><span style="font-size: medium;">Eddie was born in an apartment near Ruby Pier. He grew up there. His father was also a maintenance man at Ruby Pier. Except for the years he was away in the Philippines during WWII, Eddie lived and worked at Ruby Pier his entire life. He met his wife at Ruby Pier.</span></h1>
+<h1><span style="color: #ff0000; font-size: x-large;">MAIN
+        CHARACTER&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Eddie</span></h1>
+<h1><span style="font-size: medium;">Eddie is a maintenance man at Ruby
+        Pier, an amusement park near the ocean</span></h1>
+<h1><span style="font-size: medium;">Eddie dies on his 83<sup>rd</sup>
+        birthday while working at Ruby Pier. He dies trying to save the life
+        of a little girl named &ldquo;Amy&rdquo; or &ldquo;Annie&rdquo; from
+        a falling carnival ride</span>&nbsp;</h1>
+<h1><span style="font-size: medium;">Eddie was born in an apartment near
+        Ruby Pier. He grew up there. His father was also a maintenance man
+        at Ruby Pier. Except for the years he was away in the Philippines
+        during WWII, Eddie lived and worked at Ruby Pier his entire life. He
+        met his wife at Ruby Pier.</span></h1>
 <p>&nbsp;</p>
-<h1><span style="font-size: x-large; color: #ff0000;"><strong>SETTING</strong></span></h1>
-<p class="title1"><span style="color: #ff0000;"><span style="font-size: medium;">Ruby Pier, &ldquo; an amusement park by a great gray ocean&rdquo;</span></span></p>
-<p><span style="color: #ff0000;"><span style="font-size: medium;">1920&rsquo;s through 2003</span></span></p>
+<h1><span style="font-size: x-large; color: #ff0000;"><strong>SETTING</strong></span>
+</h1>
+<p class="title1"><span style="color: #ff0000;"><span style="font-size: medium;">Ruby Pier, &ldquo; an amusement park
+            by a great gray ocean&rdquo;</span></span></p>
+<p><span style="color: #ff0000;"><span style="font-size: medium;">1920&rsquo;s through
+            2003</span></span></p>
 <p>&nbsp;</p>
 <h1><span style="font-size: x-large; color: #ff0000;">DEDICATION</span></h1>
-<p><span style="color: #ff0000;"><span style="font-size: medium;">This book is dedicated to Edward Beitchman, my beloved uncle, who gave me my first concept of heaven. Every year, around the Thanksgiving table, he spoke of a night in the hospital when he awoke to see the souls of his departed loved ones sitting on the edge of the bed, waiting for him. I never forgot that story. And I never forgot him.</span></span></p>
+<p><span style="color: #ff0000;"><span style="font-size: medium;">This book
+            is dedicated to Edward Beitchman, my beloved uncle, who gave me
+            my first concept of heaven. Every year, around the Thanksgiving
+            table, he spoke of a night in the hospital when he awoke to see
+            the souls of his departed loved ones sitting on the edge of the
+            bed, waiting for him. I never forgot that story. And I never
+            forgot him.</span></span></p>
 <p>&nbsp;</p>
-<p><span style="color: #ff0000;"><span style="font-size: medium;">Everyone has an idea of heaven, as do most religions, and they should all be respected. This version represented here is only a guess, a wish, in some ways, that my uncle, and others like him&mdash;people who felt unimportant here on the earth&mdash;realize, finally how much they mattered and how they were loved.</span></span></p>
+<p><span style="color: #ff0000;"><span style="font-size: medium;">Everyone
+            has an idea of heaven, as do most religions, and they should all
+            be respected. This version represented here is only a guess, a
+            wish, in some ways, that my uncle, and others like
+            him&mdash;people who felt unimportant here on the
+            earth&mdash;realize, finally how much they mattered and how they
+            were loved.</span></span></p>
 <p>&nbsp;</p>
 <h1><span style="font-size: x-large; color: #ff0000;">HEAVEN</span></h1>
-<h1><strong><span style="color: #ff0000;"><span style="font-size: medium;">&ldquo;People often belitlle the place where they were born. But heaven can be found in the most unlikely corners. And heaven itself has many steps.&rdquo; (Page 34)</span></span></strong></h1>
+<h1><strong><span style="color: #ff0000;"><span style="font-size: medium;">&ldquo;People often belitlle the
+                place where they were born. But heaven can be found in the
+                most unlikely corners. And heaven itself has many
+                steps.&rdquo; (Page 34)</span></span></strong></h1>
 <p>&nbsp;</p>
-<p><span style="color: #ff0000;"><span style="font-size: medium;">&ldquo;There are five people you meet in heaven&hellip; Each of us was in your life for a reason. You may not have known the reason at the time, and that is what heaven is for. For understanding your life on earth.&rdquo; (Page 35)</span></span></p>
+<p><span style="color: #ff0000;"><span style="font-size: medium;">&ldquo;There are five people you meet
+            in heaven&hellip; Each of us was in your life for a reason. You
+            may not have known the reason at the time, and that is what
+            heaven is for. For understanding your life on earth.&rdquo;
+            (Page 35)</span></span></p>
 <p>&nbsp;</p>
-<p><span style="color: #ff0000;"><span style="font-size: medium;">&ldquo;This is the greatest gift God can give you: to understand what happened in your life. To have it explained. It is the peace you have been searching for.&rdquo; ( Page 35)</span></span></p>
-<p><span style="color: #000000; font-size: medium;">&nbsp;</span><span style="color: #0000ff; font-size: x-large;"><strong>THE FIRST PERSON &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The Blue Man</strong></span></p>
-<h1><span style="color: #0000ff;"><strong><span style="text-decoration: underline; font-size: medium;">CONNECTION/RELATIONSHIP TO EDDIE</span></strong></span></h1>
-<p>&nbsp;<span style="color: #0000ff;"><span style="font-size: medium;">Worked at Ruby Pier when Eddie was a young boy. </span></span></p>
-<p><span style="color: #0000ff;"><span style="font-size: medium;">Died-heart attack trying to avoid hitting Eddie with his car.</span></span></p>
-<p><span style="color: #0000ff;"><span style="font-size: medium;"> Eddie lived that day, and The Blue Man died.</span></span></p>
-<p>&nbsp;<span style="color: #0000ff;"><strong><span style="font-size: medium;"><span style="text-decoration: underline;">SETTING IN HEAVEN</span></span></strong></span></p>
-<p>&nbsp;<span style="color: #0000ff;"><span style="font-size: medium;">Ruby Pier</span></span></p>
-<p><span style="color: #0000ff;"><span style="font-size: medium;">Eddie&rsquo;s childhood, early 1930&rsquo;s.</span></span></p>
-<p>&nbsp;<span style="color: #0000ff;"><strong><span style="font-size: medium;"><span style="text-decoration: underline;">WHY THIS SETTINGH IS HEAVEN FOR THE BLUE MAN</span></span></strong></span></p>
-<p>&nbsp;<span style="color: #0000ff;"><span style="font-size: medium;">HEAVEN is Ruby Pier, because this is where he found acceptance. </span></span></p>
-<p><span style="color: #0000ff;"><strong><span style="font-size: medium;"><span style="text-decoration: underline;">EDDIE AGE/HOW DOES HE FEEL PHYSICALLY</span></span></strong></span></p>
-<p>&nbsp;<span style="color: #0000ff;"><span style="font-size: medium;">Eddie feels like a young child, flexible, he can run, jump and sk</span><strong><span style="font-size: medium;">ip.</span></strong></span></p>
-<p>&nbsp;<span style="color: #0000ff;"><strong><span style="font-size: medium;"><span style="text-decoration: underline;">LESSON EDDIE IS TAUGHT/QUOTE FROM BOOK</span></span></strong></span></p>
-<p>&nbsp;<span style="color: #0000ff;"><span style="font-size: medium;">There are no random acts in life.</span></span></p>
-<p><span style="color: #0000ff;"><span style="font-size: medium;">Every person is connected to each other.</span></span></p>
-<p><span style="color: #0000ff;"><span style="font-size: medium;">Strangers are the family you do not know yet.</span></span></p>
-<p>&nbsp;<span style="color: #0000ff;"><strong><span style="font-size: medium;"><span style="text-decoration: underline;">SIGNIFICANT PASSAGE</span> </span></strong></span></p>
-<p>&nbsp;<span style="color: #0000ff;"><span style="font-size: medium;">&ldquo;Fathers can ruin their sons.&rdquo; (Page 40)</span></span></p>
-<p>&nbsp;<span style="color: #0000ff;"><span style="font-size: medium;">&ldquo;I had agreed to join their carnival. And my life as a commodity had begun&rdquo; (Page 41)</span></span></p>
-<p>&nbsp;<span style="color: #0000ff;"><span style="font-size: medium;">&ldquo;There are no random acts. That we are all connected. That you can no more separate one life from another that you can separate a breeze from the wind.&rdquo; (Page 48)</span></span></p>
-<p>&nbsp;<span style="color: #0000ff;"><span style="font-size: medium;">&ldquo;It is because the human spirit knows, deep down, that all lives intersect.&rdquo; (Page 48)</span></span></p>
-<p>&nbsp;<span style="color: #0000ff;"><span style="font-size: medium;">&ldquo;Strangers are just family you have yet to come to know.&rdquo; (page 49)</span></span></p>
-<p><span style="color: #0000ff;"><strong><span style="font-size: medium;">&nbsp;</span></strong></span><span style="color: #0000ff;"><strong><span style="font-size: medium;"><span style="text-decoration: underline;">SYMBOLISM OF THE FERRIS WHEEL AND RUBY PIER</span><br /></span></strong></span></p>
-<p><span style="color: #0000ff;"><span style="font-size: medium;">ACCEPTANCE-Ruby Pier was the only place the Blue Man felt accepted for who he was, faults and all. He had a home, a job and friends at Ruby Pier. He could be himself.</span><strong><span style="font-size: medium;"> <br /></span></strong></span></p>
+<p><span style="color: #ff0000;"><span style="font-size: medium;">&ldquo;This is the greatest gift God
+            can give you: to understand what happened in your life. To have
+            it explained. It is the peace you have been searching
+            for.&rdquo; ( Page 35)</span></span></p>
+<p><span style="color: #000000; font-size: medium;">&nbsp;</span><span
+        style="color: #0000ff; font-size: x-large;"><strong>THE FIRST PERSON
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The
+            Blue Man</strong></span></p>
+<h1><span style="color: #0000ff;"><strong><span
+                style="text-decoration: underline; font-size: medium;">CONNECTION/RELATIONSHIP
+                TO EDDIE</span></strong></span></h1>
+<p>&nbsp;<span style="color: #0000ff;"><span style="font-size: medium;">Worked at Ruby Pier when Eddie was a
+            young boy. </span></span></p>
+<p><span style="color: #0000ff;"><span style="font-size: medium;">Died-heart
+            attack trying to avoid hitting Eddie with his car.</span></span>
+</p>
+<p><span style="color: #0000ff;"><span style="font-size: medium;"> Eddie
+            lived that day, and The Blue Man died.</span></span></p>
+<p>&nbsp;<span style="color: #0000ff;"><strong><span style="font-size: medium;"><span
+                    style="text-decoration: underline;">SETTING IN
+                    HEAVEN</span></span></strong></span></p>
+<p>&nbsp;<span style="color: #0000ff;"><span style="font-size: medium;">Ruby
+            Pier</span></span></p>
+<p><span style="color: #0000ff;"><span style="font-size: medium;">Eddie&rsquo;s childhood, early
+            1930&rsquo;s.</span></span></p>
+<p>&nbsp;<span style="color: #0000ff;"><strong><span style="font-size: medium;"><span
+                    style="text-decoration: underline;">WHY THIS SETTINGH IS
+                    HEAVEN FOR THE BLUE MAN</span></span></strong></span>
+</p>
+<p>&nbsp;<span style="color: #0000ff;"><span style="font-size: medium;">HEAVEN is Ruby Pier, because this is
+            where he found acceptance. </span></span></p>
+<p><span style="color: #0000ff;"><strong><span style="font-size: medium;"><span
+                    style="text-decoration: underline;">EDDIE AGE/HOW DOES
+                    HE FEEL PHYSICALLY</span></span></strong></span></p>
+<p>&nbsp;<span style="color: #0000ff;"><span style="font-size: medium;">Eddie feels like a young child,
+            flexible, he can run, jump and sk</span><strong><span style="font-size: medium;">ip.</span></strong></span>
+</p>
+<p>&nbsp;<span style="color: #0000ff;"><strong><span style="font-size: medium;"><span
+                    style="text-decoration: underline;">LESSON EDDIE IS
+                    TAUGHT/QUOTE FROM BOOK</span></span></strong></span></p>
+<p>&nbsp;<span style="color: #0000ff;"><span style="font-size: medium;">There are no random acts in
+            life.</span></span></p>
+<p><span style="color: #0000ff;"><span style="font-size: medium;">Every
+            person is connected to each other.</span></span></p>
+<p><span style="color: #0000ff;"><span style="font-size: medium;">Strangers
+            are the family you do not know yet.</span></span></p>
+<p>&nbsp;<span style="color: #0000ff;"><strong><span style="font-size: medium;"><span
+                    style="text-decoration: underline;">SIGNIFICANT
+                    PASSAGE</span> </span></strong></span></p>
+<p>&nbsp;<span style="color: #0000ff;"><span style="font-size: medium;">&ldquo;Fathers can ruin their
+            sons.&rdquo; (Page 40)</span></span></p>
+<p>&nbsp;<span style="color: #0000ff;"><span style="font-size: medium;">&ldquo;I had agreed to join their
+            carnival. And my life as a commodity had begun&rdquo; (Page
+            41)</span></span></p>
+<p>&nbsp;<span style="color: #0000ff;"><span style="font-size: medium;">&ldquo;There are no random acts. That
+            we are all connected. That you can no more separate one life
+            from another that you can separate a breeze from the
+            wind.&rdquo; (Page 48)</span></span></p>
+<p>&nbsp;<span style="color: #0000ff;"><span style="font-size: medium;">&ldquo;It is because the human spirit
+            knows, deep down, that all lives intersect.&rdquo; (Page
+            48)</span></span></p>
+<p>&nbsp;<span style="color: #0000ff;"><span style="font-size: medium;">&ldquo;Strangers are just family you
+            have yet to come to know.&rdquo; (page 49)</span></span></p>
+<p><span style="color: #0000ff;"><strong><span style="font-size: medium;">&nbsp;</span></strong></span><span
+        style="color: #0000ff;"><strong><span style="font-size: medium;"><span
+                    style="text-decoration: underline;">SYMBOLISM OF THE
+                    FERRIS WHEEL AND RUBY
+                    PIER</span><br /></span></strong></span></p>
+<p><span style="color: #0000ff;"><span style="font-size: medium;">ACCEPTANCE-Ruby Pier was the only
+            place the Blue Man felt accepted for who he was, faults and all.
+            He had a home, a job and friends at Ruby Pier. He could be
+            himself.</span><strong><span style="font-size: medium;">
+                <br /></span></strong></span></p>
 <p>&nbsp;</p>
-<p><span style="color: #008000; font-size: x-large;"><strong>THE SECOND PERSON &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The Captain</strong></span></p>
-<p><strong>&nbsp;<span style="text-decoration: underline; color: #008000; font-size: medium;">CONNECTION/RELATIONSHIP TO EDDIE</span></strong></p>
-<p>&nbsp;<span style="color: #008000; font-size: medium;">The Captain shot Eddie in the knee to save him during WWII. The Captain sacrificed his life to save Eddie and his other men and &ldquo;Keep them together&rdquo;.</span></p>
-<p><strong>&nbsp;</strong><span style="color: #008000; font-size: medium;"><strong><span style="text-decoration: underline;">SETTING IN HEAVEN</span></strong></span></p>
-<p><span style="font-size: medium; color: #339966;">&nbsp;</span><span style="font-size: medium; color: #008000;">The Phillipine island where Eddie and the Captain were prisoners</span><br /><br /></p>
-<p>&nbsp;<span style="color: #008000; font-size: medium;"><strong><span style="text-decoration: underline;">WHY IS THIS HEAVEN FOR THE CAPTAIN</span></strong></span></p>
-<p>&nbsp;<span style="color: #008000; font-size: medium;">The Captain&rsquo;s idea of Heaven is a world before there was WAR, a world without WAR.<br /></span></p>
-<p>&nbsp;<span style="color: #008000; font-size: medium;"><strong><span style="text-decoration: underline;">EDDIE AGE/HOW DOES HE FEEL PHYSICALLY</span></strong></span></p>
-<p>&nbsp;<span style="color: #008000; font-size: medium;">Eddie feels like a young man in his twenties.</span></p>
-<p>&nbsp;<span style="color: #008000; font-size: medium;">Strong and Muscular</span></p>
-<p>&nbsp;<span style="color: #008000; font-size: medium;">Knee is not injured.</span></p>
-<p>&nbsp;<span style="color: #008000; font-size: medium;"><strong><span style="text-decoration: underline;">LESSON EDDIE IS TAUGHT/QUOTE FROM BOOK</span></strong></span></p>
-<p>&nbsp;<span style="color: #008000; font-size: medium;">Sacrifices are a part of life.</span></p>
-<p>&nbsp;<span style="color: #008000; font-size: medium;">When you lose something special, it is passed on to someone else.</span></p>
-<p>&nbsp;<span style="color: #008000; font-size: medium;"><strong><span style="text-decoration: underline;">SIGNIFICANT PASSAGES</span></strong></span></p>
-<p>&nbsp;<span style="color: #008000; font-size: medium;">&ldquo;Young men go to war. Sometimes because they have to, sometimes because they want to. Always they feel they are supposed to. This comes from the sad, layered stories of life, which over the centuries have seen courage confused with picking up arms, and cowardice confused with laying them down. (Page 57)</span></p>
-<p>&nbsp;<span style="color: #008000; font-size: medium;">&ldquo;Sacrifice is a part of life. It&rsquo;s supposed to be. It is not something to regret. It&rsquo;s something to aspire to. Little sacrifices. Big sacrifices. A mother who works so her son can go to school. A daughter moves home to take care of her sick father.&rdquo; (Page 93)</span></p>
-<p>&nbsp;<span style="color: #008000; font-size: medium;">&ldquo;Sometimes when you sacrifice something precious, you&rsquo;re not really losing it. You&rsquo;re just passing it on to someone else.&rdquo; (Page 94)</span></p>
-<p><span style="color: #008000; font-size: medium;">&nbsp;</span><span style="color: #008000; font-size: medium;"><strong><span style="text-decoration: underline;">SYMBOLISM OF THE FERRIS WHEEL AND RUBY PIER</span><br /></strong></span></p>
-<p><span style="color: #008000; font-size: medium;">KEEPING A PROMISE-The juggling trick that Eddie learned at Ruby Pier allowed the Captain to save his men and to keep his promise. "the captain always promised he would leave no one behind, no matter what." (Page 64) "In the middle of a big war, you go looking for a small idea to believe in...For me, that little idea was what I told you guys every day. No one gets left behind."( Page 86) The soldiers also promised to meet again after the WWII at Ruby Pier.<strong> <br /></strong></span></p>
+<p><span style="color: #008000; font-size: x-large;"><strong>THE SECOND
+            PERSON
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            The Captain</strong></span></p>
+<p><strong>&nbsp;<span style="text-decoration: underline; color: #008000; font-size: medium;">CONNECTION/RELATIONSHIP
+            TO EDDIE</span></strong></p>
+<p>&nbsp;<span style="color: #008000; font-size: medium;">The Captain shot
+        Eddie in the knee to save him during WWII. The Captain sacrificed
+        his life to save Eddie and his other men and &ldquo;Keep them
+        together&rdquo;.</span></p>
+<p><strong>&nbsp;</strong><span style="color: #008000; font-size: medium;"><strong><span
+                style="text-decoration: underline;">SETTING IN
+                HEAVEN</span></strong></span></p>
+<p><span style="font-size: medium; color: #339966;">&nbsp;</span><span style="font-size: medium; color: #008000;">The
+        Phillipine island
+        where Eddie and the Captain were prisoners</span><br /><br /></p>
+<p>&nbsp;<span style="color: #008000; font-size: medium;"><strong><span style="text-decoration: underline;">WHY IS THIS
+                HEAVEN FOR
+                THE CAPTAIN</span></strong></span></p>
+<p>&nbsp;<span style="color: #008000; font-size: medium;">The
+        Captain&rsquo;s idea of Heaven is a world before there was WAR, a
+        world without WAR.<br /></span></p>
+<p>&nbsp;<span style="color: #008000; font-size: medium;"><strong><span style="text-decoration: underline;">EDDIE
+                AGE/HOW DOES HE
+                FEEL PHYSICALLY</span></strong></span></p>
+<p>&nbsp;<span style="color: #008000; font-size: medium;">Eddie feels like a
+        young man in his twenties.</span></p>
+<p>&nbsp;<span style="color: #008000; font-size: medium;">Strong and
+        Muscular</span></p>
+<p>&nbsp;<span style="color: #008000; font-size: medium;">Knee is not
+        injured.</span></p>
+<p>&nbsp;<span style="color: #008000; font-size: medium;"><strong><span style="text-decoration: underline;">LESSON EDDIE
+                IS
+                TAUGHT/QUOTE FROM BOOK</span></strong></span></p>
+<p>&nbsp;<span style="color: #008000; font-size: medium;">Sacrifices are a
+        part of life.</span></p>
+<p>&nbsp;<span style="color: #008000; font-size: medium;">When you lose
+        something special, it is passed on to someone else.</span></p>
+<p>&nbsp;<span style="color: #008000; font-size: medium;"><strong><span style="text-decoration: underline;">SIGNIFICANT
+                PASSAGES</span></strong></span></p>
+<p>&nbsp;<span style="color: #008000; font-size: medium;">&ldquo;Young men
+        go to war. Sometimes because they have to, sometimes because they
+        want to. Always they feel they are supposed to. This comes from the
+        sad, layered stories of life, which over the centuries have seen
+        courage confused with picking up arms, and cowardice confused with
+        laying them down. (Page 57)</span></p>
+<p>&nbsp;<span style="color: #008000; font-size: medium;">&ldquo;Sacrifice
+        is a part of life. It&rsquo;s supposed to be. It is not something to
+        regret. It&rsquo;s something to aspire to. Little sacrifices. Big
+        sacrifices. A mother who works so her son can go to school. A
+        daughter moves home to take care of her sick father.&rdquo; (Page
+        93)</span></p>
+<p>&nbsp;<span style="color: #008000; font-size: medium;">&ldquo;Sometimes
+        when you sacrifice something precious, you&rsquo;re not really
+        losing it. You&rsquo;re just passing it on to someone else.&rdquo;
+        (Page 94)</span></p>
+<p><span style="color: #008000; font-size: medium;">&nbsp;</span><span
+        style="color: #008000; font-size: medium;"><strong><span style="text-decoration: underline;">SYMBOLISM OF THE
+                FERRIS
+                WHEEL AND RUBY PIER</span><br /></strong></span></p>
+<p><span style="color: #008000; font-size: medium;">KEEPING A PROMISE-The
+        juggling trick that Eddie learned at Ruby Pier allowed the Captain
+        to save his men and to keep his promise. "the captain always
+        promised he would leave no one behind, no matter what." (Page 64)
+        "In the middle of a big war, you go looking for a small idea to
+        believe in...For me, that little idea was what I told you guys every
+        day. No one gets left behind."( Page 86) The soldiers also promised
+        to meet again after the WWII at Ruby Pier.<strong>
+            <br /></strong></span></p>
 <p>&nbsp;</p>
-<p><strong><span style="color: #ff6600;"><span style="text-decoration: underline;">&shy;</span><span style="font-size: x-large;">THE THIRD PERSON&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ruby</span></span></strong></p>
-<p><strong><span style="font-size: medium; color: #ff6600;">&nbsp;</span></strong><strong><span style="text-decoration: underline; font-size: medium; color: #ff6600;">CONNECTION/RELATIONSHIP TO EDDIE</span></strong></p>
-<p><span style="font-size: medium; color: #ff6600;">Eddie and Ruby both wish that Ruby Pier had never been built. </span></p>
-<p><strong><span style="font-size: medium; color: #ff6600;"><span style="text-decoration: underline;">SETTING IN HEAVEN</span></span></strong></p>
-<p><span style="font-size: medium; color: #ff6600;">A diner in the mountains with beautiful snow filled with all the people hurt at Ruby Pier.</span></p>
-<p><strong><span style="font-size: medium; color: #ff6600;"><span style="text-decoration: underline;">WHY THIS IS HEAVEN FOR RUBY</span></span></strong></p>
-<p><span style="font-size: medium; color: #ff6600;">The diner is where she fell in love with her husband, Emile.</span></p>
-<p><span style="font-size: medium; color: #ff6600;">It is set far away from the ocean where he was injured trying to save Ruby Pier. </span></p>
-<p><strong><span style="font-size: medium; color: #ff6600;"><span style="text-decoration: underline;">EDDIE AGE/HOW DOES HE FEEL PHYSICALLY</span></span></strong></p>
-<p><span style="font-size: medium; color: #ff6600;">Eddie feels 37 years old, the age he was when his father died and Ruby was in the hospital room.</span><strong><span style="font-size: medium; color: #ff6600;"><span style="text-decoration: underline;"><br /></span></span></strong></p>
-<p><strong><span style="font-size: medium; color: #ff6600;"><span style="text-decoration: underline;">LESSON EDDIE IS TAUGHT</span></span></strong></p>
-<p><span style="font-size: medium; color: #ff6600;">Let go of your anger.</span></p>
-<p><span style="font-size: medium; color: #ff6600;">Anger hurts you more than the person you are angry at.</span></p>
-<p><span style="font-size: medium; color: #ff6600;">Forgiveness helps you and lets you move on.</span><strong><span style="font-size: medium; color: #ff6600;"><br /></span></strong></p>
-<p><strong><span style="font-size: medium; color: #ff6600;"><span style="text-decoration: underline;">SIGNIFICANT PASSAGE</span> </span></strong></p>
-<p><span style="font-size: medium; color: #ff6600;">&nbsp;</span><span style="font-size: medium; color: #ff6600;">&ldquo;Holding anger is a poison. It eats you from inside. We think that hating is a weapon that attacks the person who harmed us. But hatred is a curved blade. And the harm we do, we do to ourselves.&nbsp; (Page 141)</span></p>
-<p><span style="font-size: medium; color: #ff6600;">&nbsp;</span><span style="font-size: medium; color: #ff6600;">&ldquo;Forgive, Edward. Forgive. Do you remember the lightness you felt when you first arrived in heaven? &hellip; That&rsquo;s because no one is born with anger. And when we die, the soul is freed of it.&rdquo; (Page 142)</span></p>
-<p><strong><span style="font-size: medium; color: #ff6600;"><span style="text-decoration: underline;">THE SYBOLISM OF THE FERRIS WHEEL AND RUBY PIER</span></span></strong><strong><span style="font-size: medium; color: #ff6600;"><span style="text-decoration: underline;"><br /></span></span></strong><span style="font-size: medium; color: #ff6600;">FORGIVENESS-The fire at Ruby Pier caused Emil's injury and illness. This made Ruby angry. She learned to forgive, because her anger was poisoning her on the inside</span><strong><span style="font-size: medium; color: #ff6600;">. <br /></span></strong></p>
+<p><strong><span style="color: #ff6600;"><span style="text-decoration: underline;">&shy;</span><span
+                style="font-size: x-large;">THE THIRD
+                PERSON&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Ruby</span></span></strong></p>
+<p><strong><span style="font-size: medium; color: #ff6600;">&nbsp;</span></strong><strong><span
+            style="text-decoration: underline; font-size: medium; color: #ff6600;">CONNECTION/RELATIONSHIP
+            TO EDDIE</span></strong></p>
+<p><span style="font-size: medium; color: #ff6600;">Eddie and Ruby both wish
+        that Ruby Pier had never been built. </span></p>
+<p><strong><span style="font-size: medium; color: #ff6600;"><span style="text-decoration: underline;">SETTING IN
+                HEAVEN</span></span></strong></p>
+<p><span style="font-size: medium; color: #ff6600;">A diner in the mountains
+        with beautiful snow filled with all the people hurt at Ruby
+        Pier.</span></p>
+<p><strong><span style="font-size: medium; color: #ff6600;"><span style="text-decoration: underline;">WHY THIS IS HEAVEN
+                FOR
+                RUBY</span></span></strong></p>
+<p><span style="font-size: medium; color: #ff6600;">The diner is where she
+        fell in love with her husband, Emile.</span></p>
+<p><span style="font-size: medium; color: #ff6600;">It is set far away from
+        the ocean where he was injured trying to save Ruby Pier. </span></p>
+<p><strong><span style="font-size: medium; color: #ff6600;"><span style="text-decoration: underline;">EDDIE AGE/HOW DOES
+                HE
+                FEEL PHYSICALLY</span></span></strong></p>
+<p><span style="font-size: medium; color: #ff6600;">Eddie feels 37 years
+        old, the age he was when his father died and Ruby was in the
+        hospital room.</span><strong><span style="font-size: medium; color: #ff6600;"><span
+                style="text-decoration: underline;"><br /></span></span></strong>
+</p>
+<p><strong><span style="font-size: medium; color: #ff6600;"><span style="text-decoration: underline;">LESSON EDDIE IS
+                TAUGHT</span></span></strong></p>
+<p><span style="font-size: medium; color: #ff6600;">Let go of your
+        anger.</span></p>
+<p><span style="font-size: medium; color: #ff6600;">Anger hurts you more
+        than the person you are angry at.</span></p>
+<p><span style="font-size: medium; color: #ff6600;">Forgiveness helps you
+        and lets you move on.</span><strong><span style="font-size: medium; color: #ff6600;"><br /></span></strong>
+</p>
+<p><strong><span style="font-size: medium; color: #ff6600;"><span style="text-decoration: underline;">SIGNIFICANT
+                PASSAGE</span> </span></strong></p>
+<p><span style="font-size: medium; color: #ff6600;">&nbsp;</span><span
+        style="font-size: medium; color: #ff6600;">&ldquo;Holding anger is a
+        poison. It eats you from inside. We think that hating is a weapon
+        that attacks the person who harmed us. But hatred is a curved blade.
+        And the harm we do, we do to ourselves.&nbsp; (Page 141)</span></p>
+<p><span style="font-size: medium; color: #ff6600;">&nbsp;</span><span
+        style="font-size: medium; color: #ff6600;">&ldquo;Forgive, Edward.
+        Forgive. Do you remember the lightness you felt when you first
+        arrived in heaven? &hellip; That&rsquo;s because no one is born with
+        anger. And when we die, the soul is freed of it.&rdquo; (Page
+        142)</span></p>
+<p><strong><span style="font-size: medium; color: #ff6600;"><span style="text-decoration: underline;">THE SYBOLISM OF
+                THE
+                FERRIS WHEEL AND RUBY
+                PIER</span></span></strong><strong><span style="font-size: medium; color: #ff6600;"><span
+                style="text-decoration: underline;"><br /></span></span></strong><span
+        style="font-size: medium; color: #ff6600;">FORGIVENESS-The fire at
+        Ruby Pier caused Emil's injury and illness. This made Ruby angry.
+        She learned to forgive, because her anger was poisoning her on the
+        inside</span><strong><span style="font-size: medium; color: #ff6600;">.
+            <br /></span></strong></p>
 <p>&nbsp;</p>
-<p>&nbsp;<span style="color: #ff00ff; font-size: x-large;"><strong>THE FOURTH PERSON &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Marguerite </strong></span></p>
-<p>&nbsp;<span style="color: #ff00ff;"><strong><span style="text-decoration: underline; font-size: medium;">CONNECTION/RELATIONSHIP TO EDDIE</span></strong></span></p>
+<p>&nbsp;<span style="color: #ff00ff; font-size: x-large;"><strong>THE
+            FOURTH PERSON &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Marguerite </strong></span></p>
+<p>&nbsp;<span style="color: #ff00ff;"><strong><span
+                style="text-decoration: underline; font-size: medium;">CONNECTION/RELATIONSHIP
+                TO EDDIE</span></strong></span></p>
 <p>&nbsp;<span style="color: #ff00ff;"><span style="font-size: medium;">Eddie&rsquo;s Wife</span></span></p>
-<p><span style="color: #ff00ff;"><span style="font-size: medium;">The <em>Love</em> of his Life</span></span></p>
-<p>&nbsp;<span style="color: #ff00ff;"><strong><span style="font-size: medium;"><span style="text-decoration: underline;">SETTING IN HEAVEN</span></span></strong></span></p>
+<p><span style="color: #ff00ff;"><span style="font-size: medium;">The
+            <em>Love</em> of his Life</span></span></p>
+<p>&nbsp;<span style="color: #ff00ff;"><strong><span style="font-size: medium;"><span
+                    style="text-decoration: underline;">SETTING IN
+                    HEAVEN</span></span></strong></span></p>
 <p>&nbsp;<span style="color: #ff00ff;"><span style="font-size: medium;">Wedding Receptions</span></span></p>
-<p>&nbsp;<span style="color: #ff00ff;"><strong><span style="font-size: medium;"><span style="text-decoration: underline;">WHY THIS IS HEAVEN FOR MARGUERITE </span></span></strong></span></p>
-<p>&nbsp;<span style="color: #ff00ff;"><span style="font-size: medium;">Marguerite&rsquo;s idea of Heaven is Every Wedding where &ldquo;you can see the possibilities in their eyes&rdquo; and &ldquo;their love will break all the records</span><span style="font-size: medium;">&rdquo;.</span></span></p>
-<p>&nbsp;<span style="color: #ff00ff;"><strong><span style="font-size: medium;"><span style="text-decoration: underline;">EDDIE AGE/HOW DOES HE FEEL PHYSICALLY</span></span></strong></span></p>
-<p>&nbsp;<span style="color: #ff00ff;"><span style="font-size: medium;">Eddie feels like he is "rotting away", about age 50. The age when Marguerite died.</span></span></p>
-<p>&nbsp;<span style="color: #ff00ff;"><strong><span style="font-size: medium;"><span style="text-decoration: underline;">LESSON EDDIE IS TAUGHT/QUOTE FROM BOOK</span></span></strong></span></p>
-<p>&nbsp;<span style="color: #ff00ff;"><span style="font-size: medium;">True love never dies</span></span></p>
-<p>&nbsp;<span style="color: #ff00ff;"><strong><span style="font-size: medium;"><span style="text-decoration: underline;">SIGNIFICANT PASSAGE</span> </span></strong></span></p>
-<p>&nbsp;<span style="color: #ff00ff;"><span style="font-size: medium;">&ldquo;Lost love is still love, Eddie. It takes a different form, that&rsquo;s all. You can&rsquo;t see their smile or bring them food of tousle their hair or move them around a dance floor. But when those senses weaken, another heightens. Memory. Memory becomes your partner. You nurture it. You hold it. You dance with it.&rdquo; (Page 173)</span></span></p>
-<p><span style="color: #ff00ff;"><span style="font-size: medium;">&ldquo;Life has to end. Love doesn&rsquo;t.&rdquo; (Page 173)</span></span></p>
-<p><span style="color: #ff00ff;"><strong><span style="font-size: medium;"><span style="text-decoration: underline;">THE SYMBOLISM OF THE FERRIS WHEEL AND RUBY PIER</span><span style="text-decoration: underline;"><br /></span></span></strong><span style="font-size: medium;">HOME-</span></span><span style="color: #ff00ff;"><span style="font-size: medium;">Marguerite at the hospital looks back and sees the Ferris Wheel</span></span></p>
-<p><span style="color: #ff00ff;"><span style="font-size: medium;">She calls it "Home." (Page 169)</span><strong><span style="font-size: medium;"><br /></span></strong></span></p>
+<p>&nbsp;<span style="color: #ff00ff;"><strong><span style="font-size: medium;"><span
+                    style="text-decoration: underline;">WHY THIS IS HEAVEN
+                    FOR MARGUERITE </span></span></strong></span></p>
+<p>&nbsp;<span style="color: #ff00ff;"><span style="font-size: medium;">Marguerite&rsquo;s idea of Heaven is
+            Every Wedding where &ldquo;you can see the possibilities in
+            their eyes&rdquo; and &ldquo;their love will break all the
+            records</span><span style="font-size: medium;">&rdquo;.</span></span></p>
+<p>&nbsp;<span style="color: #ff00ff;"><strong><span style="font-size: medium;"><span
+                    style="text-decoration: underline;">EDDIE AGE/HOW DOES
+                    HE FEEL PHYSICALLY</span></span></strong></span></p>
+<p>&nbsp;<span style="color: #ff00ff;"><span style="font-size: medium;">Eddie feels like he is "rotting
+            away", about age 50. The age when Marguerite died.</span></span>
+</p>
+<p>&nbsp;<span style="color: #ff00ff;"><strong><span style="font-size: medium;"><span
+                    style="text-decoration: underline;">LESSON EDDIE IS
+                    TAUGHT/QUOTE FROM BOOK</span></span></strong></span></p>
+<p>&nbsp;<span style="color: #ff00ff;"><span style="font-size: medium;">True
+            love never dies</span></span></p>
+<p>&nbsp;<span style="color: #ff00ff;"><strong><span style="font-size: medium;"><span
+                    style="text-decoration: underline;">SIGNIFICANT
+                    PASSAGE</span> </span></strong></span></p>
+<p>&nbsp;<span style="color: #ff00ff;"><span style="font-size: medium;">&ldquo;Lost love is still love,
+            Eddie. It takes a different form, that&rsquo;s all. You
+            can&rsquo;t see their smile or bring them food of tousle their
+            hair or move them around a dance floor. But when those senses
+            weaken, another heightens. Memory. Memory becomes your partner.
+            You nurture it. You hold it. You dance with it.&rdquo; (Page
+            173)</span></span></p>
+<p><span style="color: #ff00ff;"><span style="font-size: medium;">&ldquo;Life has to end. Love
+            doesn&rsquo;t.&rdquo; (Page 173)</span></span></p>
+<p><span style="color: #ff00ff;"><strong><span style="font-size: medium;"><span style="text-decoration: underline;">THE
+                    SYMBOLISM OF THE
+                    FERRIS WHEEL AND RUBY PIER</span><span
+                    style="text-decoration: underline;"><br /></span></span></strong><span
+            style="font-size: medium;">HOME-</span></span><span style="color: #ff00ff;"><span
+            style="font-size: medium;">Marguerite
+            at the hospital looks back and sees the Ferris
+            Wheel</span></span></p>
+<p><span style="color: #ff00ff;"><span style="font-size: medium;">She calls
+            it "Home." (Page 169)</span><strong><span style="font-size: medium;"><br /></span></strong></span></p>
 <p>&nbsp;</p>
-<p><span style="font-size: x-large;"><strong><span style="color: #800080;">THE FIFTH PERSON &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tala</span></strong></span></p>
-<p>&nbsp;<strong><span style="text-decoration: underline; font-size: medium; color: #800080;">CONNECTION/RELATIONSHIP TO EDDIE</span></strong></p>
-<p>&nbsp;<span style="font-size: medium; color: #800080;">Eddie&rsquo;s nightmares since the war. Tala died during World War II, in a hut Eddie set on fire, he killed her.</span></p>
-<p><strong><span style="font-size: medium; color: #800080;"><span style="text-decoration: underline;">SETTING IN HEAVEN</span></span></strong></p>
-<p>&nbsp;<span style="font-size: medium; color: #800080;">A river filled with children playing in the water.</span> <strong><span style="font-size: medium; color: #800080;"><br /></span></strong></p>
-<p>&nbsp;<strong><span style="font-size: medium; color: #800080;"><span style="text-decoration: underline;">WHY THIS IS HEAVEN FOR TALA</span></span></strong></p>
-<p>&nbsp;<span style="font-size: medium; color: #800080;">Tala died in a fire. Water is the opposite of fire. Water puts out fire.</span></p>
-<p>&nbsp;<strong><span style="font-size: medium; color: #800080;"><span style="text-decoration: underline;">EDDIE AGE/HOW DOES HE FEEL PHYSICALLY</span></span></strong></p>
-<p>&nbsp;<span style="font-size: medium; color: #800080;">83 years old, the age he died, uses a cane again.</span><strong><span style="font-size: medium; color: #800080;"><br /></span></strong></p>
-<p>&nbsp;<strong><span style="font-size: medium; color: #800080;"><span style="text-decoration: underline;">LESSON EDDIE IS TAUGHT/QUOTE FROM BOOK</span></span></strong></p>
-<p>&nbsp;<span style="font-size: medium; color: #800080;">Tala explained the meaning of Eddie's life. His job was important.</span><strong><span style="font-size: medium; color: #800080;"><br /></span></strong></p>
-<p>&nbsp;<strong><span style="font-size: medium; color: #800080;"><span style="text-decoration: underline;">SIGNIFICANT PASSAGE</span> </span></strong></p>
-<p>&nbsp;<span style="font-size: medium; color: #800080;">&ldquo;Children, you keep them safe. You make good for me. Is where you were supposed to be, Eddie Main-ten-nance.&rdquo; (Page 191)</span></p>
-<p><span style="font-size: medium; color: #800080;">&nbsp;</span><strong><span style="font-size: medium; color: #800080;"><span style="text-decoration: underline;">THE SYMBOLISM OF THE FERRIS WHEEL AND RUBY PIER</span><br /></span></strong></p>
-<p><span style="font-size: medium; color: #800080;">SAFETY and REDEMPTION-Eddie kept children safe at the pier. He spent his life making up for killing Tala who was hiding in a place she thought was "safe". </span></p>
-<h2><span style="font-size: x-large; color: #000000;">Inspiration: The Real Eddie</span></h2>
-<p><span style="font-size: medium; color: #000000;"><em><strong>The lead character in "The Five People You Meet In Heaven" is a grizzled war veteran named Eddie, who dies on his 83rd birthday. The character was inspired by my real-life uncle, Edward Beitchman, who was also a World War II veteran, who also died at 83, and also lived a life like that of the fictional character, rarely leaving his home city, and often feeling that he didn't accomplish what he should have. The pictures here are of the "real" Eddie. The text is from an essay I wrote years ago about my uncle Eddie.</strong></em></span></p>
-<p><span style="font-size: medium; color: #000000;"><em><strong>&nbsp;</strong></em><strong> I tell stories. For awhile I told stories through music and then I told stories in newspapers and later I told stories in books, the best known being <em>Tuesdays with Morrie</em>, a story about my old teacher who was living to the fullest even as he was dying. <br /> <br /> But before I started telling stories, I heard them. My family loved to rattle them off, especially the senior members, grandparents and uncles and aunts, usually around a Thanksgiving table, always with plates of food close at hand. These were stories about family, history, war, some might have even been closer to fairy tales. Someone would inevitably say, &ldquo;Oh, no, not THAT one again,&rdquo; but we would settle in and listen anyhow. I never minded. In fact, I loved it. Those stories made me feel part of something, gave me stories of my own, as if my elders&rsquo; tales, through their telling, could become my tales, too. <br /> <br /> One I always remembered was told each year by a favorite uncle of mine, a squat, ex cab driver who had served in World War II and was a pretty gritty guy. He talked of a night when he went to the hospital with a raging fever. In the middle of that night, he said, he woke up and saw his dead relatives, waiting for him at the end of his bed.<br /> <br /> Of course, we kids asked him breathlessly, &ldquo;What did you do? What did you do?&rdquo; And being the salty fellow he was, he shrugged and said, &ldquo;I told them to get lost. I wasn&rsquo;t ready for them yet.&rdquo;<br /> <br /> I filed that story away in my head, but I never forgot it. And I never forgot my uncle, even as he aged into his 70&rsquo;s and 80&rsquo;s. As I got older, I saw him as a tough, devoted but sad old man who never got to see his dreams fulfilled and never really knew how much we loved him.<br /> <br /> When time came for me to write something after <em>Tuesdays with Morrie</em>, I moved slowly. I didn&rsquo;t want to do any sequels. No &ldquo;Wednesdays with Morrie.&rdquo; No self-help series. I wanted to return to the world of stories, to delve deeper into life and death and the connections between the two - which lead me, inevitably, to the idea of heaven.<br /> <br /> Somewhere, swimming in my head, was the image my uncle had given me around that table, a handful of people waiting for you when you die. And I began to explore this simple concept: what if heaven was not some lush Garden of Eden, but a place where you had your life explained to you by people who were in it &ndash; five people - maybe you knew them, maybe you didn&rsquo;t, but in some way you were touched by them and changed forever, just as you inevitably touched people while on earth and changed them, too.<br /> <br /> And so, one predawn morning, coffee in hand, I sat down to write my next story, which now, several years later, is presented to you here. It&rsquo;s a tale of a life on earth. It&rsquo;s a tale of life beyond it. It&rsquo;s a fable about love, a warning about war, and a nod of the cap to the real people of this world, the ones who never get their name in lights.<br /> <br /> This story is also a personal tribute to my uncle, whom I only wish could be here to read it.<br /> <br /> By the way, his name was Eddie. </strong></span></p>
-<p><span style="color: #ff0000; font-size: x-large;"><strong>&ldquo;YOU MADE ME LOVE YOU&rdquo;</strong></span></p>
-<p>&nbsp;<span style="color: #ff0000; font-size: medium;"><strong>Lyrics by Jimmy Monaco</strong></span></p>
-<p><span style="color: #ff0000; font-size: medium;"><strong>You made me love you<br /> I didn't want to do it, I didn't want to do it<br /> You made me love you<br /> and all the time you knew it<br /> I guess you always knew it.<br /> You made me happy sometimes, you made me glad<br /> But there were times, Dear, you made me feel so bad<br /> <br /> You made me sigh for, I didn't want to tell you<br /> I didn't want to tell you<br /> I want some love that's true, yes I do, deed I do, you know I do<br /> <br /> Give me, give me, give me what I cry for<br /> you know you got the brand of kisses that I'd die for<br /> You know you made me love you</strong></span></p>
-<p><span style="color: #ff0000; font-size: medium;"><strong>Performed by&nbsp;</strong></span><span style="color: #ff0000; font-size: medium;"><strong>Al Jolson,&nbsp;</strong></span><span style="color: #ff0000; font-size: medium;"><strong>Judy Garland and&nbsp;</strong></span><strong><span style="font-size: medium; color: #800080;"><span style="color: #ff0000;"><strong>Patsy Cline</strong></span></span></strong></p></span></span>
-        </div>
-		<div class="clear"></div>
-	</div>
-</li>
-</ul>
-</div>
-	<div class="ui-widget-footer">
-		
-			
-		
-		<div class="clear"></div>
-	</div>
-</div>
-<script type="text/javascript">
-$(document).ready(function (){
-$(".tag-list li a").keypress(function(e) { if(e.which == 13) { $(this).click();   }});
-});
-function LoadGroupedData(container, MIID, PMI, groupYear, groupMonth, groupBy, tag) {
-  //ViewToUse looks at the hidden Sidebar List View defined in the Builder View.
-  var viewToUse = "";
-    if($('#hid-'+MIID+'-SidebarListView').length > 0){
-      viewToUse = $("#hid-" + MIID + "-SidebarListView").val();
-    };
-  GetContent('https://www.manvilleschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=1794&PageID=5846&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&RenderLoc=0&FromRenderLoc=0&GroupYear=' + groupYear + '&GroupMonth=' + groupMonth + '&GroupByField=' + groupBy + '&EnableQuirksMode=0&ViewID=' + viewToUse + '&Tag=' + tag, container, 2, 'chkSidebar();');
-}
-function LoadData(container, MIID, PMI, flexDataID, groupYear, groupMonth, groupBy, targetView, tag) {
-  if(targetView !== undefined || targetView.Length() == 0){
-  //targetView looks at the hidden Detail View defined in the Builder View.
-      targetView = $('#hid-'+MIID+'-DetailView').val();
-   }
-  GetContent('https://www.manvilleschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=1794&PageID=5846&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&FlexDataID=' + flexDataID + '&GroupYear=' + groupYear + '&GroupMonth=' + groupMonth + '&GroupByField=' + groupBy + '&RenderLoc=0&FromRenderLoc=0&EnableQuirksMode=0&Tag=' + tag + '&ViewID=' + targetView, container, 2, 'chkSidebar();');
-}
-function LoadTaggedData(container, MIID, PMI, tag) {
-  //ViewToUse looks at the hidden Sidebar List View defined in the Builder View.
-  var viewToUse = "";
-    if($('#hid-'+MIID+'-SidebarListView').length > 0){
-      viewToUse = $("#hid-" + MIID + "-SidebarListView").val();
-    };
-  GetContent('https://www.manvilleschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=1794&PageID=5846&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&RenderLoc=0&FromRenderLoc=0&Tag=' + tag + '&EnableQuirksMode=0&ViewID='+viewToUse, container, 2, 'chkSidebar();');
-  setTimeout(function(){ $("#module-content-"+ MIID +"").find('[tabindex]:first').focus(); }, 200);
-}
-</script>
-</div>
-
-</div></div>
-</div><div class="clear"></div></div></div><!-- End Centricity Content Area -->
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="noprint">
-        <section id="gb-footer-links-outer" class="gb-section-parent gb-section-pad" data-footer-links-color="White" data-footer-links-hover="White">
-        	<div id="gb-footer-links" class="gb-section"></div>
-        </section>
-        <section id="gb-footer-outer" class="gb-section-parent gb-section-pad" data-footer-text-color="White">
-            <div id="gb-footer" class="gb-section ui-clear displayFlexRow">
-                <h2></h2>
-                <div id="gb-address">
-                    <span class="gb-address one">1100 Brooks Blvd.</span><span class="gb-address spacer">, </span><span class="gb-address two">Manville, NJ 08835</span>
-                </div>
-                <div id="gb-contact">
-                	<span class="gb-contact phone" x-ms-format-detection="none">Phone: (908) 231-8500</span>
-                    <span class="gb-contact fax" x-ms-format-detection="none">Fax: </span>
-                </div>
-                <div id="gb-extra-links" class="displayFlexRow">
-                	<a class="footer-extra-link directions" href="//www.google.com/maps/place/1100 Brooks Blvd. Manville NJ 08835" target="_blank" data-show-directions-link="true">
-                    	<span>Get Directions</span>
-                    </a>
-                    <a class="footer-extra-link email" href="mailto:webadmin@manvillesd.org" data-show-email-link="false">
-                    	<span>Email Us</span>
-                    </a>
-                    <a class="footer-extra-link accessibility" href="#" target="_self">
-                    	<span>Web Accessibility</span>
-                    </a>
-                    <a class="footer-extra-link sitemap" href='/site/Default.aspx?PageType=15&SiteID=4&SectionMax=15&DirectoryType=6'>
-                        <span>Site Map</span>
-                    </a>
-                    <button class="cs-btn-reset footer-extra-link footer-scroll-btn" aria-label="Scroll To The Top Of The Page" tabindex="-1" aria-hidden="true"></button>
-                </div>
-            </div>
-        </section>
-        <section id="gb-social-media-outer" class="gb-section-parent gb-section-pad">
-        	<div id="gb-social-media" class="gb-section displayFlexRow">
-            	<h2>Stay Connected</h2>
-        		<div id="gb-social-media-icons" class="hidden"></div>
-            </div>
-        </section>
-        <section id="gb-schoolwires-footer-outer" class="gb-section-parent gb-section-pad">
-            <div id="gb-schoolwires-footer" class="gb-section border-box">
-                <div class="gb-schoolwires-footer top">
-                    <div id="gb-footer-disclaimer" data-show-disclaimer="false">
-                        <span>This is the disclaimer text. You can use this area for legal statements, copyright information, a mission statement, etc. If you don’t use it, the Bb footer will slide up.</span>
-                    </div>
-                </div>
-                <div class="gb-schoolwires-footer bottom" data-show-disclaimer="false">
-                    <div class="gb-schoolwires-footer logo"></div>
-                    <div id="gb-schoolwires-footer-links-copyright">
-                        <div class="gb-schoolwires-footer links"></div>
-                        <div class="gb-schoolwires-footer copyright"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </footer>
-</div><!-- BEGIN - STANDARD FOOTER -->
-<div id='sw-footer-outer'>
-<div id='sw-footer-inner'>
-<div id='sw-footer-left'></div>
-<div id='sw-footer-right'>
-<div id='sw-footer-links'>
-<ul>
-<li><a title='Click to email the primary contact' href='mailto:webadmin@manvillesd.org'>Questions or Feedback?</a> | </li>
-<li><a href='https://www.finalsite.com/privacy-policy' target="_blank">Web Community Manager Privacy Policy (Updated)</a> | </li>
-<li><a class='sw-footer-terms-link' aria-hidden='true' tabindex='-1' href=''></a></li>
-</ul>
-</div>
-<div id='sw-footer-copyright'>Copyright &copy; 2024 Finalsite - all rights reserved.</div>
-<div id='sw-footer-logo'><a href='http://www.finalsite.com' title="Finalsite - all rights reserved">
-<img src='https://www.manvilleschools.org/Static//GlobalAssets/Images/Navbar/WCM_logo.svg'
-class='sw-footer-logo-img' alt="Web Community Manager."/>
-</a></div>
-</div>
-</div>
-</div>
-<!-- END - STANDARD FOOTER -->
-<script type="text/javascript">
-   $(document).ready(function(){
-  var data = JSON.stringify({
-    "SiteID": "4",
-    "ChannelID": "1236",
-    "SectionID": "1794",
-    "PageID": "5846",
-    "Browser": "Firefox 130.0",
-    "OS": "WinNT",
-    "IPAddress": "10.61.84.66"
-  });
-  $.ajax({
-    url: "../Site/SiteController.aspx/InsertAnalyticsData",
-    method: "POST",
-    contentType: "application/json",
-    data: data,
-    success: function(response) {
-    },
-    error: function(xhr, status, error) {
-    }
-  });
-   });
-</script>
-
-    <input type="hidden" id="hid-pageid" value="5846" />
-
-    
-
-    <div id='dialog-overlay-WindowMedium-base' class='ui-dialog-overlay-base' ><div id='WindowMedium' role='dialog' tabindex='-1'  class='ui-dialog-overlay medium' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowMedium-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowMedium-body' ></div><button class='ui-dialog-overlay-close' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowMedium");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowMedium-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowMedium-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    <div id='dialog-overlay-WindowSmall-base' class='ui-dialog-overlay-base' ><div id='WindowSmall' role='dialog' tabindex='-1'  class='ui-dialog-overlay small' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowSmall-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowSmall-body' ></div><button class='ui-dialog-overlay-close' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowSmall");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowSmall-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowSmall-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    <div id='dialog-overlay-WindowLarge-base' class='ui-dialog-overlay-base' ><div id='WindowLarge' role='dialog' tabindex='-1'  class='ui-dialog-overlay large' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowLarge-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowLarge-body' ></div><button class='ui-dialog-overlay-close' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowLarge");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowLarge-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowLarge-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-
-    <div id='dialog-overlay-WindowMediumModal-base' class='ui-dialog-overlay-base-modal' ><div id='WindowMediumModal' role='dialog' tabindex='-1'  class='ui-dialog-overlay medium' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowMediumModal-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowMediumModal-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowMediumModal");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowMediumModal-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowMediumModal-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    <div id='dialog-overlay-WindowSmallModal-base' class='ui-dialog-overlay-base-modal' ><div id='WindowSmallModal' role='dialog' tabindex='-1'  class='ui-dialog-overlay small' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowSmallModal-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowSmallModal-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowSmallModal");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowSmallModal-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowSmallModal-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    <div id='dialog-overlay-WindowLargeModal-base' class='ui-dialog-overlay-base-modal' ><div id='WindowLargeModal' role='dialog' tabindex='-1'  class='ui-dialog-overlay large' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowLargeModal-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowLargeModal-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowLargeModal");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowLargeModal-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowLargeModal-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    <div id='dialog-overlay-WindowXLargeModal-base' class='ui-dialog-overlay-base-modal' ><div id='WindowXLargeModal' role='dialog' tabindex='-1'  class='ui-dialog-overlay xlarge' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowXLargeModal-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowXLargeModal-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowXLargeModal");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowXLargeModal-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowXLargeModal-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-
-    <div id='dialog-overlay-MyAccountSubscriptionOverlay-base' class='ui-dialog-overlay-base-modal' ><div id='MyAccountSubscriptionOverlay' role='dialog' tabindex='-1'  class='ui-dialog-overlay medium' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-MyAccountSubscriptionOverlay-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-MyAccountSubscriptionOverlay-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("MyAccountSubscriptionOverlay");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-MyAccountSubscriptionOverlay-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-MyAccountSubscriptionOverlay-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-
-    <div id='dialog-overlay-InsertOverlay-base' class='ui-dialog-overlay-base-modal' ><div id='InsertOverlay' role='dialog' tabindex='-1'  class='ui-dialog-overlay large' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-InsertOverlay-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-InsertOverlay-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("InsertOverlay");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-InsertOverlay-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-InsertOverlay-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    <div id='dialog-overlay-InsertOverlay2-base' class='ui-dialog-overlay-base-modal' ><div id='InsertOverlay2' role='dialog' tabindex='-1'  class='ui-dialog-overlay large' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-InsertOverlay2-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-InsertOverlay2-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("InsertOverlay2");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-InsertOverlay2-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-InsertOverlay2-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    
-    <div id="videowrapper" class="ui-helper-hidden">
-        <div id="videodialog" role="application">
-            <a id="videodialog-close" role="button" href="javascript:;" aria-label="Close Overlay" class="close-btn" onclick="closeVideoDialog();">CLOSE</a>
-            <div id="videodialog-video" ></div>
-            <div id="videodialog-foot" tabindex="0"></div>
-        </div>
-    </div>
-    <div id="attachmentwrapper" class="ui-helper-hidden">
-        <div id="attachmentdialog" role="application">
-            <a id="attachmentdialog-close" role="button" href="javascript:;" aria-label="Close Overlay" class="close-btn" onclick="closeAttachmentDialog();">CLOSE</a>
-            <div id="attachmentdialog-container"></div>
-        </div>
-    </div>
-    <script type="text/javascript">
-
-        $(document).ready(function () { 
-
-            removeBrokenImages();
-            checkSidebar();
-            RemoveCookie();
-
-            
-            //$('div.bullet').attr('tabindex', '');
-
-            
-
-            $('.navigation li.collapsible').each(function () {
-                if ($(this).find('ul').length == 0) {
-                    $(this).removeClass('collapsible');
-                }
-            });
-
-            // find page nav state cookie and add open chevron
-            var arrValues = GetCookie('SWPageNavState').split('~');
-
-            $.each(arrValues, function () {
-                if (this != '') {
-                   //$('#' + this).addClass('collapsible').prepend("<div class='bullet collapsible' aria-label='Close Page Submenu'/>");
-                    $('#' + this).addClass('collapsible').prepend("<div class='bullet collapsible' aria-haspopup='true' aria-expanded='true' />");
-                }
-            });
-
-            // find remaining sub menus and add closed chevron and close menu
-            $('.navigation li > ul').each(function () {
-                var list = $(this);
-
-                if (list.parent().hasClass('active') && !list.parent().hasClass('collapsible')) {
-                    // open sub for currently selected page                    
-                    //list.parent().addClass('collapsible').prepend("<div class='bullet collapsible'aria-label='Close Page Submenu' />");
-                    list.parent().addClass('collapsible').prepend("<div class='bullet collapsible' aria-haspopup='true' aria-expanded='true' />");
-                } else {
-                    if (list.parent().hasClass('collapsible') && !list.siblings('div').hasClass('collapsible')) {
-                        // open sub for page with auto expand
-                        list.siblings('div.expandable').remove();
-                        //list.parent().prepend("<div class='bullet collapsible' aria-label='Close Page Submenu' />");
-                        list.parent().prepend("<div class='bullet collapsible' aria-haspopup='true' aria-expanded='true' />");
-                    }
-                }
-
-                if (!list.siblings('div').hasClass('collapsible')) {
-                    // keep all closed that aren't already set to open
-                    //list.parent().addClass('expandable').prepend("<div class='bullet expandable' aria-label='Open Page Submenu' />");
-                    list.parent().addClass('expandable').prepend("<div class='bullet expandable' aria-haspopup='true' aria-expanded='false' />");
-                    ClosePageSubMenu(list.parent());
-                } else {
-                   OpenPageSubMenu(list.parent());
-                }
-            });
-
-            $(".navigation .bullet.collapsible, .navigation .bullet.expandable, .navigation a").each(function () {
-                if ($(this).closest("ul").attr("aria-hidden") == "true"){
-                    $(this).attr("tabindex", "-1");
-                } else {
-                    $(this).attr("tabindex", "0");
-                }
-            })
-
-            // remove bullet from hierarchy if no-bullet set
-            $('.navigation li.collapsible').each(function () {
-                if ($(this).hasClass('no-bullet')) {
-                    if (!$(this).hasClass('navigationgroup')) { $(this).removeClass('collapsible'); }
-                    $(this).children('div.collapsible').remove();
-                }
-            });
-
-            $('.navigation li.expandable').each(function () {
-                if ($(this).hasClass('no-bullet')) {
-                    if (!$(this).hasClass('navigationgroup')) { $(this).removeClass('expandable'); }
-                    $(this).children('div.expandable').remove();
-                }
-            });
-
-            $('.navigation li:not(.collapsible,.expandable,.no-bullet)').each(function () {
-                $(this).prepend("<div class='bullet'/>");
-            });
-
-            $('.navigation li.active').parents('ul').each(function () {
-                if (!$(this).hasClass('page-navigation')) {
-                    OpenPageSubMenu($(this).parent());
-                }
-            });
-
-            // Set aria ttributes
-            /*$('li.collapsible').each(function () {
-               $(this).attr("aria-expanded", "true");
-               $(this).find('div:first').attr('aria-pressed', 'true');
-            });*/
-
-            $('li.expandable').each(function () {
-                ///$(this).attr("aria-expanded", "false");
-                //$(this).find('div:first').attr('aria-pressed', 'false');
-                $(this).find("ul :focusable").attr("tabindex","-1");
-            });
-
-            /*$('div.bullet').each(function () {
-                $(this).attr("aria-hidden", "true");
-            });*/
-
-            // set click event for chevron
-            $(document).on('click', '.navigation div.collapsible', function () {
-                ClosePageSubMenu($(this).parent());
-            });
-
-            $(document).on('click', '.navigation div.expandable', function () {
-                OpenPageSubMenu($(this).parent());
-            });
-
-            // set navigation grouping links
-            $(document).on('click', '.navigationgroup.collapsible > a', function () {
-                ClosePageSubMenu($(this).parent());
-            });
-
-            $(document).on('click', '.navigationgroup.expandable > a', function () {
-                OpenPageSubMenu($(this).parent());
-            });
-
-            //SW MYSTART DROPDOWNS
-            $(document).on('click', '.sw-mystart-dropdown', function () {
-                $(this).children(".sw-dropdown").css("display", "block");
-            });
-
-            $(".sw-mystart-dropdown").hover(function () { }, function () {
-                $(this).children(".sw-dropdown").hide();
-                $(this).blur();
-            });
-
-            //SW ACCOUNT DROPDOWN
-            $(document).on('click', '#sw-mystart-account', function () {
-                $(this).children("#sw-myaccount-list").show();
-                $(this).addClass("clicked-state");
-            });
-
-            $("#sw-mystart-account, #sw-myaccount-list").hover(function () { }, function () {
-                $(this).children("#sw-myaccount-list").hide();
-                $(this).removeClass("clicked-state");
-                $("#sw-myaccount").blur();
-            });
-
-            // set hover class for page and section navigation
-            $('.ui-widget.app.pagenavigation, .ui-widget.app.sectionnavigation').find('li > a').hover(function () {
-                $(this).addClass('hover');
-            }, function () {
-                $(this).removeClass('hover');
-            });
-
-            //set aria-label for home
-            $('#navc-HP > a').attr('aria-label', 'Home');
-
-            // set active class on channel and section
-            var activeChannelNavType = $('input#hidActiveChannelNavType').val();
-            if (activeChannelNavType == -1) {
-                // homepage is active
-                $('#navc-HP').addClass('active');
-            } else if (activeChannelNavType == 1) {
-                // calendar page is active
-                $('#navc-CA').addClass('active');
-            } else {
-                // channel is active - set the active class on the channel
-                var activeSelectorID = $('input#hidActiveChannel').val();
-                $('#navc-' + activeSelectorID).addClass('active');
-
-                // set the breadcrumb channel href to the channel nav href
-                $('li[data-bccID=' + activeSelectorID + '] a').attr('href', $('#navc-' + activeSelectorID + ' a').attr('href'));
-                $('li[data-bccID=' + activeSelectorID + '] a span').text($('#navc-' + activeSelectorID + ' a span').first().text());
-
-                // set the active class on the section
-                activeSelectorID = $('input#hidActiveSection').val();
-                $('#navs-' + activeSelectorID).addClass('active');
-
-                // set the breadcrumb section href to the channel nav href
-                $('li[data-bcsID=' + activeSelectorID + '] a').attr('href', $('#navs-' + activeSelectorID + ' a').attr('href'));
-                if ($('#navs-' + activeSelectorID + ' a').attr('target') !== undefined) {
-                    $('li[data-bcsID=' + activeSelectorID + '] a').attr('target', $('#navs-' + activeSelectorID + ' a').attr('target'));
-                }
-                $('li[data-bcsID=' + activeSelectorID + '] span').text($('#navs-' + activeSelectorID + ' a span').text());
-
-                if ($('.sw-directory-columns').length > 0) {
-                    $('ul.ui-breadcrumbs li:last-child').remove();
-                    $('ul.ui-breadcrumbs li:last-child a').replaceWith(function() { return $('span', this); });
-                    $('ul.ui-breadcrumbs li:last-child span').append(' Directory');
-                }
-            }
-        }); // end document ready
-
-        function OpenPageSubMenu(li) {
-            if (li.prop('tagName').toLowerCase() == "li") {
-                if (li.hasClass('expandable')) {
-                    li.removeClass('expandable').addClass('collapsible');
-                }
-                if (li.find('div:first').hasClass('expandable')) {
-                    let linkText = li.find("> a").text();
-                    //li.find('div:first').removeClass('expandable').addClass('collapsible').attr('aria-pressed', 'true').attr('aria-label', 'Close Page Submenu');
-                    li.find('div:first').removeClass('expandable').addClass('collapsible').attr({
-                        "aria-expanded": "true",
-                        "aria-label": "Collapse "+linkText+" nested links"
-                    });
-                }
-                li.find('ul:first').attr('aria-hidden', 'false').show();
-                li.find("ul:first > li > .bullet.expandable, ul:first > li > .bullet.collapsible, ul:first > li > a").attr("tabindex", "0");
-                //li.find("li.expandable ul :focusable").attr("tabindex","-1");
-
-                //li.attr("aria-expanded", "true");
-
-                PageNavigationStateCookie();
-            }
-        }
-
-        function ClosePageSubMenu(li) {
-            if (li.prop('tagName').toLowerCase() == "li") {
-                let linkText = li.find("> a").text();
-                li.removeClass('collapsible').addClass('expandable');
-                //li.find('div:first').removeClass('collapsible').addClass('expandable').attr('aria-pressed', 'false').attr('aria-label', 'Open Page Submenu');
-                li.find('div:first').removeClass('collapsible').addClass('expandable').attr({
-                    "aria-expanded": "false",
-                    "aria-label": "Expand "+linkText+" nested links"
-                });
-                li.find('ul:first').attr('aria-hidden', 'true').hide();
-                li.find("ul:first .bullet.expandable, ul:first .bullet.collapsible, ul:first a").attr("tabindex","-1");
-
-                //li.attr("aria-expanded", "false");
-
-                PageNavigationStateCookie();
-            }
-        }
-
-        function PageNavigationStateCookie() {
-            var strCookie = "";
-
-            $('.pagenavigation li > ul').each(function () {
-                var item = $(this).parent('li');
-                if (item.hasClass('collapsible') && !item.hasClass('no-bullet')) {
-                    strCookie += $(this).parent().attr('id') + '~';
-                }
-            });
-
-            SetCookie('SWPageNavState', strCookie);
-        }
-
-        function checkSidebar() {
-            $(".ui-widget-sidebar").each(function () {
-                if ($.trim($(this).html()) != "") {
-                    $(this).show();
-                    $(this).siblings(".ui-widget-detail").addClass("with-sidebar");
-                }
-            });
-        }
-
-        function removeBrokenImages() {
-            //REMOVES ANY BROKEN IMAGES
-            $("span.img img").each(function () {
-                if ($(this).attr("src") !== undefined && $(this).attr("src") != '../../') {
-                    $(this).parent().parent().show();
-                    $(this).parent().parent().siblings().addClass("has-thumb");
-                }
-            });
-        }
-
-        function LoadEventDetailUE(moduleInstanceID, eventDateID, userRegID, isEdit) {
-            (userRegID === undefined ? userRegID = 0 : '');
-            (isEdit === undefined ? isEdit = false : '');
-            OpenDialogOverlay("WindowMediumModal", { LoadType: "U", LoadURL: "https://www.manvilleschools.org//site/UserControls/Calendar/EventDetailWrapper.aspx?ModuleInstanceID=" + moduleInstanceID + "&EventDateID=" + eventDateID + "&UserRegID=" + userRegID + "&IsEdit=" + isEdit });
-        }
-
-        function RemoveCookie() {
-            // There are no sub page            
-            if ($('.pagenavigation li li').length == 0) {
-                //return false;
-                PageNavigationStateCookie();
-            }
-        }
-    </script>
-
-    <script type="text/javascript">
-
-        function AddOffCanvasMenuHeightForSiteNav() {
-            var sitenavulHeight = 0;
-
-            if ($('#sw-pg-sitenav-ul').length > 0) {
-                sitenavulHeight = parseInt($("#sw-pg-sitenav-ul").height());
-            }
-
-            var swinnerwrapHeight = 0;
-
-            if ($('#sw-inner-wrap').length > 0) {
-                swinnerwrapHeight = parseInt($("#sw-inner-wrap").height());
-            }
-
-            // 360px is abount 5 li height
-            if (sitenavulHeight + 360 >= swinnerwrapHeight) {
-                $("#sw-inner-wrap").height(sitenavulHeight + 360);
-            }
-        }
-
-        function AddOffCanvasMenuHeightForSelectSchool() {
-            var selectschoolulHeight = 0;
-
-            if ($('#sw-pg-selectschool-ul').length > 0) {
-                selectschoolulHeight = parseInt($("#sw-pg-selectschool-ul").height());
-            }
-
-            var swinnerwrapHeight = 0;
-
-            if ($('#sw-inner-wrap').length > 0) {
-                swinnerwrapHeight = parseInt($("#sw-inner-wrap").height());
-            }
-
-            // 360px is abount 5 li height
-            if (selectschoolulHeight + 360 >= swinnerwrapHeight) {
-                $("#sw-inner-wrap").height(selectschoolulHeight + 360);
-            }
-        }
-
-        $(document).ready(function () {
-            if ($("#sw-pg-sitenav-a").length > 0) {
-                $(document).on('click', '#sw-pg-sitenav-a', function () {
-                    if ($("#sw-pg-sitenav-ul").hasClass('sw-pgmenu-closed')) {
-                        AddOffCanvasMenuHeightForSiteNav();
-
-                        $("ul.sw-pgmenu-toplevel").removeClass('sw-pgmenu-open').addClass('sw-pgmenu-closed');
-                        $("#sw-pg-sitenav-ul").removeClass('sw-pgmenu-closed');
-                        $("#sw-pg-sitenav-ul").addClass('sw-pgmenu-open');
-                    } else {
-                        $("#sw-pg-sitenav-ul").removeClass('sw-pgmenu-open');
-                        $("#sw-pg-sitenav-ul").addClass('sw-pgmenu-closed');
-                    }
-                });
-
-                $(document).on('click', '#sw-pg-selectschool-a', function () {
-                    if ($("#sw-pg-selectschool-ul").hasClass('sw-pgmenu-closed')) {
-                        AddOffCanvasMenuHeightForSelectSchool();
-
-                        $("ul.sw-pgmenu-toplevel").removeClass('sw-pgmenu-open').addClass('sw-pgmenu-closed');
-                        $("#sw-pg-selectschool-ul").removeClass('sw-pgmenu-closed');
-                        $("#sw-pg-selectschool-ul").addClass('sw-pgmenu-open');
-                    } else {
-                        $("#sw-pg-selectschool-ul").removeClass('sw-pgmenu-open');
-                        $("#sw-pg-selectschool-ul").addClass('sw-pgmenu-closed');
-                    }
-                });
-
-                $(document).on('click', '#sw-pg-myaccount-a', function () {
-                    if ($("#sw-pg-myaccount-ul").hasClass('sw-pgmenu-closed')) {
-                        $("ul.sw-pgmenu-toplevel").removeClass('sw-pgmenu-open').addClass('sw-pgmenu-closed');
-                        $("#sw-pg-myaccount-ul").removeClass('sw-pgmenu-closed');
-                        $("#sw-pg-myaccount-ul").addClass('sw-pgmenu-open');
-                    } else {
-                        $("#sw-pg-myaccount-ul").removeClass('sw-pgmenu-open');
-                        $("#sw-pg-myaccount-ul").addClass('sw-pgmenu-closed');
-                    }
-                });
-
-                $(document).on('click', '.pg-list-bullet', function () {
-                    $(this).prev().toggle();
-
-                    if ($(this).hasClass('closed')) {
-                        AddOffCanvasMenuHeightForSiteNav();
-
-                        $(this).removeClass('closed');
-                        $(this).addClass('open');
-                    } else {
-                        $(this).removeClass('open');
-                        $(this).addClass('closed');
-                    }
-                });
-
-                $(document).on('mouseover', '#sw-pg-selectschool', function () {
-                    $("#sw-pg-selectschool-firstli").removeClass('sw-pg-selectschool-firstli-mouseout').addClass('sw-pg-selectschool-firstli-mouseover');
-                    $("#sw-pg-selectschool-firstli a").addClass('sw-pg-selectschool-firstli-a-mouseover').removeClass('sw-pg-selectschool-firstli-a-mouseout');
-                });
-
-                $(document).on('mouseout', '#sw-pg-selectschool', function () {
-                    $("#sw-pg-selectschool-firstli").removeClass('sw-pg-selectschool-firstli-mouseover').addClass('sw-pg-selectschool-firstli-mouseout');
-                    $("#sw-pg-selectschool-firstli a").addClass('sw-pg-selectschool-firstli-a-mouseout').removeClass('sw-pg-selectschool-firstli-a-mouseover');
-                });
-
-                $(document).on('mouseover', '#sw-pg-myaccount', function () {
-                    $("#sw-pg-myaccount-firstli").removeClass('sw-pg-myaccount-firstli-mouseout').addClass('sw-pg-myaccount-firstli-mouseover');
-                    $("#sw-pg-myaccount-firstli a").addClass('sw-pg-myaccount-firstli-a-mouseover').removeClass('sw-pg-myaccount-firstli-a-mouseout');
-                });
-
-                $(document).on('mouseout', '#sw-pg-myaccount', function () {
-                    $("#sw-pg-myaccount-firstli").removeClass('sw-pg-myaccount-firstli-mouseover').addClass('sw-pg-myaccount-firstli-mouseout');
-                    $("#sw-pg-myaccount-firstli a").addClass('sw-pg-myaccount-firstli-a-mouseout').removeClass('sw-pg-myaccount-firstli-a-mouseover');
-                });
-
-                $(document).on('mouseover', '#sw-pg-sitenav', function () {
-                    $("#sw-pg-sitenav-firstli").removeClass('sw-pg-sitenav-firstli-mouseout').addClass('sw-pg-sitenav-firstli-mouseover');
-                    $("#sw-pg-sitenav-firstli a").addClass('sw-pg-sitenav-firstli-a-mouseover').removeClass('sw-pg-sitenav-firstli-a-mouseout');
-                });
-
-                $(document).on('mouseout', '#sw-pg-sitenav', function () {
-                    $("#sw-pg-sitenav-firstli").removeClass('sw-pg-sitenav-firstli-mouseover').addClass('sw-pg-sitenav-firstli-mouseout');
-                    $("#sw-pg-sitenav-firstli a").addClass('sw-pg-sitenav-firstli-a-mouseout').removeClass('sw-pg-sitenav-firstli-a-mouseover');
-                });
-
-                $(document).on('mouseover', '#sw-pg-district', function () {
-                    $("#sw-pg-district-firstli").removeClass('sw-pg-district-firstli-mouseout').addClass('sw-pg-district-firstli-mouseover');
-                    $("#sw-pg-district-firstli a").addClass('sw-pg-district-firstli-a-mouseover').removeClass('sw-pg-district-firstli-a-mouseout');
-                });
-
-                $(document).on('mouseout', '#sw-pg-district', function () {
-                    $("#sw-pg-district-firstli").removeClass('sw-pg-district-firstli-mouseover').addClass('sw-pg-district-firstli-mouseout');
-                    $("#sw-pg-district-firstli a").addClass('sw-pg-district-firstli-a-mouseout').removeClass('sw-pg-district-firstli-a-mouseover');
-                });
-            }
-        });
-
-
-    </script>
-    <script src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/min/SW-UI_2680.min.js" type='text/javascript'></script>
-    <script language="javascript" type='text/javascript' src="https://www.manvilleschools.org/Static/GlobalAssets/jQueryUI.min.js"></script>
-    <script src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/jquery.sectionlayer.js" type='text/javascript'></script>
-    <script src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/Initialize_2560.js" type='text/javascript'></script>
-    <script src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/min/swfobject.min.js" type="text/javascript"></script>
-    <script src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/min/jquery.ajaxupload_2440.min.js" type="text/javascript"></script>
-
-    <!-- Begin swuc.CheckScript -->
-  <script type="text/javascript" src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/ThirdParty/json2.js"></script>
-  <script type="text/javascript" src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/CheckScript_2780.js"></script>
-<!-- End swuc.CheckScript -->
-
-
-    <!-- Server Load Time (02): 0.0468439 Seconds -->
-
-    
-
-    <!-- off-canvas menu enabled-->
-    
-
-    <!-- Ally Alternative Formats Configure START   -->
-    
-<script>
-    AFExtensions = ".pdf,.doc,.docx,.ppt,.pptx,.odt,.odp";
-    AllyClientID = "13314";
-	    // Wait for the API to load     
-	    ally.ready(function() {
-		    // Configure an API instance
-            const ui = ally.ui({
-			    'client': {
-				    'baseUrl': 'https://prod.ally.ac',
-				    'clientId': 13314
-			    },
-			    'courseId': '1794',
-			    'locale': $('html').attr('lang'),
-			    'platformName': 'Wcm',  
-			    'role': 'anonymous'
-		    });
-	        // Apply the API to the page body   
-            ui.autoUpdate({'domWatch': 250});
-    });
-
-</script>
-    <!-- Ally Alternative Formats Configure END     -->
-
-</body>
-</html>
+<p><span style="font-size: x-large;"><strong><span style="color: #800080;">THE FIFTH PERSON
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Tala</span></strong></span></p>
+<p>&nbsp;<strong><span style="text-decoration: underline; font-size: medium; color: #800080;">CONNECTION/RELATIONSHIP
+            TO EDDIE</span></strong></p>
+<p>&nbsp;<span style="font-size: medium; color: #800080;">Eddie&rsquo;s
+        nightmares since the war. Tala died during World War II, in a hut
+        Eddie set on fire, he killed her.</span></p>
+<p><strong><span style="font-size: medium; color: #800080;"><span style="text-decoration: underline;">SETTING IN
+                HEAVEN</span></span></strong></p>
+<p>&nbsp;<span style="font-size: medium; color: #800080;">A river filled
+        with children playing in the water.</span> <strong><span
+            style="font-size: medium; color: #800080;"><br /></span></strong>
+</p>
+<p>&nbsp;<strong><span style="font-size: medium; color: #800080;"><span style="text-decoration: underline;">WHY THIS IS
+                HEAVEN FOR
+                TALA</span></span></strong></p>
+<p>&nbsp;<span style="font-size: medium; color: #800080;">Tala died in a
+        fire. Water is the opposite of fire. Water puts out fire.</span></p>
+<p>&nbsp;<strong><span style="font-size: medium; color: #800080;"><span style="text-decoration: underline;">EDDIE
+                AGE/HOW DOES HE
+                FEEL PHYSICALLY</span></span></strong></p>
+<p>&nbsp;<span style="font-size: medium; color: #800080;">83 years old, the
+        age he died, uses a cane again.</span><strong><span
+            style="font-size: medium; color: #800080;"><br /></span></strong>
+</p>
+<p>&nbsp;<strong><span style="font-size: medium; color: #800080;"><span style="text-decoration: underline;">LESSON EDDIE
+                IS
+                TAUGHT/QUOTE FROM BOOK</span></span></strong></p>
+<p>&nbsp;<span style="font-size: medium; color: #800080;">Tala explained the
+        meaning of Eddie's life. His job was important.</span><strong><span
+            style="font-size: medium; color: #800080;"><br /></span></strong>
+</p>
+<p>&nbsp;<strong><span style="font-size: medium; color: #800080;"><span style="text-decoration: underline;">SIGNIFICANT
+                PASSAGE</span> </span></strong></p>
+<p>&nbsp;<span style="font-size: medium; color: #800080;">&ldquo;Children,
+        you keep them safe. You make good for me. Is where you were supposed
+        to be, Eddie Main-ten-nance.&rdquo; (Page 191)</span></p>
+<p><span style="font-size: medium; color: #800080;">&nbsp;</span><strong><span
+            style="font-size: medium; color: #800080;"><span style="text-decoration: underline;">THE SYMBOLISM OF THE
+                FERRIS WHEEL AND RUBY PIER</span><br /></span></strong></p>
+<p><span style="font-size: medium; color: #800080;">SAFETY and
+        REDEMPTION-Eddie kept children safe at the pier. He spent his life
+        making up for killing Tala who was hiding in a place she thought was
+        "safe". </span></p>
+<h2><span style="font-size: x-large; color: #000000;">Inspiration: The Real
+        Eddie</span></h2>
+<p><span style="font-size: medium; color: #000000;"><em><strong>The lead
+                character in "The Five People You Meet In Heaven" is a
+                grizzled war veteran named Eddie, who dies on his 83rd
+                birthday. The character was inspired by my real-life uncle,
+                Edward Beitchman, who was also a World War II veteran, who
+                also died at 83, and also lived a life like that of the
+                fictional character, rarely leaving his home city, and often
+                feeling that he didn't accomplish what he should have. The
+                pictures here are of the "real" Eddie. The text is from an
+                essay I wrote years ago about my uncle
+                Eddie.</strong></em></span></p>
+<p><span style="font-size: medium; color: #000000;"><em><strong>&nbsp;</strong></em><strong>
+            I tell stories. For awhile I told stories through music and then
+            I told stories in newspapers and later I told stories in books,
+            the best known being <em>Tuesdays with Morrie</em>, a story
+            about my old teacher who was living to the fullest even as he
+            was dying. <br /> <br /> But before I started telling stories, I
+            heard them. My family loved to rattle them off, especially the
+            senior members, grandparents and uncles and aunts, usually
+            around a Thanksgiving table, always with plates of food close at
+            hand. These were stories about family, history, war, some might
+            have even been closer to fairy tales. Someone would inevitably
+            say, &ldquo;Oh, no, not THAT one again,&rdquo; but we would
+            settle in and listen anyhow. I never minded. In fact, I loved
+            it. Those stories made me feel part of something, gave me
+            stories of my own, as if my elders&rsquo; tales, through their
+            telling, could become my tales, too. <br /> <br /> One I always
+            remembered was told each year by a favorite uncle of mine, a
+            squat, ex cab driver who had served in World War II and was a
+            pretty gritty guy. He talked of a night when he went to the
+            hospital with a raging fever. In the middle of that night, he
+            said, he woke up and saw his dead relatives, waiting for him at
+            the end of his bed.<br /> <br /> Of course, we kids asked him
+            breathlessly, &ldquo;What did you do? What did you do?&rdquo;
+            And being the salty fellow he was, he shrugged and said,
+            &ldquo;I told them to get lost. I wasn&rsquo;t ready for them
+            yet.&rdquo;<br /> <br /> I filed that story away in my head, but
+            I never forgot it. And I never forgot my uncle, even as he aged
+            into his 70&rsquo;s and 80&rsquo;s. As I got older, I saw him as
+            a tough, devoted but sad old man who never got to see his dreams
+            fulfilled and never really knew how much we loved him.<br />
+            <br /> When time came for me to write something after
+            <em>Tuesdays with Morrie</em>, I moved slowly. I didn&rsquo;t
+            want to do any sequels. No &ldquo;Wednesdays with Morrie.&rdquo;
+            No self-help series. I wanted to return to the world of stories,
+            to delve deeper into life and death and the connections between
+            the two - which lead me, inevitably, to the idea of
+            heaven.<br /> <br /> Somewhere, swimming in my head, was the
+            image my uncle had given me around that table, a handful of
+            people waiting for you when you die. And I began to explore this
+            simple concept: what if heaven was not some lush Garden of Eden,
+            but a place where you had your life explained to you by people
+            who were in it &ndash; five people - maybe you knew them, maybe
+            you didn&rsquo;t, but in some way you were touched by them and
+            changed forever, just as you inevitably touched people while on
+            earth and changed them, too.<br /> <br /> And so, one predawn
+            morning, coffee in hand, I sat down to write my next story,
+            which now, several years later, is presented to you here.
+            It&rsquo;s a tale of a life on earth. It&rsquo;s a tale of life
+            beyond it. It&rsquo;s a fable about love, a warning about war,
+            and a nod of the cap to the real people of this world, the ones
+            who never get their name in lights.<br /> <br /> This story is
+            also a personal tribute to my uncle, whom I only wish could be
+            here to read it.<br /> <br /> By the way, his name was Eddie.
+        </strong></span></p>
+<p><span style="color: #ff0000; font-size: x-large;"><strong>&ldquo;YOU MADE
+            ME LOVE YOU&rdquo;</strong></span></p>
+<p>&nbsp;<span style="color: #ff0000; font-size: medium;"><strong>Lyrics by
+            Jimmy Monaco</strong></span></p>
+<p><span style="color: #ff0000; font-size: medium;"><strong>You made me love
+            you<br /> I didn't want to do it, I didn't want to do it<br />
+            You made me love you<br /> and all the time you knew it<br /> I
+            guess you always knew it.<br /> You made me happy sometimes, you
+            made me glad<br /> But there were times, Dear, you made me feel
+            so bad<br /> <br /> You made me sigh for, I didn't want to tell
+            you<br /> I didn't want to tell you<br /> I want some love
+            that's true, yes I do, deed I do, you know I do<br /> <br />
+            Give me, give me, give me what I cry for<br /> you know you got
+            the brand of kisses that I'd die for<br /> You know you made me
+            love you</strong></span></p>
+<p><span style="color: #ff0000; font-size: medium;"><strong>Performed
+            by&nbsp;</strong></span><span style="color: #ff0000; font-size: medium;"><strong>Al
+            Jolson,&nbsp;</strong></span><span style="color: #ff0000; font-size: medium;"><strong>Judy Garland
+            and&nbsp;</strong></span><strong><span style="font-size: medium; color: #800080;"><span
+                style="color: #ff0000;"><strong>Patsy
+                    Cline</strong></span></span></strong></p>

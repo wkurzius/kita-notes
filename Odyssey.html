@@ -1,1502 +1,522 @@
-<h1>Odyssey</h1>
-
-		
-	</div>
-
-    <div class="ui-widget-footer">
-		  
-	</div>
-</div>
-<script type="text/javascript">
-$(document).ready(function (){
-$(".tag-list li a").keypress(function(e) { if(e.which == 13) { $(this).click();   }});
-});
-function LoadGroupedData(container, MIID, PMI, groupYear, groupMonth, groupBy, tag) {
-  //ViewToUse looks at the hidden Sidebar List View defined in the Builder View.
-  var viewToUse = "";
-    if($('#hid-'+MIID+'-SidebarListView').length > 0){
-      viewToUse = $("#hid-" + MIID + "-SidebarListView").val();
-    };
-  GetContent('https://www.manvilleschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=1794&PageID=6007&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&RenderLoc=0&FromRenderLoc=0&GroupYear=' + groupYear + '&GroupMonth=' + groupMonth + '&GroupByField=' + groupBy + '&EnableQuirksMode=0&ViewID=' + viewToUse + '&Tag=' + tag, container, 2, 'chkSidebar();');
-}
-function LoadData(container, MIID, PMI, flexDataID, groupYear, groupMonth, groupBy, targetView, tag) {
-  if(targetView !== undefined || targetView.Length() == 0){
-  //targetView looks at the hidden Detail View defined in the Builder View.
-      targetView = $('#hid-'+MIID+'-DetailView').val();
-   }
-  GetContent('https://www.manvilleschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=1794&PageID=6007&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&FlexDataID=' + flexDataID + '&GroupYear=' + groupYear + '&GroupMonth=' + groupMonth + '&GroupByField=' + groupBy + '&RenderLoc=0&FromRenderLoc=0&EnableQuirksMode=0&Tag=' + tag + '&ViewID=' + targetView, container, 2, 'chkSidebar();');
-}
-function LoadTaggedData(container, MIID, PMI, tag) {
-  //ViewToUse looks at the hidden Sidebar List View defined in the Builder View.
-  var viewToUse = "";
-    if($('#hid-'+MIID+'-SidebarListView').length > 0){
-      viewToUse = $("#hid-" + MIID + "-SidebarListView").val();
-    };
-  GetContent('https://www.manvilleschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=1794&PageID=6007&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&RenderLoc=0&FromRenderLoc=0&Tag=' + tag + '&EnableQuirksMode=0&ViewID='+viewToUse, container, 2, 'chkSidebar();');
-  setTimeout(function(){ $("#module-content-"+ MIID +"").find('[tabindex]:first').focus(); }, 200);
-}
-</script>
-</div>
-
-</div></div>
-<div id='pmi-6990'>
-
-
-
-<div id='sw-module-73670'>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            var DomainID = '1794';
-            var PageID = '6007';
-            var RenderLoc = '0';
-            var MIID = '7367';
-
-            //added to check to make sure moderated content doesn't bleed through the dialog
-            if ($('#dialog-overlay-WindowLargeModal-body.moderateContent').length > 0) {
-                $("#module-content-" + MIID).find(".ui-widget-detail").find(".ui-article").append("<p>&nbsp;</p>");
-            }
-        });
-    </script>
-
-    <script type="text/javascript">$(document).ready(function() {CheckScript('ModuleView');CheckScript('Mustache');
- });</script>
-    
-    <div id="module-content-7367" >
-<div class="ui-widget app flexpage">
-	<div class="ui-widget-header ui-helper-hidden">
-		
-	</div>
-	
-	<div class="ui-widget-detail">
-		<ul class="ui-articles">
-<li>
-	<div class="ui-article">
-		<div class="ui-article-description">
-        	<span><span ><h1><span style="color: orangered;"><strong>The Odyssey</strong></span></h1>
+<h1><span style="color: orangered;"><strong>The Odyssey</strong></span></h1>
 <ul>
-<li>
-<h2>Written BETWEEN 900 AND 700 BCE almost 3,000 years ago</h2>
-</li>
-<li>
-<h2>Considered the FIRST, GREAT work of WESTERN literature.</h2>
-</li>
-<li>
-<h2>Story attributed to a Greek poet named Homer.</h2>
-</li>
-<li>
-<h2>Very little is known about Homer, there is a tradition that he lost his sight and became blind.</h2>
-</li>
-<li>
-<h2>The story of the Odyssey is about a hero named Odysseus and the obstacles he faces and overcomes.</h2>
-</li>
-<li>
-<h2>The story begins with the Trojan War a famous historical event in Greek history.</h2>
-</li>
-<li>
-<h2>The Odyssey is an epic poem, 11,300 lines, and is divided into 24 books</h2>
-</li>
-<li>
-<h2>The story of the Odyssey was not written down. It was passed down from one generation to another in the oral storytelling tradition by <em>rhapsodes.</em></h2>
-</li>
+    <li>
+        <h2>Written BETWEEN 900 AND 700 BCE almost 3,000 years ago</h2>
+    </li>
+    <li>
+        <h2>Considered the FIRST, GREAT work of WESTERN literature.</h2>
+    </li>
+    <li>
+        <h2>Story attributed to a Greek poet named Homer.</h2>
+    </li>
+    <li>
+        <h2>Very little is known about Homer, there is a tradition that he
+            lost his sight and became blind.</h2>
+    </li>
+    <li>
+        <h2>The story of the Odyssey is about a hero named Odysseus and the
+            obstacles he faces and overcomes.</h2>
+    </li>
+    <li>
+        <h2>The story begins with the Trojan War a famous historical event
+            in Greek history.</h2>
+    </li>
+    <li>
+        <h2>The Odyssey is an epic poem, 11,300 lines, and is divided into
+            24 books</h2>
+    </li>
+    <li>
+        <h2>The story of the Odyssey was not written down. It was passed
+            down from one generation to another in the oral storytelling
+            tradition by <em>rhapsodes.</em></h2>
+    </li>
 </ul>
-<p><span style="text-decoration: underline;"><span style="font-size: xx-large; color: #1e90ff;"><strong><em>Characteristics of a Hero</em></strong></span></span></p>
-<p><span style="font-size: xx-large; color: #1e90ff;"><strong><em>brave<br /></em></strong></span></p>
-<p><span style="font-size: xx-large; color: #1e90ff;"><strong><em>leadership<br /></em></strong></span></p>
-<p><span style="font-size: xx-large; color: #1e90ff;"><strong><em>dedicated<br /></em></strong></span></p>
-<p><span style="font-size: xx-large; color: #1e90ff;"><strong><em>determined<br /></em></strong></span></p>
-<p><span style="font-size: xx-large; color: #1e90ff;"><strong><em>perserverance<br /></em></strong></span></p>
-<p><span style="font-size: xx-large; color: #1e90ff;"><strong><em>sacrifice<br /></em></strong></span></p>
-<p><span style="font-size: xx-large; color: #1e90ff;"><strong><em>honorable<br /></em></strong></span></p>
-<p><span style="font-size: xx-large; color: #1e90ff;"><strong><em>performs duty</em><em><br /></em></strong></span></p>
+<p><span style="text-decoration: underline;"><span
+            style="font-size: xx-large; color: #1e90ff;"><strong><em>Characteristics
+                    of a Hero</em></strong></span></span></p>
+<p><span style="font-size: xx-large; color: #1e90ff;"><strong><em>brave<br /></em></strong></span>
+</p>
+<p><span style="font-size: xx-large; color: #1e90ff;"><strong><em>leadership<br /></em></strong></span>
+</p>
+<p><span style="font-size: xx-large; color: #1e90ff;"><strong><em>dedicated<br /></em></strong></span>
+</p>
+<p><span style="font-size: xx-large; color: #1e90ff;"><strong><em>determined<br /></em></strong></span>
+</p>
+<p><span style="font-size: xx-large; color: #1e90ff;"><strong><em>perserverance<br /></em></strong></span>
+</p>
+<p><span style="font-size: xx-large; color: #1e90ff;"><strong><em>sacrifice<br /></em></strong></span>
+</p>
+<p><span style="font-size: xx-large; color: #1e90ff;"><strong><em>honorable<br /></em></strong></span>
+</p>
+<p><span style="font-size: xx-large; color: #1e90ff;"><strong><em>performs
+                duty</em><em><br /></em></strong></span></p>
 <p>&nbsp;</p>
-<p><span style="text-decoration: underline;"><span style="font-size: xx-large; color: #1e90ff;"><strong><em>Fatal Flaws of a Hero </em></strong></span></span></p>
-<p><span style="font-size: xx-large; color: #1e90ff;"><strong><em>pride-hubris</em></strong></span></p>
-<p><span style="font-size: xx-large; color: #1e90ff;"><strong><em>arrogant</em></strong></span></p>
-<p><span style="font-size: xx-large; color: #1e90ff;"><strong><em>vain-vanity</em></strong></span></p>
-<p><span style="font-size: xx-large; color: #1e90ff;"><strong><em>temper-anger</em></strong></span></p>
-<p><span style="font-size: xx-large; color: #1e90ff;"><strong><em>reckless-risk taker</em></strong></span></p>
-<p><span style="font-size: xx-large; color: #1e90ff;"><strong><em>seeks glory</em></strong></span></p>
-<p><span style="font-size: xx-large; color: #1e90ff;"><strong><em>seeks adventure</em></strong></span></p>
-<p><span style="font-size: xx-large; color: #1e90ff;"><strong><em>curiosity</em></strong></span></p>
+<p><span style="text-decoration: underline;"><span style="font-size: xx-large; color: #1e90ff;"><strong><em>Fatal
+                    Flaws of a Hero </em></strong></span></span></p>
+<p><span style="font-size: xx-large; color: #1e90ff;"><strong><em>pride-hubris</em></strong></span>
+</p>
+<p><span style="font-size: xx-large; color: #1e90ff;"><strong><em>arrogant</em></strong></span>
+</p>
+<p><span style="font-size: xx-large; color: #1e90ff;"><strong><em>vain-vanity</em></strong></span>
+</p>
+<p><span style="font-size: xx-large; color: #1e90ff;"><strong><em>temper-anger</em></strong></span>
+</p>
+<p><span style="font-size: xx-large; color: #1e90ff;"><strong><em>reckless-risk
+                taker</em></strong></span></p>
+<p><span style="font-size: xx-large; color: #1e90ff;"><strong><em>seeks
+                glory</em></strong></span></p>
+<p><span style="font-size: xx-large; color: #1e90ff;"><strong><em>seeks
+                adventure</em></strong></span></p>
+<p><span style="font-size: xx-large; color: #1e90ff;"><strong><em>curiosity</em></strong></span>
+</p>
 <p><strong><em>&nbsp;</em></strong></p>
 <p>&nbsp;</p>
 <p><span style="font-size: large;"><strong>Word Bank</strong></span></p>
-<p><span style="font-size: large;"><strong>Atypical&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong>&nbsp; untypical&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; exceptional&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; unique</span></p>
-<p><span style="font-size: large;"><strong>Brave</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; heroic&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; fearless</span></p>
-<p><span style="font-size: large;"><strong>Valor</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; valorous&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; heroism&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; valiant</span></p>
-<p><span style="font-size: large;"><strong>Hero</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; heroic&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; heroism</span></p>
-<p><span style="font-size: large;"><strong>Courage</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; courageous</span></p>
-<p><span style="font-size: large;"><strong>Virtue</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; moral excellence &nbsp; &nbsp; &nbsp;righteousness</span></p>
-<p><span style="font-size: large;"><strong>Uncommon</strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; exceptional</span></p>
-<p><span style="font-size: large;"><strong>Common</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ordinary</span></p>
-<p><span style="font-size: large;"><strong>Perseverance</strong>&nbsp; &nbsp; &nbsp; &nbsp;persist&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; carry on &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; never give up&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; hang tough</span></p>
-<p><span style="font-size: large;"><strong>Leader</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; leadership &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; chief&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
-<p><span style="font-size: large;"><strong>Sacrifice</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; devoted &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; dedicated&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; devoted</span></p>
+<p><span style="font-size: large;"><strong>Atypical&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </strong>&nbsp;
+        untypical&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        exceptional&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; unique</span>
+</p>
+<p><span style="font-size: large;"><strong>Brave</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        heroic&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        fearless</span></p>
+<p><span style="font-size: large;"><strong>Valor</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        valorous&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        heroism&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        valiant</span></p>
+<p><span style="font-size: large;"><strong>Hero</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        heroic&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        heroism</span></p>
+<p><span style="font-size: large;"><strong>Courage</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        courageous</span></p>
+<p><span style="font-size: large;"><strong>Virtue</strong>&nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; moral excellence
+        &nbsp; &nbsp; &nbsp;righteousness</span></p>
+<p><span style="font-size: large;"><strong>Uncommon</strong>&nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; exceptional</span></p>
+<p><span style="font-size: large;"><strong>Common</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        ordinary</span></p>
+<p><span style="font-size: large;"><strong>Perseverance</strong>&nbsp;
+        &nbsp; &nbsp;
+        &nbsp;persist&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        carry on &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; never give
+        up&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        hang tough</span></p>
+<p><span style="font-size: large;"><strong>Leader</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        leadership &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        chief&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+</p>
+<p><span style="font-size: large;"><strong>Sacrifice</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        devoted
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        dedicated&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        devoted</span></p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <h1><em>Characters</em></h1>
-<p><em><img src="http://shirleyenglish.weebly.com/uploads/2/2/9/1/22918896/4486085.jpg" alt="" width="210" height="266" /></em></p>
-<h1><strong><span style="color: dodgerblue;">Odysseus</span>-the hero and main character. </strong></h1>
-<h1><strong>Odysseus uses his guile and is a cunning leader.<br /></strong></h1>
-<p><img src="http://4206e9.medialib.glogster.com/media/30c9f52a679c0c4f95c3806b0f46a822ef8f3ca66022aeffdde02c03643a0225/penelope-the-odyssey-movie-25800586-654-480.jpg" alt="" width="195" height="166" /></p>
+<p><em><img src="http://shirleyenglish.weebly.com/uploads/2/2/9/1/22918896/4486085.jpg" alt="" width="210"
+            height="266" /></em></p>
+<h1><strong><span style="color: dodgerblue;">Odysseus</span>-the hero and
+        main character. </strong></h1>
+<h1><strong>Odysseus uses his guile and is a cunning leader.<br /></strong>
+</h1>
+<p><img src="http://4206e9.medialib.glogster.com/media/30c9f52a679c0c4f95c3806b0f46a822ef8f3ca66022aeffdde02c03643a0225/penelope-the-odyssey-movie-25800586-654-480.jpg"
+        alt="" width="195" height="166" /></p>
 <h1><span style="color: dodgerblue;">Penelope-Odysseus' Wife</span></h1>
 <h2>Odysseus leaves Ithaca to fight in the Trojan War.</h2>
 <h2>He is gone for 20 years. Penelope faithfully waits for his return.</h2>
-<p><img src="http://images.rapgenius.com/49f066f6636253e932330b91a4e922a7.250x209x1.jpg" alt="" width="187" height="156" /></p>
+<p><img src="http://images.rapgenius.com/49f066f6636253e932330b91a4e922a7.250x209x1.jpg" alt="" width="187"
+        height="156" /></p>
 <h1><span style="color: dodgerblue;">Telemachus-Odysseus' son</span></h1>
-<h2>Odysseus leaves Telemachus when he is an infant and returns to Ithaca 20 years later.</h2>
+<h2>Odysseus leaves Telemachus when he is an infant and returns to Ithaca 20
+    years later.</h2>
 <p>&nbsp;</p>
-<h1><img src="http://akhsmythology.wikispaces.com/file/view/Cyclops-odyssey.jpg/225651024/Cyclops-odyssey.jpg" alt="" width="289" height="250" /> <span style="color: dodgerblue;">The Cyclops&nbsp; </span><span style="color: black;">One Eyed Monster&nbsp;&nbsp;&nbsp; </span><span style="color: black;">Son of Poseidon </span></h1>
-<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://hd.wallpaperswide.com/thumbs/sirens_pirates_of_the_caribbean_on_stranger_tides-t2.jpg" alt="" width="279" height="181" /><span style="color: dodgerblue;">The Sirens&nbsp; </span><span style="color: black;">Sea Creatures with Beautiful Voices&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></h1>
-<h1><img src="https://o.quizlet.com/GtkLjn.bE.3-vrdNE2pUuQ_m.jpg" alt="" width="232" height="171" />&nbsp; <span style="color: dodgerblue;">Calypso </span><span style="color: black;">Sea Nymph</span></h1>
+<h1><img src="http://akhsmythology.wikispaces.com/file/view/Cyclops-odyssey.jpg/225651024/Cyclops-odyssey.jpg" alt=""
+        width="289" height="250" /> <span style="color: dodgerblue;">The Cyclops&nbsp; </span><span
+        style="color: black;">One Eyed Monster&nbsp;&nbsp;&nbsp;
+    </span><span style="color: black;">Son of Poseidon </span></h1>
+<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+        src="http://hd.wallpaperswide.com/thumbs/sirens_pirates_of_the_caribbean_on_stranger_tides-t2.jpg" alt=""
+        width="279" height="181" /><span style="color: dodgerblue;">The Sirens&nbsp; </span><span
+        style="color: black;">Sea Creatures with Beautiful
+        Voices&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+</h1>
+<h1><img src="https://o.quizlet.com/GtkLjn.bE.3-vrdNE2pUuQ_m.jpg" alt="" width="232" height="171" />&nbsp; <span
+        style="color: dodgerblue;">Calypso </span><span style="color: black;">Sea Nymph</span></h1>
 <h2><span style="color: black;">&nbsp;</span></h2>
-<h1><img src="http://vignette3.wikia.nocookie.net/warriorsofmyth/images/8/8a/Lotus_Eaters.jpg/revision/latest?cb=20110515171525" alt="" width="332" height="244" /><span style="color: dodgerblue;">The Lotus Eaters&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br /></span></h1>
-<h1><span style="color: black;">&nbsp;<img src="http://static.comicvine.com/uploads/square_small/1/15659/4158866-charybdis-percy_jackson-sea_of_monsters-concept_art_by_sebastian_meyers-mouth.jpg" alt="" width="296" height="296" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="color: dodgerblue;">Charybdis </span><span style="color: black;">Giant Whirlpool&nbsp;&nbsp;&nbsp;</span></h1>
-<h1><span style="color: black;"><img src="https://mst3kriffaday.files.wordpress.com/2013/05/scylla-and-charybdis-bookpalace.jpg" alt="" width="423" height="243" />&nbsp;&nbsp;&nbsp; </span><span style="color: dodgerblue;">Scylla </span><span style="color: black;">6 Headed Sea Monster</span></h1>
-<h1><img src="http://www.mlahanas.de/Greeks/Film/Circe.jpg" alt="" width="186" height="216" /><span style="color: dodgerblue;">Circe</span> Enchantress&nbsp;</h1>
-<h1><img src="http://images3.static-bluray.com/reviews/2628_5.jpg" alt="" width="350" height="197" />&nbsp; <span style="color: dodgerblue;">Zeus </span>King of the Gods&nbsp;&nbsp;</h1>
-<h1><img src="http://chronicle.augusta.com/sites/default/files/editorial/images/spotted/52/527902.jpg" alt="" width="170" height="211" /> <span style="color: dodgerblue;">Athena </span>Goddess of Intelligence&nbsp;</h1>
-<h1><img src="http://www.fantastique-arts.com/photos/5740.jpg" alt="" width="282" height="214" /><span style="color: dodgerblue;">Aeolus <span style="color: black;">God of the Wind</span></span></h1>
-<h1><img src="https://i.ytimg.com/vi/z-Wr3QhOTE0/maxresdefault.jpg" alt="" width="463" height="260" /><span style="color: dodgerblue;">Poseidon&nbsp; </span>God of the Sea &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+<h1><img src="http://vignette3.wikia.nocookie.net/warriorsofmyth/images/8/8a/Lotus_Eaters.jpg/revision/latest?cb=20110515171525"
+        alt="" width="332" height="244" /><span style="color: dodgerblue;">The Lotus
+        Eaters&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <br /></span></h1>
+<h1><span style="color: black;">&nbsp;<img
+            src="http://static.comicvine.com/uploads/square_small/1/15659/4158866-charybdis-percy_jackson-sea_of_monsters-concept_art_by_sebastian_meyers-mouth.jpg"
+            alt="" width="296" height="296" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </span><span style="color: dodgerblue;">Charybdis </span><span style="color: black;">Giant
+        Whirlpool&nbsp;&nbsp;&nbsp;</span></h1>
+<h1><span style="color: black;"><img
+            src="https://mst3kriffaday.files.wordpress.com/2013/05/scylla-and-charybdis-bookpalace.jpg" alt=""
+            width="423" height="243" />&nbsp;&nbsp;&nbsp;
+    </span><span style="color: dodgerblue;">Scylla </span><span style="color: black;">6 Headed Sea Monster</span></h1>
+<h1><img src="http://www.mlahanas.de/Greeks/Film/Circe.jpg" alt="" width="186" height="216" /><span
+        style="color: dodgerblue;">Circe</span> Enchantress&nbsp;</h1>
+<h1><img src="http://images3.static-bluray.com/reviews/2628_5.jpg" alt="" width="350" height="197" />&nbsp; <span
+        style="color: dodgerblue;">Zeus </span>King of the Gods&nbsp;&nbsp;
+</h1>
+<h1><img src="http://chronicle.augusta.com/sites/default/files/editorial/images/spotted/52/527902.jpg" alt=""
+        width="170" height="211" /> <span style="color: dodgerblue;">Athena </span>Goddess of
+    Intelligence&nbsp;</h1>
+<h1><img src="http://www.fantastique-arts.com/photos/5740.jpg" alt="" width="282" height="214" /><span
+        style="color: dodgerblue;">Aeolus
+        <span style="color: black;">God of the Wind</span></span></h1>
+<h1><img src="https://i.ytimg.com/vi/z-Wr3QhOTE0/maxresdefault.jpg" alt="" width="463" height="260" /><span
+        style="color: dodgerblue;">Poseidon&nbsp; </span>God of the Sea
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</h1>
 <p>&nbsp;</p>
-<h1>&nbsp;<img src="http://mythmaniacs.com/heliosfrescoe.jpg" alt="" width="262" height="261" /><span style="color: dodgerblue;"> Helios </span>God of the Sun&nbsp;&nbsp;</h1>
-<h1><img src="http://th02.deviantart.net/fs71/PRE/f/2012/165/1/7/173fa4a1d1756d11045cb1e6b9e7508e-d533yoc.jpg" alt="" width="339" height="179" /><span style="color: dodgerblue;">Mount Olympus </span>Home of the God</h1>
+<h1>&nbsp;<img src="http://mythmaniacs.com/heliosfrescoe.jpg" alt="" width="262" height="261" /><span
+        style="color: dodgerblue;"> Helios
+    </span>God of the Sun&nbsp;&nbsp;</h1>
+<h1><img src="http://th02.deviantart.net/fs71/PRE/f/2012/165/1/7/173fa4a1d1756d11045cb1e6b9e7508e-d533yoc.jpg" alt=""
+        width="339" height="179" /><span style="color: dodgerblue;">Mount Olympus </span>Home of the God</h1>
 <h1><span style="color: orangered;">Settings</span></h1>
-<h1><em><img src="https://i.ytimg.com/vi/kSRucHuNHP4/maxresdefault.jpg" alt="" width="565" height="318" /></em><span style="color: yellowgreen;"><span style="color: black;"> Ithaca-Odysseus' Home</span></span></h1>
+<h1><em><img src="https://i.ytimg.com/vi/kSRucHuNHP4/maxresdefault.jpg" alt="" width="565" height="318" /></em><span
+        style="color: yellowgreen;"><span style="color: black;">
+            Ithaca-Odysseus' Home</span></span></h1>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<h1><span style="color: orangered;"><strong>MAJOR STORY LINES-3</strong></span></h1>
+<h1><span style="color: orangered;"><strong>MAJOR STORY
+            LINES-3</strong></span></h1>
 <p><strong>1. The Story of Penelope and Telemachus</strong></p>
-<p>The story of what happens to Odysseus' wife Penelope and their son Telemachus in their home on the island of Ithaca while Odysseus is fighting in the Trojan War.</p>
+<p>The story of what happens to Odysseus' wife Penelope and their son
+    Telemachus in their home on the island of Ithaca while Odysseus is
+    fighting in the Trojan War.</p>
 <p><strong>2. The Journey Home-OBSTACLES AND TEMPTATIONS<br /></strong></p>
-<p>The story of Odysseus' 10 year journey home from the war. He must fight constant obstacles and monsters to return home to his wife and son.</p>
+<p>The story of Odysseus' 10 year journey home from the war. He must fight
+    constant obstacles and monsters to return home to his wife and son.</p>
 <p><strong>3. The Suitors:</strong></p>
-<p>Odysseus arrives back to Ithaca after a 10 year absence. He teams up with his son Telemachus to battle the Suitors, men who wish to marry Penelope and steal his Kingdom of Ithaca and his wife. Odysessus must battle the Suitors to regain his kingdom. He is reunited with his wife and son.</p>
+<p>Odysseus arrives back to Ithaca after a 10 year absence. He teams up with
+    his son Telemachus to battle the Suitors, men who wish to marry Penelope
+    and steal his Kingdom of Ithaca and his wife. Odysessus must battle the
+    Suitors to regain his kingdom. He is reunited with his wife and son.</p>
 <h1><span style="color: orangered;"><strong>EPIC POEM</strong></span></h1>
 <ul>
-<li><span style="color: black;"><strong>LONG</strong></span></li>
-<li><span style="color: black;"><strong>NARRATIVE</strong></span></li>
-<li><span style="color: black;"><strong>LEGENDARY HERO</strong></span></li>
+    <li><span style="color: black;"><strong>LONG</strong></span></li>
+    <li><span style="color: black;"><strong>NARRATIVE</strong></span></li>
+    <li><span style="color: black;"><strong>LEGENDARY HERO</strong></span>
+    </li>
 </ul>
 <h1><span style="color: orangered;"><strong>EPIC HERO</strong></span></h1>
 <ul>
-<li><span style="color: black;"><strong>LEGENDARY OR WELL-KNOWN</strong></span></li>
-<li><span style="color: black;"><strong>GOALS</strong></span></li>
-<li><span style="color: black;"><strong>EMBODIES THE VIRTUES OF A NATION</strong></span></li>
-<li><span style="color: black;"><strong>EXAMPLES: CAPTAIN AMERICA, SUPERMAN, HARRY POTTER, LUKE SKYWALKER, KATNISS EVERDEEN, ODYSSEUS</strong></span></li>
+    <li><span style="color: black;"><strong>LEGENDARY OR
+                WELL-KNOWN</strong></span></li>
+    <li><span style="color: black;"><strong>GOALS</strong></span></li>
+    <li><span style="color: black;"><strong>EMBODIES THE VIRTUES OF A
+                NATION</strong></span></li>
+    <li><span style="color: black;"><strong>EXAMPLES: CAPTAIN AMERICA,
+                SUPERMAN, HARRY POTTER, LUKE SKYWALKER, KATNISS EVERDEEN,
+                ODYSSEUS</strong></span></li>
 </ul>
-<h1><span style="color: orangered;"><strong>CHARACTERISTICS OF AN EPIC HERO</strong></span></h1>
+<h1><span style="color: orangered;"><strong>CHARACTERISTICS OF AN EPIC
+            HERO</strong></span></h1>
 <ul>
-<li><span style="color: black;"><strong>MALE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br /></strong></span></li>
-<li><strong>NOBLE BIRTH</strong></li>
-<li><strong>LEGENDARY</strong></li>
-<li><strong>COURAGEOUS ACTS</strong></li>
-<li><strong>STRENGTH</strong></li>
-<li><strong>HIS ACTS DETERMINE THE FATE OF HIS PEOPLE</strong></li>
+    <li><span style="color: black;"><strong>MALE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <br /></strong></span></li>
+    <li><strong>NOBLE BIRTH</strong></li>
+    <li><strong>LEGENDARY</strong></li>
+    <li><strong>COURAGEOUS ACTS</strong></li>
+    <li><strong>STRENGTH</strong></li>
+    <li><strong>HIS ACTS DETERMINE THE FATE OF HIS PEOPLE</strong></li>
 </ul>
-<h1><span style="color: orangered;"><strong><u>SPECIAL ELEMENTS IN THE STORY<br /></u></strong></span></h1>
+<h1><span style="color: orangered;"><strong><u>SPECIAL ELEMENTS IN THE
+                STORY<br /></u></strong></span></h1>
 <ol>
-<li><strong>Exciting Adventure</strong></li>
-<li><strong>Monsters</strong></li>
-<li><strong>Gods and Goddesses</strong></li>
-<li><strong>War and Fighting</strong></li>
-<li><strong>Love</strong></li>
+    <li><strong>Exciting Adventure</strong></li>
+    <li><strong>Monsters</strong></li>
+    <li><strong>Gods and Goddesses</strong></li>
+    <li><strong>War and Fighting</strong></li>
+    <li><strong>Love</strong></li>
 </ol>
-<h1><strong><u><span style="color: orangered;">THEME-2 WAYS TO INTERPERT THE ODYSSEY</span><br /></u></strong></h1>
+<h1><strong><u><span style="color: orangered;">THEME-2 WAYS TO INTERPERT THE
+                ODYSSEY</span><br /></u></strong></h1>
 <ol>
-<li><strong> A great adventure story with good characters and plot</strong></li>
-<li><strong> A story for everyone who must overcome temptations and obstacles </strong><strong>in their journey through life to find happiness.</strong></li>
+    <li><strong> A great adventure story with good characters and
+            plot</strong></li>
+    <li><strong> A story for everyone who must overcome temptations and
+            obstacles </strong><strong>in their journey through life to find
+            happiness.</strong></li>
 </ol>
 <p>&nbsp;</p>
-<h1><span style="color: orangered;"><strong><em>Odysseus' Journey-Plot Line</em></strong></span></h1>
-<p><span style="color: orangered;"><strong><em><img src="https://s-media-cache-ak0.pinimg.com/originals/e3/58/b2/e358b2c7c3c7e495ab31aa0d4b23c0c4.jpg" alt="" width="1054" height="663" /></em></strong></span></p>
+<h1><span style="color: orangered;"><strong><em>Odysseus' Journey-Plot
+                Line</em></strong></span></h1>
+<p><span style="color: orangered;"><strong><em><img
+                    src="https://s-media-cache-ak0.pinimg.com/originals/e3/58/b2/e358b2c7c3c7e495ab31aa0d4b23c0c4.jpg"
+                    alt="" width="1054" height="663" /></em></strong></span>
+</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p><strong><u>The Island of the Phaecians</u></strong>:</p>
 <ol>
-<li>Odysseus explains his ten-year journey to them during a feast</li>
-<li>He is alone-all of his men are DEAD</li>
-<li>His ship has been destroyed by Zeus</li>
+    <li>Odysseus explains his ten-year journey to them during a feast</li>
+    <li>He is alone-all of his men are DEAD</li>
+    <li>His ship has been destroyed by Zeus</li>
 </ol>
 <p>&nbsp;</p>
 <p><strong><u>Calypso's Island</u></strong></p>
 <ol>
-<li>island of women</li>
-<li>goddess named Calypso</li>
-<li>seven-year affair</li>
-<li>Odysseus builds a new ship to sail home</li>
+    <li>island of women</li>
+    <li>goddess named Calypso</li>
+    <li>seven-year affair</li>
+    <li>Odysseus builds a new ship to sail home</li>
 </ol>
 <p>&nbsp;</p>
 <p><strong><u>Troy</u></strong></p>
 <ol>
-<li>Odysseus has been fighting for 10 years.</li>
-<li>Odysseus and his men begin their journey home from here.</li>
+    <li>Odysseus has been fighting for 10 years.</li>
+    <li>Odysseus and his men begin their journey home from here.</li>
 </ol>
 <p>&nbsp;</p>
 <p><strong><u>The Island of the Cicones</u></strong></p>
 <ol>
-<li>After leaving Troy, raid this island for supplies</li>
-<li>Rape, plunder, battle</li>
-<li>Odysseus lost 72 of his men</li>
-<li>Zeus is angry</li>
+    <li>After leaving Troy, raid this island for supplies</li>
+    <li>Rape, plunder, battle</li>
+    <li>Odysseus lost 72 of his men</li>
+    <li>Zeus is angry</li>
 </ol>
 <p>&nbsp;</p>
 <p><strong><u>Island of the Lotus Eaters</u></strong></p>
 <ol>
-<li>Odysseus sends his men to search for food</li>
-<li>Has to rescue them when they eat the Lotus Flower</li>
+    <li>Odysseus sends his men to search for food</li>
+    <li>Has to rescue them when they eat the Lotus Flower</li>
 </ol>
 <p>&nbsp;</p>
 <p><strong><u>Island of the Cyclopes</u></strong></p>
 <ol>
-<li>Cyclops-giants, one-eyed, live in caves</li>
+    <li>Cyclops-giants, one-eyed, live in caves</li>
 </ol>
 <ol start="2">
-<li>Do not farm</li>
+    <li>Do not farm</li>
 </ol>
 <ol start="3">
-<li>Violent</li>
+    <li>Violent</li>
 </ol>
 <ol start="4">
-<li>Odysseus and his men find a Cyclops&rsquo; cave</li>
+    <li>Odysseus and his men find a Cyclops&rsquo; cave</li>
 </ol>
 <ol start="5">
-<li>Lured by his cheese and wine</li>
+    <li>Lured by his cheese and wine</li>
 </ol>
 <ol start="6">
-<li>Cyclops, Polyphemus, traps them in the cave</li>
+    <li>Cyclops, Polyphemus, traps them in the cave</li>
 </ol>
 <ol start="7">
-<li>Blind Polyphemus</li>
+    <li>Blind Polyphemus</li>
 </ol>
 <ol start="8">
-<li>Sneak out under his herd of sheep</li>
+    <li>Sneak out under his herd of sheep</li>
 </ol>
 <ol start="9">
-<li>More men die!</li>
+    <li>More men die!</li>
 </ol>
 <p><strong><u>The Island of Aeolus</u></strong></p>
 <ol>
-<li>Aeolus, the god of the winds</li>
+    <li>Aeolus, the god of the winds</li>
 </ol>
 <ol start="2">
-<li>Gives Odysseus a bag of bad winds</li>
+    <li>Gives Odysseus a bag of bad winds</li>
 </ol>
 <ol start="3">
-<li>Sail to Ithaca</li>
+    <li>Sail to Ithaca</li>
 </ol>
 <ol start="4">
-<li>Men open the bag</li>
+    <li>Men open the bag</li>
 </ol>
 <ol start="5">
-<li>Blown out to sea</li>
+    <li>Blown out to sea</li>
 </ol>
 <p>&nbsp;</p>
 <p><strong><u>The Island of the Laestrygonians</u></strong></p>
 <ol>
-<li>Race of cannibals</li>
+    <li>Race of cannibals</li>
 </ol>
 <ol start="2">
-<li>Eat the Greeks</li>
+    <li>Eat the Greeks</li>
 </ol>
 <ol start="3">
-<li>Only the men on Odysseus&rsquo; ship survive</li>
+    <li>Only the men on Odysseus&rsquo; ship survive</li>
 </ol>
 <p>&nbsp;</p>
 <p><strong><u>Circe's Island</u></strong></p>
 <ol>
-<li>Circe turns Odysseus&rsquo; men to swine</li>
+    <li>Circe turns Odysseus&rsquo; men to swine</li>
 </ol>
 <ol start="2">
-<li>Odysseus is protected</li>
+    <li>Odysseus is protected</li>
 </ol>
 <ol start="3">
-<li>Circe tells Odysseus that he needs to find the blind prophet Teiresias in the Underworld to get home</li>
+    <li>Circe tells Odysseus that he needs to find the blind prophet
+        Teiresias in the Underworld to get home</li>
 </ol>
 <p>&nbsp;</p>
 <p><strong><u>The Underworld</u></strong></p>
 <ol>
-<li>Prophet Teiresias tells Odysseus how to get home</li>
+    <li>Prophet Teiresias tells Odysseus how to get home</li>
 </ol>
 <ol start="2">
-<li>Finds his mother there, who has committed suicide from depression</li>
+    <li>Finds his mother there, who has committed suicide from depression
+    </li>
 </ol>
 <p><br /> <strong><u>Island of the Sirens</u></strong></p>
 <ol>
-<li>Sail near island with women singing</li>
+    <li>Sail near island with women singing</li>
 </ol>
 <ol start="2">
-<li>Song tries to reel in sailors</li>
+    <li>Song tries to reel in sailors</li>
 </ol>
 <ol start="3">
-<li>Odysseus fills men&rsquo;s ears with beeswax</li>
+    <li>Odysseus fills men&rsquo;s ears with beeswax</li>
 </ol>
 <ol start="4">
-<li>Odysseus tied to the mast</li>
+    <li>Odysseus tied to the mast</li>
 </ol>
 <ol start="5">
-<li>Escape the Sirens</li>
+    <li>Escape the Sirens</li>
 </ol>
 <p><br /> <strong><u>Scylla and Charybdis</u></strong></p>
 <ol>
-<li>Odysseus decides to sail for Scylla instead of Charybdis</li>
+    <li>Odysseus decides to sail for Scylla instead of Charybdis</li>
 </ol>
 <ol start="2">
-<li>Scylla-a six-headed sea serpent</li>
+    <li>Scylla-a six-headed sea serpent</li>
 </ol>
 <ol start="3">
-<li>Charybdis-giant whirlpool</li>
+    <li>Charybdis-giant whirlpool</li>
 </ol>
 <ol start="4">
-<li>Charybdis--whole ship would be destroyed</li>
+    <li>Charybdis--whole ship would be destroyed</li>
 </ol>
 <ol start="5">
-<li>Scylla, six men die</li>
+    <li>Scylla, six men die</li>
 </ol>
 <p><strong><u>&nbsp;</u></strong></p>
 <p><strong><u>Island of Helios</u></strong>-Cattle of the Sun God</p>
 <ol>
-<li>Odysseus falls asleep praying to Athena</li>
+    <li>Odysseus falls asleep praying to Athena</li>
 </ol>
 <ol start="2">
-<li>Men go against his orders eat Helios' cattle</li>
+    <li>Men go against his orders eat Helios' cattle</li>
 </ol>
 <ol start="3">
-<li>Outrages Helios (sun god)</li>
+    <li>Outrages Helios (sun god)</li>
 </ol>
 <ol start="4">
-<li>Threatens never to rise again</li>
+    <li>Threatens never to rise again</li>
 </ol>
 <ol start="5">
-<li>Punishment</li>
+    <li>Punishment</li>
 </ol>
 <ol start="6">
-<li>Zeus throws a bolt of lightning at the ship</li>
+    <li>Zeus throws a bolt of lightning at the ship</li>
 </ol>
 <ol start="7">
-<li>Only Odysseus survives</li>
+    <li>Only Odysseus survives</li>
 </ol>
 <p>&nbsp;</p>
 <p><strong><u>Calypso's Island</u></strong></p>
 <ol>
-<li>An island of women</li>
+    <li>An island of women</li>
 </ol>
 <ol start="2">
-<li>Nymph named Calypso</li>
+    <li>Nymph named Calypso</li>
 </ol>
 <ol start="3">
-<li>Odysseus has a seven-year affair with Calypso</li>
+    <li>Odysseus has a seven-year affair with Calypso</li>
 </ol>
 <ol start="4">
-<li>Hermes convinces Calypso to let Odysseus build a new ship so he could sail home.</li>
+    <li>Hermes convinces Calypso to let Odysseus build a new ship so he
+        could sail home.</li>
 </ol>
 <p>&nbsp;</p>
 <p><strong><u>The Island of the Phaecians</u></strong>:</p>
 <ol>
-<li>Odysseus explains his ten-year journey to them during a feast</li>
+    <li>Odysseus explains his ten-year journey to them during a feast</li>
 </ol>
 <ol start="2">
-<li>He is alone-all of his men are DEAD</li>
+    <li>He is alone-all of his men are DEAD</li>
 </ol>
 <ol start="3">
-<li>His ship has been destroyed by Zeus</li>
+    <li>His ship has been destroyed by Zeus</li>
 </ol>
 <p><br /> <br /> <strong><u>Ithaca-The Suitors<br /></u></strong></p>
 <ol>
-<li>Odysseus arrives home</li>
+    <li>Odysseus arrives home</li>
 </ol>
 <ol start="2">
-<li>Sees his son, Telemachus, first time in 20 years</li>
+    <li>Sees his son, Telemachus, first time in 20 years</li>
 </ol>
 <ol start="3">
-<li>He and Telemachus kill all of the suitors.</li>
-<li>Odysseus takes his place as king, alongside with his wife Penelope.</li>
+    <li>He and Telemachus kill all of the suitors.</li>
+    <li>Odysseus takes his place as king, alongside with his wife Penelope.
+    </li>
 </ol>
-<h1><span style="color: orangered;"><strong><span style="text-decoration: underline;">ODYSSEUS' JOURNEY</span><br /></strong></span></h1>
-<p><strong>1.Troy: After the victory at Troy, Odysseus and his men begin their journey home from here.</strong><br /> <br /><strong> 2.The Island of the Cicones: After leaving Troy, they stop to raid this island for supplies. The Cicones attack on horseback, and Odysseus lost 72 of his men.</strong><br /> <br /><strong> 3.The Island of the Lotus Eaters: Odysseus sends his men out to search for food, and has to recover them when they eat the Lotus Flower.</strong><br /> <br /><strong> 4.The Island of the Cyclopes: Here, Odysseus and his men find a Cyclops' cave, lured by his cheese and wine. The cyclops, Polyphemus, traps them inside the cave. Odysseus and his men blind the cyclops, and then sneak out under his heard of sheep.</strong><br /> <br /><strong> 5.The Island of Aeolus: Aeolus, the god of the winds, gives Odysseus all of the bad winds, so he can safely sail home. Odysseus' men go against his orders and open the bag, and all of the winds escape.</strong><br /> <br /><strong> 6.The Island of the Laestrygonians: The Laestrygonians, a race of cannibals, eat the Greeks. Only the men on Odysseus' ship and himself survive.</strong><br /> <br /><strong> 7.Circe's Island: Circe turns Odysseus' men to swine, but Odysseus is protected from her magic with the help of Hermes, who gave him a magical herb called Moly. Odysseus ends up staying there for what seems like a short time, but ended up being a couple years. Before Odysseus departs, Circe finally tells him that he needs to find the blind prophet Teiresias in the Underworld.</strong><br /> <br /><strong> 8.The Underworld: Odysseus consults the prophet Teiresias to ask how he can get home, and finds his mother there, who has committed suicide in depression.</strong><br /> <br /><strong> 9.The Island of the Sirens: Odysseus and his men pass here, an island with women singing their luring songs, trying to reel in sailors. So they do not hear, Odysseus fills his mens ears with beeswax, and he has them tie him to the mast.</strong><br /> <br /><strong> 10.Scylla and Charybdis: Odysseus chooses to sail for Scylla, a six-headed sea serpent, rather than Charybdis, a giant whirlpool. He did this because he knew that if he went to Charybdis, the whole ship would be destroyed. However, if he went towards Scylla, six men would die. A sacrifice the brave Odysseus decided to make.</strong><br /> <br /><strong> 11.The Island of Helios: They stop here, and Odysseus falls asleep praying to Athena. While sleeping, his men once again go against his orders and eat Helios' cattle. This outrages the god, and he threatens never to rise again. As a punishment, Zeus throws a bolt of lightning at the ship, and turns it to splinters. Only Odysseus survives.</strong><br /> <br /><strong> 12.Ogygia (Calypso's Island): Odysseus finds this island after drifting in the sea. It is a island of women, with a nymph named Calypso, with whom Odysseus has a seven-year affair with. After the seven years, Hermes convinces Calypso to let Odysseus build a new ship so he could sail home.</strong><br /> <br /><strong> 13.The Island of the Phaecians: The Phaecians accept Odysseus, and he explains his ten-year journey to them during a feast. They happily give him a ride home on one of their magical ships.</strong><br /> <br /><strong> 14.Ithaca: Odysseus finally arrives home, and sees his son, Telemachus, for the first time in 15 years. He and Telemachus kill all of the suitors, and Odysseus takes his place as king, once again, alongside his wife Penelope.</strong></p>
+<h1><span style="color: orangered;"><strong><span style="text-decoration: underline;">ODYSSEUS'
+                JOURNEY</span><br /></strong></span></h1>
+<p><strong>1.Troy: After the victory at Troy, Odysseus and his men begin
+        their journey home from here.</strong><br /> <br /><strong> 2.The
+        Island of the Cicones: After leaving Troy, they stop to raid this
+        island for supplies. The Cicones attack on horseback, and Odysseus
+        lost 72 of his men.</strong><br /> <br /><strong> 3.The Island of
+        the Lotus Eaters: Odysseus sends his men out to search for food, and
+        has to recover them when they eat the Lotus Flower.</strong><br />
+    <br /><strong> 4.The Island of the Cyclopes: Here, Odysseus and his men
+        find a Cyclops' cave, lured by his cheese and wine. The cyclops,
+        Polyphemus, traps them inside the cave. Odysseus and his men blind
+        the cyclops, and then sneak out under his heard of
+        sheep.</strong><br /> <br /><strong> 5.The Island of Aeolus: Aeolus,
+        the god of the winds, gives Odysseus all of the bad winds, so he can
+        safely sail home. Odysseus' men go against his orders and open the
+        bag, and all of the winds escape.</strong><br /> <br /><strong>
+        6.The Island of the Laestrygonians: The Laestrygonians, a race of
+        cannibals, eat the Greeks. Only the men on Odysseus' ship and
+        himself survive.</strong><br /> <br /><strong> 7.Circe's Island:
+        Circe turns Odysseus' men to swine, but Odysseus is protected from
+        her magic with the help of Hermes, who gave him a magical herb
+        called Moly. Odysseus ends up staying there for what seems like a
+        short time, but ended up being a couple years. Before Odysseus
+        departs, Circe finally tells him that he needs to find the blind
+        prophet Teiresias in the Underworld.</strong><br /> <br /><strong>
+        8.The Underworld: Odysseus consults the prophet Teiresias to ask how
+        he can get home, and finds his mother there, who has committed
+        suicide in depression.</strong><br /> <br /><strong> 9.The Island of
+        the Sirens: Odysseus and his men pass here, an island with women
+        singing their luring songs, trying to reel in sailors. So they do
+        not hear, Odysseus fills his mens ears with beeswax, and he has them
+        tie him to the mast.</strong><br /> <br /><strong> 10.Scylla and
+        Charybdis: Odysseus chooses to sail for Scylla, a six-headed sea
+        serpent, rather than Charybdis, a giant whirlpool. He did this
+        because he knew that if he went to Charybdis, the whole ship would
+        be destroyed. However, if he went towards Scylla, six men would die.
+        A sacrifice the brave Odysseus decided to make.</strong><br />
+    <br /><strong> 11.The Island of Helios: They stop here, and Odysseus
+        falls asleep praying to Athena. While sleeping, his men once again
+        go against his orders and eat Helios' cattle. This outrages the god,
+        and he threatens never to rise again. As a punishment, Zeus throws a
+        bolt of lightning at the ship, and turns it to splinters. Only
+        Odysseus survives.</strong><br /> <br /><strong> 12.Ogygia
+        (Calypso's Island): Odysseus finds this island after drifting in the
+        sea. It is a island of women, with a nymph named Calypso, with whom
+        Odysseus has a seven-year affair with. After the seven years, Hermes
+        convinces Calypso to let Odysseus build a new ship so he could sail
+        home.</strong><br /> <br /><strong> 13.The Island of the Phaecians:
+        The Phaecians accept Odysseus, and he explains his ten-year journey
+        to them during a feast. They happily give him a ride home on one of
+        their magical ships.</strong><br /> <br /><strong> 14.Ithaca:
+        Odysseus finally arrives home, and sees his son, Telemachus, for the
+        first time in 15 years. He and Telemachus kill all of the suitors,
+        and Odysseus takes his place as king, once again, alongside his wife
+        Penelope.</strong>
+</p>
 <p><strong>&nbsp;</strong></p>
-<p>&nbsp;</p></span></span>
-        </div>
-		<div class="clear"></div>
-	</div>
-</li>
-</ul>
+<p>&nbsp;</p>
+</span></span>
 </div>
-	<div class="ui-widget-footer">
-		
-			
-		
-		<div class="clear"></div>
-	</div>
-</div>
-<script type="text/javascript">
-$(document).ready(function (){
-$(".tag-list li a").keypress(function(e) { if(e.which == 13) { $(this).click();   }});
-});
-function LoadGroupedData(container, MIID, PMI, groupYear, groupMonth, groupBy, tag) {
-  //ViewToUse looks at the hidden Sidebar List View defined in the Builder View.
-  var viewToUse = "";
-    if($('#hid-'+MIID+'-SidebarListView').length > 0){
-      viewToUse = $("#hid-" + MIID + "-SidebarListView").val();
-    };
-  GetContent('https://www.manvilleschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=1794&PageID=6007&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&RenderLoc=0&FromRenderLoc=0&GroupYear=' + groupYear + '&GroupMonth=' + groupMonth + '&GroupByField=' + groupBy + '&EnableQuirksMode=0&ViewID=' + viewToUse + '&Tag=' + tag, container, 2, 'chkSidebar();');
-}
-function LoadData(container, MIID, PMI, flexDataID, groupYear, groupMonth, groupBy, targetView, tag) {
-  if(targetView !== undefined || targetView.Length() == 0){
-  //targetView looks at the hidden Detail View defined in the Builder View.
-      targetView = $('#hid-'+MIID+'-DetailView').val();
-   }
-  GetContent('https://www.manvilleschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=1794&PageID=6007&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&FlexDataID=' + flexDataID + '&GroupYear=' + groupYear + '&GroupMonth=' + groupMonth + '&GroupByField=' + groupBy + '&RenderLoc=0&FromRenderLoc=0&EnableQuirksMode=0&Tag=' + tag + '&ViewID=' + targetView, container, 2, 'chkSidebar();');
-}
-function LoadTaggedData(container, MIID, PMI, tag) {
-  //ViewToUse looks at the hidden Sidebar List View defined in the Builder View.
-  var viewToUse = "";
-    if($('#hid-'+MIID+'-SidebarListView').length > 0){
-      viewToUse = $("#hid-" + MIID + "-SidebarListView").val();
-    };
-  GetContent('https://www.manvilleschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=1794&PageID=6007&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&RenderLoc=0&FromRenderLoc=0&Tag=' + tag + '&EnableQuirksMode=0&ViewID='+viewToUse, container, 2, 'chkSidebar();');
-  setTimeout(function(){ $("#module-content-"+ MIID +"").find('[tabindex]:first').focus(); }, 200);
-}
-</script>
-</div>
-
-</div></div>
-</div><div class="clear"></div></div></div><!-- End Centricity Content Area -->
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="noprint">
-        <section id="gb-footer-links-outer" class="gb-section-parent gb-section-pad" data-footer-links-color="White" data-footer-links-hover="White">
-        	<div id="gb-footer-links" class="gb-section"></div>
-        </section>
-        <section id="gb-footer-outer" class="gb-section-parent gb-section-pad" data-footer-text-color="White">
-            <div id="gb-footer" class="gb-section ui-clear displayFlexRow">
-                <h2></h2>
-                <div id="gb-address">
-                    <span class="gb-address one">1100 Brooks Blvd.</span><span class="gb-address spacer">, </span><span class="gb-address two">Manville, NJ 08835</span>
-                </div>
-                <div id="gb-contact">
-                	<span class="gb-contact phone" x-ms-format-detection="none">Phone: (908) 231-8500</span>
-                    <span class="gb-contact fax" x-ms-format-detection="none">Fax: </span>
-                </div>
-                <div id="gb-extra-links" class="displayFlexRow">
-                	<a class="footer-extra-link directions" href="//www.google.com/maps/place/1100 Brooks Blvd. Manville NJ 08835" target="_blank" data-show-directions-link="true">
-                    	<span>Get Directions</span>
-                    </a>
-                    <a class="footer-extra-link email" href="mailto:webadmin@manvillesd.org" data-show-email-link="false">
-                    	<span>Email Us</span>
-                    </a>
-                    <a class="footer-extra-link accessibility" href="#" target="_self">
-                    	<span>Web Accessibility</span>
-                    </a>
-                    <a class="footer-extra-link sitemap" href='/site/Default.aspx?PageType=15&SiteID=4&SectionMax=15&DirectoryType=6'>
-                        <span>Site Map</span>
-                    </a>
-                    <button class="cs-btn-reset footer-extra-link footer-scroll-btn" aria-label="Scroll To The Top Of The Page" tabindex="-1" aria-hidden="true"></button>
-                </div>
-            </div>
-        </section>
-        <section id="gb-social-media-outer" class="gb-section-parent gb-section-pad">
-        	<div id="gb-social-media" class="gb-section displayFlexRow">
-            	<h2>Stay Connected</h2>
-        		<div id="gb-social-media-icons" class="hidden"></div>
-            </div>
-        </section>
-        <section id="gb-schoolwires-footer-outer" class="gb-section-parent gb-section-pad">
-            <div id="gb-schoolwires-footer" class="gb-section border-box">
-                <div class="gb-schoolwires-footer top">
-                    <div id="gb-footer-disclaimer" data-show-disclaimer="false">
-                        <span>This is the disclaimer text. You can use this area for legal statements, copyright information, a mission statement, etc. If you don’t use it, the Bb footer will slide up.</span>
-                    </div>
-                </div>
-                <div class="gb-schoolwires-footer bottom" data-show-disclaimer="false">
-                    <div class="gb-schoolwires-footer logo"></div>
-                    <div id="gb-schoolwires-footer-links-copyright">
-                        <div class="gb-schoolwires-footer links"></div>
-                        <div class="gb-schoolwires-footer copyright"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </footer>
-</div><!-- BEGIN - STANDARD FOOTER -->
-<div id='sw-footer-outer'>
-<div id='sw-footer-inner'>
-<div id='sw-footer-left'></div>
-<div id='sw-footer-right'>
-<div id='sw-footer-links'>
-<ul>
-<li><a title='Click to email the primary contact' href='mailto:webadmin@manvillesd.org'>Questions or Feedback?</a> | </li>
-<li><a href='https://www.finalsite.com/privacy-policy' target="_blank">Web Community Manager Privacy Policy (Updated)</a> | </li>
-<li><a class='sw-footer-terms-link' aria-hidden='true' tabindex='-1' href=''></a></li>
-</ul>
-</div>
-<div id='sw-footer-copyright'>Copyright &copy; 2024 Finalsite - all rights reserved.</div>
-<div id='sw-footer-logo'><a href='http://www.finalsite.com' title="Finalsite - all rights reserved">
-<img src='https://www.manvilleschools.org/Static//GlobalAssets/Images/Navbar/WCM_logo.svg'
-class='sw-footer-logo-img' alt="Web Community Manager."/>
-</a></div>
-</div>
-</div>
-</div>
-<!-- END - STANDARD FOOTER -->
-<script type="text/javascript">
-   $(document).ready(function(){
-  var data = JSON.stringify({
-    "SiteID": "4",
-    "ChannelID": "1236",
-    "SectionID": "1794",
-    "PageID": "6007",
-    "Browser": "Firefox 130.0",
-    "OS": "WinNT",
-    "IPAddress": "10.61.15.224"
-  });
-  $.ajax({
-    url: "../Site/SiteController.aspx/InsertAnalyticsData",
-    method: "POST",
-    contentType: "application/json",
-    data: data,
-    success: function(response) {
-    },
-    error: function(xhr, status, error) {
-    }
-  });
-   });
-</script>
-
-    <input type="hidden" id="hid-pageid" value="6007" />
-
-    
-
-    <div id='dialog-overlay-WindowMedium-base' class='ui-dialog-overlay-base' ><div id='WindowMedium' role='dialog' tabindex='-1'  class='ui-dialog-overlay medium' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowMedium-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowMedium-body' ></div><button class='ui-dialog-overlay-close' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowMedium");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowMedium-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowMedium-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    <div id='dialog-overlay-WindowSmall-base' class='ui-dialog-overlay-base' ><div id='WindowSmall' role='dialog' tabindex='-1'  class='ui-dialog-overlay small' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowSmall-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowSmall-body' ></div><button class='ui-dialog-overlay-close' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowSmall");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowSmall-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowSmall-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    <div id='dialog-overlay-WindowLarge-base' class='ui-dialog-overlay-base' ><div id='WindowLarge' role='dialog' tabindex='-1'  class='ui-dialog-overlay large' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowLarge-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowLarge-body' ></div><button class='ui-dialog-overlay-close' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowLarge");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowLarge-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowLarge-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-
-    <div id='dialog-overlay-WindowMediumModal-base' class='ui-dialog-overlay-base-modal' ><div id='WindowMediumModal' role='dialog' tabindex='-1'  class='ui-dialog-overlay medium' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowMediumModal-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowMediumModal-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowMediumModal");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowMediumModal-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowMediumModal-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    <div id='dialog-overlay-WindowSmallModal-base' class='ui-dialog-overlay-base-modal' ><div id='WindowSmallModal' role='dialog' tabindex='-1'  class='ui-dialog-overlay small' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowSmallModal-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowSmallModal-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowSmallModal");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowSmallModal-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowSmallModal-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    <div id='dialog-overlay-WindowLargeModal-base' class='ui-dialog-overlay-base-modal' ><div id='WindowLargeModal' role='dialog' tabindex='-1'  class='ui-dialog-overlay large' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowLargeModal-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowLargeModal-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowLargeModal");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowLargeModal-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowLargeModal-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    <div id='dialog-overlay-WindowXLargeModal-base' class='ui-dialog-overlay-base-modal' ><div id='WindowXLargeModal' role='dialog' tabindex='-1'  class='ui-dialog-overlay xlarge' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowXLargeModal-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowXLargeModal-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowXLargeModal");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowXLargeModal-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowXLargeModal-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-
-    <div id='dialog-overlay-MyAccountSubscriptionOverlay-base' class='ui-dialog-overlay-base-modal' ><div id='MyAccountSubscriptionOverlay' role='dialog' tabindex='-1'  class='ui-dialog-overlay medium' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-MyAccountSubscriptionOverlay-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-MyAccountSubscriptionOverlay-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("MyAccountSubscriptionOverlay");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-MyAccountSubscriptionOverlay-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-MyAccountSubscriptionOverlay-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-
-    <div id='dialog-overlay-InsertOverlay-base' class='ui-dialog-overlay-base-modal' ><div id='InsertOverlay' role='dialog' tabindex='-1'  class='ui-dialog-overlay large' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-InsertOverlay-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-InsertOverlay-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("InsertOverlay");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-InsertOverlay-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-InsertOverlay-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    <div id='dialog-overlay-InsertOverlay2-base' class='ui-dialog-overlay-base-modal' ><div id='InsertOverlay2' role='dialog' tabindex='-1'  class='ui-dialog-overlay large' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-InsertOverlay2-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-InsertOverlay2-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("InsertOverlay2");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-InsertOverlay2-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-InsertOverlay2-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    
-    <div id="videowrapper" class="ui-helper-hidden">
-        <div id="videodialog" role="application">
-            <a id="videodialog-close" role="button" href="javascript:;" aria-label="Close Overlay" class="close-btn" onclick="closeVideoDialog();">CLOSE</a>
-            <div id="videodialog-video" ></div>
-            <div id="videodialog-foot" tabindex="0"></div>
-        </div>
-    </div>
-    <div id="attachmentwrapper" class="ui-helper-hidden">
-        <div id="attachmentdialog" role="application">
-            <a id="attachmentdialog-close" role="button" href="javascript:;" aria-label="Close Overlay" class="close-btn" onclick="closeAttachmentDialog();">CLOSE</a>
-            <div id="attachmentdialog-container"></div>
-        </div>
-    </div>
-    <script type="text/javascript">
-
-        $(document).ready(function () { 
-
-            removeBrokenImages();
-            checkSidebar();
-            RemoveCookie();
-
-            
-            //$('div.bullet').attr('tabindex', '');
-
-            
-
-            $('.navigation li.collapsible').each(function () {
-                if ($(this).find('ul').length == 0) {
-                    $(this).removeClass('collapsible');
-                }
-            });
-
-            // find page nav state cookie and add open chevron
-            var arrValues = GetCookie('SWPageNavState').split('~');
-
-            $.each(arrValues, function () {
-                if (this != '') {
-                   //$('#' + this).addClass('collapsible').prepend("<div class='bullet collapsible' aria-label='Close Page Submenu'/>");
-                    $('#' + this).addClass('collapsible').prepend("<div class='bullet collapsible' aria-haspopup='true' aria-expanded='true' />");
-                }
-            });
-
-            // find remaining sub menus and add closed chevron and close menu
-            $('.navigation li > ul').each(function () {
-                var list = $(this);
-
-                if (list.parent().hasClass('active') && !list.parent().hasClass('collapsible')) {
-                    // open sub for currently selected page                    
-                    //list.parent().addClass('collapsible').prepend("<div class='bullet collapsible'aria-label='Close Page Submenu' />");
-                    list.parent().addClass('collapsible').prepend("<div class='bullet collapsible' aria-haspopup='true' aria-expanded='true' />");
-                } else {
-                    if (list.parent().hasClass('collapsible') && !list.siblings('div').hasClass('collapsible')) {
-                        // open sub for page with auto expand
-                        list.siblings('div.expandable').remove();
-                        //list.parent().prepend("<div class='bullet collapsible' aria-label='Close Page Submenu' />");
-                        list.parent().prepend("<div class='bullet collapsible' aria-haspopup='true' aria-expanded='true' />");
-                    }
-                }
-
-                if (!list.siblings('div').hasClass('collapsible')) {
-                    // keep all closed that aren't already set to open
-                    //list.parent().addClass('expandable').prepend("<div class='bullet expandable' aria-label='Open Page Submenu' />");
-                    list.parent().addClass('expandable').prepend("<div class='bullet expandable' aria-haspopup='true' aria-expanded='false' />");
-                    ClosePageSubMenu(list.parent());
-                } else {
-                   OpenPageSubMenu(list.parent());
-                }
-            });
-
-            $(".navigation .bullet.collapsible, .navigation .bullet.expandable, .navigation a").each(function () {
-                if ($(this).closest("ul").attr("aria-hidden") == "true"){
-                    $(this).attr("tabindex", "-1");
-                } else {
-                    $(this).attr("tabindex", "0");
-                }
-            })
-
-            // remove bullet from hierarchy if no-bullet set
-            $('.navigation li.collapsible').each(function () {
-                if ($(this).hasClass('no-bullet')) {
-                    if (!$(this).hasClass('navigationgroup')) { $(this).removeClass('collapsible'); }
-                    $(this).children('div.collapsible').remove();
-                }
-            });
-
-            $('.navigation li.expandable').each(function () {
-                if ($(this).hasClass('no-bullet')) {
-                    if (!$(this).hasClass('navigationgroup')) { $(this).removeClass('expandable'); }
-                    $(this).children('div.expandable').remove();
-                }
-            });
-
-            $('.navigation li:not(.collapsible,.expandable,.no-bullet)').each(function () {
-                $(this).prepend("<div class='bullet'/>");
-            });
-
-            $('.navigation li.active').parents('ul').each(function () {
-                if (!$(this).hasClass('page-navigation')) {
-                    OpenPageSubMenu($(this).parent());
-                }
-            });
-
-            // Set aria ttributes
-            /*$('li.collapsible').each(function () {
-               $(this).attr("aria-expanded", "true");
-               $(this).find('div:first').attr('aria-pressed', 'true');
-            });*/
-
-            $('li.expandable').each(function () {
-                ///$(this).attr("aria-expanded", "false");
-                //$(this).find('div:first').attr('aria-pressed', 'false');
-                $(this).find("ul :focusable").attr("tabindex","-1");
-            });
-
-            /*$('div.bullet').each(function () {
-                $(this).attr("aria-hidden", "true");
-            });*/
-
-            // set click event for chevron
-            $(document).on('click', '.navigation div.collapsible', function () {
-                ClosePageSubMenu($(this).parent());
-            });
-
-            $(document).on('click', '.navigation div.expandable', function () {
-                OpenPageSubMenu($(this).parent());
-            });
-
-            // set navigation grouping links
-            $(document).on('click', '.navigationgroup.collapsible > a', function () {
-                ClosePageSubMenu($(this).parent());
-            });
-
-            $(document).on('click', '.navigationgroup.expandable > a', function () {
-                OpenPageSubMenu($(this).parent());
-            });
-
-            //SW MYSTART DROPDOWNS
-            $(document).on('click', '.sw-mystart-dropdown', function () {
-                $(this).children(".sw-dropdown").css("display", "block");
-            });
-
-            $(".sw-mystart-dropdown").hover(function () { }, function () {
-                $(this).children(".sw-dropdown").hide();
-                $(this).blur();
-            });
-
-            //SW ACCOUNT DROPDOWN
-            $(document).on('click', '#sw-mystart-account', function () {
-                $(this).children("#sw-myaccount-list").show();
-                $(this).addClass("clicked-state");
-            });
-
-            $("#sw-mystart-account, #sw-myaccount-list").hover(function () { }, function () {
-                $(this).children("#sw-myaccount-list").hide();
-                $(this).removeClass("clicked-state");
-                $("#sw-myaccount").blur();
-            });
-
-            // set hover class for page and section navigation
-            $('.ui-widget.app.pagenavigation, .ui-widget.app.sectionnavigation').find('li > a').hover(function () {
-                $(this).addClass('hover');
-            }, function () {
-                $(this).removeClass('hover');
-            });
-
-            //set aria-label for home
-            $('#navc-HP > a').attr('aria-label', 'Home');
-
-            // set active class on channel and section
-            var activeChannelNavType = $('input#hidActiveChannelNavType').val();
-            if (activeChannelNavType == -1) {
-                // homepage is active
-                $('#navc-HP').addClass('active');
-            } else if (activeChannelNavType == 1) {
-                // calendar page is active
-                $('#navc-CA').addClass('active');
-            } else {
-                // channel is active - set the active class on the channel
-                var activeSelectorID = $('input#hidActiveChannel').val();
-                $('#navc-' + activeSelectorID).addClass('active');
-
-                // set the breadcrumb channel href to the channel nav href
-                $('li[data-bccID=' + activeSelectorID + '] a').attr('href', $('#navc-' + activeSelectorID + ' a').attr('href'));
-                $('li[data-bccID=' + activeSelectorID + '] a span').text($('#navc-' + activeSelectorID + ' a span').first().text());
-
-                // set the active class on the section
-                activeSelectorID = $('input#hidActiveSection').val();
-                $('#navs-' + activeSelectorID).addClass('active');
-
-                // set the breadcrumb section href to the channel nav href
-                $('li[data-bcsID=' + activeSelectorID + '] a').attr('href', $('#navs-' + activeSelectorID + ' a').attr('href'));
-                if ($('#navs-' + activeSelectorID + ' a').attr('target') !== undefined) {
-                    $('li[data-bcsID=' + activeSelectorID + '] a').attr('target', $('#navs-' + activeSelectorID + ' a').attr('target'));
-                }
-                $('li[data-bcsID=' + activeSelectorID + '] span').text($('#navs-' + activeSelectorID + ' a span').text());
-
-                if ($('.sw-directory-columns').length > 0) {
-                    $('ul.ui-breadcrumbs li:last-child').remove();
-                    $('ul.ui-breadcrumbs li:last-child a').replaceWith(function() { return $('span', this); });
-                    $('ul.ui-breadcrumbs li:last-child span').append(' Directory');
-                }
-            }
-        }); // end document ready
-
-        function OpenPageSubMenu(li) {
-            if (li.prop('tagName').toLowerCase() == "li") {
-                if (li.hasClass('expandable')) {
-                    li.removeClass('expandable').addClass('collapsible');
-                }
-                if (li.find('div:first').hasClass('expandable')) {
-                    let linkText = li.find("> a").text();
-                    //li.find('div:first').removeClass('expandable').addClass('collapsible').attr('aria-pressed', 'true').attr('aria-label', 'Close Page Submenu');
-                    li.find('div:first').removeClass('expandable').addClass('collapsible').attr({
-                        "aria-expanded": "true",
-                        "aria-label": "Collapse "+linkText+" nested links"
-                    });
-                }
-                li.find('ul:first').attr('aria-hidden', 'false').show();
-                li.find("ul:first > li > .bullet.expandable, ul:first > li > .bullet.collapsible, ul:first > li > a").attr("tabindex", "0");
-                //li.find("li.expandable ul :focusable").attr("tabindex","-1");
-
-                //li.attr("aria-expanded", "true");
-
-                PageNavigationStateCookie();
-            }
-        }
-
-        function ClosePageSubMenu(li) {
-            if (li.prop('tagName').toLowerCase() == "li") {
-                let linkText = li.find("> a").text();
-                li.removeClass('collapsible').addClass('expandable');
-                //li.find('div:first').removeClass('collapsible').addClass('expandable').attr('aria-pressed', 'false').attr('aria-label', 'Open Page Submenu');
-                li.find('div:first').removeClass('collapsible').addClass('expandable').attr({
-                    "aria-expanded": "false",
-                    "aria-label": "Expand "+linkText+" nested links"
-                });
-                li.find('ul:first').attr('aria-hidden', 'true').hide();
-                li.find("ul:first .bullet.expandable, ul:first .bullet.collapsible, ul:first a").attr("tabindex","-1");
-
-                //li.attr("aria-expanded", "false");
-
-                PageNavigationStateCookie();
-            }
-        }
-
-        function PageNavigationStateCookie() {
-            var strCookie = "";
-
-            $('.pagenavigation li > ul').each(function () {
-                var item = $(this).parent('li');
-                if (item.hasClass('collapsible') && !item.hasClass('no-bullet')) {
-                    strCookie += $(this).parent().attr('id') + '~';
-                }
-            });
-
-            SetCookie('SWPageNavState', strCookie);
-        }
-
-        function checkSidebar() {
-            $(".ui-widget-sidebar").each(function () {
-                if ($.trim($(this).html()) != "") {
-                    $(this).show();
-                    $(this).siblings(".ui-widget-detail").addClass("with-sidebar");
-                }
-            });
-        }
-
-        function removeBrokenImages() {
-            //REMOVES ANY BROKEN IMAGES
-            $("span.img img").each(function () {
-                if ($(this).attr("src") !== undefined && $(this).attr("src") != '../../') {
-                    $(this).parent().parent().show();
-                    $(this).parent().parent().siblings().addClass("has-thumb");
-                }
-            });
-        }
-
-        function LoadEventDetailUE(moduleInstanceID, eventDateID, userRegID, isEdit) {
-            (userRegID === undefined ? userRegID = 0 : '');
-            (isEdit === undefined ? isEdit = false : '');
-            OpenDialogOverlay("WindowMediumModal", { LoadType: "U", LoadURL: "https://www.manvilleschools.org//site/UserControls/Calendar/EventDetailWrapper.aspx?ModuleInstanceID=" + moduleInstanceID + "&EventDateID=" + eventDateID + "&UserRegID=" + userRegID + "&IsEdit=" + isEdit });
-        }
-
-        function RemoveCookie() {
-            // There are no sub page            
-            if ($('.pagenavigation li li').length == 0) {
-                //return false;
-                PageNavigationStateCookie();
-            }
-        }
-    </script>
-
-    <script type="text/javascript">
-
-        function AddOffCanvasMenuHeightForSiteNav() {
-            var sitenavulHeight = 0;
-
-            if ($('#sw-pg-sitenav-ul').length > 0) {
-                sitenavulHeight = parseInt($("#sw-pg-sitenav-ul").height());
-            }
-
-            var swinnerwrapHeight = 0;
-
-            if ($('#sw-inner-wrap').length > 0) {
-                swinnerwrapHeight = parseInt($("#sw-inner-wrap").height());
-            }
-
-            // 360px is abount 5 li height
-            if (sitenavulHeight + 360 >= swinnerwrapHeight) {
-                $("#sw-inner-wrap").height(sitenavulHeight + 360);
-            }
-        }
-
-        function AddOffCanvasMenuHeightForSelectSchool() {
-            var selectschoolulHeight = 0;
-
-            if ($('#sw-pg-selectschool-ul').length > 0) {
-                selectschoolulHeight = parseInt($("#sw-pg-selectschool-ul").height());
-            }
-
-            var swinnerwrapHeight = 0;
-
-            if ($('#sw-inner-wrap').length > 0) {
-                swinnerwrapHeight = parseInt($("#sw-inner-wrap").height());
-            }
-
-            // 360px is abount 5 li height
-            if (selectschoolulHeight + 360 >= swinnerwrapHeight) {
-                $("#sw-inner-wrap").height(selectschoolulHeight + 360);
-            }
-        }
-
-        $(document).ready(function () {
-            if ($("#sw-pg-sitenav-a").length > 0) {
-                $(document).on('click', '#sw-pg-sitenav-a', function () {
-                    if ($("#sw-pg-sitenav-ul").hasClass('sw-pgmenu-closed')) {
-                        AddOffCanvasMenuHeightForSiteNav();
-
-                        $("ul.sw-pgmenu-toplevel").removeClass('sw-pgmenu-open').addClass('sw-pgmenu-closed');
-                        $("#sw-pg-sitenav-ul").removeClass('sw-pgmenu-closed');
-                        $("#sw-pg-sitenav-ul").addClass('sw-pgmenu-open');
-                    } else {
-                        $("#sw-pg-sitenav-ul").removeClass('sw-pgmenu-open');
-                        $("#sw-pg-sitenav-ul").addClass('sw-pgmenu-closed');
-                    }
-                });
-
-                $(document).on('click', '#sw-pg-selectschool-a', function () {
-                    if ($("#sw-pg-selectschool-ul").hasClass('sw-pgmenu-closed')) {
-                        AddOffCanvasMenuHeightForSelectSchool();
-
-                        $("ul.sw-pgmenu-toplevel").removeClass('sw-pgmenu-open').addClass('sw-pgmenu-closed');
-                        $("#sw-pg-selectschool-ul").removeClass('sw-pgmenu-closed');
-                        $("#sw-pg-selectschool-ul").addClass('sw-pgmenu-open');
-                    } else {
-                        $("#sw-pg-selectschool-ul").removeClass('sw-pgmenu-open');
-                        $("#sw-pg-selectschool-ul").addClass('sw-pgmenu-closed');
-                    }
-                });
-
-                $(document).on('click', '#sw-pg-myaccount-a', function () {
-                    if ($("#sw-pg-myaccount-ul").hasClass('sw-pgmenu-closed')) {
-                        $("ul.sw-pgmenu-toplevel").removeClass('sw-pgmenu-open').addClass('sw-pgmenu-closed');
-                        $("#sw-pg-myaccount-ul").removeClass('sw-pgmenu-closed');
-                        $("#sw-pg-myaccount-ul").addClass('sw-pgmenu-open');
-                    } else {
-                        $("#sw-pg-myaccount-ul").removeClass('sw-pgmenu-open');
-                        $("#sw-pg-myaccount-ul").addClass('sw-pgmenu-closed');
-                    }
-                });
-
-                $(document).on('click', '.pg-list-bullet', function () {
-                    $(this).prev().toggle();
-
-                    if ($(this).hasClass('closed')) {
-                        AddOffCanvasMenuHeightForSiteNav();
-
-                        $(this).removeClass('closed');
-                        $(this).addClass('open');
-                    } else {
-                        $(this).removeClass('open');
-                        $(this).addClass('closed');
-                    }
-                });
-
-                $(document).on('mouseover', '#sw-pg-selectschool', function () {
-                    $("#sw-pg-selectschool-firstli").removeClass('sw-pg-selectschool-firstli-mouseout').addClass('sw-pg-selectschool-firstli-mouseover');
-                    $("#sw-pg-selectschool-firstli a").addClass('sw-pg-selectschool-firstli-a-mouseover').removeClass('sw-pg-selectschool-firstli-a-mouseout');
-                });
-
-                $(document).on('mouseout', '#sw-pg-selectschool', function () {
-                    $("#sw-pg-selectschool-firstli").removeClass('sw-pg-selectschool-firstli-mouseover').addClass('sw-pg-selectschool-firstli-mouseout');
-                    $("#sw-pg-selectschool-firstli a").addClass('sw-pg-selectschool-firstli-a-mouseout').removeClass('sw-pg-selectschool-firstli-a-mouseover');
-                });
-
-                $(document).on('mouseover', '#sw-pg-myaccount', function () {
-                    $("#sw-pg-myaccount-firstli").removeClass('sw-pg-myaccount-firstli-mouseout').addClass('sw-pg-myaccount-firstli-mouseover');
-                    $("#sw-pg-myaccount-firstli a").addClass('sw-pg-myaccount-firstli-a-mouseover').removeClass('sw-pg-myaccount-firstli-a-mouseout');
-                });
-
-                $(document).on('mouseout', '#sw-pg-myaccount', function () {
-                    $("#sw-pg-myaccount-firstli").removeClass('sw-pg-myaccount-firstli-mouseover').addClass('sw-pg-myaccount-firstli-mouseout');
-                    $("#sw-pg-myaccount-firstli a").addClass('sw-pg-myaccount-firstli-a-mouseout').removeClass('sw-pg-myaccount-firstli-a-mouseover');
-                });
-
-                $(document).on('mouseover', '#sw-pg-sitenav', function () {
-                    $("#sw-pg-sitenav-firstli").removeClass('sw-pg-sitenav-firstli-mouseout').addClass('sw-pg-sitenav-firstli-mouseover');
-                    $("#sw-pg-sitenav-firstli a").addClass('sw-pg-sitenav-firstli-a-mouseover').removeClass('sw-pg-sitenav-firstli-a-mouseout');
-                });
-
-                $(document).on('mouseout', '#sw-pg-sitenav', function () {
-                    $("#sw-pg-sitenav-firstli").removeClass('sw-pg-sitenav-firstli-mouseover').addClass('sw-pg-sitenav-firstli-mouseout');
-                    $("#sw-pg-sitenav-firstli a").addClass('sw-pg-sitenav-firstli-a-mouseout').removeClass('sw-pg-sitenav-firstli-a-mouseover');
-                });
-
-                $(document).on('mouseover', '#sw-pg-district', function () {
-                    $("#sw-pg-district-firstli").removeClass('sw-pg-district-firstli-mouseout').addClass('sw-pg-district-firstli-mouseover');
-                    $("#sw-pg-district-firstli a").addClass('sw-pg-district-firstli-a-mouseover').removeClass('sw-pg-district-firstli-a-mouseout');
-                });
-
-                $(document).on('mouseout', '#sw-pg-district', function () {
-                    $("#sw-pg-district-firstli").removeClass('sw-pg-district-firstli-mouseover').addClass('sw-pg-district-firstli-mouseout');
-                    $("#sw-pg-district-firstli a").addClass('sw-pg-district-firstli-a-mouseout').removeClass('sw-pg-district-firstli-a-mouseover');
-                });
-            }
-        });
-
-
-    </script>
-    <script src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/min/SW-UI_2680.min.js" type='text/javascript'></script>
-    <script language="javascript" type='text/javascript' src="https://www.manvilleschools.org/Static/GlobalAssets/jQueryUI.min.js"></script>
-    <script src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/jquery.sectionlayer.js" type='text/javascript'></script>
-    <script src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/Initialize_2560.js" type='text/javascript'></script>
-    <script src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/min/swfobject.min.js" type="text/javascript"></script>
-    <script src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/min/jquery.ajaxupload_2440.min.js" type="text/javascript"></script>
-
-    <!-- Begin swuc.CheckScript -->
-  <script type="text/javascript" src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/ThirdParty/json2.js"></script>
-  <script type="text/javascript" src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/CheckScript_2780.js"></script>
-<!-- End swuc.CheckScript -->
-
-
-    <!-- Server Load Time (03): 0.093768 Seconds -->
-
-    
-
-    <!-- off-canvas menu enabled-->
-    
-
-    <!-- Ally Alternative Formats Configure START   -->
-    
-<script>
-    AFExtensions = ".pdf,.doc,.docx,.ppt,.pptx,.odt,.odp";
-    AllyClientID = "13314";
-	    // Wait for the API to load     
-	    ally.ready(function() {
-		    // Configure an API instance
-            const ui = ally.ui({
-			    'client': {
-				    'baseUrl': 'https://prod.ally.ac',
-				    'clientId': 13314
-			    },
-			    'courseId': '1794',
-			    'locale': $('html').attr('lang'),
-			    'platformName': 'Wcm',  
-			    'role': 'anonymous'
-		    });
-	        // Apply the API to the page body   
-            ui.autoUpdate({'domWatch': 250});
-    });
-
-</script>
-    <!-- Ally Alternative Formats Configure END     -->
-
-</body>
-</html>

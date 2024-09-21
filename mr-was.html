@@ -1,1390 +1,1017 @@
 <h1>Mr. Was</h1>
 
-		
-	</div>
-
-    <div class="ui-widget-footer">
-		  
-	</div>
-</div>
-<script type="text/javascript">
-$(document).ready(function (){
-$(".tag-list li a").keypress(function(e) { if(e.which == 13) { $(this).click();   }});
-});
-function LoadGroupedData(container, MIID, PMI, groupYear, groupMonth, groupBy, tag) {
-  //ViewToUse looks at the hidden Sidebar List View defined in the Builder View.
-  var viewToUse = "";
-    if($('#hid-'+MIID+'-SidebarListView').length > 0){
-      viewToUse = $("#hid-" + MIID + "-SidebarListView").val();
-    };
-  GetContent('https://www.manvilleschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=1794&PageID=5901&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&RenderLoc=0&FromRenderLoc=0&GroupYear=' + groupYear + '&GroupMonth=' + groupMonth + '&GroupByField=' + groupBy + '&EnableQuirksMode=0&ViewID=' + viewToUse + '&Tag=' + tag, container, 2, 'chkSidebar();');
-}
-function LoadData(container, MIID, PMI, flexDataID, groupYear, groupMonth, groupBy, targetView, tag) {
-  if(targetView !== undefined || targetView.Length() == 0){
-  //targetView looks at the hidden Detail View defined in the Builder View.
-      targetView = $('#hid-'+MIID+'-DetailView').val();
-   }
-  GetContent('https://www.manvilleschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=1794&PageID=5901&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&FlexDataID=' + flexDataID + '&GroupYear=' + groupYear + '&GroupMonth=' + groupMonth + '&GroupByField=' + groupBy + '&RenderLoc=0&FromRenderLoc=0&EnableQuirksMode=0&Tag=' + tag + '&ViewID=' + targetView, container, 2, 'chkSidebar();');
-}
-function LoadTaggedData(container, MIID, PMI, tag) {
-  //ViewToUse looks at the hidden Sidebar List View defined in the Builder View.
-  var viewToUse = "";
-    if($('#hid-'+MIID+'-SidebarListView').length > 0){
-      viewToUse = $("#hid-" + MIID + "-SidebarListView").val();
-    };
-  GetContent('https://www.manvilleschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=1794&PageID=5901&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&RenderLoc=0&FromRenderLoc=0&Tag=' + tag + '&EnableQuirksMode=0&ViewID='+viewToUse, container, 2, 'chkSidebar();');
-  setTimeout(function(){ $("#module-content-"+ MIID +"").find('[tabindex]:first').focus(); }, 200);
-}
-</script>
-</div>
-
-</div></div>
-<div id='pmi-6759'>
-
-
-
-<div id='sw-module-71370'>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            var DomainID = '1794';
-            var PageID = '5901';
-            var RenderLoc = '0';
-            var MIID = '7137';
-
-            //added to check to make sure moderated content doesn't bleed through the dialog
-            if ($('#dialog-overlay-WindowLargeModal-body.moderateContent').length > 0) {
-                $("#module-content-" + MIID).find(".ui-widget-detail").find(".ui-article").append("<p>&nbsp;</p>");
-            }
-        });
-    </script>
-
-    <script type="text/javascript">$(document).ready(function() {CheckScript('ModuleView');CheckScript('Mustache');
- });</script>
-    
-    <div id="module-content-7137" >
-<div class="ui-widget app flexpage">
-	<div class="ui-widget-header ui-helper-hidden">
-		
-	</div>
-	
-	<div class="ui-widget-detail">
-		<ul class="ui-articles">
-<li>
-	<div class="ui-article">
-		<div class="ui-article-description">
-        	<span><span ><p><span style="color: #ff0000; font-size: medium;"><strong>GENRE</strong></span></p>
-<p><span style="color: #ff0000; font-size: medium;"><strong><span style="color: #000000;">Science-Fiction and Fantasy</span></strong></span></p>
-<p><span style="color: #ff0000; font-size: medium;"><strong><span style="color: #000000;">&nbsp;</span></strong></span></p>
+<p><span style="color: #ff0000; font-size: medium;"><strong>GENRE</strong></span>
+</p>
+<p><span style="color: #ff0000; font-size: medium;"><strong><span style="color: #000000;">Science-Fiction and
+                Fantasy</span></strong></span></p>
+<p><span style="color: #ff0000; font-size: medium;"><strong><span style="color: #000000;">&nbsp;</span></strong></span>
+</p>
 <p>&nbsp;</p>
-<p><span style="font-size: medium;"><strong><span style="color: #ff0000;">THEMES</span><br /></strong></span></p>
+<p><span style="font-size: medium;"><strong><span style="color: #ff0000;">THEMES</span><br /></strong></span>
+</p>
 <ul>
-<li><span style="font-size: medium;"><strong>Loss of Innocence-a period in a child's life that widens their awareness of evil, pain and suffering. <br /></strong></span></li>
+    <li><span style="font-size: medium;"><strong>Loss of Innocence-a period
+                in a child's life that widens their awareness of evil, pain
+                and suffering. <br /></strong></span></li>
 </ul>
 <p><span style="font-size: medium;"><strong>&nbsp;</strong></span></p>
 <ul>
-<li><span style="font-size: medium;"><strong>The Journey-the main character travels lead him to encounter many obstacles that change him significantly.<br /></strong></span></li>
+    <li><span style="font-size: medium;"><strong>The Journey-the main
+                character travels lead him to encounter many obstacles that
+                change him significantly.<br /></strong></span></li>
 </ul>
-<p><span style="color: #ff0000; font-size: medium;"><strong><span style="color: #000000;">&nbsp;</span></strong></span></p>
-<p><span style="color: #ff0000; font-size: medium;"><strong>SETTING<br /></strong></span></p>
-<p><span style="color: #ff0000; font-size: medium;"><strong><span style="color: #000000;">A time travel story<br /></span></strong></span></p>
-<p><span style="color: #ff0000; font-size: medium;"><strong><span style="color: #000000;">Multiple Places and Times</span><br /></strong></span></p>
-<p><span style="color: #ff0000; font-size: medium;"><strong><span style="color: #000000;">Majority of the story takes place at Bogg's End in Memory, Minnesota on Lake Pepin<br /></span></strong></span></p>
-<p><span style="color: #ff0000; font-size: medium;"><strong><span style="color: #000000;">&nbsp;</span></strong></span></p>
-<p><span style="color: #ff0000; font-size: medium;"><strong><span style="color: #000000;"><span style="color: #ff0000;">BOGG'S END</span><br /></span></strong></span></p>
-<p><span style="color: #ff0000; font-size: medium;"><strong><span style="color: #000000;">Bogg's End is a huge, old house built in the 1800's on a bluff above Lake Pepin</span></strong></span></p>
-<p><span style="color: #ff0000; font-size: medium;"><strong><span style="color: #000000;">Oringinally built by Pinky Boggs for his family. </span></strong></span></p>
-<p><span style="color: #ff0000; font-size: medium;"><strong><span style="color: #000000;">The Boggs Family "disappeared" in 1927<br /></span></strong></span></p>
-<p><span style="color: #ff0000; font-size: medium;"><strong><span style="color: #000000;">&nbsp;</span></strong></span></p>
-<p><span style="color: #ff0000; font-size: medium;"><strong><span style="color: #000000;">Jack's grandparents bought Bogg's End in the late 1940's<br /></span></strong></span></p>
-<p><span style="color: #ff0000; font-size: medium;"><strong><span style="color: #000000;">Jack's mother lived in Bogg's End from 1952-1970's<br /></span></strong></span></p>
-<p><span style="color: #ff0000; font-size: medium;"><strong><span style="color: #000000;">Jack's Grandma Skoro "disappeared" from Bogg's End in 1981<br /></span></strong></span></p>
-<p><span style="color: #ff0000; font-size: medium;"><strong><span style="color: #000000;"><span style="color: #ff0000; font-size: medium;"><strong><span style="color: #000000;">Jack and his mother, Betty, return to Bogg's End in the 1990's</span></strong></span></span></strong></span></p>
-<p><span style="color: #ff0000; font-size: medium;"><strong><span style="color: #000000;">Jack Lund "disappears" from Bogg's end in the 1990's<br /></span></strong></span></p>
-<p><span style="color: #ff0000; font-size: medium;"><strong><span style="color: #000000;">&nbsp;</span></strong></span></p>
-<p><span style="color: #ff0000; font-size: medium;"><strong>&nbsp;</strong></span></p>
-<p><span style="color: #ff0000; font-size: medium;"><strong>CAST OF CHARACTERS</strong></span><br /><br /><span style="font-size: medium;"><strong>Narrator</strong></span><br /><span style="font-size: medium; color: #ff0000;"><strong>Jack Lund, (aka Mr. Was)</strong></span></p>
-<p><span style="font-size: medium;"><strong><span style="color: #000000;">a teenager living with an alcoholic father. A good day for Jack is when his father is too drunk to beat his mother. After witnessing his mother's death, Jack runs away from Bogg's End using a secret, time-travel door. He flees 50 years into the past to the 1940's in Memory, Minnesota. Jack plans to live through the past and grow up and prevent his mother's murder.</span></strong></span></p>
-<p><br /><span style="font-size: medium;"><strong>Other main characters</strong></span></p>
-<p><span style="font-size: medium; color: #ff0000;"><strong>Grandpa Skoro</strong></span></p>
-<p><span style="font-size: medium;"><strong>a bitter and cruel old man. He is wealthy. He dies at the beginning of the story. His death brings Jack and his family to Bogg's End in Memory, Minnesota<br /></strong></span></p>
-<p><span style="font-size: medium; color: #ff0000;"><strong>Grandma Skoro</strong></span></p>
-<p><span style="font-size: medium;"><strong>disappeared in 1981, two years after Jack was born. Grandpa Skoro became even meaner after she disappears.</strong></span><br /><span style="font-size: medium;"><strong><span style="color: #ff0000;">Elizabeth (Betty) Lund</span></strong></span></p>
-<p><span style="font-size: medium;"><strong>Jack's mother, she is abused by her alcoholic husband and ignored by her father.</strong></span><br /><span style="font-size: medium; color: #ff0000;"><strong>Ronald (Ron) Lund</strong></span></p>
-<p><span style="font-size: medium;"><strong>Jack's father. He is an alcoholic. He is a good husband and father when he is sober. He is cruel and violent when he is drinking.</strong></span></p>
-<p><span style="font-size: medium; color: #ff0000;"><strong>Old Man Murphy</strong></span></p>
-<p><span style="font-size: medium; color: #ff0000;"><strong><span style="color: #000000;">A farmer in Memory. Jack lives and works on his farm in the 1940's.</span><br /></strong></span></p>
-<p><span style="font-size: medium; color: #ff0000;"><strong>Andie Murphy </strong></span></p>
-<p><span style="font-size: medium; color: #000000;"><strong>Old Man Murphy's daughter. Jack has a crush on her. She is kind and fun with beautiful red hair and green eyes. </strong></span></p>
-<p><span style="font-size: medium; color: #ff0000;"><strong>Franklin (Scud) Scudder</strong></span></p>
-<p><span style="font-size: medium;"><strong>Jack's friend in the 1940's. He is a hustler and a scam artist. He is in love with Andie and very jealous and possesive. Jack and Scud serve together during WWII on Gaudalcanal in the Pacific Ocean.&nbsp; </strong></span></p>
-<p><span style="font-size: medium; color: #ff0000;"><strong>Pincus Q. (Pinky) Boggs</strong></span></p>
-<p><span style="font-size: medium; color: #ff0000;"><strong><span style="color: #000000;">A very wealthy man that built Bogg's End in the 1800's. He installed the time travel door, but regrets that he ever built the door.</span><br /></strong></span></p>
+<p><span style="color: #ff0000; font-size: medium;"><strong><span style="color: #000000;">&nbsp;</span></strong></span>
+</p>
+<p><span style="color: #ff0000; font-size: medium;"><strong>SETTING<br /></strong></span>
+</p>
+<p><span style="color: #ff0000; font-size: medium;"><strong><span style="color: #000000;">A time travel
+                story<br /></span></strong></span></p>
+<p><span style="color: #ff0000; font-size: medium;"><strong><span style="color: #000000;">Multiple Places and
+                Times</span><br /></strong></span></p>
+<p><span style="color: #ff0000; font-size: medium;"><strong><span style="color: #000000;">Majority of the story takes
+                place at
+                Bogg's End in Memory, Minnesota on Lake
+                Pepin<br /></span></strong></span></p>
+<p><span style="color: #ff0000; font-size: medium;"><strong><span style="color: #000000;">&nbsp;</span></strong></span>
+</p>
+<p><span style="color: #ff0000; font-size: medium;"><strong><span style="color: #000000;"><span
+                    style="color: #ff0000;">BOGG'S
+                    END</span><br /></span></strong></span></p>
+<p><span style="color: #ff0000; font-size: medium;"><strong><span style="color: #000000;">Bogg's End is a huge, old
+                house
+                built in the 1800's on a bluff above Lake
+                Pepin</span></strong></span></p>
+<p><span style="color: #ff0000; font-size: medium;"><strong><span style="color: #000000;">Oringinally built by Pinky
+                Boggs for
+                his family. </span></strong></span></p>
+<p><span style="color: #ff0000; font-size: medium;"><strong><span style="color: #000000;">The Boggs Family "disappeared"
+                in
+                1927<br /></span></strong></span></p>
+<p><span style="color: #ff0000; font-size: medium;"><strong><span style="color: #000000;">&nbsp;</span></strong></span>
+</p>
+<p><span style="color: #ff0000; font-size: medium;"><strong><span style="color: #000000;">Jack's grandparents bought
+                Bogg's
+                End in the late 1940's<br /></span></strong></span></p>
+<p><span style="color: #ff0000; font-size: medium;"><strong><span style="color: #000000;">Jack's mother lived in Bogg's
+                End
+                from 1952-1970's<br /></span></strong></span></p>
+<p><span style="color: #ff0000; font-size: medium;"><strong><span style="color: #000000;">Jack's Grandma Skoro
+                "disappeared"
+                from Bogg's End in 1981<br /></span></strong></span></p>
+<p><span style="color: #ff0000; font-size: medium;"><strong><span style="color: #000000;"><span
+                    style="color: #ff0000; font-size: medium;"><strong><span style="color: #000000;">Jack and his
+                            mother,
+                            Betty, return to Bogg's End in the
+                            1990's</span></strong></span></span></strong></span>
+</p>
+<p><span style="color: #ff0000; font-size: medium;"><strong><span style="color: #000000;">Jack Lund "disappears" from
+                Bogg's
+                end in the 1990's<br /></span></strong></span></p>
+<p><span style="color: #ff0000; font-size: medium;"><strong><span style="color: #000000;">&nbsp;</span></strong></span>
+</p>
+<p><span style="color: #ff0000; font-size: medium;"><strong>&nbsp;</strong></span>
+</p>
+<p><span style="color: #ff0000; font-size: medium;"><strong>CAST OF
+            CHARACTERS</strong></span><br /><br /><span
+        style="font-size: medium;"><strong>Narrator</strong></span><br /><span
+        style="font-size: medium; color: #ff0000;"><strong>Jack Lund, (aka
+            Mr. Was)</strong></span></p>
+<p><span style="font-size: medium;"><strong><span style="color: #000000;">a
+                teenager living with an alcoholic father. A good day for
+                Jack is when his father is too drunk to beat his mother.
+                After witnessing his mother's death, Jack runs away from
+                Bogg's End using a secret, time-travel door. He flees 50
+                years into the past to the 1940's in Memory, Minnesota. Jack
+                plans to live through the past and grow up and prevent his
+                mother's murder.</span></strong></span></p>
+<p><br /><span style="font-size: medium;"><strong>Other main
+            characters</strong></span></p>
+<p><span style="font-size: medium; color: #ff0000;"><strong>Grandpa
+            Skoro</strong></span></p>
+<p><span style="font-size: medium;"><strong>a bitter and cruel old man. He
+            is wealthy. He dies at the beginning of the story. His death
+            brings Jack and his family to Bogg's End in Memory,
+            Minnesota<br /></strong></span></p>
+<p><span style="font-size: medium; color: #ff0000;"><strong>Grandma
+            Skoro</strong></span></p>
+<p><span style="font-size: medium;"><strong>disappeared in 1981, two years
+            after Jack was born. Grandpa Skoro became even meaner after she
+            disappears.</strong></span><br /><span style="font-size: medium;"><strong><span
+                style="color: #ff0000;">Elizabeth (Betty)
+                Lund</span></strong></span></p>
+<p><span style="font-size: medium;"><strong>Jack's mother, she is abused by
+            her alcoholic husband and ignored by her
+            father.</strong></span><br /><span style="font-size: medium; color: #ff0000;"><strong>Ronald (Ron)
+            Lund</strong></span></p>
+<p><span style="font-size: medium;"><strong>Jack's father. He is an
+            alcoholic. He is a good husband and father when he is sober. He
+            is cruel and violent when he is drinking.</strong></span></p>
+<p><span style="font-size: medium; color: #ff0000;"><strong>Old Man
+            Murphy</strong></span></p>
+<p><span style="font-size: medium; color: #ff0000;"><strong><span style="color: #000000;">A farmer in Memory. Jack lives
+                and
+                works on his farm in the
+                1940's.</span><br /></strong></span></p>
+<p><span style="font-size: medium; color: #ff0000;"><strong>Andie Murphy
+        </strong></span></p>
+<p><span style="font-size: medium; color: #000000;"><strong>Old Man Murphy's
+            daughter. Jack has a crush on her. She is kind and fun with
+            beautiful red hair and green eyes. </strong></span></p>
+<p><span style="font-size: medium; color: #ff0000;"><strong>Franklin (Scud)
+            Scudder</strong></span></p>
+<p><span style="font-size: medium;"><strong>Jack's friend in the 1940's. He
+            is a hustler and a scam artist. He is in love with Andie and
+            very jealous and possesive. Jack and Scud serve together during
+            WWII on Gaudalcanal in the Pacific Ocean.&nbsp; </strong></span>
+</p>
+<p><span style="font-size: medium; color: #ff0000;"><strong>Pincus Q.
+            (Pinky) Boggs</strong></span></p>
+<p><span style="font-size: medium; color: #ff0000;"><strong><span style="color: #000000;">A very wealthy man that built
+                Bogg's
+                End in the 1800's. He installed the time travel door, but
+                regrets that he ever built the
+                door.</span><br /></strong></span></p>
 <p><span style="font-size: medium;"><strong>&nbsp;</strong></span></p>
-<p><span style="font-size: medium;"><strong><span style="color: #ff0000;">TOPICS</span><br /></strong></span></p>
-<p><span style="font-size: medium;"><strong><br />&middot; Family (dysfunctional)&nbsp;<br />&middot; Time Travel&nbsp;<br />&middot; Alcoholism&nbsp;<br />&middot; Fate and Destiny&nbsp;<br />&middot; Spousal Abuse&nbsp;<br />&middot; Love, Friendship, and Loyalty</strong></span></p>
+<p><span style="font-size: medium;"><strong><span style="color: #ff0000;">TOPICS</span><br /></strong></span>
+</p>
+<p><span style="font-size: medium;"><strong><br />&middot; Family
+            (dysfunctional)&nbsp;<br />&middot; Time
+            Travel&nbsp;<br />&middot; Alcoholism&nbsp;<br />&middot; Fate
+            and Destiny&nbsp;<br />&middot; Spousal
+            Abuse&nbsp;<br />&middot; Love, Friendship, and
+            Loyalty</strong></span></p>
 <p><span style="font-size: medium;"><strong>&nbsp;</strong></span></p>
-<p><span style="font-size: medium;"><strong><span style="color: #ff0000;">Author's Note</span><br /></strong></span></p>
-<p><span style="font-size: medium;"><strong><span style="color: #ff0000;"><span style="color: #000000;">Pete Hautman explains how and why he wrote the novel.</span><br /></span></strong></span></p>
-<p><span style="font-size: medium;"><strong><span style="color: #ff0000;"><span style="color: #000000;">He states "Jack Lund's story" was discovered in 1952 in an aluminum briefcase that contained 4 notebooks.<br /></span></span></strong></span></p>
-<p><span style="font-size: medium;"><strong><span style="color: #ff0000;"><span style="color: #000000;">Pete researched and investigated Jack's story and Pete Hautman is "convinced the events described in Jack's notebooks actually occured". <br /></span></span></strong></span></p>
-<p><span style="font-size: large;"><strong><span style="color: #ff0000;"><span style="color: #000000;">&nbsp;</span></span></strong></span></p>
-<p><span style="font-size: large; color: #ff0000;"><strong>The First Notebook &ldquo;The Door&rdquo;</strong></span></p>
-<p><span style="font-size: large;"><strong>Written by an older man&nbsp; Dated 1952</strong></span></p>
-<p><span style="font-size: large;"><strong>Tells the story of Jack Lund&rsquo;s life from 1993-1996 in Memory, Minnesota</strong></span></p>
-<p><span style="font-size: large;"><strong>Jack is 13-17 years old</strong></span></p>
-<p><span style="font-size: large;"><strong>Jack time travels to 1941</strong></span></p>
-<p><span style="font-size: large;"><strong>The notebook ends on December 7, 1941, the attack on Pearl Harbor</strong></span></p>
+<p><span style="font-size: medium;"><strong><span style="color: #ff0000;">Author's
+                Note</span><br /></strong></span></p>
+<p><span style="font-size: medium;"><strong><span style="color: #ff0000;"><span style="color: #000000;">Pete
+                    Hautman explains how and why he wrote the
+                    novel.</span><br /></span></strong></span></p>
+<p><span style="font-size: medium;"><strong><span style="color: #ff0000;"><span style="color: #000000;">He
+                    states "Jack Lund's story" was discovered in 1952 in an
+                    aluminum briefcase that contained 4
+                    notebooks.<br /></span></span></strong></span></p>
+<p><span style="font-size: medium;"><strong><span style="color: #ff0000;"><span style="color: #000000;">Pete
+                    researched and investigated Jack's story and Pete
+                    Hautman is "convinced the events described in Jack's
+                    notebooks actually occured".
+                    <br /></span></span></strong></span></p>
+<p><span style="font-size: large;"><strong><span style="color: #ff0000;"><span
+                    style="color: #000000;">&nbsp;</span></span></strong></span>
+</p>
+<p><span style="font-size: large; color: #ff0000;"><strong>The First
+            Notebook &ldquo;The Door&rdquo;</strong></span></p>
+<p><span style="font-size: large;"><strong>Written by an older man&nbsp;
+            Dated 1952</strong></span></p>
+<p><span style="font-size: large;"><strong>Tells the story of Jack
+            Lund&rsquo;s life from 1993-1996 in Memory,
+            Minnesota</strong></span></p>
+<p><span style="font-size: large;"><strong>Jack is 13-17 years
+            old</strong></span></p>
+<p><span style="font-size: large;"><strong>Jack time travels to
+            1941</strong></span></p>
+<p><span style="font-size: large;"><strong>The notebook ends on December 7,
+            1941, the attack on Pearl Harbor</strong></span></p>
 <p><span style="font-size: large;"><strong>&nbsp;</strong></span></p>
-<p><span style="font-size: large; color: #ff0000;"><strong>The Second Notebook&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &ldquo;The Canal&rdquo;</strong></span></p>
+<p><span style="font-size: large; color: #ff0000;"><strong>The Second
+            Notebook&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &ldquo;The
+            Canal&rdquo;</strong></span></p>
 <ul>
-<li><span style="font-size: large;"><strong>Dated: July 30, 1942-September 10, &nbsp;1942</strong></span></li>
-<li><span style="font-size: large;"><strong>6 weeks &nbsp;of Jack&rsquo;s life as a soldier during WWII</strong></span></li>
-<li><span style="font-size: large;"><strong>The notebook was found during WWII on Guadalcanal in a cave next to a dead body and a machine gun</strong></span></li>
-<li><span style="font-size: large;"><strong>The notebook was found by a Japanese soldier</strong></span></li>
-<li><span style="font-size: large;"><strong>The Japanese soldier kept the notebook as a souvenir of the war for 39 years</strong></span></li>
-<li><span style="font-size: large;"><strong>Inside Cover it is written: Jack Lund&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bogg&rsquo;s End&nbsp;&nbsp;&nbsp; Memory, Minnesota </strong></span></li>
-<li><span style="font-size: large;"><strong>The Japanese soldier goes to Bogg&rsquo;s End with his wife 39 in 1981</strong></span></li>
-<li><span style="font-size: large;"><strong>The notebook is given to &ldquo;an older woman with bright green eyes&rdquo; &nbsp;living at Bogg&rsquo;s End in 1981</strong></span></li>
+    <li><span style="font-size: large;"><strong>Dated: July 30,
+                1942-September 10, &nbsp;1942</strong></span></li>
+    <li><span style="font-size: large;"><strong>6 weeks &nbsp;of
+                Jack&rsquo;s life as a soldier during WWII</strong></span>
+    </li>
+    <li><span style="font-size: large;"><strong>The notebook was found
+                during WWII on Guadalcanal in a cave next to a dead body and
+                a machine gun</strong></span></li>
+    <li><span style="font-size: large;"><strong>The notebook was found by a
+                Japanese soldier</strong></span></li>
+    <li><span style="font-size: large;"><strong>The Japanese soldier kept
+                the notebook as a souvenir of the war for 39
+                years</strong></span></li>
+    <li><span style="font-size: large;"><strong>Inside Cover it is written:
+                Jack Lund&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bogg&rsquo;s
+                End&nbsp;&nbsp;&nbsp; Memory, Minnesota </strong></span>
+    </li>
+    <li><span style="font-size: large;"><strong>The Japanese soldier goes to
+                Bogg&rsquo;s End with his wife 39 in 1981</strong></span>
+    </li>
+    <li><span style="font-size: large;"><strong>The notebook is given to
+                &ldquo;an older woman with bright green eyes&rdquo;
+                &nbsp;living at Bogg&rsquo;s End in 1981</strong></span>
+    </li>
 </ul>
 <p><span style="font-size: large;"><strong>&nbsp;</strong></span></p>
-<p><span style="font-size: large;"><strong>This chapter is called &ldquo;The Canal&rdquo; because Jack is a Marine fighting on Guadalcanal during WWII.</strong></span></p>
-<p><span style="font-size: large;"><strong>The notebook was found by a Japanese soldier on Guadalcanal during WWII</strong></span></p>
-<p><span style="font-size: large;"><strong>Letters from Jack to Andie</strong></span></p>
-<p><span style="font-size: large;"><strong>A secret is revealed, Jack and Andie are developing feeling for each other</strong></span></p>
-<p><span style="font-size: large;"><strong>Scud tries to kill Jack</strong></span></p>
-<p><span style="font-size: large;"><strong>Jack and a dead soldier are left in a cave with a machine gun and the Japanese are attacking.</strong></span></p>
-<p><span style="text-decoration: underline;"><span style="font-size: medium;"><strong><span style="color: #ff0000; text-decoration: underline;"><span style="color: #000000; text-decoration: underline;">&nbsp;</span></span></strong></span></span></p>
-<p><span style="font-size: medium;"><strong><span style="color: #ff0000;"><span style="color: #000000;"><span style="text-decoration: underline;"><span style="color: #ff0000; text-decoration: underline;">MEETING MY GRANDFATHER pages 6-11</span></span><br /></span></span></strong></span></p>
-<p><span style="font-size: medium;"><strong><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #ff0000;"><span style="color: #000000;">It is February 17, 1993 in Skokie, Illinois where a 13 year old Jack Lund lives with his mother and father.</span><br /></span></span></span></strong></span></p>
-<p><span style="font-size: medium;"><strong><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #ff0000;"><span style="color: #000000;">&nbsp;</span></span></span></span></strong></span></p>
-<p><span style="font-size: medium;"><strong><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #ff0000;"><span style="color: #000000;">Jack's mother gets a phone call at midnight that her father, "Skoro", is in the hospital dying.<br /></span></span></span></span></strong></span></p>
-<p><span style="font-size: medium;"><strong><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #ff0000;"><span style="color: #000000;">The reader learns that Jack's father drinks a lot of beer and hates Skoro.<br /></span></span></span></span></strong></span></p>
-<p><span style="font-size: medium;"><strong><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #ff0000;"><span style="color: #000000;">The reader learns <span style="color: #0000ff;">"Your grandfather is a cheap, mean, hard-hearted old miser" (7).</span> <br /></span></span></span></span></strong></span></p>
-<p><span style="font-size: medium;"><strong><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #ff0000;"><span style="color: #000000;">Jack states <span style="color: #0000ff;">"My grandmother had disappeared about twoyears after I was born. some people say she left on her own, other believed something terrible happened to her. It was a long time ago. My dad said she was probably dead. My mother didn't like to talk about it" (9).</span> <br /></span></span></span></span></strong></span></p>
-<p><span style="font-size: medium;"><strong><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #ff0000;"><span style="color: #000000;">&nbsp;</span></span></span></span></strong></span></p>
-<p><span style="font-size: medium;"><strong><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #ff0000;"><span style="color: #000000;">Jack and his mother drive through the night to the hospital.<br /></span></span></span></span></strong></span></p>
-<p><span style="font-size: medium;"><strong><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #ff0000;"><span style="color: #000000;">&nbsp;</span></span></span></span></strong></span></p>
-<p><span style="font-size: medium;"><strong><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #ff0000;"><span style="color: #000000;">Jack sees grandfather Skoro for the first time in years. Skoro has a long, pink scar running along his jaw line.</span></span></span></span></strong></span></p>
-<p><span style="font-size: medium;"><strong><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #ff0000;"><span style="color: #000000;">&nbsp;</span></span></span></span></strong></span></p>
-<p><span style="font-size: medium;"><strong><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #ff0000;"><span style="color: #000000;">His grandfather tries to strangle Jack to death.<br /></span></span></span></span></strong></span></p>
-<p><span style="font-size: medium;"><strong><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #0000ff;">" 'You!" I don't remember how he got his hands around my neck, but I remember not being able to breathe, his thumbs sinking deep into my neck...his wet lips writhing, saying, 'Kill you. Kill you. Kill you again' " (11).</span> <br /></span></span></span></span></strong></span></p>
-<p><span style="font-size: medium;"><strong><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #ff0000;"><span style="color: #000000;">&nbsp;</span></span></span></span></strong></span></p>
-<p><span style="font-size: medium;"><strong><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #ff0000;"><span style="color: #000000;">Skoro has a heart attack and <span style="color: #0000ff;">"The monitor displayed a flat green line, howling its mechanical grief" (11).</span> <br /></span></span></span></span></strong></span></p>
-<p><span style="font-size: medium;"><strong><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #ff0000;">&nbsp;</span></span></span></strong></span></p>
-<p><span style="font-size: medium;"><strong><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #ff0000;"><span style="text-decoration: underline;">MEMORY pages 12-18</span><br /></span></span></span></strong></span></p>
-<p><span style="font-size: medium;"><strong><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #ff0000;">&nbsp;</span></span></span></strong></span></p>
-<p>&nbsp;<span style="font-size: medium;"><strong><span style="color: #000000;">Jack and his mother drive to Memory, Minnesota. A dying, delapitated town on Lake Pepin, population 40.</span></strong></span></p>
-<p><span style="font-size: medium;"><strong><span style="color: #000000;">When Jack sees the welcome sign for Memory he sarcastically says, <span style="color: #0000ff;">"I suppose now they'll have to make it thirty-nine" (12).</span> <br /></span></strong></span></p>
+<p><span style="font-size: large;"><strong>This chapter is called &ldquo;The
+            Canal&rdquo; because Jack is a Marine fighting on Guadalcanal
+            during WWII.</strong></span></p>
+<p><span style="font-size: large;"><strong>The notebook was found by a
+            Japanese soldier on Guadalcanal during WWII</strong></span></p>
+<p><span style="font-size: large;"><strong>Letters from Jack to
+            Andie</strong></span></p>
+<p><span style="font-size: large;"><strong>A secret is revealed, Jack and
+            Andie are developing feeling for each other</strong></span></p>
+<p><span style="font-size: large;"><strong>Scud tries to kill
+            Jack</strong></span></p>
+<p><span style="font-size: large;"><strong>Jack and a dead soldier are left
+            in a cave with a machine gun and the Japanese are
+            attacking.</strong></span></p>
+<p><span style="text-decoration: underline;"><span style="font-size: medium;"><strong><span
+                    style="color: #ff0000; text-decoration: underline;"><span
+                        style="color: #000000; text-decoration: underline;">&nbsp;</span></span></strong></span></span>
+</p>
+<p><span style="font-size: medium;"><strong><span style="color: #ff0000;"><span style="color: #000000;"><span
+                        style="text-decoration: underline;"><span
+                            style="color: #ff0000; text-decoration: underline;">MEETING
+                            MY GRANDFATHER pages
+                            6-11</span></span><br /></span></span></strong></span>
+</p>
+<p><span style="font-size: medium;"><strong><span style="color: #ff0000;"><span style="color: #000000;"><span
+                        style="color: #ff0000;"><span style="color: #000000;">It is February 17, 1993
+                            in Skokie, Illinois where a 13 year old Jack
+                            Lund lives with his mother and
+                            father.</span><br /></span></span></span></strong></span>
+</p>
+<p><span style="font-size: medium;"><strong><span style="color: #ff0000;"><span style="color: #000000;"><span
+                        style="color: #ff0000;"><span
+                            style="color: #000000;">&nbsp;</span></span></span></span></strong></span>
+</p>
+<p><span style="font-size: medium;"><strong><span style="color: #ff0000;"><span style="color: #000000;"><span
+                        style="color: #ff0000;"><span style="color: #000000;">Jack's mother gets a
+                            phone call at midnight that her father, "Skoro",
+                            is in the hospital
+                            dying.<br /></span></span></span></span></strong></span>
+</p>
+<p><span style="font-size: medium;"><strong><span style="color: #ff0000;"><span style="color: #000000;"><span
+                        style="color: #ff0000;"><span style="color: #000000;">The reader learns that
+                            Jack's father drinks a lot of beer and hates
+                            Skoro.<br /></span></span></span></span></strong></span>
+</p>
+<p><span style="font-size: medium;"><strong><span style="color: #ff0000;"><span style="color: #000000;"><span
+                        style="color: #ff0000;"><span style="color: #000000;">The reader learns <span
+                                style="color: #0000ff;">"Your grandfather is
+                                a cheap, mean, hard-hearted old miser"
+                                (7).</span>
+                            <br /></span></span></span></span></strong></span>
+</p>
+<p><span style="font-size: medium;"><strong><span style="color: #ff0000;"><span style="color: #000000;"><span
+                        style="color: #ff0000;"><span style="color: #000000;">Jack states <span
+                                style="color: #0000ff;">"My grandmother had
+                                disappeared about twoyears after I was born.
+                                some people say she left on her own, other
+                                believed something terrible happened to her.
+                                It was a long time ago. My dad said she was
+                                probably dead. My mother didn't like to talk
+                                about it" (9).</span>
+                            <br /></span></span></span></span></strong></span>
+</p>
+<p><span style="font-size: medium;"><strong><span style="color: #ff0000;"><span style="color: #000000;"><span
+                        style="color: #ff0000;"><span
+                            style="color: #000000;">&nbsp;</span></span></span></span></strong></span>
+</p>
+<p><span style="font-size: medium;"><strong><span style="color: #ff0000;"><span style="color: #000000;"><span
+                        style="color: #ff0000;"><span style="color: #000000;">Jack and his mother
+                            drive through the night to the
+                            hospital.<br /></span></span></span></span></strong></span>
+</p>
+<p><span style="font-size: medium;"><strong><span style="color: #ff0000;"><span style="color: #000000;"><span
+                        style="color: #ff0000;"><span
+                            style="color: #000000;">&nbsp;</span></span></span></span></strong></span>
+</p>
+<p><span style="font-size: medium;"><strong><span style="color: #ff0000;"><span style="color: #000000;"><span
+                        style="color: #ff0000;"><span style="color: #000000;">Jack sees grandfather
+                            Skoro for the first time in years. Skoro has a
+                            long, pink scar running along his jaw
+                            line.</span></span></span></span></strong></span>
+</p>
+<p><span style="font-size: medium;"><strong><span style="color: #ff0000;"><span style="color: #000000;"><span
+                        style="color: #ff0000;"><span
+                            style="color: #000000;">&nbsp;</span></span></span></span></strong></span>
+</p>
+<p><span style="font-size: medium;"><strong><span style="color: #ff0000;"><span style="color: #000000;"><span
+                        style="color: #ff0000;"><span style="color: #000000;">His grandfather tries to
+                            strangle Jack to
+                            death.<br /></span></span></span></span></strong></span>
+</p>
+<p><span style="font-size: medium;"><strong><span style="color: #ff0000;"><span style="color: #000000;"><span
+                        style="color: #ff0000;"><span style="color: #000000;"><span style="color: #0000ff;">" 'You!" I
+                                don't
+                                remember how he got his hands around my
+                                neck, but I remember not being able to
+                                breathe, his thumbs sinking deep into my
+                                neck...his wet lips writhing, saying, 'Kill
+                                you. Kill you. Kill you again' "
+                                (11).</span>
+                            <br /></span></span></span></span></strong></span>
+</p>
+<p><span style="font-size: medium;"><strong><span style="color: #ff0000;"><span style="color: #000000;"><span
+                        style="color: #ff0000;"><span
+                            style="color: #000000;">&nbsp;</span></span></span></span></strong></span>
+</p>
+<p><span style="font-size: medium;"><strong><span style="color: #ff0000;"><span style="color: #000000;"><span
+                        style="color: #ff0000;"><span style="color: #000000;">Skoro has a heart attack
+                            and <span style="color: #0000ff;">"The monitor
+                                displayed a flat green line, howling its
+                                mechanical grief" (11).</span>
+                            <br /></span></span></span></span></strong></span>
+</p>
+<p><span style="font-size: medium;"><strong><span style="color: #ff0000;"><span style="color: #000000;"><span
+                        style="color: #ff0000;">&nbsp;</span></span></span></strong></span>
+</p>
+<p><span style="font-size: medium;"><strong><span style="color: #ff0000;"><span style="color: #000000;"><span
+                        style="color: #ff0000;"><span style="text-decoration: underline;">MEMORY pages
+                            12-18</span><br /></span></span></span></strong></span>
+</p>
+<p><span style="font-size: medium;"><strong><span style="color: #ff0000;"><span style="color: #000000;"><span
+                        style="color: #ff0000;">&nbsp;</span></span></span></strong></span>
+</p>
+<p>&nbsp;<span style="font-size: medium;"><strong><span style="color: #000000;">Jack and his mother drive to Memory,
+                Minnesota. A dying, delapitated town on Lake Pepin,
+                population 40.</span></strong></span></p>
+<p><span style="font-size: medium;"><strong><span style="color: #000000;">When Jack sees the welcome sign for
+                Memory he sarcastically says, <span style="color: #0000ff;">"I suppose now they'll have to
+                    make it thirty-nine" (12).</span>
+                <br /></span></strong></span></p>
 <p><span style="font-size: medium;"><strong><span style="color: #000000;">&nbsp;</span></strong></span></p>
-<p><span style="font-size: medium;"><strong><span style="color: #000000;">Jack learns:<br /></span></strong></span></p>
-<p><span style="font-size: medium;"><strong><span style="color: #000000;">In the 1940's Memory was a vital town with 1,000 residents, a rail station, a bank and insurance company that tourists visited because of Lake Pepin.<br /></span></strong></span></p>
-<p><span style="font-size: medium;"><strong><span style="color: #000000;">When Jack's mother was a girl about 300 people living in Memory. <br /></span></strong></span></p>
+<p><span style="font-size: medium;"><strong><span style="color: #000000;">Jack
+                learns:<br /></span></strong></span></p>
+<p><span style="font-size: medium;"><strong><span style="color: #000000;">In
+                the 1940's Memory was a vital town with 1,000 residents, a
+                rail station, a bank and insurance company that tourists
+                visited because of Lake Pepin.<br /></span></strong></span>
+</p>
+<p><span style="font-size: medium;"><strong><span style="color: #000000;">When Jack's mother was a girl about
+                300 people living in Memory. <br /></span></strong></span>
+</p>
 <p><span style="font-size: medium;"><strong><span style="color: #000000;">&nbsp;</span></strong></span></p>
-<p><span style="font-size: medium;"><strong><span style="color: #000000;">In the 1990's all the businesses are abandoned and boarded up. There is not even a bank or gas station.<br /></span></strong></span></p>
-<p><span style="font-size: medium;"><strong><span style="color: #000000;">The old rail station in now called "The Memory Institute" a kind of museum for the town.<br /></span></strong></span></p>
-<p><span style="font-size: medium;"><strong><span style="color: #000000;">The only businesses in town are a post office and Ole's Quick Stop "a sort of grocery store/video rental/bar/cafe/bait shop". <br /></span></strong></span></p>
+<p><span style="font-size: medium;"><strong><span style="color: #000000;">In
+                the 1990's all the businesses are abandoned and boarded up.
+                There is not even a bank or gas
+                station.<br /></span></strong></span></p>
+<p><span style="font-size: medium;"><strong><span style="color: #000000;">The old rail station in now called
+                "The Memory Institute" a kind of museum for the
+                town.<br /></span></strong></span></p>
+<p><span style="font-size: medium;"><strong><span style="color: #000000;">The only businesses in town are a
+                post office and Ole's Quick Stop "a sort of grocery
+                store/video rental/bar/cafe/bait shop".
+                <br /></span></strong></span></p>
 <p><span style="font-size: medium;"><strong><span style="color: #000000;">&nbsp;</span></strong></span></p>
-<p><span style="font-size: medium;"><strong><span style="color: #000000;">When Jack is playing pinball at Ole's, he learns:</span></strong></span></p>
-<p><span style="font-size: medium;"><strong><span style="color: #000000;">His grandfather lived at Bogg's End, a huge, old, scary house on the river bluff above Memory.<br /></span></strong></span></p>
-<p><span style="font-size: medium;"><strong><span style="color: #000000;">Jack states, <span style="color: #0000ff;">"The longer I looked at that house, the more it looked to me like a big gray toad" (18).</span> <br /></span></strong></span></p>
-<p><span style="font-size: medium;"><strong><span style="color: #000000;">Bogg's End is named after old man Boggs who built the place, lived there with his wife and two daughters, but disappeared in 1927.<br /></span></strong></span></p>
-<p><span style="font-size: medium;"><strong><span style="color: #000000;">Skoro bought Bogg's End in the forties.<br /></span></strong></span></p>
-<p><span style="font-size: medium;"><strong><span style="color: #000000;">His grandmother disappeared from Bogg's End in 1981. <br /></span></strong></span></p>
-<p><span style="text-decoration: underline; color: #ff0000;"><span style="font-size: medium;"><strong><span style="text-decoration: underline;">&nbsp;</span></strong></span></span></p>
-<p><span style="font-size: medium;"><strong><span style="color: #000000;"><span style="text-decoration: underline; color: #ff0000;">BOGG'S END pages 19-24</span><br /></span></strong></span></p>
-<p><span style="font-size: medium;"><strong><span style="color: #000000;"><span style="text-decoration: underline; color: #ff0000;"><br /></span>Jack and his mother drive to Skoro's house to spend the night.</span></strong></span></p>
-<p><span style="font-size: medium;"><strong><span style="color: #000000;">When Jack call's the house Bogg's End, his mother&nbsp; says, "Don't call it that. I hate that" (20).<br /></span></strong></span></p>
+<p><span style="font-size: medium;"><strong><span style="color: #000000;">When Jack is playing pinball at
+                Ole's, he learns:</span></strong></span></p>
+<p><span style="font-size: medium;"><strong><span style="color: #000000;">His grandfather lived at Bogg's End,
+                a huge, old, scary house on the river bluff above
+                Memory.<br /></span></strong></span></p>
+<p><span style="font-size: medium;"><strong><span style="color: #000000;">Jack states, <span
+                    style="color: #0000ff;">"The longer I looked at that
+                    house, the more it looked to me like a big gray toad"
+                    (18).</span> <br /></span></strong></span></p>
+<p><span style="font-size: medium;"><strong><span style="color: #000000;">Bogg's End is named after old man
+                Boggs who built the place, lived there with his wife and two
+                daughters, but disappeared in
+                1927.<br /></span></strong></span></p>
+<p><span style="font-size: medium;"><strong><span style="color: #000000;">Skoro bought Bogg's End in the
+                forties.<br /></span></strong></span></p>
+<p><span style="font-size: medium;"><strong><span style="color: #000000;">His grandmother disappeared from
+                Bogg's End in 1981. <br /></span></strong></span></p>
+<p><span style="text-decoration: underline; color: #ff0000;"><span style="font-size: medium;"><strong><span
+                    style="text-decoration: underline;">&nbsp;</span></strong></span></span>
+</p>
+<p><span style="font-size: medium;"><strong><span style="color: #000000;"><span
+                    style="text-decoration: underline; color: #ff0000;">BOGG'S
+                    END pages 19-24</span><br /></span></strong></span></p>
+<p><span style="font-size: medium;"><strong><span style="color: #000000;"><span
+                    style="text-decoration: underline; color: #ff0000;"><br /></span>Jack
+                and his mother drive to Skoro's house to spend the
+                night.</span></strong></span></p>
+<p><span style="font-size: medium;"><strong><span style="color: #000000;">When Jack call's the house Bogg's
+                End, his mother&nbsp; says, "Don't call it that. I hate
+                that" (20).<br /></span></strong></span></p>
 <p><span style="font-size: medium;"><strong><span style="color: #000000;">&nbsp;</span></strong></span></p>
-<p><span style="font-size: medium;"><strong><span style="color: #000000;">The house has 6 bedrooms, each a different color. <br /></span></strong></span></p>
-<p><span style="font-size: medium;"><strong><span style="color: #000000;">Jack chooses to sleep in the yellow room, <span style="color: #0000ff;">"because it was the farthest away from Skoro's bedroom"</span> and learns from his mother, <span style="color: #0000ff;">"That was my room when I was a little girl" (22-23).</span> <br /></span></strong></span></p>
+<p><span style="font-size: medium;"><strong><span style="color: #000000;">The house has 6 bedrooms, each a
+                different color. <br /></span></strong></span></p>
+<p><span style="font-size: medium;"><strong><span style="color: #000000;">Jack chooses to sleep in the yellow
+                room, <span style="color: #0000ff;">"because it was the
+                    farthest away from Skoro's bedroom"</span> and learns
+                from his mother, <span style="color: #0000ff;">"That was my
+                    room when I was a little girl" (22-23).</span>
+                <br /></span></strong></span></p>
 <p><span style="font-size: medium;"><strong><span style="color: #000000;">&nbsp;</span></strong></span></p>
-<p><span style="font-size: medium;"><strong><span style="color: #000000;">During the night Jack wakes up and goes to the closet. He finds <span style="color: #0000ff;">"the oddly-shaped door at the far end of the closet...The knob, a tarnished brass with an ornate raised design, was located higher than you would expect. I had a sense of dejavu, a feeling that I'd been there before, and that I had opended the door" (23).</span> <br /></span></strong></span></p>
+<p><span style="font-size: medium;"><strong><span style="color: #000000;">During the night Jack wakes up and
+                goes to the closet. He finds <span style="color: #0000ff;">"the oddly-shaped door at the
+                    far end of the closet...The knob, a tarnished brass with
+                    an ornate raised design, was located higher than you
+                    would expect. I had a sense of dejavu, a feeling that
+                    I'd been there before, and that I had opended the door"
+                    (23).</span> <br /></span></strong></span></p>
 <p><span style="font-size: medium;"><strong><span style="color: #000000;">&nbsp;</span></strong></span></p>
-<p><span style="font-size: medium;"><strong><span style="color: #000000;">Jack tries to open the door but hits something sold and invisible. He hits the surface with his fists and WAKES UP.<br /></span></strong></span></p>
-<p><span style="font-size: medium;"><strong><span style="color: #000000;">He steps back into the bedroom and assumes he has been sleepwalking for the first time in his life.<br /></span></strong></span></p>
-<p><span style="font-size: medium;"><strong><span style="color: #000000;">When Jack looks back in the closet he <span style="color: #0000ff;">"examined both ends of the closet. Walls, plain and unadorned. There was no door" (24).</span> <br /></span></strong></span></p>
-<p><span style="font-size: medium;"><strong><span style="color: #000000;"> <br /></span></strong></span></p>
-<p><span style="font-size: medium;"><strong><span style="color: #000000;"><span style="text-decoration: underline;"><span style="color: #ff0000; text-decoration: underline;">&nbsp;THE FUNERAL pages 25-33</span></span><br /></span></strong></span></p>
-<p><span style="font-size: medium;"><strong><span style="color: #000000;"><span style="text-decoration: underline;"><span style="color: #ff0000; text-decoration: underline;"><br /></span></span></span>Jack's father arrives at Bogg's End for the funeral. He is in a good mood and has <span style="color: #0000ff;">"a case of beer in a cooler. Or anyway, what was lefty of a case a beer. He'd managed to drink a lot of it on the drive up from Skokie" (25).</span> </strong><br /></span></p>
+<p><span style="font-size: medium;"><strong><span style="color: #000000;">Jack tries to open the door but hits
+                something sold and invisible. He hits the surface with his
+                fists and WAKES UP.<br /></span></strong></span></p>
+<p><span style="font-size: medium;"><strong><span style="color: #000000;">He
+                steps back into the bedroom and assumes he has been
+                sleepwalking for the first time in his
+                life.<br /></span></strong></span></p>
+<p><span style="font-size: medium;"><strong><span style="color: #000000;">When Jack looks back in the closet
+                he <span style="color: #0000ff;">"examined both ends of the
+                    closet. Walls, plain and unadorned. There was no door"
+                    (24).</span> <br /></span></strong></span></p>
+<p><span style="font-size: medium;"><strong><span style="color: #000000;">
+                <br /></span></strong></span></p>
+<p><span style="font-size: medium;"><strong><span style="color: #000000;"><span
+                    style="text-decoration: underline;"><span
+                        style="color: #ff0000; text-decoration: underline;">&nbsp;THE
+                        FUNERAL pages
+                        25-33</span></span><br /></span></strong></span></p>
+<p><span style="font-size: medium;"><strong><span style="color: #000000;"><span
+                    style="text-decoration: underline;"><span
+                        style="color: #ff0000; text-decoration: underline;"><br /></span></span></span>Jack's
+            father arrives at Bogg's End for the funeral. He is in a good
+            mood and has <span style="color: #0000ff;">"a case of beer in a
+                cooler. Or anyway, what was lefty of a case a beer. He'd
+                managed to drink a lot of it on the drive up from Skokie"
+                (25).</span> </strong><br /></span></p>
 <p><strong><span style="font-size: medium;">&nbsp;</span></strong></p>
-<p><strong><span style="font-size: medium;">Jack's father seems excited about the inheritance he is expecting to receive now the Granpa Skoro is dead.<br /></span></strong></p>
+<p><strong><span style="font-size: medium;">Jack's father seems excited
+            about the inheritance he is expecting to receive now the Granpa
+            Skoro is dead.<br /></span></strong></p>
 <p><strong><span style="font-size: medium;">&nbsp;</span></strong></p>
-<p><strong><span style="font-size: medium;">Jack's parents meet with Skoro's lawyer. <br /></span></strong></p>
-<p><strong><span style="font-size: medium;">They find out that Skoro left all his money to The Memory Institute. (2 million dollars).<br /></span></strong></p>
-<p><strong><span style="font-size: medium;"><span style="color: #0000ff;">"Your grandfather screwed us again. He left every last dimt to some dump called the Memory Institute" (28).</span> <br /></span></strong></p>
-<p><strong><span style="font-size: medium;">Skoro left the house and its contents to his daughter.<br /></span></strong></p>
-<p><strong><span style="font-size: medium;">There is tension between Jack's parents.<br /></span></strong></p>
-<p><strong><span style="font-size: medium;"><span style="color: #0000ff;">"watched her make dinner. Porl chops, Dad's favorite, with rice and lima beans, which he hated. Mom would do that sort of thing, and I never understood it. It was as if she played with his anger, like she wanted things to be bad. Everybody thinks their parents are screwed up, but mine should've won some kind of prize" (29).</span> <br /></span></strong></p>
+<p><strong><span style="font-size: medium;">Jack's parents meet with Skoro's
+            lawyer. <br /></span></strong></p>
+<p><strong><span style="font-size: medium;">They find out that Skoro left
+            all his money to The Memory Institute. (2 million
+            dollars).<br /></span></strong></p>
+<p><strong><span style="font-size: medium;"><span style="color: #0000ff;">"Your grandfather screwed us again.
+                He left every last dimt to some dump called the Memory
+                Institute" (28).</span> <br /></span></strong></p>
+<p><strong><span style="font-size: medium;">Skoro left the house and its
+            contents to his daughter.<br /></span></strong></p>
+<p><strong><span style="font-size: medium;">There is tension between Jack's
+            parents.<br /></span></strong></p>
+<p><strong><span style="font-size: medium;"><span style="color: #0000ff;">"watched her make dinner. Porl
+                chops, Dad's favorite, with rice and lima beans, which he
+                hated. Mom would do that sort of thing, and I never
+                understood it. It was as if she played with his anger, like
+                she wanted things to be bad. Everybody thinks their parents
+                are screwed up, but mine should've won some kind of prize"
+                (29).</span> <br /></span></strong></p>
 <p><strong><span style="font-size: medium;">&nbsp;</span></strong></p>
-<p><strong><span style="font-size: medium;">Jack explores Bogg's End and realizes Skoro did not have a TV or a radio. </span></strong></p>
-<p><strong><span style="font-size: medium;">Skoro's library is filled with books about the stock market and World War II.<br /></span></strong></p>
-<p><strong><span style="font-size: medium;">Skoro does have a PC. When Jack and his father try to see what is on his grandfather's computer a mysterious message appears, What goes around comes around.<br /></span></strong></p>
-<p><strong><span style="font-size: medium;">The computer catches on fire and dies.<br /></span></strong></p>
+<p><strong><span style="font-size: medium;">Jack explores Bogg's End and
+            realizes Skoro did not have a TV or a radio. </span></strong>
+</p>
+<p><strong><span style="font-size: medium;">Skoro's library is filled with
+            books about the stock market and World War
+            II.<br /></span></strong></p>
+<p><strong><span style="font-size: medium;">Skoro does have a PC. When Jack
+            and his father try to see what is on his grandfather's computer
+            a mysterious message appears, What goes around comes
+            around.<br /></span></strong></p>
+<p><strong><span style="font-size: medium;">The computer catches on fire and
+            dies.<br /></span></strong></p>
 <p><strong><span style="font-size: medium;">&nbsp;</span></strong></p>
-<p><span style="font-size: medium;"><strong>At Skoro's funeral hears someone mumbling What goes around comes around, but when he turns to look there is no one sitting behind him.</strong> <br /></span></p>
-<p><strong><span style="font-size: medium; color: #0000ff;">"I turned around to look at him. There was no one sitting behind me. The pew was empty. But I could still hear the words, echoing in my brain: what goes around comes around what goes around comes around what goes" (33). <br /></span></strong></p>
-<p><strong><span style="font-size: medium; color: #0000ff;">&nbsp;</span></strong></p>
-<p><strong><span style="font-size: medium; color: #0000ff;"><span style="text-decoration: underline;"><span style="color: #ff0000; text-decoration: underline;">THE METAL DOOR pages 34-41</span></span><br /></span></strong></p>
-<p><strong><span style="font-size: medium; color: #0000ff;"><span style="text-decoration: underline;"><span style="color: #ff0000; text-decoration: underline;"><br /></span></span><span style="color: #000000;">After the funeral Jack's father explores Bogg's End, basically taking an inventory of what they can sell for money.<br /></span></span></strong></p>
-<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #000000;">Jack and his father discover the third floor of the house is filled with junk and old furniture.<br /></span></span></strong></p>
-<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #000000;">&nbsp;</span></span></strong></p>
-<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #000000;">Jack's parents discuss and old man they saw at the funeral.</span></span></strong></p>
-<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #000000;"><span style="color: #0000ff;">"I thought that one old guy was going to die right in the chapel. You see him? With the patch on his eye?...He looked like he'd been in an accident...He looked like his face met up with a lawn mower is what he looked like" (36).</span> <br /></span></span></strong></p>
-<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #000000;">Jack did not SEE this man.<br /></span></span></strong></p>
-<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #000000;">&nbsp;</span></span></strong></p>
-<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #000000;">Later that night, Jack's parents are arguing again, so Jack goes the third floor of Bogg's end to escape their yelling.<br /></span></span></strong></p>
-<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #000000;">Jack explores the third floor and finds the door from his dreams in a closet.<br /></span></span></strong></p>
-<p><span style="color: #0000ff;"><strong><span style="font-size: medium;">&ldquo;The door was right in front of me&hellip;I felt for the knob&hellip;Feeling its surface, I discovered a board had been nailed across it. Someone, sometime, had not wanted this door to be found, or to be used&rdquo; (40).</span></strong></span></p>
-<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #000000;">&nbsp;</span></span></strong></p>
-<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #000000;">Jack opens the door and walks down a darkened staircase.<br /></span></span></strong></p>
-<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #000000;">Jack ends up outside of Bogg's End, but it is no longer a cold winter, it is a beautiful moonlit night in the summer and the house is surrounded by weeds and looks abandoned. <br /></span></span></strong></p>
-<p><span style="color: #0000ff;"><strong><span style="font-size: medium;">&ldquo;It was Bogg&rsquo;s End all right, but it had changed. The paint was flaking off the sides, the windows, were boarded up, the grounds were overgrown with weeds, and I knew, without knowing how I knew, that no one was home&rdquo; (41).</span></strong></span></p>
+<p><span style="font-size: medium;"><strong>At Skoro's funeral hears someone
+            mumbling What goes around comes around, but when he turns to
+            look there is no one sitting behind him.</strong> <br /></span>
+</p>
+<p><strong><span style="font-size: medium; color: #0000ff;">"I turned around
+            to look at him. There was no one sitting behind me. The pew was
+            empty. But I could still hear the words, echoing in my brain:
+            what goes around comes around what goes around comes around what
+            goes" (33). <br /></span></strong></p>
+<p><strong><span style="font-size: medium; color: #0000ff;">&nbsp;</span></strong>
+</p>
+<p><strong><span style="font-size: medium; color: #0000ff;"><span style="text-decoration: underline;"><span
+                    style="color: #ff0000; text-decoration: underline;">THE
+                    METAL DOOR pages
+                    34-41</span></span><br /></span></strong></p>
+<p><strong><span style="font-size: medium; color: #0000ff;"><span style="text-decoration: underline;"><span
+                    style="color: #ff0000; text-decoration: underline;"><br /></span></span><span
+                style="color: #000000;">After the funeral Jack's father
+                explores Bogg's End, basically taking an inventory of what
+                they can sell for money.<br /></span></span></strong></p>
+<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #000000;">Jack and his father discover
+                the
+                third floor of the house is filled with junk and old
+                furniture.<br /></span></span></strong></p>
+<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #000000;">&nbsp;</span></span></strong>
+</p>
+<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #000000;">Jack's parents discuss and old
+                man
+                they saw at the funeral.</span></span></strong></p>
+<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #000000;"><span
+                    style="color: #0000ff;">"I
+                    thought that one old guy was going to die right in the
+                    chapel. You see him? With the patch on his eye?...He
+                    looked like he'd been in an accident...He looked like
+                    his face met up with a lawn mower is what he looked
+                    like" (36).</span> <br /></span></span></strong></p>
+<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #000000;">Jack did not SEE this
+                man.<br /></span></span></strong></p>
+<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #000000;">&nbsp;</span></span></strong>
+</p>
+<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #000000;">Later that night, Jack's
+                parents are
+                arguing again, so Jack goes the third floor of Bogg's end to
+                escape their yelling.<br /></span></span></strong></p>
+<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #000000;">Jack explores the third floor
+                and
+                finds the door from his dreams in a
+                closet.<br /></span></span></strong></p>
+<p><span style="color: #0000ff;"><strong><span style="font-size: medium;">&ldquo;The door was right in
+                front of me&hellip;I felt for the knob&hellip;Feeling its
+                surface, I discovered a board had been nailed across it.
+                Someone, sometime, had not wanted this door to be found, or
+                to be used&rdquo; (40).</span></strong></span></p>
+<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #000000;">&nbsp;</span></span></strong>
+</p>
+<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #000000;">Jack opens the door and walks
+                down a
+                darkened staircase.<br /></span></span></strong></p>
+<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #000000;">Jack ends up outside of Bogg's
+                End,
+                but it is no longer a cold winter, it is a beautiful moonlit
+                night in the summer and the house is surrounded by weeds and
+                looks abandoned. <br /></span></span></strong></p>
+<p><span style="color: #0000ff;"><strong><span style="font-size: medium;">&ldquo;It was Bogg&rsquo;s End
+                all right, but it had changed. The paint was flaking off the
+                sides, the windows, were boarded up, the grounds were
+                overgrown with weeds, and I knew, without knowing how I
+                knew, that no one was home&rdquo;
+                (41).</span></strong></span></p>
 <p><span style="color: #0000ff;"><strong><span style="font-size: medium;">&nbsp;</span></strong></span></p>
-<p><span style="color: #0000ff;"><strong><span style="font-size: medium;"><span style="text-decoration: underline; color: #ff0000;">SCUD AND ANDIE pages 42-47</span><br /></span></strong></span></p>
-<p><span style="color: #0000ff;"><strong><span style="font-size: medium; color: #000000;">Jack is very confused. He wonders if he has somehow traveled to the future.</span><span style="font-size: medium;"><span style="text-decoration: underline; color: #ff0000;"><br /></span></span></strong></span></p>
-<p><span style="color: #0000ff;"><strong><span style="font-size: medium;">"Had I stepped into the future? If so, how many years had passed?" (42)<br /></span></strong></span></p>
-<p><span style="color: #0000ff;"><strong><span style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #0000ff;">" I also wanted to know where--or when I was" (43).</span><br /></span></span></strong></span></p>
-<p><span style="color: #0000ff;"><strong><span style="font-size: medium;"><span style="color: #ff0000;">&nbsp;</span></span></strong></span></p>
-<p><span style="color: #000000;"><strong><span style="font-size: medium;">Jack explores and walks down the driveway of Bogg's End and meets a boy about his age.<br /></span></strong></span></p>
-<p><span style="color: #000000;"><strong><span style="font-size: medium;">Jack learns from the boy that no one has lived at Bogg's End since the Bogges disappeared.<br /></span></strong></span></p>
-<p><span style="color: #0000ff;"><strong><span style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;">The boy asks Jack,</span> <span style="color: #0000ff;">"I bet you run away from someplace, didn't you? I ran away a couple of times. One time I got all the way to Minneapolis. Where'd you run away from?" (42).</span><br /></span></span></strong></span></p>
-<p><span style="color: #0000ff;"><strong><span style="font-size: medium;"><span style="color: #ff0000;">&nbsp;</span></span></strong></span></p>
-<p><span style="color: #000000;"><strong><span style="font-size: medium;">Jack meets a boy and girl named Scud and Andie.<br /></span></strong></span></p>
-<p><span style="color: #000000;"><strong><span style="font-size: medium;">The three of them sneak into a apple orchard to steal apples.<br /></span></strong></span></p>
-<p><span style="color: #000000;"><strong><span style="font-size: medium;">Scud plays a trick on Jack and he gets chased by a dog.<br /></span></strong></span></p>
-<p><span style="color: #0000ff;"><strong><span style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;">Jack loses Scud and Andie as he is running from the dog. He is very angry. He looks for Scud and Andie, but returns to Bogg's End before he finds them</span>.<br /></span></span></strong></span></p>
-<p><span style="color: #0000ff;"><strong><span style="font-size: medium;"><span style="color: #ff0000;">&nbsp;</span></span></strong></span></p>
-<p><span style="color: #000000;"><strong><span style="font-size: medium;">Jack spent about an hour with Scud and Andie and misplaced the real world in his mind.<br /></span></strong></span></p>
-<p><span style="color: #0000ff;"><strong><span style="font-size: medium;">"I hadn't thought at all about Bogg's End, or the door, or the fact that in the real world--if that's what it was--snow lay three feet deep over the land. I'd forgotten all of that. Actually, it wasn't so much that I'd forgotten, it was that I had somehow misplaced it in my mind" (47).<span style="text-decoration: underline;"> <br /></span></span></strong></span></p>
+<p><span style="color: #0000ff;"><strong><span style="font-size: medium;"><span
+                    style="text-decoration: underline; color: #ff0000;">SCUD
+                    AND ANDIE pages
+                    42-47</span><br /></span></strong></span></p>
+<p><span style="color: #0000ff;"><strong><span style="font-size: medium; color: #000000;">Jack is very
+                confused. He wonders if he has somehow traveled to the
+                future.</span><span style="font-size: medium;"><span
+                    style="text-decoration: underline; color: #ff0000;"><br /></span></span></strong></span>
+</p>
+<p><span style="color: #0000ff;"><strong><span style="font-size: medium;">"Had I stepped into the future?
+                If so, how many years had passed?"
+                (42)<br /></span></strong></span></p>
+<p><span style="color: #0000ff;"><strong><span style="font-size: medium;"><span style="color: #ff0000;"><span
+                        style="color: #0000ff;">"
+                        I also wanted to know where--or when I was"
+                        (43).</span><br /></span></span></strong></span></p>
+<p><span style="color: #0000ff;"><strong><span style="font-size: medium;"><span
+                    style="color: #ff0000;">&nbsp;</span></span></strong></span>
+</p>
+<p><span style="color: #000000;"><strong><span style="font-size: medium;">Jack explores and walks down the
+                driveway of Bogg's End and meets a boy about his
+                age.<br /></span></strong></span></p>
+<p><span style="color: #000000;"><strong><span style="font-size: medium;">Jack learns from the boy that no
+                one has lived at Bogg's End since the Bogges
+                disappeared.<br /></span></strong></span></p>
+<p><span style="color: #0000ff;"><strong><span style="font-size: medium;"><span style="color: #ff0000;"><span
+                        style="color: #000000;">The boy asks Jack,</span>
+                    <span style="color: #0000ff;">"I bet you run away from
+                        someplace, didn't you? I ran away a couple of times.
+                        One time I got all the way to Minneapolis. Where'd
+                        you run away from?"
+                        (42).</span><br /></span></span></strong></span></p>
+<p><span style="color: #0000ff;"><strong><span style="font-size: medium;"><span
+                    style="color: #ff0000;">&nbsp;</span></span></strong></span>
+</p>
+<p><span style="color: #000000;"><strong><span style="font-size: medium;">Jack meets a boy and girl named
+                Scud and Andie.<br /></span></strong></span></p>
+<p><span style="color: #000000;"><strong><span style="font-size: medium;">The three of them sneak into a
+                apple orchard to steal apples.<br /></span></strong></span>
+</p>
+<p><span style="color: #000000;"><strong><span style="font-size: medium;">Scud plays a trick on Jack and he
+                gets chased by a dog.<br /></span></strong></span></p>
+<p><span style="color: #0000ff;"><strong><span style="font-size: medium;"><span style="color: #ff0000;"><span
+                        style="color: #000000;">Jack loses Scud and Andie as
+                        he is running from the dog. He is very angry. He
+                        looks for Scud and Andie, but returns to Bogg's End
+                        before he finds
+                        them</span>.<br /></span></span></strong></span></p>
+<p><span style="color: #0000ff;"><strong><span style="font-size: medium;"><span
+                    style="color: #ff0000;">&nbsp;</span></span></strong></span>
+</p>
+<p><span style="color: #000000;"><strong><span style="font-size: medium;">Jack spent about an hour with
+                Scud and Andie and misplaced the real world in his
+                mind.<br /></span></strong></span></p>
+<p><span style="color: #0000ff;"><strong><span style="font-size: medium;">"I
+                hadn't thought at all about Bogg's End, or the door, or the
+                fact that in the real world--if that's what it was--snow lay
+                three feet deep over the land. I'd forgotten all of that.
+                Actually, it wasn't so much that I'd forgotten, it was that
+                I had somehow misplaced it in my mind" (47).<span style="text-decoration: underline;">
+                    <br /></span></span></strong></span></p>
 <p><span style="color: #0000ff;"><strong><span style="font-size: medium;">&nbsp;</span></strong></span></p>
-<p><strong><span style="font-size: medium; color: #0000ff;">&nbsp;<span style="color: #0000ff;"><strong><span style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;">He is worried about the door working in both directions.</span></span></span></strong></span></span></strong></p>
-<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><strong><span style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #0000ff;">"I wanted to go back. But would the door work in both directions? Would passing back through that doorway return me to the Memory I remembered?" (47).</span> <br /></span></span></span></strong></span></span></strong></p>
-<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><strong><span style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #0000ff;">&nbsp;</span></span></span></span></strong></span></span></strong></p>
-<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><strong><span style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #0000ff;"><span style="text-decoration: underline; color: #ff0000;">SOME OF THE WORST DAYS OF MY LIFE pages 48-54</span><br /></span></span></span></span></strong></span></span></strong></p>
-<p><span style="color: #000000;"><strong><span style="font-size: medium;"><strong><span style="font-size: medium;">Jack returns to Bogg's End and goes to sleep.<br /></span></strong></span></strong></span></p>
-<p><span style="color: #000000;"><strong><span style="font-size: medium;"><strong><span style="font-size: medium;">The next morning he is sure that the door and the stairs and his time with Andie and Scud were real.<br /></span></strong></span></strong></span></p>
-<p><span style="color: #000000;"><strong><span style="font-size: medium;"><strong><span style="font-size: medium;">He is sure that it was real because he has found an apple on his nightstand.<br /></span></strong></span></strong></span></p>
-<p><span style="color: #000000;"><strong><span style="font-size: medium;"><strong><span style="font-size: medium;"><span style="color: #0000ff;">"The door worked both ways...I asked myself, Is it real? ...An apple, red streaked with gold, perched on the nightstand. I picked it up, felt its roundness, took a bite. Sweet, tart juices flooded my mouth. It had been real, all right" (48).</span> <br /></span></strong></span></strong></span></p>
-<p><span style="color: #000000;"><strong><span style="font-size: medium;"><strong><span style="font-size: medium;">&nbsp;</span></strong></span></strong></span></p>
-<p><span style="color: #000000;"><strong><span style="font-size: medium;"><strong><span style="font-size: medium;">Jack's parents have had another fight and his mother has a big bruise on her cheek.<br /></span></strong></span></strong></span></p>
-<p><span style="color: #000000;"><strong><span style="font-size: medium;"><strong><span style="font-size: medium;">&nbsp;</span></strong></span></strong></span></p>
-<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><strong><span style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #0000ff;"><span style="color: #000000;">Jack goes outside to look for the door before he leaves.</span> </span></span></span></span></strong></span></span></strong></p>
-<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><strong><span style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #0000ff;">"There was definitely no door. Instead, its squat shape was defined by a patch of siding that did not quite match the original clapboard" (49). <br /></span></span></span></span></strong></span></span></strong></p>
-<p><span style="color: #000000;"><strong><span style="font-size: medium;"><strong><span style="font-size: medium;">&nbsp;</span></strong></span></strong></span></p>
-<p><span style="color: #000000;"><strong><span style="font-size: medium;"><strong><span style="font-size: medium;">Jack's family returns to Skokie and his father has a terrible car accident. This causes his father to go to AA and for the first time life is good for the family. <br /></span></strong></span></strong></span></p>
-<p><span style="color: #000000;"><strong><span style="font-size: medium;"><strong><span style="font-size: medium;"><span style="color: #0000ff;">"We had two good years. Sometimes I sit and try to figure out which was the best dayof my life. I haven't had a lot of good ones, but some of the best must have been those years in Skokie when Dad was staying sober" (51).</span> <br /></span></strong></span></strong></span></p>
-<p><span style="color: #000000;"><strong><span style="font-size: medium;"><strong><span style="font-size: medium;"><span style="color: #0000ff;">&nbsp;</span></span></strong></span></strong></span></p>
-<p><span style="color: #000000;"><strong><span style="font-size: medium;"><strong><span style="font-size: medium;"><span style="color: #000000;"><strong><span style="font-size: medium;"><strong><span style="font-size: medium;">Jack's mother gets a job so she can pay the taxes on Bogg's End. </span></strong></span></strong></span></span></strong></span></strong></span></p>
-<p><span style="color: #000000;"><strong><span style="font-size: medium;"><strong><span style="font-size: medium;"><span style="color: #000000;"><strong><span style="font-size: medium;"><strong><span style="font-size: medium;">The family does not discuss the house, but every couple of months Jack's mom takes a ride to Bogg's End&nbsp; to check on the house.</span></strong></span></strong></span></span></strong></span></strong></span></p>
-<p><span style="color: #000000;"><strong><span style="font-size: medium;"><strong><span style="font-size: medium;"><span style="color: #000000;"><strong><span style="font-size: medium;"><strong><span style="font-size: medium;">Jack puts Bogg's End out of his mind.<br /></span></strong></span></strong></span></span></strong></span></strong></span></p>
-<p><span style="color: #000000;"><strong><span style="font-size: medium;"><strong><span style="font-size: medium;"><span style="color: #000000;"><strong><span style="font-size: medium;"><strong><span style="font-size: medium;"><span style="color: #0000ff;">"I thought about the dorr at times, but as the months and years passed the memories seemed more like a dream. Bogg's End coud rot away, and that was fine with me. I never wanted to see the place again" (51).</span> <br /></span></strong></span></strong></span></span></strong></span></strong></span></p>
-<p><span style="color: #000000;"><strong><span style="font-size: medium;"><strong><span style="font-size: medium;"><span style="color: #000000;"><strong><span style="font-size: medium;"><strong><span style="font-size: medium;">&nbsp;</span></strong></span></strong></span></span></strong></span></strong></span></p>
-<p><span style="color: #000000;"><strong><span style="font-size: medium;"><strong><span style="font-size: medium;">In April 1995, when Jack is in 10th grade (2 years after Grandpa's Skoro's funeral) Jack's father starts drinking again.<br /></span></strong></span></strong></span></p>
-<p><span style="color: #000000;"><strong><span style="font-size: medium;"><strong><span style="font-size: medium;">Several months later, Jack's father has lost his job and his parents argue about Bogg's End.<br /></span></strong></span></strong></span></p>
-<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><strong><span style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #0000ff;"><span style="color: #000000;">This time Jack's father hits his mother and Jack. They both end up bruised and bloody on the kitchen floor.</span> <br /></span></span></span></span></strong></span></span></strong></p>
-<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><strong><span style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #0000ff;"><span style="color: #000000;"><span style="color: #0000ff;">"Maybe that was the worst day of my life. So far" (54).</span> <br /></span></span></span></span></span></strong></span></span></strong></p>
-<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><strong><span style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #0000ff;"><span style="color: #000000;"><span style="color: #0000ff;">&nbsp;</span></span></span></span></span></span></strong></span></span></strong></p>
-<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><strong><span style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #0000ff;"><span style="color: #000000;"><span style="color: #0000ff;"><span style="text-decoration: underline; color: #ff0000;">GOING BACK TO BOGG'S END pages 55-59</span><br /></span></span></span></span></span></span></strong></span></span></strong></p>
-<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><span style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #0000ff;"><span style="color: #000000;"><span style="color: #0000ff;"><span style="color: #ff0000;"><span style="color: #000000;">Jack and his mother are taken to the hospital and his father goes to jail.</span></span></span></span></span></span></span></span></span></span><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><span style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #0000ff;"><span style="color: #000000;"><span style="color: #0000ff;"><span style="text-decoration: underline; color: #ff0000;"><br /></span></span></span></span></span></span></span></span></span></strong></p>
-<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><span style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #0000ff;"><span style="color: #000000;"><span style="color: #0000ff;"><span style="color: #ff0000;"><span style="color: #000000;">While Jack's father is in jail, his mother packs up and tells Jack <span style="color: #0000ff;">"We're going to Memory" (page 55).</span> <br /></span></span></span></span></span></span></span></span></span></span></strong></p>
-<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><span style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #0000ff;"><span style="color: #000000;"><span style="color: #0000ff;"><span style="color: #ff0000;"><span style="color: #000000;">&nbsp;</span></span></span></span></span></span></span></span></span></span></strong></p>
-<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><span style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #0000ff;"><span style="color: #000000;"><span style="color: #0000ff;"><span style="color: #ff0000;"><span style="color: #000000;">Jack and his mother move into Bogg's End at the end of July, a few days before his 16th birthday.<br /></span></span></span></span></span></span></span></span></span></span></strong></p>
-<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><span style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #0000ff;"><span style="color: #000000;"><span style="color: #0000ff;"><span style="color: #ff0000;"><span style="color: #000000;">Jack does not want to live there, but his mother does not care she just wants to get away from her husband.<br /></span></span></span></span></span></span></span></span></span></span></strong></p>
-<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><span style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #0000ff;"><span style="color: #000000;"><span style="color: #0000ff;"><span style="color: #ff0000;"><span style="color: #000000;">There are no kids in Memory who are Jack's age, but he does get to know his mother better and learn about his grandparents from her.<br /></span></span></span></span></span></span></span></span></span></span></strong></p>
-<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><span style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #0000ff;"><span style="color: #000000;"><span style="color: #0000ff;"><span style="color: #ff0000;"><span style="color: #000000;">&nbsp;</span></span></span></span></span></span></span></span></span></span></strong></p>
-<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><span style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #0000ff;"><span style="color: #000000;"><span style="color: #0000ff;"><span style="color: #ff0000;"><span style="color: #000000;">About Betty's father:<br /></span></span></span></span></span></span></span></span></span></span></strong></p>
-<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><span style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #0000ff;"><span style="color: #000000;"><span style="color: #0000ff;"><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #0000ff;">"Daddy was rich, so all the kids wanted to be friends with me...The stock market. He alwasy seemed to know which companies were ging to do well, and he invested in them...he never worked a day in his life. I think people though he was some sort of criminal. But people liked my mother" (56).</span> <br /></span></span></span></span></span></span></span></span></span></span></strong></p>
-<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><span style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #0000ff;"><span style="color: #000000;"><span style="color: #0000ff;"><span style="color: #ff0000;"><span style="color: #000000;">&nbsp;</span></span></span></span></span></span></span></span></span></span></strong></p>
-<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><span style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #0000ff;"><span style="color: #000000;"><span style="color: #0000ff;"><span style="color: #ff0000;"><span style="color: #000000;">About Betty's mother:<br /></span></span></span></span></span></span></span></span></span></span></strong></p>
-<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><span style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #0000ff;"><span style="color: #000000;"><span style="color: #0000ff;"><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #0000ff;">"Feisty, nobody pushed her around...Daddy tried to push her around, but she wouldn't have it...I should have been more like her...I think she might have just plain run off. I think she must have died somehow, because why else would I never hear from her?" (57).</span> <br /></span></span></span></span></span></span></span></span></span></span></strong></p>
-<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><span style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #0000ff;"><span style="color: #000000;"><span style="color: #0000ff;"><span style="color: #ff0000;"><span style="color: #000000;">&nbsp;</span></span></span></span></span></span></span></span></span></span></strong></p>
-<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><span style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #0000ff;"><span style="color: #000000;"><span style="color: #0000ff;"><span style="color: #ff0000;"><span style="color: #000000;">Jack does not think about the door. He pushes the memories away.<br /></span></span></span></span></span></span></span></span></span></span></strong></p>
-<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><span style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #0000ff;"><span style="color: #000000;"><span style="color: #0000ff;"><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #0000ff;">"The fact is I was scared. I was scared it had been real, and I was scared that maybe it had not" (58).</span> <br /></span></span></span></span></span></span></span></span></span></span></strong></p>
-<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><span style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #0000ff;"><span style="color: #000000;"><span style="color: #0000ff;"><span style="color: #ff0000;"><span style="color: #000000;">&nbsp;</span></span></span></span></span></span></span></span></span></span></strong></p>
-<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><span style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #0000ff;"><span style="color: #000000;"><span style="color: #0000ff;"><span style="color: #ff0000;"><span style="color: #000000;">Jack and his mother talk about silly dreams, but she asks Jack if he has <span style="color: #0000ff;">"ever dreamed about doors. I could feel all the little hairs on my neck go straight up. 'What do you mean?' I said. 'Oh I don't know...it's just...I used to dream about door when I was your age...I remember one dream, it was so vivid I thought it was real. One summer, I was about eight years old...I went through a door in one of the closets upstairs...A few days later, Daddy made me show him the door I'd gone through. I took him to the closet and we looked in and there was no door where I remembered. There was nothing but a wall" (59).</span> <br /></span></span></span></span></span></span></span></span></span></span></strong></p>
-<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><span style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #0000ff;"><span style="color: #000000;"><span style="color: #0000ff;"><span style="color: #ff0000;"><span style="color: #000000;">&nbsp;</span></span></span></span></span></span></span></span></span></span></strong></p>
-<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><span style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #0000ff;"><span style="color: #000000;"><span style="color: #0000ff;"><span style="color: #ff0000;"><span style="color: #000000;">That afternoon Jack's mother, Betty, goes to Lake City to look for a job.<br /></span></span></span></span></span></span></span></span></span></span></strong></p>
-<p><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><span style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #0000ff;"><span style="color: #000000;"><span style="color: #0000ff;"><span style="color: #ff0000;"><span style="color: #000000;"><strong>Jack makes a peanut butter sandwich, wraps it up in a newspaper and <span style="color: #0000ff;">"climbed the stairs to the third floor, feeling a little foolish, still half convinced that the door had been nothing but a dream" (59).</span></strong> </span></span></span></span></span></span></span></span></span></span></p></span></span>
-        </div>
-		<div class="clear"></div>
-	</div>
-</li>
-</ul>
+<p><strong><span style="font-size: medium; color: #0000ff;">&nbsp;<span style="color: #0000ff;"><strong><span
+                        style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;">He is
+                                worried about
+                                the door working in both
+                                directions.</span></span></span></strong></span></span></strong>
+</p>
+<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><strong><span
+                        style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span
+                                    style="color: #0000ff;">"I wanted to go
+                                    back. But would the door work in both
+                                    directions? Would passing back through
+                                    that doorway return me to the Memory I
+                                    remembered?" (47).</span>
+                                <br /></span></span></span></strong></span></span></strong>
+</p>
+<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><strong><span
+                        style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span
+                                    style="color: #0000ff;">&nbsp;</span></span></span></span></strong></span></span></strong>
+</p>
+<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><strong><span
+                        style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span
+                                    style="color: #0000ff;"><span
+                                        style="text-decoration: underline; color: #ff0000;">SOME
+                                        OF THE WORST DAYS OF MY LIFE pages
+                                        48-54</span><br /></span></span></span></span></strong></span></span></strong>
+</p>
+<p><span style="color: #000000;"><strong><span style="font-size: medium;"><strong><span style="font-size: medium;">Jack
+                        returns to Bogg's
+                        End and goes to
+                        sleep.<br /></span></strong></span></strong></span>
+</p>
+<p><span style="color: #000000;"><strong><span style="font-size: medium;"><strong><span style="font-size: medium;">The
+                        next morning he is
+                        sure that the door and the stairs and his time with
+                        Andie and Scud were
+                        real.<br /></span></strong></span></strong></span>
+</p>
+<p><span style="color: #000000;"><strong><span style="font-size: medium;"><strong><span style="font-size: medium;">He is
+                        sure that it was
+                        real because he has found an apple on his
+                        nightstand.<br /></span></strong></span></strong></span>
+</p>
+<p><span style="color: #000000;"><strong><span style="font-size: medium;"><strong><span style="font-size: medium;"><span
+                            style="color: #0000ff;">"The door worked both
+                            ways...I asked myself, Is it real? ...An apple,
+                            red streaked with gold, perched on the
+                            nightstand. I picked it up, felt its roundness,
+                            took a bite. Sweet, tart juices flooded my
+                            mouth. It had been real, all right" (48).</span>
+                        <br /></span></strong></span></strong></span></p>
+<p><span style="color: #000000;"><strong><span style="font-size: medium;"><strong><span
+                        style="font-size: medium;">&nbsp;</span></strong></span></strong></span>
+</p>
+<p><span style="color: #000000;"><strong><span style="font-size: medium;"><strong><span
+                        style="font-size: medium;">Jack's parents have had
+                        another fight and his mother has a big bruise on her
+                        cheek.<br /></span></strong></span></strong></span>
+</p>
+<p><span style="color: #000000;"><strong><span style="font-size: medium;"><strong><span
+                        style="font-size: medium;">&nbsp;</span></strong></span></strong></span>
+</p>
+<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><strong><span
+                        style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span
+                                    style="color: #0000ff;"><span style="color: #000000;">Jack goes
+                                        outside to look for the door before
+                                        he leaves.</span>
+                                </span></span></span></span></strong></span></span></strong>
+</p>
+<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><strong><span
+                        style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span
+                                    style="color: #0000ff;">"There was
+                                    definitely no door. Instead, its squat
+                                    shape was defined by a patch of siding
+                                    that did not quite match the original
+                                    clapboard" (49).
+                                    <br /></span></span></span></span></strong></span></span></strong>
+</p>
+<p><span style="color: #000000;"><strong><span style="font-size: medium;"><strong><span
+                        style="font-size: medium;">&nbsp;</span></strong></span></strong></span>
+</p>
+<p><span style="color: #000000;"><strong><span style="font-size: medium;"><strong><span
+                        style="font-size: medium;">Jack's family returns to
+                        Skokie and his father has a terrible car accident.
+                        This causes his father to go to AA and for the first
+                        time life is good for the family.
+                        <br /></span></strong></span></strong></span></p>
+<p><span style="color: #000000;"><strong><span style="font-size: medium;"><strong><span style="font-size: medium;"><span
+                            style="color: #0000ff;">"We had two good years.
+                            Sometimes I sit and try to figure out which was
+                            the best dayof my life. I haven't had a lot of
+                            good ones, but some of the best must have been
+                            those years in Skokie when Dad was staying
+                            sober" (51).</span>
+                        <br /></span></strong></span></strong></span></p>
+<p><span style="color: #000000;"><strong><span style="font-size: medium;"><strong><span style="font-size: medium;"><span
+                            style="color: #0000ff;">&nbsp;</span></span></strong></span></strong></span>
+</p>
+<p><span style="color: #000000;"><strong><span style="font-size: medium;"><strong><span style="font-size: medium;"><span
+                            style="color: #000000;"><strong><span style="font-size: medium;"><strong><span
+                                            style="font-size: medium;">Jack's
+                                            mother gets a job so she can pay
+                                            the taxes on Bogg's End.
+                                        </span></strong></span></strong></span></span></strong></span></strong></span>
+</p>
+<p><span style="color: #000000;"><strong><span style="font-size: medium;"><strong><span style="font-size: medium;"><span
+                            style="color: #000000;"><strong><span style="font-size: medium;"><strong><span
+                                            style="font-size: medium;">The
+                                            family does not discuss the
+                                            house, but every couple of
+                                            months Jack's mom takes a ride
+                                            to Bogg's End&nbsp; to check on
+                                            the
+                                            house.</span></strong></span></strong></span></span></strong></span></strong></span>
+</p>
+<p><span style="color: #000000;"><strong><span style="font-size: medium;"><strong><span style="font-size: medium;"><span
+                            style="color: #000000;"><strong><span style="font-size: medium;"><strong><span
+                                            style="font-size: medium;">Jack
+                                            puts Bogg's End out of his
+                                            mind.<br /></span></strong></span></strong></span></span></strong></span></strong></span>
+</p>
+<p><span style="color: #000000;"><strong><span style="font-size: medium;"><strong><span style="font-size: medium;"><span
+                            style="color: #000000;"><strong><span style="font-size: medium;"><strong><span
+                                            style="font-size: medium;"><span style="color: #0000ff;">"I
+                                                thought about the dorr at
+                                                times, but as the months and
+                                                years passed the memories
+                                                seemed more like a dream.
+                                                Bogg's End coud rot away,
+                                                and that was fine with me. I
+                                                never wanted to see the
+                                                place again" (51).</span>
+                                            <br /></span></strong></span></strong></span></span></strong></span></strong></span>
+</p>
+<p><span style="color: #000000;"><strong><span style="font-size: medium;"><strong><span style="font-size: medium;"><span
+                            style="color: #000000;"><strong><span style="font-size: medium;"><strong><span
+                                            style="font-size: medium;">&nbsp;</span></strong></span></strong></span></span></strong></span></strong></span>
+</p>
+<p><span style="color: #000000;"><strong><span style="font-size: medium;"><strong><span style="font-size: medium;">In
+                        April 1995, when Jack
+                        is in 10th grade (2 years after Grandpa's Skoro's
+                        funeral) Jack's father starts drinking
+                        again.<br /></span></strong></span></strong></span>
+</p>
+<p><span style="color: #000000;"><strong><span style="font-size: medium;"><strong><span
+                        style="font-size: medium;">Several months later,
+                        Jack's father has lost his job and his parents argue
+                        about Bogg's
+                        End.<br /></span></strong></span></strong></span>
+</p>
+<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><strong><span
+                        style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span
+                                    style="color: #0000ff;"><span style="color: #000000;">This time
+                                        Jack's father hits his mother and
+                                        Jack. They both end up bruised and
+                                        bloody on the kitchen floor.</span>
+                                    <br /></span></span></span></span></strong></span></span></strong>
+</p>
+<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><strong><span
+                        style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span
+                                    style="color: #0000ff;"><span style="color: #000000;"><span
+                                            style="color: #0000ff;">"Maybe
+                                            that was the worst day of my
+                                            life. So far" (54).</span>
+                                        <br /></span></span></span></span></span></strong></span></span></strong>
+</p>
+<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><strong><span
+                        style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span
+                                    style="color: #0000ff;"><span style="color: #000000;"><span
+                                            style="color: #0000ff;">&nbsp;</span></span></span></span></span></span></strong></span></span></strong>
+</p>
+<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><strong><span
+                        style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span
+                                    style="color: #0000ff;"><span style="color: #000000;"><span
+                                            style="color: #0000ff;"><span
+                                                style="text-decoration: underline; color: #ff0000;">GOING
+                                                BACK TO BOGG'S END pages
+                                                55-59</span><br /></span></span></span></span></span></span></strong></span></span></strong>
+</p>
+<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><span
+                    style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span
+                                style="color: #0000ff;"><span style="color: #000000;"><span
+                                        style="color: #0000ff;"><span style="color: #ff0000;"><span
+                                                style="color: #000000;">Jack
+                                                and his mother are taken to
+                                                the hospital and his father
+                                                goes to
+                                                jail.</span></span></span></span></span></span></span></span></span></span><span
+            style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><span
+                    style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span
+                                style="color: #0000ff;"><span style="color: #000000;"><span
+                                        style="color: #0000ff;"><span
+                                            style="text-decoration: underline; color: #ff0000;"><br /></span></span></span></span></span></span></span></span></span></strong>
+</p>
+<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><span
+                    style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span
+                                style="color: #0000ff;"><span style="color: #000000;"><span
+                                        style="color: #0000ff;"><span style="color: #ff0000;"><span
+                                                style="color: #000000;">While
+                                                Jack's father is in jail,
+                                                his mother packs up and
+                                                tells Jack <span style="color: #0000ff;">"We're
+                                                    going to Memory" (page
+                                                    55).</span>
+                                                <br /></span></span></span></span></span></span></span></span></span></span></strong>
+</p>
+<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><span
+                    style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span
+                                style="color: #0000ff;"><span style="color: #000000;"><span
+                                        style="color: #0000ff;"><span style="color: #ff0000;"><span
+                                                style="color: #000000;">&nbsp;</span></span></span></span></span></span></span></span></span></span></strong>
+</p>
+<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><span
+                    style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span
+                                style="color: #0000ff;"><span style="color: #000000;"><span
+                                        style="color: #0000ff;"><span style="color: #ff0000;"><span
+                                                style="color: #000000;">Jack
+                                                and his mother move into
+                                                Bogg's End at the end of
+                                                July, a few days before his
+                                                16th
+                                                birthday.<br /></span></span></span></span></span></span></span></span></span></span></strong>
+</p>
+<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><span
+                    style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span
+                                style="color: #0000ff;"><span style="color: #000000;"><span
+                                        style="color: #0000ff;"><span style="color: #ff0000;"><span
+                                                style="color: #000000;">Jack
+                                                does not want to live there,
+                                                but his mother does not care
+                                                she just wants to get away
+                                                from her
+                                                husband.<br /></span></span></span></span></span></span></span></span></span></span></strong>
+</p>
+<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><span
+                    style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span
+                                style="color: #0000ff;"><span style="color: #000000;"><span
+                                        style="color: #0000ff;"><span style="color: #ff0000;"><span
+                                                style="color: #000000;">There
+                                                are no kids in Memory who
+                                                are Jack's age, but he does
+                                                get to know his mother
+                                                better and learn about his
+                                                grandparents from
+                                                her.<br /></span></span></span></span></span></span></span></span></span></span></strong>
+</p>
+<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><span
+                    style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span
+                                style="color: #0000ff;"><span style="color: #000000;"><span
+                                        style="color: #0000ff;"><span style="color: #ff0000;"><span
+                                                style="color: #000000;">&nbsp;</span></span></span></span></span></span></span></span></span></span></strong>
+</p>
+<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><span
+                    style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span
+                                style="color: #0000ff;"><span style="color: #000000;"><span
+                                        style="color: #0000ff;"><span style="color: #ff0000;"><span
+                                                style="color: #000000;">About
+                                                Betty's
+                                                father:<br /></span></span></span></span></span></span></span></span></span></span></strong>
+</p>
+<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><span
+                    style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span
+                                style="color: #0000ff;"><span style="color: #000000;"><span
+                                        style="color: #0000ff;"><span style="color: #ff0000;"><span
+                                                style="color: #000000;"><span style="color: #0000ff;">"Daddy
+                                                    was rich, so all the
+                                                    kids wanted to be
+                                                    friends with me...The
+                                                    stock market. He alwasy
+                                                    seemed to know which
+                                                    companies were ging to
+                                                    do well, and he invested
+                                                    in them...he never
+                                                    worked a day in his
+                                                    life. I think people
+                                                    though he was some sort
+                                                    of criminal. But people
+                                                    liked my mother"
+                                                    (56).</span>
+                                                <br /></span></span></span></span></span></span></span></span></span></span></strong>
+</p>
+<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><span
+                    style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span
+                                style="color: #0000ff;"><span style="color: #000000;"><span
+                                        style="color: #0000ff;"><span style="color: #ff0000;"><span
+                                                style="color: #000000;">&nbsp;</span></span></span></span></span></span></span></span></span></span></strong>
+</p>
+<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><span
+                    style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span
+                                style="color: #0000ff;"><span style="color: #000000;"><span
+                                        style="color: #0000ff;"><span style="color: #ff0000;"><span
+                                                style="color: #000000;">About
+                                                Betty's
+                                                mother:<br /></span></span></span></span></span></span></span></span></span></span></strong>
+</p>
+<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><span
+                    style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span
+                                style="color: #0000ff;"><span style="color: #000000;"><span
+                                        style="color: #0000ff;"><span style="color: #ff0000;"><span
+                                                style="color: #000000;"><span style="color: #0000ff;">"Feisty,
+                                                    nobody pushed her
+                                                    around...Daddy tried to
+                                                    push her around, but she
+                                                    wouldn't have it...I
+                                                    should have been more
+                                                    like her...I think she
+                                                    might have just plain
+                                                    run off. I think she
+                                                    must have died somehow,
+                                                    because why else would I
+                                                    never hear from her?"
+                                                    (57).</span>
+                                                <br /></span></span></span></span></span></span></span></span></span></span></strong>
+</p>
+<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><span
+                    style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span
+                                style="color: #0000ff;"><span style="color: #000000;"><span
+                                        style="color: #0000ff;"><span style="color: #ff0000;"><span
+                                                style="color: #000000;">&nbsp;</span></span></span></span></span></span></span></span></span></span></strong>
+</p>
+<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><span
+                    style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span
+                                style="color: #0000ff;"><span style="color: #000000;"><span
+                                        style="color: #0000ff;"><span style="color: #ff0000;"><span
+                                                style="color: #000000;">Jack
+                                                does not think about the
+                                                door. He pushes the memories
+                                                away.<br /></span></span></span></span></span></span></span></span></span></span></strong>
+</p>
+<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><span
+                    style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span
+                                style="color: #0000ff;"><span style="color: #000000;"><span
+                                        style="color: #0000ff;"><span style="color: #ff0000;"><span
+                                                style="color: #000000;"><span style="color: #0000ff;">"The
+                                                    fact is I was scared. I
+                                                    was scared it had been
+                                                    real, and I was scared
+                                                    that maybe it had not"
+                                                    (58).</span>
+                                                <br /></span></span></span></span></span></span></span></span></span></span></strong>
+</p>
+<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><span
+                    style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span
+                                style="color: #0000ff;"><span style="color: #000000;"><span
+                                        style="color: #0000ff;"><span style="color: #ff0000;"><span
+                                                style="color: #000000;">&nbsp;</span></span></span></span></span></span></span></span></span></span></strong>
+</p>
+<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><span
+                    style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span
+                                style="color: #0000ff;"><span style="color: #000000;"><span
+                                        style="color: #0000ff;"><span style="color: #ff0000;"><span
+                                                style="color: #000000;">Jack
+                                                and his mother talk about
+                                                silly dreams, but she asks
+                                                Jack if he has <span style="color: #0000ff;">"ever
+                                                    dreamed about doors. I
+                                                    could feel all the
+                                                    little hairs on my neck
+                                                    go straight up. 'What do
+                                                    you mean?' I said. 'Oh I
+                                                    don't know...it's
+                                                    just...I used to dream
+                                                    about door when I was
+                                                    your age...I remember
+                                                    one dream, it was so
+                                                    vivid I thought it was
+                                                    real. One summer, I was
+                                                    about eight years
+                                                    old...I went through a
+                                                    door in one of the
+                                                    closets upstairs...A few
+                                                    days later, Daddy made
+                                                    me show him the door I'd
+                                                    gone through. I took him
+                                                    to the closet and we
+                                                    looked in and there was
+                                                    no door where I
+                                                    remembered. There was
+                                                    nothing but a wall"
+                                                    (59).</span>
+                                                <br /></span></span></span></span></span></span></span></span></span></span></strong>
+</p>
+<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><span
+                    style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span
+                                style="color: #0000ff;"><span style="color: #000000;"><span
+                                        style="color: #0000ff;"><span style="color: #ff0000;"><span
+                                                style="color: #000000;">&nbsp;</span></span></span></span></span></span></span></span></span></span></strong>
+</p>
+<p><strong><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><span
+                    style="font-size: medium;"><span style="color: #ff0000;"><span style="color: #000000;"><span
+                                style="color: #0000ff;"><span style="color: #000000;"><span
+                                        style="color: #0000ff;"><span style="color: #ff0000;"><span
+                                                style="color: #000000;">That
+                                                afternoon Jack's mother,
+                                                Betty, goes to Lake City to
+                                                look for a
+                                                job.<br /></span></span></span></span></span></span></span></span></span></span></strong>
+</p>
+<p><span style="font-size: medium; color: #0000ff;"><span style="color: #0000ff;"><span style="font-size: medium;"><span
+                    style="color: #ff0000;"><span style="color: #000000;"><span style="color: #0000ff;"><span
+                                style="color: #000000;"><span style="color: #0000ff;"><span
+                                        style="color: #ff0000;"><span style="color: #000000;"><strong>Jack
+                                                makes a peanut butter
+                                                sandwich, wraps it up in a
+                                                newspaper and <span style="color: #0000ff;">"climbed
+                                                    the stairs to the third
+                                                    floor, feeling a little
+                                                    foolish, still half
+                                                    convinced that the door
+                                                    had been nothing but a
+                                                    dream"
+                                                    (59).</span></strong>
+                                        </span></span></span></span></span></span></span></span></span></span>
+</p>
+</span></span>
 </div>
-	<div class="ui-widget-footer">
-		
-			
-		
-		<div class="clear"></div>
-	</div>
-</div>
-<script type="text/javascript">
-$(document).ready(function (){
-$(".tag-list li a").keypress(function(e) { if(e.which == 13) { $(this).click();   }});
-});
-function LoadGroupedData(container, MIID, PMI, groupYear, groupMonth, groupBy, tag) {
-  //ViewToUse looks at the hidden Sidebar List View defined in the Builder View.
-  var viewToUse = "";
-    if($('#hid-'+MIID+'-SidebarListView').length > 0){
-      viewToUse = $("#hid-" + MIID + "-SidebarListView").val();
-    };
-  GetContent('https://www.manvilleschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=1794&PageID=5901&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&RenderLoc=0&FromRenderLoc=0&GroupYear=' + groupYear + '&GroupMonth=' + groupMonth + '&GroupByField=' + groupBy + '&EnableQuirksMode=0&ViewID=' + viewToUse + '&Tag=' + tag, container, 2, 'chkSidebar();');
-}
-function LoadData(container, MIID, PMI, flexDataID, groupYear, groupMonth, groupBy, targetView, tag) {
-  if(targetView !== undefined || targetView.Length() == 0){
-  //targetView looks at the hidden Detail View defined in the Builder View.
-      targetView = $('#hid-'+MIID+'-DetailView').val();
-   }
-  GetContent('https://www.manvilleschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=1794&PageID=5901&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&FlexDataID=' + flexDataID + '&GroupYear=' + groupYear + '&GroupMonth=' + groupMonth + '&GroupByField=' + groupBy + '&RenderLoc=0&FromRenderLoc=0&EnableQuirksMode=0&Tag=' + tag + '&ViewID=' + targetView, container, 2, 'chkSidebar();');
-}
-function LoadTaggedData(container, MIID, PMI, tag) {
-  //ViewToUse looks at the hidden Sidebar List View defined in the Builder View.
-  var viewToUse = "";
-    if($('#hid-'+MIID+'-SidebarListView').length > 0){
-      viewToUse = $("#hid-" + MIID + "-SidebarListView").val();
-    };
-  GetContent('https://www.manvilleschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=1794&PageID=5901&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&RenderLoc=0&FromRenderLoc=0&Tag=' + tag + '&EnableQuirksMode=0&ViewID='+viewToUse, container, 2, 'chkSidebar();');
-  setTimeout(function(){ $("#module-content-"+ MIID +"").find('[tabindex]:first').focus(); }, 200);
-}
-</script>
-</div>
-
-</div></div>
-</div><div class="clear"></div></div></div><!-- End Centricity Content Area -->
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="noprint">
-        <section id="gb-footer-links-outer" class="gb-section-parent gb-section-pad" data-footer-links-color="White" data-footer-links-hover="White">
-        	<div id="gb-footer-links" class="gb-section"></div>
-        </section>
-        <section id="gb-footer-outer" class="gb-section-parent gb-section-pad" data-footer-text-color="White">
-            <div id="gb-footer" class="gb-section ui-clear displayFlexRow">
-                <h2></h2>
-                <div id="gb-address">
-                    <span class="gb-address one">1100 Brooks Blvd.</span><span class="gb-address spacer">, </span><span class="gb-address two">Manville, NJ 08835</span>
-                </div>
-                <div id="gb-contact">
-                	<span class="gb-contact phone" x-ms-format-detection="none">Phone: (908) 231-8500</span>
-                    <span class="gb-contact fax" x-ms-format-detection="none">Fax: </span>
-                </div>
-                <div id="gb-extra-links" class="displayFlexRow">
-                	<a class="footer-extra-link directions" href="//www.google.com/maps/place/1100 Brooks Blvd. Manville NJ 08835" target="_blank" data-show-directions-link="true">
-                    	<span>Get Directions</span>
-                    </a>
-                    <a class="footer-extra-link email" href="mailto:webadmin@manvillesd.org" data-show-email-link="false">
-                    	<span>Email Us</span>
-                    </a>
-                    <a class="footer-extra-link accessibility" href="#" target="_self">
-                    	<span>Web Accessibility</span>
-                    </a>
-                    <a class="footer-extra-link sitemap" href='/site/Default.aspx?PageType=15&SiteID=4&SectionMax=15&DirectoryType=6'>
-                        <span>Site Map</span>
-                    </a>
-                    <button class="cs-btn-reset footer-extra-link footer-scroll-btn" aria-label="Scroll To The Top Of The Page" tabindex="-1" aria-hidden="true"></button>
-                </div>
-            </div>
-        </section>
-        <section id="gb-social-media-outer" class="gb-section-parent gb-section-pad">
-        	<div id="gb-social-media" class="gb-section displayFlexRow">
-            	<h2>Stay Connected</h2>
-        		<div id="gb-social-media-icons" class="hidden"></div>
-            </div>
-        </section>
-        <section id="gb-schoolwires-footer-outer" class="gb-section-parent gb-section-pad">
-            <div id="gb-schoolwires-footer" class="gb-section border-box">
-                <div class="gb-schoolwires-footer top">
-                    <div id="gb-footer-disclaimer" data-show-disclaimer="false">
-                        <span>This is the disclaimer text. You can use this area for legal statements, copyright information, a mission statement, etc. If you don’t use it, the Bb footer will slide up.</span>
-                    </div>
-                </div>
-                <div class="gb-schoolwires-footer bottom" data-show-disclaimer="false">
-                    <div class="gb-schoolwires-footer logo"></div>
-                    <div id="gb-schoolwires-footer-links-copyright">
-                        <div class="gb-schoolwires-footer links"></div>
-                        <div class="gb-schoolwires-footer copyright"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </footer>
-</div><!-- BEGIN - STANDARD FOOTER -->
-<div id='sw-footer-outer'>
-<div id='sw-footer-inner'>
-<div id='sw-footer-left'></div>
-<div id='sw-footer-right'>
-<div id='sw-footer-links'>
-<ul>
-<li><a title='Click to email the primary contact' href='mailto:webadmin@manvillesd.org'>Questions or Feedback?</a> | </li>
-<li><a href='https://www.finalsite.com/privacy-policy' target="_blank">Web Community Manager Privacy Policy (Updated)</a> | </li>
-<li><a class='sw-footer-terms-link' aria-hidden='true' tabindex='-1' href=''></a></li>
-</ul>
-</div>
-<div id='sw-footer-copyright'>Copyright &copy; 2024 Finalsite - all rights reserved.</div>
-<div id='sw-footer-logo'><a href='http://www.finalsite.com' title="Finalsite - all rights reserved">
-<img src='https://www.manvilleschools.org/Static//GlobalAssets/Images/Navbar/WCM_logo.svg'
-class='sw-footer-logo-img' alt="Web Community Manager."/>
-</a></div>
-</div>
-</div>
-</div>
-<!-- END - STANDARD FOOTER -->
-<script type="text/javascript">
-   $(document).ready(function(){
-  var data = JSON.stringify({
-    "SiteID": "4",
-    "ChannelID": "1236",
-    "SectionID": "1794",
-    "PageID": "5901",
-    "Browser": "Firefox 130.0",
-    "OS": "WinNT",
-    "IPAddress": "10.61.84.66"
-  });
-  $.ajax({
-    url: "../Site/SiteController.aspx/InsertAnalyticsData",
-    method: "POST",
-    contentType: "application/json",
-    data: data,
-    success: function(response) {
-    },
-    error: function(xhr, status, error) {
-    }
-  });
-   });
-</script>
-
-    <input type="hidden" id="hid-pageid" value="5901" />
-
-    
-
-    <div id='dialog-overlay-WindowMedium-base' class='ui-dialog-overlay-base' ><div id='WindowMedium' role='dialog' tabindex='-1'  class='ui-dialog-overlay medium' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowMedium-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowMedium-body' ></div><button class='ui-dialog-overlay-close' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowMedium");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowMedium-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowMedium-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    <div id='dialog-overlay-WindowSmall-base' class='ui-dialog-overlay-base' ><div id='WindowSmall' role='dialog' tabindex='-1'  class='ui-dialog-overlay small' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowSmall-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowSmall-body' ></div><button class='ui-dialog-overlay-close' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowSmall");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowSmall-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowSmall-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    <div id='dialog-overlay-WindowLarge-base' class='ui-dialog-overlay-base' ><div id='WindowLarge' role='dialog' tabindex='-1'  class='ui-dialog-overlay large' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowLarge-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowLarge-body' ></div><button class='ui-dialog-overlay-close' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowLarge");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowLarge-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowLarge-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-
-    <div id='dialog-overlay-WindowMediumModal-base' class='ui-dialog-overlay-base-modal' ><div id='WindowMediumModal' role='dialog' tabindex='-1'  class='ui-dialog-overlay medium' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowMediumModal-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowMediumModal-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowMediumModal");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowMediumModal-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowMediumModal-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    <div id='dialog-overlay-WindowSmallModal-base' class='ui-dialog-overlay-base-modal' ><div id='WindowSmallModal' role='dialog' tabindex='-1'  class='ui-dialog-overlay small' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowSmallModal-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowSmallModal-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowSmallModal");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowSmallModal-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowSmallModal-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    <div id='dialog-overlay-WindowLargeModal-base' class='ui-dialog-overlay-base-modal' ><div id='WindowLargeModal' role='dialog' tabindex='-1'  class='ui-dialog-overlay large' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowLargeModal-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowLargeModal-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowLargeModal");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowLargeModal-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowLargeModal-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    <div id='dialog-overlay-WindowXLargeModal-base' class='ui-dialog-overlay-base-modal' ><div id='WindowXLargeModal' role='dialog' tabindex='-1'  class='ui-dialog-overlay xlarge' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-WindowXLargeModal-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-WindowXLargeModal-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("WindowXLargeModal");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-WindowXLargeModal-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-WindowXLargeModal-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-
-    <div id='dialog-overlay-MyAccountSubscriptionOverlay-base' class='ui-dialog-overlay-base-modal' ><div id='MyAccountSubscriptionOverlay' role='dialog' tabindex='-1'  class='ui-dialog-overlay medium' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-MyAccountSubscriptionOverlay-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-MyAccountSubscriptionOverlay-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("MyAccountSubscriptionOverlay");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-MyAccountSubscriptionOverlay-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-MyAccountSubscriptionOverlay-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-
-    <div id='dialog-overlay-InsertOverlay-base' class='ui-dialog-overlay-base-modal' ><div id='InsertOverlay' role='dialog' tabindex='-1'  class='ui-dialog-overlay large' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-InsertOverlay-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-InsertOverlay-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("InsertOverlay");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-InsertOverlay-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-InsertOverlay-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    <div id='dialog-overlay-InsertOverlay2-base' class='ui-dialog-overlay-base-modal' ><div id='InsertOverlay2' role='dialog' tabindex='-1'  class='ui-dialog-overlay large' ><div class='ui-dialog-overlay-title-bar' id='dialog-overlay-InsertOverlay2-title-bar' ></div><div class='ui-dialog-overlay-body' id='dialog-overlay-InsertOverlay2-body' ></div><button class='ui-dialog-overlay-close modal' title='Close' aria-label='Close' onclick='CloseDialogOverlay("InsertOverlay2");' ></button><div class='ui-dialog-overlay-footer' id='dialog-overlay-InsertOverlay2-footer' ></div></div></div>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#dialog-overlay-InsertOverlay2-base').appendTo('body');
-        
-        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
-            var swAlertOpen = $(".ui-sw-alert").length;
-            if (swAlertOpen > 1) {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    //get id of open alert
-                    var alertboxid = $('.ui-sw-alert').attr('id');
-                    //click ok or no
-                    if ($('#' + alertboxid + 'ok').length > 0) {
-                        $('#' + alertboxid + 'ok').click();
-                    } else {
-                        $('#' + alertboxid + 'no').click();
-                    }
-                }
-            } else {
-                if (e.keyCode == 27) {//escape key
-                    e.stopImmediatePropagation();
-                    e.preventDefault();
-                    // Check if ESC was pressed on DatePicker
-                    var raisedByDatepicker = e.target.classList.contains("datepicker");
-                    if (!raisedByDatepicker) {
-                        e.stopImmediatePropagation();
-                        e.preventDefault();
-                        // Close Dialog
-                        $('.ui-dialog-overlay-close.modal:visible').last().click();
-                    } else {
-                        // Remove focus
-                        e.target.blur();
-                        e.target.classList.remove("focus");
-                    }
-                }
-            }
-        });
- 		
-        
-
-    });
-</script>
-    
-    <div id="videowrapper" class="ui-helper-hidden">
-        <div id="videodialog" role="application">
-            <a id="videodialog-close" role="button" href="javascript:;" aria-label="Close Overlay" class="close-btn" onclick="closeVideoDialog();">CLOSE</a>
-            <div id="videodialog-video" ></div>
-            <div id="videodialog-foot" tabindex="0"></div>
-        </div>
-    </div>
-    <div id="attachmentwrapper" class="ui-helper-hidden">
-        <div id="attachmentdialog" role="application">
-            <a id="attachmentdialog-close" role="button" href="javascript:;" aria-label="Close Overlay" class="close-btn" onclick="closeAttachmentDialog();">CLOSE</a>
-            <div id="attachmentdialog-container"></div>
-        </div>
-    </div>
-    <script type="text/javascript">
-
-        $(document).ready(function () { 
-
-            removeBrokenImages();
-            checkSidebar();
-            RemoveCookie();
-
-            
-            //$('div.bullet').attr('tabindex', '');
-
-            
-
-            $('.navigation li.collapsible').each(function () {
-                if ($(this).find('ul').length == 0) {
-                    $(this).removeClass('collapsible');
-                }
-            });
-
-            // find page nav state cookie and add open chevron
-            var arrValues = GetCookie('SWPageNavState').split('~');
-
-            $.each(arrValues, function () {
-                if (this != '') {
-                   //$('#' + this).addClass('collapsible').prepend("<div class='bullet collapsible' aria-label='Close Page Submenu'/>");
-                    $('#' + this).addClass('collapsible').prepend("<div class='bullet collapsible' aria-haspopup='true' aria-expanded='true' />");
-                }
-            });
-
-            // find remaining sub menus and add closed chevron and close menu
-            $('.navigation li > ul').each(function () {
-                var list = $(this);
-
-                if (list.parent().hasClass('active') && !list.parent().hasClass('collapsible')) {
-                    // open sub for currently selected page                    
-                    //list.parent().addClass('collapsible').prepend("<div class='bullet collapsible'aria-label='Close Page Submenu' />");
-                    list.parent().addClass('collapsible').prepend("<div class='bullet collapsible' aria-haspopup='true' aria-expanded='true' />");
-                } else {
-                    if (list.parent().hasClass('collapsible') && !list.siblings('div').hasClass('collapsible')) {
-                        // open sub for page with auto expand
-                        list.siblings('div.expandable').remove();
-                        //list.parent().prepend("<div class='bullet collapsible' aria-label='Close Page Submenu' />");
-                        list.parent().prepend("<div class='bullet collapsible' aria-haspopup='true' aria-expanded='true' />");
-                    }
-                }
-
-                if (!list.siblings('div').hasClass('collapsible')) {
-                    // keep all closed that aren't already set to open
-                    //list.parent().addClass('expandable').prepend("<div class='bullet expandable' aria-label='Open Page Submenu' />");
-                    list.parent().addClass('expandable').prepend("<div class='bullet expandable' aria-haspopup='true' aria-expanded='false' />");
-                    ClosePageSubMenu(list.parent());
-                } else {
-                   OpenPageSubMenu(list.parent());
-                }
-            });
-
-            $(".navigation .bullet.collapsible, .navigation .bullet.expandable, .navigation a").each(function () {
-                if ($(this).closest("ul").attr("aria-hidden") == "true"){
-                    $(this).attr("tabindex", "-1");
-                } else {
-                    $(this).attr("tabindex", "0");
-                }
-            })
-
-            // remove bullet from hierarchy if no-bullet set
-            $('.navigation li.collapsible').each(function () {
-                if ($(this).hasClass('no-bullet')) {
-                    if (!$(this).hasClass('navigationgroup')) { $(this).removeClass('collapsible'); }
-                    $(this).children('div.collapsible').remove();
-                }
-            });
-
-            $('.navigation li.expandable').each(function () {
-                if ($(this).hasClass('no-bullet')) {
-                    if (!$(this).hasClass('navigationgroup')) { $(this).removeClass('expandable'); }
-                    $(this).children('div.expandable').remove();
-                }
-            });
-
-            $('.navigation li:not(.collapsible,.expandable,.no-bullet)').each(function () {
-                $(this).prepend("<div class='bullet'/>");
-            });
-
-            $('.navigation li.active').parents('ul').each(function () {
-                if (!$(this).hasClass('page-navigation')) {
-                    OpenPageSubMenu($(this).parent());
-                }
-            });
-
-            // Set aria ttributes
-            /*$('li.collapsible').each(function () {
-               $(this).attr("aria-expanded", "true");
-               $(this).find('div:first').attr('aria-pressed', 'true');
-            });*/
-
-            $('li.expandable').each(function () {
-                ///$(this).attr("aria-expanded", "false");
-                //$(this).find('div:first').attr('aria-pressed', 'false');
-                $(this).find("ul :focusable").attr("tabindex","-1");
-            });
-
-            /*$('div.bullet').each(function () {
-                $(this).attr("aria-hidden", "true");
-            });*/
-
-            // set click event for chevron
-            $(document).on('click', '.navigation div.collapsible', function () {
-                ClosePageSubMenu($(this).parent());
-            });
-
-            $(document).on('click', '.navigation div.expandable', function () {
-                OpenPageSubMenu($(this).parent());
-            });
-
-            // set navigation grouping links
-            $(document).on('click', '.navigationgroup.collapsible > a', function () {
-                ClosePageSubMenu($(this).parent());
-            });
-
-            $(document).on('click', '.navigationgroup.expandable > a', function () {
-                OpenPageSubMenu($(this).parent());
-            });
-
-            //SW MYSTART DROPDOWNS
-            $(document).on('click', '.sw-mystart-dropdown', function () {
-                $(this).children(".sw-dropdown").css("display", "block");
-            });
-
-            $(".sw-mystart-dropdown").hover(function () { }, function () {
-                $(this).children(".sw-dropdown").hide();
-                $(this).blur();
-            });
-
-            //SW ACCOUNT DROPDOWN
-            $(document).on('click', '#sw-mystart-account', function () {
-                $(this).children("#sw-myaccount-list").show();
-                $(this).addClass("clicked-state");
-            });
-
-            $("#sw-mystart-account, #sw-myaccount-list").hover(function () { }, function () {
-                $(this).children("#sw-myaccount-list").hide();
-                $(this).removeClass("clicked-state");
-                $("#sw-myaccount").blur();
-            });
-
-            // set hover class for page and section navigation
-            $('.ui-widget.app.pagenavigation, .ui-widget.app.sectionnavigation').find('li > a').hover(function () {
-                $(this).addClass('hover');
-            }, function () {
-                $(this).removeClass('hover');
-            });
-
-            //set aria-label for home
-            $('#navc-HP > a').attr('aria-label', 'Home');
-
-            // set active class on channel and section
-            var activeChannelNavType = $('input#hidActiveChannelNavType').val();
-            if (activeChannelNavType == -1) {
-                // homepage is active
-                $('#navc-HP').addClass('active');
-            } else if (activeChannelNavType == 1) {
-                // calendar page is active
-                $('#navc-CA').addClass('active');
-            } else {
-                // channel is active - set the active class on the channel
-                var activeSelectorID = $('input#hidActiveChannel').val();
-                $('#navc-' + activeSelectorID).addClass('active');
-
-                // set the breadcrumb channel href to the channel nav href
-                $('li[data-bccID=' + activeSelectorID + '] a').attr('href', $('#navc-' + activeSelectorID + ' a').attr('href'));
-                $('li[data-bccID=' + activeSelectorID + '] a span').text($('#navc-' + activeSelectorID + ' a span').first().text());
-
-                // set the active class on the section
-                activeSelectorID = $('input#hidActiveSection').val();
-                $('#navs-' + activeSelectorID).addClass('active');
-
-                // set the breadcrumb section href to the channel nav href
-                $('li[data-bcsID=' + activeSelectorID + '] a').attr('href', $('#navs-' + activeSelectorID + ' a').attr('href'));
-                if ($('#navs-' + activeSelectorID + ' a').attr('target') !== undefined) {
-                    $('li[data-bcsID=' + activeSelectorID + '] a').attr('target', $('#navs-' + activeSelectorID + ' a').attr('target'));
-                }
-                $('li[data-bcsID=' + activeSelectorID + '] span').text($('#navs-' + activeSelectorID + ' a span').text());
-
-                if ($('.sw-directory-columns').length > 0) {
-                    $('ul.ui-breadcrumbs li:last-child').remove();
-                    $('ul.ui-breadcrumbs li:last-child a').replaceWith(function() { return $('span', this); });
-                    $('ul.ui-breadcrumbs li:last-child span').append(' Directory');
-                }
-            }
-        }); // end document ready
-
-        function OpenPageSubMenu(li) {
-            if (li.prop('tagName').toLowerCase() == "li") {
-                if (li.hasClass('expandable')) {
-                    li.removeClass('expandable').addClass('collapsible');
-                }
-                if (li.find('div:first').hasClass('expandable')) {
-                    let linkText = li.find("> a").text();
-                    //li.find('div:first').removeClass('expandable').addClass('collapsible').attr('aria-pressed', 'true').attr('aria-label', 'Close Page Submenu');
-                    li.find('div:first').removeClass('expandable').addClass('collapsible').attr({
-                        "aria-expanded": "true",
-                        "aria-label": "Collapse "+linkText+" nested links"
-                    });
-                }
-                li.find('ul:first').attr('aria-hidden', 'false').show();
-                li.find("ul:first > li > .bullet.expandable, ul:first > li > .bullet.collapsible, ul:first > li > a").attr("tabindex", "0");
-                //li.find("li.expandable ul :focusable").attr("tabindex","-1");
-
-                //li.attr("aria-expanded", "true");
-
-                PageNavigationStateCookie();
-            }
-        }
-
-        function ClosePageSubMenu(li) {
-            if (li.prop('tagName').toLowerCase() == "li") {
-                let linkText = li.find("> a").text();
-                li.removeClass('collapsible').addClass('expandable');
-                //li.find('div:first').removeClass('collapsible').addClass('expandable').attr('aria-pressed', 'false').attr('aria-label', 'Open Page Submenu');
-                li.find('div:first').removeClass('collapsible').addClass('expandable').attr({
-                    "aria-expanded": "false",
-                    "aria-label": "Expand "+linkText+" nested links"
-                });
-                li.find('ul:first').attr('aria-hidden', 'true').hide();
-                li.find("ul:first .bullet.expandable, ul:first .bullet.collapsible, ul:first a").attr("tabindex","-1");
-
-                //li.attr("aria-expanded", "false");
-
-                PageNavigationStateCookie();
-            }
-        }
-
-        function PageNavigationStateCookie() {
-            var strCookie = "";
-
-            $('.pagenavigation li > ul').each(function () {
-                var item = $(this).parent('li');
-                if (item.hasClass('collapsible') && !item.hasClass('no-bullet')) {
-                    strCookie += $(this).parent().attr('id') + '~';
-                }
-            });
-
-            SetCookie('SWPageNavState', strCookie);
-        }
-
-        function checkSidebar() {
-            $(".ui-widget-sidebar").each(function () {
-                if ($.trim($(this).html()) != "") {
-                    $(this).show();
-                    $(this).siblings(".ui-widget-detail").addClass("with-sidebar");
-                }
-            });
-        }
-
-        function removeBrokenImages() {
-            //REMOVES ANY BROKEN IMAGES
-            $("span.img img").each(function () {
-                if ($(this).attr("src") !== undefined && $(this).attr("src") != '../../') {
-                    $(this).parent().parent().show();
-                    $(this).parent().parent().siblings().addClass("has-thumb");
-                }
-            });
-        }
-
-        function LoadEventDetailUE(moduleInstanceID, eventDateID, userRegID, isEdit) {
-            (userRegID === undefined ? userRegID = 0 : '');
-            (isEdit === undefined ? isEdit = false : '');
-            OpenDialogOverlay("WindowMediumModal", { LoadType: "U", LoadURL: "https://www.manvilleschools.org//site/UserControls/Calendar/EventDetailWrapper.aspx?ModuleInstanceID=" + moduleInstanceID + "&EventDateID=" + eventDateID + "&UserRegID=" + userRegID + "&IsEdit=" + isEdit });
-        }
-
-        function RemoveCookie() {
-            // There are no sub page            
-            if ($('.pagenavigation li li').length == 0) {
-                //return false;
-                PageNavigationStateCookie();
-            }
-        }
-    </script>
-
-    <script type="text/javascript">
-
-        function AddOffCanvasMenuHeightForSiteNav() {
-            var sitenavulHeight = 0;
-
-            if ($('#sw-pg-sitenav-ul').length > 0) {
-                sitenavulHeight = parseInt($("#sw-pg-sitenav-ul").height());
-            }
-
-            var swinnerwrapHeight = 0;
-
-            if ($('#sw-inner-wrap').length > 0) {
-                swinnerwrapHeight = parseInt($("#sw-inner-wrap").height());
-            }
-
-            // 360px is abount 5 li height
-            if (sitenavulHeight + 360 >= swinnerwrapHeight) {
-                $("#sw-inner-wrap").height(sitenavulHeight + 360);
-            }
-        }
-
-        function AddOffCanvasMenuHeightForSelectSchool() {
-            var selectschoolulHeight = 0;
-
-            if ($('#sw-pg-selectschool-ul').length > 0) {
-                selectschoolulHeight = parseInt($("#sw-pg-selectschool-ul").height());
-            }
-
-            var swinnerwrapHeight = 0;
-
-            if ($('#sw-inner-wrap').length > 0) {
-                swinnerwrapHeight = parseInt($("#sw-inner-wrap").height());
-            }
-
-            // 360px is abount 5 li height
-            if (selectschoolulHeight + 360 >= swinnerwrapHeight) {
-                $("#sw-inner-wrap").height(selectschoolulHeight + 360);
-            }
-        }
-
-        $(document).ready(function () {
-            if ($("#sw-pg-sitenav-a").length > 0) {
-                $(document).on('click', '#sw-pg-sitenav-a', function () {
-                    if ($("#sw-pg-sitenav-ul").hasClass('sw-pgmenu-closed')) {
-                        AddOffCanvasMenuHeightForSiteNav();
-
-                        $("ul.sw-pgmenu-toplevel").removeClass('sw-pgmenu-open').addClass('sw-pgmenu-closed');
-                        $("#sw-pg-sitenav-ul").removeClass('sw-pgmenu-closed');
-                        $("#sw-pg-sitenav-ul").addClass('sw-pgmenu-open');
-                    } else {
-                        $("#sw-pg-sitenav-ul").removeClass('sw-pgmenu-open');
-                        $("#sw-pg-sitenav-ul").addClass('sw-pgmenu-closed');
-                    }
-                });
-
-                $(document).on('click', '#sw-pg-selectschool-a', function () {
-                    if ($("#sw-pg-selectschool-ul").hasClass('sw-pgmenu-closed')) {
-                        AddOffCanvasMenuHeightForSelectSchool();
-
-                        $("ul.sw-pgmenu-toplevel").removeClass('sw-pgmenu-open').addClass('sw-pgmenu-closed');
-                        $("#sw-pg-selectschool-ul").removeClass('sw-pgmenu-closed');
-                        $("#sw-pg-selectschool-ul").addClass('sw-pgmenu-open');
-                    } else {
-                        $("#sw-pg-selectschool-ul").removeClass('sw-pgmenu-open');
-                        $("#sw-pg-selectschool-ul").addClass('sw-pgmenu-closed');
-                    }
-                });
-
-                $(document).on('click', '#sw-pg-myaccount-a', function () {
-                    if ($("#sw-pg-myaccount-ul").hasClass('sw-pgmenu-closed')) {
-                        $("ul.sw-pgmenu-toplevel").removeClass('sw-pgmenu-open').addClass('sw-pgmenu-closed');
-                        $("#sw-pg-myaccount-ul").removeClass('sw-pgmenu-closed');
-                        $("#sw-pg-myaccount-ul").addClass('sw-pgmenu-open');
-                    } else {
-                        $("#sw-pg-myaccount-ul").removeClass('sw-pgmenu-open');
-                        $("#sw-pg-myaccount-ul").addClass('sw-pgmenu-closed');
-                    }
-                });
-
-                $(document).on('click', '.pg-list-bullet', function () {
-                    $(this).prev().toggle();
-
-                    if ($(this).hasClass('closed')) {
-                        AddOffCanvasMenuHeightForSiteNav();
-
-                        $(this).removeClass('closed');
-                        $(this).addClass('open');
-                    } else {
-                        $(this).removeClass('open');
-                        $(this).addClass('closed');
-                    }
-                });
-
-                $(document).on('mouseover', '#sw-pg-selectschool', function () {
-                    $("#sw-pg-selectschool-firstli").removeClass('sw-pg-selectschool-firstli-mouseout').addClass('sw-pg-selectschool-firstli-mouseover');
-                    $("#sw-pg-selectschool-firstli a").addClass('sw-pg-selectschool-firstli-a-mouseover').removeClass('sw-pg-selectschool-firstli-a-mouseout');
-                });
-
-                $(document).on('mouseout', '#sw-pg-selectschool', function () {
-                    $("#sw-pg-selectschool-firstli").removeClass('sw-pg-selectschool-firstli-mouseover').addClass('sw-pg-selectschool-firstli-mouseout');
-                    $("#sw-pg-selectschool-firstli a").addClass('sw-pg-selectschool-firstli-a-mouseout').removeClass('sw-pg-selectschool-firstli-a-mouseover');
-                });
-
-                $(document).on('mouseover', '#sw-pg-myaccount', function () {
-                    $("#sw-pg-myaccount-firstli").removeClass('sw-pg-myaccount-firstli-mouseout').addClass('sw-pg-myaccount-firstli-mouseover');
-                    $("#sw-pg-myaccount-firstli a").addClass('sw-pg-myaccount-firstli-a-mouseover').removeClass('sw-pg-myaccount-firstli-a-mouseout');
-                });
-
-                $(document).on('mouseout', '#sw-pg-myaccount', function () {
-                    $("#sw-pg-myaccount-firstli").removeClass('sw-pg-myaccount-firstli-mouseover').addClass('sw-pg-myaccount-firstli-mouseout');
-                    $("#sw-pg-myaccount-firstli a").addClass('sw-pg-myaccount-firstli-a-mouseout').removeClass('sw-pg-myaccount-firstli-a-mouseover');
-                });
-
-                $(document).on('mouseover', '#sw-pg-sitenav', function () {
-                    $("#sw-pg-sitenav-firstli").removeClass('sw-pg-sitenav-firstli-mouseout').addClass('sw-pg-sitenav-firstli-mouseover');
-                    $("#sw-pg-sitenav-firstli a").addClass('sw-pg-sitenav-firstli-a-mouseover').removeClass('sw-pg-sitenav-firstli-a-mouseout');
-                });
-
-                $(document).on('mouseout', '#sw-pg-sitenav', function () {
-                    $("#sw-pg-sitenav-firstli").removeClass('sw-pg-sitenav-firstli-mouseover').addClass('sw-pg-sitenav-firstli-mouseout');
-                    $("#sw-pg-sitenav-firstli a").addClass('sw-pg-sitenav-firstli-a-mouseout').removeClass('sw-pg-sitenav-firstli-a-mouseover');
-                });
-
-                $(document).on('mouseover', '#sw-pg-district', function () {
-                    $("#sw-pg-district-firstli").removeClass('sw-pg-district-firstli-mouseout').addClass('sw-pg-district-firstli-mouseover');
-                    $("#sw-pg-district-firstli a").addClass('sw-pg-district-firstli-a-mouseover').removeClass('sw-pg-district-firstli-a-mouseout');
-                });
-
-                $(document).on('mouseout', '#sw-pg-district', function () {
-                    $("#sw-pg-district-firstli").removeClass('sw-pg-district-firstli-mouseover').addClass('sw-pg-district-firstli-mouseout');
-                    $("#sw-pg-district-firstli a").addClass('sw-pg-district-firstli-a-mouseout').removeClass('sw-pg-district-firstli-a-mouseover');
-                });
-            }
-        });
-
-
-    </script>
-    <script src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/min/SW-UI_2680.min.js" type='text/javascript'></script>
-    <script language="javascript" type='text/javascript' src="https://www.manvilleschools.org/Static/GlobalAssets/jQueryUI.min.js"></script>
-    <script src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/jquery.sectionlayer.js" type='text/javascript'></script>
-    <script src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/Initialize_2560.js" type='text/javascript'></script>
-    <script src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/min/swfobject.min.js" type="text/javascript"></script>
-    <script src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/min/jquery.ajaxupload_2440.min.js" type="text/javascript"></script>
-
-    <!-- Begin swuc.CheckScript -->
-  <script type="text/javascript" src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/ThirdParty/json2.js"></script>
-  <script type="text/javascript" src="https://www.manvilleschools.org/Static/GlobalAssets/Scripts/CheckScript_2780.js"></script>
-<!-- End swuc.CheckScript -->
-
-
-    <!-- Server Load Time (04): 0.0787311 Seconds -->
-
-    
-
-    <!-- off-canvas menu enabled-->
-    
-
-    <!-- Ally Alternative Formats Configure START   -->
-    
-<script>
-    AFExtensions = ".pdf,.doc,.docx,.ppt,.pptx,.odt,.odp";
-    AllyClientID = "13314";
-	    // Wait for the API to load     
-	    ally.ready(function() {
-		    // Configure an API instance
-            const ui = ally.ui({
-			    'client': {
-				    'baseUrl': 'https://prod.ally.ac',
-				    'clientId': 13314
-			    },
-			    'courseId': '1794',
-			    'locale': $('html').attr('lang'),
-			    'platformName': 'Wcm',  
-			    'role': 'anonymous'
-		    });
-	        // Apply the API to the page body   
-            ui.autoUpdate({'domWatch': 250});
-    });
-
-</script>
-    <!-- Ally Alternative Formats Configure END     -->
-
-</body>
-</html>
