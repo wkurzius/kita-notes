@@ -1,3 +1,9 @@
+<style>
+  body > div:first-child > h1:first-child {
+    display: none;
+  }
+</style>
+
 # Kita Notes
 
 - [Absolutely True Diary of a Part-Time Indian](/absolutely-true-diary-of-a-part-time-indian.html)
